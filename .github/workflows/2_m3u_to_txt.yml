@@ -43,7 +43,7 @@ jobs:
           mkdir -p input/download/net/txt
 
       - name: Run M3U/TXT parse script
-        run: python scripts/parse_m3u_to_txt.py
+        run: python scripts/2_m3u_to_txt.py
 
       - name: Fix permissions before commit
         run: chmod -R u+rw input/download/net/txt
