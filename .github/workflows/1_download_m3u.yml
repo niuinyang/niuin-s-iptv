@@ -47,6 +47,9 @@ jobs:
       - name: Run M3U download script
         run: python scripts/1_download_m3u.py
 
+      - name: Fix permissions before commit
+        run: chmod -R u+rw input/download
+
       - name: Commit & Push results
         run: |
           git config user.name "github-actions[bot]"
@@ -61,11 +64,5 @@ jobs:
 
           git commit -m "Update M3U sources [ci skip]"
 
-          if [ -n "$(git status --porcelain)" ]; then
-            git stash push -m "ci-stash-before-pull"
-            git pull --rebase origin main
-            git stash pop || echo "No stash to pop"
-          else
-            git pull --rebase origin main
-          fi
+          git pull --rebase origin main
           git push origin main
