@@ -18,7 +18,7 @@ jobs:
 
       - name: Delete deep_validation and hash-chunk workflow files
         run: |
-          FILES_SCAN=$(find .github/workflows -type f -name "*scan_chunk*.yml" -o -name "hash-chunk*.yml" || true)
+          FILES_SCAN=$(find .github/workflows -type f -name "*Scan_chunk*.yml" -o -name "hash-chunk*.yml" || true)
           if [ -z "$FILES_SCAN" ]; then
             echo "No matching workflow files found."
             exit 0
