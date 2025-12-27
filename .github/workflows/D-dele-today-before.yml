@@ -36,7 +36,7 @@ jobs:
           
           git commit -m "Delete scan_chunk and hash-chunk workflow files" || echo "No changes to commit"
           
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin_iptv.git
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
 
           n=0
           until [ $n -ge 3 ]
