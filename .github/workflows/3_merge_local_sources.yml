@@ -29,7 +29,7 @@ jobs:
 
       - name: Run merge local sources script
         run: |
-          python 3_merge_local_sources.py
+          python scripts/3_merge_local_sources.py
 
       - name: Commit & Push results
         run: |
