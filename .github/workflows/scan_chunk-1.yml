@@ -39,10 +39,10 @@ jobs:
       - name: Run fast scan for chunk-1              # 运行快速扫描脚本，处理对应chunk文件
         run: |
           mkdir -p output/middle/fast/ok output/middle/fast/not   # 创建结果输出目录
-          python scripts/6.1_fast_scan.py \                         # 执行快速扫描脚本
-            --input output/middle/chunk/chunk-1.csv \                 # 输入对应chunk文件
-            --output output/middle/fast/ok/fast_chunk-1.csv \         # 合格输出路径
-            --invalid output/middle/fast/not/fast_chunk-1-invalid.csv # 不合格输出路径
+          python scripts/6.1_fast_scan.py \
+            --input output/middle/chunk/chunk-1.csv \
+            --output output/middle/fast/ok/fast_chunk-1.csv \
+            --invalid output/middle/fast/not/fast_chunk-1-invalid.csv
             
     #  - name: Run deep scan for chunk-1              # 运行深度扫描脚本，进一步校验快速扫描合格数据
      #   run: |
