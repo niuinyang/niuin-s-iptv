@@ -3,56 +3,66 @@ name: 3_合并源
 on:
   push:
     branches:
-      - main
+      - main                 # 仅在 main 分支有推送时触发
   schedule:
-    - cron: '0 4 * * *'  # 每天 UTC 04:00 触发，按需调整
+    - cron: '0 4 * * *'      # 定时触发：每天 UTC 04:00
 
 permissions:
-  contents: write
+  contents: write            # 允许写入仓库内容
 
 jobs:
   update-channels:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest   # 运行环境：最新Ubuntu
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4      # 检出仓库代码
         with:
-          fetch-depth: 0  # 完整历史方便 rebase
+          fetch-depth: 0               # 完整历史，方便rebase
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v4  # 安装Python 3.11
         with:
           python-version: '3.11'
 
+      - name: Cache pip
+        uses: actions/cache@v3         # 缓存pip包目录，加速安装
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}  # 依据requirements.txt生成缓存key
+          restore-keys: |
+            ${{ runner.os }}-pip-       # 恢复时匹配前缀
+
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install pandas chardet
+          python -m pip install --upgrade pip    # 升级pip
+          pip install pandas chardet             # 安装pandas和chardet依赖
 
       - name: Run merge local sources script
         run: |
-          python scripts/3_merge_local_sources.py
+          python scripts/3_merge_local_sources.py   # 执行合并频道源脚本
 
       - name: Commit & Push results
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"                   # 设置git提交用户名
+          git config user.email "github-actions[bot]@users.noreply.github.com"  # 设置git提交邮箱
 
+          # 添加合并后生成的网络源文件
           git add output/middle/merge/networksource_total.m3u
           git add output/middle/merge/networksource_total.csv
           git add output/log/merge/networksource_skipped.log
 
+          # 添加合并后生成的自定义源文件
           git add output/middle/merge/mysource_total.m3u
           git add output/middle/merge/mysource_total.csv
           git add output/log/merge/mysource_skipped.log
 
-          if git diff --cached --quiet; then
-            echo "✅ No changes to commit."
+          if git diff --cached --quiet; then              # 检查是否有暂存的变更
+            echo "✅ No changes to commit."                # 无变更退出
             exit 0
           fi
 
-          git commit -m "更新频道文件解析输出 [ci skip]"
+          git commit -m "更新频道文件解析输出 [ci skip]"    # 提交变更，跳过CI触发
 
-          git pull --rebase origin main
-          git push origin main
+          git pull --rebase origin main                    # 拉取远程最新代码并rebase
+          git push origin main                             # 推送提交
