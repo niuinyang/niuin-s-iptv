@@ -1,7 +1,6 @@
 name: 3_合并源
 
 on:
-  push:
   workflow_dispatch:         # 手动触发工作流
   schedule:
     - cron: '0 4 * * *'      # 定时触发：每天 UTC 04:00
