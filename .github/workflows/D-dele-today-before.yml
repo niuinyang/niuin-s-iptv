@@ -1,0 +1,87 @@
+name: 清除日前执行信息
+
+on:
+  schedule:
+    - cron: '0 15 * * *'  # 每天 UTC 15:00（北京时间 23:00）
+  workflow_dispatch:      # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  delete_workflows:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Delete deep_validation and hash-chunk workflow files
+        run: |
+          FILES_SCAN=$(find .github/workflows -type f -name "*scan_chunk*.yml" -o -name "hash-chunk*.yml" || true)
+          if [ -z "$FILES_SCAN" ]; then
+            echo "No matching workflow files found."
+            exit 0
+          fi
+          echo "Deleting files:"
+          echo "$FILES_SCAN"
+          git rm $FILES_SCAN || true
+
+      - name: Commit and push changes
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git commit -m "Delete scan_chunk and hash-chunk workflow files" || echo "No changes to commit"
+          
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin_iptv.git
+
+          n=0
+          until [ $n -ge 3 ]
+          do
+            git pull --rebase origin main
+            git push origin HEAD:main && break
+            n=$((n+1))
+            echo "Push failed, retry $n..."
+            sleep 5
+          done
+
+  delete_all_runs:
+    needs: delete_workflows
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Install jq and curl
+        run: sudo apt-get update && sudo apt-get install -y jq curl
+
+      - name: Delete all workflow runs
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}  # 你的 PAT 名
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+        run: |
+          PER_PAGE=100
+          page=1
+
+          while : ; do
+            echo "Fetching page $page of workflow runs..."
+            runs_json=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+              "https://api.github.com/repos/$OWNER/$REPO/actions/runs?per_page=$PER_PAGE&page=$page")
+
+            run_ids=$(echo "$runs_json" | jq -r '.workflow_runs[].id')
+
+            if [ -z "$run_ids" ]; then
+              echo "No more runs found, finished."
+              break
+            fi
+
+            for id in $run_ids; do
+              echo "Deleting run id: $id"
+              curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" \
+                "https://api.github.com/repos/$OWNER/$REPO/actions/runs/$id"
+            done
+
+            ((page++))
+          done
