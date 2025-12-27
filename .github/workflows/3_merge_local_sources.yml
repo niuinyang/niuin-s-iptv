@@ -1,0 +1,55 @@
+name: Update IPTV Channels
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 4 * * *'  # 每天 UTC 04:00 触发，按需调整
+
+jobs:
+  update-channels:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 完整历史方便 rebase
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas chardet
+
+      - name: Run merge local sources script
+        run: |
+          python 3_merge_local_sources.py
+
+      - name: Commit & Push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add output/middle/merge/networksource_total.m3u
+          git add output/middle/merge/networksource_total.csv
+          git add output/log/merge/networksource_skipped.log
+
+          git add output/middle/merge/mysource_total.m3u
+          git add output/middle/merge/mysource_total.csv
+          git add output/log/merge/mysource_skipped.log
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "更新频道文件解析输出 [ci skip]"
+
+          git pull --rebase origin main
+          git push origin main
