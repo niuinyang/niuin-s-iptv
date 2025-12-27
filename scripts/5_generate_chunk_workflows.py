@@ -70,27 +70,27 @@ jobs:
       - name: Run fast scan for {n}              # 运行快速扫描脚本，处理对应chunk文件
         run: |
           mkdir -p output/middle/fast/ok output/middle/fast/not   # 创建结果输出目录
-          python scripts/6.1_fast_scan.py \                         # 执行快速扫描脚本
-            --input output/middle/chunk/{n}.csv \                 # 输入对应chunk文件
-            --output output/middle/fast/ok/fast_{n}.csv \         # 合格输出路径
-            --invalid output/middle/fast/not/fast_{n}-invalid.csv # 不合格输出路径
+          python scripts/6.1_fast_scan.py \
+            --input output/middle/chunk/{n}.csv \
+            --output output/middle/fast/ok/fast_{n}.csv \
+            --invalid output/middle/fast/not/fast_{n}-invalid.csv
             
       - name: Run deep scan for {n}              # 运行深度扫描脚本，进一步校验快速扫描合格数据
         run: |
           mkdir -p output/middle/deep/ok output/middle/deep/not   # 创建深度扫描结果目录
-          python scripts/6.2_deep_scan.py \                        # 执行深度扫描脚本
-            --input output/middle/fast/ok/fast_{n}.csv \          # 输入快速扫描合格文件
-            --output output/middle/deep/ok/deep_{n}.csv \         # 深度扫描合格输出路径
-            --invalid output/middle/deep/not/deep_{n}-invalid.csv # 深度扫描不合格输出路径
+          python scripts/6.2_deep_scan.py \
+            --input output/middle/fast/ok/fast_{n}.csv \
+            --output output/middle/deep/ok/deep_{n}.csv \
+            --invalid output/middle/deep/not/deep_{n}-invalid.csv
 
       - name: Run final scan for {n}             # 运行最终扫描脚本，做最后一步验证和处理
         run: |
           mkdir -p output/middle/final/ok output/middle/final/not   # 创建最终结果目录
-          python scripts/6.3_final_scan.py \                        # 执行最终扫描脚本
-            --input output/middle/deep/ok/deep_{n}.csv \           # 输入深度扫描合格文件
-            --output output/middle/final/ok/final_{n}.csv \        # 最终合格输出路径
-            --invalid output/middle/final/not/final_{n}-invalid.csv # 最终不合格输出路径
-            --cache_dir output/cache                                # 指定缓存目录
+          python scripts/6.3_final_scan.py \
+            --input output/middle/deep/ok/deep_{n}.csv \
+            --output output/middle/final/ok/final_{n}.csv \
+            --invalid output/middle/final/not/final_{n}-invalid.csv \
+            --cache_dir output/cache
 
       - name: Commit and Push Outputs               # 提交并推送扫描结果
         run: |
