@@ -27,7 +27,7 @@ jobs:
         run: pip install chardet
 
       - name: Run split script               # 运行分割脚本
-        run: python scripts/3_split_merge.py
+        run: python scripts/4_split_merge.py
 
       - name: Commit & Push chunks           # 提交并推送分片结果
         env:
