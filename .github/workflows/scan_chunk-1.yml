@@ -44,22 +44,22 @@ jobs:
             --output output/middle/fast/ok/fast_chunk-1.csv \         # 合格输出路径
             --invalid output/middle/fast/not/fast_chunk-1-invalid.csv # 不合格输出路径
             
-      - name: Run deep scan for chunk-1              # 运行深度扫描脚本，进一步校验快速扫描合格数据
-        run: |
-          mkdir -p output/middle/deep/ok output/middle/deep/not   # 创建深度扫描结果目录
-          python scripts/6.2_deep_scan.py \                        # 执行深度扫描脚本
-            --input output/middle/fast/ok/fast_chunk-1.csv \          # 输入快速扫描合格文件
-            --output output/middle/deep/ok/deep_chunk-1.csv \         # 深度扫描合格输出路径
-            --invalid output/middle/deep/not/deep_chunk-1-invalid.csv # 深度扫描不合格输出路径
+    #  - name: Run deep scan for chunk-1              # 运行深度扫描脚本，进一步校验快速扫描合格数据
+     #   run: |
+      #    mkdir -p output/middle/deep/ok output/middle/deep/not   # 创建深度扫描结果目录
+       #   python scripts/6.2_deep_scan.py \                        # 执行深度扫描脚本
+        #    --input output/middle/fast/ok/fast_chunk-1.csv \          # 输入快速扫描合格文件
+         #   --output output/middle/deep/ok/deep_chunk-1.csv \         # 深度扫描合格输出路径
+          #  --invalid output/middle/deep/not/deep_chunk-1-invalid.csv # 深度扫描不合格输出路径
 
-      - name: Run final scan for chunk-1             # 运行最终扫描脚本，做最后一步验证和处理
-        run: |
-          mkdir -p output/middle/final/ok output/middle/final/not   # 创建最终结果目录
-          python scripts/6.3_final_scan.py \                        # 执行最终扫描脚本
-            --input output/middle/deep/ok/deep_chunk-1.csv \           # 输入深度扫描合格文件
-            --output output/middle/final/ok/final_chunk-1.csv \        # 最终合格输出路径
-            --invalid output/middle/final/not/final_chunk-1-invalid.csv # 最终不合格输出路径
-            --cache_dir output/cache                                # 指定缓存目录
+    #  - name: Run final scan for chunk-1             # 运行最终扫描脚本，做最后一步验证和处理
+     #   run: |
+      #    mkdir -p output/middle/final/ok output/middle/final/not   # 创建最终结果目录
+       #   python scripts/6.3_final_scan.py \                        # 执行最终扫描脚本
+        #    --input output/middle/deep/ok/deep_chunk-1.csv \           # 输入深度扫描合格文件
+         #   --output output/middle/final/ok/final_chunk-1.csv \        # 最终合格输出路径
+          #  --invalid output/middle/final/not/final_chunk-1-invalid.csv # 最终不合格输出路径
+           # --cache_dir output/cache                                # 指定缓存目录
 
       - name: Commit and Push Outputs               # 提交并推送扫描结果
         run: |
