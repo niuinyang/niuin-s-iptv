@@ -31,7 +31,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
+          
+      - name: Cache pip
+        uses: actions/cache@v3         # 缓存pip包目录，加速安装
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}  # 依据requirements.txt生成缓存key
+          restore-keys: |
+            ${{ runner.os }}-pip-       # 恢复时匹配前缀
+            
       - name: Install dependencies
         run: pip install chardet pillow tqdm requests
 
