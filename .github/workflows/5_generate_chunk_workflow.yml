@@ -1,0 +1,54 @@
+name: 4生成chunk_workflows
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - 3分割merge_total_csv
+    types:
+      - completed
+
+jobs:
+  generate_chunk_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Git user and PAT
+        env:
+          PUSH_TOKEN1: ${{ secrets.PUSH_TOKEN1 }}
+          REPO: ${{ github.repository }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN1}@github.com/${REPO}.git
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install chardet pillow tqdm requests
+
+      - name: Generate and Push workflows
+        run: |
+          python scripts/4_generate_chunk_workflows.py
+          git add .github/workflows output/middle
+          if ! git diff --cached --quiet; then
+            git commit -m "ci: auto-generate deep validation workflows"
+            if [ -n "$(git status --porcelain)" ]; then
+              git stash push -m "ci-stash-before-pull"
+              git pull --rebase origin main
+              git stash pop || echo "No stash to pop"
+            else
+              git pull --rebase origin main
+            fi
+            git push origin main
+          else
+            echo "无更改，跳过提交和推送"
+          fi
