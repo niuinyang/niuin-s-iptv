@@ -1,0 +1,51 @@
+name: 4_分割文件
+
+on:
+  workflow_dispatch:         # 支持手动触发工作流
+  schedule:
+    - cron: '05 16 * * *'   # 定时触发：每天 UTC 时间16:05（北京时间0:05）
+
+permissions:
+  contents: write           # 允许写入仓库内容
+
+jobs:
+  split_merge_total:        # 任务名称，分割合并文件
+    runs-on: ubuntu-latest  # 运行环境为最新的 Ubuntu
+
+    steps:
+      - name: Checkout repository          # 检出仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0                   # 拉取完整历史，方便后续操作
+
+      - name: Setup Python                  # 安装Python环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"           # 指定Python版本为3.11
+
+      - name: Install dependencies          # 安装依赖 chardet，用于编码检测
+        run: pip install chardet
+
+      - name: Run split script               # 运行分割脚本
+        run: python scripts/3_split_merge.py
+
+      - name: Commit & Push chunks           # 提交并推送分片结果
+        env:
+          PAT_TOKEN1: ${{ secrets.PAT_TOKEN1 }}   # 使用仓库Secrets中的PAT_TOKEN1作为认证令牌
+        run: |
+          git config user.name "github-actions[bot]"                   # 设置git用户名
+          git config user.email "github-actions[bot]@users.noreply.github.com"  # 设置git邮箱
+          git add output/middle/chunk/                                 # 添加分片输出目录所有变更
+          if ! git diff --cached --quiet; then                        # 如果有变更则提交
+            git commit -m "Auto split merge_total.csv into chunks [ci skip]"  # 提交说明，并跳过CI
+            if [ -n "$(git status --porcelain)" ]; then                # 如果工作区还有未提交变更
+              git stash push -m "ci-stash-before-pull"                 # 暂存未提交变更
+              git pull --rebase origin main                             # 拉取远程最新代码并rebase
+              git stash pop || echo "No stash to pop"                  # 还原暂存变更，失败则打印提示
+            else
+              git pull --rebase origin main                             # 否则直接拉取远程最新代码并rebase
+            fi
+            git push https://${PAT_TOKEN1}@github.com/${{ github.repository }}.git HEAD:refs/heads/main  # 使用token推送
+          else
+            echo "✅ No changes to commit."                             # 无变更提示
+          fi
