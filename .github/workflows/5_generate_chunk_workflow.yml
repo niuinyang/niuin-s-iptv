@@ -1,12 +1,12 @@
 name: 4生成chunk_workflows
 
 on:
-  workflow_dispatch:
-  workflow_run:
-    workflows:
-      - 3分割merge_total_csv
-    types:
-      - completed
+  workflow_dispatch:         # 支持手动触发工作流
+  schedule:
+    - cron: '05 16 * * *'   # 定时触发：每天 UTC 时间16:05（北京时间0:05）
+
+permissions:
+  contents: write
 
 jobs:
   generate_chunk_workflow:
@@ -37,7 +37,7 @@ jobs:
 
       - name: Generate and Push workflows
         run: |
-          python scripts/4_generate_chunk_workflows.py
+          python scripts/5_generate_chunk_workflows.py
           git add .github/workflows output/middle
           if ! git diff --cached --quiet; then
             git commit -m "ci: auto-generate deep validation workflows"
