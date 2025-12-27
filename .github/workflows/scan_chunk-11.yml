@@ -1,0 +1,90 @@
+name: Scan_chunk-11
+
+on:
+  workflow_run:
+    workflows: ["1预处理-下载-合并-分割-生成"]     # 监听该工作流完成后触发
+    types:
+      - completed                               # 仅当指定工作流完成时触发
+  workflow_dispatch:                            # 支持手动触发
+
+permissions:
+  contents: write                              # 允许写入仓库内容
+
+jobs:
+  scan_chunk-11:
+    runs-on: ubuntu-latest                     # 使用最新Ubuntu环境运行
+    steps:
+      - name: Checkout repository              # 第一步：检出仓库代码
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11                  # 安装Python 3.11环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg                     # 安装ffmpeg工具，命令行视频处理工具
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install dependencies               # 安装Python依赖，来自requirements.txt
+        run: pip install -r requirements.txt
+
+      - name: Run fast scan for chunk-11              # 运行快速扫描脚本，处理对应chunk文件
+        run: |
+          mkdir -p output/middle/fast/ok output/middle/fast/not   # 创建结果输出目录
+          python scripts/6.1_fast_scan.py \                         # 执行快速扫描脚本
+            --input output/middle/chunk/chunk-11.csv \                 # 输入对应chunk文件
+            --output output/middle/fast/ok/fast_chunk-11.csv \         # 合格输出路径
+            --invalid output/middle/fast/not/fast_chunk-11-invalid.csv # 不合格输出路径
+            
+      - name: Run deep scan for chunk-11              # 运行深度扫描脚本，进一步校验快速扫描合格数据
+        run: |
+          mkdir -p output/middle/deep/ok output/middle/deep/not   # 创建深度扫描结果目录
+          python scripts/6.2_deep_scan.py \                        # 执行深度扫描脚本
+            --input output/middle/fast/ok/fast_chunk-11.csv \          # 输入快速扫描合格文件
+            --output output/middle/deep/ok/deep_chunk-11.csv \         # 深度扫描合格输出路径
+            --invalid output/middle/deep/not/deep_chunk-11-invalid.csv # 深度扫描不合格输出路径
+
+      - name: Run final scan for chunk-11             # 运行最终扫描脚本，做最后一步验证和处理
+        run: |
+          mkdir -p output/middle/final/ok output/middle/final/not   # 创建最终结果目录
+          python scripts/6.3_final_scan.py \                        # 执行最终扫描脚本
+            --input output/middle/deep/ok/deep_chunk-11.csv \           # 输入深度扫描合格文件
+            --output output/middle/final/ok/final_chunk-11.csv \        # 最终合格输出路径
+            --invalid output/middle/final/not/final_chunk-11-invalid.csv # 最终不合格输出路径
+            --cache_dir output/cache                                # 指定缓存目录
+
+      - name: Commit and Push Outputs               # 提交并推送扫描结果
+        run: |
+          git config user.name "github-actions[bot]"               # 设置提交用户名
+          git config user.email "github-actions[bot]@users.noreply.github.com" # 设置提交邮箱
+
+          git add output/cache \                                    # 添加缓存目录及扫描结果目录
+                  output/middle/fast                   output/middle/deep                   output/middle/final
+
+          if git diff --cached --quiet; then                      # 如果没有变更，输出提示并退出
+            echo "No output updates."
+            exit 0
+          fi
+
+          git commit -m "Update scan outputs for chunk-11 [skip ci]"   # 提交变更，跳过CI触发
+
+          MAX_RETRIES=5                                           # 最大重试次数设为5
+          COUNT=1                                                 # 初始化重试计数器为1
+
+          until git push --quiet; do                              # 循环执行push，直到成功或超过重试次数
+            echo "Push failed (attempt $COUNT/$MAX_RETRIES), retrying..."
+
+            git stash push -m "auto-stash" || true               # 保存当前变更到stash，防止冲突
+            git pull --rebase --quiet || true                    # 拉取远程最新代码并rebase
+            git stash pop || true                                 # 恢复stash内容
+
+            COUNT=$((COUNT+1))                                    # 重试计数器加1
+            if [ $COUNT -gt $MAX_RETRIES ]; then                  # 如果超过最大重试次数则退出并报错
+              echo "🔥 Push failed after $MAX_RETRIES attempts."
+              exit 1
+            fi
+
+            sleep 2                                              # 等待2秒后重试
+          done
+
+          echo "Push outputs succeeded."                         # 推送成功提示
