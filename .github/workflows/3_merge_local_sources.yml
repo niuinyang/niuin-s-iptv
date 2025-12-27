@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: '0 4 * * *'  # 每天 UTC 04:00 触发，按需调整
 
+permissions:
+  contents: write
+
 jobs:
   update-channels:
     runs-on: ubuntu-latest
