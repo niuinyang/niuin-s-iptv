@@ -55,7 +55,15 @@ jobs:
 
       - name: Install ffmpeg                     # 安装ffmpeg工具，命令行视频处理工具
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
-
+        
+      - name: Cache pip
+        uses: actions/cache@v3         # 缓存pip包目录，加速安装
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}  # 依据requirements.txt生成缓存key
+          restore-keys: |
+            ${{ runner.os }}-pip-       # 恢复时匹配前缀
+            
       - name: Install dependencies               # 安装Python依赖，来自requirements.txt
         run: pip install -r requirements.txt
 
