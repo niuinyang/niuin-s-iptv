@@ -66,20 +66,37 @@ async def probe_one(row, sem, timeout):
         elapsed = time.perf_counter() - start  # 计时结束，计算耗时
         if "probe" in res:
             parsed = parse_probe(res["probe"])
-            result = dict(row)
-            result.update({
-                "has_video": parsed["has_video"],
-                "has_audio": parsed["has_audio"],
-                "video_codec": parsed["video_codec"] or "",
-                "width": parsed["width"] or "",
-                "height": parsed["height"] or "",
-                "frame_rate": parsed["frame_rate"] or "",
-                "duration": parsed["duration"] or "",
-                "bit_rate": parsed["bit_rate"] or "",
-                "error": "",
-                "elapsed": elapsed  # 新增字段
-            })
-            return result, True
+            if not parsed["has_video"]:
+                # 标记为无视频流错误
+                result = dict(row)
+                result.update({
+                    "has_video": False,
+                    "has_audio": parsed["has_audio"],
+                    "video_codec": "",
+                    "width": "",
+                    "height": "",
+                    "frame_rate": "",
+                    "duration": "",
+                    "bit_rate": "",
+                    "error": "no_video_stream",
+                    "elapsed": elapsed
+                })
+                return result, False
+            else:
+                result = dict(row)
+                result.update({
+                    "has_video": parsed["has_video"],
+                    "has_audio": parsed["has_audio"],
+                    "video_codec": parsed["video_codec"] or "",
+                    "width": parsed["width"] or "",
+                    "height": parsed["height"] or "",
+                    "frame_rate": parsed["frame_rate"] or "",
+                    "duration": parsed["duration"] or "",
+                    "bit_rate": parsed["bit_rate"] or "",
+                    "error": "",
+                    "elapsed": elapsed  # 新增字段
+                })
+                return result, True
         else:
             result = dict(row)
             result.update({
@@ -100,9 +117,9 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
     sem = Semaphore(concurrency)
     rows = []
     with open(input_file, newline='', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
+        reader = csv.DictReader(f, delimiter='\t')  # 你的输入是制表符分隔
+        fieldnames_in = reader.fieldnames  # 记录输入所有列名
         for row in reader:
-            # 这里不再判断检测时间，所有行都检测
             rows.append(row)
 
     print(f"Probing {len(rows)} urls with concurrency={concurrency}")
@@ -111,7 +128,6 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
     results_ok = []
     results_fail = []
 
-    # 这里改为普通for循环，await每个future
     for fut in tqdm_asyncio.as_completed(tasks, total=len(tasks), desc="deep-scan"):
         result, ok = await fut
         if ok:
@@ -119,8 +135,12 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
         else:
             results_fail.append(result)
 
-    fieldnames_ok = ["频道名","地址","来源","图标","检测时间","分组","视频编码","分辨率","帧率","音频"]
-    fieldnames_fail = fieldnames_ok + ["失败原因"]
+    # 新增列
+    new_fields = [
+        "ffprobe是否成功", "视频编码", "分辨率", "帧率", "音频", "ffprobe探测时间"
+    ]
+    # 输出字段：输入所有列 + 新增列
+    fieldnames_out = fieldnames_in + new_fields
 
     def format_resolution(r):
         w = r.get("width")
@@ -132,44 +152,49 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
     def format_audio(r):
         return "有音频" if r.get("has_audio") else "无音频"
 
+    def classify_error(r):
+        err = r.get("error", "")
+        if err == "":
+            return "成功"
+        if "timeout" in err:
+            return "超时"
+        if "no_output" in err:
+            return "无输出"
+        if "json_parse_error" in err:
+            return "解析错误"
+        if "ffprobe_not_installed" in err:
+            return "ffprobe未安装"
+        if err == "no_video_stream":
+            return "无视频流"
+        return err  # 其他错误原样返回
+
     with open(output_ok, "w", newline='', encoding='utf-8') as f_ok, \
          open(output_fail, "w", newline='', encoding='utf-8') as f_fail:
-        writer_ok = csv.DictWriter(f_ok, fieldnames=fieldnames_ok)
-        writer_fail = csv.DictWriter(f_fail, fieldnames=fieldnames_fail)
+        writer_ok = csv.DictWriter(f_ok, fieldnames=fieldnames_out, delimiter='\t')
+        writer_fail = csv.DictWriter(f_fail, fieldnames=fieldnames_out, delimiter='\t')
+
         writer_ok.writeheader()
         writer_fail.writeheader()
 
         for r in results_ok:
-            row = {
-                "频道名": r.get("频道名",""),
-                "地址": r.get("地址",""),
-                "来源": r.get("来源",""),
-                "图标": r.get("图标",""),
-                # 这里检测时间赋值为耗时，保留三位小数
-                "检测时间": f"{r.get('elapsed', 0):.3f}",
-                "分组": r.get("分组",""),
-                "视频编码": r.get("video_codec",""),
-                "分辨率": format_resolution(r),
-                "帧率": r.get("frame_rate",""),
-                "音频": format_audio(r),
-            }
-            writer_ok.writerow(row)
+            out_row = dict(r)
+            out_row["ffprobe是否成功"] = classify_error(r)
+            out_row["视频编码"] = r.get("video_codec", "")
+            out_row["分辨率"] = format_resolution(r)
+            out_row["帧率"] = r.get("frame_rate", "")
+            out_row["音频"] = format_audio(r)
+            out_row["ffprobe探测时间"] = f"{r.get('elapsed', 0):.3f}"
+            writer_ok.writerow(out_row)
 
         for r in results_fail:
-            row = {
-                "频道名": r.get("频道名",""),
-                "地址": r.get("地址",""),
-                "来源": r.get("来源",""),
-                "图标": r.get("图标",""),
-                "检测时间": f"{r.get('elapsed', 0):.3f}",
-                "分组": r.get("分组",""),
-                "视频编码": r.get("video_codec",""),
-                "分辨率": format_resolution(r),
-                "帧率": r.get("frame_rate",""),
-                "音频": format_audio(r),
-                "失败原因": r.get("error",""),
-            }
-            writer_fail.writerow(row)
+            out_row = dict(r)
+            out_row["ffprobe是否成功"] = classify_error(r)
+            out_row["视频编码"] = r.get("video_codec", "")
+            out_row["分辨率"] = format_resolution(r)
+            out_row["帧率"] = r.get("frame_rate", "")
+            out_row["音频"] = format_audio(r)
+            out_row["ffprobe探测时间"] = f"{r.get('elapsed', 0):.3f}"
+            writer_fail.writerow(out_row)
 
     print(f"Deep scan finished: {len(results_ok)} success, {len(results_fail)} failed. Wrote {output_ok} and {output_fail}")
 
