@@ -1,0 +1,130 @@
+name: Scan_chunk-27
+
+on:
+  workflow_run:
+    workflows: ["1-预处理-下载-转txt-合并-分割-生成"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan_chunk-27:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run fast scan for chunk-27
+        run: |
+          mkdir -p output/middle/fast/ok output/middle/fast/not
+          python scripts/6.1_fast_scan.py \
+            --input output/middle/chunk/chunk-27.csv \
+            --output output/middle/fast/ok/fast_chunk-27.csv \
+            --invalid output/middle/fast/not/fast_chunk-27-invalid.csv
+
+      - name: Commit and Push fast scan outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          for dir in output/middle/fast; do
+            if [ -d "$dir" ] && [ "$(ls -A $dir)" ]; then
+              git add "$dir"
+            fi
+          done
+
+          if git diff --cached --quiet; then
+            echo "No fast scan output updates."
+          else
+            git commit -m "Update fast scan outputs for chunk-27 [skip ci]"
+
+            MAX_RETRIES=5
+            COUNT=1
+
+            until git push --quiet; do
+              echo "Push failed (attempt $COUNT/$MAX_RETRIES), retrying..."
+
+              git stash push -m "auto-stash" || true
+              git pull --rebase --quiet || true
+              git stash pop || true
+
+              COUNT=$((COUNT+1))
+              if [ $COUNT -gt $MAX_RETRIES ]; then
+                echo "🔥 Push failed after $MAX_RETRIES attempts."
+                exit 1
+              fi
+
+              sleep 2
+            done
+
+            echo "Push fast scan outputs succeeded."
+          fi
+
+      - name: Run deep scan for chunk-27
+        run: |
+          mkdir -p output/middle/deep/ok output/middle/deep/not
+          python scripts/6.2_deep_scan.py \
+            --input output/middle/fast/ok/fast_chunk-27.csv \
+            --output output/middle/deep/ok/deep_chunk-27.csv \
+            --invalid output/middle/deep/not/deep_chunk-27-invalid.csv
+
+      - name: Commit and Push deep/final scan outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          for dir in output/middle/deep output/middle/final; do
+            if [ -d "$dir" ] && [ "$(ls -A $dir)" ]; then
+              git add "$dir"
+            fi
+          done
+
+          if git diff --cached --quiet; then
+            echo "No deep/final scan output updates."
+            exit 0
+          fi
+
+          git commit -m "Update deep/final scan outputs for chunk-27 [skip ci]"
+
+          MAX_RETRIES=5
+          COUNT=1
+
+          until git push --quiet; do
+            echo "Push failed (attempt $COUNT/$MAX_RETRIES), retrying..."
+
+            git stash push -m "auto-stash" || true
+            git pull --rebase --quiet || true
+            git stash pop || true
+
+            COUNT=$((COUNT+1))
+            if [ $COUNT -gt $MAX_RETRIES ]; then
+              echo "🔥 Push failed after $MAX_RETRIES attempts."
+              exit 1
+            fi
+
+            sleep 2
+          done
+
+          echo "Push deep/final scan outputs succeeded."
