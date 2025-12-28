@@ -117,7 +117,7 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
     sem = Semaphore(concurrency)
     rows = []
     with open(input_file, newline='', encoding='utf-8') as f:
-        reader = csv.DictReader(f, delimiter='\t')  # 你的输入是制表符分隔
+        reader = csv.DictReader(f)  # 默认逗号分隔
         fieldnames_in = reader.fieldnames  # 记录输入所有列名
         for row in reader:
             rows.append(row)
