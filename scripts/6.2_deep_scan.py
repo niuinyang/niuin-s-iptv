@@ -70,14 +70,6 @@ async def probe_one(row, sem, timeout):
                 # 标记为无视频流错误
                 result = dict(row)
                 result.update({
-                    "has_video": False,
-                    "has_audio": parsed["has_audio"],
-                    "video_codec": "",
-                    "width": "",
-                    "height": "",
-                    "frame_rate": "",
-                    "duration": "",
-                    "bit_rate": "",
                     "error": "no_video_stream",
                     "elapsed": elapsed
                 })
@@ -85,31 +77,22 @@ async def probe_one(row, sem, timeout):
             else:
                 result = dict(row)
                 result.update({
-                    "has_video": parsed["has_video"],
-                    "has_audio": parsed["has_audio"],
                     "video_codec": parsed["video_codec"] or "",
                     "width": parsed["width"] or "",
                     "height": parsed["height"] or "",
                     "frame_rate": parsed["frame_rate"] or "",
+                    "has_audio": parsed["has_audio"],
                     "duration": parsed["duration"] or "",
                     "bit_rate": parsed["bit_rate"] or "",
                     "error": "",
-                    "elapsed": elapsed  # 新增字段
+                    "elapsed": elapsed
                 })
                 return result, True
         else:
             result = dict(row)
             result.update({
-                "has_video": False,
-                "has_audio": False,
-                "video_codec": "",
-                "width": "",
-                "height": "",
-                "frame_rate": "",
-                "duration": "",
-                "bit_rate": "",
                 "error": res.get("error", "unknown"),
-                "elapsed": elapsed  # 新增字段
+                "elapsed": elapsed
             })
             return result, False
 
@@ -135,7 +118,7 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
         else:
             results_fail.append(result)
 
-    # 新增列
+    # 新增列，只写必要字段
     new_fields = [
         "ffprobe是否成功", "视频编码", "分辨率", "帧率", "音频", "ffprobe探测时间"
     ]
@@ -177,7 +160,7 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
         writer_fail.writeheader()
 
         for r in results_ok:
-            out_row = dict(r)
+            out_row = {k: r.get(k, "") for k in fieldnames_in}  # 只写输入原字段
             out_row["ffprobe是否成功"] = classify_error(r)
             out_row["视频编码"] = r.get("video_codec", "")
             out_row["分辨率"] = format_resolution(r)
@@ -187,12 +170,12 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
             writer_ok.writerow(out_row)
 
         for r in results_fail:
-            out_row = dict(r)
+            out_row = {k: r.get(k, "") for k in fieldnames_in}  # 只写输入原字段
             out_row["ffprobe是否成功"] = classify_error(r)
-            out_row["视频编码"] = r.get("video_codec", "")
-            out_row["分辨率"] = format_resolution(r)
-            out_row["帧率"] = r.get("frame_rate", "")
-            out_row["音频"] = format_audio(r)
+            out_row["视频编码"] = ""
+            out_row["分辨率"] = ""
+            out_row["帧率"] = ""
+            out_row["音频"] = ""
             out_row["ffprobe探测时间"] = f"{r.get('elapsed', 0):.3f}"
             writer_fail.writerow(out_row)
 
