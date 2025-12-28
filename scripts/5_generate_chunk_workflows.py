@@ -21,7 +21,7 @@ TEMPLATE = """name: Scan_{n}
 
 on:
   workflow_run:
-    workflows: ["1预处理-下载-合并-分割-生成"]
+    workflows: ["1-预处理-下载-转txt-合并-分割-生成"]
     types:
       - completed
   workflow_dispatch:
