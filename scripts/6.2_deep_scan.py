@@ -153,8 +153,8 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
 
     with open(output_ok, "w", newline='', encoding='utf-8') as f_ok, \
          open(output_fail, "w", newline='', encoding='utf-8') as f_fail:
-        writer_ok = csv.DictWriter(f_ok, fieldnames=fieldnames_out, delimiter='\t')
-        writer_fail = csv.DictWriter(f_fail, fieldnames=fieldnames_out, delimiter='\t')
+        writer_ok = csv.DictWriter(f_ok, fieldnames=fieldnames_out)  # 默认逗号分隔
+        writer_fail = csv.DictWriter(f_fail, fieldnames=fieldnames_out)  # 默认逗号分隔
 
         writer_ok.writeheader()
         writer_fail.writeheader()
