@@ -6,18 +6,14 @@ WORKFLOW_DIR = ".github/workflows"
 CHUNK_DIR = "output/middle/chunk"
 
 def clean_dir(path):
-    """删除目录内所有文件，但保留目录结构"""
     if not os.path.exists(path):
         return
     for root, dirs, files in os.walk(path):
         for f in files:
             os.remove(os.path.join(root, f))
 
-print("🧹 清空旧的 fast / deep / final 结果文件...")
-
+print("🧹 清空旧的 fast 结果文件...")
 clean_dir("output/middle/fast")
-clean_dir("output/middle/deep")
-clean_dir("output/middle/final")
 
 os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
@@ -47,7 +43,7 @@ jobs:
 
       - name: Install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
-        
+
       - name: Cache pip
         uses: actions/cache@v3
         with:
@@ -55,7 +51,7 @@ jobs:
           key: ${{{{ runner.os }}}}-pip-${{{{ hashFiles('requirements.txt') }}}}
           restore-keys: |
             ${{{{ runner.os }}}}-pip-
-            
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -72,10 +68,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add output/cache \\
-                  output/middle/fast \\
-                  output/middle/deep \\
-                  output/middle/final
+          for dir in output/cache output/middle/fast output/middle/deep output/middle/final; do
+            if [ -d "$dir" ] && [ "$(ls -A $dir)" ]; then
+              git add "$dir"
+            fi
+          done
 
           if git diff --cached --quiet; then
             echo "No output updates."
