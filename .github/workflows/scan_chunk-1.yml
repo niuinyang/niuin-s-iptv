@@ -56,10 +56,10 @@ jobs:
 
       - name: Commit and Push Outputs               # 提交并推送扫描结果
         run: |
-          git config user.name "github-actions[bot]"               # 设置提交用户名
-          git config user.email "github-actions[bot]@users.noreply.github.com" # 设置提交邮箱
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add output/cache \                                    # 添加缓存目录及扫描结果目录
+          git add output/cache \
                   output/middle/fast                   output/middle/deep                   output/middle/final
 
           if git diff --cached --quiet; then                      # 如果没有变更，输出提示并退出
