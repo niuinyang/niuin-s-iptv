@@ -1,0 +1,83 @@
+name: 2检查scan执行完毕合并
+
+on:
+  workflow_run:
+    workflows: 
+      - "1-预处理-下载-转txt-合并-分割-生成"     # 监听名为“1预处理-下载-合并-分割-生成”的workflow完成后触发
+    types:
+      - completed                 
+  workflow_dispatch:               # 支持手动触发
+
+permissions:
+  contents: write                 # 允许写权限，以便提交和推送代码
+
+jobs:
+  wait-for-scan:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+      REPO_OWNER: niuinyang
+      REPO_NAME: niuin_iptv
+
+    steps:
+      - uses: actions/checkout@v3   # 签出代码仓库
+
+      - name: Setup Python           # 安装Python环境
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies   # 安装Python依赖包 aiohttp 和 requests
+        run: pip install aiohttp requests
+
+      - name: Run scan watcher (async & realtime output)  # 运行异步检测脚本，实时输出日志
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+          REPO_OWNER: niuinyang
+          REPO_NAME: niuin-s-iptv
+          PYTHONUNBUFFERED: "1"   # 使Python实时打印日志
+        run: |
+          python -u scripts/6.4_check-scan-finished-async.py
+
+  delete_workflows:
+    needs: wait-for-scan           # 依赖上一个作业完成后才执行
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository    # 签出代码仓库
+        uses: actions/checkout@v4
+
+      - name: Delete scan_chunk workflow files only  # 仅删除以 scan_chunk 开头的 workflow 文件
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+        run: |
+          # 查找所有匹配 scan_chunk*.yml 的 workflow 文件
+          FILES_SCAN_CHUNK=$(find .github/workflows -type f -name "scan_chunk*.yml" || true)
+          if [ -z "$FILES_SCAN_CHUNK" ]; then
+            echo "No matching sash-chunk workflow files found."
+            exit 0
+          fi
+          echo "Deleting files:"
+          echo "$FILES_SCAN_CHUNK"
+          git rm $FILES_SCAN_CHUNK || true
+
+          # 配置提交用户信息
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 提交删除操作，如果无变动则忽略
+          git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
+
+          # 设置远程仓库地址，带token用于推送权限
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin_iptv.git
+
+          # 重试机制，最多重试3次，确保推送成功
+          n=0
+          until [ $n -ge 3 ]
+          do
+            git pull --rebase origin main
+            git push origin HEAD:main && break
+            n=$((n+1))
+            echo "Push failed, retry $n..."
+            sleep 5
+          done
