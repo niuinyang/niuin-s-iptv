@@ -62,7 +62,15 @@ jobs:
             --input output/middle/chunk/{n}.csv \\
             --output output/middle/fast/ok/fast_{n}.csv \\
             --invalid output/middle/fast/not/fast_{n}-invalid.csv
-
+            
+      - name: Run deep scan for {n}
+        run: |
+          mkdir -p output/middle/deep/ok output/middle/deep/not
+          python scripts/6.2_deep_scan.py \\
+            --input output/middle/fast/ok/fast_{n}.csv \\
+            --output output/middle/deep/ok/deep_{n}.csv \\
+            --invalid output/middle/deep/not/deep_{n}-invalid.csv
+            
       - name: Commit and Push Outputs
         run: |
           git config user.name "github-actions[bot]"
