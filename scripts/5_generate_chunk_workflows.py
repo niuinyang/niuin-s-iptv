@@ -6,14 +6,18 @@ WORKFLOW_DIR = ".github/workflows"
 CHUNK_DIR = "output/middle/chunk"
 
 def clean_dir(path):
+    """删除目录内所有文件，但保留所有子目录结构"""
     if not os.path.exists(path):
         return
     for root, dirs, files in os.walk(path):
         for f in files:
             os.remove(os.path.join(root, f))
 
-print("🧹 清空旧的 fast 结果文件...")
+print("🧹 清空旧的 fast / deep / final 结果文件...")
+
 clean_dir("output/middle/fast")
+clean_dir("output/middle/deep")
+clean_dir("output/middle/final")
 
 os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
@@ -62,7 +66,45 @@ jobs:
             --input output/middle/chunk/{n}.csv \\
             --output output/middle/fast/ok/fast_{n}.csv \\
             --invalid output/middle/fast/not/fast_{n}-invalid.csv
-            
+
+      - name: Commit and Push fast scan outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          for dir in output/middle/fast; do
+            if [ -d "$dir" ] && [ "$(ls -A $dir)" ]; then
+              git add "$dir"
+            fi
+          done
+
+          if git diff --cached --quiet; then
+            echo "No fast scan output updates."
+          else
+            git commit -m "Update fast scan outputs for {n} [skip ci]"
+
+            MAX_RETRIES=5
+            COUNT=1
+
+            until git push --quiet; do
+              echo "Push failed (attempt $COUNT/$MAX_RETRIES), retrying..."
+
+              git stash push -m "auto-stash" || true
+              git pull --rebase --quiet || true
+              git stash pop || true
+
+              COUNT=$((COUNT+1))
+              if [ $COUNT -gt $MAX_RETRIES ]; then
+                echo "🔥 Push failed after $MAX_RETRIES attempts."
+                exit 1
+              fi
+
+              sleep 2
+            done
+
+            echo "Push fast scan outputs succeeded."
+          fi
+
       - name: Run deep scan for {n}
         run: |
           mkdir -p output/middle/deep/ok output/middle/deep/not
@@ -70,24 +112,24 @@ jobs:
             --input output/middle/fast/ok/fast_{n}.csv \\
             --output output/middle/deep/ok/deep_{n}.csv \\
             --invalid output/middle/deep/not/deep_{n}-invalid.csv
-            
-      - name: Commit and Push Outputs
+
+      - name: Commit and Push deep/final scan outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          for dir in output/cache output/middle/fast output/middle/deep output/middle/final; do
+          for dir in output/middle/deep output/middle/final; do
             if [ -d "$dir" ] && [ "$(ls -A $dir)" ]; then
               git add "$dir"
             fi
           done
 
           if git diff --cached --quiet; then
-            echo "No output updates."
+            echo "No deep/final scan output updates."
             exit 0
           fi
 
-          git commit -m "Update scan outputs for {n} [skip ci]"
+          git commit -m "Update deep/final scan outputs for {n} [skip ci]"
 
           MAX_RETRIES=5
           COUNT=1
@@ -108,7 +150,7 @@ jobs:
             sleep 2
           done
 
-          echo "Push outputs succeeded."
+          echo "Push deep/final scan outputs succeeded."
 """
 
 print("🧹 清理旧的 workflow 文件...")
