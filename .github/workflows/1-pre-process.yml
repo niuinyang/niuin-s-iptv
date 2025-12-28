@@ -1,233 +1,136 @@
 name: 1预处理-下载-转txt-合并-分割-生成
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '05 16 * * *'  # UTC 16:05 = 北京时间 00:05
+    # 统一用你最早的时间点触发即可，后面全部靠 needs 顺序跑
+    - cron: '05 16 * * *'   # UTC 16:05 = 北京时间 00:05
 
 permissions:
   contents: write
 
 jobs:
-  download_all_m3u:
-    name: 下载全部M3U
+  # =====================================================
+  # 1️⃣ 下载 M3U
+  # =====================================================
+  job1_download_all_m3u:
+    name: 1_下载源文件
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
-      - name: Ensure output directories exist
-        run: |
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - run: |
           mkdir -p input/source
           mkdir -p input/download/my
           mkdir -p input/download/net
           mkdir -p scripts
 
-      - name: Run M3U download script
-        run: python scripts/1_download_m3u.py
+      - run: python scripts/1_download_m3u.py
 
-      - name: Commit & Push results
-        run: |
+      - run: chmod -R u+rw input/download
+
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
           git add input/download
-
           if git diff --cached --quiet; then
             echo "✅ No changes to commit."
             exit 0
           fi
-
           git commit -m "Update M3U sources [ci skip]"
-
-          if [ -n "$(git status --porcelain)" ]; then
-            git stash push -m "ci-stash-before-pull"
-            git pull --rebase origin main
-            git stash pop || echo "No stash to pop"
-          else
-            git pull --rebase origin main
-          fi
+          git pull --rebase origin main
           git push origin main
 
-  m3u_to_txt:
-    name: M3U 转 TXT
+  # =====================================================
+  # 2️⃣ M3U → TXT
+  # =====================================================
+  job2_m3u_to_txt:
+    name: 2_M3U转TXT
+    needs: job1_download_all_m3u
     runs-on: ubuntu-latest
-    needs: download_all_m3u
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install chardet
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
-      - name: Run M3U to TXT conversion script
-        run: python scripts/2_m3u_to_txt.py
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Commit & Push results
-        run: |
+      - run: |
+          mkdir -p input/download/net/original
+          mkdir -p input/download/net/txt
+
+      - run: python scripts/2_m3u_to_txt.py
+
+      - run: chmod -R u+rw input/download/net/txt
+
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/
-          if ! git diff --cached --quiet; then
-            git commit -m "🤖 Convert M3U to TXT $(date '+%Y-%m-%d %H:%M:%S')"
-            if [ -n "$(git status --porcelain)" ]; then
-              git stash push -m "ci-stash-before-pull"
-              git pull --rebase origin main
-              git stash pop || echo "No stash to pop"
-            else
-              git pull --rebase origin main
-            fi
-            git push origin main
-          else
+          git add input/download/net/txt
+          if git diff --cached --quiet; then
             echo "✅ No changes to commit."
+            exit 0
           fi
+          git commit -m "更新频道文件解析输出 [ci skip]"
+          git pull --rebase origin main
+          git push origin main
 
-  merge_local_sources:
-    name: 合并网络源
+  # =====================================================
+  # 3️⃣ 合并源
+  # =====================================================
+  job3_merge_sources:
+    name: 3_合并源
+    needs: job2_m3u_to_txt
     runs-on: ubuntu-latest
-    needs: m3u_to_txt
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install requests chardet
-
-      - name: Run merge script
-        run: python scripts/3_merge_local_sources.py
-
-      - name: Commit & Push results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/
-          if ! git diff --cached --quiet; then
-            git commit -m "🤖 Auto merge local sources $(date '+%Y-%m-%d %H:%M:%S')"
-            if [ -n "$(git status --porcelain)" ]; then
-              git stash push -m "ci-stash-before-pull"
-              git pull --rebase origin main
-              git stash pop || echo "No stash to pop"
-            else
-              git pull --rebase origin main
-            fi
-            git push origin main
-          else
-            echo "✅ No changes to commit."
-          fi
-
-  split_merge_total:
-    name: 分割merge_total_csv
-    runs-on: ubuntu-latest
-    needs: merge_local_sources
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/cache@v3
         with:
-          fetch-depth: 0
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: pip install chardet
-
-      - name: Run split script
-        run: python scripts/4_split_merge.py
-
-      - name: Commit & Push chunks
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/middle/chunk/
-          if ! git diff --cached --quiet; then
-            git commit -m "Auto split merge_total.csv into chunks [ci skip]"
-            if [ -n "$(git status --porcelain)" ]; then
-              git stash push -m "ci-stash-before-pull"
-              git pull --rebase origin main
-              git stash pop || echo "No stash to pop"
-            else
-              git pull --rebase origin main
-            fi
-            git push https://${PAT_TOKEN}@github.com/${{ github.repository }}.git HEAD:refs/heads/main
-          else
-            echo "✅ No changes to commit."
-          fi
-
-  generate_chunk_workflows:
-    name: 生成chunk workflows
-    runs-on: ubuntu-latest
-    needs: split_merge_total
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-
-      - name: Set up Git user and PAT
-        env:
-          PUSH_TOKEN1: ${{ secrets.PUSH_TOKEN1 }}
-          REPO: ${{ github.repository }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN1}@github.com/${REPO}.git
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: pip install chardet pillow tqdm requests
-
-      - name: Generate and Push workflows
-        run: |
-          python scripts/5_generate_chunk_workflows.py
-          git add .github/workflows output/middle
-          if ! git diff --cached --quiet; then
-            git commit -m "ci: auto-generate deep validation workflows"
-            if [ -n "$(git status --porcelain)" ]; then
-              git stash push -m "ci-stash-before-pull"
-              git pull --rebase origin main
-              git stash pop || echo "No stash to pop"
-            else
-              git pull --rebase origin main
-            fi
-            git push origin main
-          else
-            echo "无更改，跳过提交和推送"
-          fi
+      - run: |
+          python -m pip install --upgrade pip
