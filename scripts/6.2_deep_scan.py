@@ -172,10 +172,10 @@ async def deep_scan(input_file, output_ok, output_fail, concurrency, timeout):
         for r in results_fail:
             out_row = {k: r.get(k, "") for k in fieldnames_in}  # 只写输入原字段
             out_row["ffprobe是否成功"] = classify_error(r)
-            out_row["视频编码"] = ""
-            out_row["分辨率"] = ""
-            out_row["帧率"] = ""
-            out_row["音频"] = ""
+            out_row["视频编码"] = r.get("video_codec", "")
+            out_row["分辨率"] = format_resolution(r)
+            out_row["帧率"] = r.get("frame_rate", "")
+            out_row["音频"] = format_audio(r)
             out_row["ffprobe探测时间"] = f"{r.get('elapsed', 0):.3f}"
             writer_fail.writerow(out_row)
 
