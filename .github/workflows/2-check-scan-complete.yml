@@ -69,7 +69,7 @@ jobs:
           git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
 
           # 设置远程仓库地址，带token用于推送权限
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin_iptv.git
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
 
           # 重试机制，最多重试3次，确保推送成功
           n=0
