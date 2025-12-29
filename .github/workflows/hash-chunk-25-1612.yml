@@ -1,0 +1,48 @@
+name: hash-chunk-25-1612
+
+on:
+  workflow_run:
+    workflows: ["A生成并执行缓存workflow"]
+    types:
+      - completed
+  workflow_dispatch:
+    inputs:
+      manual_count:
+        description: 'Manual trigger count'
+        required: false
+        default: '1'
+
+permissions:
+  contents: write
+
+jobs:
+  run-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          pip install pillow tqdm imagehash
+
+      - name: Run cache script
+        run: |
+          python scripts/B_cache.py --input output/middle/chunk/chunk-25.csv --timepoint 1612 --chunk_id 25
+
+      - name: Push cache changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/cache/
+          git commit -m "Update cache (manual record + chunk output)" || echo "No changes to commit"
+          git pull --rebase origin main || true
+          git push origin HEAD:main || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
