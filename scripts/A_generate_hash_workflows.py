@@ -99,7 +99,17 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-          pip install pillow tqdm imagehash
+
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run cache script
         run: |
