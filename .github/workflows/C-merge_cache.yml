@@ -39,6 +39,41 @@ jobs:
       - name: Pull latest changes before commit
         run: git pull --rebase --autostash origin main
 
+      # ========= 新增 step 1：先 add 并校验 =========
+      - name: Stage merged cache files (verify)
+        run: |
+          git add output/cache/total_cache.json output/cache/merge_record.json || true
+
+          if git diff --cached --quiet; then
+            echo "❌ 合并缓存文件未成功加入暂存区，终止后续操作"
+            exit 1
+          else
+            echo "✅ 合并缓存文件已成功加入暂存区"
+          fi
+
+      # ========= 新增 step 2：add 成功后再清理旧 chunk =========
+      - name: Cleanup chunk cache older than 3 days
+        run: |
+          set -e
+
+          BASE_DIR="output/cache/chunk"
+          KEEP_DAYS=3
+
+          [ -d "$BASE_DIR" ] || exit 0
+
+          THRESHOLD_DATE=$(date -d "-${KEEP_DAYS} days" +"%Y%m%d")
+          echo "🧹 清理 $THRESHOLD_DATE 之前的 chunk 缓存目录"
+
+          for dir in "$BASE_DIR"/*; do
+            [ -d "$dir" ] || continue
+            name=$(basename "$dir")
+
+            if [[ "$name" =~ ^[0-9]{8}$ ]] && [ "$name" -lt "$THRESHOLD_DATE" ]; then
+              echo "删除旧缓存目录: $dir"
+              rm -rf "$dir"
+            fi
+          done
+
       - name: Add and commit merged cache files
         run: |
           git add output/cache/total_cache.json output/cache/merge_record.json || true
