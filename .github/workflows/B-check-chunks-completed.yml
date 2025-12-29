@@ -1,9 +1,9 @@
-name: B检查缓存workflow执行完毕合并
+name: B_检查缓存workflow执行完毕合并
 
 on:
   workflow_run:
     workflows: 
-      - "A生成并执行缓存workflow"   # 监听名为“A生成并执行缓存workflow”的workflow完成后触发
+      - "A_生成并执行缓存workflow"   # 监听名为“A生成并执行缓存workflow”的workflow完成后触发
     types:
       - completed                 # 只在该workflow执行完成后触发
   workflow_dispatch:              # 支持手动触发
