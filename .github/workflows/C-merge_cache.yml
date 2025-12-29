@@ -29,7 +29,7 @@ jobs:
           pip install -r requirements.txt || true
 
       - name: Run merge cache script
-        run: python scripts/C_merge_cache.py
+        run: python scripts/D_merge_cache.py
 
       - name: Configure Git user
         run: |
