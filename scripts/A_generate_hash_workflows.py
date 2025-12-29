@@ -103,7 +103,7 @@ jobs:
 
       - name: Run cache script
         run: |
-          python scripts/B_1cache.py --input {CHUNK_DIR}/{chunk_name} --timepoint {time_key} --chunk_id {chunk_id}
+          python scripts/B_cache.py --input {CHUNK_DIR}/{chunk_name} --timepoint {time_key} --chunk_id {chunk_id}
 
       - name: Push cache changes
         run: |
