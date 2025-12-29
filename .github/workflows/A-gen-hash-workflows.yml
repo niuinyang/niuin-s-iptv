@@ -1,0 +1,71 @@
+
+name: A生成并执行缓存workflow
+
+on:
+  workflow_dispatch:
+  schedule:
+    #- cron: '*/5 * * * *'  # 每5分钟触发一次
+    - cron: '11 0 * * *'
+    - cron: '12 8 * * *'
+    - cron: '13 13 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    outputs:
+      timepoint: ${{ steps.set_tp.outputs.timepoint }}
+      commit_sha: ${{ github.sha }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt || echo "No requirements.txt found"
+
+      - name: Run generate_hash_workflows.py
+        run: python scripts/A_generate_hash_workflows.py
+
+      - name: Detect timepoint (Beijing Time)
+        id: set_tp
+        run: |
+          TIME_HM=$(date -u -d "+8 hour" +"%H%M")
+          if [ "$TIME_HM" = "0811" ]; then TP="0811"
+          elif [ "$TIME_HM" = "1612" ]; then TP="1612"
+          elif [ "$TIME_HM" = "2113" ]; then TP="2113"
+          else TP="0811"
+          fi
+          echo "timepoint=$TP" >> $GITHUB_OUTPUT
+          echo "Detected timepoint: $TP"
+
+      - name: Commit generated chunk workflows and push
+        id: push_chunk
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .github/workflows output/cache/manual_trigger_record.json
+          git diff --cached --quiet || git commit -m "Add/update generated chunk workflows"
+
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin_iptv.git
+
+          n=0
+          until [ $n -ge 3 ]
+          do
+            git push origin HEAD:main && break
+            n=$((n+1))
+            echo "Push failed, retry $n..."
+            sleep 5
+          done
