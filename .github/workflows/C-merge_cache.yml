@@ -3,19 +3,21 @@ name: C-合并缓存  # workflow名称
 on:
   workflow_run:
     workflows:
-      - "B-检查缓存workflow执行完毕合并"  # 监听此workflow执行完毕后触发本workflow
+      - "B-检查缓存workflow执行完毕合并"
     types:
-      - completed                   # 仅在被监听workflow完成后触发
-  workflow_dispatch:               # 支持手动触发
+      - completed
+  workflow_dispatch:
 
 jobs:
   merge-and-push:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository (full history)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.PUSH_TOKEN1 }}
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
@@ -39,10 +41,8 @@ jobs:
       - name: Pull latest changes before commit
         run: git pull --rebase --autostash origin main
 
-      # ========= 修改 step 1：先检测文件是否存在，再检测是否有变动 =========
       - name: Stage merged cache files (verify)
         run: |
-          # 先检测文件是否存在
           if [ ! -f output/cache/total_cache.json ] || [ ! -f output/cache/merge_record.json ]; then
             echo "❌ 缓存文件不存在，跳过提交步骤"
             exit 0
@@ -50,22 +50,18 @@ jobs:
 
           git add output/cache/total_cache.json output/cache/merge_record.json || true
 
-          # 检查是否有变动
           if git diff --cached --quiet; then
-            echo "❌ 合并缓存文件未成功加入暂存区或无改动，终止后续操作"
+            echo "❌ 无改动，跳过后续操作"
             exit 0
           else
-            echo "✅ 合并缓存文件已成功加入暂存区"
+            echo "✅ 检测到缓存文件变动"
           fi
 
-      # ========= 保持原有清理逻辑 =========
       - name: Cleanup chunk cache older than 3 days
         run: |
           set -e
-
           BASE_DIR="output/cache/chunk"
           KEEP_DAYS=3
-
           [ -d "$BASE_DIR" ] || exit 0
 
           THRESHOLD_DATE=$(date -d "-${KEEP_DAYS} days" +"%Y%m%d")
@@ -74,33 +70,29 @@ jobs:
           for dir in "$BASE_DIR"/*; do
             [ -d "$dir" ] || continue
             name=$(basename "$dir")
-
             if [[ "$name" =~ ^[0-9]{8}$ ]] && [ "$name" -lt "$THRESHOLD_DATE" ]; then
-              echo "删除旧缓存目录: $dir"
               rm -rf "$dir"
             fi
           done
 
       - name: Add and commit merged cache files
         run: |
-          # 再次检测文件是否存在
-          if [ ! -f output/cache/total_cache.json ] || [ ! -f output/cache/merge_record.json ]; then
-            echo "❌ 缓存文件不存在，跳过提交"
-            exit 0
-          fi
-
           git add output/cache/total_cache.json output/cache/merge_record.json || true
           if ! git diff --cached --quiet; then
             git commit -m "自动合并缓存数据 $(date +'%Y-%m-%d %H:%M:%S')"
           else
-            echo "无变动，跳过提交。"
+            echo "无变动，跳过提交"
             exit 0
           fi
 
       - name: Push changes with retry
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
         run: |
           MAX_RETRIES=3
           count=0
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
+
           until [ $count -ge $MAX_RETRIES ]
           do
             git push origin main && break
@@ -108,7 +100,7 @@ jobs:
             echo "Push失败，重试第 $count 次..."
             sleep 5
           done
+
           if [ $count -eq $MAX_RETRIES ]; then
-            echo "Push操作失败，达到最大重试次数 $MAX_RETRIES"
             exit 1
           fi
