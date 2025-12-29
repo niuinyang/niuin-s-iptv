@@ -37,7 +37,7 @@ jobs:
           REPO_NAME: niuin-s-iptv
           PYTHONUNBUFFERED: "1"   # 使Python实时打印日志
         run: |
-          python -u scripts/B_check-chunk-finished-async.py
+          python -u scripts/C_check-chunk-finished-async.py
 
   delete_workflows:
     needs: wait-for-chunks           # 依赖上一个作业完成后才执行
