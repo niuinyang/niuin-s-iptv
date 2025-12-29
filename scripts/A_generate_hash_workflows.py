@@ -71,7 +71,7 @@ def generate_workflow(chunk_name, time_key, time_str, manual_count):
 
 on:
   workflow_run:
-    workflows: ["A生成并执行缓存workflow"]
+    workflows: ["A_生成并执行缓存workflow"]
     types:
       - completed
   workflow_dispatch:
