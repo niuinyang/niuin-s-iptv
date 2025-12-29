@@ -24,11 +24,16 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: |
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - run: |
           python -m pip install --upgrade pip
-          pip install zoneinfo || true
-          pip install -r requirements.txt || true
+          pip install -r requirements.txt
 
       - name: Run merge cache script
         run: python scripts/D_merge_cache.py
