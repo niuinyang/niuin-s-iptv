@@ -39,19 +39,26 @@ jobs:
       - name: Pull latest changes before commit
         run: git pull --rebase --autostash origin main
 
-      # ========= 新增 step 1：先 add 并校验 =========
+      # ========= 修改 step 1：先检测文件是否存在，再检测是否有变动 =========
       - name: Stage merged cache files (verify)
         run: |
+          # 先检测文件是否存在
+          if [ ! -f output/cache/total_cache.json ] || [ ! -f output/cache/merge_record.json ]; then
+            echo "❌ 缓存文件不存在，跳过提交步骤"
+            exit 0
+          fi
+
           git add output/cache/total_cache.json output/cache/merge_record.json || true
 
+          # 检查是否有变动
           if git diff --cached --quiet; then
-            echo "❌ 合并缓存文件未成功加入暂存区，终止后续操作"
-            exit 1
+            echo "❌ 合并缓存文件未成功加入暂存区或无改动，终止后续操作"
+            exit 0
           else
             echo "✅ 合并缓存文件已成功加入暂存区"
           fi
 
-      # ========= 新增 step 2：add 成功后再清理旧 chunk =========
+      # ========= 保持原有清理逻辑 =========
       - name: Cleanup chunk cache older than 3 days
         run: |
           set -e
@@ -76,6 +83,12 @@ jobs:
 
       - name: Add and commit merged cache files
         run: |
+          # 再次检测文件是否存在
+          if [ ! -f output/cache/total_cache.json ] || [ ! -f output/cache/merge_record.json ]; then
+            echo "❌ 缓存文件不存在，跳过提交"
+            exit 0
+          fi
+
           git add output/cache/total_cache.json output/cache/merge_record.json || true
           if ! git diff --cached --quiet; then
             git commit -m "自动合并缓存数据 $(date +'%Y-%m-%d %H:%M:%S')"
