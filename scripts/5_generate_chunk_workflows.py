@@ -74,7 +74,16 @@ jobs:
             --input output/middle/fast/ok/fast_{n}.csv \\
             --output output/middle/deep/ok/deep_{n}.csv \\
             --invalid output/middle/deep/not/deep_{n}-invalid.csv
-
+    
+      - name: Run final scan for {n}
+        run: |
+          mkdir -p output/middle/final/ok output/middle/final/not
+          python scripts/6.3_final_scan.py \
+            --input output/middle/deep/ok/deep_{n}.csv \
+            --output output/middle/final/ok/final_{n}.csv \
+            --invalid output/middle/final/not/final_{n}-invalid.csv \
+            --cache_dir output/cache
+            
       - name: Commit and Push Outputs
         run: |
           git config user.name "github-actions[bot]"
@@ -82,8 +91,8 @@ jobs:
 
           git add output/middle/fast \\
                   output/middle/deep \\
-                  #output/middle/final \\
-                  #output/cache
+                  output/middle/final \\
+                  output/cache
 
           if git diff --cached --quiet; then
             echo "No output updates."
