@@ -1,4 +1,3 @@
-
 name: A生成并执行缓存workflow
 
 on:
@@ -59,7 +58,7 @@ jobs:
           git add .github/workflows output/cache/manual_trigger_record.json
           git diff --cached --quiet || git commit -m "Add/update generated chunk workflows"
 
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin_iptv.git
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
 
           n=0
           until [ $n -ge 3 ]
