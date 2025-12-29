@@ -1,0 +1,83 @@
+name: B检查缓存workflow执行完毕合并
+
+on:
+  workflow_run:
+    workflows: 
+      - "A生成并执行缓存workflow"   # 监听名为“A生成并执行缓存workflow”的workflow完成后触发
+    types:
+      - completed                 # 只在该workflow执行完成后触发
+  workflow_dispatch:              # 支持手动触发
+
+permissions:
+  contents: write                 # 允许写权限，以便提交和推送代码
+
+jobs:
+  wait-for-chunks:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+      REPO_OWNER: niuinyang
+      REPO_NAME: niuin-s-iptv
+
+    steps:
+      - uses: actions/checkout@v3   # 签出代码仓库
+
+      - name: Setup Python           # 安装Python环境
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies   # 安装Python依赖包 aiohttp 和 requests
+        run: pip install aiohttp requests
+
+      - name: Run chunk watcher (async & realtime output)  # 运行异步检测脚本，实时输出日志
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+          REPO_OWNER: niuinyang
+          REPO_NAME: niuin-s-iptv
+          PYTHONUNBUFFERED: "1"   # 使Python实时打印日志
+        run: |
+          python -u scripts/B_check-chunk-finished-async.py
+
+  delete_workflows:
+    needs: wait-for-chunks           # 依赖上一个作业完成后才执行
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository    # 签出代码仓库
+        uses: actions/checkout@v4
+
+      - name: Delete hash-chunk workflow files only  # 仅删除以 hash-chunk 开头的 workflow 文件
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+        run: |
+          # 查找所有匹配 hash-chunk*.yml 的 workflow 文件
+          FILES_HASH_CHUNK=$(find .github/workflows -type f -name "hash-chunk*.yml" || true)
+          if [ -z "$FILES_HASH_CHUNK" ]; then
+            echo "No matching hash-chunk workflow files found."
+            exit 0
+          fi
+          echo "Deleting files:"
+          echo "$FILES_HASH_CHUNK"
+          git rm $FILES_HASH_CHUNK || true
+
+          # 配置提交用户信息
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 提交删除操作，如果无变动则忽略
+          git commit -m "Delete hash-chunk workflow files" || echo "No changes to commit"
+
+          # 设置远程仓库地址，带token用于推送权限
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
+
+          # 重试机制，最多重试3次，确保推送成功
+          n=0
+          until [ $n -ge 3 ]
+          do
+            git pull --rebase origin main
+            git push origin HEAD:main && break
+            n=$((n+1))
+            echo "Push failed, retry $n..."
+            sleep 5
+          done
