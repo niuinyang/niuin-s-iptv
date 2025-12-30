@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# scripts/4.2deep_scan.py
+# scripts/6.2deep_scan.py
 import asyncio
 import csv
 import json
