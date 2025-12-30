@@ -19,9 +19,6 @@ GRAB_TIMEPOINTS = [1, 5, 10]   # 多时间点抓帧
 GRAB_RETRY = 2                # 每个时间点重试次数
 # ==========================================
 
-CACHE_DIR = "output/cache"
-TOTAL_CACHE_FILE = os.path.join(CACHE_DIR, "total_cache.json")
-
 HASH_SIZE = 8
 HASH_BITS = HASH_SIZE * HASH_SIZE
 
@@ -102,10 +99,10 @@ async def grab_frame_multi(url, timepoints, retry=2, timeout=15):
 
 # ----------- 缓存读取 -----------
 
-def load_cache_advanced():
-    if not os.path.exists(TOTAL_CACHE_FILE):
+def load_cache_advanced(total_cache_file):
+    if not os.path.exists(total_cache_file):
         return {}, {}
-    with open(TOTAL_CACHE_FILE, "r", encoding="utf-8") as f:
+    with open(total_cache_file, "r", encoding="utf-8") as f:
         raw = json.load(f)
 
     cache = {}
@@ -158,7 +155,6 @@ async def process_one(url, sem, cache, threshold=0.95, timeout=20):
                 "similarity": 0.0
             }
 
-        # 计算实时帧 hash
         real_hashes = []
         for _, img in frames:
             real_hashes.append({
@@ -212,12 +208,16 @@ def main():
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--invalid", required=True)
+    parser.add_argument("--cache_dir", default="output/cache",
+                        help="缓存目录，内含 total_cache.json")
     parser.add_argument("--concurrency", type=int, default=6)
     parser.add_argument("--timeout", type=int, default=20)
     args = parser.parse_args()
 
-    os.makedirs(CACHE_DIR, exist_ok=True)
-    cache, _ = load_cache_advanced()
+    total_cache_file = os.path.join(args.cache_dir, "total_cache.json")
+    os.makedirs(args.cache_dir, exist_ok=True)
+
+    cache, _ = load_cache_advanced(total_cache_file)
 
     with open(args.input, newline='', encoding="utf-8") as f:
         urls = [r["地址"] for r in csv.DictReader(f) if r.get("地址")]
@@ -227,6 +227,7 @@ def main():
     )
 
     # 输出逻辑保持不变（略）
+
 
 if __name__ == "__main__":
     main()
