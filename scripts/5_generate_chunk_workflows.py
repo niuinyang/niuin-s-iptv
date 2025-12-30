@@ -78,10 +78,10 @@ jobs:
       - name: Run final scan for {n}
         run: |
           mkdir -p output/middle/final/ok output/middle/final/not
-          python scripts/6.3_final_scan.py \
-            --input output/middle/deep/ok/deep_{n}.csv \
-            --output output/middle/final/ok/final_{n}.csv \
-            --invalid output/middle/final/not/final_{n}-invalid.csv \
+          python scripts/6.3_final_scan.py \\
+            --input output/middle/deep/ok/deep_{n}.csv \\
+            --output output/middle/final/ok/final_{n}.csv \\
+            --invalid output/middle/final/not/final_{n}-invalid.csv \\
             --cache_dir output/cache
             
       - name: Commit and Push Outputs
