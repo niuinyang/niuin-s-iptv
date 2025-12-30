@@ -1,232 +1,131 @@
 #!/usr/bin/env python3
-# scripts/6.3final_scan_advanced.py
-
 import argparse
-import csv
 import asyncio
-from asyncio.subprocess import create_subprocess_exec, PIPE
-from PIL import Image
-import io
-from tqdm.asyncio import tqdm_asyncio
-from asyncio import Semaphore
+import csv
 import json
 import os
-import chardet
-import numpy as np
+from io import BytesIO
+from PIL import Image
+import imagehash
+from asyncio.subprocess import create_subprocess_exec, PIPE
+from tqdm.asyncio import tqdm_asyncio
 
-# ================= 新增配置 =================
-GRAB_TIMEPOINTS = [1, 5, 10]   # 多时间点抓帧
-GRAB_RETRY = 2                # 每个时间点重试次数
-# ==========================================
+# 多时间点截帧 (秒)
+GRAB_TIMES = [1, 5, 10]
 
-HASH_SIZE = 8
-HASH_BITS = HASH_SIZE * HASH_SIZE
+# 汉明距离阈值
+HAMMING_THRESHOLD = 5
 
+def load_fake_hashes(path):
+    if not os.path.exists(path):
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data.get("typical_fake_hashes", [])
 
-# ----------- 图像哈希计算函数 -----------
+def save_fake_hashes(path, fake_hashes):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"typical_fake_hashes": fake_hashes}, f, indent=2, ensure_ascii=False)
 
-def image_to_ahash_bytes(img_bytes, hash_size=HASH_SIZE):
-    im = Image.open(io.BytesIO(img_bytes)).convert('L').resize(
-        (hash_size, hash_size), Image.Resampling.LANCZOS)
-    pixels = list(im.getdata())
-    avg = sum(pixels) / len(pixels)
-    bits = 0
-    for p in pixels:
-        bits = (bits << 1) | (1 if p > avg else 0)
-    return bits
+def hamming_dist(s1, s2):
+    """计算两个16进制字符串的汉明距离"""
+    b1 = int(s1, 16)
+    b2 = int(s2, 16)
+    x = b1 ^ b2
+    return bin(x).count("1")
 
-
-def image_to_phash_bytes(img_bytes, hash_size=HASH_SIZE):
-    im = Image.open(io.BytesIO(img_bytes)).convert('L').resize(
-        (32, 32), Image.Resampling.LANCZOS)
-    pixels = np.array(im, dtype=np.float32)
-    dct = np.round(np.real(np.fft.fft2(pixels)))
-    dct_low = dct[:hash_size, :hash_size]
-    avg = dct_low[1:, 1:].mean()
-    bits = 0
-    for v in dct_low.flatten():
-        bits = (bits << 1) | (1 if v > avg else 0)
-    return bits
-
-
-def image_to_dhash_bytes(img_bytes, hash_size=HASH_SIZE):
-    im = Image.open(io.BytesIO(img_bytes)).convert('L').resize(
-        (hash_size + 1, hash_size), Image.Resampling.LANCZOS)
-    pixels = list(im.getdata())
-    bits = 0
-    for row in range(hash_size):
-        for col in range(hash_size):
-            l = pixels[row * (hash_size + 1) + col]
-            r = pixels[row * (hash_size + 1) + col + 1]
-            bits = (bits << 1) | (1 if l > r else 0)
-    return bits
-
-
-def hamming(a, b):
-    return (a ^ b).bit_count()
-
-
-# ----------- 抓帧 -----------
-
-async def grab_frame(url, at_time=1, timeout=15):
+async def grab_frame(url, timepoint):
+    # 用ffmpeg抓帧命令，输出png到stdout
     cmd = [
-        "ffmpeg", "-ss", str(at_time), "-i", url,
-        "-frames:v", "1", "-f", "image2", "-vcodec", "mjpeg",
-        "pipe:1", "-hide_banner", "-loglevel", "error"
+        "ffmpeg", "-ss", str(timepoint), "-i", url,
+        "-frames:v", "1", "-f", "image2pipe", "-vcodec", "png", "-"
     ]
-    try:
-        proc = await create_subprocess_exec(*cmd, stdout=PIPE, stderr=PIPE)
-        try:
-            out, err = await asyncio.wait_for(proc.communicate(), timeout)
-        except asyncio.TimeoutError:
-            proc.kill()
-            return None, "timeout"
-        return (out, "") if out else (None, err.decode(errors="ignore"))
-    except FileNotFoundError:
-        return None, "ffmpeg_not_found"
+    proc = await create_subprocess_exec(*cmd, stdout=PIPE, stderr=PIPE)
+    stdout, stderr = await proc.communicate()
+    if proc.returncode != 0 or not stdout:
+        return None
+    return stdout
 
+def calc_hashes(image_bytes):
+    image = Image.open(BytesIO(image_bytes))
+    phash = str(imagehash.phash(image))
+    ahash = str(imagehash.average_hash(image))
+    dhash = str(imagehash.dhash(image))
+    return {"phash": phash, "ahash": ahash, "dhash": dhash}
 
-async def grab_frame_multi(url, timepoints, retry=2, timeout=15):
-    results = []
-    for tp in timepoints:
-        for _ in range(retry):
-            img, err = await grab_frame(url, tp, timeout)
-            if img:
-                results.append((tp, img))
-                break
-    return results
+def is_fake_hash(hashes, fake_hashes):
+    for fh in fake_hashes:
+        for key in ["phash", "ahash", "dhash"]:
+            dist = hamming_dist(hashes[key], fh[key])
+            if dist <= HAMMING_THRESHOLD:
+                return True, fh
+    return False, None
 
+async def process_url(row, fake_hashes, semaphore):
+    url = row["地址"]
+    async with semaphore:
+        hashes_list = []
+        for t in GRAB_TIMES:
+            frame = await grab_frame(url, t)
+            if not frame:
+                continue
+            hashes = calc_hashes(frame)
+            hashes_list.append(hashes)
+        if not hashes_list:
+            row["假源检测"] = "抓帧失败"
+            row["假源命中"] = ""
+            row["是否假源"] = False
+            return row
 
-# ----------- 缓存读取 -----------
+        # 多帧哈希合并策略：简单取第一个帧哈希（也可改进）
+        combined = hashes_list[0]
 
-def load_cache_advanced(total_cache_file):
-    if not os.path.exists(total_cache_file):
-        return {}, {}
-    with open(total_cache_file, "r", encoding="utf-8") as f:
-        raw = json.load(f)
+        # 假源库匹配
+        fake, matched_hash = is_fake_hash(combined, fake_hashes)
+        row["假源检测"] = "假源" if fake else "正常"
+        row["假源命中"] = json.dumps(matched_hash, ensure_ascii=False) if fake else ""
+        row["是否假源"] = fake
 
-    cache = {}
-    for url, dates in raw.items():
-        cache[url] = {}
-        for d, tps in dates.items():
-            cache[url][d] = {}
-            for tp, v in tps.items():
-                cache[url][d][tp] = {
-                    "phash": int(v["phash"], 16) if v.get("phash") else None,
-                    "ahash": int(v["ahash"], 16) if v.get("ahash") else None,
-                    "dhash": int(v["dhash"], 16) if v.get("dhash") else None
-                }
-    return cache, raw
+        return row, combined if fake else None
 
+async def main(args):
+    fake_hashes = load_fake_hashes(os.path.join(args.cache_dir, "typical_fake_hashes.json"))
 
-# ----------- 相似度 -----------
-
-def similarity_hash(h1, h2):
-    if h1 is None or h2 is None:
-        return 0.0
-    return 1.0 - hamming(h1, h2) / HASH_BITS
-
-
-def average_similarity(h1, h2):
-    sims = []
-    for k in ["phash", "ahash", "dhash"]:
-        if h1.get(k) is not None and h2.get(k) is not None:
-            sims.append(similarity_hash(h1[k], h2[k]))
-    return sum(sims) / len(sims) if sims else 0.0
-
-
-# ----------- 核心处理 -----------
-
-async def process_one(url, sem, cache, threshold=0.95, timeout=20):
-    async with sem:
-
-        cache_for_url = cache.get(url)
-
-        frames = await grab_frame_multi(
-            url, GRAB_TIMEPOINTS, GRAB_RETRY, timeout
-        )
-        if not frames:
-            return {
-                "url": url,
-                "status": "error",
-                "errors": ["all_grab_failed"],
-                "is_fake": False,
-                "is_loop": False,
-                "similarity": 0.0
-            }
-
-        real_hashes = []
-        for _, img in frames:
-            real_hashes.append({
-                "phash": image_to_phash_bytes(img),
-                "ahash": image_to_ahash_bytes(img),
-                "dhash": image_to_dhash_bytes(img)
-            })
-
-        if not cache_for_url:
-            return {
-                "url": url,
-                "status": "ok",
-                "errors": [],
-                "is_fake": False,
-                "is_loop": False,
-                "similarity": 1.0
-            }
-
-        max_sim = 0.0
-        for d in cache_for_url:
-            for tp in cache_for_url[d]:
-                cached = cache_for_url[d][tp]
-                for rh in real_hashes:
-                    max_sim = max(max_sim, average_similarity(rh, cached))
-
-        return {
-            "url": url,
-            "status": "ok",
-            "errors": [],
-            "is_fake": max_sim >= threshold,
-            "is_loop": False,
-            "similarity": max_sim
-        }
-
-
-# ----------- 并发执行 -----------
-
-async def run_all(urls, concurrency, cache, threshold=0.95, timeout=20):
-    sem = Semaphore(concurrency)
-    tasks = [process_one(u, sem, cache, threshold, timeout) for u in urls]
-    results = []
-    for fut in tqdm_asyncio.as_completed(tasks, total=len(tasks), desc="final-scan"):
-        results.append(await fut)
-    return results
-
-
-# ----------- 新增：输出结果到文件 -----------
-
-def save_final_results(input_csv_path, results, ok_dir, not_dir):
-    os.makedirs(ok_dir, exist_ok=True)
-    os.makedirs(not_dir, exist_ok=True)
-
-    base_name = os.path.basename(input_csv_path)
-    output_name = "final_" + base_name
-
-    ok_path = os.path.join(ok_dir, output_name)
-    not_path = os.path.join(not_dir, output_name)
-
-    with open(input_csv_path, newline='', encoding="utf-8") as f:
+    semaphore = asyncio.Semaphore(args.concurrency)
+    rows = []
+    with open(args.input, encoding="utf-8") as f:
         reader = csv.DictReader(f)
-        input_fieldnames = reader.fieldnames
-
-        extra_fields = ["是否假源", "是否轮回", "轮回相似度", "检测信息"]
-        fieldnames = input_fieldnames + extra_fields
-
-        # 先读取所有输入行，建立url到行的映射，避免重复读文件
         rows = list(reader)
-        url_to_row = {row["地址"]: row for row in rows}
 
-    with open(ok_path, "w", encoding="utf-8", newline='') as f_ok, \
-         open(not_path, "w", encoding="utf-8", newline='') as f_not:
+    results = []
+    new_fake_hashes = []
+    hash_count = {}
 
+    async def handle_row(row):
+        result = await process_url(row, fake_hashes, semaphore)
+        if isinstance(result, tuple):
+            row_res, fake_hash = result
+            if fake_hash:
+                hkey = fake_hash["phash"]
+                hash_count[hkey] = hash_count.get(hkey, 0) + 1
+                if hash_count[hkey] > 1 and fake_hash not in new_fake_hashes:
+                    new_fake_hashes.append(fake_hash)
+            results.append(row_res)
+        else:
+            results.append(result)
+
+    await asyncio.gather(*(handle_row(r) for r in rows))
+
+    # 更新假源库
+    if new_fake_hashes:
+        print(f"新增 {len(new_fake_hashes)} 条假源哈希，写入假源库")
+        fake_hashes.extend(new_fake_hashes)
+        save_fake_hashes(os.path.join(args.cache_dir, "typical_fake_hashes.json"), fake_hashes)
+
+    # 写结果CSV
+    fieldnames = list(results[0].keys())
+    with open(args.output, "w", encoding="utf-8", newline="") as f_ok, \
+         open(args.invalid, "w", encoding="utf-8", newline="") as f_not:
         writer_ok = csv.DictWriter(f_ok, fieldnames=fieldnames)
         writer_not = csv.DictWriter(f_not, fieldnames=fieldnames)
 
@@ -234,53 +133,20 @@ def save_final_results(input_csv_path, results, ok_dir, not_dir):
         writer_not.writeheader()
 
         for r in results:
-            row = url_to_row.get(r["url"], {})
-            out_row = row.copy()
-
-            out_row["是否假源"] = "是" if r.get("is_fake") else "否"
-            out_row["是否轮回"] = "是" if r.get("is_loop") else "否"
-            out_row["轮回相似度"] = f"{r.get('similarity', 0):.4f}"
-            out_row["检测信息"] = ",".join(r.get("errors", []))
-
-            if r.get("is_fake"):
-                writer_not.writerow(out_row)
+            if r.get("是否假源"):
+                writer_not.writerow(r)
             else:
-                writer_ok.writerow(out_row)
+                writer_ok.writerow(r)
 
+    print(f"完成假源检测，输出正常: {len([r for r in results if not r.get('是否假源')])}，假源: {len([r for r in results if r.get('是否假源')])}")
 
-# ----------- 入口 -----------
-
-def main():
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--invalid", required=True)
-    parser.add_argument("--cache_dir", default="output/cache",
-                        help="缓存目录，内含 total_cache.json")
-    parser.add_argument("--concurrency", type=int, default=6)
-    parser.add_argument("--timeout", type=int, default=20)
+    parser.add_argument("--cache_dir", required=True)
+    parser.add_argument("--concurrency", type=int, default=10)
     args = parser.parse_args()
 
-    total_cache_file = os.path.join(args.cache_dir, "total_cache.json")
-    os.makedirs(args.cache_dir, exist_ok=True)
-
-    cache, _ = load_cache_advanced(total_cache_file)
-
-    with open(args.input, newline='', encoding="utf-8") as f:
-        urls = [r["地址"] for r in csv.DictReader(f) if r.get("地址")]
-
-    results = asyncio.run(
-        run_all(urls, args.concurrency, cache, timeout=args.timeout)
-    )
-
-    # 新增调用输出函数，args.output和args.invalid作为目录路径
-    save_final_results(
-        input_csv_path=args.input,
-        results=results,
-        ok_dir=args.output,
-        not_dir=args.invalid
-    )
-
-
-if __name__ == "__main__":
-    main()
+    asyncio.run(main(args))
