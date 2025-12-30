@@ -86,47 +86,58 @@ jobs:
             
       - name: Commit and Push Outputs
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add output/middle/fast \\
-                  output/middle/deep \\
-                  output/middle/final \\
-                  output/cache
-
-          if git diff --cached --quiet; then
-            echo "No output updates."
-            exit 0
-          fi
-
-          git commit -m "Update scan outputs for {n} [skip ci]"
+          git checkout main
 
           MAX_RETRIES=5
           COUNT=1
 
-          until git push --quiet; do
-            echo "Push failed (attempt $COUNT/$MAX_RETRIES), retrying..."
+          while [ $COUNT -le $MAX_RETRIES ]; do
+            echo "🔁 Push attempt $COUNT/$MAX_RETRIES"
 
-            git stash push -m "auto-stash" || true
-            git pull --rebase --quiet || true
-            git stash pop || true
+            # 1️⃣ 同步远端 main
+            git fetch origin main
+            git rebase origin/main
 
-            COUNT=$((COUNT+1))
-            if [ $COUNT -gt $MAX_RETRIES ]; then
-              echo "🔥 Push failed after $MAX_RETRIES attempts."
-              exit 1
+            # 2️⃣ 添加输出文件
+            git add output/middle/fast \\
+                    output/middle/deep \\
+                    output/middle/final \\
+                    output/cache
+
+            if git diff --cached --quiet; then
+              echo "No output updates."
+              exit 0
             fi
 
-            sleep 2
+            # 3️⃣ 提交
+            git commit -m "Update scan outputs for {n} [skip ci]"
+
+            # 4️⃣ 推送
+            if git push origin main; then
+              echo "✅ Push succeeded"
+              exit 0
+            fi
+
+            echo "⚠️ Push failed, retrying..."
+            git reset --hard HEAD~1
+
+            COUNT=$((COUNT+1))
+            sleep 3
           done
 
-          echo "Push outputs succeeded."
+          echo "🔥 Push failed after $MAX_RETRIES attempts."
+          exit 1
 """
 
 print("🧹 清理旧的 workflow 文件...")
 
 for f in os.listdir(WORKFLOW_DIR):
-    if re.match(r"scan_.+\.yml", f):
+    if re.match(r"scan_.+\\.yml", f):
         os.remove(os.path.join(WORKFLOW_DIR, f))
 
 if not os.path.exists(CHUNK_DIR):
@@ -134,7 +145,7 @@ if not os.path.exists(CHUNK_DIR):
 
 chunks = sorted([
     f for f in os.listdir(CHUNK_DIR)
-    if re.match(r"chunk-\d+\.csv", f)
+    if re.match(r"chunk-\\d+\\.csv", f)
 ])
 
 if not chunks:
@@ -152,4 +163,4 @@ for chunk_file in chunks:
 
     print(f"✅ 已生成 workflow: {workflow_filename}")
 
-print("\n🌀 生成 workflow 完成。请提交并推送。")
+print("\\n🌀 生成 workflow 完成。请提交并推送。")
