@@ -201,6 +201,53 @@ async def run_all(urls, concurrency, cache, threshold=0.95, timeout=20):
     return results
 
 
+# ----------- 新增：输出结果到文件 -----------
+
+def save_final_results(input_csv_path, results, ok_dir, not_dir):
+    os.makedirs(ok_dir, exist_ok=True)
+    os.makedirs(not_dir, exist_ok=True)
+
+    base_name = os.path.basename(input_csv_path)
+    output_name = "final_" + base_name
+
+    ok_path = os.path.join(ok_dir, output_name)
+    not_path = os.path.join(not_dir, output_name)
+
+    with open(input_csv_path, newline='', encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        input_fieldnames = reader.fieldnames
+
+        extra_fields = ["是否假源", "是否轮回", "轮回相似度", "检测信息"]
+        fieldnames = input_fieldnames + extra_fields
+
+        # 先读取所有输入行，建立url到行的映射，避免重复读文件
+        rows = list(reader)
+        url_to_row = {row["地址"]: row for row in rows}
+
+    with open(ok_path, "w", encoding="utf-8", newline='') as f_ok, \
+         open(not_path, "w", encoding="utf-8", newline='') as f_not:
+
+        writer_ok = csv.DictWriter(f_ok, fieldnames=fieldnames)
+        writer_not = csv.DictWriter(f_not, fieldnames=fieldnames)
+
+        writer_ok.writeheader()
+        writer_not.writeheader()
+
+        for r in results:
+            row = url_to_row.get(r["url"], {})
+            out_row = row.copy()
+
+            out_row["是否假源"] = "是" if r.get("is_fake") else "否"
+            out_row["是否轮回"] = "是" if r.get("is_loop") else "否"
+            out_row["轮回相似度"] = f"{r.get('similarity', 0):.4f}"
+            out_row["检测信息"] = ",".join(r.get("errors", []))
+
+            if r.get("is_fake"):
+                writer_not.writerow(out_row)
+            else:
+                writer_ok.writerow(out_row)
+
+
 # ----------- 入口 -----------
 
 def main():
@@ -226,7 +273,13 @@ def main():
         run_all(urls, args.concurrency, cache, timeout=args.timeout)
     )
 
-    # 输出逻辑保持不变（略）
+    # 新增调用输出函数，args.output和args.invalid作为目录路径
+    save_final_results(
+        input_csv_path=args.input,
+        results=results,
+        ok_dir=args.output,
+        not_dir=args.invalid
+    )
 
 
 if __name__ == "__main__":
