@@ -94,7 +94,7 @@ jobs:
           mkdir -p output/hash/chunk
           python scripts/6.3_hash_scan.py \\
             --input output/middle/deep/ok/deep_{n}.csv \\
-            --output output/hash/chunk/hash_chunk-{n}.json \\
+            --output output/hash/chunk/hash_{n}.json \\
             --concurrency 15 \\
             --timeout 15 \\
             --retry 2
