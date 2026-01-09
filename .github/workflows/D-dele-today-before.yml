@@ -61,13 +61,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}  # 你的 PAT 名
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
+          CURRENT_RUN_ID: ${{ github.run_id }}
         run: |
           PER_PAGE=100
+          page=1
 
           while : ; do
-            echo "Fetching page 1 of workflow runs..."
+            echo "Fetching page $page of workflow runs..."
             runs_json=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
-              "https://api.github.com/repos/$OWNER/$REPO/actions/runs?per_page=$PER_PAGE&page=1")
+              "https://api.github.com/repos/$OWNER/$REPO/actions/runs?per_page=$PER_PAGE&page=$page")
 
             run_ids=$(echo "$runs_json" | jq -r '.workflow_runs[].id')
 
@@ -77,6 +79,11 @@ jobs:
             fi
 
             for id in $run_ids; do
+              if [ "$id" = "$CURRENT_RUN_ID" ]; then
+                echo "Skipping current running workflow run id: $id"
+                continue
+              fi
+
               echo "Deleting run id: $id"
               response_code=$(curl -s -o /dev/null -w "%{http_code}" -X DELETE -H "Authorization: token $GITHUB_TOKEN" \
                 "https://api.github.com/repos/$OWNER/$REPO/actions/runs/$id")
@@ -86,6 +93,5 @@ jobs:
               fi
             done
 
-            echo "Waiting for 5 seconds to let GitHub update..."
-            sleep 5
+            ((page++))
           done
