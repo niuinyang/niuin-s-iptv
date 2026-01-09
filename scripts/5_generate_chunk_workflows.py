@@ -40,6 +40,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: 强制同步代码和文件（reset to origin/main）
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
         with:
@@ -121,6 +126,9 @@ jobs:
           done
 
           echo "Push outputs succeeded."
+
+      - name: 等待 10 秒，确保推送同步
+        run: sleep 10
 """
 
 print("🧹 清理旧的 workflow 文件...")
