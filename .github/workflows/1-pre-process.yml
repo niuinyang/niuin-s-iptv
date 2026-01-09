@@ -44,7 +44,7 @@ jobs:
           mkdir -p input/download/net
           mkdir -p scripts
 
-      - run: python scripts/1_download_m3u.py
+    #  - run: python scripts/1_download_m3u.py
 
       - run: chmod -R u+rw input/download
 
