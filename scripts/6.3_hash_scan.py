@@ -4,6 +4,7 @@ import csv
 import json
 import argparse
 import os
+import time
 from PIL import Image
 import imagehash
 from asyncio.subprocess import create_subprocess_exec, PIPE
@@ -12,15 +13,23 @@ from tqdm import tqdm
 
 GRAB_TIMES = [2, 5, 20]  # 秒
 
+def classify_error(err: str):
+    """基于错误字符串简单分类"""
+    if not err:
+        return ""
+    err_lower = err.lower()
+    if "timeout" in err_lower:
+        return "timeout"
+    if any(x in err_lower for x in ["connection refused", "connection timed out", "connection reset", "connection failed", "network is unreachable"]):
+        return "network_error"
+    if "ffmpeg error" in err_lower:
+        return "ffmpeg_error"
+    return "other_error"
+
 async def fetch_frame(url, timestamp, timeout):
     """
     用 ffmpeg 抓取指定时间点的单帧图像，返回 PIL Image 或抛异常
     """
-    # ffmpeg 参数解释：
-    # -ss <timestamp> ：指定时间点
-    # -i <url> ：输入流
-    # -frames:v 1 ：只抓1帧
-    # -f image2pipe -vcodec png - ：输出png格式图片到管道
     cmd = [
         "ffmpeg",
         "-ss", str(timestamp),
@@ -56,36 +65,80 @@ def calc_hashes(image):
     return phash, ahash, dhash
 
 async def process_url(semaphore, url, timeout, retries):
-    """抓取一个url的3个时间点帧，计算哈希，失败重试"""
+    """抓取一个url的3个时间点帧，计算哈希，失败重试，并统计错误信息"""
     async with semaphore:
         phashes, ahashes, dhashes = [], [], []
-        error = None
-        for attempt in range(retries+1):
+
+        fail_count = 0
+        timeout_count = 0
+        network_error_count = 0
+        other_error_count = 0
+        total_fetch_time = 0.0
+        success_count = 0
+        final_error = None
+
+        for attempt in range(retries + 1):
             try:
                 phashes.clear()
                 ahashes.clear()
                 dhashes.clear()
+
                 for t in GRAB_TIMES:
+                    start = time.perf_counter()
                     img = await fetch_frame(url, t, timeout)
+                    elapsed = time.perf_counter() - start
+                    total_fetch_time += elapsed
+
                     p, a, d = calc_hashes(img)
                     phashes.append(p)
                     ahashes.append(a)
                     dhashes.append(d)
-                error = None
-                break  # 成功就跳出重试
+
+                    success_count += 1
+
+                final_error = None
+                break  # 成功跳出重试循环
+
             except Exception as e:
-                error = str(e)
-                if attempt < retries:
-                    await asyncio.sleep(1)  # 等待重试
+                fail_count += 1
+                err_str = str(e)
+                final_error = err_str
+
+                # 错误分类计数
+                err_type = classify_error(err_str)
+                if err_type == "timeout":
+                    timeout_count += 1
+                elif err_type == "network_error":
+                    network_error_count += 1
                 else:
-                    phashes = [None]*len(GRAB_TIMES)
-                    ahashes = [None]*len(GRAB_TIMES)
-                    dhashes = [None]*len(GRAB_TIMES)
+                    other_error_count += 1
+
+                if attempt < retries:
+                    await asyncio.sleep(1)
+                else:
+                    # 失败后填充None
+                    phashes = [None] * len(GRAB_TIMES)
+                    ahashes = [None] * len(GRAB_TIMES)
+                    dhashes = [None] * len(GRAB_TIMES)
+
+        avg_fetch_time = total_fetch_time / success_count if success_count > 0 else None
+
         return url, {
             "phash": phashes,
             "ahash": ahashes,
             "dhash": dhashes,
-            "error": error
+            "error": {
+                "fail_count": fail_count,
+                "timeout_count": timeout_count,
+                "network_error_count": network_error_count,
+                "other_error_count": other_error_count,
+                "final_error": final_error
+            },
+            "stats": {
+                "total_fetch_time": total_fetch_time,
+                "avg_fetch_time": avg_fetch_time,
+                "success_count": success_count
+            }
         }
 
 async def main(args):
