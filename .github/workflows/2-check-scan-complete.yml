@@ -58,6 +58,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -111,6 +113,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Delete scan_chunk workflow files only
         env:
