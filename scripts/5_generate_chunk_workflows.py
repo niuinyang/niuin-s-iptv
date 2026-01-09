@@ -40,6 +40,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install Git LFS
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git-lfs
+          git lfs install
+
+      - name: Pull Git LFS files
+        run: git lfs pull
+
       - name: 强制同步代码和文件（reset to origin/main）
         run: |
           git fetch origin main
