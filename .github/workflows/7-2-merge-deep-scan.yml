@@ -1,0 +1,58 @@
+name: 7-2-合并DeepScan结果
+
+on:
+  workflow_dispatch:
+
+
+permissions:
+  contents: write
+
+jobs:
+  merge-deep-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Run merge deep scan script
+        run: |
+          python scripts/7.2_merge_deep_scan.py
+
+      - name: Commit and push deep scan merged csv
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            output/middle/deep/deep_total_ok.csv \
+            output/middle/deep/deep_total_not.csv
+
+          if git diff --cached --quiet; then
+            echo "No deep scan merge changes."
+            exit 0
+          fi
+
+          git commit -m "Merge deep scan results [skip ci]"
+
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
+
+          MAX_RETRIES=3
+          COUNT=1
+          until git push origin HEAD:main; do
+            if [ $COUNT -ge $MAX_RETRIES ]; then
+              echo "🔥 Push failed after $MAX_RETRIES attempts."
+              exit 1
+            fi
+            echo "Push failed, retry $COUNT..."
+            git pull --rebase origin main || true
+            COUNT=$((COUNT+1))
+            sleep 5
+          done
