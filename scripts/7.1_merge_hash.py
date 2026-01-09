@@ -2,7 +2,7 @@
 import os
 import json
 import argparse
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 CHUNK_DIR_DEFAULT = "output/hash/chunk"
 TOTAL_FILE_DEFAULT = "output/hash/hash_total.json"
@@ -10,8 +10,9 @@ MAX_HISTORY = 6
 
 
 def get_now_tag():
-    """生成时间点标签 YYYYMMDDHHMM"""
-    return datetime.now().strftime("%Y%m%d%H%M")
+    """生成时间点标签 YYYYMMDDHHMM（北京时间，UTC+8）"""
+    beijing_tz = timezone(timedelta(hours=8))
+    return datetime.now(beijing_tz).strftime("%Y%m%d%H%M")
 
 
 def load_json_safe(path):
