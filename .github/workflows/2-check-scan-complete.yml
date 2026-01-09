@@ -3,13 +3,13 @@ name: 2-检查scan执行完毕合并
 on:
   workflow_run:
     workflows: 
-      - "1-预处理-下载-转txt-合并-分割-生成"     # 监听名为“1预处理-下载-合并-分割-生成”的workflow完成后触发
+      - "1-预处理-下载-转txt-合并-分割-生成"
     types:
-      - completed                 
-  workflow_dispatch:               # 支持手动触发
+      - completed
+  workflow_dispatch:
 
 permissions:
-  contents: write                 # 允许写权限，以便提交和推送代码
+  contents: write
 
 jobs:
   wait-for-scan:
@@ -20,58 +20,109 @@ jobs:
       REPO_NAME: niuin_iptv
 
     steps:
-      - uses: actions/checkout@v3   # 签出代码仓库
+      - uses: actions/checkout@v3
 
-      - name: Setup Python           # 安装Python环境
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.x"
 
-      - name: Install dependencies   # 安装Python依赖包 aiohttp 和 requests
+      - name: Install dependencies
         run: pip install aiohttp requests
 
-      - name: Run scan watcher (async & realtime output)  # 运行异步检测脚本，实时输出日志
+      - name: Run scan watcher (async & realtime output)
         env:
           GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
           REPO_OWNER: niuinyang
           REPO_NAME: niuin-s-iptv
-          PYTHONUNBUFFERED: "1"   # 使Python实时打印日志
+          PYTHONUNBUFFERED: "1"
         run: |
           python -u scripts/6.4_check-scan-finished-async.py
 
-  delete_workflows:
-    needs: wait-for-scan           # 依赖上一个作业完成后才执行
+
+  merge-results:
+    needs: wait-for-scan
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository    # 签出代码仓库
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Delete scan_chunk workflow files only  # 仅删除以 scan_chunk 开头的 workflow 文件
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Run merge hash script
+        run: |
+          python scripts/7.1_merge_hash.py
+
+      - name: Run merge deep scan csv script
+        run: |
+          python scripts/7.2_merge_deep_scan.py
+
+      - name: Commit and push merged results
         env:
           PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
         run: |
-          # 查找所有匹配 scan_chunk*.yml 的 workflow 文件
-          FILES_SCAN_CHUNK=$(find .github/workflows -type f -name "scan_chunk*.yml" || true)
-          if [ -z "$FILES_SCAN_CHUNK" ]; then
-            echo "No matching sash-chunk workflow files found."
-            exit 0
-          fi
-          echo "Deleting files:"
-          echo "$FILES_SCAN_CHUNK"
-          git rm $FILES_SCAN_CHUNK || true
-
-          # 配置提交用户信息
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 提交删除操作，如果无变动则忽略
-          git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
+          git add \
+            output/hash/hash_total.json \
+            output/middle/deep/deep_total_ok.csv \
+            output/middle/deep/deep_total_not.csv
 
-          # 设置远程仓库地址，带token用于推送权限
+          if git diff --cached --quiet; then
+            echo "No merge result changes."
+            exit 0
+          fi
+
+          git commit -m "Merge hash and deep scan results [skip ci]"
+
           git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
 
-          # 重试机制，最多重试3次，确保推送成功
+          n=0
+          until [ $n -ge 3 ]
+          do
+            git pull --rebase origin main
+            git push origin HEAD:main && break
+            n=$((n+1))
+            echo "Push failed, retry $n..."
+            sleep 5
+          done
+
+
+  delete_workflows:
+    needs: merge-results
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Delete scan_chunk workflow files only
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+        run: |
+          FILES_SCAN_CHUNK=$(find .github/workflows -type f -name "scan_chunk*.yml" || true)
+          if [ -z "$FILES_SCAN_CHUNK" ]; then
+            echo "No matching scan_chunk workflow files found."
+            exit 0
+          fi
+
+          echo "Deleting files:"
+          echo "$FILES_SCAN_CHUNK"
+
+          git rm $FILES_SCAN_CHUNK || true
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
+
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
+
           n=0
           until [ $n -ge 3 ]
           do
