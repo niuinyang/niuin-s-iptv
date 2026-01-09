@@ -41,6 +41,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: 列出 chunk 目录文件
+        run: ls -l output/middle/chunk/
+
+      - name: 查看 chunk-1.csv 前几行
+        run: head -n 10 output/middle/chunk/chunk-1.csv
+
       - name: Run fast scan for chunk-1
         run: |
           mkdir -p output/middle/fast/ok output/middle/fast/not
