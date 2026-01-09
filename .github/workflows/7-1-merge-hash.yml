@@ -2,11 +2,7 @@ name: 7-1-合并Hash结果
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows:
-      - "2-检查scan执行完毕合并"
-    types:
-      - completed
+
 
 permissions:
   contents: write
