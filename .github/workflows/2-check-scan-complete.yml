@@ -20,7 +20,10 @@ jobs:
       REPO_NAME: niuin_iptv
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true  # <== 这里打开 git lfs 支持
 
       - name: Setup Python
         uses: actions/setup-python@v4
