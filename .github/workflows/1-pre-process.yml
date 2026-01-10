@@ -3,8 +3,13 @@ name: 1-预处理-下载-转txt-合并-分割-生成
 on:
   workflow_dispatch:
   schedule:
-    # 统一用你最早的时间点触发即可，后面全部靠 needs 顺序跑
     - cron: '05 16 * * *'   # UTC 16:05 = 北京时间 00:05
+    - cron: '40 3 * * *'    # UTC 03:40 = 北京时间 11:40
+    - cron: '40 4 * * *'    # UTC 04:40 = 北京时间 12:40
+    - cron: '40 5 * * *'    # UTC 05:40 = 北京时间 13:40
+    - cron: '40 6 * * *'    # UTC 06:40 = 北京时间 14:40
+    - cron: '40 7 * * *'    # UTC 07:40 = 北京时间 15:40
+    - cron: '40 8 * * *'    # UTC 08:40 = 北京时间 16:40
 
 permissions:
   contents: write
