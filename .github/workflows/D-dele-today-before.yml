@@ -38,12 +38,19 @@ jobs:
 
           git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
 
+          echo "Before cleaning:"
+          git status
+
+          git fetch origin main
+          git reset --hard origin/main
+          git clean -fdx
+
+          echo "After cleaning:"
+          git status
+
           n=0
           until [ $n -ge 3 ]
           do
-            git reset --hard    # 清理未暂存修改，保证干净状态
-            git clean -fd       # 删除未追踪文件，保证干净状态
-            git pull --rebase origin main
             git push origin HEAD:main && break
             n=$((n+1))
             echo "Push failed, retry $n..."
