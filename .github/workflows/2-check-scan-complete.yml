@@ -71,7 +71,7 @@ jobs:
           git reset --hard origin/main
 
       - name: 下载 hash_total.json artifact（如果存在）
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: hash-total-json
           path: output/hash/
@@ -87,7 +87,7 @@ jobs:
           python scripts/7.1_merge_hash.py
 
       - name: 上传 hash_total.json 到 artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hash-total-json
           path: output/hash/hash_total.json
