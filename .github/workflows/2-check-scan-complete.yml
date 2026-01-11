@@ -1,5 +1,11 @@
 name: 2-检查scan执行完毕合并
 
+# >>> MODIFIED: 防止 merge / delete 流程并行 push
+concurrency:
+  group: iptv-merge-and-clean
+  cancel-in-progress: false
+# <<< MODIFIED
+
 on:
   workflow_run:
     workflows: 
@@ -114,15 +120,9 @@ jobs:
 
           git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
 
-          n=0
-          until [ $n -ge 3 ]
-          do
-            git pull --rebase origin main
-            git push origin HEAD:main && break
-            n=$((n+1))
-            echo "Push failed, retry $n..."
-            sleep 5
-          done
+          # >>> MODIFIED: 不再 pull/rebase，直接安全覆盖推送
+          git push origin HEAD:main --force-with-lease
+          # <<< MODIFIED
 
       - name: 等待 10 秒，确保推送同步
         run: sleep 10
@@ -163,15 +163,9 @@ jobs:
 
           git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
 
-          n=0
-          until [ $n -ge 3 ]
-          do
-            git pull --rebase origin main
-            git push origin HEAD:main && break
-            n=$((n+1))
-            echo "Push failed, retry $n..."
-            sleep 5
-          done
+          # >>> MODIFIED: 不再 pull/rebase
+          git push origin HEAD:main --force-with-lease
+          # <<< MODIFIED
 
       - name: 等待 10 秒，确保推送同步
         run: sleep 10
