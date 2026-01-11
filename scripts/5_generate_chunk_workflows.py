@@ -133,7 +133,7 @@ jobs:
 print("🧹 清理旧的 workflow 文件...")
 
 for f in os.listdir(WORKFLOW_DIR):
-    if re.match(r"scan_.+\\.yml", f):
+    if re.match(r"scan_.+\.yml", f):
         os.remove(os.path.join(WORKFLOW_DIR, f))
 
 if not os.path.exists(CHUNK_DIR):
