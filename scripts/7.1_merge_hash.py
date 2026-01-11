@@ -17,11 +17,13 @@ def get_now_tag():
 
 def load_json_safe(path):
     if not os.path.exists(path):
+        print(f"⚠️ 文件不存在: {path}")
         return {}
     with open(path, "r", encoding="utf-8") as f:
         try:
             return json.load(f)
         except json.JSONDecodeError:
+            print(f"⚠️ JSON解析失败，跳过文件: {path}")
             return {}
 
 
@@ -36,6 +38,10 @@ def main(args):
     total_data = load_json_safe(total_file)
 
     # 2. 遍历 chunk 目录
+    if not os.path.exists(chunk_dir):
+        print(f"⚠️ chunk目录不存在: {chunk_dir}")
+        return
+
     files = [
         f for f in os.listdir(chunk_dir)
         if f.endswith(".json")
@@ -45,10 +51,15 @@ def main(args):
         print("⚠️ chunk 目录为空，未发现可合并文件")
         return
 
+    print(f"ℹ️ 发现 {len(files)} 个 chunk 文件，开始合并...")
+
     for fname in files:
         fpath = os.path.join(chunk_dir, fname)
-        with open(fpath, "r", encoding="utf-8") as f:
-            chunk_data = json.load(f)
+        print(f"  ↳ 处理文件: {fname}")
+        chunk_data = load_json_safe(fpath)
+        if not chunk_data:
+            print(f"    ⚠️ 文件为空或无效，跳过: {fname}")
+            continue
 
         for url, result in chunk_data.items():
             # 初始化 URL 节点
