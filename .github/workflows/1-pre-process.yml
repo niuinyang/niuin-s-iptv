@@ -23,7 +23,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
-          lfs: true
+          lfs: false
 
       - name: 强制同步代码和文件（reset to origin/main）
         run: |
