@@ -1,0 +1,90 @@
+name: Scan_chunk-24
+
+# >>> MODIFIED: 并行计算，取消 group 限制，改用 artifact 传递结果
+# concurrency:
+#   group: iptv-output-push
+#   cancel-in-progress: false
+# <<< MODIFIED
+
+on:
+  workflow_run:
+    workflows: ["1-预处理-下载-转txt-合并-分割-生成"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan_chunk-24:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 强制同步代码和文件（reset to origin/main）
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run fast scan for chunk-24
+        run: |
+          mkdir -p output/middle/fast/ok output/middle/fast/not
+          python scripts/6.1_fast_scan.py \
+            --input output/middle/chunk/chunk-24.csv \
+            --output output/middle/fast/ok/fast_chunk-24.csv \
+            --invalid output/middle/fast/not/fast_chunk-24-invalid.csv
+
+      - name: Run deep scan for chunk-24
+        run: |
+          mkdir -p output/middle/deep/ok output/middle/deep/not
+          python scripts/6.2_deep_scan.py \
+            --input output/middle/fast/ok/fast_chunk-24.csv \
+            --output output/middle/deep/ok/deep_chunk-24.csv \
+            --invalid output/middle/deep/not/deep_chunk-24-invalid.csv
+
+      - name: Run hash scan for chunk-24
+        run: |
+          mkdir -p output/hash/chunk
+          python scripts/6.3_hash_scan.py \
+            --input output/middle/deep/ok/deep_chunk-24.csv \
+            --output output/hash/chunk/hash_chunk-24.json \
+            --concurrency 15 \
+            --timeout 15 \
+            --retry 2
+
+      # >>> MODIFIED: 使用 artifact 上传结果，取消直接推送到仓库
+      - name: Upload scan outputs artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: scan-output-chunk-24
+          path: |
+            output/middle/fast/ok/fast_chunk-24.csv
+            output/middle/fast/not/fast_chunk-24-invalid.csv
+            output/middle/deep/ok/deep_chunk-24.csv
+            output/middle/deep/not/deep_chunk-24-invalid.csv
+            output/hash/chunk/hash_chunk-24.json
+      # <<< MODIFIED
+
+      - name: 等待 10 秒，确保 artifact 上传完成
+        run: sleep 10
