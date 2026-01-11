@@ -141,7 +141,7 @@ if not os.path.exists(CHUNK_DIR):
 
 chunks = sorted([
     f for f in os.listdir(CHUNK_DIR)
-    if re.match(r"chunk-\\d+\\.csv", f)
+    if re.match(r"chunk-\d+\.csv", f)
 ])
 
 if not chunks:
