@@ -23,7 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          lfs: false  # <== 这里打开 git lfs 支持
+          # lfs: false  # 去除
 
       - name: 强制同步代码和文件（reset to origin/main）
         run: |
@@ -67,7 +67,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          lfs: true
+          # lfs: true  # 去除
 
       - name: 强制同步代码和文件（reset to origin/main）
         run: |
@@ -130,7 +130,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          lfs: true
+          # lfs: true  # 去除
 
       - name: 强制同步代码和文件（reset to origin/main）
         run: |
