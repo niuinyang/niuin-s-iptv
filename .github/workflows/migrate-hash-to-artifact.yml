@@ -1,0 +1,29 @@
+name: Migrate hash_total.json to Artifact (one-time)
+
+on:
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository (no LFS)
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - name: Check if hash_total.json exists
+        run: |
+          if [ ! -f output/hash/hash_total.json ]; then
+            echo "❌ output/hash/hash_total.json not found!"
+            exit 1
+          fi
+          ls -lh output/hash/hash_total.json
+
+      - name: Upload hash_total.json as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hash-db
+          path: output/hash/hash_total.json
+          retention-days: 30
