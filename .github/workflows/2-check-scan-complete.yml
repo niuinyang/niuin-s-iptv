@@ -86,11 +86,21 @@ jobs:
           path: artifacts
       # <<< MODIFIED
 
-      # >>> MODIFIED: 调试查看 artifact 内容（第一次强烈建议保留）
+      # >>> MODIFIED: 下载初始 hash_total.json artifact（你之前上传的）
+      - name: Download initial hash_total.json artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: hash-db
+          path: output/hash
+      # <<< MODIFIED
+
+      # >>> MODIFIED: 调试查看 artifact 内容（强烈建议保留）
       - name: Inspect downloaded artifacts
         run: |
           echo "=== Artifact files ==="
           find artifacts -type f
+          echo "=== Initial hash_total.json ==="
+          ls -lh output/hash/hash_total.json
       # <<< MODIFIED
 
       # >>> MODIFIED: 整理 artifact → merge 脚本期望的目录结构
