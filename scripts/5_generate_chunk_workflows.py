@@ -21,13 +21,14 @@ clean_dir("output/middle/final")
 
 os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
+# ============================================================
+# Scan workflow 模板
+# 👉 核心修改点：
+# 1. 每个 scan workflow 自己下载 chunk-csv artifact
+# 2. 不再依赖 chunk csv 存在于 git
+# 3. 扫描结果通过 artifact 输出
+# ============================================================
 TEMPLATE = """name: Scan_{n}
-
-# >>> MODIFIED: 并行计算，取消 group 限制，改用 artifact 传递结果
-# concurrency:
-#   group: iptv-output-push
-#   cancel-in-progress: false
-# <<< MODIFIED
 
 on:
   workflow_run:
@@ -42,11 +43,23 @@ permissions:
 jobs:
   scan_{n}:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 强制同步代码和文件（reset to origin/main）
+      # ✅ 关键：下载 chunk CSV artifact
+      - name: Download chunk CSV artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: chunk-csv
+          path: output/middle/chunk
+
+      - name: Check chunk files
+        run: |
+          ls -lh output/middle/chunk
+
+      - name: 强制同步代码（reset to origin/main）
         run: |
           git fetch origin main
           git reset --hard origin/main
@@ -96,9 +109,9 @@ jobs:
             --timeout 15 \\
             --retry 2
 
-      # >>> MODIFIED: 使用 artifact 上传结果，取消直接推送到仓库
+      # ✅ 扫描结果全部通过 artifact 输出
       - name: Upload scan outputs artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: scan-output-{n}
           path: |
@@ -107,16 +120,12 @@ jobs:
             output/middle/deep/ok/deep_{n}.csv
             output/middle/deep/not/deep_{n}-invalid.csv
             output/hash/chunk/hash_{n}.json
-      # <<< MODIFIED
-
-      - name: 等待 10 秒，确保 artifact 上传完成
-        run: sleep 10
 """
 
-print("🧹 清理旧的 workflow 文件...")
+print("🧹 清理旧的 scan_* workflow 文件...")
 
 for f in os.listdir(WORKFLOW_DIR):
-    if re.match(r"scan_.+\.yml", f):
+    if re.match(r"scan_.+\\.yml", f):
         os.remove(os.path.join(WORKFLOW_DIR, f))
 
 if not os.path.exists(CHUNK_DIR):
@@ -124,7 +133,7 @@ if not os.path.exists(CHUNK_DIR):
 
 chunks = sorted([
     f for f in os.listdir(CHUNK_DIR)
-    if re.match(r"chunk-\d+\.csv", f)
+    if re.match(r"chunk-\\d+\\.csv", f)
 ])
 
 if not chunks:
@@ -142,4 +151,4 @@ for chunk_file in chunks:
 
     print(f"✅ 已生成 workflow: {workflow_filename}")
 
-print("\n🌀 生成 workflow 完成。请提交并推送。")
+print("\n🌀 Scan workflow 生成完成，请提交并推送。")
