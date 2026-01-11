@@ -23,10 +23,10 @@ os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
 TEMPLATE = """name: Scan_{n}
 
-# >>> MODIFIED: 并行计算，串行 commit + push
-concurrency:
-  group: iptv-output-push
-  cancel-in-progress: false
+# >>> MODIFIED: 并行计算，取消 group 限制，改用 artifact 传递结果
+# concurrency:
+#   group: iptv-output-push
+#   cancel-in-progress: false
 # <<< MODIFIED
 
 on:
@@ -45,15 +45,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-    #  - name: Install Git LFS
-    #    run: |
-    #      sudo apt-get update
-    #      sudo apt-get install -y git-lfs
-    #      git lfs install
-
-    #  - name: Pull Git LFS files
-    #    run: git lfs pull
 
       - name: 强制同步代码和文件（reset to origin/main）
         run: |
@@ -105,28 +96,20 @@ jobs:
             --timeout 15 \\
             --retry 2
 
-      # >>> MODIFIED: 标准「生成文件」提交方式（无 pull / 无 rebase）
-      - name: Commit and Push Outputs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add output/middle/fast \\
-                  output/middle/deep \\
-                  output/hash/chunk
-
-          if git diff --cached --quiet; then
-            echo "No output updates."
-            exit 0
-          fi
-
-          git commit -m "Update scan outputs for {n} [skip ci]"
-
-          echo "🚀 Pushing outputs with concurrency lock..."
-          git push origin HEAD:main --force-with-lease
+      # >>> MODIFIED: 使用 artifact 上传结果，取消直接推送到仓库
+      - name: Upload scan outputs artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: scan-output-{n}
+          path: |
+            output/middle/fast/ok/fast_{n}.csv
+            output/middle/fast/not/fast_{n}-invalid.csv
+            output/middle/deep/ok/deep_{n}.csv
+            output/middle/deep/not/deep_{n}-invalid.csv
+            output/hash/chunk/hash_{n}.json
       # <<< MODIFIED
 
-      - name: 等待 10 秒，确保推送同步
+      - name: 等待 10 秒，确保 artifact 上传完成
         run: sleep 10
 """
 
@@ -159,4 +142,4 @@ for chunk_file in chunks:
 
     print(f"✅ 已生成 workflow: {workflow_filename}")
 
-print("\\n🌀 生成 workflow 完成。请提交并推送。")
+print("\n🌀 生成 workflow 完成。请提交并推送。")
