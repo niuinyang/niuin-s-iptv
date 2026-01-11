@@ -218,20 +218,13 @@ jobs:
 
       - run: python scripts/4_split_merge.py
 
-      - env:
-          PAT_TOKEN1: ${{ secrets.PAT_TOKEN1 }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/middle/chunk/
-          if ! git diff --cached --quiet; then
-            git commit -m "Auto split merge_total.csv into chunks [ci skip]"
-            # >>> MODIFIED
-            git push https://${PAT_TOKEN1}@github.com/${{ github.repository }}.git HEAD:refs/heads/main --force-with-lease
-            # <<< MODIFIED
-          else
-            echo "✅ No changes to commit."
-          fi
+      # >>> MODIFIED: 上传 chunk 目录 CSV 文件为 artifact，代替 git push
+      - name: Upload chunk CSV artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: chunk-csv
+          path: output/middle/chunk/*.csv
+      # <<< MODIFIED
 
       - name: 等待 10 秒，确保推送同步
         run: sleep 10
@@ -249,6 +242,14 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+
+      # >>> MODIFIED: 下载 chunk 目录 CSV 文件 artifact，代替从仓库拉取
+      - name: Download chunk CSV artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: chunk-csv
+          path: output/middle/chunk
+      # <<< MODIFIED
 
       - name: 强制同步代码和文件（reset to origin/main）
         run: |
@@ -277,6 +278,7 @@ jobs:
       - run: pip install chardet pillow tqdm requests
 
       - run: |
+          ls -lh output/middle/chunk  # <<< MODIFIED: 调试确认 chunk 文件已下载
           python scripts/5_generate_chunk_workflows.py
           git add .github/workflows output/middle
           if ! git diff --cached --quiet; then
