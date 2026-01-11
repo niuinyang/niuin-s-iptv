@@ -3,7 +3,6 @@ name: 7-1-合并Hash结果
 on:
   workflow_dispatch:
 
-
 permissions:
   contents: write
 
@@ -15,6 +14,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: 下载 hash_total.json 从 artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: hash-total-json
+          path: output/hash/
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -24,33 +29,30 @@ jobs:
         run: |
           python scripts/7.1_merge_hash.py
 
-      - name: Commit and push hash_total.json
-        env:
-          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: 上传新的 hash_total.json 到 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hash-total-json
+          path: output/hash/hash_total.json
 
-          git add output/hash/hash_total.json
-
-          if git diff --cached --quiet; then
-            echo "No hash merge changes."
-            exit 0
-          fi
-
-          git commit -m "Merge hash results [skip ci]"
-
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
-
-          MAX_RETRIES=3
-          COUNT=1
-          until git push origin HEAD:main; do
-            if [ $COUNT -ge $MAX_RETRIES ]; then
-              echo "🔥 Push failed after $MAX_RETRIES attempts."
-              exit 1
-            fi
-            echo "Push failed, retry $COUNT..."
-            git pull --rebase origin main || true
-            COUNT=$((COUNT+1))
-            sleep 5
-          done
+      # 如果你还需要提交其他小文件，可以放这里（可选）
+      #- name: Commit and push other files
+      #  env:
+      #    PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+      #  run: |
+      #    git config user.name "github-actions[bot]"
+      #    git config user.email "github-actions[bot]@users.noreply.github.com"
+      #
+      #    git add path/to/other/files
+      #
+      #    if git diff --cached --quiet; then
+      #      echo "No changes to commit."
+      #      exit 0
+      #    fi
+      #
+      #    git commit -m "Update other files [skip ci]"
+      #
+      #    git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
+      #
+      #    git pull --rebase origin main
+      #    git push origin HEAD:main
