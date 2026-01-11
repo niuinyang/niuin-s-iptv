@@ -23,6 +23,12 @@ os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
 TEMPLATE = """name: Scan_{n}
 
+# >>> MODIFIED: 并行计算，串行 commit + push
+concurrency:
+  group: iptv-output-push
+  cancel-in-progress: false
+# <<< MODIFIED
+
 on:
   workflow_run:
     workflows: ["1-预处理-下载-转txt-合并-分割-生成"]
@@ -99,6 +105,7 @@ jobs:
             --timeout 15 \\
             --retry 2
 
+      # >>> MODIFIED: 标准「生成文件」提交方式（无 pull / 无 rebase）
       - name: Commit and Push Outputs
         run: |
           git config user.name "github-actions[bot]"
@@ -115,26 +122,9 @@ jobs:
 
           git commit -m "Update scan outputs for {n} [skip ci]"
 
-          MAX_RETRIES=5
-          COUNT=1
-
-          until git push --quiet; do
-            echo "Push failed (attempt $COUNT/$MAX_RETRIES), retrying..."
-
-            git stash push -m "auto-stash" || true
-            git pull --rebase --quiet || true
-            git stash pop || true
-
-            COUNT=$((COUNT+1))
-            if [ $COUNT -gt $MAX_RETRIES ]; then
-              echo "🔥 Push failed after $MAX_RETRIES attempts."
-              exit 1
-            fi
-
-            sleep 2
-          done
-
-          echo "Push outputs succeeded."
+          echo "🚀 Pushing outputs with concurrency lock..."
+          git push origin HEAD:main --force-with-lease
+      # <<< MODIFIED
 
       - name: 等待 10 秒，确保推送同步
         run: sleep 10
@@ -143,7 +133,7 @@ jobs:
 print("🧹 清理旧的 workflow 文件...")
 
 for f in os.listdir(WORKFLOW_DIR):
-    if re.match(r"scan_.+\.yml", f):
+    if re.match(r"scan_.+\\.yml", f):
         os.remove(os.path.join(WORKFLOW_DIR, f))
 
 if not os.path.exists(CHUNK_DIR):
@@ -151,7 +141,7 @@ if not os.path.exists(CHUNK_DIR):
 
 chunks = sorted([
     f for f in os.listdir(CHUNK_DIR)
-    if re.match(r"chunk-\d+\.csv", f)
+    if re.match(r"chunk-\\d+\\.csv", f)
 ])
 
 if not chunks:
@@ -169,4 +159,4 @@ for chunk_file in chunks:
 
     print(f"✅ 已生成 workflow: {workflow_filename}")
 
-print("\n🌀 生成 workflow 完成。请提交并推送。")
+print("\\n🌀 生成 workflow 完成。请提交并推送。")
