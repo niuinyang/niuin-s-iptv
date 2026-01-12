@@ -79,19 +79,24 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
 
-      # >>> MODIFIED: 下载所有 scan 输出 artifact
-      - name: Download ALL scan-output artifacts
-        uses: actions/download-artifact@v4
+      # >>> MODIFIED: 跨所有 scan_chunk_* workflow 下载所有 scan 输出 artifact
+      - name: Download ALL scan-output artifacts from all scan_chunk workflows
+        uses: dawidd6/action-download-artifact@v4
         with:
+          workflow: scan_chunk*.yml  # 这里使用通配符匹配所有 scan_chunk 工作流
+          name: scan-output
           path: artifacts
+          workflow_conclusion: success
       # <<< MODIFIED
 
-      # >>> MODIFIED: 下载初始 hash_total.json artifact（你之前上传的）
-      - name: Download initial hash_total.json artifact
-        uses: actions/download-artifact@v4
+      # >>> MODIFIED: 跨workflow下载初始 hash_total.json artifact
+      - name: Download initial hash_total.json artifact from hash-db workflow
+        uses: dawidd6/action-download-artifact@v4
         with:
+          workflow: hash-db.yml  # 请替换为上传该artifact的workflow名称或模式
           name: hash-db
           path: output/hash
+          workflow_conclusion: success
       # <<< MODIFIED
 
       # >>> MODIFIED: 调试查看 artifact 内容（强烈建议保留）
