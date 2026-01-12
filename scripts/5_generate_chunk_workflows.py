@@ -24,9 +24,10 @@ os.makedirs(WORKFLOW_DIR, exist_ok=True)
 # ============================================================
 # Scan workflow 模板
 # 👉 核心修改点：
-# 1. 使用 dawidd6/action-download-artifact@v4 跨 workflow 下载 chunk-csv
-# 2. 增加 actions: read 权限，跨 workflow 下载必须
-# 3. download artifact 放在 git reset 之后
+# 1. 弃用 artifact 下载，改为 git fetch origin main + reset 同步代码
+# 2. 删除 artifact 上传步骤
+# 3. 增加 checkout fetch-depth:0，确保完整拉取历史
+# 4. 增加 git 认证 token 环境变量 PUSH_TOKEN1，供 reset 使用
 # ============================================================
 
 TEMPLATE = """name: Scan_{n}
@@ -38,10 +39,10 @@ on:
       - completed
   workflow_dispatch:
 
-# >>> MODIFIED: 增加 actions: read 权限，跨 workflow 下载 artifact 必须
 permissions:
   contents: read
-  actions: read
+# >>> MODIFIED: 删除 actions: read 权限，仓库操作仅需 contents: read
+#  actions: read
 # <<< MODIFIED
 
 jobs:
@@ -51,25 +52,22 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # >>> MODIFIED: 拉取完整历史，确保 reset 工作正常
 
       - name: 强制同步代码（reset to origin/main）
+        env:
+          PUSH_TOKEN1: ${{{{ secrets.PUSH_TOKEN1 }}}}  # >>> MODIFIED: 添加 git token
+          REPO: ${{{{ github.repository }}}}
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{PUSH_TOKEN1}}@github.com/${{REPO}}.git
           git fetch origin main
           git reset --hard origin/main
 
-      # >>> MODIFIED: 使用 dawidd6/action-download-artifact@v4 跨 workflow 下载 artifact
-      - name: Download chunk CSV artifact
-        uses: dawidd6/action-download-artifact@v4
-        with:
-          workflow: 1-pre-process.yml
-          workflow_conclusion: success
-          name: chunk-csv
-          path: output/middle/chunk
-      # <<< MODIFIED
-
       - name: Check chunk files
-        run: |
-          ls -lh output/middle/chunk
+        run: ls -lh output/middle/chunk
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
@@ -116,17 +114,17 @@ jobs:
             --timeout 15 \\
             --retry 2
 
-      # >>> MODIFIED: 扫描结果只通过 artifact 输出，不再 git push
-      - name: Upload scan outputs artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: scan-output-{n}
-          path: |
-            output/middle/fast/ok/fast_{n}.csv
-            output/middle/fast/not/fast_{n}-invalid.csv
-            output/middle/deep/ok/deep_{n}.csv
-            output/middle/deep/not/deep_{n}-invalid.csv
-            output/hash/chunk/hash_{n}.json
+      # >>> MODIFIED: 弃用 artifact 上传，此处不再上传 scan 结果
+      # - name: Upload scan outputs artifact
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: scan-output-{n}
+      #     path: |
+      #       output/middle/fast/ok/fast_{n}.csv
+      #       output/middle/fast/not/fast_{n}-invalid.csv
+      #       output/middle/deep/ok/deep_{n}.csv
+      #       output/middle/deep/not/deep_{n}-invalid.csv
+      #       output/hash/chunk/hash_{n}.json
       # <<< MODIFIED
 """
 
@@ -159,4 +157,4 @@ for chunk_file in chunks:
 
     print(f"✅ 已生成 workflow: {workflow_filename}")
 
-print("\\n🌀 Scan workflow 生成完成，请提交并推送。")
+print("\n🌀 Scan workflow 生成完成，请提交并推送。")
