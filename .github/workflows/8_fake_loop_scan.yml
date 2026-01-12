@@ -1,0 +1,61 @@
+name: 8-假源与轮播判定
+
+on:
+  workflow_run:
+    workflows:
+      - "2-检查scan执行完毕合并运行结束后运行"
+    types:
+      - completed
+
+# 防止并行写仓库
+concurrency:
+  group: iptv-fake-loop-scan
+  cancel-in-progress: false
+
+jobs:
+  fake_loop_scan:
+    # 只在上游 workflow 成功时运行
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install tqdm
+
+      - name: Run fake & loop scan
+        run: |
+          python 8_fake_loop_scan.py \
+            --hash-dir output/hash/merge \
+            --deep-csv output/middle/deep/deep_total_ok.csv \
+            --fake-hash-json output/hash/fake_hash.json \
+            --output-total output/working/working_total.csv \
+            --output-fake output/working/working_fake.csv \
+            --output-loop output/working/working_loop.csv \
+            --output-ok output/working/working_ok.csv
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add \
+              output/working/*.csv \
+              output/hash/fake_hash.json
+            git commit -m "chore: update fake/loop scan results"
+            git push
+          else
+            echo "No changes to commit"
+          fi
