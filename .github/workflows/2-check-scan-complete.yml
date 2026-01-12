@@ -17,10 +17,6 @@ on:
 permissions:
   contents: write
 
-# =====================================================
-# 1️⃣ 等待所有 scan workflow 执行完毕
-#    （只负责“观察”，不处理数据）
-# =====================================================
 jobs:
   wait-for-scan:
     runs-on: ubuntu-latest
@@ -33,24 +29,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 强制同步代码（reset to origin/main）
+      - name: Reset to origin/main
         run: |
           git fetch origin main
           git reset --hard origin/main
 
-      - name: Setup Python
+      - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      - uses: actions/cache@v3
+      - name: Cache pip packages
+        uses: actions/cache@v3
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - run: |
+      - name: Install dependencies
+        run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
@@ -60,100 +58,92 @@ jobs:
         run: |
           python -u scripts/6.4_check-scan-finished-async.py
 
-      - name: 等待 10 秒
+      - name: Wait 10 seconds
         run: sleep 10
 
-# =====================================================
-# 2️⃣ 合并 scan 结果（artifact → final → git）
-# =====================================================
   merge-results:
     needs: wait-for-scan
     runs-on: ubuntu-latest
+    env:
+      REPO_OWNER: niuinyang
+      REPO_NAME: niuin-s-iptv
+      PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 强制同步代码（reset to origin/main）
+      - name: Reset to origin/main
         run: |
           git fetch origin main
           git reset --hard origin/main
 
-      # >>> MODIFIED: 跨所有 scan_chunk_* workflow 下载所有 scan 输出 artifact
-      - name: Download ALL scan-output artifacts from all scan_chunk workflows
+      # >>> MODIFIED: 跨 workflow 下载所有 scan 输出 artifact
+      - name: Download ALL scan-output artifacts (跨 workflow)
         uses: dawidd6/action-download-artifact@v4
         with:
-          workflow: scan_chunk*.yml  # 这里使用通配符匹配所有 scan_chunk 工作流
-          name: scan-output
+          workflow: 'Scan_chunk*'          # 注意：填写你scan_chunk workflows的名称通配（或具体名称）
+          name: 'scan-output'             # chunk scan 上传的 artifact 名称
           path: artifacts
           workflow_conclusion: success
       # <<< MODIFIED
 
-      # >>> MODIFIED: 跨workflow下载初始 hash_total.json artifact
-      - name: Download initial hash_total.json artifact from hash-db workflow
+      # >>> MODIFIED: 跨 workflow 下载初始 hash_total.json artifact
+      - name: Download initial hash_total.json artifact (跨 workflow)
         uses: dawidd6/action-download-artifact@v4
         with:
-          workflow: 'Download hash_total.json from Google Drive and upload'  # 请替换为上传该artifact的workflow名称或模式
-          name: hash-db
+          workflow: 'Download hash_total.json from Google Drive and upload'  # 上传该 artifact 的 workflow 名称
+          name: 'hash-db'
           path: output/hash
           workflow_conclusion: success
       # <<< MODIFIED
 
-      # >>> MODIFIED: 调试查看 artifact 内容（强烈建议保留）
       - name: Inspect downloaded artifacts
         run: |
-          echo "=== Artifact files ==="
-          find artifacts -type f
+          echo "=== Artifact files in artifacts dir ==="
+          find artifacts -type f || true
           echo "=== Initial hash_total.json ==="
-          ls -lh output/hash/hash_total.json
-      # <<< MODIFIED
+          ls -lh output/hash/hash_total.json || true
 
-      # >>> MODIFIED: 整理 artifact → merge 脚本期望的目录结构
       - name: Prepare merge input from artifacts
         run: |
           mkdir -p output/middle/deep/ok
           mkdir -p output/middle/deep/not
           mkdir -p output/hash/chunk
 
-          # deep scan 结果
+          # deep scan 结果（来自所有 chunk 的scan-output artifact）
           find artifacts -name "deep_*.csv" -exec cp {} output/middle/deep/ok/ \; || true
           find artifacts -name "deep_*-invalid.csv" -exec cp {} output/middle/deep/not/ \; || true
 
-          # hash 结果
+          # hash 结果（来自所有 chunk 的scan-output artifact）
           find artifacts -name "hash_*.json" -exec cp {} output/hash/chunk/ \; || true
-      # <<< MODIFIED
 
-      - name: Setup Python
+      - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
       - name: Run merge hash script
-        run: |
-          python scripts/7.1_merge_hash.py
+        run: python scripts/7.1_merge_hash.py
 
-      # >>> MODIFIED: hash_total.json 不再进 git，只作为 artifact
-      - name: Upload hash_total.json artifact
+      # >>> MODIFIED: hash_total.json 不再进 git，只作为 artifact 上传
+      - name: Upload merged hash_total.json artifact
         uses: actions/upload-artifact@v4
         with:
           name: hash-total-json
           path: output/hash/hash_total.json
+          retention-days: 30
       # <<< MODIFIED
 
       - name: Run merge deep scan csv script
-        run: |
-          python scripts/7.2_merge_deep_scan.py
+        run: python scripts/7.2_merge_deep_scan.py
 
       # >>> MODIFIED: 只提交“最终业务结果”到 git
       - name: Commit and push merged deep scan CSV results
-        env:
-          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add output/middle/deep/deep_total_ok.csv \
-                  output/middle/deep/deep_total_not.csv
+          git add output/middle/deep/deep_total_ok.csv output/middle/deep/deep_total_not.csv
 
           if git diff --cached --quiet; then
             echo "No merge result changes."
@@ -161,32 +151,29 @@ jobs:
           fi
 
           git commit -m "Merge deep scan results [skip ci]"
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
           git push origin HEAD:main --force-with-lease
       # <<< MODIFIED
 
-      - name: 等待 10 秒
+      - name: Wait 10 seconds
         run: sleep 10
 
-# =====================================================
-# 3️⃣ 清理 scan_chunk workflow 文件
-# =====================================================
   delete_workflows:
     needs: merge-results
     runs-on: ubuntu-latest
+    env:
+      PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 强制同步代码（reset to origin/main）
+      - name: Reset to origin/main
         run: |
           git fetch origin main
           git reset --hard origin/main
 
       - name: Delete scan_chunk workflow files only
-        env:
-          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
         run: |
           FILES_SCAN_CHUNK=$(find .github/workflows -type f -name "scan_chunk*.yml" || true)
           if [ -z "$FILES_SCAN_CHUNK" ]; then
@@ -203,8 +190,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/niuinyang/niuin-s-iptv.git
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
           git push origin HEAD:main --force-with-lease
 
-      - name: 等待 10 秒
+      - name: Wait 10 seconds
         run: sleep 10
