@@ -24,10 +24,12 @@ os.makedirs(WORKFLOW_DIR, exist_ok=True)
 # ============================================================
 # Scan workflow 模板
 # 👉 核心修改点：
-# 1. 每个 scan workflow 自己下载 chunk-csv artifact
-# 2. 不再依赖 chunk csv 存在于 git
-# 3. 扫描结果通过 artifact 输出
+# 1. 使用 dawidd6/action-download-artifact@v4
+# 2. 跨 workflow 下载 chunk-csv
+# 3. 增加 actions: read 权限
+# 4. download artifact 放在 git reset 之后
 # ============================================================
+
 TEMPLATE = """name: Scan_{n}
 
 on:
@@ -37,8 +39,11 @@ on:
       - completed
   workflow_dispatch:
 
+# >>> MODIFIED: 增加 actions: read，跨 workflow 下载 artifact 必须
 permissions:
-  contents: write
+  contents: read
+  actions: read
+# <<< MODIFIED
 
 jobs:
   scan_{n}:
@@ -48,21 +53,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ✅ 关键：下载 chunk CSV artifact
-      - name: Download chunk CSV artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: chunk-csv
-          path: output/middle/chunk
-
-      - name: Check chunk files
-        run: |
-          ls -lh output/middle/chunk
-
       - name: 强制同步代码（reset to origin/main）
         run: |
           git fetch origin main
           git reset --hard origin/main
+
+      # >>> MODIFIED: 使用 dawidd6/action-download-artifact@v4 跨 workflow 下载
+      - name: Download chunk CSV artifact
+        uses: dawidd6/action-download-artifact@v4
+        with:
+          # ⚠️ 这里必须是 workflow 文件名，不是 name:
+          workflow: 1-预处理-下载-转txt-合并-分割-生成.yml
+          workflow_conclusion: success
+          name: chunk-csv
+          path: output/middle/chunk
+      # <<< MODIFIED
+
+      - name: Check chunk files
+        run: |
+          ls -lh output/middle/chunk
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
@@ -109,7 +118,7 @@ jobs:
             --timeout 15 \\
             --retry 2
 
-      # ✅ 扫描结果全部通过 artifact 输出
+      # >>> MODIFIED: 扫描结果只通过 artifact 输出，不再 git push
       - name: Upload scan outputs artifact
         uses: actions/upload-artifact@v4
         with:
@@ -120,6 +129,7 @@ jobs:
             output/middle/deep/ok/deep_{n}.csv
             output/middle/deep/not/deep_{n}-invalid.csv
             output/hash/chunk/hash_{n}.json
+      # <<< MODIFIED
 """
 
 print("🧹 清理旧的 scan_* workflow 文件...")
@@ -133,7 +143,7 @@ if not os.path.exists(CHUNK_DIR):
 
 chunks = sorted([
     f for f in os.listdir(CHUNK_DIR)
-    if re.match(r"chunk-\d+\.csv", f)
+    if re.match(r"chunk-\\d+\\.csv", f)
 ])
 
 if not chunks:
@@ -151,4 +161,4 @@ for chunk_file in chunks:
 
     print(f"✅ 已生成 workflow: {workflow_filename}")
 
-print("\n🌀 Scan workflow 生成完成，请提交并推送。")
+print("\\n🌀 Scan workflow 生成完成，请提交并推送。")
