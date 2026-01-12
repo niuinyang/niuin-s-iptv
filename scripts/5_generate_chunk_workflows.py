@@ -20,9 +20,6 @@ clean_dir("output/middle/fast")
 clean_dir("output/middle/deep")
 clean_dir("output/middle/final")
 
-print("🧹 清空旧的 chunk CSV 文件...")
-clean_dir(CHUNK_DIR)
-
 print("🧹 清空旧的 chunk hash JSON 文件...")
 clean_dir(HASH_CHUNK_DIR)
 
