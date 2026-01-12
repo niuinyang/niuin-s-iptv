@@ -93,7 +93,7 @@ jobs:
       - name: Download initial hash_total.json artifact from hash-db workflow
         uses: dawidd6/action-download-artifact@v4
         with:
-          workflow: hash-db.yml  # 请替换为上传该artifact的workflow名称或模式
+          workflow: download-to-artifact.yml  # 请替换为上传该artifact的workflow名称或模式
           name: hash-db
           path: output/hash
           workflow_conclusion: success
