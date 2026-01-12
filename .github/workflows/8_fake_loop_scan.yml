@@ -43,7 +43,7 @@ jobs:
 
       - name: Run fake & loop scan
         run: |
-          python 8_fake_loop_scan.py \
+          python scripts/8_fake_loop_scan.py \
             --hash-dir output/hash/merge \
             --deep-csv output/middle/deep/deep_total_ok.csv \
             --fake-hash-json output/hash/fake_hash.json \
