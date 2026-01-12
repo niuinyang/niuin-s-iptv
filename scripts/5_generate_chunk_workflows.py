@@ -130,7 +130,7 @@ jobs:
 print("🧹 清理旧的 scan_* workflow 文件...")
 
 for f in os.listdir(WORKFLOW_DIR):
-    if re.match(r"scan_.+\\.yml", f):
+    if re.match(r"scan_.+\.yml", f):
         os.remove(os.path.join(WORKFLOW_DIR, f))
 
 if not os.path.exists(CHUNK_DIR):
@@ -138,7 +138,7 @@ if not os.path.exists(CHUNK_DIR):
 
 chunks = sorted([
     f for f in os.listdir(CHUNK_DIR)
-    if re.match(r"chunk-\\d+\\.csv", f)
+    if re.match(r"chunk-\d+\.csv", f)
 ])
 
 if not chunks:
