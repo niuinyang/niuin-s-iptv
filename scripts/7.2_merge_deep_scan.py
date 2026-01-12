@@ -2,7 +2,6 @@
 import os
 import csv
 import argparse
-import subprocess
 
 def merge_csv_dir(input_dir, output_file):
     csv_files = sorted(
@@ -43,15 +42,6 @@ def merge_csv_dir(input_dir, output_file):
 
     print(f"✅ 合并完成: {output_file}（{total_rows} 行数据）")
 
-    # >>> MODIFIED: git add 合并后的 CSV 文件
-    try:
-        subprocess.run(["git", "add", output_file], check=True)
-        print(f"✅ 已 git add 文件: {output_file}")
-    except Exception as e:
-        print(f"⚠️ git add 失败: {e}")
-    # <<< MODIFIED
-
-
 def main(args):
     merge_csv_dir(
         args.ok_dir,
@@ -61,7 +51,6 @@ def main(args):
         args.not_dir,
         args.output_not
     )
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
