@@ -20,8 +20,9 @@ clean_dir("output/middle/fast")
 clean_dir("output/middle/deep")
 clean_dir("output/middle/final")
 
-print("🧹 清空旧的 chunk hash JSON 文件...")
-clean_dir(HASH_CHUNK_DIR)
+# <<< FIX: 不再清空 chunk hash 目录，避免误删已有 hash 结果
+# print("🧹 清空旧的 chunk hash JSON 文件...")
+# clean_dir(HASH_CHUNK_DIR)
 
 os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
@@ -33,6 +34,7 @@ os.makedirs(WORKFLOW_DIR, exist_ok=True)
 # 3. 删除 artifact 上传步骤
 # 4. 增加 checkout fetch-depth:0，确保完整拉取历史
 # 5. 增加 git 认证 token 环境变量 PUSH_TOKEN1，供 reset 和 push 使用
+# 6. 修改 git reset --hard 为 git pull --rebase，避免覆盖其他 chunk 提交
 # ============================================================
 
 TEMPLATE = """name: Scan_{n}
@@ -58,7 +60,7 @@ jobs:
         with:
           fetch-depth: 0  # >>> MODIFIED: 拉取完整历史，确保 reset 工作正常
 
-      - name: 强制同步代码（reset to origin/main）
+      - name: 同步最新代码（pull --rebase 替代 reset）
         env:
           PUSH_TOKEN1: ${{{{ secrets.PUSH_TOKEN1 }}}}  # >>> MODIFIED: 添加 git token
           REPO: ${{{{ github.repository }}}}
@@ -67,7 +69,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{PUSH_TOKEN1}}@github.com/${{REPO}}.git
           git fetch origin main
-          git reset --hard origin/main
+          git pull --rebase origin main  # <<< FIX: 避免 hard reset 覆盖其他 chunk 提交
 
       - name: Check chunk files
         run: ls -lh output/middle/chunk
@@ -135,7 +137,7 @@ jobs:
           while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
             echo "尝试拉取最新代码并合并，尝试次数: $((RETRY_COUNT + 1))"
             git fetch origin ${{BRANCH}}
-            git reset --hard origin/${{BRANCH}}
+            git pull --rebase origin ${{BRANCH}}  # <<< FIX: 避免 hard reset 覆盖其他 chunk 提交
 
             # 复制当前 workflow 产生的结果文件到 repo，添加到 git 暂存区
             git add output/middle/fast/ok/fast_{n}.csv output/middle/fast/not/fast_{n}-invalid.csv output/middle/deep/ok/deep_{n}.csv output/middle/deep/not/deep_{n}-invalid.csv output/hash/chunk/hash_{n}.json
