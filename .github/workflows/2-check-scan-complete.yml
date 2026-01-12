@@ -173,6 +173,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+      REPO_OWNER: niuinyang          # >>> MODIFIED
+      REPO_NAME: niuin-s-iptv        # >>> MODIFIED
 
     steps:
       - name: Checkout repository
