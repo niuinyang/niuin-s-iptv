@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import os
 import re
+import subprocess
+import time
 
 WORKFLOW_DIR = ".github/workflows"
 CHUNK_DIR = "output/middle/chunk"
@@ -25,9 +27,10 @@ os.makedirs(WORKFLOW_DIR, exist_ok=True)
 # Scan workflow 模板
 # 👉 核心修改点：
 # 1. 弃用 artifact 下载，改为 git fetch origin main + reset 同步代码
-# 2. 删除 artifact 上传步骤
-# 3. 增加 checkout fetch-depth:0，确保完整拉取历史
-# 4. 增加 git 认证 token 环境变量 PUSH_TOKEN1，供 reset 使用
+# 2. 增加 "拉取远端最新代码、合并结果文件并提交" 步骤，支持重试
+# 3. 删除 artifact 上传步骤
+# 4. 增加 checkout fetch-depth:0，确保完整拉取历史
+# 5. 增加 git 认证 token 环境变量 PUSH_TOKEN1，供 reset 和 push 使用
 # ============================================================
 
 TEMPLATE = """name: Scan_{n}
@@ -40,10 +43,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-# >>> MODIFIED: 删除 actions: read 权限，仓库操作仅需 contents: read
-#  actions: read
-# <<< MODIFIED
+  contents: write
+# >>> MODIFIED: 需要写权限以提交代码
 
 jobs:
   scan_{n}:
@@ -113,6 +114,51 @@ jobs:
             --concurrency 15 \\
             --timeout 15 \\
             --retry 2
+
+      - name: Commit and push scan results with retry
+        env:
+          PUSH_TOKEN1: ${{{{ secrets.PUSH_TOKEN1 }}}}
+          REPO: ${{{{ github.repository }}}}
+          BRANCH: main
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{PUSH_TOKEN1}}@github.com/${{REPO}}.git
+
+          MAX_RETRIES=5
+          RETRY_DELAY=10
+          RETRY_COUNT=0
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "尝试拉取最新代码并合并，尝试次数: $((RETRY_COUNT + 1))"
+            git fetch origin ${{BRANCH}}
+            git reset --hard origin/${{BRANCH}}
+
+            # 复制当前 workflow 产生的结果文件到 repo，添加到 git 暂存区
+            git add output/middle/fast/ok/fast_{n}.csv output/middle/fast/not/fast_{n}-invalid.csv output/middle/deep/ok/deep_{n}.csv output/middle/deep/not/deep_{n}-invalid.csv output/hash/chunk/hash_{n}.json
+
+            # 检查是否有变更
+            if git diff --cached --quiet; then
+              echo "没有新变更，退出提交"
+              exit 0
+            fi
+
+            git commit -m "自动提交 Scan_{n} 扫描结果 [ci skip]" || echo "无新提交内容"
+
+            # 尝试推送
+            if git push origin ${{BRANCH}}; then
+              echo "推送成功"
+              exit 0
+            else
+              echo "推送失败，等待 $RETRY_DELAY 秒后重试"
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              sleep $RETRY_DELAY
+            fi
+          done
+
+          echo "超过最大重试次数，推送失败"
+          exit 1
 
       # >>> MODIFIED: 弃用 artifact 上传，此处不再上传 scan 结果
       # - name: Upload scan outputs artifact
