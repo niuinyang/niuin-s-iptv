@@ -1,23 +1,29 @@
 name: 8-假源与轮播判定
 
 on:
-  workflow_dispatch:
+  # 上游 workflow 结束后自动触发
   workflow_run:
     workflows:
       - "2-检查scan执行完毕合并运行结束后运行"
     types:
       - completed
 
-# 防止并行写仓库
+  # 手动触发（已验证不会 skipped）
+  workflow_dispatch:
+
+# 防止并发写 fake_hash.json / working_*.csv
 concurrency:
   group: iptv-fake-loop-scan
   cancel-in-progress: false
 
 jobs:
   fake_loop_scan:
-    # 只在上游 workflow 成功时运行
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+
+    # ⭐⭐⭐ 关键修复点：兼容 workflow_dispatch + workflow_run ⭐⭐⭐
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
 
     steps:
       - name: Checkout repository
@@ -44,7 +50,10 @@ jobs:
             --output-total output/working/working_total.csv \
             --output-fake output/working/working_fake.csv \
             --output-loop output/working/working_loop.csv \
-            --output-ok output/working/working_ok.csv
+            --output-ok output/working/working_ok.csv \
+            --max-history 6 \
+            --threads 8 \
+            --log-level INFO
 
       - name: Commit results
         run: |
