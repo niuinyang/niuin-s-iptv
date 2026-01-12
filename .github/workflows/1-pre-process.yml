@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '05 16 * * *'   # UTC 16:05 = 北京时间 00:05
+    - cron: '05 1 * * *'   # UTC 01:05 = 北京时间 09:05
     - cron: '40 6 * * *'    # UTC 06:40 = 北京时间 14:40
     - cron: '40 12 * * *'   # UTC 08:40 = 北京时间 16:40
 
