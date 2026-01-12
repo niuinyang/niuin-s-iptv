@@ -56,7 +56,7 @@ jobs:
           mkdir -p input/download/net
           mkdir -p scripts
           
-   #   - run: python scripts/1_download_m3u.py
+      # - run: python scripts/1_download_m3u.py
       
       - run: chmod -R u+rw input/download
 
@@ -218,12 +218,23 @@ jobs:
 
       - run: python scripts/4_split_merge.py
 
-      # >>> MODIFIED: 上传 chunk 目录 CSV 文件为 artifact，代替 git push
-      - name: Upload chunk CSV artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: chunk-csv
-          path: output/middle/chunk/*.csv
+      # >>> MODIFIED: 不再上传 artifact，改为 git 提交 chunk 目录内容
+      - name: Commit and push chunk csv files (替代上传 artifact)
+        env:
+          PUSH_TOKEN1: ${{ secrets.PUSH_TOKEN1 }}
+          REPO: ${{ github.repository }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN1}@github.com/${REPO}.git
+
+          git add output/middle/chunk/*.csv
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit."
+            exit 0
+          fi
+          git commit -m "Add chunk csv files [ci skip]"
+          git push origin HEAD:main --force-with-lease
       # <<< MODIFIED
 
       - name: 等待 10 秒，确保推送同步
@@ -243,18 +254,20 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      # >>> MODIFIED: 下载 chunk 目录 CSV 文件 artifact，代替从仓库拉取
-      - name: Download chunk CSV artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: chunk-csv
-          path: output/middle/chunk
-      # <<< MODIFIED
-
-      - name: 强制同步代码和文件（reset to origin/main）
+      # >>> MODIFIED: 不再下载 artifact，改为从 git 拉取 chunk 目录内容
+      - name: Pull chunk csv files from repo (替代下载 artifact)
+        env:
+          PUSH_TOKEN1: ${{ secrets.PUSH_TOKEN1 }}
+          REPO: ${{ github.repository }}
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN1}@github.com/${REPO}.git
           git fetch origin main
           git reset --hard origin/main
+
+          ls -lh output/middle/chunk  # <<< MODIFIED: 调试确认 chunk 文件已拉取
+      # <<< MODIFIED
 
       - env:
           PUSH_TOKEN1: ${{ secrets.PUSH_TOKEN1 }}
@@ -278,7 +291,6 @@ jobs:
       - run: pip install chardet pillow tqdm requests
 
       - run: |
-          ls -lh output/middle/chunk  # <<< MODIFIED: 调试确认 chunk 文件已下载
           python scripts/5_generate_chunk_workflows.py
           git add .github/workflows output/middle
           if ! git diff --cached --quiet; then
