@@ -339,12 +339,12 @@ def main():
     try:
         with open(args.deep_csv, newline='', encoding='utf-8') as f_in:
             reader = csv.DictReader(f_in)
-            fieldnames = reader.fieldnames + ['假源评分', '轮播评分']
+            fieldnames = reader.fieldnames + ['fake_score', 'loop_score']
             for row in reader:
                 addr = row['地址']
                 scores = score_map.get(addr, {'fake_score': 0, 'loop_score': 0})
-                row['假源评分'] = scores['fake_score']
-                row['轮播评分'] = scores['loop_score']
+                row['fake_score'] = scores['fake_score']
+                row['loop_score'] = scores['loop_score']
                 records.append(row)
     except Exception as e:
         logging.error(f"Failed to read deep CSV for output: {e}")
