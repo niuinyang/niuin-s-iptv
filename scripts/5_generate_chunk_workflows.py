@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 import os
 import re
-import subprocess
-import time
 
 WORKFLOW_DIR = ".github/workflows"
 CHUNK_DIR = "output/middle/chunk"
+HASH_CHUNK_DIR = "output/hash/chunk"  # 新增：chunk hash 目录
 
 def clean_dir(path):
     """删除目录内所有文件，但保留所有子目录结构"""
@@ -20,6 +19,12 @@ print("🧹 清空旧的 fast / deep / final 结果文件...")
 clean_dir("output/middle/fast")
 clean_dir("output/middle/deep")
 clean_dir("output/middle/final")
+
+print("🧹 清空旧的 chunk CSV 文件...")
+clean_dir(CHUNK_DIR)
+
+print("🧹 清空旧的 chunk hash JSON 文件...")
+clean_dir(HASH_CHUNK_DIR)
 
 os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
@@ -159,19 +164,6 @@ jobs:
 
           echo "超过最大重试次数，推送失败"
           exit 1
-
-      # >>> MODIFIED: 弃用 artifact 上传，此处不再上传 scan 结果
-      # - name: Upload scan outputs artifact
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: scan-output-{n}
-      #     path: |
-      #       output/middle/fast/ok/fast_{n}.csv
-      #       output/middle/fast/not/fast_{n}-invalid.csv
-      #       output/middle/deep/ok/deep_{n}.csv
-      #       output/middle/deep/not/deep_{n}-invalid.csv
-      #       output/hash/chunk/hash_{n}.json
-      # <<< MODIFIED
 """
 
 print("🧹 清理旧的 scan_* workflow 文件...")
