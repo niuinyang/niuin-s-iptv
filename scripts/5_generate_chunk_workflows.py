@@ -63,7 +63,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v4
         with:
           # ⚠️ 这里必须是 workflow 文件名，不是 name:
-          workflow: 1-预处理-下载-转txt-合并-分割-生成.yml
+          workflow: 1-pre-process.yml
           workflow_conclusion: success
           name: chunk-csv
           path: output/middle/chunk
