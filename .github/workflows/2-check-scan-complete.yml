@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # >>> MODIFIED: 确保拉取完整历史
 
       - name: Reset to origin/main
         run: |
@@ -72,51 +74,42 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # >>> MODIFIED: 拉取完整历史，便于推送
 
       - name: Reset to origin/main
         run: |
           git fetch origin main
           git reset --hard origin/main
 
-      # >>> MODIFIED: 跨 workflow 下载所有 scan 输出 artifact
-      - name: Download ALL scan-output artifacts (跨 workflow)
-        uses: dawidd6/action-download-artifact@v4
-        with:
-          workflow: 'Scan_chunk*'          # 注意：填写你scan_chunk workflows的名称通配（或具体名称）
-          name: 'scan-output'             # chunk scan 上传的 artifact 名称
-          path: artifacts
-          workflow_conclusion: success
-      # <<< MODIFIED
+      # >>> MODIFIED: 移除所有 artifact 下载步骤，改为直接从仓库目录使用文件
+      #- name: Download ALL scan-output artifacts (跨 workflow)
+      #  uses: dawidd6/action-download-artifact@v4
+      #  with:
+      #    workflow: 'Scan_chunk*'
+      #    name: 'scan-output'
+      #    path: artifacts
+      #    workflow_conclusion: success
 
-      # >>> MODIFIED: 跨 workflow 下载初始 hash_total.json artifact
-      - name: Download initial hash_total.json artifact (跨 workflow)
-        uses: dawidd6/action-download-artifact@v4
-        with:
-          workflow: 'Download hash_total.json from Google Drive and upload'  # 上传该 artifact 的 workflow 名称
-          name: 'hash-db'
-          path: output/hash
-          workflow_conclusion: success
-      # <<< MODIFIED
+      #- name: Download initial hash_total.json artifact (跨 workflow)
+      #  uses: dawidd6/action-download-artifact@v4
+      #  with:
+      #    workflow: 'Download hash_total.json from Google Drive and upload'
+      #    name: 'hash-db'
+      #    path: output/hash
+      #    workflow_conclusion: success
+      # <<< MODIFIED END
 
-      - name: Inspect downloaded artifacts
+      - name: Inspect repo files instead of artifacts  # >>> MODIFIED 新增
         run: |
-          echo "=== Artifact files in artifacts dir ==="
-          find artifacts -type f || true
-          echo "=== Initial hash_total.json ==="
-          ls -lh output/hash/hash_total.json || true
-
-      - name: Prepare merge input from artifacts
-        run: |
-          mkdir -p output/middle/deep/ok
-          mkdir -p output/middle/deep/not
-          mkdir -p output/hash/chunk
-
-          # deep scan 结果（来自所有 chunk 的scan-output artifact）
-          find artifacts -name "deep_*.csv" -exec cp {} output/middle/deep/ok/ \; || true
-          find artifacts -name "deep_*-invalid.csv" -exec cp {} output/middle/deep/not/ \; || true
-
-          # hash 结果（来自所有 chunk 的scan-output artifact）
-          find artifacts -name "hash_*.json" -exec cp {} output/hash/chunk/ \; || true
+          echo "=== output/middle/deep/ok ==="
+          ls -lh output/middle/deep/ok || true
+          echo "=== output/middle/deep/not ==="
+          ls -lh output/middle/deep/not || true
+          echo "=== output/hash/chunk ==="
+          ls -lh output/hash/chunk || true
+          echo "=== output/hash ==="
+          ls -lh output/hash || true
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
@@ -126,19 +119,26 @@ jobs:
       - name: Run merge hash script
         run: python scripts/7.1_merge_hash.py
 
-      # >>> MODIFIED: hash_total.json 不再进 git，只作为 artifact 上传
-      - name: Upload merged hash_total.json artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: hash-total-json
-          path: output/hash/hash_total.json
-          retention-days: 30
-      # <<< MODIFIED
+      # >>> MODIFIED: 直接提交 hash_total.json 到仓库（如果需要）
+      - name: Commit and push merged hash_total.json (optional)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/hash/hash_total.json || true
+
+          if git diff --cached --quiet; then
+            echo "No changes in hash_total.json"
+          else
+            git commit -m "Update merged hash_total.json [skip ci]"
+            git remote set-url origin https://x-access-token:${{ secrets.PUSH_TOKEN1 }}@github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}.git
+            git push origin HEAD:main --force-with-lease
+          fi
+      # <<< MODIFIED END
 
       - name: Run merge deep scan csv script
         run: python scripts/7.2_merge_deep_scan.py
 
-      # >>> MODIFIED: 只提交“最终业务结果”到 git
+      # >>> MODIFIED: 只提交最终业务结果到 git
       - name: Commit and push merged deep scan CSV results
         run: |
           git config user.name "github-actions[bot]"
@@ -151,7 +151,7 @@ jobs:
           fi
 
           git commit -m "Merge deep scan results [skip ci]"
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
+          git remote set-url origin https://x-access-token:${{ secrets.PUSH_TOKEN1 }}@github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}.git
           git push origin HEAD:main --force-with-lease
       # <<< MODIFIED
 
@@ -167,6 +167,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # >>> MODIFIED 保持统一拉取深度
 
       - name: Reset to origin/main
         run: |
@@ -190,7 +192,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
+          git remote set-url origin https://x-access-token:${{ secrets.PUSH_TOKEN1 }}@github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}.git
           git push origin HEAD:main --force-with-lease
 
       - name: Wait 10 seconds
