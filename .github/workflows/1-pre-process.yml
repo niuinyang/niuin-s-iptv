@@ -1,11 +1,5 @@
 name: 1-预处理-下载-转txt-合并-分割-生成
 
-# >>> MODIFIED: 防止预处理流程并行 push
-concurrency:
-  group: iptv-preprocess-push
-  cancel-in-progress: false
-# <<< MODIFIED
-
 on:
   workflow_dispatch:
   schedule:
@@ -18,10 +12,63 @@ permissions:
 
 jobs:
   # =====================================================
+  # 0️⃣ 清理旧结果目录
+  # =====================================================
+  job0_clean_old_results:
+    name: 0_清理旧结果目录
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: 强制同步代码和文件（reset to origin/main）
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: 清理旧结果目录并提交推送
+        env:
+          PUSH_TOKEN1: ${{ secrets.PUSH_TOKEN1 }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          # 清理目录（删除所有文件，保留目录结构）
+          rm -rf output/hash/chunk/*
+          rm -rf output/middle/fast/*
+          rm -rf output/middle/deep/*
+          rm -rf output/middle/chunk/*
+          mkdir -p output/hash/chunk
+          mkdir -p output/middle/fast
+          mkdir -p output/middle/deep
+          mkdir -p output/middle/chunk
+
+          # 配置 git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 添加变更
+          git add output/hash/chunk output/middle/fast output/middle/deep output/middle/chunk
+
+          # 判断是否有变更
+          if git diff --cached --quiet; then
+            echo "✅ 没有清理后的变更，跳过提交"
+            exit 0
+          fi
+
+          # 提交并推送
+          git commit -m "清理旧结果目录，开始新一轮扫描 [ci skip]"
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN1}@github.com/${REPO}.git
+          git push origin HEAD:main --force-with-lease
+
+  # =====================================================
   # 1️⃣ 下载 M3U
   # =====================================================
   job1_download_all_m3u:
     name: 1_下载源文件
+    needs: job0_clean_old_results
     runs-on: ubuntu-latest
 
     steps:
