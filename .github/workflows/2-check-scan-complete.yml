@@ -1,11 +1,5 @@
 name: 2-检查scan执行完毕合并
 
-# >>> MODIFIED: 防止 merge / delete 流程并行 push
-concurrency:
-  group: iptv-merge-and-clean
-  cancel-in-progress: false
-# <<< MODIFIED
-
 on:
   workflow_run:
     workflows:
