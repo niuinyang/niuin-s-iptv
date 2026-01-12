@@ -15,7 +15,10 @@ on:
 concurrency:
   group: iptv-fake-loop-scan
   cancel-in-progress: false
-
+  
+permissions:
+  contents: write
+  
 jobs:
   fake_loop_scan:
     runs-on: ubuntu-latest
