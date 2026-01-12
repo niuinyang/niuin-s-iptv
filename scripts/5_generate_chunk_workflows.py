@@ -24,8 +24,8 @@ os.makedirs(WORKFLOW_DIR, exist_ok=True)
 # ============================================================
 # Scan workflow 模板
 # 👉 核心修改点：
-# 1. 使用 actions/download-artifact@v4
-# 2. 跨 workflow 下载 chunk-csv（利用 workflow_run 自动上下文）
+# 1. 使用 dawidd6/action-download-artifact@v4 跨 workflow 下载 chunk-csv
+# 2. 增加 actions: read 权限，跨 workflow 下载必须
 # 3. download artifact 放在 git reset 之后
 # ============================================================
 
@@ -38,9 +38,10 @@ on:
       - completed
   workflow_dispatch:
 
-# >>> MODIFIED: 修改权限，只需 contents: read，去掉 actions: read
+# >>> MODIFIED: 增加 actions: read 权限，跨 workflow 下载 artifact 必须
 permissions:
   contents: read
+  actions: read
 # <<< MODIFIED
 
 jobs:
@@ -56,10 +57,12 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
 
-      # >>> MODIFIED: 使用 actions/download-artifact@v4，去掉 workflow 和 workflow_conclusion 参数
+      # >>> MODIFIED: 使用 dawidd6/action-download-artifact@v4 跨 workflow 下载 artifact
       - name: Download chunk CSV artifact
-        uses: actions/download-artifact@v4
+        uses: dawidd6/action-download-artifact@v4
         with:
+          workflow: 1-pre-process.yml
+          workflow_conclusion: success
           name: chunk-csv
           path: output/middle/chunk
       # <<< MODIFIED
