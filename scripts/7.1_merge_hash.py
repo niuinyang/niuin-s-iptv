@@ -3,16 +3,16 @@ import os
 import json
 import argparse
 from datetime import datetime, timezone, timedelta
+import subprocess
 
 CHUNK_DIR_DEFAULT = "output/hash/chunk"
-TOTAL_FILE_DEFAULT = "output/hash/hash_total.json"
-MAX_HISTORY = 6
+MERGE_DIR_DEFAULT = "output/hash/merge"
 
 
 def get_now_tag():
-    """生成时间点标签 YYYYMMDDHHMM（北京时间，UTC+8）"""
+    """生成时间点标签 YYMMDDHHMM（北京时间，UTC+8）"""
     beijing_tz = timezone(timedelta(hours=8))
-    return datetime.now(beijing_tz).strftime("%Y%m%d%H%M")
+    return datetime.now(beijing_tz).strftime("%y%m%d%H%M")
 
 
 def load_json_safe(path):
@@ -27,31 +27,35 @@ def load_json_safe(path):
             return {}
 
 
+def validate_and_fix_entry(data):
+    """
+    验证并规范单个 URL 对应的哈希字段结构。
+    确保主要哈希字段存在且为列表类型，若缺失则初始化为空列表。
+    """
+    fields = ["phash", "ahash", "dhash", "whash"]
+    for field in fields:
+        if field not in data or not isinstance(data[field], list):
+            data[field] = []
+    return data
+
+
 def main(args):
     chunk_dir = args.chunk_dir
-    total_file = args.total_file
+    merge_dir = args.merge_dir
     time_tag = args.time_tag or get_now_tag()
 
-    print(f"🕒 本次检测时间点: {time_tag}")
+    print(f"🕒 合并时间标签: {time_tag}")
 
-    # 1. 读取已有 hash_total.json
-    total_data = load_json_safe(total_file)
-
-    # 2. 遍历 chunk 目录
     if not os.path.exists(chunk_dir):
-        print(f"⚠️ chunk目录不存在: {chunk_dir}")
+        print(f"❌ chunk目录不存在: {chunk_dir}")
         return
 
-    files = [
-        f for f in os.listdir(chunk_dir)
-        if f.endswith(".json")
-    ]
-
+    files = [f for f in os.listdir(chunk_dir) if f.endswith(".json")]
     if not files:
-        print("⚠️ chunk 目录为空，未发现可合并文件")
+        print("❌ chunk目录没有发现任何 JSON 文件")
         return
 
-    print(f"ℹ️ 发现 {len(files)} 个 chunk 文件，开始合并...")
+    merged_data = {}
 
     for fname in files:
         fpath = os.path.join(chunk_dir, fname)
@@ -61,48 +65,45 @@ def main(args):
             print(f"    ⚠️ 文件为空或无效，跳过: {fname}")
             continue
 
-        for url, result in chunk_data.items():
-            # 初始化 URL 节点
-            if url not in total_data:
-                total_data[url] = {}
+        for url, data in chunk_data.items():
+            data = validate_and_fix_entry(data)  # 校验并补全字段
+            # 直接合并，后面覆盖前面相同 URL 数据
+            merged_data[url] = data
 
-            # 写入当前时间点
-            total_data[url][time_tag] = result
+    # 输出目录和文件名
+    os.makedirs(merge_dir, exist_ok=True)
+    output_file = os.path.join(merge_dir, f"{time_tag}-hash-merge.json")
 
-            # 超过最大历史数量，删除最早的
-            if len(total_data[url]) > MAX_HISTORY:
-                sorted_keys = sorted(total_data[url].keys())
-                for old_key in sorted_keys[:-MAX_HISTORY]:
-                    del total_data[url][old_key]
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(merged_data, f, indent=2, ensure_ascii=False)
 
-    # 3. 确保输出目录存在
-    os.makedirs(os.path.dirname(total_file), exist_ok=True)
+    print(f"✅ 合并完成，文件保存到: {output_file}")
 
-    # 4. 写回 hash_total.json
-    with open(total_file, "w", encoding="utf-8") as f:
-        json.dump(total_data, f, indent=2, ensure_ascii=False)
-
-    print(f"✅ 合并完成，结果写入: {total_file}")
+    # git add 合并结果文件
+    try:
+        subprocess.run(["git", "add", output_file], check=True)
+        print(f"✅ 已 git add 文件: {output_file}")
+    except Exception as e:
+        print(f"⚠️ git add 失败: {e}")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="合并 hash chunk 文件，生成多时间点 hash 历史"
+        description="合并 chunk 文件生成单个大 JSON 文件，并 git add"
     )
     parser.add_argument(
         "--chunk-dir",
         default=CHUNK_DIR_DEFAULT,
-        help="hash chunk 目录"
+        help="chunk JSON 文件目录"
     )
     parser.add_argument(
-        "--total-file",
-        default=TOTAL_FILE_DEFAULT,
-        help="hash_total.json 输出路径"
+        "--merge-dir",
+        default=MERGE_DIR_DEFAULT,
+        help="合并结果保存目录"
     )
     parser.add_argument(
         "--time-tag",
-        help="手动指定时间点（YYYYMMDDHHMM），不指定则使用当前时间"
+        help="时间标签（YYMMDDHHMM），默认取当前北京时间"
     )
-
     args = parser.parse_args()
     main(args)
