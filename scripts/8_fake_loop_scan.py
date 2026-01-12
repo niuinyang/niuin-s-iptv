@@ -88,18 +88,27 @@ def parse_resolution(res_str):
     except Exception:
         return (0, 0)
 
+def safe_float(val):
+    try:
+        return float(val)
+    except Exception:
+        return 0.0
+
 def load_deep_csv(deep_csv_path):
     deep_data = {}
     try:
         with open(deep_csv_path, newline='', encoding='utf-8') as f:
             reader = csv.DictReader(f)
-            for row in reader:
-                addr = row['地址']
+            for i, row in enumerate(reader, start=1):
+                addr = row.get('地址', '').strip()
+                fps_val = row.get('帧率', '').strip()
+                fps = safe_float(fps_val)
+
                 deep_data[addr] = {
                     'ffprobe_success': row.get('ffprobe是否成功', '') == '成功',
-                    'fps': float(row.get('帧率', '0')),
+                    'fps': fps,
                     'resolution': parse_resolution(row.get('分辨率', '0x0')),
-                    'has_audio': row.get('音频', '') != '',
+                    'has_audio': bool(row.get('音频', '').strip()),
                 }
         logging.info(f"Loaded deep info for {len(deep_data)} addresses.")
     except Exception as e:
@@ -180,7 +189,6 @@ def score_address(addr, hash_history, deep_info, fake_hash_db):
     if not htypes:
         return 0, 0
 
-    # 最近一次检测hash（历史最后一个）
     latest_hashes = {}
     for htype in HASH_TYPES:
         hlist = htypes.get(htype, [])
@@ -189,18 +197,15 @@ def score_address(addr, hash_history, deep_info, fake_hash_db):
         else:
             latest_hashes[htype] = [None, None, None]
 
-    # A. 单次检测判定
     for htype, hashes in latest_hashes.items():
         if hashes and None not in hashes and hash_all_equal(hashes):
             score_fake += 2
             score_loop += 2
 
-    # A2: 4种hash同时全部相同
     if all(htype in latest_hashes and latest_hashes[htype] and None not in latest_hashes[htype] and hash_all_equal(latest_hashes[htype]) for htype in HASH_TYPES):
         score_fake += 4
         score_loop += 4
 
-    # B. 多次检测历史一致性 (只看2s点hash)
     for htype, history_list in htypes.items():
         if len(history_list) < 2:
             continue
@@ -216,14 +221,12 @@ def score_address(addr, hash_history, deep_info, fake_hash_db):
             score_fake += 3
             score_loop += 3
 
-    # C. 多地址共性判定
     for htype, hashes in latest_hashes.items():
         for h in hashes:
             if h and is_hash_typical_fake(fake_hash_db, htype, h):
                 score_fake += 10
                 score_loop += 8
 
-    # D. deep_total_ok辅助扣分
     if deep.get('ffprobe_success'):
         score_fake -= 1
         score_loop -= 1
@@ -251,9 +254,6 @@ def write_output_files(
     fake_threshold=FAKE_THRESHOLD,
     loop_threshold=LOOP_THRESHOLD,
 ):
-    """
-    records: List[Dict]，每条记录已包含 fake_score / loop_score
-    """
     os.makedirs(os.path.dirname(output_total), exist_ok=True)
 
     if not records:
@@ -268,7 +268,6 @@ def write_output_files(
             writer.writeheader()
             writer.writerows(rows)
 
-    # 全量输出
     write_csv(output_total, records)
 
     fake_rows = []
@@ -336,7 +335,6 @@ def main():
         fscore, lscore = score_address(addr, hash_history, deep_info, fake_hash_db)
         score_map[addr] = {'fake_score': fscore, 'loop_score': lscore}
 
-    # 把评分附加到csv行
     records = []
     try:
         with open(args.deep_csv, newline='', encoding='utf-8') as f_in:
