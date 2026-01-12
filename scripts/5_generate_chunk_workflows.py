@@ -6,24 +6,6 @@ WORKFLOW_DIR = ".github/workflows"
 CHUNK_DIR = "output/middle/chunk"
 HASH_CHUNK_DIR = "output/hash/chunk"  # 新增：chunk hash 目录
 
-def clean_dir(path):
-    """删除目录内所有文件，但保留所有子目录结构"""
-    if not os.path.exists(path):
-        return
-    for root, dirs, files in os.walk(path):
-        for f in files:
-            os.remove(os.path.join(root, f))
-
-print("🧹 清空旧的 fast / deep / final 结果文件...")
-
-clean_dir("output/middle/fast")
-clean_dir("output/middle/deep")
-clean_dir("output/middle/final")
-
-# <<< FIX: 不再清空 chunk hash 目录，避免误删已有 hash 结果
-# print("🧹 清空旧的 chunk hash JSON 文件...")
-# clean_dir(HASH_CHUNK_DIR)
-
 os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
 # ============================================================
