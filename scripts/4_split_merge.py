@@ -32,18 +32,6 @@ def split_deep_scan(
     # 创建输出目录（如果不存在）
     os.makedirs(output_dir, exist_ok=True)                            # 创建输出目录，exist_ok=True表示目录已存在不报错
 
-    # === 清理旧 chunk 文件 ===
-    print("\n=== 清理旧的分片文件 ===")
-    for filename in os.listdir(output_dir):                           # 遍历输出目录下的所有文件
-        full_path = os.path.join(output_dir, filename)                # 拼接成完整路径
-        print(f"发现文件: {full_path}")                               # 输出找到的文件名
-
-        if filename.startswith("chunk") and filename.endswith(".csv"):  # 判断是否是chunk开头且以.csv结尾的文件
-            os.remove(full_path)                                      # 删除该文件
-            print(f"👉 已删除: {full_path}")                          # 输出删除提示
-        else:
-            print(f"❌ 跳过（不是 chunk*.csv）: {full_path}")         # 不是chunk文件，跳过并输出提示
-
     # === 读取 CSV ===
     print("\n=== 读取 CSV 文件 ===")
     try:
