@@ -4,7 +4,7 @@ on:
   # 上游 workflow 结束后自动触发
   workflow_run:
     workflows:
-      - "2-检查scan执行完毕合并运行结束后运行"
+      - "2-检查scan执行完毕合并"
     types:
       - completed
 
