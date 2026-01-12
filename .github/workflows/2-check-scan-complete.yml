@@ -82,34 +82,14 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
 
-      # >>> MODIFIED: 移除所有 artifact 下载步骤，改为直接从仓库目录使用文件
-      #- name: Download ALL scan-output artifacts (跨 workflow)
-      #  uses: dawidd6/action-download-artifact@v4
-      #  with:
-      #    workflow: 'Scan_chunk*'
-      #    name: 'scan-output'
-      #    path: artifacts
-      #    workflow_conclusion: success
-
-      #- name: Download initial hash_total.json artifact (跨 workflow)
-      #  uses: dawidd6/action-download-artifact@v4
-      #  with:
-      #    workflow: 'Download hash_total.json from Google Drive and upload'
-      #    name: 'hash-db'
-      #    path: output/hash
-      #    workflow_conclusion: success
-      # <<< MODIFIED END
-
-      - name: Inspect repo files instead of artifacts  # >>> MODIFIED 新增
+      - name: Inspect repo files
         run: |
+          echo "=== output/hash/chunk ==="
+          ls -lh output/hash/chunk || true
           echo "=== output/middle/deep/ok ==="
           ls -lh output/middle/deep/ok || true
           echo "=== output/middle/deep/not ==="
           ls -lh output/middle/deep/not || true
-          echo "=== output/hash/chunk ==="
-          ls -lh output/hash/chunk || true
-          echo "=== output/hash ==="
-          ls -lh output/hash || true
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
@@ -119,26 +99,57 @@ jobs:
       - name: Run merge hash script
         run: python scripts/7.1_merge_hash.py
 
-      # >>> MODIFIED: 直接提交 hash_total.json 到仓库（如果需要）
-      - name: Commit and push merged hash_total.json (optional)
+      - name: Cleanup old hash-merge files (keep last 3 days)
         run: |
+          set -e
+          folder="output/hash/merge"
+          now_ts=$(date -u +%s)  # UTC 时间戳
+          max_age_seconds=$((72*3600))  # 72小时 = 3天
+
+          for f in "$folder"/*-hash-merge.json; do
+            [ -e "$f" ] || continue
+            base=$(basename "$f")
+            datetime_prefix=${base:0:10}  # 文件名前10位 yymmddhhmm
+
+            yy="20${datetime_prefix:0:2}"
+            mm="${datetime_prefix:2:2}"
+            dd="${datetime_prefix:4:2}"
+            HH="${datetime_prefix:6:2}"
+            MM="${datetime_prefix:8:2}"
+
+            file_time="${yy}-${mm}-${dd} ${HH}:${MM}:00"
+            file_ts=$(date -u -d "$file_time" +%s)
+
+            age=$((now_ts - file_ts))
+            if [ $age -gt $max_age_seconds ]; then
+              echo "Deleting old file: $f (age ${age}s)"
+              rm -f "$f"
+            fi
+          done
+
+      - name: Commit and push merged hash JSON
+        run: |
+          set -e
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/hash/hash_total.json || true
+
+          git add output/hash/merge/*-hash-merge.json || true
 
           if git diff --cached --quiet; then
-            echo "No changes in hash_total.json"
-          else
-            git commit -m "Update merged hash_total.json [skip ci]"
-            git remote set-url origin https://x-access-token:${{ secrets.PUSH_TOKEN1 }}@github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}.git
-            git push origin HEAD:main --force-with-lease
+            echo "No changes in merged hash JSON"
+            exit 0
           fi
-      # <<< MODIFIED END
+
+          git commit -m "Update merged hash JSON [skip ci]"
+
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
+
+          git push origin HEAD:main --force-with-lease
 
       - name: Run merge deep scan csv script
         run: python scripts/7.2_merge_deep_scan.py
 
-      # >>> MODIFIED: 只提交最终业务结果到 git
       - name: Commit and push merged deep scan CSV results
         run: |
           git config user.name "github-actions[bot]"
@@ -151,9 +162,8 @@ jobs:
           fi
 
           git commit -m "Merge deep scan results [skip ci]"
-          git remote set-url origin https://x-access-token:${{ secrets.PUSH_TOKEN1 }}@github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}.git
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
           git push origin HEAD:main --force-with-lease
-      # <<< MODIFIED
 
       - name: Wait 10 seconds
         run: sleep 10
@@ -192,7 +202,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
-          git remote set-url origin https://x-access-token:${{ secrets.PUSH_TOKEN1 }}@github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}.git
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
           git push origin HEAD:main --force-with-lease
 
       - name: Wait 10 seconds
