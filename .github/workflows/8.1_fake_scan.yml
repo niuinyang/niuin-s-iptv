@@ -1,11 +1,11 @@
 name: 3-静态假源检测与分析
 
 on:
-  #workflow_run:
-    #workflows:
-      #- "2-检查scan执行完毕合并"
-    #types:
-      #- completed
+  workflow_run:
+    workflows:
+      - "2-检查scan执行完毕合并"
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ env:
 
 jobs:
   fake_scan_analysis:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') }}
     runs-on: ubuntu-latest
 
     steps:
