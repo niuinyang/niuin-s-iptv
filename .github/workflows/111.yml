@@ -17,12 +17,12 @@ jobs:
       - name: 安装 ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: 抓取2、5、20秒帧图片
+      - name: 连续抓取20个帧图片（每秒1帧，2s到21s）
         run: |
           mkdir -p output/linshi
-          ffmpeg -ss 2 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_2s.png
-          ffmpeg -ss 5 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_5s.png
-          ffmpeg -ss 20 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_20s.png
+          for i in $(seq 2 21); do
+            ffmpeg -ss $i -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_${i}s.png
+          done
 
       - name: 提交并推送图片到仓库
         run: |
@@ -32,4 +32,4 @@ jobs:
           git commit -m "自动抓帧图片更新 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无变更，跳过提交"
           git push origin HEAD:${{ github.ref_name }}
         env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}在这个基础上修改
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
