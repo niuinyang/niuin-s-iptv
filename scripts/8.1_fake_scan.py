@@ -4,193 +4,140 @@
 """
 8.1_fake_scan.py
 
-目标：
-- 排除长期画面不动的伪直播
-- 包括：测试卡 / LOGO 页 / 停播页 / 起播后卡死
-
-设计原则：
-- 只通过“时间维度上的画面活性”判定
-- 不因单次异常误杀真实直播
+读取 output/hash/merge/ 目录下所有 *-hash-merge.json 文件，
+基于 phash 等哈希值判定每个 URL 的画面状态（静态、冻结、无效、活跃），
+统计多次检测结果，给出综合判定标签，
+并将结果追加到 deep_total_ok.csv，
+输出 fake-ok.csv（通过）和 fake-not.csv（未通过）两个文件。
 """
 
+import csv
 import json
 import os
+import glob
 from collections import defaultdict
 import imagehash
 
-# =========================
-# 可调参数（非常重要）
-# =========================
+# 参数区
+HASH_DIR = "output/hash/merge"
+INPUT_CSV = "output/middle/deep/deep_total_ok.csv"
+OUTPUT_DIR = "output/middle/fake-scan"
 
-# phash 汉明距离阈值（<= 认为是同一画面）
+# 汉明距离阈值
 PHASH_STATIC_THRESHOLD = 5
 
-# 至少多少次采样被判定为 static 才认为是静态伪直播
-STATIC_COUNT_THRESHOLD = 9
+# 以下阈值为“次数阈值”，会基于采样文件数量动态计算
+STATIC_RATIO_THRESHOLD = 0.5   # 静态判定比例阈值（超过50%次采样为静态即判假）
+FROZEN_RATIO_THRESHOLD = 0.33  # 冻结判定比例阈值（超过33%次采样为冻结即判假）
+INVALID_RATIO_THRESHOLD = 0.5  # 无效判定比例阈值（超过50%次采样为无效即判假）
 
-# frozen 判定阈值
-FROZEN_COUNT_THRESHOLD = 6
-
-# invalid（黑屏 / 无效帧）阈值
-INVALID_COUNT_THRESHOLD = 6
-
-# =========================
-# 工具函数
-# =========================
-
-def hamming_distance(h1, h2):
-    """计算两个 hash 的汉明距离"""
+# 工具函数：计算两个哈希的汉明距离
+def hamming(h1, h2):
     return imagehash.hex_to_hash(h1) - imagehash.hex_to_hash(h2)
 
-
-def is_black_or_invalid(ahash_list, dhash_list):
-    """
-    判断一组帧是否是黑屏 / 无效帧
-
-    设计思路：
-    - 黑屏的 ahash / dhash 熵极低
-    - 3 帧都非常接近，且 hash 形态异常
-    """
-    if not ahash_list or not dhash_list:
+# 判定是否黑屏或无效画面（根据 ahash 和 dhash 简单判定）
+def is_black_or_invalid(ahash, dhash):
+    if not ahash or not dhash or len(ahash) < 3 or len(dhash) < 3:
         return True
-
-    # 三帧彼此极度接近
+    # 只要连续两帧间哈明距离大于1则认为不是黑屏/无效
     for i in range(2):
-        if hamming_distance(ahash_list[i], ahash_list[i+1]) > 1:
+        if hamming(ahash[i], ahash[i + 1]) > 1:
             return False
-
     return True
 
-
-def classify_sample(phash_list, ahash_list, dhash_list):
-    """
-    对一次采样（2s / 5s / 20s）进行分类
-
-    返回：
-    - invalid : 黑屏 / 无效
-    - static  : 三帧几乎一致
-    - frozen  : 前动后停
-    - active  : 正常变化
-    """
-
-    # Step 1：先排除无效帧
-    if is_black_or_invalid(ahash_list, dhash_list):
+# 核心判定逻辑，输入3个时间点的phash/ahash/dhash数组，输出状态类别
+def classify_sample(phash, ahash, dhash):
+    if len(phash) < 3:
         return "invalid"
 
-    # Step 2：phash 判断画面是否变化
-    d_1_2 = hamming_distance(phash_list[0], phash_list[1])
-    d_2_3 = hamming_distance(phash_list[1], phash_list[2])
+    if is_black_or_invalid(ahash, dhash):
+        return "invalid"
 
-    # 三帧几乎完全一致 → 静态画面
-    if d_1_2 <= PHASH_STATIC_THRESHOLD and d_2_3 <= PHASH_STATIC_THRESHOLD:
+    d1 = hamming(phash[0], phash[1])
+    d2 = hamming(phash[1], phash[2])
+
+    if d1 <= PHASH_STATIC_THRESHOLD and d2 <= PHASH_STATIC_THRESHOLD:
         return "static"
 
-    # 前面动，后面不动 → 卡死
-    if d_1_2 > PHASH_STATIC_THRESHOLD and d_2_3 <= PHASH_STATIC_THRESHOLD:
+    if d1 > PHASH_STATIC_THRESHOLD and d2 <= PHASH_STATIC_THRESHOLD:
         return "frozen"
 
-    # 其余情况 → 正常直播
     return "active"
 
+# 读取所有hash文件，统计每个URL在各状态的出现次数
+def build_fake_scan_map():
+    files = sorted(glob.glob(os.path.join(HASH_DIR, "*-hash-merge.json")))
+    if not files:
+        raise RuntimeError(f"❌ 未找到任何 hash-merge.json 文件，路径：{HASH_DIR}")
 
-# =========================
-# 主逻辑
-# =========================
+    total_files = len(files)
 
-def main():
-    input_file = "output/hash/hash_total.json"
+    stats = defaultdict(lambda: defaultdict(int))
 
-    if not os.path.exists(input_file):
-        print("❌ 找不到 hash_total.json")
-        return
+    for file in files:
+        with open(file, "r", encoding="utf-8") as f:
+            data = json.load(f)
 
-    with open(input_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
+        for url, h in data.items():
+            cls = classify_sample(
+                h.get("phash", []),
+                h.get("ahash", []),
+                h.get("dhash", [])
+            )
+            stats[url][cls] += 1
 
+    # 基于阈值做最终判定
     result = {}
 
-    fake_static = []
-    fake_frozen = []
-    invalid_stream = []
-    passed = []
+    for url, c in stats.items():
+        static_ratio = c["static"] / total_files
+        frozen_ratio = c["frozen"] / total_files
+        invalid_ratio = c["invalid"] / total_files
 
-    for url, samples in data.items():
-        counts = defaultdict(int)
-
-        # 用于跨采样比较 20s phash
-        static_20s_hashes = []
-
-        for ts, hashes in samples.items():
-            phash = hashes.get("phash", [])
-            ahash = hashes.get("ahash", [])
-            dhash = hashes.get("dhash", [])
-
-            if len(phash) < 3:
-                counts["invalid"] += 1
-                continue
-
-            cls = classify_sample(phash, ahash, dhash)
-            counts[cls] += 1
-
-            if cls == "static":
-                static_20s_hashes.append(phash[2])
-
-        # =========================
-        # 最终判定
-        # =========================
-
-        # 静态伪直播
-        if counts["static"] >= STATIC_COUNT_THRESHOLD:
-            # 验证 20s phash 是否高度一致
-            base = static_20s_hashes[0]
-            same = sum(
-                1 for h in static_20s_hashes
-                if hamming_distance(base, h) <= PHASH_STATIC_THRESHOLD
-            )
-
-            if same >= STATIC_COUNT_THRESHOLD - 1:
-                fake_static.append(url)
-                result[url] = "fake_static"
-                continue
-
-        # 卡死伪直播
-        if counts["frozen"] >= FROZEN_COUNT_THRESHOLD and counts["active"] <= 2:
-            fake_frozen.append(url)
+        if static_ratio >= STATIC_RATIO_THRESHOLD:
+            result[url] = "fake_static"
+        elif frozen_ratio >= FROZEN_RATIO_THRESHOLD:
             result[url] = "fake_frozen"
-            continue
-
-        # 无效流（不判定为假）
-        if counts["invalid"] >= INVALID_COUNT_THRESHOLD:
-            invalid_stream.append(url)
+        elif invalid_ratio >= INVALID_RATIO_THRESHOLD:
             result[url] = "invalid"
-            continue
+        else:
+            result[url] = "pass"
 
-        # 其余通过
-        passed.append(url)
-        result[url] = "pass"
+    return result
 
-    # =========================
-    # 输出结果
-    # =========================
+def main():
+    fake_map = build_fake_scan_map()
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    os.makedirs("output/8.1", exist_ok=True)
+    with open(INPUT_CSV, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        fieldnames = reader.fieldnames + ["fake_scan"]
 
-    def save_list(name, lst):
-        with open(f"output/8.1/{name}.txt", "w", encoding="utf-8") as f:
-            for u in lst:
-                f.write(u + "\n")
+        ok_rows = []
+        not_rows = []
 
-    save_list("fake_static", fake_static)
-    save_list("fake_frozen", fake_frozen)
-    save_list("invalid", invalid_stream)
-    save_list("pass", passed)
+        for row in reader:
+            url = row.get("地址", "").strip()
+            scan = fake_map.get(url, "pass")
+            row["fake_scan"] = scan
 
-    with open("output/8.1/summary.json", "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
+            if scan == "pass":
+                ok_rows.append(row)
+            else:
+                not_rows.append(row)
 
-    print("✅ 8.1 fake scan 完成")
-    print(f"static={len(fake_static)} frozen={len(fake_frozen)} invalid={len(invalid_stream)} pass={len(passed)}")
+    with open(f"{OUTPUT_DIR}/fake-ok.csv", "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(ok_rows)
 
+    with open(f"{OUTPUT_DIR}/fake-not.csv", "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(not_rows)
+
+    print(f"✅ 8.1_fake_scan 完成，总采样文件数: {len(glob.glob(os.path.join(HASH_DIR, '*-hash-merge.json')))}")
+    print(f"通过数量: {len(ok_rows)}  未通过数量: {len(not_rows)}")
 
 if __name__ == "__main__":
     main()
