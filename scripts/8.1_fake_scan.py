@@ -1,145 +1,125 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-import csv
-import json
 import os
 import glob
-from collections import defaultdict
-import imagehash
+import json
+import pandas as pd
+from collections import Counter
 
+# --- 配置 ---
+DEEP_CSV = "output/middle/deep/deep_total_ok.csv"
 HASH_DIR = "output/hash/merge"
-INPUT_CSV = "output/middle/deep/deep_total_ok.csv"
-OUTPUT_DIR = "output/middle/fake-scan"
+OUTPUT_CSV = "output/middle/fake_scan.csv"
 
-PHASH_STATIC_THRESHOLD = 5
+# --- 读取deep_total_ok.csv ---
+df = pd.read_csv(DEEP_CSV)
 
-STATIC_RATIO_THRESHOLD = 0.5
-FROZEN_RATIO_THRESHOLD = 0.33
-INVALID_RATIO_THRESHOLD = 0.5
+# --- 读取hash合并json ---
+hash_files = sorted(glob.glob(os.path.join(HASH_DIR, "*-hash-merge.json")))
+if len(hash_files) == 0:
+    raise RuntimeError("没有找到任何hash文件，请检查路径和文件名。")
 
-def hamming(h1, h2):
-    if not h1 or not h2:
-        return 9999
-    try:
-        return imagehash.hex_to_hash(h1) - imagehash.hex_to_hash(h2)
-    except Exception:
-        return 9999
+# 保证时间顺序：文件名越大越新，这里升序，索引0是最远，最后是最近
+# 如果你文件名是时间戳前缀，升序排序就正确
+# 如果不是，按实际情况调整排序逻辑
+print(f"读取到 {len(hash_files)} 个hash文件。")
 
-def is_black_or_invalid(ahash, dhash):
-    if not ahash or not dhash or len(ahash) < 3 or len(dhash) < 3:
-        return True
-    if any(x is None or x == "" for x in ahash[:3]):
-        return True
-    if any(x is None or x == "" for x in dhash[:3]):
-        return True
-    for i in range(2):
-        if hamming(ahash[i], ahash[i + 1]) > 1:
-            return False
-    return True
+# 解析所有hash数据到列表，顺序: 最远 -> 最近
+all_hash_data = []
+for fpath in hash_files:
+    with open(fpath, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    all_hash_data.append(data)
 
-def classify_sample(phash, ahash, dhash):
-    if not phash or len(phash) < 3 or any(x is None or x == "" for x in phash[:3]):
-        return "invalid"
+N = len(all_hash_data)
+# 权重从1递增到N，1对应最远，N对应最近
+WEIGHTS = list(range(1, N + 1))
 
-    if is_black_or_invalid(ahash, dhash):
-        return "invalid"
+# --- 辅助函数 ---
+def phash_major_and_count(phash_lists):
+    flat = []
+    for phs in phash_lists:
+        if phs:
+            flat.extend(phs)
+    if not flat:
+        return None, 0
+    c = Counter(flat)
+    most_common = c.most_common(1)[0]
+    return most_common[0], most_common[1]
 
-    d1 = hamming(phash[0], phash[1])
-    d2 = hamming(phash[1], phash[2])
+def count_failures(error_dict):
+    if not error_dict:
+        return 0
+    return error_dict.get("fail_count", 0)
 
-    if d1 <= PHASH_STATIC_THRESHOLD and d2 <= PHASH_STATIC_THRESHOLD:
-        return "static"
+def compare_hash(h1, h2):
+    if h1 is None or h2 is None:
+        return False
+    return h1 == h2
 
-    if d1 > PHASH_STATIC_THRESHOLD and d2 <= PHASH_STATIC_THRESHOLD:
-        return "frozen"
+# --- 主处理 ---
+results = []
 
-    return "active"
+for idx, row in df.iterrows():
+    url = row["地址"]
+    dynamic_score = 0
+    total_fail_count = 0
+    avg_fetch_time_latest = None
 
-def build_fake_scan_map():
-    files = sorted(glob.glob(os.path.join(HASH_DIR, "*-hash-merge.json")))
-    if not files:
-        raise RuntimeError(f"❌ 未找到任何 hash-merge.json 文件，路径：{HASH_DIR}")
+    all_phash_lists = []
+    last_phash_list = None
 
-    stats = defaultdict(lambda: defaultdict(int))
-    valid_count = defaultdict(int)
-
-    for file in files:
-        with open(file, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        for url, h in data.items():
-            phash = h.get("phash")
-            ahash = h.get("ahash")
-            dhash = h.get("dhash")
-
-            if (
-                phash is None or ahash is None or dhash is None or
-                any(x is None for x in phash) or
-                any(x is None for x in ahash) or
-                any(x is None for x in dhash)
-            ):
-                continue
-
-            cls = classify_sample(phash, ahash, dhash)
-            stats[url][cls] += 1
-            valid_count[url] += 1
-
-    result = {}
-
-    for url, c in stats.items():
-        total = valid_count.get(url, 0)
-        if total == 0:
-            result[url] = "invalid"
+    for i, hash_data in enumerate(all_hash_data):
+        info = hash_data.get(url)
+        if not info:
             continue
-        static_ratio = c["static"] / total
-        frozen_ratio = c["frozen"] / total
-        invalid_ratio = c["invalid"] / total
 
-        if static_ratio >= STATIC_RATIO_THRESHOLD:
-            result[url] = "fake_static"
-        elif frozen_ratio >= FROZEN_RATIO_THRESHOLD:
-            result[url] = "fake_frozen"
-        elif invalid_ratio >= INVALID_RATIO_THRESHOLD:
-            result[url] = "invalid"
-        else:
-            result[url] = "pass"
+        # 最近检测对应权重最大，最近检测在all_hash_data[-1]
+        # 当前i索引是从最远到最近，权重对应WEIGHTS[i]
 
-    return result, valid_count
+        # 抓帧失败次数和平均抓帧时间 取最近检测（all_hash_data[-1]）
+        if i == N - 1:
+            total_fail_count = count_failures(info.get("error", {}))
+            avg_fetch_time_latest = info.get("stats", {}).get("avg_fetch_time", None)
 
-def main():
-    fake_map, valid_count = build_fake_scan_map()
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+        phash_list = info.get("phash", [])
+        all_phash_lists.append(phash_list)
 
-    with open(INPUT_CSV, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames + ["fake_scan"]
+        if i == N - 1:
+            last_phash_list = phash_list
 
-        ok_rows = []
-        not_rows = []
+        # 动态等级计算，两两比较3组
+        ph = phash_list + [None] * (3 - len(phash_list))
+        comparisons = [
+            (ph[0], ph[1]),
+            (ph[0], ph[2]),
+            (ph[1], ph[2]),
+        ]
 
-        for row in reader:
-            url = row.get("地址", "").strip()
-            scan = fake_map.get(url, "pass")
-            row["fake_scan"] = scan
+        score = 0
+        for h1, h2 in comparisons:
+            if not compare_hash(h1, h2):
+                score += 1
 
-            if scan == "pass":
-                ok_rows.append(row)
-            else:
-                not_rows.append(row)
+        dynamic_score += score * WEIGHTS[i]
 
-    with open(f"{OUTPUT_DIR}/fake-ok.csv", "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(ok_rows)
+    max_phash, max_count = phash_major_and_count(all_phash_lists)
 
-    with open(f"{OUTPUT_DIR}/fake-not.csv", "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(not_rows)
+    if max_count == 1:
+        if last_phash_list:
+            max_phash = last_phash_list[-1] if last_phash_list[-1] is not None else None
 
-    print(f"✅ 8.1_fake_scan 完成，有效采样URL数: {len(valid_count)}")
-    print(f"通过数量: {len(ok_rows)}  未通过数量: {len(not_rows)}")
+    row_dict = row.to_dict()
+    row_dict["动态级别"] = dynamic_score
+    row_dict["平均抓帧时间"] = avg_fetch_time_latest
+    row_dict["抓帧失败次数"] = total_fail_count
+    row_dict["出现最多次数phash的次数"] = max_count
+    row_dict["出现最多次数的phash值"] = max_phash
 
-if __name__ == "__main__":
-    main()
+    results.append(row_dict)
+
+# --- 输出结果 ---
+df_out = pd.DataFrame(results)
+os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+df_out.to_csv(OUTPUT_CSV, index=False, encoding="utf-8-sig")
+
+print(f"完成，结果已保存至 {OUTPUT_CSV}")
