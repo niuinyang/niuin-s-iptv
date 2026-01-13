@@ -22,7 +22,7 @@ jobs:
           mkdir -p output/linshi
           ffmpeg -ss 2 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_2s.png
           ffmpeg -ss 5 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_5s.png
-          ffmpeg -ss 20 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_20s.png
+          ffmpeg -ss 50 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_20s.png
 
       - name: 提交并推送图片到仓库
         run: |
