@@ -1,4 +1,4 @@
-name: 抓帧并提交图片
+name: 抓取直播帧并提交
 
 on:
   workflow_dispatch:
@@ -20,9 +20,9 @@ jobs:
       - name: 抓取2、5、20秒帧图片
         run: |
           mkdir -p output/linshi
-          ffmpeg -ss 2 -i "http://your.stream.url/yourstream.m3u8" -frames:v 1 -q:v 2 -y output/linshi/frame_2s.png
-          ffmpeg -ss 5 -i "http://your.stream.url/yourstream.m3u8" -frames:v 1 -q:v 2 -y output/linshi/frame_5s.png
-          ffmpeg -ss 20 -i "http://your.stream.url/yourstream.m3u8" -frames:v 1 -q:v 2 -y output/linshi/frame_20s.png
+          ffmpeg -ss 2 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_2s.png
+          ffmpeg -ss 5 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_5s.png
+          ffmpeg -ss 20 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_20s.png
 
       - name: 提交并推送图片到仓库
         run: |
