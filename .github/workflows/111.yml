@@ -17,33 +17,19 @@ jobs:
       - name: 安装 ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: 抓取2、5、50秒帧图片并打印关键帧间隔
+      - name: 抓取2、5、20秒帧图片
         run: |
           mkdir -p output/linshi
-          URL="http://z.b.bkpcp.top/m.php?id=hubws"
-
-          # 抓帧
-          ffmpeg -hide_banner -loglevel error -ss 2 -i "$URL" -frames:v 1 -q:v 2 -y output/linshi/frame_2s.png
-          ffmpeg -hide_banner -loglevel error -ss 5 -i "$URL" -frames:v 1 -q:v 2 -y output/linshi/frame_5s.png
-          ffmpeg -hide_banner -loglevel error -ss 50 -i "$URL" -frames:v 1 -q:v 2 -y output/linshi/frame_50s.png
-
-          echo "===== 分析关键帧时间戳 ====="
-          # 用ffprobe打印所有关键帧PTS时间，单位秒
-          ffprobe -hide_banner -loglevel error -select_streams v:0 -skip_frame nokey -show_entries frame=pkt_pts_time -of csv=p=0 "$URL" > output/linshi/keyframes.txt
-
-          echo "关键帧时间戳（秒）:"
-          cat output/linshi/keyframes.txt
-
-          echo "===== 计算关键帧间隔 ====="
-          # 计算关键帧间隔，简单计算相邻帧差
-          awk 'NR>1{print $1-prev} {prev=$1}' output/linshi/keyframes.txt
+          ffmpeg -ss 2 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_2s.png
+          ffmpeg -ss 5 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_5s.png
+          ffmpeg -ss 20 -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_20s.png
 
       - name: 提交并推送图片到仓库
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/linshi/frame_*.png output/linshi/keyframes.txt
-          git commit -m "自动抓帧和关键帧时间戳更新 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无变更，跳过提交"
+          git add output/linshi/frame_*.png
+          git commit -m "自动抓帧图片更新 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无变更，跳过提交"
           git push origin HEAD:${{ github.ref_name }}
         env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}在这个基础上修改
