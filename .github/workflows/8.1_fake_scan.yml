@@ -1,11 +1,11 @@
 name: 3-静态假源检测与分析
 
 on:
-  workflow_run:
-    workflows:
-      - "2-检查scan执行完毕合并"
-    types:
-      - completed
+  #workflow_run:
+    #workflows:
+      #- "2-检查scan执行完毕合并"
+    #types:
+      #- completed
   workflow_dispatch:
 
 permissions:
