@@ -73,7 +73,6 @@ def build_fake_scan_map():
             ahash = h.get("ahash")
             dhash = h.get("dhash")
 
-            # 跳过包含None/null的采样
             if (
                 phash is None or ahash is None or dhash is None or
                 any(x is None for x in phash) or
@@ -106,10 +105,10 @@ def build_fake_scan_map():
         else:
             result[url] = "pass"
 
-    return result
+    return result, valid_count
 
 def main():
-    fake_map = build_fake_scan_map()
+    fake_map, valid_count = build_fake_scan_map()
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     with open(INPUT_CSV, "r", encoding="utf-8") as f:
