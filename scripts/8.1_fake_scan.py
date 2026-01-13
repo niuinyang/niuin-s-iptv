@@ -68,7 +68,12 @@ for idx, row in df.iterrows():
     all_phash_lists = []
     last_phash_list = None
 
+    detection_appear_count = 0  # 统计该地址在hash文件中出现的次数（无论数据是否有效）
+
     for i, hash_data in enumerate(all_hash_data):
+        if url in hash_data:
+            detection_appear_count += 1  # 出现就计数
+
         info = hash_data.get(url)
         if not info:
             continue
@@ -109,13 +114,17 @@ for idx, row in df.iterrows():
             max_phash = last_phash_list[-1] if last_phash_list[-1] is not None else None
 
     row_dict = row.to_dict()
-    row_dict["动态级别"] = dynamic_score
-    row_dict["平均抓帧时间"] = avg_fetch_time_latest
-    row_dict["抓帧失败次数"] = total_fail_count
-    row_dict["出现最多次数phash的次数"] = max_count
-    row_dict["出现最多次数的phash值"] = max_phash
-
-    results.append(row_dict)
+    # 按要求将“检测次数”放在新增列的第一列，其它依次排列
+    new_cols = {
+        "检测次数": detection_appear_count,
+        "动态级别": dynamic_score,
+        "平均抓帧时间": avg_fetch_time_latest,
+        "抓帧失败次数": total_fail_count,
+        "出现最多次数phash的次数": max_count,
+        "出现最多次数的phash值": max_phash,
+    }
+    combined = {**new_cols, **row_dict}
+    results.append(combined)
 
 # --- 输出结果 ---
 df_out = pd.DataFrame(results)
