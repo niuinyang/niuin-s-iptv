@@ -19,8 +19,6 @@ if len(hash_files) == 0:
     raise RuntimeError("没有找到任何hash文件，请检查路径和文件名。")
 
 # 保证时间顺序：文件名越大越新，这里升序，索引0是最远，最后是最近
-# 如果你文件名是时间戳前缀，升序排序就正确
-# 如果不是，按实际情况调整排序逻辑
 print(f"读取到 {len(hash_files)} 个hash文件。")
 
 # 解析所有hash数据到列表，顺序: 最远 -> 最近
@@ -31,8 +29,7 @@ for fpath in hash_files:
     all_hash_data.append(data)
 
 N = len(all_hash_data)
-# 权重从1递增到N，1对应最远，N对应最近
-WEIGHTS = list(range(1, N + 1))
+WEIGHTS = list(range(1, N + 1))  # 权重从1递增到N，1对应最远，N对应最近
 
 # --- 辅助函数 ---
 def phash_major_and_count(phash_lists):
@@ -78,10 +75,6 @@ for idx, row in df.iterrows():
         if not info:
             continue
 
-        # 最近检测对应权重最大，最近检测在all_hash_data[-1]
-        # 当前i索引是从最远到最近，权重对应WEIGHTS[i]
-
-        # 抓帧失败次数和平均抓帧时间 取最近检测（all_hash_data[-1]）
         if i == N - 1:
             total_fail_count = count_failures(info.get("error", {}))
             avg_fetch_time_latest = info.get("stats", {}).get("avg_fetch_time", None)
@@ -114,17 +107,15 @@ for idx, row in df.iterrows():
             max_phash = last_phash_list[-1] if last_phash_list[-1] is not None else None
 
     row_dict = row.to_dict()
-    # 按要求将“检测次数”放在新增列的第一列，其它依次排列
-    new_cols = {
-        "检测次数": detection_appear_count,
-        "动态级别": dynamic_score,
-        "平均抓帧时间": avg_fetch_time_latest,
-        "抓帧失败次数": total_fail_count,
-        "出现最多次数phash的次数": max_count,
-        "出现最多次数的phash值": max_phash,
-    }
-    combined = {**new_cols, **row_dict}
-    results.append(combined)
+    # 按原来方式新增列，顺序自定义
+    row_dict["检测次数"] = detection_appear_count
+    row_dict["动态级别"] = dynamic_score
+    row_dict["平均抓帧时间"] = avg_fetch_time_latest
+    row_dict["抓帧失败次数"] = total_fail_count
+    row_dict["出现最多次数phash的次数"] = max_count
+    row_dict["出现最多次数的phash值"] = max_phash
+
+    results.append(row_dict)
 
 # --- 输出结果 ---
 df_out = pd.DataFrame(results)
