@@ -17,6 +17,7 @@ os.makedirs(WORKFLOW_DIR, exist_ok=True)
 # 4. 增加 checkout fetch-depth:0，确保完整拉取历史
 # 5. 增加 git 认证 token 环境变量 PUSH_TOKEN1，供 reset 和 push 使用
 # 6. 修改 git reset --hard 为 git pull --rebase，避免覆盖其他 chunk 提交
+# 7. **新增：拉取代码前先 stash，拉取后再 pop，避免因未提交改动导致 pull 失败**
 # ============================================================
 
 TEMPLATE = """name: Scan_{n}
@@ -50,8 +51,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{PUSH_TOKEN1}}@github.com/${{REPO}}.git
+          git stash
           git fetch origin main
           git pull --rebase origin main  # <<< FIX: 避免 hard reset 覆盖其他 chunk 提交
+          git stash pop || true
 
       - name: Check chunk files
         run: ls -lh output/middle/chunk
@@ -118,8 +121,10 @@ jobs:
 
           while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
             echo "尝试拉取最新代码并合并，尝试次数: $((RETRY_COUNT + 1))"
+            git stash
             git fetch origin ${{BRANCH}}
             git pull --rebase origin ${{BRANCH}}  # <<< FIX: 避免 hard reset 覆盖其他 chunk 提交
+            git stash pop || true
 
             # 复制当前 workflow 产生的结果文件到 repo，添加到 git 暂存区
             git add output/middle/fast/ok/fast_{n}.csv output/middle/fast/not/fast_{n}-invalid.csv output/middle/deep/ok/deep_{n}.csv output/middle/deep/not/deep_{n}-invalid.csv output/hash/chunk/hash_{n}.json
