@@ -21,7 +21,7 @@ jobs:
         run: |
           mkdir -p output/linshi
           for i in $(seq 2 21); do
-            ffmpeg -ss $i -i "http://z.b.bkpcp.top/m.php?id=hubws" -frames:v 1 -q:v 2 -y output/linshi/frame_${i}s.png
+            ffmpeg -ss $i -i "https://t.freetv.fun/live/hang-zhou-xiao-shan-zong-he.m3u8" -frames:v 1 -q:v 2 -y output/linshi/frame_${i}s.png
           done
 
       - name: 提交并推送图片到仓库
