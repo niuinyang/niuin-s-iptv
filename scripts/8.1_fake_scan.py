@@ -4,11 +4,16 @@ import glob
 import json
 import pandas as pd
 from collections import Counter
+from datetime import datetime   # <<< MODIFIED
 
 # --- 配置 ---
 DEEP_CSV = "output/middle/deep/deep_total_ok.csv"
 HASH_DIR = "output/hash/merge"
-OUTPUT_CSV = "output/middle/fake_scan.csv"
+
+# <<< MODIFIED: 输出文件名使用 yymmddhhmm >>>
+timestamp = datetime.now().strftime("%y%m%d%H%M")
+OUTPUT_CSV = f"output/middle/{timestamp}_fake_scan.csv"
+# <<< MODIFIED END >>>
 
 # --- 读取deep_total_ok.csv ---
 df = pd.read_csv(DEEP_CSV)
@@ -107,7 +112,6 @@ for idx, row in df.iterrows():
             max_phash = last_phash_list[-1] if last_phash_list[-1] is not None else None
 
     row_dict = row.to_dict()
-    # 按原来方式新增列，顺序自定义
     row_dict["检测次数"] = detection_appear_count
     row_dict["动态级别"] = dynamic_score
     row_dict["平均抓帧时间"] = avg_fetch_time_latest
