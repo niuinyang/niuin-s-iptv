@@ -52,10 +52,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      # <<< MODIFIED: 提交所有时间戳 fake_scan 文件 >>>
       - name: 提交并推送结果文件
         run: |
-          git add output/middle/fake_scan.csv
+          git add output/middle/*_fake_scan.csv
           git commit -m "自动更新静态假源检测结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
           git push origin HEAD:${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+      # <<< MODIFIED END >>>
