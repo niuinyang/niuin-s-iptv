@@ -11,7 +11,7 @@ from asyncio.subprocess import create_subprocess_exec, PIPE
 from io import BytesIO
 from tqdm import tqdm
 
-GRAB_TIMES = [2, 5, 20]  # 秒
+GRAB_TIMES = [2, 5, 50]  # 秒
 
 def classify_error(err: str):
     """基于错误字符串简单分类"""
