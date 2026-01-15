@@ -252,6 +252,9 @@ def main():
             span_days = 0
         main_phash_span_days_col.append(round(span_days, 4))
 
+    # 确保输出目录存在
+    os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+
     # 将新增列合并入 df
     df['当前动态级'] = current_dynamic_level_col
     df['历史动态级'] = history_dynamic_level_col
