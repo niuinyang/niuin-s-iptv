@@ -23,7 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # >>> MODIFIED: 确保拉取完整历史
+          fetch-depth: 0
 
       - name: Reset to origin/main
         run: |
@@ -69,7 +69,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # >>> MODIFIED: 拉取完整历史，便于推送
+          fetch-depth: 0
 
       - name: Reset to origin/main
         run: |
@@ -93,38 +93,34 @@ jobs:
       - name: Run merge hash script
         run: python scripts/7.1_merge_hash.py
 
-      - name: Cleanup old hash-merge files (keep last 3 days)
+      - name: Cleanup old hash-merge files (keep latest 12)
         run: |
           set -e
           folder="output/hash/merge"
-          now_ts=$(date -u +%s)  # UTC 时间戳
-          max_age_seconds=$((72*3600))  # 72小时 = 3天
+          keep=12
 
-          for f in "$folder"/*-hash-merge.json; do
-            [ -e "$f" ] || continue
-            base=$(basename "$f")
-            datetime_prefix=${base:0:10}  # 文件名前10位 yymmddhhmm
+          files=($(ls -1 "$folder"/*-hash-merge.json 2>/dev/null | sort))
+          total=${#files[@]}
 
-            yy="20${datetime_prefix:0:2}"
-            mm="${datetime_prefix:2:2}"
-            dd="${datetime_prefix:4:2}"
-            HH="${datetime_prefix:6:2}"
-            MM="${datetime_prefix:8:2}"
+          echo "Total hash-merge files: $total"
+          echo "Keep latest: $keep"
 
-            file_time="${yy}-${mm}-${dd} ${HH}:${MM}:00"
-            file_ts=$(date -u -d "$file_time" +%s)
+          if [ "$total" -le "$keep" ]; then
+            echo "No cleanup needed."
+            exit 0
+          fi
 
-            age=$((now_ts - file_ts))
-            if [ $age -gt $max_age_seconds ]; then
-              echo "Deleting old file: $f (age ${age}s)"
-              rm -f "$f"
-            fi
+          delete_count=$((total - keep))
+          echo "Deleting $delete_count old files..."
+
+          for ((i=0; i<delete_count; i++)); do
+            echo "Deleting: ${files[$i]}"
+            rm -f "${files[$i]}"
           done
 
       - name: Commit and push merged hash JSON
         run: |
           set -e
-
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -136,9 +132,7 @@ jobs:
           fi
 
           git commit -m "Update merged hash JSON [skip ci]"
-
           git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
-
           git push origin HEAD:main --force-with-lease
 
       - name: Run merge deep scan csv script
@@ -148,6 +142,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add output/middle/deep/deep_total_ok.csv output/middle/deep/deep_total_not.csv
 
           if git diff --cached --quiet; then
@@ -167,14 +162,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
-      REPO_OWNER: niuinyang          # >>> MODIFIED
-      REPO_NAME: niuin-s-iptv        # >>> MODIFIED
+      REPO_OWNER: niuinyang
+      REPO_NAME: niuin-s-iptv
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # >>> MODIFIED 保持统一拉取深度
+          fetch-depth: 0
 
       - name: Reset to origin/main
         run: |
