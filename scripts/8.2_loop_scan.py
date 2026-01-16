@@ -11,9 +11,9 @@ from pathlib import Path
 # ========== 配置区 ==========
 INPUT_CSV = "output/middle/fake/fake_scan.csv"
 HASH_DIR = "output/hash/merge"
-OUTPUT_CSV_LOOP = "output/middle/loop_scan.csv"
-OUTPUT_CSV_OK = "output/middle/loop_scan_ok.csv"
-OUTPUT_CSV_NOT = "output/middle/loop_scan_not.csv"
+OUTPUT_CSV_LOOP = "output/middle/loop/loop_scan.csv"
+OUTPUT_CSV_OK = "output/middle/loop/loop_scan_ok.csv"
+OUTPUT_CSV_NOT = "output/middle/loop/loop_scan_not.csv"
 
 # 权重定义（方便后续调整）
 WEIGHTS = {
