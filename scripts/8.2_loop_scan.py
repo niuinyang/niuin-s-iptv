@@ -38,10 +38,16 @@ MAX_TIME_SPAN_DAYS = 30
 
 
 def hamming_distance(hash1: str, hash2: str) -> int:
-    """计算两个十六进制hash字符串的汉明距离"""
-    b1 = bin(int(hash1, 16))[2:].zfill(64)
-    b2 = bin(int(hash2, 16))[2:].zfill(64)
-    return sum(c1 != c2 for c1, c2 in zip(b1, b2))
+    """计算两个十六进制hash字符串的汉明距离，忽略无效输入"""
+    try:
+        if not isinstance(hash1, str) or not isinstance(hash2, str):
+            return 64  # 最大距离，认为完全不同
+        b1 = bin(int(hash1, 16))[2:].zfill(64)
+        b2 = bin(int(hash2, 16))[2:].zfill(64)
+        return sum(c1 != c2 for c1, c2 in zip(b1, b2))
+    except Exception:
+        # 任意异常也返回最大距离
+        return 64
 
 
 def merge_similar_hashes(phash_list, threshold=HAMMING_THRESHOLD):
@@ -201,11 +207,22 @@ def main():
         if addr_hash_info is None:
             loop_level = 0
             confidence = 0.0
+            phash_valid_ratio = 0.0
+            phash_detection_confidence = 0.0
             is_loop = False
-            results.append({**row.to_dict(), "loop_level": loop_level, "confidence": confidence, "is_loop": is_loop})
+            results.append({**row.to_dict(),
+                            "loop_level": loop_level,
+                            "confidence": confidence,
+                            "phash有效率": phash_valid_ratio,
+                            "phash检测置信度": phash_detection_confidence,
+                            "is_loop": is_loop})
             continue
 
-        phash_all = addr_hash_info["phash_all"]
+        phash_all_raw = addr_hash_info["phash_all"]
+        # 过滤非字符串和空值
+        phash_all = [h for h in phash_all_raw if isinstance(h, str) and h]
+
+        phash_valid_ratio = len(phash_all) / max(len(phash_all_raw), 1)
 
         hash_sets = []
         for i in range(0, len(phash_all), 3):
@@ -225,6 +242,10 @@ def main():
         total_hashes = len(phash_all)
         confidence = confidence_score(addr_hash_info["error_stats"], total_hashes)
 
+        # 综合考虑原置信度和有效率计算一个检测置信度
+        # 这里简单相乘，也可以用别的逻辑
+        phash_detection_confidence = confidence * phash_valid_ratio
+
         total_score = (
             score_phash_conc * WEIGHTS["phash_concentration"] +
             score_single_consistency * WEIGHTS["single_detection_consistency"] +
@@ -237,7 +258,12 @@ def main():
         loop_level = int(round(total_score * 10))
         is_loop = total_score >= LOOP_THRESHOLD
 
-        results.append({**row.to_dict(), "loop_level": loop_level, "confidence": confidence, "is_loop": is_loop})
+        results.append({**row.to_dict(),
+                        "loop_level": loop_level,
+                        "confidence": confidence,
+                        "phash有效率": round(phash_valid_ratio, 4),
+                        "phash检测置信度": round(phash_detection_confidence, 4),
+                        "is_loop": is_loop})
 
     df_out = pd.DataFrame(results)
     df_out.to_csv(OUTPUT_CSV_LOOP, index=False, encoding="utf-8-sig")
