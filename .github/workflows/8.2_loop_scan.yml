@@ -54,7 +54,7 @@ jobs:
 
       - name: 提交并推送轮播扫描结果文件
         run: |
-          git add output/middle/loop_scan.csv output/middle/loop_scan_ok.csv output/middle/loop_scan_not.csv
+          git add output/middle/loop/loop_scan.csv output/middle/loop/loop_scan_ok.csv output/middle/loop/loop_scan_not.csv
           git commit -m "自动更新轮播扫描结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
           git push origin HEAD:${{ github.ref_name }}
         env:
