@@ -119,39 +119,33 @@ def parse_hash_files(hash_dir=HASH_DIR):
     timestamps = sorted(timestamps)
     return timestamps, data_map
 
-def build_source_matrix(df_sources, timestamps, data_map):
+def build_source_matrix(data_map):
     """
-    构建每个源的检测矩阵：
-      - 行数：实际检测次数 N = len(timestamps)
-      - 列数：抓帧点数量 6
-      - 每个单元为 dict {"hash": phash或None, "status": 状态字符串}
-    返回：
-      - source_matrix_map: dict {source_url: List[List[dict]]} 结构为矩阵
-      - scan_total_count: 实际检测次数 N
+    重构版本，适配你给出的JSON结构，提取phash列表
     """
-    source_matrix_map = {}
-    scan_total_count = len(timestamps)
+    all_ts = sorted(data_map.keys())
+    all_urls = set()
+    for ts in all_ts:
+        all_urls.update(data_map[ts].keys())
+    all_urls = sorted(all_urls)
 
-    urls = df_sources['地址'].tolist()
+    GRAB_POINTS = 6  # 按照你数据phash长度
 
-    for url in urls:
-        matrix = []
-        for ts in timestamps:
-            row = [{"hash": None, "status": "NOT_APPEARED"} for _ in range(GRAB_POINTS)]
-            if ts in data_map and url in data_map[ts]:
-                try:
-                    items = data_map[ts][url]
-                    for i in range(min(GRAB_POINTS, len(items))):
-                        item = items[i] if isinstance(items[i], dict) else {}
-                        phash_val = item.get("phash") if item else None
-                        status_val = item.get("status") if item else "OK"
-                        if not phash_val:
-                            phash_val = None
-                        row[i] = {"hash": phash_val, "status": status_val}
-                except Exception as e:
-                    print(f"警告：解析数据时异常，时间戳={ts}, url={url}, 错误：{e}")
-            matrix.append(row)
-        source_matrix_map[url] = matrix
+    matrix = {}
+    for url in all_urls:
+        matrix[url] = {}
+        for ts in all_ts:
+            row = {}
+            try:
+                entry = data_map[ts].get(url, {})
+                phash_list = entry.get("phash", [])
+                for i in range(min(GRAB_POINTS, len(phash_list))):
+                    phash_val = phash_list[i]
+                    row[i] = {"hash": phash_val, "status": "OK"}  # 你这数据里没状态，统一标OK
+            except Exception as e:
+                print(f"警告：解析数据时异常，时间戳={ts}, url={url}, 错误：{e}")
+            matrix[url][ts] = row
+    return matrix
 
     return source_matrix_map, scan_total_count
 
