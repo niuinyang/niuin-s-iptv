@@ -80,7 +80,7 @@ OUTPUT_COLUMN_RENAME_MAP = {
     "loop_level": "轮播源等级",
     "fake_score": "静态源评分",
     "fake_level": "静态源等级",
-    "是否夜间停播": "是否夜间停播",
+    "night_off_air_flag": "是否夜间停播",
 }
 
 # ==================== 数据读取与预处理模块 ====================
