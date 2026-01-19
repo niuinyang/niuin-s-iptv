@@ -620,7 +620,8 @@ def integrate_and_output(df_sources, timestamps, source_matrix_map, scan_total_c
         night_off_air = night_off_air_map.get(url, False)
 
         # 历史动态评分和置信度取自multi_metrics
-        hist_score = metrics.get("history_dynamic_level", 0.0)
+        hist_dynamic = metrics.get("history_dynamic_level", 0.0)
+        hist_score = 100 - hist_dynamic
         hist_confidence = metrics.get("sample_valid_count", 0)
 
         # 计算轮播评分等级
