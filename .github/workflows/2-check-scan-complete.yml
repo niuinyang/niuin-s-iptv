@@ -1,9 +1,9 @@
-name: 2-检查scan执行完毕合并
+name: 3-静态假源检测与结果写回
 
 on:
   workflow_run:
     workflows:
-      - "1-预处理-下载-转txt-合并-分割-生成"
+      - "2-检查scan执行完毕合并"
     types:
       - completed
   workflow_dispatch:
@@ -11,203 +11,52 @@ on:
 permissions:
   contents: write
 
+env:
+  GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+  REPO_OWNER: niuinyang
+  REPO_NAME: niuin-s-iptv
+
 jobs:
-  wait-for-scan:
+  fake_loop_scan:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
-      REPO_OWNER: niuinyang
-      REPO_NAME: niuin-s-iptv
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          token: ${{ secrets.PUSH_TOKEN1 }}
+          fetch-depth: 0   # ⭐ 必须，rebase 需要完整历史
 
-      - name: Reset to origin/main
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
-
-      - name: Setup Python 3.11
-        uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      - name: Cache pip packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install --upgrade pip
+          pip install pandas numpy
 
-      - name: Run scan watcher (async & realtime output)
-        env:
-          PYTHONUNBUFFERED: "1"
+      - name: Run fake loop scan
         run: |
-          python -u scripts/6.4_check-scan-finished-async.py
+          python3 scripts/8.2_loop_scan.py
 
-      - name: Wait 10 seconds
-        run: sleep 10
-
-  merge-results:
-    needs: wait-for-scan
-    runs-on: ubuntu-latest
-    env:
-      PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
-      REPO_OWNER: niuinyang
-      REPO_NAME: niuin-s-iptv
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Reset to origin/main
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
-
-      - name: Setup Python 3.11
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
-
-      - name: Run merge hash script
-        run: python scripts/7.1_merge_hash.py
-
-      - name: Cleanup hash-merge files (14 days × 4 per day)
+      # =========================
+      # 🔒 防冲突 Git 提交流程
+      # =========================
+      - name: Commit and push results safely
         run: |
           set -e
-          folder="output/hash/merge"
-          keep_days=14
-          keep_per_day=4
 
-          if [ ! -d "$folder" ]; then
-            echo "Folder not found: $folder"
-            exit 0
-          fi
-
-          files=($(ls -1 "$folder"/*-hash-merge.json 2>/dev/null | sort))
-          total=${#files[@]}
-          echo "Total hash-merge files: $total"
-
-          if [ "$total" -le $((keep_days * keep_per_day)) ]; then
-            echo "No cleanup needed."
-            exit 0
-          fi
-
-          declare -A day_count
-          declare -A day_seen
-          kept=()
-          deleted=()
-
-          # 倒序遍历文件列表（新 → 旧）
-          for ((i=${#files[@]}-1; i>=0; i--)); do
-            file="${files[$i]}"
-            name=$(basename "$file")
-            day="${name:0:6}"  # 文件名前6位 YYMMDD
-
-            if [ -z "${day_seen[$day]+x}" ]; then
-              day_seen[$day]=1
-            fi
-
-            if [ "${#day_seen[@]}" -gt "$keep_days" ]; then
-              deleted+=("$file")
-              continue
-            fi
-
-            count=${day_count[$day]:-0}
-            if [ "$count" -ge "$keep_per_day" ]; then
-              deleted+=("$file")
-              continue
-            fi
-
-            day_count[$day]=$((count + 1))
-            kept+=("$file")
-          done
-
-          echo "Kept files:"
-          for f in "${kept[@]}"; do
-            echo "  KEEP $f"
-          done
-
-          echo "Deleting ${#deleted[@]} old files..."
-          for f in "${deleted[@]}"; do
-            echo "  DELETE $f"
-            rm -f "$f"
-          done
-
-      - name: Run merge deep scan csv script
-        run: python scripts/7.2_merge_deep_scan.py
-
-      - name: Commit and push merged hash JSON
-        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/hash/merge/*-hash-merge.json || true
-          if git diff --cached --quiet; then
-            echo "No changes in merged hash JSON"
-          else
-            git commit -m "Update merged hash JSON [skip ci]"
-            git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
-            git push origin HEAD:main --force-with-lease
-          fi
 
-      - name: Commit and push merged deep scan CSV results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/middle/deep/deep_total_ok.csv output/middle/deep/deep_total_not.csv
-          if git diff --cached --quiet; then
-            echo "No merge result changes."
-          else
-            git commit -m "Merge deep scan results [skip ci]"
-            git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
-            git push origin HEAD:main --force-with-lease
-          fi
+          git add output/middle/fake_loop/fake_loop_scan.csv
 
-      - name: Wait 10 seconds
-        run: sleep 10
+          # 若无变化，不报错
+          git commit -m "自动更新静态假源检测结果 $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 
-  delete_workflows:
-    needs: merge-results
-    runs-on: ubuntu-latest
-    env:
-      PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
-      REPO_OWNER: niuinyang
-      REPO_NAME: niuin-s-iptv
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Reset to origin/main
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
-      - name: Delete scan_chunk workflow files only
-        run: |
-          FILES_SCAN_CHUNK=$(find .github/workflows -type f -name "scan_chunk*.yml" || true)
-          if [ -z "$FILES_SCAN_CHUNK" ]; then
-            echo "No matching scan_chunk workflow files found."
-            exit 0
-          fi
-          echo "Deleting files:"
-          echo "$FILES_SCAN_CHUNK"
-          git rm $FILES_SCAN_CHUNK || true
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
-          git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
-          git push origin HEAD:main --force-with-lease
-      - name: Wait 10 seconds
-        run: sleep 10
+          # ⭐ 核心：先 rebase 再 push
+          git pull --rebase origin main
+          git push origin main
