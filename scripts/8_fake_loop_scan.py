@@ -53,6 +53,36 @@ INPUT_CSV = "output/middle/deep/deep_total_ok.csv"
 HASH_DIR = "output/hash/merge"
 OUTPUT_CSV = "output/middle/fake_loop/fake_loop_scan.csv"
 
+# ==================== 输出列名中英映射 ====================
+
+OUTPUT_COLUMN_RENAME_MAP = {
+    "scan_total_count": "实际检测次数",
+    "scan_valid_ratio": "有效检测率",
+    "first_seen_ts": "首次出现时间",
+    "S_last": "当前动态评分",
+    "C_last": "当前检测置信度",
+    "long_gop_flag": "长 GOP 预判",
+    "loop_flag": "轮播预判",
+    "sample_total_count": "总采样次数",
+    "sample_valid_count": "有效采样次数",
+    "dynamic_sample_count": "动态样本次数",
+    "S_hist": "历史动态评分",
+    "C_hist": "历史置信度",
+    "master_phash": "主 phash",
+    "master_phash_count": "主 phash 出现次数",
+    "p_repeat_index": "重复指数",
+    "master_phash_span": "时间跨度覆盖度",
+    "top3_repeat_ratio": "phash 集中度",
+    "anchor_AB_same_ratio": "锚点一致率",
+    "master_max_run_length": "最大连续重复长度",
+    "daily_max_run_length": "单天最大连续重复",
+    "loop_score": "轮播源评分",
+    "loop_level": "轮播源等级",
+    "fake_score": "静态源评分",
+    "fake_level": "静态源等级",
+    "是否夜间停播": "是否夜间停播",
+}
+
 # ==================== 数据读取与预处理模块 ====================
 
 def read_deep_csv(csv_path=INPUT_CSV):
@@ -639,7 +669,7 @@ def integrate_and_output(df_sources, timestamps, source_matrix_map, scan_total_c
             "loop_level": loop_level,
             "fake_score": round(fake_score, 4),
             "fake_level": fake_level,
-            "是否夜间停播": "是" if night_off_air else "否",
+            "night_off_air_flag": int(night_off_air),
         })
 
         output_rows.append(output_row)
