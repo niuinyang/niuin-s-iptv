@@ -65,20 +65,7 @@ def read_deep_csv(csv_path=INPUT_CSV):
     return df
 
 def parse_hash_files(hash_dir=HASH_DIR):
-    """
-    解析hash目录所有json文件，提取检测时间戳和数据。
-    返回：
-      - timestamps: 按时间升序的检测时间戳列表（字符串）
-      - data_map: dict{timestamp: dict{source_url: [{抓帧点数据字典}...]}}
-    """
     files = glob.glob(os.path.join(hash_dir, "*.json"))
-    time_file_map = {}
-    for f in files:
-        base = os.path.basename(f)
-        # 例：文件名可能包含时间戳，需按实际文件名规则提取
-        # 这里示范用文件名全名做key，稍后用文件创建时间或从内容取时间
-        time_file_map[f] = None  # 暂留，后续读取文件确定时间戳
-
     timestamps = []
     data_map = {}
 
@@ -86,14 +73,22 @@ def parse_hash_files(hash_dir=HASH_DIR):
         try:
             with open(file_path, "r", encoding="utf-8") as f:
                 content = json.load(f)
-            # 假设json结构为 {source_url: {timestamp: {...}}} 或其他
-            # 这里提取文件时间戳，示范用文件名时间戳部分
-            # 你根据文件名规则替换下面时间戳提取代码：
+
             base = os.path.basename(file_path)
-            # 假设文件名格式如: 202601091736.json
-            ts = base.split('.')[0]  
+            ts = base.split('.')[0]
             timestamps.append(ts)
-            data_map[ts] = content
+
+            # 转换格式
+            converted = {}
+            for url, val in content.items():
+                phash_list = val.get("phash", [])
+                # 构造期望的列表形式，假设状态都是 "OK"
+                items = []
+                for phash in phash_list:
+                    items.append({"phash": phash if phash else None, "status": "OK"})
+                converted[url] = items
+            data_map[ts] = converted
+
         except Exception as e:
             print(f"警告：解析文件失败 {file_path}，原因: {e}")
 
