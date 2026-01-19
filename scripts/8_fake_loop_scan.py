@@ -53,36 +53,6 @@ INPUT_CSV = "output/middle/deep/deep_total_ok.csv"
 HASH_DIR = "output/hash/merge"
 OUTPUT_CSV = "output/middle/fake_loop/fake_loop_scan.csv"
 
-# ==================== 输出列名中英映射 ====================
-
-OUTPUT_COLUMN_RENAME_MAP = {
-    "scan_total_count": "实际检测次数",
-    "scan_valid_ratio": "有效检测率",
-    "first_seen_ts": "首次出现时间",
-    "S_last": "当前动态评分",
-    "C_last": "当前检测置信度",
-    "long_gop_flag": "长 GOP 预判",
-    "loop_flag": "轮播预判",
-    "sample_total_count": "总采样次数",
-    "sample_valid_count": "有效采样次数",
-    "dynamic_sample_count": "动态样本次数",
-    "S_hist": "历史动态评分",
-    "C_hist": "历史置信度",
-    "master_phash": "主 phash",
-    "master_phash_count": "主 phash 出现次数",
-    "p_repeat_index": "重复指数",
-    "master_phash_span": "时间跨度覆盖度",
-    "top3_repeat_ratio": "phash 集中度",
-    "anchor_AB_same_ratio": "锚点一致率",
-    "master_max_run_length": "最大连续重复长度",
-    "daily_max_run_length": "单天最大连续重复",
-    "loop_score": "轮播源评分",
-    "loop_level": "轮播源等级",
-    "fake_score": "静态源评分",
-    "fake_level": "静态源等级",
-    "night_off_air_flag": "是否夜间停播",
-}
-
 # ==================== 数据读取与预处理模块 ====================
 
 def read_deep_csv(csv_path=INPUT_CSV):
@@ -102,6 +72,13 @@ def parse_hash_files(hash_dir=HASH_DIR):
       - data_map: dict{timestamp: dict{source_url: [{抓帧点数据字典}...]}}
     """
     files = glob.glob(os.path.join(hash_dir, "*.json"))
+    time_file_map = {}
+    for f in files:
+        base = os.path.basename(f)
+        # 例：文件名可能包含时间戳，需按实际文件名规则提取
+        # 这里示范用文件名全名做key，稍后用文件创建时间或从内容取时间
+        time_file_map[f] = None  # 暂留，后续读取文件确定时间戳
+
     timestamps = []
     data_map = {}
 
@@ -109,8 +86,12 @@ def parse_hash_files(hash_dir=HASH_DIR):
         try:
             with open(file_path, "r", encoding="utf-8") as f:
                 content = json.load(f)
+            # 假设json结构为 {source_url: {timestamp: {...}}} 或其他
+            # 这里提取文件时间戳，示范用文件名时间戳部分
+            # 你根据文件名规则替换下面时间戳提取代码：
             base = os.path.basename(file_path)
-            ts = base.split('.')[0]  # 根据文件名提取时间戳
+            # 假设文件名格式如: 202601091736.json
+            ts = base.split('.')[0]  
             timestamps.append(ts)
             data_map[ts] = content
         except Exception as e:
@@ -119,257 +100,47 @@ def parse_hash_files(hash_dir=HASH_DIR):
     timestamps = sorted(timestamps)
     return timestamps, data_map
 
-def build_source_matrix(data_map):
+def build_source_matrix(df_sources, timestamps, data_map):
     """
-    重构版本，适配你给出的JSON结构，提取phash列表
+    构建每个源的检测矩阵：
+      - 行数：实际检测次数 N = len(timestamps)
+      - 列数：抓帧点数量 6
+      - 每个单元为 dict {"hash": phash或None, "status": 状态字符串}
+    返回：
+      - source_matrix_map: dict {source_url: List[List[dict]]} 结构为矩阵
+      - scan_total_count: 实际检测次数 N
     """
-    all_ts = sorted(data_map.keys())
-    all_urls = set()
-    for ts in all_ts:
-        all_urls.update(data_map[ts].keys())
-    all_urls = sorted(all_urls)
+    source_matrix_map = {}
+    scan_total_count = len(timestamps)
 
-    GRAB_POINTS = 6  # 按照你数据phash长度
+    # 源列表唯一标识，假设用“地址”字段
+    urls = df_sources['地址'].tolist()
 
-    matrix = {}
-    for url in all_urls:
-        matrix[url] = {}
-        for ts in all_ts:
-            row = {}
-            try:
-                entry = data_map[ts].get(url, {})
-                phash_list = entry.get("phash", [])
-                for i in range(min(GRAB_POINTS, len(phash_list))):
-                    phash_val = phash_list[i]
-                    row[i] = {"hash": phash_val, "status": "OK"}  # 你这数据里没状态，统一标OK
-            except Exception as e:
-                print(f"警告：解析数据时异常，时间戳={ts}, url={url}, 错误：{e}")
-            matrix[url][ts] = row
-    return matrix
+    for url in urls:
+        # 初始化空矩阵，行=scan次数，列=6抓帧点
+        matrix = []
+        for ts in timestamps:
+            # 默认一行6个抓帧点，初始化空状态
+            row = [{"hash": None, "status": "NOT_APPEARED"} for _ in range(GRAB_POINTS)]
+            # 如果该时间点数据有该url，读取其hash列表和状态
+            if ts in data_map and url in data_map[ts]:
+                try:
+                    # data_map[ts][url] 结构需和你实际json对应
+                    # 这里示例为列表，每个元素含 "phash" 和 "status"
+                    items = data_map[ts][url]
+                    for i in range(min(GRAB_POINTS, len(items))):
+                        phash_val = items[i].get("phash") if isinstance(items[i], dict) else None
+                        status_val = items[i].get("status") if isinstance(items[i], dict) else "OK"
+                        # None 或空字符串处理为 None
+                        if not phash_val:
+                            phash_val = None
+                        row[i] = {"hash": phash_val, "status": status_val}
+                except Exception as e:
+                    print(f"警告：解析数据时异常，时间戳={ts}, url={url}, 错误：{e}")
+            matrix.append(row)
+        source_matrix_map[url] = matrix
 
     return source_matrix_map, scan_total_count
-
-import math
-
-# ==================== 单次检测动态评分模块 ====================
-
-def calc_single_scan_dynamic_score(phash_list):
-    """
-    计算单次检测的动态评分和相关标记。
-    输入：
-      phash_list: 长度6的列表，元素为字符串phash或None
-    输出：
-      dict，包含以下字段：
-        raw_score: 原始动态评分（无置信度加权，0完全动态，100完全静态）
-        confidence: 有效phash数量（1~6）
-        final_score: 置信度加权动态评分
-        long_gop_flag: bool，长GOP预判
-        loop_flag: bool，轮播预判
-        null_flag: bool，全部无效标记
-        partial_null_same_flag: bool，部分空但有效全部相同标记
-    """
-    valid_phash = [p for p in phash_list if p and len(p) > 0]
-    confidence = len(valid_phash)
-
-    null_flag = confidence <= 1
-
-    partial_null_same_flag = False
-    if 1 < confidence < 6:
-        unique_phash = set(valid_phash)
-        if len(unique_phash) == 1:
-            partial_null_same_flag = True
-
-    diff_pairs = 0
-    total_pairs = 0
-    for i in range(confidence):
-        for j in range(i + 1, confidence):
-            total_pairs += 1
-            if valid_phash[i] != valid_phash[j]:
-                diff_pairs += 1
-
-    if total_pairs == 0:
-        raw_score = 100.0
-    else:
-        diff_ratio = diff_pairs / total_pairs
-        raw_score = 100 * (1 - diff_ratio)
-
-    if null_flag or partial_null_same_flag:
-        final_score = 100.0
-    else:
-        final_score = raw_score * (confidence / 6) + 50 * (1 - confidence / 6)
-
-    long_gop_flag = detect_long_gop(phash_list)
-    loop_flag = detect_loop_pattern(phash_list)
-
-    return {
-        "raw_score": raw_score,
-        "confidence": confidence,
-        "final_score": final_score,
-        "long_gop_flag": long_gop_flag,
-        "loop_flag": loop_flag,
-        "null_flag": null_flag,
-        "partial_null_same_flag": partial_null_same_flag,
-    }
-
-def detect_long_gop(phash_list):
-    filtered = [p for p in phash_list if p]
-    if len(filtered) <= 1:
-        return False
-    changes = 0
-    for i in range(len(filtered) - 1):
-        if filtered[i] != filtered[i+1]:
-            changes += 1
-    return changes <= 2
-
-def detect_loop_pattern(phash_list):
-    filtered = [p for p in phash_list if p]
-    if len(filtered) < 4:
-        return False
-
-    pattern1 = filtered[0:2]
-    repeated1 = True
-    for i in range(0, len(filtered), 2):
-        if filtered[i:i+2] != pattern1:
-            repeated1 = False
-            break
-    if repeated1:
-        return True
-
-    half = len(filtered) // 2
-    first_half = filtered[:half]
-    second_half = filtered[-half:]
-    if first_half == second_half[::-1]:
-        return True
-
-    return False
-
-# ==================== 多次检测横向比较模块 ====================
-
-def analyze_long_term_metrics(source_matrix, timestamps):
-    sample_total_count = len(source_matrix)
-    sample_valid_count = 0
-    dynamic_sample_count = 0
-
-    phash_counter = Counter()
-    dynamic_scores = []
-
-    anchor_A_idx = 0
-    anchor_B_idx = 4
-
-    sample_master_phash_list = []
-
-    day_groups = defaultdict(list)
-    for idx, ts in enumerate(timestamps):
-        day_str = ts[:8]
-        day_groups[day_str].append(idx)
-
-    for i, row in enumerate(source_matrix):
-        phash_list = [cell["hash"] if cell["hash"] else None for cell in row]
-
-        single_score_dict = calc_single_scan_dynamic_score(phash_list)
-        dynamic_scores.append(single_score_dict["final_score"])
-
-        valid_count = sum([1 for p in phash_list if p])
-        if valid_count >= 2:
-            sample_valid_count += 1
-            if single_score_dict["final_score"] < 100:
-                dynamic_sample_count += 1
-
-            counter = Counter([p for p in phash_list if p])
-            if counter:
-                master_phash = counter.most_common(1)[0][0]
-                phash_counter[master_phash] += 1
-                sample_master_phash_list.append(master_phash)
-            else:
-                sample_master_phash_list.append(None)
-        else:
-            sample_master_phash_list.append(None)
-
-    if phash_counter:
-        master_phash, master_phash_count = phash_counter.most_common(1)[0]
-        p_repeat_index = master_phash_count / sample_total_count
-    else:
-        master_phash = None
-        master_phash_count = 0
-        p_repeat_index = 0.0
-
-    if sample_valid_count > 0:
-        history_dynamic_level = (dynamic_sample_count / sample_valid_count) * 100
-    else:
-        history_dynamic_level = 0.0
-
-    first_idx = None
-    last_idx = None
-    for idx, phash in enumerate(sample_master_phash_list):
-        if phash == master_phash:
-            if first_idx is None:
-                first_idx = idx
-            last_idx = idx
-
-    if first_idx is not None and last_idx is not None:
-        span_count = last_idx - first_idx + 1
-        master_phash_span = span_count / sample_total_count
-    else:
-        master_phash_span = 0.0
-
-    top3 = phash_counter.most_common(3)
-    top3_sum = sum([cnt for _, cnt in top3])
-    top3_repeat_ratio = top3_sum / sample_total_count if sample_total_count > 0 else 0.0
-
-    anchor_same_count = 0
-    anchor_total_count = 0
-    for row in source_matrix:
-        a = row[anchor_A_idx]["hash"]
-        b = row[anchor_B_idx]["hash"]
-        if a and b:
-            anchor_total_count += 1
-            if a == b:
-                anchor_same_count += 1
-    anchor_AB_same_ratio = (anchor_same_count / anchor_total_count) if anchor_total_count > 0 else 0.0
-
-    max_run_length = 0
-    current_run = 0
-    for phash in sample_master_phash_list:
-        if phash == master_phash:
-            current_run += 1
-            if current_run > max_run_length:
-                max_run_length = current_run
-        else:
-            current_run = 0
-    master_max_run_length = max_run_length / sample_total_count if sample_total_count > 0 else 0.0
-
-    daily_max_runs = []
-    for day, indices in day_groups.items():
-        max_run = 0
-        cur_run = 0
-        for idx in indices:
-            if idx >= len(sample_master_phash_list):
-                continue
-            if sample_master_phash_list[idx] == master_phash:
-                cur_run += 1
-                if cur_run > max_run:
-                    max_run = cur_run
-            else:
-                cur_run = 0
-        if len(indices) > 0:
-            daily_max_runs.append(max_run / len(indices))
-    daily_max_run_length = max(daily_max_runs) if daily_max_runs else 0.0
-
-    return {
-        "master_phash": master_phash,
-        "master_phash_count": master_phash_count,
-        "p_repeat_index": p_repeat_index,
-        "history_dynamic_level": history_dynamic_level,
-        "master_phash_span": master_phash_span,
-        "top3_repeat_ratio": top3_repeat_ratio,
-        "anchor_AB_same_ratio": anchor_AB_same_ratio,
-        "master_max_run_length": master_max_run_length,
-        "daily_max_run_length": daily_max_run_length,
-        "sample_total_count": sample_total_count,
-        "sample_valid_count": sample_valid_count,
-        "dynamic_sample_count": dynamic_sample_count,
-        "dynamic_scores": dynamic_scores,
-    }
 import math
 
 # ==================== 单次检测动态评分模块 ====================
@@ -709,7 +480,6 @@ def judge_night_off_air(dynamic_scores, timestamps):
     is_night_off_air = night_off_air_days >= NIGHT_OFF_AIR_MIN_DAYS
 
     return is_night_off_air, night_off_air_days_list, night_off_air_ratio
-
 # ==================== 轮播评分计算模块 ====================
 
 def normalize_score(value, max_val=1.0, min_val=0.0):
@@ -813,63 +583,75 @@ def integrate_and_output(df_sources, timestamps, source_matrix_map, scan_total_c
       long_gop_flags_map: dict{url: bool}
       loop_flags_map: dict{url: bool}
       multi_metrics_map: dict{url: dict} 多次检测指标
-      night_off_air_map: dict{url: bool} 夜间停播判定
-      output_csv: 输出CSV路径
+      night_off_air_map: dict{url: bool} 是否夜间停播标记
     """
-    import csv
+    output_rows = []
 
-    results = []
     for idx, row in df_sources.iterrows():
         url = row['地址']
+        metrics = multi_metrics_map.get(url, {})
         last_score = last_scores_map.get(url, 100.0)
         last_conf = last_conf_map.get(url, 0)
         long_gop_flag = long_gop_flags_map.get(url, False)
         loop_flag = loop_flags_map.get(url, False)
-        multi_metrics = multi_metrics_map.get(url, {})
-        night_off_air_flag = night_off_air_map.get(url, False)
+        night_off_air = night_off_air_map.get(url, False)
 
-        fake_score, fake_level = calc_fake_score(
-            multi_metrics,
-            last_score,
-            multi_metrics.get("history_dynamic_level", 0),
-            audio_presence=100,
-            fps_stability=100
-        )
+        # 历史动态评分和置信度取自multi_metrics
+        hist_score = metrics.get("history_dynamic_level", 0.0)
+        hist_confidence = metrics.get("sample_valid_count", 0)
 
-        loop_score, loop_level = calc_loop_score(multi_metrics)
+        # 计算轮播评分等级
+        loop_score, loop_level = calc_loop_score(metrics)
 
-        results.append({
-            **row.to_dict(),
-            "检测次数": scan_total_count,
-            "最近动态评分": round(last_score, 2),
-            "最近置信度": last_conf,
-            "长GOP预判": long_gop_flag,
-            "轮播预判": loop_flag,
-            "夜间停播": night_off_air_flag,
-            "多次检测主phash": multi_metrics.get("master_phash"),
-            "多次检测主phash计数": multi_metrics.get("master_phash_count"),
-            "多次检测重复指数": round(multi_metrics.get("p_repeat_index", 0), 3),
-            "多次检测历史动态级": round(multi_metrics.get("history_dynamic_level", 0), 2),
-            "多次检测主phash跨度": round(multi_metrics.get("master_phash_span", 0), 3),
-            "多次检测前三高频占比": round(multi_metrics.get("top3_repeat_ratio", 0), 3),
-            "多次检测锚点一致率": round(multi_metrics.get("anchor_AB_same_ratio", 0), 3),
-            "多次检测最大连续长度": round(multi_metrics.get("master_max_run_length", 0), 3),
-            "多次检测单天最大连续长度": round(multi_metrics.get("daily_max_run_length", 0), 3),
-            "静态假源评分": round(fake_score, 2),
-            "静态假源等级": fake_level,
-            "轮播评分": round(loop_score, 2),
-            "轮播等级": loop_level,
+        # 假设音频和帧率辅助指标暂时固定100（可扩展）
+        audio_presence = 100
+        fps_stability = 100
+
+        # 计算静态假源评分等级
+        fake_score, fake_level = calc_fake_score(metrics, last_score, hist_score, audio_presence, fps_stability)
+
+        # 合并原始行数据转成dict
+        output_row = row.to_dict()
+
+        # 添加新字段
+        output_row.update({
+            "scan_total_count": scan_total_count,
+            "scan_valid_ratio": (metrics.get("sample_valid_count",0) / scan_total_count) if scan_total_count > 0 else 0.0,
+            "first_seen_ts": timestamps[0] if timestamps else "",
+            "S_last": last_score,
+            "C_last": last_conf,
+            "long_gop_flag": int(long_gop_flag),
+            "loop_flag": int(loop_flag),
+            "sample_total_count": metrics.get("sample_total_count", 0),
+            "sample_valid_count": metrics.get("sample_valid_count", 0),
+            "dynamic_sample_count": metrics.get("dynamic_sample_count", 0),
+            "S_hist": hist_score,
+            "C_hist": hist_confidence,
+            "master_phash": metrics.get("master_phash", ""),
+            "master_phash_count": metrics.get("master_phash_count", 0),
+            "p_repeat_index": round(metrics.get("p_repeat_index", 0.0), 4),
+            "master_phash_span": round(metrics.get("master_phash_span", 0.0), 4),
+            "top3_repeat_ratio": round(metrics.get("top3_repeat_ratio", 0.0), 4),
+            "anchor_AB_same_ratio": round(metrics.get("anchor_AB_same_ratio", 0.0), 4),
+            "master_max_run_length": round(metrics.get("master_max_run_length", 0.0), 4),
+            "daily_max_run_length": round(metrics.get("daily_max_run_length", 0.0), 4),
+            "loop_score": round(loop_score, 4),
+            "loop_level": loop_level,
+            "fake_score": round(fake_score, 4),
+            "fake_level": fake_level,
+            "是否夜间停播": "是" if night_off_air else "否",
         })
 
-    # 写入CSV
-    if results:
-        with open(output_csv, 'w', newline='', encoding='utf-8-sig') as f:
-            writer = csv.DictWriter(f, fieldnames=results[0].keys())
-            writer.writeheader()
-            for r in results:
-                writer.writerow(r)
+        output_rows.append(output_row)
 
-    print(f"已输出检测结果到 {output_csv}")
+    # 生成DataFrame并输出CSV
+    df_out = pd.DataFrame(output_rows)
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    df_out.to_csv(output_csv, index=False, encoding='utf-8-sig')
+    print(f"已输出结果文件：{output_csv}")
+
+# ==================== 主流程示例 ====================
+
 def main():
     print("开始读取基础CSV...")
     df_sources = read_deep_csv()
@@ -880,6 +662,7 @@ def main():
     print(f"构建检测矩阵，源数量：{len(df_sources)}, 检测次数：{len(timestamps)}")
     source_matrix_map, scan_total_count = build_source_matrix(df_sources, timestamps, data_map)
 
+    # 准备存储各项指标
     last_scores_map = {}
     last_conf_map = {}
     long_gop_flags_map = {}
@@ -887,37 +670,34 @@ def main():
     multi_metrics_map = {}
     night_off_air_map = {}
 
-    print("开始计算各源指标...")
+    print("计算各源指标...")
+
     for url, matrix in source_matrix_map.items():
+        # 最近一次检测行
+        if len(matrix) == 0:
+            continue
         last_row = matrix[-1]
         last_phash_list = [cell["hash"] for cell in last_row]
         single_score_dict = calc_single_scan_dynamic_score(last_phash_list)
-
         last_scores_map[url] = single_score_dict["final_score"]
         last_conf_map[url] = single_score_dict["confidence"]
         long_gop_flags_map[url] = single_score_dict["long_gop_flag"]
         loop_flags_map[url] = single_score_dict["loop_flag"]
 
-        multi_metrics = analyze_long_term_metrics(matrix, timestamps)
-        multi_metrics_map[url] = multi_metrics
+        # 多次检测统计
+        metrics = analyze_long_term_metrics(matrix, timestamps)
+        multi_metrics_map[url] = metrics
 
-        is_night_off_air, _, _ = judge_night_off_air(multi_metrics["dynamic_scores"], timestamps)
+        # 夜间停播判定
+        is_night_off_air, _, _ = judge_night_off_air(metrics.get("dynamic_scores", []), timestamps)
         night_off_air_map[url] = is_night_off_air
 
-    print("整合结果，写入CSV...")
-    integrate_and_output(
-        df_sources,
-        timestamps,
-        source_matrix_map,
-        scan_total_count,
-        last_scores_map,
-        last_conf_map,
-        long_gop_flags_map,
-        loop_flags_map,
-        multi_metrics_map,
-        night_off_air_map,
-        output_csv=OUTPUT_CSV
-    )
+    print("整合输出CSV文件...")
+    integrate_and_output(df_sources, timestamps, source_matrix_map, scan_total_count, 
+                         last_scores_map, last_conf_map, long_gop_flags_map, loop_flags_map, 
+                         multi_metrics_map, night_off_air_map)
+
+    print("全部处理完成。")
 
 if __name__ == "__main__":
     main()
