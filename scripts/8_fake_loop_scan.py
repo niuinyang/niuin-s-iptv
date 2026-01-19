@@ -668,12 +668,12 @@ def integrate_and_output(df_sources, timestamps, source_matrix_map, scan_total_c
         output_rows.append(output_row)
 
     # 生成DataFrame并输出CSV
-df_out = pd.DataFrame(output_rows)
-# === 输出阶段：英文列名 → 中文列名 ===
-df_out.rename(columns=OUTPUT_COLUMN_RENAME_MAP, inplace=True)
-os.makedirs(os.path.dirname(output_csv), exist_ok=True)
-df_out.to_csv(output_csv, index=False, encoding='utf-8-sig')
-print(f"已输出结果文件：{output_csv}")
+   df_out = pd.DataFrame(output_rows)
+   # === 输出阶段：英文列名 → 中文列名 ===
+   df_out.rename(columns=OUTPUT_COLUMN_RENAME_MAP, inplace=True)
+   os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+   df_out.to_csv(output_csv, index=False, encoding='utf-8-sig')
+   print(f"已输出结果文件：{output_csv}")
 
 # ==================== 主流程示例 ====================
 
