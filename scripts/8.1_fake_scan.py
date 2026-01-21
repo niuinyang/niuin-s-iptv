@@ -442,6 +442,11 @@ def main():
     write_csv('output/middle/fake/fake_scan_ok.csv', ok_rows, fieldnames)
     write_csv('output/middle/fake/fake_scan_not.csv', not_rows, fieldnames)
 
+# 新增打印统计信息
+    print(f"筛选出静态假源条数（fake_scan_not.csv）：{len(not_rows)}")
+    print(f"非静态源条数（fake_scan_ok.csv）：{len(ok_rows)}")
+    print(f"总条目数（fake_scan_total.csv）：{len(total_rows)}")
+
     print("全部完成！")
 
 
