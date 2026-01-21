@@ -434,7 +434,7 @@ def main():
     timestamps, data_map = parse_hash_files()
 
     print(f"构建检测矩阵，源数量：{len(df_sources)}, 检测次数：{len(timestamps)}")
-    source_matrix_map, scan_total_count = build_source_matrix(df_sources, timestamps, data_map)
+    source_matrix_map = build_source_matrix(df_sources, timestamps, data_map)
 
     # 准备存储各项指标
     last_scores_map = {}
