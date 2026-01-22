@@ -332,6 +332,11 @@ def score_rule_judge(statistics):
         return True, f"评分高于阈值({statistics['static_score']:.2f} ≥ {SCORE_STATIC_THRESHOLD})"
     return False, ''
 
+def is_new_source_today(first_appearance_time):
+    if first_appearance_time is None:
+        return True  # 无首次出现时间当新源处理
+    now = datetime.now()
+    return first_appearance_time.date() == now.date()
 
 def generate_output_rows(csv_data, hash_data):
     """
@@ -348,18 +353,21 @@ def generate_output_rows(csv_data, hash_data):
         stats = analyze_phash_data(phash_history) if phash_history else None
 
         # 判断静态假源
-        is_hard, reason_hard = hard_rule_judge(stats)
-        is_score, reason_score = score_rule_judge(stats)
-        
-        # 综合判定
-        is_static = False
-        filter_reason = ''
-        if is_hard:
-            is_static = True
-            filter_reason = reason_hard
-        elif is_score:
-            is_static = True
-            filter_reason = reason_score
+        if stats and is_new_source_today(stats['first_appearance_time']):
+            is_static = False
+            filter_reason = '新源不筛除'
+        else:
+            is_hard, reason_hard = hard_rule_judge(stats)
+            is_score, reason_score = score_rule_judge(stats)
+
+            is_static = False
+            filter_reason = ''
+            if is_hard:
+                is_static = True
+                filter_reason = reason_hard
+            elif is_score:
+                is_static = True
+                filter_reason = reason_score
 
         # 构造新增列字典，统一字段，未命中为默认空值
         new_fields = {
