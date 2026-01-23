@@ -114,6 +114,14 @@ def analyze_phash_data(phash_history):
     max_count = max(counter.values())
     candidates = [p for p, c in counter.items() if c == max_count]
 
+
+    # 首次出现时间
+    first_appearance_time = None
+    for sample in phash_history:
+        phash_valid = [clean_phash(p) for p in sample['phash']]
+        if main_phash in phash_valid:
+            first_appearance_time = sample['detect_time']
+            break
     # 当前置信度（最近一次检测有效phash数量）
     current_confidence = confidence_per_sample[-1]
 
