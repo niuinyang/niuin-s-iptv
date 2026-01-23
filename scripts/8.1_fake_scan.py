@@ -115,6 +115,25 @@ def analyze_phash_data(phash_history):
     candidates = [p for p, c in counter.items() if c == max_count]
 
 
+    main_phash = next(
+        (p for p in reversed(last_sample_phash) if p in candidates),
+        candidates[0]
+    )
+
+    main_phash_total_count = counter[main_phash]
+    main_phash_ratio = main_phash_total_count / total_frames if total_frames else 0
+
+    dynamic_1 = calc_dynamic_1(last_sample_phash)
+
+    top3_repeat_ratio = (
+        sum(cnt for _, cnt in counter.most_common(3)) / total_frames
+        if total_frames else 0
+    )
+
+    anchor_2s = calc_anchor_consistency(phash_history, 0)
+    anchor_32s = calc_anchor_consistency(phash_history, 4)
+
+
     # 首次出现时间
     first_appearance_time = None
     for sample in phash_history:
@@ -133,23 +152,6 @@ def analyze_phash_data(phash_history):
         p for p in (clean_phash(x) for x in phash_history[-1]['phash']) if p
     ]
 
-    main_phash = next(
-        (p for p in reversed(last_sample_phash) if p in candidates),
-        candidates[0]
-    )
-
-    main_phash_total_count = counter[main_phash]
-    main_phash_ratio = main_phash_total_count / total_frames if total_frames else 0
-
-    dynamic_1 = calc_dynamic_1(last_sample_phash)
-
-    top3_repeat_ratio = (
-        sum(cnt for _, cnt in counter.most_common(3)) / total_frames
-        if total_frames else 0
-    )
-
-    anchor_2s = calc_anchor_consistency(phash_history, 0)
-    anchor_32s = calc_anchor_consistency(phash_history, 4)
 
     # ================================
     # 【评分系统】原样保留
