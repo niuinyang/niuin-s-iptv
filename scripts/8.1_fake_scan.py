@@ -113,7 +113,10 @@ def analyze_phash_data(phash_history):
     counter = Counter(all_phash_list)
     max_count = max(counter.values())
     candidates = [p for p, c in counter.items() if c == max_count]
-
+    
+    last_sample_phash = [
+        p for p in (clean_phash(x) for x in phash_history[-1]['phash']) if p
+    ]
 
     main_phash = next(
         (p for p in reversed(last_sample_phash) if p in candidates),
@@ -147,10 +150,6 @@ def analyze_phash_data(phash_history):
     # 历史置信度 = 所有有效phash数量 / 总抓帧数量
     total_valid_phash = len(all_phash_list)
     history_confidence = total_valid_phash / total_frames if total_frames > 0 else 0
-
-    last_sample_phash = [
-        p for p in (clean_phash(x) for x in phash_history[-1]['phash']) if p
-    ]
 
 
     # ================================
