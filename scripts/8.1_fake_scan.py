@@ -50,7 +50,7 @@ WEIGHT_ANCHOR_BONUS = 0.1
 #    辅助判定，权重较小，作为额外参考
 
 # 评分判定阈值：
-SCORE_STATIC_THRESHOLD = 80  
+SCORE_STATIC_THRESHOLD = 100  
 # —— 评分系统静态源判定阈值（0-100）
 #    评分大于等于80判定为静态假源，低于80则为动态或不确定
 
