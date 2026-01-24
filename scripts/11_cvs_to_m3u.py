@@ -312,6 +312,7 @@ def process(file_path, output_path, own_source_enabled, own_source_priority, gro
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(output_lines))
+    print(f"分组 {group}，频道 {ch_name}：自有源 {len(own_sources)}，网络源 {len(network_sources)}")
     print(f"生成文件: {output_path}")
 
 # 主入口
