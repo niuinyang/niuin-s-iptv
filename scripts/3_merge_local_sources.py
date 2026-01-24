@@ -59,6 +59,13 @@ def read_m3u_file(file_path: str):
                 info_line = line
                 url_line = lines[i + 1].strip() if i + 1 < len(lines) else ""
 
+                # 仅针对1sddxzb.m3u文件，替换指定前缀的地址
+                if os.path.basename(file_path) == "1sddxzb.m3u":
+                    old_prefix = "http://192.168.50.1:20231"
+                    new_prefix = "http://192.168.31.2:4022"
+                    if url_line.startswith(old_prefix):
+                        url_line = new_prefix + url_line[len(old_prefix):]
+
                 content = info_line.replace("#EXTINF:-1", "").replace("#EXTINF:", "").strip()
 
                 attributes = dict(re.findall(r'(\w+)=["]([^"]*)["]', content))
