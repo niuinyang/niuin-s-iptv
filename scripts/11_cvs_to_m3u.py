@@ -104,16 +104,16 @@ except ImportError:
     print("提示：请安装pypinyin模块，用于中文频道名排序。执行命令：pip install pypinyin")
     exit(1)
 
-# 判断是否为网络源
-def is_network_source(row):
-    return '网络文件' in (row.get('来源文件') or '')
-
+# === 修改点：修改判定函数，网络源 = 非自有源 ===
 # 判断是否为自有源
 def is_own_source(row, own_source_enabled):
     source = row.get('来源文件', '')
-    if source in own_source_enabled and own_source_enabled[source]:
-        return True
-    return False
+    return own_source_enabled.get(source, False)
+
+# 判断是否为网络源，改为非自有源即网络源
+def is_network_source(row, own_source_enabled):
+    return not is_own_source(row, own_source_enabled)
+# === 修改点结束 ===
 
 # 判断是否输出条件满足
 def can_output(row):
@@ -287,11 +287,11 @@ def process(file_path, output_path, own_source_enabled, own_source_priority, gro
 
         for ch_name in sorted_channels:
             sources = channel_dict[ch_name]
-            # 分为自有源和网络源
+            # === 修改点：判定自有源和网络源时传入own_source_enabled ===
             own_sources = [s for s in sources if is_own_source(s, own_source_enabled)]
-            network_sources = [s for s in sources if is_network_source(s)]
+            network_sources = [s for s in sources if is_network_source(s, own_source_enabled)]
 
-            # 筛掉不启用的自有源
+            # 筛掉不启用的自有源（这里冗余，is_own_source已经判断了）
             own_sources = [s for s in own_sources if own_source_enabled.get(s.get('来源文件',''), False)]
 
             # 排序自有源
@@ -306,6 +306,7 @@ def process(file_path, output_path, own_source_enabled, own_source_priority, gro
             for src in final_sources:
                 m3u_line = make_m3u_item(src)
                 output_lines.append(m3u_line)
+    # === 修改点结束 ===
 
     # 写文件
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
