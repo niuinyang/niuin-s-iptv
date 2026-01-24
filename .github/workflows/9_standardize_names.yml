@@ -52,9 +52,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: 提交并推送标准化结果文件
+      - name: 提交并推送标准化结果文件和标准库更新
         run: |
-          git add output/total_final.csv output/middle/channel_data/channel_data.csv
+          git add output/middle/standardize/standardize.csv output/middle/channel_data/channel_data.csv
           git commit -m "自动更新 IPTV 标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
           git push origin HEAD:${{ github.ref_name }}
         env:
