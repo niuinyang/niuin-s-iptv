@@ -112,7 +112,12 @@ def main():
 
     # 按最终列顺序输出
     df_final = df[final_columns]
-
+    
+    # 确保输出目录存在
+    output_dir = os.path.dirname(output_file)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+        
     # 输出CSV，不写索引，utf-8编码
     df_final.to_csv(output_file, index=False, encoding="utf-8")
 
