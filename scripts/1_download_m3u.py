@@ -70,8 +70,8 @@ async def remove_old_files_async(directory, keep_files):  # 异步删除目录�
 
 async def rename_mysource_files_async(output_dir, downloaded_files):  # 异步重命名 my 目录前三个文件
     rename_map = {                                     # 定义重命名映射索引 -> 目标文件名
-        0: "1sddxdb.m3u",
-        1: "2sddxzb.m3u",
+        0: "1sddxzb.m3u",
+        1: "2sddxdb.m3u",
         2: "3jnltzb.m3u",
     }
 
