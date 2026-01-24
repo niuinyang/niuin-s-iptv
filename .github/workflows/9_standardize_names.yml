@@ -45,7 +45,7 @@ jobs:
 
       - name: 运行 IPTV 标准化脚本
         run: |
-          python standardize_iptv.py
+          python scripts/9_standardize_names.py
 
       - name: 配置 Git 用户信息
         run: |
