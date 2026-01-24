@@ -1,0 +1,229 @@
+name: IPTV 全流程自动处理流水线
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "2-检查scan执行完毕合并"
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+env:
+  GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+  REPO_OWNER: niuinyang
+  REPO_NAME: niuin-s-iptv
+
+jobs:
+  # =========================
+  # 8.1 静态假源检测
+  # =========================
+  fake_scan:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 仓库代码
+        uses: actions/checkout@v3
+
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: 设置 Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 运行静态假源判定脚本
+        run: |
+          python scripts/8.1_fake_scan.py
+
+      - name: 提交静态假源检测结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/middle/fake/fake_scan_total.csv \
+                  output/middle/fake/fake_scan_ok.csv \
+                  output/middle/fake/fake_scan_not.csv
+          git commit -m "自动更新静态假源检测结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git push origin HEAD:${{ github.ref_name }}
+
+  # =========================
+  # 8.2 轮播扫描
+  # =========================
+  loop_scan:
+    needs: fake_scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 仓库代码
+        uses: actions/checkout@v3
+
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: 设置 Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 运行轮播扫描脚本
+        run: |
+          python scripts/8.2_loop_scan.py
+
+      - name: 提交轮播扫描结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/middle/loop/loop_scan_total.csv \
+                  output/middle/loop/loop_scan_not.csv \
+                  output/middle/loop/loop_scan_yes.csv
+          git commit -m "自动更新轮播扫描结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git push origin HEAD:${{ github.ref_name }}
+
+  # =========================
+  # 9 IPTV 频道名标准化处理
+  # =========================
+  standardize:
+    needs: loop_scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 仓库代码
+        uses: actions/checkout@v3
+
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: 设置 Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 运行 IPTV 频道名标准化处理脚本
+        run: |
+          python scripts/9_standardize_names.py
+
+      - name: 提交 IPTV 频道名标准化处理结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/middle/standardize/standardize.csv \
+                  output/middle/channel_data/channel_data.csv
+          git commit -m "自动更新 IPTV 标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git push origin HEAD:${{ github.ref_name }}
+
+  # =========================
+  # 10 IPTV 结果标准化
+  # =========================
+  finalized:
+    needs: standardize
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 仓库代码
+        uses: actions/checkout@v3
+
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: 设置 Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 运行 IPTV 结果标准化脚本
+        run: |
+          python scripts/10_finalized.py
+
+      - name: 提交 IPTV 结果标准化结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/middle/finalized/finalized.csv
+          git commit -m "自动更新 IPTV 终结标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git push origin HEAD:${{ github.ref_name }}
+
+  # =========================
+  # 11 CSV → M3U
+  # =========================
+  generate_m3u:
+    needs: finalized
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 仓库代码
+        uses: actions/checkout@v3
+
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: 设置 Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 运行 CSV 转 M3U 脚本
+        run: |
+          python scripts/11_cvs_to_m3u.py
+
+      - name: 提交生成的 M3U 文件
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/final/final_dxl.m3u \
+                  output/final/final_sjmz.m3u
+          git commit -m "自动更新 M3U 文件 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git push origin HEAD:${{ github.ref_name }}
