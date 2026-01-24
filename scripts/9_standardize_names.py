@@ -139,6 +139,10 @@ def main():
 
     # 13. 写标准化结果文件，包含合并文件所有列 + 3列匹配结果
     # === 修改点 6: 不包含匹配名来源列 ===
+    
+    # === 新增修复点：确保输出目录存在（GitHub Actions 必须） ===
+    os.makedirs(os.path.dirname(PATH_OUTPUT_STANDARDIZE), exist_ok=True)
+    
     cols_output = list(df_total.columns.drop(['std_key']))  # 去除 std_key
     additional_cols = ['是否匹配标准名', '频道标准名', '人工分组']
     final_cols = cols_output + [c for c in additional_cols if c not in cols_output]
