@@ -110,8 +110,8 @@ def main():
 
     # 9. 标准库中旧已维护记录（去重后）用于写回
     df_channel_yes = df_channel[df_channel['是否已维护'].str.strip() == '是'].copy()
-    # === 修改点 5: 同样去重已维护的旧库数据，避免重复 ===
-    df_channel_yes = df_channel_yes.drop_duplicates(subset=['std_key'], keep='first')
+    # === 修改点 5: 同样去重已维护的旧库数据，避免重复，且保留首次出现对应的原分组等字段 ===
+    df_channel_yes = df_channel_yes.sort_values(by=['std_key']).drop_duplicates(subset=['std_key'], keep='first')
 
     # 10. 本次匹配次数统计（以标准名计数）
     # 只统计匹配成功的行
@@ -127,12 +127,19 @@ def main():
     # 新增未匹配记录匹配次数设0
     df_new_channel_rows['本次匹配次数'] = 0
 
+    # === 新增字段：确保已维护和未维护都有原分组、原国家分组、原语言分组列，未维护填空 ===
+    extra_cols = ['原分组', '原国家分组', '原语言分组']
+    for col in extra_cols:
+        if col not in df_channel_yes.columns:
+            df_channel_yes[col] = ''
+        df_new_channel_rows[col] = ''
+
     # 11. 合并写回标准库
     df_channel_out = pd.concat([df_channel_yes, df_new_channel_rows], ignore_index=True, sort=False)
 
-    # 12. 写标准库文件（去除来源文件列，只写5列）
+    # 12. 写标准库文件，包含新增三列
     df_channel_out = df_channel_out[
-        ['原始名', '标准名', '分组', '是否已维护', '本次匹配次数']
+        ['原始名', '标准名', '分组', '是否已维护', '本次匹配次数'] + extra_cols
     ]
 
     df_channel_out.to_csv(PATH_CHANNEL_DATA, index=False, encoding='utf-8-sig')
