@@ -63,9 +63,12 @@ def main():
     # 5. 仅保留标准库中是否已维护==是的记录用于匹配
     df_channel_match = df_channel[df_channel['是否已维护'].str.strip() == '是'].copy()
 
+    # === 修改点 1: 对已维护标准库数据机械标准化后的重复 std_key 去重，保留第一个 ===
+    df_channel_match = df_channel_match.drop_duplicates(subset=['std_key'], keep='first')
+
     # 6. 构建标准库std_key到字段映射的字典
-    # 多个相同std_key取第一个（如果存在重复可再优化）
-    channel_map = df_channel_match.set_index('std_key')[['标准名', '分组', '来源文件']].to_dict('index')
+    # === 修改点 2: 不再包含'来源文件'字段 ===
+    channel_map = df_channel_match.set_index('std_key')[['标准名', '分组']].to_dict('index')
 
     # 7. 匹配过程
     def match_row(std_key, original_name):
@@ -74,18 +77,18 @@ def main():
             return pd.Series([
                 '是',              # 是否匹配
                 item['标准名'],     # 频道标准名
-                item['分组'],       # 人工分组
-                item['来源文件']    # 匹配名来源
+                item['分组']       # 人工分组
+                # 不返回匹配名来源，去除该列
             ])
         else:
             return pd.Series([
                 '否',
                 original_name,
-                '待匹配未分组',
-                ''
+                '待匹配未分组'
             ])
 
-    df_total[['是否匹配标准名', '频道标准名', '人工分组', '匹配名来源']] = df_total.apply(
+    # === 修改点 3: 应用匹配只返回3列，不再包含匹配名来源列 ===
+    df_total[['是否匹配标准名', '频道标准名', '人工分组']] = df_total.apply(
         lambda row: match_row(row['std_key'], row['频道名']), axis=1
     )
 
@@ -94,19 +97,21 @@ def main():
     unmatched = df_total[~df_total['std_key'].isin(matched_std_keys)]
 
     # 去重未匹配频道，准备新增行
-    df_new = unmatched[['频道名', '来源文件', 'std_key']].drop_duplicates(subset=['std_key'])
+    df_new = unmatched[['频道名', 'std_key']].drop_duplicates(subset=['std_key'])
 
     # 新增行字段准备
     df_new_channel_rows = pd.DataFrame({
         '原始名': df_new['频道名'],
         '标准名': [''] * len(df_new),
         '分组': [''] * len(df_new),
-        '来源文件': df_new['来源文件'],
+        # === 修改点 4: 不包含来源文件列 ===
         '是否已维护': ['否'] * len(df_new)
     })
 
-    # 9. 标准库中旧未维护记录删除
+    # 9. 标准库中旧已维护记录（去重后）用于写回
     df_channel_yes = df_channel[df_channel['是否已维护'].str.strip() == '是'].copy()
+    # === 修改点 5: 同样去重已维护的旧库数据，避免重复 ===
+    df_channel_yes = df_channel_yes.drop_duplicates(subset=['std_key'], keep='first')
 
     # 10. 本次匹配次数统计（以标准名计数）
     # 只统计匹配成功的行
@@ -125,19 +130,17 @@ def main():
     # 11. 合并写回标准库
     df_channel_out = pd.concat([df_channel_yes, df_new_channel_rows], ignore_index=True, sort=False)
 
-    # 12. 写标准库文件（6列）
+    # 12. 写标准库文件（去除来源文件列，只写5列）
     df_channel_out = df_channel_out[
-        ['原始名', '标准名', '分组', '来源文件', '是否已维护', '本次匹配次数']
+        ['原始名', '标准名', '分组', '是否已维护', '本次匹配次数']
     ]
 
     df_channel_out.to_csv(PATH_CHANNEL_DATA, index=False, encoding='utf-8-sig')
 
-    # 13. 写标准化结果文件，包含合并文件所有列 + 4列匹配结果
-    # 注意排序列保留，顺序调整可根据需求
-    cols_output = list(df_total.columns.drop(['std_key']))  # 保留所有合并文件原始列+匹配列
-    # 确保附加4列顺序
-    additional_cols = ['是否匹配标准名', '频道标准名', '人工分组', '匹配名来源']
-    # 有些情况下列可能重复，去重
+    # 13. 写标准化结果文件，包含合并文件所有列 + 3列匹配结果
+    # === 修改点 6: 不包含匹配名来源列 ===
+    cols_output = list(df_total.columns.drop(['std_key']))  # 去除 std_key
+    additional_cols = ['是否匹配标准名', '频道标准名', '人工分组']
     final_cols = cols_output + [c for c in additional_cols if c not in cols_output]
 
     df_total.to_csv(PATH_OUTPUT_STANDARDIZE, columns=final_cols, index=False, encoding='utf-8-sig')
