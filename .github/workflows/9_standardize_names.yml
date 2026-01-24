@@ -1,0 +1,61 @@
+name: 5-IPTV标准化处理
+
+on:
+  workflow_run:
+    workflows:
+      - "4-轮播扫描与评级"
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
+  REPO_OWNER: niuinyang
+  REPO_NAME: niuin-s-iptv
+
+jobs:
+  standardize_iptv:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 仓库代码
+        uses: actions/checkout@v3
+
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: 设置 Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 运行 IPTV 标准化脚本
+        run: |
+          python standardize_iptv.py
+
+      - name: 配置 Git 用户信息
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: 提交并推送标准化结果文件
+        run: |
+          git add output/total_final.csv output/middle/channel_data/channel_data.csv
+          git commit -m "自动更新 IPTV 标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git push origin HEAD:${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
