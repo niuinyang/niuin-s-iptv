@@ -3,7 +3,7 @@ name: 6-IPTV终结标准化处理
 on:
   workflow_run:
     workflows:
-      - "4-轮播扫描与评级"
+      - "5-IPTV标准化处理"
     types:
       - completed
   workflow_dispatch:
