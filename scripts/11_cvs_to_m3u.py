@@ -315,7 +315,7 @@ def process(file_path, output_path, own_source_enabled, own_source_priority, gro
 
 # 主入口
 def main():
-    input_csv = 'input.csv'  # 请修改为你的实际输入CSV路径
+    input_csv = 'output/middle/finalized/finalized.csv'  # 请修改为你的实际输入CSV路径
 
     process(
         file_path=input_csv,
