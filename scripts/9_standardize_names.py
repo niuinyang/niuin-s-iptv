@@ -55,10 +55,24 @@ def main():
     df_total['std_key'] = df_total['频道名'].map(mechanical_standardize)
     df_channel['std_key'] = df_channel['原始名'].map(mechanical_standardize)
 
-    # === 新增：loop_scan 也生成 std_key（用于反查原分组信息）===
+    # === loop_scan 也生成 std_key（用于反查原分组信息）===
     df_loopscan['std_key'] = df_loopscan['频道名'].map(mechanical_standardize)
 
-    # === 新增：构建 std_key -> 原分组信息 映射（来自 loop_scan）===
+    # === 新增：对齐 loop_scan 字段名（国家分组 / 语言分组 → 原国家分组 / 原语言分组）===
+    if '国家分组' in df_loopscan.columns:
+        df_loopscan['原国家分组'] = df_loopscan['国家分组']
+    else:
+        df_loopscan['原国家分组'] = ''
+
+    if '语言分组' in df_loopscan.columns:
+        df_loopscan['原语言分组'] = df_loopscan['语言分组']
+    else:
+        df_loopscan['原语言分组'] = ''
+
+    if '原分组' not in df_loopscan.columns:
+        df_loopscan['原分组'] = ''
+
+    # === 构建 std_key -> 原分组信息 映射（来自 loop_scan）===
     loop_group_map = (
         df_loopscan
         .drop_duplicates(subset=['std_key'], keep='first')
@@ -109,7 +123,7 @@ def main():
     df_channel_yes['本次匹配次数'] = df_channel_yes['标准名'].map(lambda x: match_counts.get(x, 0))
     df_new_channel_rows['本次匹配次数'] = 0
 
-    # === 关键修改：从 loop_scan 回填 原分组 / 国家 / 语言 ===
+    # === 从 loop_scan 回填 原分组 / 国家 / 语言 ===
     def fill_origin_groups(std_key):
         info = loop_group_map.get(std_key, {})
         return pd.Series([
