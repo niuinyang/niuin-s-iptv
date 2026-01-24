@@ -1,255 +1,150 @@
-#!/usr/bin/env python3
-# standardize_iptv.py（CSV 版本，适配 loop_scan_yes + 在线网络库兜底）
-
+# 9_standardize_names.py
 import os
-import re
-import csv
-import sys
-import time
-import chardet
-import requests
 import pandas as pd
+import re
 from opencc import OpenCC
-from rapidfuzz import fuzz, process
-from tqdm import tqdm
 
-# =========================
-# 路径配置（★ 修改）
-# =========================
+# 配置路径
+PATH_MYSOURCE = 'output/middle/merge/mysource_total.csv'
+PATH_LOOPSCAN = 'output/middle/loop/loop_scan_total.csv'
+PATH_CHANNEL_DATA = 'output/middle/channel_data/channel_data.csv'
+PATH_OUTPUT_STANDARDIZE = 'output/middle/standardize/standardize.csv'
 
-MY_SUM_PATH = "output/middle/merge/mysource_total.csv"
+# 初始化繁体转简体转换器
+cc = OpenCC('t2s')
 
-# ★ 修改：working 输入改为 loop_scan_yes
-WORKING_PATH = "output/middle/loop/loop_scan_yes.csv"
+def safe_read_csv(path):
+    """安全读取csv，返回空DataFrame时处理"""
+    if os.path.exists(path):
+        try:
+            return pd.read_csv(path, dtype=str, encoding='utf-8').fillna('')
+        except Exception as e:
+            print(f"读取文件 {path} 失败: {e}")
+            return pd.DataFrame()
+    else:
+        print(f"文件不存在: {path}")
+        return pd.DataFrame()
 
-# ★ 修改：channel_data 新路径
-CHANNEL_DATA_PATH = "output/middle/channel_data/channel_data.csv"
-
-# ★ 修改：网络频道库（在线 + 本地兜底）
-NETWORK_CHANNELS_URL = (
-    "https://raw.githubusercontent.com/iptv-org/database/"
-    "refs/heads/master/data/channels.csv"
-)
-NETWORK_CHANNELS_LOCAL = "input/netdata/channels.csv"
-
-OUTPUT_TOTAL_FINAL = "output/total_final.csv"
-
-cc = OpenCC("t2s")
-
-# =========================
-# 工具函数
-# =========================
-
-def read_csv_auto_encoding(filepath):
-    with open(filepath, "rb") as f:
-        raw = f.read(10000)
-        encoding = chardet.detect(raw)["encoding"] or "utf-8"
-    return pd.read_csv(filepath, encoding=encoding)
-
-def mechanical_standardize(name: str) -> str:
+def mechanical_standardize(name):
+    """机械式频道名标准化"""
     if not isinstance(name, str):
-        return ""
-    s = cc.convert(name.strip()).lower()
-    s = re.sub(r"[（(【\[].*?[）)】\]]", "", s)
-    s = re.sub(r"\s+", "", s)
-    s = re.sub(r"[^a-z0-9\u4e00-\u9fa5\+！]", "", s)
-    return s
+        return ''
+    # 去除中英文括号及内容
+    name = re.sub(r'（.*?）|\(.*?\)|【.*?】|\[.*?]', '', name)
+    # 转繁体到简体
+    name = cc.convert(name)
+    # 去除空格和特殊字符（保留汉字、数字、字母、+、！）
+    # 汉字 Unicode \u4e00-\u9fa5，数字0-9，字母a-zA-Z，符号+和！
+    name = re.sub(r'[^0-9a-zA-Z\u4e00-\u9fa5+！]', '', name)
+    # 转小写
+    name = name.lower()
+    return name
 
-def clean_network_std_name(name: str) -> str:
-    if not isinstance(name, str):
-        return ""
-    name = re.sub(r"\s+", " ", name.strip())
-    return " ".join(
-        w.capitalize() if re.fullmatch(r"[a-zA-Z]+", w) else w
-        for w in name.split(" ")
-    )
-
-# ★ 修改：网络频道库加载（在线 + 本地兜底）
-def load_network_channels():
-    try:
-        print("🌐 尝试在线获取网络频道数据库...")
-        r = requests.get(NETWORK_CHANNELS_URL, timeout=10)
-        r.raise_for_status()
-
-        os.makedirs(os.path.dirname(NETWORK_CHANNELS_LOCAL), exist_ok=True)
-        with open(NETWORK_CHANNELS_LOCAL, "wb") as f:
-            f.write(r.content)
-
-        print("✅ 网络频道数据库已更新")
-        return pd.read_csv(NETWORK_CHANNELS_LOCAL)
-
-    except Exception as e:
-        print(f"⚠️ 网络失败，使用本地缓存：{e}")
-        if os.path.exists(NETWORK_CHANNELS_LOCAL):
-            return pd.read_csv(NETWORK_CHANNELS_LOCAL)
-        print("❌ 本地频道数据库不存在，终止")
-        sys.exit(1)
-
-# =========================
-# 主流程
-# =========================
+def unify_column_name(df, old_name, new_name):
+    if old_name in df.columns:
+        df.rename(columns={old_name: new_name}, inplace=True)
 
 def main():
-    print("开始读取输入文件...")
+    # 1. 读取文件
+    df_mysource = safe_read_csv(PATH_MYSOURCE)
+    df_loopscan = safe_read_csv(PATH_LOOPSCAN)
+    df_channel = safe_read_csv(PATH_CHANNEL_DATA)
 
-    my_sum = read_csv_auto_encoding(MY_SUM_PATH)
-    working = read_csv_auto_encoding(WORKING_PATH)
+    # 2. 统一标准库“来源”字段名为“来源文件”
+    unify_column_name(df_channel, '来源', '来源文件')
 
-    # =========================
-    # 字段兼容处理（★ 修改）
-    # =========================
+    # 3. 合并自有源和网络源，缺失字段补空
+    df_total = pd.concat([df_mysource, df_loopscan], ignore_index=True, sort=False).fillna('')
 
-    for df in [my_sum, working]:
-        # 来源字段兼容
-        if "来源" not in df.columns:
-            if "来源文件" in df.columns:
-                df["来源"] = df["来源文件"]
-            else:
-                df["来源"] = ""
+    # 4. 对合并数据和标准库的匹配字段“频道名”和“原始名”做标准化，生成std_key
+    df_total['std_key'] = df_total['频道名'].map(mechanical_standardize)
+    df_channel['std_key'] = df_channel['原始名'].map(mechanical_standardize)
 
-    # =========================
-    # channel_data 初始化
-    # =========================
+    # 5. 仅保留标准库中是否已维护==是的记录用于匹配
+    df_channel_match = df_channel[df_channel['是否已维护'].str.strip() == '是'].copy()
 
-    if not os.path.exists(CHANNEL_DATA_PATH):
-        os.makedirs(os.path.dirname(CHANNEL_DATA_PATH), exist_ok=True)
-        pd.DataFrame(
-            columns=["原始名", "标准名", "拟匹配频道名", "分组", "来源", "输出顺序", "是否已维护"]
-        ).to_csv(CHANNEL_DATA_PATH, index=False, encoding="utf-8-sig")
+    # 6. 构建标准库std_key到字段映射的字典
+    # 多个相同std_key取第一个（如果存在重复可再优化）
+    channel_map = df_channel_match.set_index('std_key')[['标准名', '分组', '来源文件']].to_dict('index')
 
-    channel_data = read_csv_auto_encoding(CHANNEL_DATA_PATH)
+    # 7. 匹配过程
+    def match_row(std_key, original_name):
+        if std_key in channel_map:
+            item = channel_map[std_key]
+            return pd.Series([
+                '是',              # 是否匹配
+                item['标准名'],     # 频道标准名
+                item['分组'],       # 人工分组
+                item['来源文件']    # 匹配名来源
+            ])
+        else:
+            return pd.Series([
+                '否',
+                original_name,
+                '待匹配未分组',
+                ''
+            ])
 
-    # =========================
-    # 来源学习
-    # =========================
-
-    source_dict = {}
-    for df in [my_sum, working]:
-        for _, row in df.iterrows():
-            if row.get("频道名") and row.get("来源"):
-                source_dict.setdefault(row["频道名"], row["来源"])
-
-    channel_data["来源"] = channel_data.apply(
-        lambda r: r["来源"] if r["来源"] else source_dict.get(r["原始名"], ""),
-        axis=1,
+    df_total[['是否匹配标准名', '频道标准名', '人工分组', '匹配名来源']] = df_total.apply(
+        lambda row: match_row(row['std_key'], row['频道名']), axis=1
     )
 
-    channel_data.setdefault("输出顺序", "未排序")
-    channel_data.setdefault("是否已维护", "否")
+    # 8. 统计新增未匹配频道
+    matched_std_keys = set(df_channel_match['std_key'])
+    unmatched = df_total[~df_total['std_key'].isin(matched_std_keys)]
 
-    # =========================
-    # 网络频道库
-    # =========================
+    # 去重未匹配频道，准备新增行
+    df_new = unmatched[['频道名', '来源文件', 'std_key']].drop_duplicates(subset=['std_key'])
 
-    net_df = load_network_channels()
-    name_col = "channel" if "channel" in net_df.columns else "name"
-    net_df = net_df.dropna(subset=[name_col])
-    net_df["std_key"] = net_df[name_col].apply(mechanical_standardize)
-    network_channels = dict(zip(net_df["std_key"], net_df[name_col]))
+    # 新增行字段准备
+    df_new_channel_rows = pd.DataFrame({
+        '原始名': df_new['频道名'],
+        '标准名': [''] * len(df_new),
+        '分组': [''] * len(df_new),
+        '来源文件': df_new['来源文件'],
+        '是否已维护': ['否'] * len(df_new)
+    })
 
-    # =========================
-    # 合并输入源
-    # =========================
+    # 9. 标准库中旧未维护记录删除
+    df_channel_yes = df_channel[df_channel['是否已维护'].str.strip() == '是'].copy()
 
-    for df in [my_sum, working]:
-        for col in ["视频编码", "分辨率", "帧率", "音频", "相似度", "检测时间"]:
-            df.setdefault(col, "")
+    # 10. 本次匹配次数统计（以标准名计数）
+    # 只统计匹配成功的行
+    match_counts = df_total[df_total['是否匹配标准名'] == '是'].groupby('频道标准名').size()
+    match_counts_dict = match_counts.to_dict()
 
-    total = pd.concat([my_sum, working], ignore_index=True)
-    total["std_key"] = total["频道名"].apply(mechanical_standardize)
+    # 给标准库赋匹配次数，未匹配默认0
+    def get_match_count(row):
+        return match_counts_dict.get(row['标准名'], 0)
 
-    # =========================
-    # channel_data 辅助列
-    # =========================
+    df_channel_yes['本次匹配次数'] = df_channel_yes.apply(get_match_count, axis=1)
 
-    channel_data["原始名_std_key"] = channel_data["原始名"].apply(mechanical_standardize)
-    existing_orig_names = set(channel_data["原始名"])
+    # 新增未匹配记录匹配次数设0
+    df_new_channel_rows['本次匹配次数'] = 0
 
-    # =========================
-    # 匹配流程
-    # =========================
+    # 11. 合并写回标准库
+    df_channel_out = pd.concat([df_channel_yes, df_new_channel_rows], ignore_index=True, sort=False)
 
-    matched_names = []
-    match_info = []
-    match_score = []
+    # 12. 写标准库文件（6列）
+    df_channel_out = df_channel_out[
+        ['原始名', '标准名', '分组', '来源文件', '是否已维护', '本次匹配次数']
+    ]
 
-    def add_channel_data(orig, std, group):
-        nonlocal channel_data
-        if orig not in existing_orig_names:
-            channel_data = pd.concat(
-                [
-                    channel_data,
-                    pd.DataFrame([{
-                        "原始名": orig,
-                        "标准名": std,
-                        "拟匹配频道名": std,
-                        "分组": group,
-                        "来源": source_dict.get(orig, ""),
-                        "输出顺序": "未排序",
-                        "是否已维护": "否",
-                    }])
-                ],
-                ignore_index=True,
-            )
-            existing_orig_names.add(orig)
+    df_channel_out.to_csv(PATH_CHANNEL_DATA, index=False, encoding='utf-8-sig')
 
-    print("开始标准化匹配...")
+    # 13. 写标准化结果文件，包含合并文件所有列 + 4列匹配结果
+    # 注意排序列保留，顺序调整可根据需求
+    cols_output = list(df_total.columns.drop(['std_key']))  # 保留所有合并文件原始列+匹配列
+    # 确保附加4列顺序
+    additional_cols = ['是否匹配标准名', '频道标准名', '人工分组', '匹配名来源']
+    # 有些情况下列可能重复，去重
+    final_cols = cols_output + [c for c in additional_cols if c not in cols_output]
 
-    for _, row in tqdm(total.iterrows(), total=len(total)):
-        orig = row["频道名"]
-        key = row["std_key"]
+    df_total.to_csv(PATH_OUTPUT_STANDARDIZE, columns=final_cols, index=False, encoding='utf-8-sig')
 
-        matched = None
-        info = "未匹配"
-        score = 0.0
+    print("标准化处理完成，结果已写入：")
+    print(f" - 标准化结果文件: {PATH_OUTPUT_STANDARDIZE}")
+    print(f" - 标准库更新文件: {PATH_CHANNEL_DATA}")
 
-        # 精准匹配
-        hit = channel_data[channel_data["原始名"] == orig]
-        if not hit.empty and hit.iloc[0]["是否已维护"] == "是":
-            matched = hit.iloc[0]["标准名"]
-            info = "精准匹配"
-            score = 100.0
-
-        # 模糊匹配
-        if matched is None:
-            res = process.extractOne(key, network_channels.keys(), scorer=fuzz.ratio)
-            if res and res[1] > 90:
-                matched = clean_network_std_name(network_channels[res[0]])
-                info = "模糊匹配（>90%）"
-                score = float(res[1])
-                add_channel_data(orig, matched, "待确认分组")
-            else:
-                matched = orig
-                add_channel_data(orig, orig, "待标准化")
-
-        matched_names.append(matched)
-        match_info.append(info)
-        match_score.append(score)
-
-    total["频道名"] = matched_names
-    total["匹配信息"] = match_info
-    total["匹配值"] = match_score
-
-    # =========================
-    # 分组 / 输出顺序映射
-    # =========================
-
-    std_to_group = dict(zip(channel_data["标准名"], channel_data["分组"]))
-    std_to_order = dict(zip(channel_data["标准名"], channel_data["输出顺序"]))
-
-    total["分组"] = total["频道名"].map(std_to_group).fillna("未分类")
-    total["输出顺序"] = total["频道名"].map(std_to_order).fillna("未排序")
-
-    channel_data = channel_data.drop_duplicates(subset=["原始名"], keep="first")
-
-    # =========================
-    # 保存输出
-    # =========================
-
-    total.to_csv(OUTPUT_TOTAL_FINAL, index=False, encoding="utf-8-sig")
-    channel_data.to_csv(CHANNEL_DATA_PATH, index=False, encoding="utf-8-sig")
-
-    print("🎉 标准化流程完成")
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
