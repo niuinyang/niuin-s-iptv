@@ -119,9 +119,9 @@ def is_network_source(row, own_source_enabled):
 def can_output(row):
     s_reason = (row.get('静态筛除原因') or '').strip()
     l_reason = (row.get('轮播筛除原因') or '').strip()
-    if s_reason not in ('未筛选', ''):
+    if s_reason not in ('未筛除', ''):
         return False
-    if l_reason not in ('未筛选', ''):
+    if l_reason not in ('未筛除', ''):
         return False
     return True
 
