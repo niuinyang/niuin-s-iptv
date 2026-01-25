@@ -32,13 +32,17 @@ MYSOURCE_LOG = os.path.join(LOG_MERGE_DIR, "mysource_skipped.log")
 def safe_open(file_path):
     with open(file_path, 'rb') as f:
         raw = f.read()
-        enc = chardet.detect(raw)['encoding'] or 'utf-8'
-    try:
-        text = raw.decode(enc, errors='ignore')
-    except Exception:
-        text = raw.decode('utf-8', errors='ignore')
-    text = text.replace('\x00', '')
-    return text.splitlines()
+
+    for enc in ('utf-8-sig', 'utf-8', 'gb18030', 'gbk'):
+        try:
+            text = raw.decode(enc)
+            return text.replace('\x00', '').splitlines()
+        except UnicodeDecodeError:
+            continue
+
+    # 最后兜底
+    text = raw.decode('utf-8', errors='ignore')
+    return text.replace('\x00', '').splitlines()
 
 
 def read_m3u_file(file_path: str):
