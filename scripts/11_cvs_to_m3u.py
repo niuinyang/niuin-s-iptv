@@ -146,13 +146,36 @@ def parse_resolution(res):
 
 # 转换为M3U条目
 def make_m3u_item(row):
-    # #EXTINF:-1 tvg-logo="logo" group-title="group",name
     name = row.get('标准名', '').strip()
     group = row.get('分组', '').strip()
     logo = row.get('图标', '').strip()
     url = row.get('地址', '').strip()
-    extinf = f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}'
-    return f"{extinf}\n{url}"
+
+    # 基础 EXTINF 属性
+    extinf_attrs = []
+    if logo:
+        extinf_attrs.append(f'tvg-logo="{logo}"')
+    if group:
+        extinf_attrs.append(f'group-title="{group}"')
+
+    # === 回播参数（新增） ===
+    catchup = (row.get('回播类型') or '').strip()
+    catchup_days = (row.get('回播天数') or '').strip()
+    catchup_source = (row.get('回播地址') or '').strip()
+
+    if catchup_source:
+        # 有回播才写
+        if catchup:
+            extinf_attrs.append(f'catchup="{catchup}"')
+        if catchup_days:
+            extinf_attrs.append(f'catchup-days="{catchup_days}"')
+        extinf_attrs.append(f'catchup-source="{catchup_source}"')
+    # === 回播参数结束 ===
+
+    extinf_str = " ".join(extinf_attrs)
+    extinf_line = f'#EXTINF:-1 {extinf_str},{name}'
+
+    return f"{extinf_line}\n{url}"
 
 # 读取CSV数据
 def read_csv(file_path):
