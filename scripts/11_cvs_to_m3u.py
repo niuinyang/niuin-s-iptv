@@ -37,7 +37,7 @@ GROUP_CONFIG_SJMZ = {
 
 # 自有源列表和是否启用及排序顺序（dxl）
 OWN_SOURCE_LIST = [
-    '济南联通组播',
+    '济南联通单播',
     '济南电信单播',
     '济南电信组播',
     '青岛联通单播',
@@ -51,7 +51,7 @@ OWN_SOURCE_PRIORITY_DXL = {v: i for i, v in enumerate(OWN_SOURCE_LIST)}
 
 # 自有源列表和是否启用及排序顺序（sjmz）
 OWN_SOURCE_ENABLED_SJMZ = {
-    '济南联通组播': True,
+    '济南联通单播': True,
     '山东移动单播': True,
     '济南电信单播': True,
     '济南电信组播': True,
@@ -63,7 +63,7 @@ OWN_SOURCE_PRIORITY_SJMZ = {
     '济南电信单播': 1,
     '济南电信组播': 2,
     '青岛联通单播': 3,
-    '济南联通组播': 4,
+    '济南联通单播': 4,
     '上海移动单播': 5,
 }
 
