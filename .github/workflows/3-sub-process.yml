@@ -27,14 +27,8 @@ jobs:
     steps:
       - name: Checkout 仓库代码
         uses: actions/checkout@v3
-
-      - name: Cache pip packages
-        uses: actions/cache@v3
         with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          token: ${{ secrets.PUSH_TOKEN1 }}
 
       - name: 设置 Python 3.11
         uses: actions/setup-python@v4
@@ -54,6 +48,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin ${{ github.ref_name }}
           git add output/middle/fake/fake_scan_total.csv \
                   output/middle/fake/fake_scan_ok.csv \
                   output/middle/fake/fake_scan_not.csv
@@ -70,14 +65,8 @@ jobs:
     steps:
       - name: Checkout 仓库代码
         uses: actions/checkout@v3
-
-      - name: Cache pip packages
-        uses: actions/cache@v3
         with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          token: ${{ secrets.PUSH_TOKEN1 }}
 
       - name: 设置 Python 3.11
         uses: actions/setup-python@v4
@@ -97,6 +86,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin ${{ github.ref_name }}
           git add output/middle/loop/loop_scan_total.csv \
                   output/middle/loop/loop_scan_not.csv \
                   output/middle/loop/loop_scan_yes.csv
@@ -111,35 +101,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 仓库代码
-        uses: actions/checkout@v3
-
-      - name: Cache pip packages
-        uses: actions/cache@v3
+      - uses: actions/checkout@v3
         with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          token: ${{ secrets.PUSH_TOKEN1 }}
 
-      - name: 设置 Python 3.11
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: 安装依赖
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 运行 IPTV 频道名标准化处理脚本
-        run: |
-          python scripts/9_standardize_names.py
+      - run: python scripts/9_standardize_names.py
 
-      - name: 提交 IPTV 频道名标准化处理结果
-        run: |
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin ${{ github.ref_name }}
           git add output/middle/standardize/standardize.csv \
                   output/middle/channel_data/channel_data.csv
           git commit -m "自动更新 IPTV 标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
@@ -153,35 +132,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 仓库代码
-        uses: actions/checkout@v3
-
-      - name: Cache pip packages
-        uses: actions/cache@v3
+      - uses: actions/checkout@v3
         with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          token: ${{ secrets.PUSH_TOKEN1 }}
 
-      - name: 设置 Python 3.11
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: 安装依赖
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 运行 IPTV 结果标准化脚本
-        run: |
-          python scripts/10_finalized.py
+      - run: python scripts/10_finalized.py
 
-      - name: 提交 IPTV 结果标准化结果
-        run: |
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin ${{ github.ref_name }}
           git add output/middle/finalized/finalized.csv
           git commit -m "自动更新 IPTV 终结标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
           git push origin HEAD:${{ github.ref_name }}
@@ -194,35 +162,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 仓库代码
-        uses: actions/checkout@v3
-
-      - name: Cache pip packages
-        uses: actions/cache@v3
+      - uses: actions/checkout@v3
         with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          token: ${{ secrets.PUSH_TOKEN1 }}
 
-      - name: 设置 Python 3.11
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: 安装依赖
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 运行 CSV 转 M3U 脚本
-        run: |
-          python scripts/11_cvs_to_m3u.py
+      - run: python scripts/11_cvs_to_m3u.py
 
-      - name: 提交生成的 M3U 文件
-        run: |
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin ${{ github.ref_name }}
           git add output/final/final_dxl.m3u \
                   output/final/final_sjmz.m3u
           git commit -m "自动更新 M3U 文件 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
