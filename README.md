@@ -1,6 +1,11 @@
 # niuin‘s home iptv list 
 本仓库仅用于 IPTV 技术研究与播放器测试交流，明确禁止任何形式的商业使用或牟利行为。
-本仓库借鉴以下作者项目，[plsy1](https://github.com/plsy1/iptv)
+本仓库主要借鉴以下作者项目及资源，在此表示感谢
+[sumingyd](https://github.com/sumingyd/Telecom-Shandong-IPTV-List)；[plsy1](https://github.com/plsy1/iptv)；
+同时还要感谢
+CCS、iptv-org、zbefine、Free-TV、Guovin、freetv-fun、TianmuTNT、epg-pw、YanG-1989、tvbw等仓库
+## 主要功能
+本仓库对源地址进行http、ffprobe、ffmpeg检测，进行筛选评分，并将频道名和分组按照一定规则进行标准化，对多源频道依据响应时间、分辨率等信息进行输出排序，最终得到适用于我目前家庭网络的最优list。
 
 ## 免责声明
 
