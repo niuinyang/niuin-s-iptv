@@ -13,8 +13,6 @@ permissions:
 
 env:
   GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
-  REPO_OWNER: niuinyang
-  REPO_NAME: niuin-s-iptv
 
 jobs:
   # =========================
@@ -25,34 +23,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 仓库代码
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           token: ${{ secrets.PUSH_TOKEN1 }}
 
-      - name: 设置 Python 3.11
-        uses: actions/setup-python@v4
+      - run: git pull --rebase origin ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: 安装依赖
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 运行静态假源判定脚本
-        run: |
-          python scripts/8.1_fake_scan.py
+      - run: python scripts/8.1_fake_scan.py
 
-      - name: 提交静态假源检测结果
-        run: |
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin ${{ github.ref_name }}
           git add output/middle/fake/fake_scan_total.csv \
                   output/middle/fake/fake_scan_ok.csv \
                   output/middle/fake/fake_scan_not.csv
-          git commit -m "自动更新静态假源检测结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git commit -m "自动更新静态假源检测结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动"
           git push origin HEAD:${{ github.ref_name }}
 
   # =========================
@@ -63,38 +56,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 仓库代码
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           token: ${{ secrets.PUSH_TOKEN1 }}
 
-      - name: 设置 Python 3.11
-        uses: actions/setup-python@v4
+      - run: git pull --rebase origin ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: 安装依赖
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 运行轮播扫描脚本
-        run: |
-          python scripts/8.2_loop_scan.py
+      - run: python scripts/8.2_loop_scan.py
 
-      - name: 提交轮播扫描结果
-        run: |
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin ${{ github.ref_name }}
           git add output/middle/loop/loop_scan_total.csv \
                   output/middle/loop/loop_scan_not.csv \
                   output/middle/loop/loop_scan_yes.csv
-          git commit -m "自动更新轮播扫描结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git commit -m "自动更新轮播扫描结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动"
           git push origin HEAD:${{ github.ref_name }}
 
   # =========================
-  # 9 IPTV 频道名标准化处理
+  # 9 IPTV 频道名标准化
   # =========================
   standardize:
     needs: loop_scan
@@ -104,6 +92,8 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.PUSH_TOKEN1 }}
+
+      - run: git pull --rebase origin ${{ github.ref_name }}
 
       - uses: actions/setup-python@v4
         with:
@@ -118,14 +108,13 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin ${{ github.ref_name }}
           git add output/middle/standardize/standardize.csv \
                   output/middle/channel_data/channel_data.csv
-          git commit -m "自动更新 IPTV 标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git commit -m "自动更新 IPTV 标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动"
           git push origin HEAD:${{ github.ref_name }}
 
   # =========================
-  # 10 IPTV 结果标准化
+  # 10 IPTV 结果终结标准化
   # =========================
   finalized:
     needs: standardize
@@ -135,6 +124,8 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.PUSH_TOKEN1 }}
+
+      - run: git pull --rebase origin ${{ github.ref_name }}
 
       - uses: actions/setup-python@v4
         with:
@@ -149,9 +140,8 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin ${{ github.ref_name }}
           git add output/middle/finalized/finalized.csv
-          git commit -m "自动更新 IPTV 终结标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git commit -m "自动更新 IPTV 终结标准化结果 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动"
           git push origin HEAD:${{ github.ref_name }}
 
   # =========================
@@ -166,6 +156,8 @@ jobs:
         with:
           token: ${{ secrets.PUSH_TOKEN1 }}
 
+      - run: git pull --rebase origin ${{ github.ref_name }}
+
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
@@ -179,8 +171,7 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin ${{ github.ref_name }}
           git add output/final/final_dxl.m3u \
                   output/final/final_sjmz.m3u
-          git commit -m "自动更新 M3U 文件 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动，跳过提交"
+          git commit -m "自动更新 M3U 文件 $(date +'%Y-%m-%d %H:%M:%S')" || echo "无文件改动"
           git push origin HEAD:${{ github.ref_name }}
