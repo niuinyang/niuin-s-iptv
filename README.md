@@ -1,6 +1,6 @@
 # niuin‘s home iptv list 
 本仓库仅用于 IPTV 技术研究与播放器测试交流，明确禁止任何形式的商业使用或牟利行为。
-本仓库借鉴
+本仓库借鉴以下作者项目，[plsy1](https://github.com/plsy1/iptv)
 
 ## 免责声明
 
