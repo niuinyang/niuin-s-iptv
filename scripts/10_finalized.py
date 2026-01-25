@@ -7,8 +7,8 @@ output_file = 'output/middle/finalized/finalized.csv'
 
 # 来源文件映射字典
 source_file_map = {
-    "1sddxzb.m3u": "济南电信组播",
-    "2sddxdb.m3u": "济南电信单播",
+    "1sddxdb.m3u": "济南电信单播",
+    "2sddxzb.m3u": "济南电信组播",
     "3jnltzb.m3u": "济南联通组播",
     "4sdqdlt.m3u": "青岛联通单播",
     "5sdyd_ipv6.m3u": "山东移动单播",
