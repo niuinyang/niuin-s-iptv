@@ -165,7 +165,7 @@ jobs:
 
           git commit -m "Merge scan results $(date '+%Y-%m-%d %H:%M:%S')"
 
-          git pull --rebase origin main
+          #git pull --rebase origin main
           git push origin main
 
       - name: Wait 10 seconds
