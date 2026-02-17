@@ -79,8 +79,8 @@ jobs:
       - name: Run merge hash script
         run: python scripts/7.1_merge_hash.py
 
-      # ✅ 修改为严格 14 天时间窗口，并使用 git rm 删除旧文件
-      - name: Cleanup hash-merge files (strict 14-day window)
+      # ✅ 修改为严格 14 天时间窗口，删除并 push
+      - name: Cleanup old hash-merge files (strict 14-day window)
         run: |
           set -e
 
@@ -106,7 +106,7 @@ jobs:
 
             if [[ "$file_date" < "$cutoff" ]]; then
               echo "DELETE $file"
-              git rm "$file" || true
+              git rm "$file"
               deleted=$((deleted + 1))
             else
               echo "KEEP   $file"
@@ -114,6 +114,14 @@ jobs:
           done
 
           echo "Deleted files count: $deleted"
+
+          # 只在有删除文件时提交
+          if [ "$deleted" -gt 0 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "Cleanup old hash-merge files (strict 14-day window)"
+            git push origin main
+          fi
 
       - name: Run merge deep scan csv script
         run: python scripts/7.2_merge_deep_scan.py
