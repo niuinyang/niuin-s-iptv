@@ -283,8 +283,6 @@ http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.
 http://[2409:8087:1e02:20::1a]/PLTV/11/224/3221226145/index.m3u8?icpid=11&RTS=1762072229&from=24&hms_devid=544,550&online=1762070453&vqe=3
 #EXTINF:-1 group-title="央视频道",CCTV11
 http://38.75.136.137:98/gslb/dsdqbv/cctv11hd.m3u8?auth=test20251009
-#EXTINF:-1 group-title="央视频道",CCTV11
-http://23.237.228.134/live3/CCTV11.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001605278776_41.png" group-title="央视频道",CCTV11
 https://t.freetv.fun/live/cctv-11hd.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001605278776_41.png" group-title="央视频道",CCTV11
@@ -309,8 +307,6 @@ http://123.235.73.237:9901/tsfile/live/0002_13.m3u8?key=txiptv
 http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000322/index.m3u8?IASHttpSessionId=
 #EXTINF:-1 tvg-logo="https://kakaxi-1.asia/LOGO/CCTV12.png" group-title="央视频道",CCTV12
 http://[2409:8087:1e02:20::1a]/PLTV/11/224/3221226126/index.m3u8?icpid=11&RTS=1762072229&from=24&hms_devid=544,550&online=1762070453&vqe=3
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001556307504_11.png" group-title="央视频道",CCTV12
-https://t.freetv.fun/live/cctv12.m3u8
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV12.png" group-title="央视频道",CCTV12
 http://38.75.136.137:98/gslb/dsdqbv/cctv12hd.m3u8?auth=test20251009
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV12.png" group-title="央视频道",CCTV12
@@ -405,8 +401,6 @@ http://69.30.246.194/live/cctv16.m3u8
 https://t.freetv.fun/live/cctv16-5.m3u8
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV16.png" group-title="央视频道",CCTV16
 http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
-#EXTINF:-1 group-title="央视频道",CCTV16
-http://74.91.26.218:82/live/cctv16hd.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001520864227_20.jpg" group-title="央视频道",CCTV16
 https://t.freetv.fun/live/cctv16.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV16
@@ -466,17 +460,11 @@ http://192.168.31.2:4022/rtp/239.21.2.152:5002?fcc=150.138.8.132:8027
 #EXTINF:-1 group-title="4K频道",CCTV4K
 http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000382/index.m3u8?IASHttpSessionId=
 #EXTINF:-1 group-title="4K频道",CCTV4K
-http://198.204.240.250:82/live/cctv4k.m3u8?jsbt=1760495957&jsbk=138a7cd8fb02f369c744cf0ceb413e85
-#EXTINF:-1 group-title="4K频道",CCTV4K
 http://198.204.240.250:82/live/cctv4k.m3u8?jsbt=1760148172&jsbk=8ce47519e62b009dfa80f8fbfb2dd932
 #EXTINF:-1 group-title="4K频道",CCTV4K
 http://38.75.136.137:98/gslb/dsdqpub/cctv4k.m3u8?auth=testpub
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001726519561_49.png" group-title="4K频道",CCTV4K
 https://t.freetv.fun/live/cctv-4kchao-gao-qing.m3u8
-#EXTINF:-1 group-title="4K频道",CCTV4K
-https://stream1.freetv.fun/cctv4k-2.ctv
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001917639668_91.png" group-title="4K频道",CCTV4K
-https://t.freetv.fun/live/cctv4k-2.m3u8
 #EXTINF:-1 tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/爱上4K测试体验.png" group-title="4K频道" catchup="default" catchup-source="rtsp://112.245.125.41:1554/iptv/Tvod/iptv/001/001/ch16062014270602375204.rsc?tvdr=${(b)yyyyMMddHHmmss:utc}GMT-${(e)yyyyMMddHHmmss:utc}GMT",爱上4K
 rtsp://112.245.125.41:1554/iptv/import/Tvod/iptv/001/001/ch16062014270602375204.rsc/70019_Uni.sdp
 #EXTINF:-1 tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/北京卫视4K.png" group-title="4K频道" catchup="default" catchup-source="rtsp://112.245.125.39:1554/iptv/Tvod/iptv/001/001/ch25032514071097767315.rsc?tvdr=${(b)yyyyMMddHHmmss:utc}GMT-${(e)yyyyMMddHHmmss:utc}GMT",北京卫视4K
@@ -826,8 +814,6 @@ http://[2409:8087:1e02:20::1a]/PLTV/11/224/3221226132/index.m3u8?icpid=11&RTS=17
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530233814283449_10.jpg" group-title="卫视频道",河南卫视
 https://t.freetv.fun/live/he-nan-wei-shi-13.php
 #EXTINF:-1 group-title="卫视频道",河南卫视
-http://23.237.228.134/live6/henan.m3u8
-#EXTINF:-1 group-title="卫视频道",河南卫视
 http://182.150.23.74:808/hls/33/index.m3u8
 #EXTINF:-1 group-title="卫视频道",河南卫视
 http://cssbyd.imwork.net:8082/hls/37/index.m3u8
@@ -930,8 +916,6 @@ http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.
 #EXTINF:-1 tvg-logo="https://kakaxi-1.asia/LOGO/黑龙江卫视.png" group-title="卫视频道",黑龙江卫视
 http://[2409:8087:1e02:20::1a]/PLTV/11/224/3221225722/index.m3u8?icpid=11&RTS=1762072229&from=24&hms_devid=544,550&online=1762070453&vqe=3
 #EXTINF:-1 group-title="卫视频道",黑龙江卫视
-http://23.237.228.134/live6/heilongjiang.m3u8
-#EXTINF:-1 group-title="卫视频道",黑龙江卫视
 http://124.116.183.146:9901/tsfile/live/0143_1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531154335673922_21.jpg" group-title="卫视频道",黑龙江卫视
 https://t.freetv.fun/live/hei-long-jiang-wei-shi-8.php
@@ -975,8 +959,6 @@ http://[2409:8087:1e02:20::1a]/PLTV/11/224/3221225720/index.m3u8?icpid=11&RTS=17
 https://t.freetv.fun/live/jiang-su-wei-shi-6.m3u8
 #EXTINF:-1 group-title="卫视频道",江苏卫视
 http://69.30.246.194/live/jsws.m3u8
-#EXTINF:-1 group-title="卫视频道",江苏卫视
-http://23.237.228.134/live3/jiangsu.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225651709500_84.jpg" group-title="卫视频道",江苏卫视
 https://t.freetv.fun/live/jiang-su-wei-shi.php
 #EXTINF:-1 group-title="卫视频道",江苏卫视
@@ -1059,8 +1041,6 @@ http://150.138.8.143/00/SNM/CHANNEL00000072/index.m3u8
 http://192.168.31.2:4022/rtp/239.21.1.235:5002?fcc=150.138.8.132:8027
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/sumingyd/IPTV-Scanner-Editor-Pro/main/logo/陕西/农林卫视2.png" group-title="卫视频道",农林卫视
 http://123.235.73.237:9901/tsfile/live/0002_45.m3u8?key=txiptv
-#EXTINF:-1 group-title="卫视频道",农林卫视
-https://migu.188766.xyz/?migutoken=fb8b8674ac9352a3b65f663f414df79a&id=%E4%B8%AD%E5%9B%BD%E5%86%9C%E6%9E%97%E5%8D%AB%E8%A7%86&type=yy
 #EXTINF:-1 group-title="卫视频道",农林卫视
 https://migu.188766.xyz/?migutoken=6ecd66f8feb73b6880243eb13e4225a8&id=%E4%B8%AD%E5%9B%BD%E5%86%9C%E6%9E%97%E5%8D%AB%E8%A7%86&type=yy
 #EXTINF:-1 group-title="卫视频道",农林卫视
@@ -1231,8 +1211,6 @@ http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
 https://t.freetv.fun/live/shan-xi-wei-shi-5.m3u8
 #EXTINF:-1 group-title="卫视频道",山西卫视
 http://112.27.235.94:8000/hls/45/index.m3u8
-#EXTINF:-1 group-title="卫视频道",山西卫视
-https://t.freetv.fun/live/shan-xi-wei-shi-1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/08/04/large/20230804221555254122_47.jpg" group-title="卫视频道",山西卫视
 https://t.freetv.fun/live/shan-xi-wei-shi-17.php
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/08/04/large/20230804221555254122_47.jpg" group-title="卫视频道",山西卫视
@@ -1498,8 +1476,6 @@ http://php.jdshipin.com:8880/smt.php?id=phoenixtv_hd
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰资讯.png" group-title="香港频道",凤凰资讯
 http://pull-vivek.speedws.com/live/aaafhzx.flv
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/23/large/20230723140505929891_55.png" group-title="香港频道",凤凰资讯
-https://t.freetv.fun/live/feng-huang-zi-xun.php
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/23/large/20230723140505929891_55.png" group-title="香港频道",凤凰资讯
 https://t.freetv.fun/live/feng-huang-zi-xun-1.php
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/23/large/20230723140505929891_55.png" group-title="香港频道",凤凰资讯
 https://t.freetv.fun/live/feng-huang-zi-xun-6.php
@@ -1633,8 +1609,6 @@ https://t.freetv.fun/live/fei-cui-2.php
 http://rihou.cc:555/tv/[PL]无线翡翠
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/20/large/20230720173151124119_90.png" group-title="香港频道",TVBS翡翠
 https://t.freetv.fun/live/fei-cui-4.php
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/20/large/20230720173151124119_90.png" group-title="香港频道",TVBS翡翠
-https://t.freetv.fun/live/fei-cui-9.m3u8
 #EXTINF:-1 group-title="香港频道",TVBS翡翠
 http://rihou.cc:555/tv/[PL]无线翡高
 #EXTINF:-1 group-title="香港频道",TVBS翡翠
@@ -2723,10 +2697,6 @@ http://192.168.31.2:4022/rtp/239.21.1.169:5002?fcc=150.138.8.132:8027
 http://123.235.73.237:9901/tsfile/live/0002_50.m3u8?key=txiptv
 #EXTINF:-1 group-title="山东频道",山东教育
 http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000331/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 group-title="山东频道",山东教育
-https://migu.188766.xyz/?migutoken=a23f9efd0cb31645e07b56c007b94fe4&id=%E5%B1%B1%E4%B8%9C%E6%95%99%E8%82%B2&type=yy
-#EXTINF:-1 group-title="山东频道",山东教育
-https://migu.188766.xyz/?migutoken=876daf8144946a6d4851d72199218516&id=%E5%B1%B1%E4%B8%9C%E6%95%99%E8%82%B2&type=yy
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东教育.png" group-title="山东频道",山东教育
 https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719115915514158_88.jpg" group-title="山东频道",山东教育
@@ -2994,8 +2964,6 @@ http://123.235.73.237:9901/tsfile/live/0002_46.m3u8?key=txiptv
 #EXTINF:-1 tvg-logo="https://kakaxi-1.asia/LOGO/CETV1.png" group-title="央视新媒",CETV1
 http://[2409:8087:1e02:20::1a]/PLTV/11/224/3221225775/index.m3u8?icpid=11&RTS=1762072229&from=24&hms_devid=544,550&online=1762070453&vqe=3
 #EXTINF:-1 group-title="央视新媒",CETV1
-https://migu.188766.xyz/?migutoken=4dfbbeeadaf9825386b547d728cc80ae&id=CETV1&type=yy
-#EXTINF:-1 group-title="央视新媒",CETV1
 https://migu.188766.xyz/?migutoken=f533df66510a894981e542227dc9a9fa&id=CETV1&type=yy
 #EXTINF:-1 tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/中国教育2.png" group-title="央视新媒" catchup="default" catchup-source="rtsp://112.245.125.38:1554/iptv/Tvod/iptv/001/001/ch17120417211408620162.rsc?tvdr=${(b)yyyyMMddHHmmss:utc}GMT-${(e)yyyyMMddHHmmss:utc}GMT",CETV2
 rtsp://112.245.125.38:1554/iptv/import/Tvod/iptv/001/001/ch17120417211408620162.rsc/74298_Uni.sdp
@@ -3005,8 +2973,6 @@ http://150.138.8.143/00/SNM/CHANNEL00000077/index.m3u8
 http://192.168.31.2:4022/rtp/239.21.2.8:5002?fcc=150.138.8.132:8027
 #EXTINF:-1 group-title="央视新媒",CETV2
 https://migu.188766.xyz/?migutoken=6fd9294c64500de99ba2ceaad83af861&id=CETV2&type=yy
-#EXTINF:-1 group-title="央视新媒",CETV2
-https://migu.188766.xyz/?migutoken=1358c27fa2dbc4ac0326dcae5b331cf1&id=CETV2&type=yy
 #EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2015/10/23/20151023181206937281_49.jpg" group-title="央视新媒",CETV2
 https://t.freetv.fun/live/cetv2-1.php
 #EXTINF:-1 tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/中国教育4.png" group-title="央视新媒" catchup="default" catchup-source="rtsp://112.245.125.48:1554/iptv/Tvod/iptv/001/001/ch17120418055568047747.rsc?tvdr=${(b)yyyyMMddHHmmss:utc}GMT-${(e)yyyyMMddHHmmss:utc}GMT",CETV4
@@ -3023,8 +2989,6 @@ http://123.235.73.237:9901/tsfile/live/0002_51.m3u8?key=txiptv
 http://[2409:8087:1e02:20::1a]/PLTV/11/224/3221226153/index.m3u8?icpid=11&RTS=1762072229&from=24&hms_devid=544,550&online=1762070453&vqe=3
 #EXTINF:-1 group-title="央视新媒",CETV4
 https://migu.188766.xyz/?migutoken=6871e36e1acb567a14761c3fdf052f08&id=CETV4&type=yy
-#EXTINF:-1 group-title="央视新媒",CETV4
-https://migu.188766.xyz/?migutoken=0a5a6790393c91fd3bc2ee10e5a9c82f&id=CETV4&type=yy
 #EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2015/10/23/20151023181206937281_49.jpg" group-title="央视新媒",CETV4
 https://t.freetv.fun/live/cetv4-1.php
 #EXTINF:-1 tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/CGTN.png" group-title="央视新媒" catchup="default" catchup-source="rtsp://112.245.125.47:1554/iptv/Tvod/iptv/001/001/ch15050914501799552135.rsc?tvdr=${(b)yyyyMMddHHmmss:utc}GMT-${(e)yyyyMMddHHmmss:utc}GMT",CGTN
@@ -3259,8 +3223,6 @@ rtsp://112.245.125.39:1554/iptv/import/Tvod/iptv/001/001/ch15090915223200641077.
 rtsp://112.245.125.42:1554/iptv/import/Tvod/iptv/001/001/ch15090915023023311866.rsc/69969_Uni.sdp
 #EXTINF:-1 group-title="数字频道",劲爆体育
 http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00002026/index.m3u8?IASHttpSessionId=
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/11/14/large/20241114153942015372_39.png" group-title="数字频道",劲爆体育
-https://t.freetv.fun/live/jing-bao-ti-yu.m3u8
 #EXTINF:-1 group-title="数字频道",劲爆体育
 http://183.237.95.108:9901/tsfile/live/1074_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="数字频道",劲爆体育
@@ -3519,8 +3481,6 @@ http://192.168.31.2:4022/rtp/239.21.2.93:5002?fcc=150.138.8.132:8027
 https://tv.iill.top/migu/xdm&token=2276b9830bd9e6d7f4858f72fe6095ad7d4eeb9d25164399bb076f31d3ce364b
 #EXTINF:-1 group-title="数字频道",新动漫
 https://migu.188766.xyz/?migutoken=be27b64d49074cd7e97d1a806f39299a&id=%E6%96%B0%E5%8A%A8%E6%BC%AB&type=yy
-#EXTINF:-1 group-title="数字频道",新动漫
-https://migu.188766.xyz/?migutoken=2e557e41c717ac2622e6554b60940eed&id=%E6%96%B0%E5%8A%A8%E6%BC%AB&type=yy
 #EXTINF:-1 tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/星影.png" group-title="数字频道" catchup="default" catchup-source="rtsp://112.245.125.42:1554/iptv/Tvod/iptv/001/001/ch15090916302647677604.rsc?tvdr=${(b)yyyyMMddHHmmss:utc}GMT-${(e)yyyyMMddHHmmss:utc}GMT",星影
 rtsp://112.245.125.42:1554/iptv/import/Tvod/iptv/001/001/ch15090916302647677604.rsc/69967_Uni.sdp
 #EXTINF:-1 tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/相声小品.png" group-title="数字频道" catchup="default" catchup-source="rtsp://112.245.125.48:1554/iptv/Tvod/iptv/001/001/ch13031310531244319435.rsc?tvdr=${(b)yyyyMMddHHmmss:utc}GMT-${(e)yyyyMMddHHmmss:utc}GMT",相声小品
@@ -3537,8 +3497,6 @@ rtsp://112.245.125.47:1554/iptv/import/Tvod/iptv/001/001/ch11042914374730524823.
 http://150.138.8.143/00/SNM/CHANNEL00000049/index.m3u8
 #EXTINF:-1 tvg-logo="https://gh.llkk.cc/https://raw.githubusercontent.com/sumingyd/IPTV-Scanner-Editor-Pro/main/logo/北京/优漫卡通2.png" group-title="数字频道" catchup="default" catchup-days="7" catchup-source="rtsp://150.138.8.132/PLTV/88888888/224/3221226066/10000100000000060000000002706940_0.smil?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",优漫卡通
 http://192.168.31.2:4022/rtp/239.21.1.50:5002?fcc=150.138.8.132:8027
-#EXTINF:-1 group-title="数字频道",优漫卡通
-https://migu.188766.xyz/?migutoken=ec9fe203861a1b18a570fc298d8df45e&id=%E4%BC%98%E6%BC%AB%E5%8D%A1%E9%80%9A%E9%A2%91%E9%81%93&type=yy
 #EXTINF:-1 tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/游戏风云.png" group-title="数字频道" catchup="default" catchup-source="rtsp://112.245.125.48:1554/iptv/Tvod/iptv/001/001/ch16051316213602697345.rsc?tvdr=${(b)yyyyMMddHHmmss:utc}GMT-${(e)yyyyMMddHHmmss:utc}GMT",游戏风云
 rtsp://112.245.125.48:1554/iptv/import/Tvod/iptv/001/001/ch16051316213602697345.rsc/70026_Uni.sdp
 #EXTINF:-1 tvg-logo="https://gh.llkk.cc/https://raw.githubusercontent.com/sumingyd/IPTV-Scanner-Editor-Pro/main/logo/上海/游戏风云.png" group-title="数字频道" catchup="default" catchup-days="7" catchup-source="rtsp://150.138.8.132/PLTV/88888888/224/3221227143/443310036.smil?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}",游戏风云
@@ -3956,8 +3914,6 @@ http://live1.gatv.com.cn:85/live/XWZH.m3u8
 #EXTINF:-1 group-title="待匹配未分组",广州新闻
 http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
 #EXTINF:-1 group-title="待匹配未分组",广州新闻
-https://stream1.freetv.fun/yan-zhou-xin-wen-8.m3u8
-#EXTINF:-1 group-title="待匹配未分组",广州新闻
 https://stream1.freetv.fun/yan-zhou-xin-wen-7.ctv
 #EXTINF:-1 group-title="待匹配未分组",广州新闻
 https://stream1.freetv.fun/yan-zhou-xin-wen-3.m3u8
@@ -4068,8 +4024,6 @@ https://migu.188766.xyz/?migutoken=a677564cddc431d4ed1affb1de546056&id=%E6%B0%91
 #EXTINF:-1 group-title="待匹配未分组",河南民生
 https://migu.188766.xyz/?migutoken=4f8772956b2c30c1be525755dc786ec8&id=%E6%B0%91%E7%94%9F%E9%A2%91%E9%81%93&type=yy
 #EXTINF:-1 group-title="待匹配未分组",河南民生
-https://migu.188766.xyz/?migutoken=d4224043a2f11e70625ce3d449517613&id=%E6%B0%91%E7%94%9F%E9%A2%91%E9%81%93&type=yy
-#EXTINF:-1 group-title="待匹配未分组",河南民生
 https://migu.188766.xyz/?migutoken=4a884c07c800248f7a295d74d86ba677&id=%E6%B0%91%E7%94%9F%E9%A2%91%E9%81%93&type=yy
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/河南都市.png" group-title="待匹配未分组",河南都市
 https://migu.188766.xyz/?migutoken=cedd42b2cf40eadf91c730b6cd932c28&id=%E9%83%BD%E5%B8%82%E9%A2%91%E9%81%93&type=yy
@@ -4102,23 +4056,15 @@ http://74.91.26.218:82/live/vlhjb.m3u8
 #EXTINF:-1 group-title="待匹配未分组",海南公共
 https://migu.188766.xyz/?migutoken=3a138924186d190af58e01219616242b&id=hn_ggpd&type=sz
 #EXTINF:-1 group-title="待匹配未分组",海南公共
-https://migu.188766.xyz/?migutoken=6694c5fed131a81b1f2bb968afc13e99&id=hn_ggpd&type=sz
-#EXTINF:-1 group-title="待匹配未分组",海南公共
 https://migu.188766.xyz/?migutoken=df212753a2e13b8fcedb29ae6d6040c0&id=hn_ggpd&type=sz
 #EXTINF:-1 group-title="待匹配未分组",海南公共
 https://migu.188766.xyz/?migutoken=f1f1229c12159ef78d02d4232241707f&id=hn_ggpd&type=sz
-#EXTINF:-1 group-title="待匹配未分组",海南公共
-https://migu.188766.xyz/?migutoken=be46a2ec3c7b945a6f6cd5bf57e529f7&id=hn_ggpd&type=sz
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南公共.png" group-title="待匹配未分组",海南公共
 http://nn.7x9d.cn/地方台8563/海南.php?id=ggpd
 #EXTINF:-1 group-title="待匹配未分组",海南公共
 https://migu.188766.xyz/?migutoken=ac7b48ea3bf22a0634526220c285566c&id=hn_ggpd&type=sz
-#EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南少儿.png" group-title="待匹配未分组",海南少儿
-https://migu.188766.xyz/?migutoken=0c9220e89aa5bb92fd25dbc47f73c650&id=hn_sepd&type=sz
 #EXTINF:-1 group-title="待匹配未分组",海南少儿
 https://migu.188766.xyz/?migutoken=5270a5c7850cc83ef1803e5ac45034ad&id=hn_sepd&type=sz
-#EXTINF:-1 group-title="待匹配未分组",海南少儿
-https://migu.188766.xyz/?migutoken=c274dc58b72d0f432759711dce8f6cf3&id=hn_sepd&type=sz
 #EXTINF:-1 group-title="待匹配未分组",海南少儿
 http://vapi.91kds.cc/live1/hitv.m3u8?id=hiqs&apiKey=2079b631b519ec17da0bc09844eb8419
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南少儿.png" group-title="待匹配未分组",海南少儿
@@ -4132,27 +4078,17 @@ https://migu.188766.xyz/?migutoken=718522a0446276965260cb4bdb882b94&id=hn_wlpd&t
 #EXTINF:-1 group-title="待匹配未分组",海南文旅
 https://migu.188766.xyz/?migutoken=7c82cd659ebc3a6da2ff99c1c931849d&id=hn_wlpd&type=sz
 #EXTINF:-1 group-title="待匹配未分组",海南文旅
-https://migu.188766.xyz/?migutoken=1673605dc43d4d205c33150454b15318&id=hn_wlpd&type=sz
-#EXTINF:-1 group-title="待匹配未分组",海南文旅
 http://vapi.91kds.cc/live1/hitv.m3u8?id=hiys&apiKey=2079b631b519ec17da0bc09844eb8419
 #EXTINF:-1 group-title="待匹配未分组",海南文旅
 https://migu.188766.xyz/?migutoken=be660a3b9b88ffe01b28a1b76ad465c9&id=hn_wlpd&type=sz
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南文旅.png" group-title="待匹配未分组",海南文旅
 http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd
 #EXTINF:-1 group-title="待匹配未分组",海南新闻
-https://migu.188766.xyz/?migutoken=9ca0f2a9fcbfc17ee5523aa1b3f7613f&id=hn_xwpd&type=sz
-#EXTINF:-1 group-title="待匹配未分组",海南新闻
 https://migu.188766.xyz/?migutoken=82ea54ce4e49bfb82a3fc834aa72749e&id=hn_xwpd&type=sz
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南新闻.png" group-title="待匹配未分组",海南新闻
 http://nn.7x9d.cn/地方台8563/海南.php?id=xwpd
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南自贸.png" group-title="待匹配未分组",海南自贸
-https://migu.188766.xyz/?migutoken=315ad4939096a91be5ce3462b2080323&id=hn_jjpd&type=sz
-#EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南自贸.png" group-title="待匹配未分组",海南自贸
 https://migu.188766.xyz/?migutoken=660a5548e95409c119145c54d487e47e&id=hn_jjpd&type=sz
-#EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南自贸.png" group-title="待匹配未分组",海南自贸
-https://migu.188766.xyz/?migutoken=45ac9a110c797599551115731cf44df2&id=hn_jjpd&type=sz
-#EXTINF:-1 group-title="待匹配未分组",海南自贸
-https://migu.188766.xyz/?migutoken=a68f53b6d5e59d79275feca3fce676a9&id=hn_jjpd&type=sz
 #EXTINF:-1 group-title="待匹配未分组",海南自贸
 https://migu.188766.xyz/?migutoken=b5178d79436ef637af09a49715ab7d46&id=hn_jjpd&type=sz
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南自贸.png" group-title="待匹配未分组",海南自贸
@@ -4429,8 +4365,6 @@ https://yylunbo.ottiptv.cc/yy/1352946111
 http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8?zjiangsd
 #EXTINF:-1 group-title="待匹配未分组",靖江新闻综合
 http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8
-#EXTINF:-1 group-title="待匹配未分组",奎屯哈萨克语
-http://218.84.12.186:8002/hls/main/playlist.m3u8?zxinjd
 #EXTINF:-1 group-title="待匹配未分组",康熙微服私访记
 http://cdn.jdshipin.com:8880/huya.php?id=11342418
 #EXTINF:-1 group-title="待匹配未分组",恐怖电影
@@ -5057,8 +4991,6 @@ http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv?zyund
 http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/旺苍新闻综合.png" group-title="待匹配未分组",旺苍新闻综合
 http://channel.wcrmt.cn:80/nmip-media/channellive/channel105268/playlist.m3u8
-#EXTINF:-1 group-title="待匹配未分组",望乡台
-https://gcalic.v.myalicdn.com/gc/hlwxt_1/index.m3u8
 #EXTINF:-1 group-title="待匹配未分组",武乡新闻综合
 http://60.220.198.84:81/0.m3u8
 #EXTINF:-1 group-title="待匹配未分组",武乡新闻综合
@@ -5119,10 +5051,6 @@ http://live.dxhmt.cn:9081/tv/10183-2.m3u8
 https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8
 #EXTINF:-1 group-title="待匹配未分组",新疆天山(灯杆山)
 https://gcalic.v.myalicdn.com/gc/xjtcdgs_1/index.m3u8
-#EXTINF:-1 group-title="待匹配未分组",新疆｜奎屯汉语综合
-http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
-#EXTINF:-1 group-title="待匹配未分组",新疆｜奎屯汉语综合
-http://218.84.12.186:8001/hls/main/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",新疆｜巴音郭楞州
 http://file.loulannews.cn/nmip-media/channellive/channel103824/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",新疆｜巴音郭楞州
@@ -5137,8 +5065,6 @@ https://yylunbo.ottiptv.cc/yy/1508961855
 http://live.dxhmt.cn:9081/tv/10184-1.m3u8
 #EXTINF:-1 group-title="待匹配未分组",新野综合
 http://live.dxhmt.cn:9081/tv/11329-1.m3u8
-#EXTINF:-1 group-title="待匹配未分组",新闻综合
-https://migu.188766.xyz/?migutoken=2da6fc3ee5600c20fc3a1ec99a5f510d&id=%E4%B8%8A%E6%B5%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&type=yy
 #EXTINF:-1 group-title="待匹配未分组",新闻综合
 https://migu.188766.xyz/?migutoken=e0b1bdace2e78d2f49ee59e01ade38ed&id=%E4%B8%8A%E6%B5%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&type=yy
 #EXTINF:-1 group-title="待匹配未分组",星空卫视
@@ -5365,8 +5291,6 @@ https://play.kankanlive.com/live/1720583434627241.m3u8
 http://hbzqdb.chinashadt.com:1937/live/zqzh.stream_360p/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://epg-1.iill.top/logo/虎牙.png" group-title="待匹配未分组",止戈电影「解说」
 https://live.iill.top/huya/19863777
-#EXTINF:-1 group-title="待匹配未分组",治愈•放松「音乐」
-http://dxa.yiandrive.com:39191/huya/21241811
 #EXTINF:-1 tvg-logo="https://epg-1.iill.top/logo/虎牙.png" group-title="待匹配未分组",治愈•放松「音乐」
 https://live.iill.top/huya/21241811
 #EXTINF:-1 group-title="待匹配未分组",浙江-乌镇全景
@@ -5387,8 +5311,6 @@ http://ali-xwl.cztv.com/live/channel101080Plxw.m3u8
 https://stream1.freetv.fun/zhe-jiang-guo-ji-4.m3u8
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江国际.png" group-title="待匹配未分组",浙江国际
 http://ali-xwl.cztv.com/live/channel10720Plxw.m3u8
-#EXTINF:-1 group-title="待匹配未分组",浙江少儿
-http://ali-xwl.cztv.com/live/channel081080Plxw.m3u8
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江教科影视.png" group-title="待匹配未分组",浙江教科影视
 http://ali-xwl.cztv.com/live/channel041080Plxw.m3u8
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江教科影视.png" group-title="待匹配未分组",浙江教科影视
@@ -5397,8 +5319,6 @@ http://ali-xwl.cztv.com/live/channel04720Plxw.m3u8
 http://ali-xwl.cztv.com/live/channel071080Plxw.m3u8
 #EXTINF:-1 group-title="待匹配未分组",浙江新闻
 https://stream1.freetv.fun/zhe-jiang-xin-wen-2.m3u8
-#EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江新闻.png" group-title="待匹配未分组",浙江新闻
-http://ali-xwl.cztv.com/live/channel07720Plxw.m3u8
 #EXTINF:-1 group-title="待匹配未分组",浙江新闻
 https://stream1.freetv.fun/zhe-jiang-xin-wen-3.m3u8
 #EXTINF:-1 tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江民生休闲.png" group-title="待匹配未分组",浙江民生休闲
@@ -5867,8 +5787,6 @@ https://t.freetv.fun/live/anadolu-net-tv-1.m3u8
 https://t.freetv.fun/live/anadolu-net-tv.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174201524147_24.png" group-title="待匹配未分组",[BD]anand tv
 https://t.freetv.fun/live/anand-tv.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2016/01/06/20160106030244447703_58.png" group-title="待匹配未分组",[BD]andina rtv
-https://t.freetv.fun/live/andina-rtv.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128061020658752_30.png" group-title="待匹配未分组",[BD]animal planet
 https://t.freetv.fun/live/animal-planet-2.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125013114796464_35.png" group-title="待匹配未分组",[BD]animax
@@ -5899,8 +5817,6 @@ https://t.freetv.fun/live/astro-aod.m3u8
 https://t.freetv.fun/live/astroawani.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2015/02/20/20150220202931932434_57.jpg" group-title="待匹配未分组",[BD]atv
 https://t.freetv.fun/live/atv-2.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2015/04/14/20150414222253217975_20.png" group-title="待匹配未分组",[BD]atxn1
-https://t.freetv.fun/live/atxn1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2021/06/24/large/20210624003930806033_58.png" group-title="待匹配未分组",[BD]aura
 https://t.freetv.fun/live/aura.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174525906561_91.png" group-title="待匹配未分组",[BD]azstar tv
@@ -5957,8 +5873,6 @@ https://t.freetv.fun/live/bravo-tv.m3u8
 https://t.freetv.fun/live/btn-tv.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2021/06/26/large/20210626150218508620_73.png" group-title="待匹配未分组",[BD]btv
 https://t.freetv.fun/live/btv.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2021/11/13/large/20211113231457756792_31.png" group-title="待匹配未分组",[BD]cajamarca tv
-https://t.freetv.fun/live/cajamarca-tv.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2019/01/06/large/20190106151417112281_33.png" group-title="待匹配未分组",[BD]california music channel
 https://t.freetv.fun/live/california-music-channel-1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2019/01/06/large/20190106151417112281_33.png" group-title="待匹配未分组",[BD]california music channel usa
@@ -6961,8 +6875,6 @@ https://t.freetv.fun/live/star-tve-2.m3u8
 https://t.freetv.fun/live/start-world-2.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/07/15/large/20240715155016051510_82.png" group-title="待匹配未分组",[BD]starz cinema *s
 https://t.freetv.fun/live/starz-cinema-s.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527020552744884_81.png" group-title="待匹配未分组",[BD]starz west
-https://t.freetv.fun/live/starz-west-1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506164721541483_52.png" group-title="待匹配未分组",[BD]stiletv
 https://t.freetv.fun/live/stiletv.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174525906561_91.png" group-title="待匹配未分组",[BD]stryk tv
@@ -7619,8 +7531,6 @@ https://t.freetv.fun/live/zhe-jiang-xin-wen-2.m3u8
 https://t.freetv.fun/live/zhe-jiang-jing-ji-sheng-huo-3.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/10/13/large/20231013202735777838_86.png" group-title="待匹配未分组",[BD]浙江｜上虞新闻综合
 https://t.freetv.fun/live/zhe-jiang-shang-yu-xin-wen-zong-he.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225011839622_70.jpg" group-title="待匹配未分组",[BD]海南文旅
-https://t.freetv.fun/live/hai-nan-wen-lu-2.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060839855238_81.jpg" group-title="待匹配未分组",[BD]海峡卫视
 https://t.freetv.fun/live/hai-xia-wei-shi.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060839855238_81.jpg" group-title="待匹配未分组",[BD]海峡卫视
@@ -7823,8 +7733,6 @@ https://t.freetv.fun/live/arirang-tv-1.m3u8
 https://t.freetv.fun/live/arirang-world-1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2015/12/03/20151203055418197053_47.jpg" group-title="待匹配未分组",[HD]arm toon
 https://t.freetv.fun/live/arm-toon.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2017/07/17/large/20170717224856278390_73.png" group-title="待匹配未分组",[HD]arte
-https://t.freetv.fun/live/arte-1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2017/07/17/large/20170717224856278390_73.png" group-title="待匹配未分组",[HD]arte
 https://t.freetv.fun/live/arte.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/04/15/large/20240415121455440051_22.png" group-title="待匹配未分组",[HD]artflix movie classics
@@ -8033,8 +7941,6 @@ https://t.freetv.fun/live/classica-1.m3u8
 https://t.freetv.fun/live/classica-2.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2017/11/23/large/20171123202358057725_47.png" group-title="待匹配未分组",[HD]classica
 https://t.freetv.fun/live/classica.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174104552475_63.png" group-title="待匹配未分组",[HD]cnc
-https://t.freetv.fun/live/cnc.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/" group-title="待匹配未分组",[HD]comedia made in spain plus
 https://t.freetv.fun/live/comedia-made-in-spain-plus.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/" group-title="待匹配未分组",[HD]comedia made in spain plus
@@ -8105,8 +8011,6 @@ https://t.freetv.fun/live/daystar-espanol.m3u8
 https://t.freetv.fun/live/dazn-ringside-1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/04/24/large/20240424024936868909_61.png" group-title="待匹配未分组",[HD]dazn ringside
 https://t.freetv.fun/live/dazn-ringside-2.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/04/24/large/20240424024936868909_61.png" group-title="待匹配未分组",[HD]dazn ringside
-https://t.freetv.fun/live/dazn-ringside.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174812899119_44.png" group-title="待匹配未分组",[HD]defa tv
 https://t.freetv.fun/live/defa-tv.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125055529748409_19.png" group-title="待匹配未分组",[HD]delta tv
@@ -9185,8 +9089,6 @@ https://t.freetv.fun/live/world-poker-tour-9.m3u8
 https://t.freetv.fun/live/world-poker-tour-10.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174447671591_13.png" group-title="待匹配未分组",[HD]xite
 https://t.freetv.fun/live/xite.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506175031386401_36.png" group-title="待匹配未分组",[HD]yunavision
-https://t.freetv.fun/live/yunavision.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506173856950611_69.png" group-title="待匹配未分组",[HD]zagros
 https://t.freetv.fun/live/zagros.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2017/01/04/20170104005315996688_16.png" group-title="待匹配未分组",[HD]zarok tv
@@ -9310,11 +9212,7 @@ https://t.freetv.fun/live/guo-hui-2-14.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513171909653190_67.jpg" group-title="待匹配未分组",[HD]國會 2[geo-blocked]
 https://stream1.freetv.fun/63206fe434afcb684f00ac9f6fb1275b50f575403290e1e904bc182c4d3c7af3.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/08/05/large/20230805003741056376_18.png" group-title="待匹配未分组",[HD]天映
-https://t.freetv.fun/live/tian-ying-1.php
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/08/05/large/20230805003741056376_18.png" group-title="待匹配未分组",[HD]天映
 https://t.freetv.fun/live/tian-ying.php
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2019/01/23/large/20190123002742257631_40.jpg" group-title="待匹配未分组",[HD]天映经典
-https://t.freetv.fun/live/tian-ying-jing-dian-2.php
 #EXTINF:-1 tvg-logo="https://epg.pw/media/img/logo/yixingxinwen.jpg" group-title="待匹配未分组",[HD]宜兴新闻
 https://t.freetv.fun/live/yi-xing-xin-wen-1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2021/10/12/large/20211012195240950081_44.png" group-title="待匹配未分组",[HD]平湖新闻综合
@@ -9327,8 +9225,6 @@ https://t.freetv.fun/live/ping-hu-xin-wen-zong-he.m3u8
 https://t.freetv.fun/live/yan-dong-zhu-jiang-10.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060916282738_90.png" group-title="待匹配未分组",[HD]广东珠江
 https://t.freetv.fun/live/yan-dong-zhu-jiang-2.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/21/large/20230721135410645686_37.png" group-title="待匹配未分组",[HD]广州新闻
-https://t.freetv.fun/live/yan-zhou-xin-wen-8.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/21/large/20230721135410645686_37.png" group-title="待匹配未分组",[HD]广州新闻
 https://t.freetv.fun/live/yan-zhou-xin-wen-14.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2023/07/21/large/20230721135410645686_37.png" group-title="待匹配未分组",[HD]广州新闻
@@ -9733,14 +9629,6 @@ https://t.freetv.fun/live/curzon-cinema.m3u8
 https://t.freetv.fun/live/da-vinci-1.php
 #EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2015/08/21/20150821170539632864_83.jpg" group-title="待匹配未分组",[SD]darshana tv
 https://t.freetv.fun/live/darshana-tv.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/04/24/large/20240424024936868909_61.png" group-title="待匹配未分组",[SD]dazn combat
-https://t.freetv.fun/live/dazn-combat-1.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/04/24/large/20240424024936868909_61.png" group-title="待匹配未分组",[SD]dazn combat
-https://t.freetv.fun/live/dazn-combat.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/04/24/large/20240424024936868909_61.png" group-title="待匹配未分组",[SD]dazn combat
-https://stream1.freetv.fun/cea572c8598749b8e5def003418c8548e0f81b2d43661e21072845b5b901d2c9.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/04/24/large/20240424024936868909_61.png" group-title="待匹配未分组",[SD]dazn combat[geo-blocked]
-https://stream1.freetv.fun/08a2cd661df2b1c6c18ce1157133c09c4c7f2d0ce5e923a11931b74ff3ecc107.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/03/13/large/20240313063949193138_71.png" group-title="待匹配未分组",[SD]dd bangla
 https://t.freetv.fun/live/dd-bangla-1.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/03/13/large/20240313063949193138_71.png" group-title="待匹配未分组",[SD]dd bangla
@@ -10795,8 +10683,6 @@ https://t.freetv.fun/live/muztv-5.m3u8
 https://t.freetv.fun/live/muzyka-1-international.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174912035196_59.png" group-title="待匹配未分组",[VGA]музыка 2 international
 https://t.freetv.fun/live/muzyka-2-international-1.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/uploads/tmp_logo/2017/01/19/20170119050548543583_72.png" group-title="待匹配未分组",[VGA]музыка 5
-https://t.freetv.fun/live/muzyka-5.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506175023691245_88.png" group-title="待匹配未分组",[VGA]рика тв
 https://t.freetv.fun/live/rika-tv.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506175047720510_67.png" group-title="待匹配未分组",[VGA]стс
@@ -11025,8 +10911,6 @@ http://alwifaklive.info:1935/live/myStream/playlist.m3u8
 https://amc-absolutereality-1-us.plex.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/m5Anun9.png" group-title="待匹配未分组",AMG TV (1080p)
 https://2-fss-2.streamhoster.com/pl_138/201660-1270634-1/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/snIU1UA.jpg" group-title="待匹配未分组",AMX Noticias (720p) [Not 24/7]
-https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/odwRbRk.png" group-title="待匹配未分组",ANC (1080p)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-anc-global-dash-abscbnono/index.mpd
 #EXTINF:-1 group-title="待匹配未分组",ANIME x HIDIVE
@@ -11081,12 +10965,6 @@ https://alba-pe-atv-atvsur.stream.mediatiquestream.com/index.m3u8
 https://d2qsan2ut81n2k.cloudfront.net/live/77eece7f-8de5-4406-9f7e-7be16d81f2ce/ts:abr.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pwM5txv.png" group-title="待匹配未分组",ATVSat (1080p) [Not 24/7]
 https://stream.atvsat.com/atvsatlive/smil:atvsatlive.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/tSMtDlz.png" group-title="待匹配未分组",ATXN1 (1080p)
-https://cdn-atxn-01.vos360.video/Content/HLS/Live/channel(616d6f49-eaec-6f7e-7186-2bbaf66c69c0)/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/tSMtDlz.png" group-title="待匹配未分组",ATXN2 (1080p)
-https://cdn-atxn-01.vos360.video/Content/HLS/Live/channel(f97b5ddc-b7e4-dff8-9f10-8c16d0833639)/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/tSMtDlz.png" group-title="待匹配未分组",ATXN3 (1080p)
-https://cdn-atxn-01.vos360.video/Content/HLS/Live/channel(c55d1594-ad62-7434-aa17-4d71adb80f99)/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/mZNchF5b/avafamily.png" group-title="待匹配未分组",AVA Family
 https://familyhls.avatv.live/hls/stream.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/8AfAfZE.png" group-title="待匹配未分组",AVA Series
@@ -12085,8 +11963,6 @@ https://d1ib1gsg71oarf.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://sc1.wasidata.com/Bhtv/index.fmp4.m3u8
 #EXTINF:-1 group-title="待匹配未分组",BIG BROTHER CLASSIC
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/663e09e4b18d700008e48dcf/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=b0bcdbbe-4dc1-4938-ab27-ee6c97468517
-#EXTINF:-1 tvg-logo="https://i.imgur.com/6HDMVBB.png" group-title="待匹配未分组",BIG Civic Channel
-https://reflect-brookline-interactive-group.cablecast.tv/live-5/live/stream-2/live.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/6HDMVBB.png" group-title="待匹配未分组",BIG Community Channel
 https://reflect-brookline-interactive-group.cablecast.tv/live-4/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-logo="https://biztv.uz/static/media/biz-cinema.286b83dc.png" group-title="待匹配未分组",BIZ Cinema (1080p)
@@ -12143,8 +12019,6 @@ https://btv.secureswiftcontent.com/han/btv/btv10005/srtoutput/manifest.m3u8
 https://movil.ejeserver.com/live/visiondorada.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Iv1Fe67.png" group-title="待匹配未分组",BUTV10 (Boston University) (1080p) [Not 24/7]
 https://cdnapisec.kaltura.com/p/2184561/sp/218456100/playManifest/entryId/1_68qxw4eu/format/applehttp/a.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Buzzr_logo.svg/512px-Buzzr_logo.svg.png" group-title="待匹配未分组",BUZZR
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5812bfbe4ced4f7b601b12e6/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=2bd20c8f-f2fe-479e-8727-ec73c94f0ca7
 #EXTINF:-1 group-title="待匹配未分组",BVB-Frauen
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/66337ea1307fa300082c28a0/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=31a58759-89ba-48c6-8747-e04bd31d5dfd
 #EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BVG.png" group-title="待匹配未分组",BVG (576p)
@@ -12523,8 +12397,6 @@ https://media.streambrothers.com:1936/8506/8506/playlist.m3u8
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/696e647b07ea70192d49f6a5/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=32de4823-7501-4845-ba26-8699462954dd&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=b73f4ad5-e99f-4ac3-8a8c-a4ee28b4a703
 #EXTINF:-1 group-title="待匹配未分组",Bonanza
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/68e9913c4a666b9054849832/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=e2b32e29-169f-4f71-bcd6-bc8434b54c8a
-#EXTINF:-1 tvg-logo="https://i.imgur.com/en1vCZB.png" group-title="待匹配未分组",Bonao TV (720p) [Not 24/7]
-https://tele-stream.telecasa.net:8080/play/bonaotv-hd/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/7cVkllH.png" group-title="待匹配未分组",Bonce TV (480p) [Not 24/7]
 https://seswa.bonce.tv/hls/bonceswa.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Kp8x0NS.png" group-title="待匹配未分组",Bonches Latinos TV (720p)
@@ -12675,8 +12547,6 @@ https://stream.it-innov.com/cam10tv/index.m3u8
 https://cantv.streamguys1.com/cantv/cantv19hls/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/KP5bCYr.png" group-title="待匹配未分组",CAN TV21 (1080p)
 https://cantv.streamguys1.com/cantv/cantv21hls/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/43EpWsD.png" group-title="待匹配未分组",CAN TV27 (1080p)
-https://cantv.streamguys1.com/cantv/cantv27hls/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/43EpWsD.png" group-title="待匹配未分组",CAN TV36 (1080p)
 https://cantv.streamguys1.com/cantv/cantv36hls/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",CATFISH TV
@@ -12877,8 +12747,6 @@ https://news.ctbperth.net.au/hls/stream.m3u8
 https://video1.getstreamhosting.com:1936/8226/8226/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ljKb0UX.png" group-title="待匹配未分组",CTV
 https://live.ctvbolivia.com/hls/ctv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/yrdr4Po.png" group-title="待匹配未分组",CTV8 HD
-http://live.happywatch99.com/livehd17/60b8e758d3dac2865fa0cd868d0f7ec4.sdp/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/CTVN_AKD_Plus.png" group-title="待匹配未分组",CTVN AKD Plus (1080p)
 https://live.legitpro.co.in/ctvnakdplus/index.m3u8
 #EXTINF:-1 tvg-logo="https://dominicanchannels.com/wp-content/uploads/ccviison-1.png" group-title="待匹配未分组",CV Vision TV [Geo-blocked]
@@ -13801,8 +13669,6 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6601948129adfd0008a1c0ba/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=32de4823-7501-4845-ba26-8699462954dd&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=af7eb12b-2eef-4965-8b7b-a5d3a506f956
 #EXTINF:-1 group-title="待匹配未分组",Crime & Justice [Geo-blocked]
 https://linear-474.frequency.stream/dist/glewedtv/474/hls/master/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Crime_%2B_Investigation_Logo_10.2019.svg" group-title="待匹配未分组",Crime + Investigation (720p) [Not 24/7]
-https://tvpass.org/live/CrimePlusInvestigation/hd
 #EXTINF:-1 group-title="待匹配未分组",Crime 360
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6578848a6e4f6a0008741910/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ed502ec4-ffd0-49d1-b7de-1c00fad2906c&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=e4527ffb-0b2c-4578-b06a-b9acf1f48f3b
 #EXTINF:-1 group-title="待匹配未分组",Crime 360
@@ -13898,10 +13764,6 @@ https://swrdasdingvr-hls.akamaized.net/hls/live/2018681/dasdingvr/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/VsW3Jsrz/logo-DAZN-Combat.png" group-title="待匹配未分组",DAZN Combat
 https://dazn-combat-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-dazn-combat-rakuten/CDN/master.m3u8
 #EXTINF:-1 group-title="待匹配未分组",DAZN Combat
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/648056f0f77b61000828f1ba/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ed502ec4-ffd0-49d1-b7de-1c00fad2906c&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=762f1a4c-5f7f-477c-a28b-ba6fc83eff8e
-#EXTINF:-1 group-title="待匹配未分组",DAZN Combat
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64805755536e0c0008a19fa1/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ef438a77-24b9-40a1-9b9b-e24ca3052bea&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=3492c9c2-4030-4a83-94d9-5487b8ea92be
-#EXTINF:-1 group-title="待匹配未分组",DAZN Combat
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64805922536e0c0008a1a1e6/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=78b29450-7022-4485-b983-23f30e23925f&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=4e243d3c-1ee2-42c1-bdc8-8c1c24d204b2
 #EXTINF:-1 group-title="待匹配未分组",DAZN Combat
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64df7a9a44fe100009b6ac5a/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=610c8f98-68e8-48e7-9cc5-5dd3fefdcab5&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=d22bdfb9-bbf1-403e-b85f-20163b62fea7
@@ -13923,8 +13785,6 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64afe50c5dc16600087f3227/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=bc83a564-4b91-11ef-8a44-83c5e90e038f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=7df37b22-f6f1-45dd-9620-5945bfeea73a
 #EXTINF:-1 group-title="待匹配未分组",DAZN Heldinnen x Pluto TV
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64afe50c5dc16600087f3227/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=c8bbb33a-c6a0-4fe2-a190-b474690004b5
-#EXTINF:-1 group-title="待匹配未分组",DAZN Ringside
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65b14aae0cb1a100087a216e/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=07998d5d-dd4a-4bcc-84be-58dcbcec76b7&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=5e97d251-5159-4572-90ef-db121870875f
 #EXTINF:-1 group-title="待匹配未分组",DAZN Ringside
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/649b6898f2ec0000081a9460/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=f04c5fa9-d571-4c71-988c-2348ce234210
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ab6p2SW.png" group-title="待匹配未分组",DBM TV (1080p)
@@ -14267,10 +14127,6 @@ http://201.230.121.186:8000/play/a0fb/index.m3u8
 http://151.80.18.177:86/Disney_Junior_HD/index.m3u8
 #EXTINF:-1 tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DISNEY_JUNIOR/images/LOGO_HD/image.png" group-title="待匹配未分组",Disney Junior (576p)
 http://161.248.38.40:8000/play/a068/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/KvRqrLg2/disneyjunior.png" group-title="待匹配未分组",Disney Junior East (720p) [Not 24/7]
-https://tvpass.org/live/DisneyJuniorEast/hd
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/MKNssTyj/disneyxd.png" group-title="待匹配未分组",Disney XD East (720p) [Not 24/7]
-https://tvpass.org/live/DisneyXDEast/hd
 #EXTINF:-1 tvg-logo="https://i.imgur.com/GGZ8BQ8.png" group-title="待匹配未分组",District of Columbia Network (DCN) (1080p)
 https://video.oct.dc.gov/out/u/DCN.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/AqGIoIt.png" group-title="待匹配未分组",Distrito TV (1080p)
@@ -14471,8 +14327,6 @@ http://94.246.128.53:1935/tv/dlaCiebieTv/playlist.m3u8
 https://jmp2.uk/stvp-ESBC4700001GR
 #EXTINF:-1 tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="待匹配未分组",E 24 (576p)
 https://mumt04.tangotv.in/E24/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/TWFDkap.png" group-title="待匹配未分组",E! East (1080p) [Not 24/7]
-https://tvpass.org/live/EEast/hd
 #EXTINF:-1 group-title="待匹配未分组",E! Keeping Up
 https://xumo-xumoent-vc-117-a3ga4.fast.nbcuni.com/live/master.m3u8
 #EXTINF:-1 tvg-logo="https://elearning.ebc.edu.kh/pluginfile.php/1/theme_remui/logo/1770608989/ebc-logo.png" group-title="待匹配未分组",EBC General Education (720p) [Not 24/7]
@@ -14673,8 +14527,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 https://5790d294af2dc.streamlock.net/canal6/canal6/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/TIH3zlP.png" group-title="待匹配未分组",El Sol Network TV (1080p)
 https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/aKvPd4g.jpg" group-title="待匹配未分组",El Sonorense (1080p) [Not 24/7]
-https://s5.mexside.net:1936/elsonorense/elsonorense/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/93/Eltorotv.png" group-title="待匹配未分组",El Toro TV (720p)
 https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8
 #EXTINF:-1 group-title="待匹配未分组",El encantador de perros
@@ -14975,8 +14827,6 @@ https://stream8.cinerama.uz/1018/playlist.m3u8
 https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/WMrYEgH.png" group-title="待匹配未分组",FUSION TV (1080p)
 https://edge20.vedge.infomaniak.com/livecast/ik:fusiontv/manifest.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/263GFb0J/fx.png" group-title="待匹配未分组",FX East (720p) [Not 24/7]
-https://tvpass.org/live/FXEast/hd
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/512px-FX_International_logo.svg.png" group-title="待匹配未分组",FX Latin America (1080p)
 http://38.199.6.1:17001/play/a04u/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FXM_Logo.svg/512px-FXM_Logo.svg.png" group-title="待匹配未分组",FX Movie Channel (720p) [Not 24/7]
@@ -14987,8 +14837,6 @@ https://fxtvhls.wns.live/hls/stream.m3u8
 https://toonixhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/FXX_Logo.svg/512px-FXX_Logo.svg.png" group-title="待匹配未分组",FXX East (720p) [Not 24/7]
 https://tvpass.org/live/FXXEast/hd
-#EXTINF:-1 tvg-logo="https://i.imgur.com/PggQk7F.png" group-title="待匹配未分组",FYI East (720p) [Not 24/7]
-https://tvpass.org/live/FYIEast/hd
 #EXTINF:-1 tvg-logo="https://i.imgur.com/YFmzkOp.png" group-title="待匹配未分组",Fabulosa Estéreo 100.5 FM (720p)
 https://www.streaming507.net:19360/videofabulosa/videofabulosa.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VIpQJxL.png" group-title="待匹配未分组",Fail Army
@@ -15239,8 +15087,6 @@ https://all3media-four-in-a-bed-1-au.samsung.wurl.tv/playlist.m3u8
 https://all3media-four-in-a-bed-1-nz.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",Four in a Bed (720p)
 https://all3media-four-in-a-bed-1-nl.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fox_Business.svg/512px-Fox_Business.svg.png" group-title="待匹配未分组",Fox Business Network (720p) [Not 24/7]
-https://tvpass.org/live/FoxBusiness/hd
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/France_2_2018.svg/512px-France_2_2018.svg.png" group-title="待匹配未分组",France 2 (1080p)
 http://69.64.57.208/france2/mono.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png" group-title="待匹配未分组",France 24
@@ -15329,8 +15175,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5
 http://104.143.4.5:2080/funroads.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UCwjdtQ.png" group-title="待匹配未分组",Funny AF
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65a6a5e90c7ff50008cb9815/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=07998d5d-dd4a-4bcc-84be-58dcbcec76b7&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=86219e93-f0ee-429a-907f-576027a10edd
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/gkhMThGb/fuse.png" group-title="待匹配未分组",Fuse East (1080p) [Not 24/7]
-https://tvpass.org/live/FuseEast/hd
 #EXTINF:-1 tvg-logo="https://i.imgur.com/RngmCDn.png" group-title="待匹配未分组",Futbol (1080p)
 https://live.teleradiocom.tj/8/3m.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/43Ww9bQV/futuretv.png" group-title="待匹配未分组",Future TV (1080p)
@@ -15479,8 +15323,6 @@ https://amg00353-amg00353c30-samsung-au-3440.playouts.now.amagi.tv/playlist.m3u8
 https://canal.gitelevisionserver.com/live/DIEEFIh506fL8huspvl0f0c2PZF3/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/LwEHfjD.png" group-title="待匹配未分组",Gigant FM (720p)
 https://video.uitzending.tv:19360/gigantfm/gigantfm.m3u8
-#EXTINF:-1 group-title="待匹配未分组",Gigolos
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/68d27437e6767bdeb23f0336/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=915567ab-3dd2-418b-bfa0-f6dd2e9508c8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/wlYUEYc.png" group-title="待匹配未分组",Gilroy CMAP TV Channel 17 (720p)
 https://livestream.telvue.com/cmap1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/wlYUEYc.png" group-title="待匹配未分组",Gilroy CMAP TV Channel 19 (720p)
@@ -15514,11 +15356,7 @@ https://streamtv.intervenhosting.net:3179/live/globaltvlive.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2u33Ayy.jpeg" group-title="待匹配未分组",GlobalWorldTV (720p)
 https://media.streambrothers.com:1936/8052/8052/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",Glory Kickboxing
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65e9b676332fec00085b300e/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ed502ec4-ffd0-49d1-b7de-1c00fad2906c&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=34066ab0-317f-4beb-8cfd-f51da28debc8
-#EXTINF:-1 group-title="待匹配未分组",Glory Kickboxing
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65e9b6b58145cb00084d24ee/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ef438a77-24b9-40a1-9b9b-e24ca3052bea&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=7ef58ac7-374d-4638-adac-da12cc6570b7
-#EXTINF:-1 group-title="待匹配未分组",Glory Kickboxing
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65e9b6498b24c8000806b982/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=78b29450-7022-4485-b983-23f30e23925f&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=3bbba322-cf79-41f3-b9e7-326a3bcfd1c4
 #EXTINF:-1 group-title="待匹配未分组",Glory Kickboxing
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65e9b6fa66eec80008aea42f/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=7089727d-21c4-4175-9100-a14521359b66&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=4e219f36-f983-4f74-a012-d4bcde5e4bcf
 #EXTINF:-1 tvg-logo="https://i.ibb.co/ZNCXr79/gnomi-logo.png" group-title="待匹配未分组",Gnomi TV (1080p)
@@ -15567,8 +15405,6 @@ https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8
 https://rpn.bozztv.com/gusa/gusa-goldentv/index.m3u8
 #EXTINF:-1 group-title="待匹配未分组",Goldmines Bollywood (576p)
 https://mumt03.tangotv.in/GOLDMINESBOLLYWOOD/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Lgux6Ik.png" group-title="待匹配未分组",Golf Channel (1080p) [Not 24/7]
-https://tvpass.org/live/GolfChannel/hd
 #EXTINF:-1 group-title="待匹配未分组",GolfPass
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65493029ab052400089e9d2f/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=3fcf570e-8d80-4d11-89a4-ea0d1735ccc5
 #EXTINF:-1 tvg-logo="https://i.imgur.com/lA9UFMG.png" group-title="待匹配未分组",Gong (1080p)
@@ -15727,12 +15563,8 @@ https://stream.panet.com/edge/halaTV/playlist.m3u8
 https://mn-nl.mncdn.com/halabtoday/livestream/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xM0HA30.png" group-title="待匹配未分组",Halk TV (1080p)
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
-#EXTINF:-1 group-title="待匹配未分组",Hallmark Drama (720p) [Not 24/7]
-https://tvpass.org/live/HallmarkDrama/hd
 #EXTINF:-1 group-title="待匹配未分组",Hallmark Movies & More
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/628e685ba3811100070551a8/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=fc1da926-1c2b-44de-a80b-57f4b8693e04
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GPRGA9C.png" group-title="待匹配未分组",Hallmark Movies & Mysteries East (1080p) [Not 24/7]
-https://tvpass.org/live/HallmarkMoviesMysteriesEast/hd
 #EXTINF:-1 tvg-logo="https://i.imgur.com/HR3G3Ie.png" group-title="待匹配未分组",Hamaika Telebista (1080p)
 https://cdn3.wowza.com/1/RERMR282dnU5eE5Z/OHY0dVFs/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/JcD2xck/logo-hamda.png" group-title="待匹配未分组",Hamdard TV (1080p)
@@ -16753,8 +16585,6 @@ https://dvrfl04.tulix.tv/teleup-ktla/mpegts
 https://api.v3.invintus.com/StreamURI/persis/2147483647/KTOO360TV.stream/media.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/512px-Fox_Networks_Group_US_logo.svg.png" group-title="待匹配未分组",KTTV-DT1 (1080p)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-fox11losangeleskttv-vizious/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_KTV/images/LOGO_HD/image.png" group-title="待匹配未分组",KTV
-http://198.27.83.207:2550/KTV_SD/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/kG0d8Ay.png" group-title="待匹配未分组",KTV 1 (1080p)
 https://kwtktv1ta.cdn.mangomolo.com/ktv1/smil:ktv1.stream.smil/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/hB57mNh.png" group-title="待匹配未分组",KTV 2 (1080p)
@@ -17361,8 +17191,6 @@ https://2-fss-2.streamhoster.com/pl_138/200226-1359204-1/playlist.m3u8
 https://lifetv.mpks.sk/s.m3u8
 #EXTINF:-1 group-title="待匹配未分组",Lifetime Movie Favorites
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/63335b193583440007c859fb/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=fb7f5dc2-9da3-4070-8ee0-07a887fc6382
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/RZGmYyTt/lifetimemovies.png" group-title="待匹配未分组",Lifetime Movies East (720p) [Not 24/7]
-https://tvpass.org/live/LifetimeMoviesEast/hd
 #EXTINF:-1 group-title="待匹配未分组",LifevisionTV (406p) [Not 24/7]
 https://tgn.bozztv.com/lifevision/lifevision/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/S3Fbf8T.png" group-title="待匹配未分组",Light Channel (480p) [Not 24/7]
@@ -17571,8 +17399,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61c1e060197fe600073c1ffb/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ed502ec4-ffd0-49d1-b7de-1c00fad2906c&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=4b17a783-96a0-4d0d-9776-f967582b60fb
 #EXTINF:-1 group-title="待匹配未分组",Luksusfellen Sverige
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61c1e0f1d6d97900076ea16f/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ed502ec4-ffd0-49d1-b7de-1c00fad2906c&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=0c839627-15b3-4770-98dd-3f71488fd584
-#EXTINF:-1 group-title="待匹配未分组",Luksusfælden
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61c19b7785706b00072d421a/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=78b29450-7022-4485-b983-23f30e23925f&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=5ee3de83-ea0d-4353-b50a-6e4b1e620ae7
 #EXTINF:-1 tvg-logo="https://i.imgur.com/cESeD6R.png" group-title="待匹配未分组",Luna Estéreo 106.4 FM (720p) [Not 24/7]
 https://servervideo.intermediacolombia.com:19360/kychbbfhdz/kychbbfhdz.m3u8
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/ll/luna-tv-it.png" group-title="待匹配未分组",Luna TV
@@ -19527,8 +19353,6 @@ https://ms2.mx-cd.net/tv/272-2641704/Hoeksche_Waard_TV.smil/playlist.m3u8
 https://ms7.mx-cd.net/tv/280-2963002/Omroep_Hulst_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Pt2gXJ1.png" group-title="待匹配未分组",Omroep Land van Cuijk (720p)
 https://d3go236bg358u.cloudfront.net/nlpo/clr-nlpo/omroeplandvancuijk/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/FqyTFVN.png" group-title="待匹配未分组",Omroep Lingewaard (720p)
-https://highvolume02.streampartner.nl/omroeplingewaard_1/omroeplingewaard_1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/XtKLmQS.png" group-title="待匹配未分组",Omroep Súdwest (720p)
 https://d2ecwd3cgy6wo0.cloudfront.net/nlpo/clr-nlpo/omroepsudwest/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/PfvzX8N3/omroeptilburg.png" group-title="待匹配未分组",Omroep Tilburg (480p) [Not 24/7]
@@ -19699,10 +19523,6 @@ https://amg02333-pbs-amg02333c11-firetv-us-4242.playouts.now.amagi.tv/playlist.m
 https://amg02333-pbs-amg02333c13-samsung-au-6858.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/f4058a54-67b9-432c-b80e-3bfcf8d2d6d1-width200-quality90.jpeg" group-title="待匹配未分组",PFL MMA
 https://a883593c.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1BGTE1NQV9ITFM/playlist.m3u8
-#EXTINF:-1 group-title="待匹配未分组",PFL MMA
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65b8f9d4d77d450008a3ef8f/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ef438a77-24b9-40a1-9b9b-e24ca3052bea&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=05a9c6b3-61e9-4f87-ad1c-a3d27a63aa43
-#EXTINF:-1 group-title="待匹配未分组",PFL MMA
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65b8f87ac798e800085a123f/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ed502ec4-ffd0-49d1-b7de-1c00fad2906c&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=a029b9ab-7199-4f39-9757-f100bdb71289
 #EXTINF:-1 group-title="待匹配未分组",PFL MMA
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64f6180130ab3300083d896b/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=8ee99fa9-8924-42ef-bf8b-617216b5b280&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=f14592ee-d27a-4b84-ac66-3f15afdc0d97
 #EXTINF:-1 group-title="待匹配未分组",PFL MMA
@@ -20509,6 +20329,8 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/633ee9ba83c08f00076b60a6/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=8ee99fa9-8924-42ef-bf8b-617216b5b280&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=2f90e883-fa15-456c-922d-6fe8b1140763
 #EXTINF:-1 tvg-logo="https://i.imgur.com/rWpLepJ.png" group-title="待匹配未分组",Pluto TV Karaokê por Stingray
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/604b99d633a72b00078e05ad/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=8ee99fa9-8924-42ef-bf8b-617216b5b280&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=0714ce50-3b9e-48e7-a974-1cfe07db5a83
+#EXTINF:-1 group-title="待匹配未分组",Pluto TV Kauhu
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/66cd8d67f0f17500083252c0/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=7089727d-21c4-4175-9100-a14521359b66&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=a314d947-82c8-4e56-8389-001b11ed12b7
 #EXTINF:-1 group-title="待匹配未分组",Pluto TV Kids
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f1aab1d29b39600073e243f/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=13a07cf5-9cd9-48a5-8101-764fc4a1e908&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=8254ac5e-5422-4507-a9d8-1c559d6322e6
 #EXTINF:-1 group-title="待匹配未分组",Pluto TV Kids
@@ -20611,8 +20433,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/67d984408d8dc3d7754dccf2/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=ad3fafe9-681f-4fa8-9775-f4615a980df1
 #EXTINF:-1 group-title="待匹配未分组",Pluto TV Notti di Crimine
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6911c9b88caba6f046c5ca8f/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=3730278c-5efe-42f9-9d31-0f7a0c5d906d&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=9f300400-337b-4e0c-8acc-eee1d4403423
-#EXTINF:-1 group-title="待匹配未分组",Pluto TV Notti di Passione
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6911c9704316999535eb21cf/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=3730278c-5efe-42f9-9d31-0f7a0c5d906d&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=18c1145e-79dc-4aaf-8a97-781a0d38ab2b
 #EXTINF:-1 group-title="待匹配未分组",Pluto TV Novelas
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5dcde0cc2efd2700090b7ff4/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=610c8f98-68e8-48e7-9cc5-5dd3fefdcab5&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=e1fb2941-23af-433b-9599-9fb71d9986c1
 #EXTINF:-1 tvg-logo="https://i.imgur.com/R44LypS.png" group-title="待匹配未分组",Pluto TV Novelas
@@ -21019,8 +20839,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/68c017fcf89c82a68b08329b/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=7089727d-21c4-4175-9100-a14521359b66&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=3bbbb3fa-ba7e-4296-b062-a3c76560d0db
 #EXTINF:-1 group-title="待匹配未分组",Pluto TV Wildest Adventures
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65f0166566eec80008b96f7e/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=07998d5d-dd4a-4bcc-84be-58dcbcec76b7&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=1cfebe25-f6e8-4b7a-b015-d1feeab721f4
-#EXTINF:-1 group-title="待匹配未分组",Pluto TV Zombies
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65786888b228b7000843ad9a/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=13a07cf5-9cd9-48a5-8101-764fc4a1e908&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=7e849efb-7c1e-410e-94d5-b353aaeb134c
 #EXTINF:-1 group-title="待匹配未分组",Pluto TV heiße Nächte
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64526a145a0cd50008632bfa/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=6dc7a065-80d3-4a76-9aff-a8bd055cda21
 #EXTINF:-1 group-title="待匹配未分组",Pluto TV heiße Nächte
@@ -21441,12 +21259,8 @@ https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S27134503/0f9AhuwKlhnZ/p
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist_video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/EBftMcB.png" group-title="待匹配未分组",RTL 102.5 Traffic (1080p)
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist_video.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/tTnLXCLK/rtlcrime.png" group-title="待匹配未分组",RTL Crime (1080p)
-http://c3921155.edmonst.net/iptv/65C7UBRRW8GHQVYPH2MQT3SA/15178/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/LzHQoUv.png" group-title="待匹配未分组",RTL Gold (1080p)
 https://stream.rtl.lu/data/live/tele/rtlgold/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/RTL_Passion_Logo_2021.svg/512px-RTL_Passion_Logo_2021.svg.png" group-title="待匹配未分组",RTL Passion (1080p)
-http://c3921155.edmonst.net/iptv/65C7UBRRW8GHQVYPH2MQT3SA/31369/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/qyc8LsE.png" group-title="待匹配未分组",RTL Radio Web TV (1080p)
 https://rtlradio-streaming.rtl.lu/rtlradiowebtv/smil:rtlradiowebtv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/O1c6wpt.png" group-title="待匹配未分组",RTL Today Radio (720p)
@@ -23097,8 +22911,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65cb73d33ba51e00084cabad/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=3730278c-5efe-42f9-9d31-0f7a0c5d906d&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=b6c5f541-683a-42a4-827e-0a63bffb36c9
 #EXTINF:-1 group-title="待匹配未分组",Star Trek: Voyager
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6690fcb7d51259000880d479/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=e0192389-0469-4e9c-8fe5-9be77598a2f7
-#EXTINF:-1 tvg-logo="https://i.imgur.com/dZtJHAe.png" group-title="待匹配未分组",Star Vijay
-http://198.27.83.207:8888/STAR_VIJAY_SD/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xWxNy3L.png" group-title="待匹配未分组",StarPlus (576p)
 http://103.229.254.25:7001/play/a09p/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xWxNy3L.png" group-title="待匹配未分组",StarPlus HD (1080p)
@@ -23111,8 +22923,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/4PrPG5j/Start-TV-Corfu-Radio-100-1-www-startmedia-gr-1.jpg" group-title="待匹配未分组",Start TV (480p)
 https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/N7oSm4d.png" group-title="待匹配未分组",Starz East (1080p) [Not 24/7]
-https://tvpass.org/live/StarzEast/hd
 #EXTINF:-1 group-title="待匹配未分组",StashTV Black Stories (720p) [Geo-blocked]
 https://amg01720-amg01720c1-klowdtv-us-4664.playouts.now.amagi.tv/playlist/amg01720-filmhub-stashtvblackstories-klowdtvus/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",StashTV The Classics (720p) [Geo-blocked]
@@ -23959,8 +23769,6 @@ https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist
 http://fms.tvavicenza.it:1935/live/diretta_1/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",TVB千禧经典
 http://php.jdshipin.com/TVOD/iptv.php?id=tvbc
-#EXTINF:-1 group-title="待匹配未分组",TVB千禧经典
-http://php.jdshipin.com/PLTV/iptv.php?id=tvbc
 #EXTINF:-1 group-title="待匹配未分组",TVB千禧经典
 http://iptv.4666888.xyz/iptv2A.php?id=22
 #EXTINF:-1 group-title="待匹配未分组",TVB无线新闻
@@ -25248,21 +25056,13 @@ https://unlimited2-cl-isp.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",UEFA Champions League
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65ea8b928145cb0008509426/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=c83aaae4-b7a8-4127-ae41-0b5fd27ac4f2
 #EXTINF:-1 group-title="待匹配未分组",UFC
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6792066f3de7c8cf941e7ce3/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ef438a77-24b9-40a1-9b9b-e24ca3052bea&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=f5e6719f-6302-4119-b902-238fe56e0c60
-#EXTINF:-1 group-title="待匹配未分组",UFC
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/67921b78b83355184c667770/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=af957bbe-0438-4805-a305-7c8656f00195&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=13bf2971-cb64-4480-988d-4ae4b811197c
-#EXTINF:-1 group-title="待匹配未分组",UFC
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/66ed3e9d5e4a6e0008b346e0/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=07998d5d-dd4a-4bcc-84be-58dcbcec76b7&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=82f0d2df-d2f9-4b28-b814-e78625e3c9d3
 #EXTINF:-1 group-title="待匹配未分组",UFC
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/677d9adfa9a51b0008497fa0/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=affbdbfa-5fa3-48af-8369-57c005daef42&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=74dcd940-fdb3-4191-9531-8ada799787b1
 #EXTINF:-1 group-title="待匹配未分组",UFC
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/67920729f5c74bff956bc135/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=7089727d-21c4-4175-9100-a14521359b66&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=7433bc09-8850-4b31-8260-55bb9d50eb64
 #EXTINF:-1 group-title="待匹配未分组",UFC
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/66ed3eb27358ce000830df49/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=32de4823-7501-4845-ba26-8699462954dd&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=4cc74e7e-378a-402c-90ce-2ea3e3ad369c
-#EXTINF:-1 group-title="待匹配未分组",UFC
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/679205a13de7c8cf941e7857/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ed502ec4-ffd0-49d1-b7de-1c00fad2906c&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=33c38b47-490b-4c6e-8bd4-56e589c103ce
-#EXTINF:-1 group-title="待匹配未分组",UFC
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/679203d4bc03978b9b4b79a6/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=3730278c-5efe-42f9-9d31-0f7a0c5d906d&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=16f02c96-fffe-42e8-b1eb-6fc31d3af363
 #EXTINF:-1 group-title="待匹配未分组",UFC
 https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8
 #EXTINF:-1 group-title="待匹配未分组",UFC
@@ -25851,8 +25651,6 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-fox29philadelphiaw
 https://video1.getstreamhosting.com:1936/8152/8152/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/l4qHAq6.png" group-title="待匹配未分组",WWON TV CH 48
 https://tv2.fastcast4u.com:3943/stream/play.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/MyNetworkTV_2D_Logo.svg/512px-MyNetworkTV_2D_Logo.svg.png" group-title="待匹配未分组",WWOR-DT1
-http://37c18028.akadatel.com/iptv/T6XNCP6L7LLKPD/1088/mpegts
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Qs4szHD.png" group-title="待匹配未分组",WWXY-DT1 (Boricua TV) (1080p)
 https://2-fss-2.streamhoster.com/pl_138/amlst:201284-1347630/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/lAhIGsI.png" group-title="待匹配未分组",WWXY-DT3 (Maranatha Radio Ministries) (720p) [Not 24/7]
@@ -25939,8 +25737,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 https://stream.badinan.xyz/welat/tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DLXssJe.png" group-title="待匹配未分组",Welt der Wunder TV (576p)
 https://wdw.iptv-playoutcenter.de/wdw/wdw1/playlist.m3u8
-#EXTINF:-1 group-title="待匹配未分组",Wentworth
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/67ebc104f7c5d70b90368360/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=0b2ea879-92ee-4c22-9bc3-88bb5663dea7
 #EXTINF:-1 group-title="待匹配未分组",Wer ist hier der Boss?
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/609539fa709d6b0007b19887/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=62b227dc-b436-4646-95c2-26345773df69&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=c37f4d5a-405b-4298-87c2-89a51436ed73
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Uv8RWks.png" group-title="待匹配未分组",Wesal TV (720p) [Not 24/7]
