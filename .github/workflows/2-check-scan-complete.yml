@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+
 jobs:
   wait-for-scan:
     runs-on: ubuntu-latest
@@ -24,11 +25,6 @@ jobs:
         with:
           fetch-depth: 0
 
-     # - name: Reset to origin/main
-     #   run: |
-     #     git fetch origin main
-     #     git reset --hard origin/main
-          
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
@@ -69,6 +65,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Reset to origin/main
         run: |
           git fetch origin main
@@ -82,68 +79,41 @@ jobs:
       - name: Run merge hash script
         run: python scripts/7.1_merge_hash.py
 
-      - name: Cleanup hash-merge files (14 days × 4 per day)
-
+      # ✅ 修改为严格 14 天时间窗口
+      - name: Cleanup hash-merge files (strict 14-day window)
         run: |
           set -e
+
           folder="output/hash/merge"
           keep_days=14
-          keep_per_day=4
 
           if [ ! -d "$folder" ]; then
             echo "Folder not found: $folder"
             exit 0
           fi
 
-          files=($(ls -1 "$folder"/*-hash-merge.json 2>/dev/null | sort))
-          total=${#files[@]}
-          echo "Total hash-merge files: $total"
+          # 计算 14 天前的日期（UTC）
+          cutoff=$(date -u -d "$keep_days days ago" +"%y%m%d")
+          echo "Cutoff date (keep >=): $cutoff"
 
-          if [ "$total" -le $((keep_days * keep_per_day)) ]; then
-            echo "No cleanup needed."
-            exit 0
-          fi
+          deleted=0
 
-          declare -A day_count
-          declare -A day_seen
-          kept=()
-          deleted=()
+          for file in "$folder"/*-hash-merge.json; do
+            [ -e "$file" ] || continue
 
-          # 倒序遍历文件列表（新 → 旧）
-          for ((i=${#files[@]}-1; i>=0; i--)); do
-            file="${files[$i]}"
             name=$(basename "$file")
-            day="${name:0:6}"  # 文件名前6位 YYMMDD
+            file_date="${name:0:6}"
 
-            if [ -z "${day_seen[$day]+x}" ]; then
-              day_seen[$day]=1
+            if [[ "$file_date" < "$cutoff" ]]; then
+              echo "DELETE $file"
+              rm -f "$file"
+              deleted=$((deleted + 1))
+            else
+              echo "KEEP   $file"
             fi
-
-            if [ "${#day_seen[@]}" -gt "$keep_days" ]; then
-              deleted+=("$file")
-              continue
-            fi
-
-            count=${day_count[$day]:-0}
-            if [ "$count" -ge "$keep_per_day" ]; then
-              deleted+=("$file")
-              continue
-            fi
-
-            day_count[$day]=$((count + 1))
-            kept+=("$file")
           done
 
-          echo "Kept files:"
-          for f in "${kept[@]}"; do
-            echo "  KEEP $f"
-          done
-
-          echo "Deleting ${#deleted[@]} old files..."
-          for f in "${deleted[@]}"; do
-            echo "  DELETE $f"
-            rm -f "$f"
-          done
+          echo "Deleted files count: $deleted"
 
       - name: Run merge deep scan csv script
         run: python scripts/7.2_merge_deep_scan.py
@@ -164,8 +134,6 @@ jobs:
           fi
 
           git commit -m "Merge scan results $(date '+%Y-%m-%d %H:%M:%S')"
-
-          #git pull --rebase origin main
           git push origin main
 
       - name: Wait 10 seconds
@@ -178,15 +146,18 @@ jobs:
       PUSH_TOKEN: ${{ secrets.PUSH_TOKEN1 }}
       REPO_OWNER: niuinyang
       REPO_NAME: niuin-s-iptv
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Reset to origin/main
         run: |
           git fetch origin main
           git reset --hard origin/main
+
       - name: Delete scan_chunk workflow files only
         run: |
           FILES_SCAN_CHUNK=$(find .github/workflows -type f -name "scan_chunk*.yml" || true)
@@ -196,12 +167,15 @@ jobs:
           fi
           echo "Deleting files:"
           echo "$FILES_SCAN_CHUNK"
+
           git rm $FILES_SCAN_CHUNK || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit -m "Delete scan_chunk workflow files" || echo "No changes to commit"
+
           git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git
           git pull --rebase origin main
           git push origin main
+
       - name: Wait 10 seconds
         run: sleep 10
