@@ -40,9 +40,9 @@ OWN_SOURCE_ENABLED_DXL = {
     '济南联通单播': True,
     '济南电信单播': True,
     '济南电信组播': True,
-    '青岛联通单播': True,
-    '山东移动单播': True,
-    '上海移动单播': True,
+    '青岛联通单播': False,
+    '山东移动单播': False,
+    '上海移动单播': False,
 }
 OWN_SOURCE_PRIORITY_DXL = {
     '济南联通单播': 0,
