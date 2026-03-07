@@ -1,0 +1,140 @@
+{
+  "http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8": {
+    "phash": [
+      "c111beeec45879a9",
+      "c6180d6fd8a795c6",
+      "fac1c99a921be463",
+      "ee8392aa585cadca",
+      "e7c98ab1b65ac06c",
+      "df83f87ce1880e16"
+    ],
+    "ahash": [
+      "ff6f084860e0ffff",
+      "50d0fcfcf4e0e0f0",
+      "fdf8e004048781e1",
+      "fd74f8f0f1c1c0c0",
+      "fffff8e0c3c00080",
+      "ffff7f7c00000000"
+    ],
+    "dhash": [
+      "c08a9aaaeae240c4",
+      "b0908088444c4cc0",
+      "590a463d1d15190a",
+      "e9c9623223070100",
+      "4942404d4e5a0b0b",
+      "104060504c203117"
+    ],
+    "whash": [
+      "fe4e08406060feff",
+      "70d0f4fcf4e0e0f0",
+      "fffae00c058784f1",
+      "fcf4f8f0f1c1c0c0",
+      "fffff8e0a3c40080",
+      "ffffff7c80800080"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.19700609099999,
+      "avg_fetch_time": 4.199501015166665,
+      "success_count": 6
+    }
+  },
+  "http://120.76.248.139/live/bfgd/4200000095.m3u8": {
+    "phash": [
+      "90b6cf91aa0e546f",
+      "9ea479f9d3204965",
+      "bb1e246bd029de70",
+      "b01434dfb49fb00f",
+      "b06c4c331e9fd919",
+      "e9558542fbd0c539"
+    ],
+    "ahash": [
+      "ff7f04044f5c3878",
+      "3f1f3f3f3e1c1808",
+      "0103073fffffc3ff",
+      "0603030f7fffffc3",
+      "10c0438f0eceeece",
+      "f0e3eb88e17171fb"
+    ],
+    "dhash": [
+      "e6dc94ad99d8e0e1",
+      "646666ececfaf479",
+      "3f7e7c69995b1794",
+      "3ebebfbcaa99579f",
+      "32a7967c9c9c0cac",
+      "d646921b59c38393"
+    ],
+    "whash": [
+      "7f7f04044f5c3878",
+      "3f1f373f3e1c1008",
+      "00000707fdffc3f7",
+      "0200011f7ffdfbc3",
+      "1041439706cfeefe",
+      "f0a26b88e17171f3"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.724219372999954,
+      "avg_fetch_time": 4.287369895499992,
+      "success_count": 6
+    }
+  },
+  "http://124.116.183.146:9901/tsfile/live/0143_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 56.90933102899996,
+      "avg_fetch_time": 11.38186620579999,
+      "success_count": 5
+    }
+  }
+}
