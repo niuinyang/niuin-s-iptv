@@ -1,0 +1,5798 @@
+{
+  "http://drive.mxmy.net:8888/udp/239.3.1.188:8001": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[http @ 0x55fa591604c0] Stream ends prematurely at 21056, should be 18446744073709551615\n    Last message repeated 1 times\n[mpegts @ 0x55fa5915fec0] PES packet size mismatch\n[mpegts @ 0x55fa5915fec0] Packet corrupt (stream = 0, dts = 3184406280).\n[http @ 0x55fa591604c0] Stream ends prematurely at 21056, should be 18446744073709551615\n[mpegts @ 0x55fa5915fec0] PES packet size mismatch\n[mpegts @ 0x55fa5915fec0] Packet corrupt (stream = 0, dts = 3184406280).\n[in#0/mpegts @ 0x55fa5915fdc0] could not seek to position 35384.292\nInput #0, mpegts, from 'http://drive.mxmy.net:8888/udp/239.3.1.188:8001':\n  Duration: N/A, start: 35382.292000, bitrate: 256 kb/s\n  Stream #0:0[0x23]: Audio: mp3, 48000 Hz, stereo, fltp, 256 kb/s\nOutput #0, image2pipe, to 'pipe:':\n[out#0/image2pipe @ 0x55fa59171940] Output file does not contain any stream\nError opening output file -.\nError opening output files: Invalid argument"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzMjNfMF8z_b_B00b069c7899976459ceeaa99353dfefe.mp4": {
+    "phash": [
+      "852e2c6c7e286ef8",
+      "9c9c3b3b9220e33b",
+      "cfb7689a92812b6a",
+      "8b19f4782bd46b26",
+      "807b7e858972768d",
+      "d0632d0b1b78b667"
+    ],
+    "ahash": [
+      "011f3f3f7c787f7e",
+      "1e1e3e1e1e000000",
+      "bdba3e3e3c387830",
+      "0018383809f9fff7",
+      "4101001c7f76ff00",
+      "0060e0dcfcfef01f"
+    ],
+    "dhash": [
+      "e7f6f0f0f0f0d0f0",
+      "b8b0f0b439d91d4d",
+      "7966647c78f0d0d0",
+      "33f1e1f1731b27c7",
+      "8f336df0b2ccb2f0",
+      "c3c004188088a4be"
+    ],
+    "whash": [
+      "01173f3e3c383e3c",
+      "1e1e3e5f1fcd00e0",
+      "bc3a3e3e3c387830",
+      "0018383829f9fff7",
+      "c701003cff7eff00",
+      "0060e0ecfcfef01f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.334393128000045,
+      "avg_fetch_time": 1.5557321880000075,
+      "success_count": 6
+    }
+  },
+  "https://0472.org/hls/cgtna.m3u8": {
+    "phash": [
+      "d75623a7207878b9",
+      "970f1b6270916d97",
+      "970f1b6270916d97",
+      "970f1b6270916d97",
+      "ff2c18bc464b4497",
+      "ff2c18bc464b4497"
+    ],
+    "ahash": [
+      "00a0e0d0ffffffff",
+      "0c3c3efefcd01e1e",
+      "0c3c3efefcd01e1e",
+      "0c3c3efefcd01e1e",
+      "808ea6a0b7aeac9c",
+      "808ea6a0b7aeac9c"
+    ],
+    "dhash": [
+      "4868501428685a10",
+      "686a6af8c4303cb8",
+      "686a6af8c4303cb8",
+      "686a6af8c4303cb8",
+      "391e4a4b4c585978",
+      "391e4a4b4c585978"
+    ],
+    "whash": [
+      "00a0a080ffffffe0",
+      "0c3c3efefc900e0e",
+      "0c3c3efefc900e0e",
+      "0c3c3efefc900e0e",
+      "808eaea0b7beac9c",
+      "808eaea0b7beac9c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.365181344000064,
+      "avg_fetch_time": 1.7275302240000106,
+      "success_count": 6
+    }
+  },
+  "http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8": {
+    "phash": [
+      "d6e25808f7c17ec1",
+      "d6e07838e7c179c1",
+      "d6e05a38e7c179c1",
+      "d6e47809e7c179c1",
+      "d6e47809e7c179c1",
+      "d6e47809e7c179c1"
+    ],
+    "ahash": [
+      "f0f0f2f636161696",
+      "f0f0f2b6b6161696",
+      "f0f0f2f636161696",
+      "f0f0f2f6b6161696",
+      "f0f0f2f6b6161696",
+      "f0f0f2f6b6161696"
+    ],
+    "dhash": [
+      "2464444446243434",
+      "2464444446343474",
+      "2444444446342464",
+      "2464444446742424",
+      "2464444446742424",
+      "2464444446742424"
+    ],
+    "whash": [
+      "f0f0f2f6b6141496",
+      "f0f0f2b6b6161496",
+      "f0f0f2f6b6141496",
+      "f0f0f2b6b6161496",
+      "f0f0f2b6b6161496",
+      "f0f0f2b6b6161496"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.548605185000042,
+      "avg_fetch_time": 2.591434197500007,
+      "success_count": 6
+    }
+  },
+  "http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3": {
+    "phash": [
+      "d263751e494e565a",
+      "9ab560377e3c0e46",
+      "9dabc702f3522aa6",
+      "853bc50ef45b2f84",
+      "853bc50ef45b2f84",
+      "9dabc406f15b2b86"
+    ],
+    "ahash": [
+      "04eefc7c7c3e9ccc",
+      "87cf1f9f0f3f3c38",
+      "fbdb9bc8c3107efe",
+      "fbcb8bc8d3007efe",
+      "fbcb8bc8d3007efe",
+      "fbdb9bc8c3007efe"
+    ],
+    "dhash": [
+      "c888ccd0f97c3c98",
+      "1d99343c6ce9f1e1",
+      "92b2339a9eb3e42e",
+      "d2b2339aa6e3f486",
+      "d2b2339aa6e3f486",
+      "d2b2339a9efbe4a6"
+    ],
+    "whash": [
+      "04cefc7c3c3e1c4c",
+      "87cf1f0f0f3d3810",
+      "b99b8bc8c3107cb6",
+      "a91b8b88d3007efe",
+      "a91b8b88d3007efe",
+      "f99b8b8883007cfe"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.59183972400001,
+      "avg_fetch_time": 3.5986399540000016,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/14/23/BMjAyMzAxMTQyMzQxNDdfNDAzMDAxOTlfOTM2MTU0MTk1NDFfMF8z_b_B182749d2cd2ea9323639254af385f24b.mp4": {
+    "phash": [
+      "959ec93e25624bb4",
+      "943fcd3c63c31ae0",
+      "843a6e996c366769",
+      "c09b9f8c37684967",
+      "c53c0fc2f0bc1be1",
+      "95c46bf096994a1f"
+    ],
+    "ahash": [
+      "3e7e7e7e3e3c7e7a",
+      "3e3e7e7e7e7e7e7e",
+      "7e7e767e7e7e7e76",
+      "7e7e786672525244",
+      "3a32365e6e2c303a",
+      "6e667e7e7e664a08"
+    ],
+    "dhash": [
+      "f4f4d4c4ece8d4d2",
+      "d8e4dcccccecd4d4",
+      "e4dcccccd4ccc4c4",
+      "f890888c84b6968c",
+      "e6e6c696ccc8c4d2",
+      "d4d4c4dcdcd49aaa"
+    ],
+    "whash": [
+      "1c1e7c26163c7a7a",
+      "103e3c26461e7e7e",
+      "103462067e7e7e76",
+      "7e7e6c6662525264",
+      "3a22325e7e2c723e",
+      "66627e7e7e664a00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.401694785000018,
+      "avg_fetch_time": 1.4002824641666696,
+      "success_count": 6
+    }
+  },
+  "http://play.jinnantv.top/live/JNTV1.m3u8": {
+    "phash": [
+      "82b86d4c3bf31e29",
+      "c4f02c1c7bac592f",
+      "93914c6c3e766327",
+      "9499696566e64c4f",
+      "c4f84b6f3c864b43",
+      "c4f84b6f3c864b43"
+    ],
+    "ahash": [
+      "00ff7f6f793c6000",
+      "00fffffe3c3e3300",
+      "003f2faf0f000000",
+      "000f1f1f06105000",
+      "00ffffff00003800",
+      "00ffffff00003800"
+    ],
+    "dhash": [
+      "a8b2ecc8b360c291",
+      "a8b0c0d8e0f0e667",
+      "b0f8d84c4ec8685c",
+      "b8b8bcbcacb0a4ec",
+      "a0c0e02c24e0c0c0",
+      "a0c0e02c24e0c0c0"
+    ],
+    "whash": [
+      "007f7f3f793c7000",
+      "007ffefe383c3300",
+      "003f7fbfaf283c00",
+      "001f1f1f1fdcfe00",
+      "00ffffff90207c00",
+      "00ffffff90207c00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.142101835000005,
+      "avg_fetch_time": 2.8570169725000008,
+      "success_count": 6
+    }
+  },
+  "http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8": {
+    "phash": [
+      "d7e42a6d28b42f62",
+      "ce67392c73884e95",
+      "d99c0cce0e9999cb",
+      "f7e6200e99913b33",
+      "d54f3130783c87c7",
+      "d5f1c2907c72c43e"
+    ],
+    "ahash": [
+      "0038fefefefe3800",
+      "e0e0b0b0b0f0dfdc",
+      "1818fcfefefc0000",
+      "20e6e7ffff800000",
+      "00383c3cfe3e00de",
+      "fffe7e809e7e0400"
+    ],
+    "dhash": [
+      "4040606060604060",
+      "0940606064a1b398",
+      "34745a5848606060",
+      "4c444ccc6061cc70",
+      "b46060e0d0fc9414",
+      "8c8ac63636aaccf0"
+    ],
+    "whash": [
+      "0030fefefefe1800",
+      "e0a0b0b0f0f8dfdc",
+      "181cfefefefc0000",
+      "20e6e7ffffb80000",
+      "0038387efefe04e6",
+      "fffe7e801e7e0000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 32.12384566500003,
+      "avg_fetch_time": 5.353974277500005,
+      "success_count": 6
+    }
+  },
+  "https://gcalic.v.myalicdn.com/gc/wgw01_1/index.m3u8?contentid=2820180516001": {
+    "phash": [
+      "c0c0badfa788077b",
+      "c0c0bed7a788077b",
+      "c0c0bed7a788077b",
+      "c0c0bad7a788077f",
+      "c0c0bad7a788077f",
+      "c0c0badfa788077b"
+    ],
+    "ahash": [
+      "ffff787be0000001",
+      "ffff787be0000001",
+      "ffff787be0000001",
+      "ffff787be0000001",
+      "ffff787be0000001",
+      "ffff787be0000001"
+    ],
+    "dhash": [
+      "e09881e60ec0ba3e",
+      "e098a1e60ec0ba3e",
+      "e098a1e60ec0ba3e",
+      "e098a1e60ec0ba3e",
+      "e098a1e60ec0ba3e",
+      "e09881e60ec0ba2e"
+    ],
+    "whash": [
+      "ffff7c7be0000003",
+      "ffff7c7be0000003",
+      "ffff7c7be0000003",
+      "ffff7c7be0000003",
+      "ffff7c7be0000003",
+      "ffff7c7be0000003"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 33.52287103299989,
+      "avg_fetch_time": 5.587145172166648,
+      "success_count": 6
+    }
+  },
+  "https://vd3.bdstatic.com/mda-rkaittm5s06vzzyq/sc/cae_h264/1762869883709304452/mda-rkaittm5s06vzzyq.mp4": {
+    "phash": [
+      "8ef8bc2ce0acb952",
+      "8ef8bc2ce0acb952",
+      "8ef8bc2ce0acb952",
+      "8ef8bc2ce0acb952",
+      "8ef8bc2ce0acb952",
+      "8ef8bc2ce0acb952"
+    ],
+    "ahash": [
+      "d31bbf3901131f0f",
+      "d31bbf3901131f0f",
+      "d31bbf3901131f0f",
+      "d31bbf3901131f0f",
+      "d31bbf3901131f0f",
+      "d31bbf3901131f0f"
+    ],
+    "dhash": [
+      "27367bd3e977f7fb",
+      "27367bd3e177f7fb",
+      "27367bd3e177f7fb",
+      "27367bd3e97777fb",
+      "27367bd3e17777fb",
+      "27367bd3e177f7fb"
+    ],
+    "whash": [
+      "d75b073901131f1f",
+      "d75b073901131f1f",
+      "d75b073901131f1f",
+      "d75b073901131f1f",
+      "d75b073901131f1f",
+      "d75b073901131f1f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.516855193000026,
+      "avg_fetch_time": 2.086142532166671,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8": {
+    "phash": [
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c"
+    ],
+    "ahash": [
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9"
+    ],
+    "dhash": [
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383"
+    ],
+    "whash": [
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 0,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 29.149847835999992,
+      "avg_fetch_time": 3.238871981777777,
+      "success_count": 9
+    }
+  },
+  "http://218.31.201.189:9000/api/material/local/mnt/shiping1/prog_index.m3u8": {
+    "phash": [
+      "9494636979fb4907",
+      "c2987967365b3919",
+      "8ae070da555b4f0f",
+      "8d5270ad58ad4e8f",
+      "8d5270ad58ad4e8f",
+      "c9273478769833c7"
+    ],
+    "ahash": [
+      "007e3e1e7ffe7e00",
+      "007c7c3c3c3c3800",
+      "00e77f7f7fbd9900",
+      "00043c3c3e1b1b00",
+      "00043c3c3e1b1b00",
+      "0079797978797900"
+    ],
+    "dhash": [
+      "94ece4bce6b0e4c4",
+      "82b0f9e9e5414016",
+      "8c8ce8f0f0717129",
+      "94e8e8f0f2f2f20a",
+      "94e8e8f0f2f2f20a",
+      "82f3e3d3eab3b3ea"
+    ],
+    "whash": [
+      "00763e1e7e7e7e00",
+      "007f7f7c3c3c7c00",
+      "00677f3f7e399900",
+      "403c3e3e3f3f1f00",
+      "403c3e3e3f3f1f00",
+      "00737b7b78797d00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.03900821899998,
+      "avg_fetch_time": 5.173168036499997,
+      "success_count": 6
+    }
+  },
+  "https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8": {
+    "phash": [
+      "cb98746472b3270f",
+      "986261cc76919f4f",
+      "f87860f05b8d270f",
+      "d0e8e0f079d5c60f",
+      "ded818036dcc936b",
+      "876ec8586ccf9827"
+    ],
+    "ahash": [
+      "40183c3c3c383800",
+      "c0581c1c3c3c1c00",
+      "c0c101988cf75b80",
+      "c0f838180c765680",
+      "fcfcfcf8200c0000",
+      "00202602063f7f7f"
+    ],
+    "dhash": [
+      "b0b0f8e9e9e2b2a1",
+      "96b3717869b0b212",
+      "979361313984b611",
+      "9a9261b2b9a4a413",
+      "b038382649ccecd2",
+      "b34c4c4456f8dcdc"
+    ],
+    "whash": [
+      "5c1c3c3d3c7a7870",
+      "c2591cbe3d7e5e00",
+      "c1c1819d9cff5f80",
+      "e0f8b8585c7ed6c0",
+      "fcfcfcfa302e0600",
+      "00202606173fffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 40.248410820999936,
+      "avg_fetch_time": 6.708068470166656,
+      "success_count": 6
+    }
+  },
+  "http://live.sfrmt.com:85/live/zhpd.m3u8?zsicd": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://222.169.85.8:9901/tsfile/live/0116_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8": {
+    "phash": [
+      "be968128d177ab1c",
+      "da93d7aac454aa70",
+      "96de59b09455ae45",
+      "cac5d5a83656ab70",
+      "cac5d5a83656ab70",
+      "9bc4542ac555ab76"
+    ],
+    "ahash": [
+      "ff9f8f840d01000e",
+      "fcfc4c56c1810008",
+      "9f1d3e1e47070620",
+      "f878783459191c06",
+      "f878783459191c06",
+      "d8143e3e1b090ccc"
+    ],
+    "dhash": [
+      "b82c2d4c353f1cf8",
+      "a8d898aead391d48",
+      "383965ac8d9ddccc",
+      "e2e2d4ecb1b1b9dc",
+      "e2e2d4ecb1b1b9dc",
+      "a0a45456735b3928"
+    ],
+    "whash": [
+      "ffbf9f840f03000e",
+      "fefe5cd7c18100a8",
+      "9f1d1f1f47470624",
+      "f8787a345d1d1c0e",
+      "f8787a345d1d1c0e",
+      "d8143e3f3b090cde"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 40.98263097800003,
+      "avg_fetch_time": 6.830438496333339,
+      "success_count": 6
+    }
+  },
+  "http://112.46.85.60:8009/hls/502/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 10.969869210000013,
+      "avg_fetch_time": 10.969869210000013,
+      "success_count": 1
+    }
+  },
+  "http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8": {
+    "phash": [
+      "d72c2a652a96297b",
+      "cf73986eb16a1588",
+      "d9dc0cc60e9999cb",
+      "f7e6200e99913b33",
+      "974e6531f0383ec6",
+      "95e1c28038fbf6b4"
+    ],
+    "ahash": [
+      "0038fefefefe3800",
+      "e0e0e0e0a0b0b99f",
+      "1818fcfefefc0000",
+      "e0e6e7ffffb00000",
+      "003c3c1eff0e060f",
+      "ff7fff0a1f3e0000"
+    ],
+    "dhash": [
+      "4040406060404040",
+      "4940404840652332",
+      "34345a5848606060",
+      "4c444ccc6061cc50",
+      "f06060f0f87c7c3c",
+      "8cca8e32b6aae874"
+    ],
+    "whash": [
+      "0010fefefefe3800",
+      "e0e0f0e0b0b0f9df",
+      "1838fefefefc0000",
+      "a0e6e7ffffa80000",
+      "003c3e3f7f0f0e0e",
+      "ff7eff001f3e0000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.114633620000063,
+      "avg_fetch_time": 3.6857722700000104,
+      "success_count": 6
+    }
+  },
+  "http://36.32.174.67:60080/newlive/live/hls/24/live.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 12.209611831000018,
+      "avg_fetch_time": 6.104805915500009,
+      "success_count": 2
+    }
+  },
+  "http://124.116.183.146:9901/tsfile/live/0135_1.m3u8": {
+    "phash": [
+      "a8cf32f3899ccc8c",
+      "c8cc3fbbd8e502e0",
+      "eb4e11a65e982673",
+      "d98c1e61936f232d",
+      "d98c1a63136d332f",
+      "eb4e11a65e982673"
+    ],
+    "ahash": [
+      "a1e1f1f9f9c30303",
+      "fd1470f8fd210301",
+      "00081899e3e3cb08",
+      "5a181a5ac3c3c20c",
+      "5a181a5ac3c3c20c",
+      "00081899e3e3cb08"
+    ],
+    "dhash": [
+      "434b63335313b7b3",
+      "b169c59191d9de9b",
+      "382971336f0f9a9a",
+      "b2b2b29296961694",
+      "b2b2b29296969694",
+      "382971336f0f9a9a"
+    ],
+    "whash": [
+      "a1e1f1f9f9c30303",
+      "fd1570f97d2d0301",
+      "0018b9bbe7e3cb0b",
+      "5b5a5adac3c3c20e",
+      "5b5a5adac3c3c20e",
+      "0018b9bbe7e3cb0b"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 46.76638481700002,
+      "avg_fetch_time": 7.7943974695000025,
+      "success_count": 6
+    }
+  },
+  "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8": {
+    "phash": [
+      "87d97ab709491936",
+      "e999336ab5127649",
+      "e999336ab5117649",
+      "e999336ab1127659",
+      "ff93a0c88b8e9cd0",
+      "ff93a0c88b8e9cd0"
+    ],
+    "ahash": [
+      "3f3f3f3b27373727",
+      "e9f9f8fef0e0e0e0",
+      "e9f9f8fef0e0e0e0",
+      "e9f9f8fef0f0e0e0",
+      "ffefaead80808080",
+      "ffefaead80808080"
+    ],
+    "dhash": [
+      "636ceaeaccececed",
+      "cbc38382c3c5838a",
+      "cbc383828385038a",
+      "cbc38382c385838a",
+      "cbcc6c795117274e",
+      "cbcc6c795117274e"
+    ],
+    "whash": [
+      "3f363e3927272624",
+      "e0f9f8f8f0e0e0e0",
+      "e0f9f8f8f0e0e0e0",
+      "e0f9f8f8f0e0e0e0",
+      "ffefafada8808080",
+      "ffefafada8808080"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.85304649400007,
+      "avg_fetch_time": 4.142174415666678,
+      "success_count": 6
+    }
+  },
+  "https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd": {
+    "phash": [
+      "e2cd92326de7982c",
+      "e2cd92326de7982c",
+      "e2cd92326de7982c",
+      "e2cd92326de7982c",
+      "e2cd92326de7982c",
+      "e2cd92326de7982c"
+    ],
+    "ahash": [
+      "ffdff3e383cfe7bd",
+      "ffdff3e383cfe7bd",
+      "ffdff3e383cfe7bd",
+      "ffdff3e383cfe7bd",
+      "ffdff3e383cfe7bd",
+      "ffdff3e383cfe7bd"
+    ],
+    "dhash": [
+      "69b2d646b6994d71",
+      "69b2d646b6994d71",
+      "69b2d646b6994d71",
+      "69b2d646b6994d71",
+      "69b2d646b6994d71",
+      "69b2d646b6994d71"
+    ],
+    "whash": [
+      "3c5a62e3424ee73c",
+      "3c5a62e3424ee73c",
+      "3c5a62e3424ee73c",
+      "3c5a62e3424ee73c",
+      "3c5a62e3424ee73c",
+      "3c5a62e3424ee73c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 44.13955820099994,
+      "avg_fetch_time": 7.3565930334999905,
+      "success_count": 6
+    }
+  },
+  "http://124.116.183.146:9901/tsfile/live/0122_1.m3u8": {
+    "phash": [
+      "85d042bc6ebb598d",
+      "9264c99276cd3937",
+      "c1953c9393b2d693",
+      "cdc8923e6cc85b36",
+      "cdcd1652eda912d4",
+      "c7c978446b86d939"
+    ],
+    "ahash": [
+      "7e7e3f1f1f070300",
+      "40000206061c7c7c",
+      "7e7a787c6c280000",
+      "f87cfcf880808000",
+      "fffffbfbf8000000",
+      "787c7e3636363000"
+    ],
+    "dhash": [
+      "f8dcf87eb69ede47",
+      "918666bc5cb9f1fa",
+      "f0f2e2c8d8c9e9a2",
+      "f0f0f0f27478346c",
+      "f6f472b29290c242",
+      "c0e0e0ece4e4e46c"
+    ],
+    "whash": [
+      "7e7e3f1f0f070300",
+      "c000070f1efe7f7c",
+      "ff7a7e7e6c680000",
+      "fefefef890888080",
+      "fffafbf9f8000000",
+      "787c7e3f37363000"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 65.54170790699999,
+      "avg_fetch_time": 8.192713488374999,
+      "success_count": 8
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYxNTJfMF8z_b_Bd841eae10ab1c9955ef55fbedfae6c45.mp4": {
+    "phash": [
+      "c3cbcbc920743c37",
+      "f4c0b7934bce8c8c",
+      "80c16b36d47cd2cf",
+      "d54b36b4c4e48be1",
+      "c1487e1f1b3634d3",
+      "952f64da62492fb4"
+    ],
+    "ahash": [
+      "fcfce6c000180038",
+      "fee6d3900098fe80",
+      "0060ffffff1f0000",
+      "000078feffcec6c2",
+      "107878787c1e7e78",
+      "000303091e3e7e7e"
+    ],
+    "dhash": [
+      "e0e8cc8e9eb2e0f0",
+      "cc8ea623b2322836",
+      "80c2c0a6ecbc3b8b",
+      "a4c8c8a2b6bc9696",
+      "74f2c2f2d0bce8e4",
+      "e8eef6fbb8f0f0a4"
+    ],
+    "whash": [
+      "fcfcefe00218383c",
+      "fee6f3f00090fe80",
+      "0070ffffff1f0000",
+      "000078feffdec6c2",
+      "107878787c1e7e3a",
+      "00031b197e3e7e7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.73811853199993,
+      "avg_fetch_time": 1.4563530886666551,
+      "success_count": 6
+    }
+  },
+  "https://tvpull.smartwq.cn/wqlive/convergencemedia/playlist.m3u8": {
+    "phash": [
+      "e8a82756743c53d9",
+      "d9e7349c6a125b19",
+      "d9e7349c6a125b19",
+      "c9e7349c2a125b5b",
+      "d4ad29527e426d2d",
+      "c9e7349c2a125b5b"
+    ],
+    "ahash": [
+      "00ffffdbd8100000",
+      "00f7f8f8f8fc5e00",
+      "00f7f8f8f8fc1e00",
+      "00f3f8f8f8fc1e00",
+      "00fffffcfefe0c00",
+      "00f3f8f8f8fc1e00"
+    ],
+    "dhash": [
+      "a49393b331703472",
+      "0e8e8b0911b0bc35",
+      "0e8e8b0911b0bc35",
+      "068e0b0911b0bc21",
+      "2cfa566844dcf81e",
+      "068e0b0911b0bc31"
+    ],
+    "whash": [
+      "00ffffdffc181000",
+      "00f7f8f8f8fc1e00",
+      "00f7f8f8f8fc1e00",
+      "00f7f8f8f8fc1e00",
+      "00fffffcf4ec0000",
+      "00f3f8f8f8fc3e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 27.504896830000007,
+      "avg_fetch_time": 4.5841494716666675,
+      "success_count": 6
+    }
+  },
+  "https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8": {
+    "phash": [
+      "869678697bc3843e",
+      "869678697bc3843e",
+      "945a2be14fbc9459",
+      "807b77e459934ccc",
+      "d1656ea9a5252597",
+      "c43967cc52ed2e91"
+    ],
+    "ahash": [
+      "00007e7effff0000",
+      "00007e7effff0000",
+      "00000c167cfeffff",
+      "00001818587e7f3c",
+      "01c86c7efffbfdfc",
+      "0000183c7e7efe34"
+    ],
+    "dhash": [
+      "4825e4ccc8c65324",
+      "4827e4ccc8c65324",
+      "b649bc64d8cc973b",
+      "b28eb2b2b2b2cce0",
+      "8391d89870f2f9f0",
+      "52c6f4f0f4f4e4e4"
+    ],
+    "whash": [
+      "0000ffffffff0000",
+      "0000ffffffff0000",
+      "00000c147cfeffff",
+      "0000187e7e7f7f3c",
+      "01086c7e3e397cfc",
+      "0000187e7e7ffe74"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.992820316000007,
+      "avg_fetch_time": 1.9988033860000012,
+      "success_count": 6
+    }
+  },
+  "http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8": {
+    "phash": [
+      "a6309b73319bcc0f",
+      "a6318b70398dec1f",
+      "af5b81f4ce0db015",
+      "8d78e17638a776a0",
+      "8d78e17638a776a0",
+      "8d78e17638a776a0"
+    ],
+    "ahash": [
+      "efe7510141f53d3f",
+      "cfc7430343d73f7f",
+      "ffbd818181c73f3f",
+      "001a1a1a0e343f3f",
+      "001a1a1a0e343f3f",
+      "001a1a1a0e343f3f"
+    ],
+    "dhash": [
+      "8b8f9555d5d56969",
+      "9a8f871795d56969",
+      "e179316b651d64f3",
+      "86b2f272766c4263",
+      "86b2f272766c4263",
+      "86b2f272766c4263"
+    ],
+    "whash": [
+      "ef4711010175bd3f",
+      "cf43030301d5bf3f",
+      "ff99810081873f3f",
+      "011a3b1a0f363f3f",
+      "011a3b1a0f363f3f",
+      "011a3b1a0f363f3f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 4.084226380000018,
+      "avg_fetch_time": 0.6807043966666697,
+      "success_count": 6
+    }
+  },
+  "http://183.11.239.36:808/hls/22/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://222.128.55.152:9080/live/dwq.m3u8": {
+    "phash": [
+      "d862acfd0bdc134a",
+      "99ccb4434ab56a97",
+      "eeb85165c49d3788",
+      "d8e993f40b568e4a",
+      "d8e993f40b568e4a",
+      "d8e993f40b568e4a"
+    ],
+    "ahash": [
+      "cbc7cc08c8cadc1f",
+      "59fb1f1838a00e06",
+      "e0c195b5f1e03820",
+      "cfcfd80090d69617",
+      "cfcfd80090d69617",
+      "cfcfd80090d69617"
+    ],
+    "dhash": [
+      "baada9a959143535",
+      "b152515358595c3c",
+      "81a5256565466aea",
+      "ba9bb3b33134242d",
+      "ba9bb3b33134242d",
+      "ba9bb3b33134242d"
+    ],
+    "whash": [
+      "cbc74c08e8cadc1f",
+      "5dfcbf3838a02e06",
+      "f0d195bdf7b03820",
+      "cfcbd840d096961f",
+      "cfcbd840d096961f",
+      "cfcbd840d096961f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 27.899672108999937,
+      "avg_fetch_time": 4.64994535149999,
+      "success_count": 6
+    }
+  },
+  "http://125.65.94.91:12351/live": {
+    "phash": [
+      "ebe89533c63ec860",
+      "abc4d5397c96c1c1",
+      "beb6c16ae9949a30",
+      "aa6bc750d0db6e24",
+      "bb6ac541d0966a2f",
+      "bfc0c06ed5b94a86"
+    ],
+    "ahash": [
+      "fff9f1f1e10187ff",
+      "ffffff818181a7ff",
+      "ffff87838181ffff",
+      "ffe381c9810103ff",
+      "ffe181818181bfff",
+      "ffffbf8181019fff"
+    ],
+    "dhash": [
+      "5053c323c3836b70",
+      "50436323331b6b72",
+      "504f3f3f3b2b9bd2",
+      "50632f1515336b72",
+      "70432f1f3b2b6b70",
+      "53533b3b2f2b6b70"
+    ],
+    "whash": [
+      "fcf1f1e1610001ff",
+      "fcfbf981010101ff",
+      "ffa38781818103ff",
+      "ffe38189810183ff",
+      "ffe18181810197ff",
+      "fdff9981010081ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.534115892999978,
+      "avg_fetch_time": 5.255685982166663,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxMTNfMF8z_b_Bdddf4e7ef0ff6cfd477857bb40e78419.mp4": {
+    "phash": [
+      "c44b1c3a7b33d923",
+      "85c81d27a7787497",
+      "c0e01d1563bcbb67",
+      "d4e19f29704c1f8e",
+      "c82671938fcc749b",
+      "946b7c3174b1cc6a"
+    ],
+    "ahash": [
+      "001070f0ff7f077e",
+      "0018ffff77660002",
+      "7efefff8601e1000",
+      "ffffff6444001104",
+      "000010383c7c7cfe",
+      "0000383f1f3f0f1e"
+    ],
+    "dhash": [
+      "b2e6e4c8cdeca4a6",
+      "92b23286cc8eea5a",
+      "80809290c8f8f4f0",
+      "e324a09494332364",
+      "f9d8b6e0f8f0b072",
+      "8e68e0ecfcf4fce4"
+    ],
+    "whash": [
+      "003070f8f77f075e",
+      "0058ffff77e60202",
+      "7efefff8601e0000",
+      "fffffe6444081104",
+      "0000583c7e7e7efe",
+      "00143c3f1f3f0f3e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.132001220000063,
+      "avg_fetch_time": 1.1886668700000105,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyMDFfMF8z_b_B70592cb7c4054e9cabb675e849bbf4bd.mp4": {
+    "phash": [
+      "c59f30674c595396",
+      "9964629b659a9e55",
+      "a0a81f0ba08cfefe",
+      "e98f74d48861673c",
+      "c0e21b6d865aadd6",
+      "d1cb2c241b335dce"
+    ],
+    "ahash": [
+      "00073e7830606040",
+      "00003e1e1f1d1d00",
+      "0301c7e7e7c30000",
+      "bebeb9f9b9e0c0c0",
+      "c0e0f8fcf2d0d8fc",
+      "60f8f86c7c7e0707"
+    ],
+    "dhash": [
+      "c3eef8f0e4cad094",
+      "01646c78fab9b900",
+      "cf8faf8f8f8f6653",
+      "747063a32381958b",
+      "808090808492b0e0",
+      "cbc2c0d8c8c6ce5e"
+    ],
+    "whash": [
+      "7e3f7ef8f0606040",
+      "803e3e3f3f1f1d00",
+      "03c3f7f7e7e70000",
+      "be1eb8f9b9e0c0c0",
+      "c0e0f8f8f0d0d8fc",
+      "60f0f86c7c7e0707"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.570400025999959,
+      "avg_fetch_time": 1.2617333376666597,
+      "success_count": 6
+    }
+  },
+  "https://0472.org/hls/cgtn.m3u8": {
+    "phash": [
+      "8d78e17638a776a0",
+      "80c0643f3f9f0f9a",
+      "8f58e376396646b0",
+      "c0c0fe7f5f838170",
+      "c0c0fe7f5f838170",
+      "c0c0fe7f5f838170"
+    ],
+    "ahash": [
+      "001a1a1a0e343f3f",
+      "00f0ff7f07000001",
+      "035b1f1e0f36373f",
+      "ffffff7f00000000",
+      "ffffff7f00000000",
+      "ffffff7f00000000"
+    ],
+    "dhash": [
+      "86b2f272766c4263",
+      "a481e0feff668ceb",
+      "8692f272766c6d67",
+      "088080d0e14687d5",
+      "088080d0e14687d5",
+      "088080d0e14687d5"
+    ],
+    "whash": [
+      "011a3b1a0f363f3f",
+      "00f8ffff0f00e033",
+      "011a3b1e0f36373f",
+      "ffffff7f10000000",
+      "ffffff7f10000000",
+      "ffffff7f10000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.06140160800004,
+      "avg_fetch_time": 1.1769002680000067,
+      "success_count": 6
+    }
+  },
+  "https://0472.org/hls/cgtnf.m3u8": {
+    "phash": [
+      "99f9d9e20b0c62d5",
+      "c5f233d9c8262f13",
+      "c5f233d9c8262f13",
+      "c5f233d9c8262f13",
+      "c5f233d9c8262f13",
+      "c04c2cdaddb42f93"
+    ],
+    "ahash": [
+      "ffdf0e1826241e1c",
+      "fc6c247c7c3a2030",
+      "fc6c247c7c3a2030",
+      "fc6c247c7c3a2030",
+      "fc6c247c7c3a2030",
+      "f8f860fcfced4743"
+    ],
+    "dhash": [
+      "9b9312724cccf070",
+      "d0c8cce0f0f2c6c3",
+      "d0c8cce0f0f2c6c3",
+      "d0c8cce0f0f2c6c3",
+      "d0c8cce0f0f2c6c3",
+      "b1b18290d9c99dd6"
+    ],
+    "whash": [
+      "ffdf0a1a2e041e1c",
+      "fcfc247c7c3a3030",
+      "fcfc247c7c3a3030",
+      "fcfc247c7c3a3030",
+      "fcfc247c7c3a3030",
+      "f87840f8fc6d4703"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.672308632000068,
+      "avg_fetch_time": 1.612051438666678,
+      "success_count": 6
+    }
+  },
+  "http://182.150.23.74:808/hls/6/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 51.64584784300007,
+      "avg_fetch_time": 10.329169568600014,
+      "success_count": 5
+    }
+  },
+  "http://uzoiczhh.live.sxmty.com/live/hls/0d41f1480c4042d49927858f01fde707/53130407737b417b9a6259b57246bae3.m3u8": {
+    "phash": [
+      "80bfa2372730cce7",
+      "e080efe43d2f2d83",
+      "989230db6485e7f9",
+      "8e0227f08f93d787",
+      "9acc381fd79c2c91",
+      "c23fdb19688cf990"
+    ],
+    "ahash": [
+      "071f5f1e387c7c7d",
+      "f3fc3c1e4ee4e0c0",
+      "5e9c9e9c9c9c8880",
+      "01013dbcfcd88f3f",
+      "9cfd3d3c3c000c00",
+      "182c7c30787c7c7c"
+    ],
+    "dhash": [
+      "4cbab2d2d0a1a991",
+      "8781e1b49c0d0d0e",
+      "b839387878393036",
+      "d5d5617131315476",
+      "39a9e1e86869f89c",
+      "78e8e8e5d0d8e9e1"
+    ],
+    "whash": [
+      "071f5e1c38787879",
+      "f3fc3c0e4ee4e0c0",
+      "5e9c9ebe9c9c88c0",
+      "01013dbcbcd88f3f",
+      "9cfd7d7c3c181c04",
+      "1c287c34787c7c7c"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 54.00737966899993,
+      "avg_fetch_time": 9.001229944833321,
+      "success_count": 6
+    }
+  },
+  "http://111.61.236.247:9081/hls/31/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://218.13.170.98:9901/tsfile/live/1021_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 25.154798097000025,
+      "avg_fetch_time": 5.030959619400005,
+      "success_count": 5
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTRfNDAzMDAxOTlfOTI4OTY2ODE2MTBfMF8z_b_B11a778e34390a21de42d407e94f45b91.mp4": {
+    "phash": [
+      "918364f50bde2fc2",
+      "91a19ef1e4996d92",
+      "93d3b7a468f2a125",
+      "c9c0f58f16cc94e3",
+      "c427e2b768191e67",
+      "91509e7d469f6564"
+    ],
+    "ahash": [
+      "6e6e3e3c7ccecc00",
+      "7f6f2b4b4c680c96",
+      "ff3c2c7c087f0500",
+      "fcf8f87828180800",
+      "24640418f29ff8fd",
+      "defe42000080ffff"
+    ],
+    "dhash": [
+      "98c8c8f8981894d1",
+      "d7dbdb93d9db3924",
+      "687858d1b2d65ddb",
+      "a08390b1d17352da",
+      "edcca8b0a62aa3b1",
+      "bab89ef8863239cd"
+    ],
+    "whash": [
+      "766e3e3c7ccec400",
+      "5f5f2b4b4c680c96",
+      "ff3c2cfc187f0500",
+      "fefbf8f878380800",
+      "24741018ea9ff8fd",
+      "defe42000080ffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.657332693999876,
+      "avg_fetch_time": 1.6095554489999795,
+      "success_count": 6
+    }
+  },
+  "https://0472.org/hls/cgtnx.m3u8": {
+    "phash": [
+      "f9d93424cae526c3",
+      "c4682bcf4b9b560e",
+      "c4682bcf4b9b560e",
+      "c4682bcf4b9b560e",
+      "b4b2f8075cb05b2d",
+      "b4b2f8075cb05b2d"
+    ],
+    "ahash": [
+      "ffffe9f9f9000000",
+      "204046eefefeff0f",
+      "204046eefefeff0f",
+      "204046eefefeff0f",
+      "8707070703070787",
+      "8707070703070787"
+    ],
+    "dhash": [
+      "181bdbdbdb2e1e5c",
+      "d396845c94b49a5e",
+      "d396845c94b49a5e",
+      "d396845c94b49a5e",
+      "bebebebebe3ebe37",
+      "bebebebebe3ebe37"
+    ],
+    "whash": [
+      "ffefe9f9f9000000",
+      "204040e6fcfebf0f",
+      "204040e6fcfebf0f",
+      "204040e6fcfebf0f",
+      "c7c7c78703070797",
+      "c7c7c78703070797"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.145974559000024,
+      "avg_fetch_time": 1.857662426500004,
+      "success_count": 6
+    }
+  },
+  "https://tntgjhjb.live.sxmty.com/live/hls/3a4585ac11ec4e1bb07b419101b370c3/baf63e2b313440c2a25d7859f9b73b05-1.m3u8?zshanxd": {
+    "phash": [
+      "e1637cde0f1c380b",
+      "fb793596047c2526",
+      "b76b60d40e0c3c5f",
+      "923e7d6369ac6486",
+      "f1e10f9e181e3c59",
+      "c3b83c471cd4712f"
+    ],
+    "ahash": [
+      "00e363777fd7d200",
+      "00e9e8f8fcfffe00",
+      "00e38337bffff600",
+      "001e1e3f7d7e7e00",
+      "00e3e3e7e7f7b000",
+      "009df9fffdf47000"
+    ],
+    "dhash": [
+      "04d6dbcfccaea661",
+      "19191b99894d8d80",
+      "8e565f6f6caea421",
+      "093cf5d5d9cccce8",
+      "0eca9f9f9c2c26d1",
+      "102111d1514545c4"
+    ],
+    "whash": [
+      "00e343777fd7d600",
+      "00e9c8e8fcfffc00",
+      "00e383b7bfd77600",
+      "001c1f3f7d7e7e00",
+      "00e3e3e7e7f7b000",
+      "009de9fdfdf4b000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 40.677202707000106,
+      "avg_fetch_time": 6.779533784500018,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYwODJfMF8z_b_B647d10e431b4cc5e48e6c77347d69021.mp4": {
+    "phash": [
+      "954b683e14ad6b96",
+      "c44fb8393bc748b8",
+      "c03fb45dc0cc35f4",
+      "c286367e5975658c",
+      "806fb0131f896bfc",
+      "943d7f619c606d61"
+    ],
+    "ahash": [
+      "0024787e7e9d4700",
+      "0000303040feffff",
+      "00000000f8ffffff",
+      "34ff7f7878300000",
+      "3c7070383e7e7e7e",
+      "003c187e7f7a003c"
+    ],
+    "dhash": [
+      "1468aaeaec29aeec",
+      "00e0c0e080808280",
+      "0000808180808082",
+      "ed6dd5d8f2e442e2",
+      "e8e4e4e0e4d0b0f4",
+      "f071f0b0b092e871"
+    ],
+    "whash": [
+      "082e7c7e7e9f4700",
+      "0000303078ffffff",
+      "00000020feffffff",
+      "35ff7f7c78381000",
+      "3c3070383c3e7e3e",
+      "003c187e7f7e643c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.474583872999972,
+      "avg_fetch_time": 1.4124306454999953,
+      "success_count": 6
+    }
+  },
+  "https://txmov2.a.kwimgs.com/bs3/video-hls/5195746663405928031_hlsb.m3u8": {
+    "phash": [
+      "86c63c397bc3843e",
+      "86c63c397bc3843e",
+      "963c216e799728d6",
+      "926d6b96691b24f2",
+      "841ae50ee157bcd6",
+      "ace341757a083f1d"
+    ],
+    "ahash": [
+      "00007e7effff0000",
+      "00007e7effff0000",
+      "0e1e1e3e3c3e3f3f",
+      "0000060e1f0f0f0f",
+      "0000181800187eff",
+      "c0ffff1180df1b10"
+    ],
+    "dhash": [
+      "5827e4ccc8c65204",
+      "5827e4ccc8c65204",
+      "686868e8ece96cc8",
+      "cccefcd8bcdcdcfa",
+      "9632b0b0a6b1d496",
+      "96ce32b73636b331"
+    ],
+    "whash": [
+      "0000ffffffff0000",
+      "0000ffffffff0000",
+      "041e1e3c3c3e3e3e",
+      "00221f1f5f1f0f1f",
+      "02001c183c7ffeff",
+      "c0ffff19809f1910"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.662244102999978,
+      "avg_fetch_time": 1.9437073504999962,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxNDdfMF8z_b_Ba6271d10b7e6cfae83759033a091f257.mp4": {
+    "phash": [
+      "856132c6a5ca3f1f",
+      "d058b467c3de1333",
+      "dc5c7149135ed833",
+      "c4d86a9e8b36a5d8",
+      "d0cd76c84db25e83",
+      "c03a0ba73f332787"
+    ],
+    "ahash": [
+      "606202723e3e1c1e",
+      "54581c7c2800ffff",
+      "d0d89cbc3cf8f4ec",
+      "bc7852427e3600e3",
+      "7c7f7e7e7f7e4400",
+      "015858d83c7e7e18"
+    ],
+    "dhash": [
+      "8a8ad6c2e664f0f8",
+      "b4b4f0f0c8caa6fe",
+      "b032312171b52599",
+      "69f19686f0e46507",
+      "d9f1acd2d3ac8ccc",
+      "fbb0b0b0f0d6daf0"
+    ],
+    "whash": [
+      "6062027f3e3e3e1e",
+      "54581c7c6800ff7f",
+      "d0d89cbc3878f0ec",
+      "bd787a467e3200e3",
+      "7c7c7e6e7d544400",
+      "007878d83e7e7e38"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.892221436000057,
+      "avg_fetch_time": 1.3153702393333428,
+      "success_count": 6
+    }
+  },
+  "http://file.yizu.tv/nmip-media/channellive/channel107323/playlist.m3u8": {
+    "phash": [
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a"
+    ],
+    "ahash": [
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7"
+    ],
+    "dhash": [
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d"
+    ],
+    "whash": [
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 29.540606405999995,
+      "avg_fetch_time": 4.923434400999999,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel106011/playlist.m3u8": {
+    "phash": [
+      "d07ba5a24f8c6c53",
+      "ade6c6189ad4d989",
+      "ca551899bcfc6507",
+      "bacb95b034b5948d",
+      "bacb95b034b5948d",
+      "bacb95b034b5948d"
+    ],
+    "ahash": [
+      "c0c008187c7f7f7e",
+      "f7e3f3030b0a022a",
+      "d8c860f0f9f9fddd",
+      "7f7dfdc1c1c5c781",
+      "7f7dfdc1c1c5c781",
+      "7f7dfdc1c1c5c781"
+    ],
+    "dhash": [
+      "9c989871d9ede0e2",
+      "a7c747773b7a6a6a",
+      "b098c885d1c19191",
+      "fbfbfb8b9b999f39",
+      "fbfbfb8b9b999f39",
+      "fbfbfb8b9b999f39"
+    ],
+    "whash": [
+      "80c0481c7c7d7f7e",
+      "f7e3f38b0b0a023a",
+      "d82820f0f079f9dd",
+      "7f3d7d41c1c54701",
+      "7f3d7d41c1c54701",
+      "7f3d7d41c1c54701"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.644475874999955,
+      "avg_fetch_time": 2.107412645833326,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzOTBfMF8z_b_B29a36a85e0277f6c2a1f033ef7c10708.mp4": {
+    "phash": [
+      "904b3ff4c60b98e3",
+      "c03b906c3bec15bd",
+      "813fc93c3869e43b",
+      "8029c56dd5365a7e",
+      "857fa5f984625c2a",
+      "853fcc31689763d2"
+    ],
+    "ahash": [
+      "00003c3c7e7e001c",
+      "00003831047cff7f",
+      "000000000e7fffff",
+      "000000045cfd7e7e",
+      "020200003e7e7f7f",
+      "00002000603f7ffe"
+    ],
+    "dhash": [
+      "f0e8e8e0e8b2f8f8",
+      "c8c8d0eb7ce0a2d8",
+      "96e6c694bce6d2c0",
+      "929a8dccb0d1e8e0",
+      "565edce8f0d0e8f2",
+      "d6e24beed4d6f4e0"
+    ],
+    "whash": [
+      "003c3c7e7e7e1c1c",
+      "00003c391c7eff7f",
+      "0002000e1f7fffff",
+      "0000006efeff7e7e",
+      "0202003c3e7f7f7f",
+      "001020317e7f7ffe"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.367564816999959,
+      "avg_fetch_time": 1.3945941361666598,
+      "success_count": 6
+    }
+  },
+  "http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8": {
+    "phash": [
+      "dc7861b8f3a4a623",
+      "dc7861b8f3a4a623",
+      "f5932a7408d9e789",
+      "f5932a7408d9e789",
+      "f5932a7408d9e789",
+      "f5932a7408d9e789"
+    ],
+    "ahash": [
+      "c358183c7c3c18e0",
+      "c358183c7c3c18e0",
+      "fefefedec2c20001",
+      "fefefedec2c20001",
+      "fefefedec2c20001",
+      "fefefedec2c20001"
+    ],
+    "dhash": [
+      "37b271e1e871f006",
+      "37b271e1e871f006",
+      "cccc6c9496161637",
+      "cccc6c9496161637",
+      "cccc6c9496161637",
+      "cccc6c9496161637"
+    ],
+    "whash": [
+      "c35818fcfc7c58e0",
+      "c35818fcfc7c58e0",
+      "feeefedec2c20000",
+      "feeefedec2c20000",
+      "feeefedec2c20000",
+      "feeefedec2c20000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.814968028999999,
+      "avg_fetch_time": 1.1358280048333331,
+      "success_count": 6
+    }
+  },
+  "http://182.150.23.74:808/hls/25/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 43.463625243000024,
+      "avg_fetch_time": 10.865906310750006,
+      "success_count": 4
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel103074/playlist.m3u8": {
+    "phash": [
+      "b4ce4b937624299d",
+      "8591177707061f9f",
+      "c6b960cfb847b834",
+      "da9ce68da623898d",
+      "da9ce68da623898d",
+      "928dfac09b376c19"
+    ],
+    "ahash": [
+      "ffffff061e010000",
+      "3e7e7e7363624030",
+      "fffffffffffd0000",
+      "3f1c1c043878e0f0",
+      "3f1c1c043878e0f0",
+      "ffff03073860c4c4"
+    ],
+    "dhash": [
+      "3f6c37243c7fbe3e",
+      "f8dad2c6868686e0",
+      "414509413c69e514",
+      "74b0f8dcf0f2c8c5",
+      "74b0f8dcf0f2c8c5",
+      "f4dcdf4fd2c58c1d"
+    ],
+    "whash": [
+      "ffffff071e010000",
+      "3e7e7e7263634030",
+      "ffffe1e0ff200000",
+      "3f1e1c0c3cf8f0f0",
+      "3f1e1c0c3cf8f0f0",
+      "ffff03073a70c084"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.945940365000013,
+      "avg_fetch_time": 2.1576567275000023,
+      "success_count": 6
+    }
+  },
+  "http://36.32.174.67:60080/newlive/live/hls/49/live.m3u8": {
+    "phash": [
+      "a0a0ab4f6be4ae4b",
+      "f7ae81c0a01f5a97",
+      "89b65676ab0d1ec1",
+      "8a6895f6f287c0f2",
+      "8a7885fcf185e1d1",
+      "8a7885fcf185e1d1"
+    ],
+    "ahash": [
+      "674747c700000000",
+      "e7a78787e7e02247",
+      "00df1b1fff181818",
+      "7f190901010f3f7f",
+      "7f010111011f3f3f",
+      "7f010111011f3f3f"
+    ],
+    "dhash": [
+      "8f969e8c9d0f8e1f",
+      "ad6c6c2d8c085ede",
+      "3f16b3731331b2b2",
+      "b033b3b305756cdc",
+      "b231b5b1357576f2",
+      "b231b5b1357576f2"
+    ],
+    "whash": [
+      "e7e7f7c7c3010301",
+      "e7878787e7e00247",
+      "00df5f1fff181818",
+      "7f1b1101010f3f7f",
+      "7f01011d051f3f3f",
+      "7f01011d051f3f3f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 39.55816684300004,
+      "avg_fetch_time": 6.593027807166673,
+      "success_count": 6
+    }
+  },
+  "https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8": {
+    "phash": [
+      "c84e65c7978b4b0d",
+      "fd8ee062a1b8ec46",
+      "d6c4a56dcd155313",
+      "c84e65c7978b4b0d",
+      "c84e65c7978b4b0d",
+      "c84e65c7978b4b0d"
+    ],
+    "ahash": [
+      "38d8181c1cd8f9fb",
+      "ffbf9f8f80c0c0e2",
+      "faf73cfc8004047e",
+      "38d8181c1cd8f9fb",
+      "38d8181c1cd8f9fb",
+      "38d8181c1cd8f9fb"
+    ],
+    "dhash": [
+      "e3b2b3b9bab0a3b2",
+      "6e2e357e5e0c9c8e",
+      "a6aceca9294ddce8",
+      "e3b2b3b9bab0a3b2",
+      "e3b2b3b9bab0a3b2",
+      "e3b2b3b9bab0a3b2"
+    ],
+    "whash": [
+      "38d8181c1ed8f9fa",
+      "ffbf9f8f8080c0c0",
+      "faf73cfc8004047e",
+      "38d8181c1ed8f9fa",
+      "38d8181c1ed8f9fa",
+      "38d8181c1ed8f9fa"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.099128579000194,
+      "avg_fetch_time": 1.1831880965000323,
+      "success_count": 6
+    }
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c6baf6f74bb944aeacee1065ea72c798/1200.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://182.150.23.74:808/hls/27/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 11.741874493999944,
+      "avg_fetch_time": 11.741874493999944,
+      "success_count": 1
+    }
+  },
+  "http://111.61.236.247:9081/hls/51/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 38.040611797000054,
+      "avg_fetch_time": 7.608122359400011,
+      "success_count": 5
+    }
+  },
+  "http://36.32.174.67:60080/newlive/live/hls/33/live.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 62.64015492899995,
+      "avg_fetch_time": 7.8300193661249935,
+      "success_count": 8
+    }
+  },
+  "http://182.150.23.74:808/hls/11/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://bp-resource-dfl.bestv.cn/148/3/video.m3u8": {
+    "phash": [
+      "c28e68e82fc5d3e2",
+      "def0a11196aef603",
+      "def0a11196aef603",
+      "cec6a610f1313757",
+      "b2de8f2a2d952cc2",
+      "b2de8f2a2d952cc2"
+    ],
+    "ahash": [
+      "71147e33f4e4e0e0",
+      "fef8f09c1c9819bd",
+      "fef8f09c1c9819bd",
+      "f6b030383c1838bc",
+      "bfbccccee0814e03",
+      "bfbccccee0814e03"
+    ],
+    "dhash": [
+      "a3a5cce6c9888282",
+      "9493282568286361",
+      "9493282568286361",
+      "e46560d070716361",
+      "6928a8988d1d9c86",
+      "6928a8988d1d9c86"
+    ],
+    "whash": [
+      "70147e37f4f4e0e0",
+      "fef8e09c0c9819b5",
+      "fef8e09c0c9819b5",
+      "f6f430783c1839bc",
+      "bffccccee0814603",
+      "bffccccee0814603"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.260534206999864,
+      "avg_fetch_time": 3.5434223678333105,
+      "success_count": 6
+    }
+  },
+  "http://60.220.198.84:81/0.m3u8": {
+    "phash": [
+      "fe2cee5a8290a92d",
+      "d9c0f87a9a668593",
+      "d9c0f87a9a668593",
+      "d9c0f87a9a668593",
+      "970aecbe0a2c7d52",
+      "970aecbe0a2c7d52"
+    ],
+    "ahash": [
+      "9783c34e20d8fcff",
+      "fcfc7e3c3c000088",
+      "fcfc7e3c3c000088",
+      "fcfc7e3c3c000088",
+      "1038000c2c8fdefe",
+      "1038000c2c8fdefe"
+    ],
+    "dhash": [
+      "3726969ccb316861",
+      "a1e0f0f0d9515151",
+      "a1e0f0f0d9515151",
+      "a1e0f0f0d9515151",
+      "27d1cbe9d91c2e26",
+      "27d1cbe9d91c2e26"
+    ],
+    "whash": [
+      "9783831e00d8f4ff",
+      "fcfcfe7e3c008088",
+      "fcfcfe7e3c008088",
+      "fcfcfe7e3c008088",
+      "1038202d3c8ffefe",
+      "1038202d3c8ffefe"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.489666510999996,
+      "avg_fetch_time": 2.748277751833333,
+      "success_count": 6
+    }
+  },
+  "http://112.123.206.32:808/hls/2/index.m3u8": {
+    "phash": [
+      "c939f26630c15e8f",
+      "8d3cf26630c7568d",
+      "8d3cf26630c7568d",
+      "8d3cf26630c7568d",
+      "8979d6765986ca0d",
+      "8979d6765986ca0d"
+    ],
+    "ahash": [
+      "00181818183d7d7c",
+      "00181919393d3d7c",
+      "00181919393d3d7c",
+      "00181919393d3d7c",
+      "00011919193d3d3c",
+      "00011919193d3d3c"
+    ],
+    "dhash": [
+      "b3b333b373e1e1f8",
+      "b3b333b37369e9f8",
+      "b3b333b37369e9f8",
+      "b3b333b37369e9f8",
+      "b2b3b3b3b36969e0",
+      "b2b3b3b3b36969e0"
+    ],
+    "whash": [
+      "80191919397d7d7e",
+      "801919193d3d7d7e",
+      "801919193d3d7d7e",
+      "801919193d3d7d7e",
+      "c0191919193d3f7f",
+      "c0191919193d3f7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 37.29759875200011,
+      "avg_fetch_time": 6.216266458666685,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/21/BMjAyMzAxMTMyMTE4MzRfNDAzMDAxOTlfOTM1MDY4ODIxOTVfMF8z_b_B86c4430b82ff5a7f4e8132f6ee558536.mp4": {
+    "phash": [
+      "c0cc98e63b19e4e7",
+      "9bc6b52b88696996",
+      "9492729a974b43ed",
+      "c8f43d033d17217b",
+      "c1e25b9b1e0f9cb0",
+      "c8073c1a4ccfcee3"
+    ],
+    "ahash": [
+      "7070706860707c68",
+      "1f0e1c1d1f090f1f",
+      "6e561a3a3e1c5a6e",
+      "00f8f8fcf8783818",
+      "1864ffffff7f0000",
+      "38c0f0f8f8f8f8d0"
+    ],
+    "dhash": [
+      "c2c4c68bc8c6c0d8",
+      "3c7cb8b1755b3abc",
+      "8cb4b6f2f4b8b296",
+      "a6b1d424e1e1e070",
+      "69ccc6e4aee8d071",
+      "e092c38180b19892"
+    ],
+    "whash": [
+      "707c70e8e8707c6e",
+      "1f1e1c1d1f090f1f",
+      "6e461a3e3e1c5a66",
+      "00f8fcfcf87c3818",
+      "0064fff7ff3f0000",
+      "30e0f0f8f8f8f8d0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.588826708000056,
+      "avg_fetch_time": 1.9314711180000093,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXwencheng2/720p.m3u8": {
+    "phash": [
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454"
+    ],
+    "ahash": [
+      "000000ffff000000",
+      "000000ffff000000",
+      "000000ffff000000",
+      "000000ffff000000",
+      "000000ffff000000",
+      "000000ffff000000"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "00ffffffff000000",
+      "00ffffffff000000",
+      "00ffffffff000000",
+      "00ffffffff000000",
+      "00ffffffff000000",
+      "00ffffffff000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.10564841500002,
+      "avg_fetch_time": 4.184274735833337,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyMzhfMF8z_b_B35ad7cc86aec8fc9e5ddfb31fc7bed63.mp4": {
+    "phash": [
+      "c00f6de94993999d",
+      "c4b126d0cbc7738d",
+      "9069323c9dcf706e",
+      "c597346a6784b5d2",
+      "c02c3f92e31d1cf3",
+      "916fc099a56e919b"
+    ],
+    "ahash": [
+      "78303e7c7c7c7e78",
+      "7e7e7e7c3c3c3c38",
+      "000c787a5e5e3c0e",
+      "363e7e7e70407066",
+      "0010387c7e7c3c78",
+      "000000007e7e7e7e"
+    ],
+    "dhash": [
+      "f2e4ecc8c0c4c4c0",
+      "c8e4f0f0f0f0e0e0",
+      "9888c8d2b4bce8e8",
+      "cce8dccec88c84c4",
+      "d2e6f2f0d0f0f0c8",
+      "96aae8e4f0f0e8d0"
+    ],
+    "whash": [
+      "38303c7c7c7c7c70",
+      "7e3e3e7c3c183818",
+      "040e787e5e5e3e0e",
+      "363e7e7e70607062",
+      "0070787c7e7c7c78",
+      "420038387e7e7e7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.412879906999933,
+      "avg_fetch_time": 1.2354799844999889,
+      "success_count": 6
+    }
+  },
+  "https://gcalic.v.myalicdn.com/gc/hsptgy_1/index.m3u8?contentid=2820180516001": {
+    "phash": [
+      "a553355ba64916ad",
+      "a553255ba64936ad",
+      "a553255ba64936ad",
+      "a553355ba64916ad",
+      "a553355ba64916ad",
+      "a553355ba64916ad"
+    ],
+    "ahash": [
+      "0e0f0f0f0f030307",
+      "0e0f0f0f07070307",
+      "0e0f0f0f07070307",
+      "0e0f0f0f07030307",
+      "0e0f0f0f07070307",
+      "0e0f0f0f07070307"
+    ],
+    "dhash": [
+      "febe9f9fdfffb6f6",
+      "febe9f9fdfffb6f6",
+      "febe9f9fdfffb6f6",
+      "febe9f9fdfffb6b6",
+      "febe9f8fdfffb6f6",
+      "febe9f8fdfffb6f6"
+    ],
+    "whash": [
+      "0e0f0f6f0f0f1707",
+      "0f0f0f6f0f0f0707",
+      "0f0f0f6f0f0f0707",
+      "0e0f0f6f0f0f0f07",
+      "0f0f0f6f0f0f0707",
+      "0f0f0f6f0f0f0707"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 36.89195991200006,
+      "avg_fetch_time": 6.148659985333343,
+      "success_count": 6
+    }
+  },
+  "http://36.32.174.67:60080/newlive/live/hls/38/live.m3u8": {
+    "phash": [
+      "dc5f53a143a13743",
+      "b91b53eec6a42859",
+      "dc5ff1a1c3a042ce",
+      "8916634b1cecc37b",
+      "8916634b1cecc37b",
+      "aeb1914e9e906e6c"
+    ],
+    "ahash": [
+      "8098989891d7f3f8",
+      "00080bdffbfbcb48",
+      "e898989890c3c3fa",
+      "380c3e1b19397979",
+      "380c3e1b19397979",
+      "ffffc3ff81007e81"
+    ],
+    "dhash": [
+      "2a30313323269694",
+      "971abbb313339a92",
+      "0b303121231796a4",
+      "e0fcd43373d3f3f3",
+      "e0fcd43373d3f3f3",
+      "f1ca16a82b65d03b"
+    ],
+    "whash": [
+      "2098989891f7f3fc",
+      "000c0bdbfbfbea48",
+      "e01898b8b1c3c3ff",
+      "380c3e1d39397979",
+      "380c3e1d39397979",
+      "ffffc3ff81004400"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 40.10309515000006,
+      "avg_fetch_time": 5.012886893750007,
+      "success_count": 8
+    }
+  },
+  "http://111.61.236.247:9081/hls/48/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 40.60742265599998,
+      "avg_fetch_time": 6.767903775999997,
+      "success_count": 6
+    }
+  },
+  "http://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc.m3u8": {
+    "phash": [
+      "99a694c397920fda",
+      "d898d64e73468735",
+      "c394b9bca48d5c4d",
+      "9a996569962d962d",
+      "99d998b153a7244f",
+      "fdb0a848a61e2fcc"
+    ],
+    "ahash": [
+      "7e7c3c1c3c381c1c",
+      "5c1c1f18003c3838",
+      "ff6f787764002820",
+      "4ddf1d1d1d0d0106",
+      "cfdbba2020070f00",
+      "d3cbcb87f0809080"
+    ],
+    "dhash": [
+      "d4d5f17850d2b0f4",
+      "b1b170b13165a070",
+      "b4d9e2cccc285ad2",
+      "9b99b9b9b9b9aa4c",
+      "9ab27242cace7e74",
+      "3792332d22712064"
+    ],
+    "whash": [
+      "7e3d3c3c3c381c1c",
+      "7c3d7f1c083d3838",
+      "ffff787764002820",
+      "4fdf1f1f0f0d0106",
+      "cfdfdaea28070f00",
+      "dfcfcbaff0809080"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 52.62163323000004,
+      "avg_fetch_time": 8.770272205000007,
+      "success_count": 6
+    }
+  },
+  "http://7sycrzf7.live.sxmty.com/live/hls/da9222d15ce7491d85fe3519e5201df5/af161dfd2a434b22b3b75fdd72fb9038-1.m3u8": {
+    "phash": [
+      "e9a616791a5961c7",
+      "8ab0754b4b4f3754",
+      "e9a616381f4965e6",
+      "b6e1491f5c144b1f",
+      "bbd45f29445f4826",
+      "bebf55424b6d6404"
+    ],
+    "ahash": [
+      "00f7e3e9c9c9c900",
+      "005fdf9f1d3d1800",
+      "00f7e3e9c9c9c900",
+      "00e7e7c7870f0700",
+      "00e7efe7e7c18100",
+      "008fdff311000000"
+    ],
+    "dhash": [
+      "b9274393139b9331",
+      "ceb4be79f969f1a4",
+      "b327079313939bb2",
+      "969e963e3d5d9c2c",
+      "949d8d4d971b1b0d",
+      "1b3c3f2365652626"
+    ],
+    "whash": [
+      "00f7ebe9e1c9f900",
+      "005fdf9f3d3f1800",
+      "00f7e3ebf1c9e900",
+      "00efffcf870f0700",
+      "00efefe7e7c98100",
+      "009fffffbb311000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 46.565412539000135,
+      "avg_fetch_time": 7.760902089833356,
+      "success_count": 6
+    }
+  },
+  "https://gcalic.v.myalicdn.com/gc/wgw03_1/index.m3u8?contentid=2820180516001": {
+    "phash": [
+      "c060f0795e9e96a7",
+      "c060f0795e9e96a7",
+      "c060f0795e9e96a7",
+      "c062f2785e9e94a7",
+      "c062f2785e9e94a7",
+      "c062f0785e9e96a7"
+    ],
+    "ahash": [
+      "c0e07e10007cffff",
+      "c0e07e10007cffff",
+      "c0e07e10007cffff",
+      "c0e17e10107cffff",
+      "c0e17e10107cffff",
+      "c0e17e10007cffff"
+    ],
+    "dhash": [
+      "9987c4e0d2f09b8e",
+      "9887c4e0c2f09b8e",
+      "9887c4e0c2f09b8e",
+      "9987c4f0e2f0938e",
+      "9987c4f0e2f0938e",
+      "9987e4f0c2f09b8e"
+    ],
+    "whash": [
+      "c0e07e00007cffff",
+      "c0e07600107cffff",
+      "c0e07600107cffff",
+      "c0e07600107cffff",
+      "c0e07600107cffff",
+      "c0e07600107cffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.513308499999994,
+      "avg_fetch_time": 5.252218083333332,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#": {
+    "phash": [
+      "d0bc2e7a0405dfa7",
+      "d4fb7b043cd2250e",
+      "9c7a6b94702d0f4b",
+      "d0bc2e7a0405dfa7",
+      "d0bc2e7a0405dfa7",
+      "d0bc2e7a0405dfa7"
+    ],
+    "ahash": [
+      "00c3fffefcfc0000",
+      "00ffffff1e7e7c00",
+      "00803c7e7e3e1200",
+      "00c1fffefcfe0000",
+      "00c1fffefcfe0000",
+      "00c1fffefcfe0000"
+    ],
+    "dhash": [
+      "002f60908008c0c8",
+      "2aa0c0b0b4a6b061",
+      "2b3870b4b064e609",
+      "002f60908008c0c8",
+      "002f60908008c0c8",
+      "002f60908008c0c8"
+    ],
+    "whash": [
+      "00c1fffefcfc6000",
+      "00ffffff103e1800",
+      "00bc3e7e7e3e3e00",
+      "00c7fffef8fc4000",
+      "00c7fffef8fc4000",
+      "00c7fffef8fc4000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.256904602999839,
+      "avg_fetch_time": 2.5428174338333065,
+      "success_count": 6
+    }
+  },
+  "http://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8": {
+    "phash": [
+      "ac5ab456b4a713a5",
+      "ac5ab456b4a713a5",
+      "ac5ab456b4a713a5",
+      "ac5ab456b4a713a5",
+      "ac5ab456b4a713a5",
+      "ac5ab456b4a713a5"
+    ],
+    "ahash": [
+      "c7c0010100000707",
+      "c7c0010100000707",
+      "c7c0010100000707",
+      "c7c0010100000707",
+      "c7c0010100000707",
+      "c7c0010100000707"
+    ],
+    "dhash": [
+      "2c22cb2327295676",
+      "2c22cb2327295676",
+      "2c22cb2327295676",
+      "2c22cb2327295676",
+      "2c22c32327295676",
+      "2c22c32327295676"
+    ],
+    "whash": [
+      "c7c0013f070f1f3f",
+      "c7c0013f070f1f3f",
+      "c7c0013f070f1f3f",
+      "c7c0013f070f1f3f",
+      "c7c001330f1f1f3f",
+      "c7c001330f1f1f3f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.39902430099994,
+      "avg_fetch_time": 3.0665040501666567,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ1NjNfMF8z_b_B4fea55408dca4471a68a963ae096be59.mp4": {
+    "phash": [
+      "d2952fbc3ce42453",
+      "cc3537cc0c734e4e",
+      "a54534bc5cae5b4a",
+      "a1653cac45d93e4b",
+      "e4e5391a45ea521f",
+      "d1852cfc661672b3"
+    ],
+    "ahash": [
+      "023c7c7e7c7e7c00",
+      "000ab87ffffdc800",
+      "026678210f0f1f00",
+      "0002007effffff00",
+      "00f7f7f7f6ffd100",
+      "007efffeffffff00"
+    ],
+    "dhash": [
+      "b6e8cc9498ccd972",
+      "969271f1f1b11008",
+      "96cec9433e7e3f2f",
+      "969649caca333b19",
+      "969644e6ac0d2b12",
+      "b6d2d9e09a19b9d2"
+    ],
+    "whash": [
+      "023c7c7e7c7e7c00",
+      "000ab87ffffdd800",
+      "026ff83b0f8f9f00",
+      "0202007effffff00",
+      "00f7f6f766cdc100",
+      "003a3c7effef0d00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.267856830000028,
+      "avg_fetch_time": 1.877976138333338,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel102221/playlist.m3u8": {
+    "phash": [
+      "cc96696996969669",
+      "cc96696996969669",
+      "cc96696996969669",
+      "cccc4d4dcc96cc4d",
+      "cccc4d4dcc96cc4d",
+      "cccc4d4dcc96cc4d"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.017738766000093,
+      "avg_fetch_time": 1.5029564610000155,
+      "success_count": 6
+    }
+  },
+  "http://36.32.174.67:60080/newlive/live/hls/45/live.m3u8": {
+    "phash": [
+      "92626d9292ad6dad",
+      "d16a08d0c79d6e8f",
+      "c1f2ad6306ad728d",
+      "c1d2b96706ad728d",
+      "c1d2b96706ad728d",
+      "97c1601bafe81a9d"
+    ],
+    "ahash": [
+      "1800006e6e0e1b08",
+      "180000fefefc7e18",
+      "f0f0f8f0f0f0f8f8",
+      "f0f0f8f0f0f0f8f8",
+      "f0f0f8f0f0f0f8f8",
+      "7f7effff3f000000"
+    ],
+    "dhash": [
+      "b19022cdcc9cb2b2",
+      "b1916ac8c890ba7b",
+      "c08080c0c0c0c2c2",
+      "c080c0c0c0c0c2d2",
+      "c080c0c0c0c0c2d2",
+      "d2d820407278c2e8"
+    ],
+    "whash": [
+      "7c001a7f7f0e1f18",
+      "580000fefefcfe18",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "7f7cfeff1f000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 37.826732032999985,
+      "avg_fetch_time": 6.304455338833331,
+      "success_count": 6
+    }
+  },
+  "https://live.gdtv.ah.cn/live/newsTV.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 44.12223147499998,
+      "avg_fetch_time": 11.030557868749995,
+      "success_count": 4
+    }
+  },
+  "http://jrlive.jrntv.com/live/_definst_/yingshis/chunklist_w1994429382.m3u8?zjiangsd": {
+    "phash": [
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a"
+    ],
+    "ahash": [
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e"
+    ],
+    "dhash": [
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8"
+    ],
+    "whash": [
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.85202945499998,
+      "avg_fetch_time": 3.4753382424999963,
+      "success_count": 6
+    }
+  },
+  "http://182.150.23.74:808/hls/10/index.m3u8": {
+    "phash": [
+      "dac639c53b893698",
+      "cc6a15eb2e817a27",
+      "cde911c33c44599f",
+      "c0e23fb34e0be20f",
+      "98fc617273266a87",
+      "9ac631793cd16798"
+    ],
+    "ahash": [
+      "c1fc3c3c7c7c1881",
+      "90c0e0d0f0f87e3e",
+      "68f8f8f0f8783e1e",
+      "01c6f0f0f0f70b18",
+      "c0fcff1f3c001f08",
+      "fdfc7dbd99484901"
+    ],
+    "dhash": [
+      "11e57575c5c5333b",
+      "219049151180e270",
+      "928252a62291e074",
+      "958483838185b233",
+      "8cb071355875e9f8",
+      "31c5cd753193919b"
+    ],
+    "whash": [
+      "c1fd3d3d7c7c1800",
+      "90c0e0f0f8f87e3e",
+      "68f8f8f0f0783c0e",
+      "0347f0f0f0ff0b19",
+      "c0fcff1f3c141708",
+      "c9fdfdbd19084901"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 63.61432549800031,
+      "avg_fetch_time": 10.602387583000052,
+      "success_count": 6
+    }
+  },
+  "http://124.116.183.146:9901/tsfile/live/0130_1.m3u8": {
+    "phash": [
+      "c77e383992a546c3",
+      "fc784921bc0196fe",
+      "a191ceac6b961a67",
+      "c47e1b552bb152b2",
+      "e17a8c9dda25988d",
+      "de55818eb6942db1"
+    ],
+    "ahash": [
+      "0080f0ffff700370",
+      "0000d6d7d79680d0",
+      "ffff4e4341434300",
+      "0090f6f3f270fb7f",
+      "f9e0e0e0e8fbe3f0",
+      "bfb880849511fdff"
+    ],
+    "dhash": [
+      "0f06c6c6c4c3d2a2",
+      "a7a72424242e2226",
+      "c6c6dcdbcb9f876b",
+      "226664c6c6e486ca",
+      "810d859993928282",
+      "6068382d2d2b214d"
+    ],
+    "whash": [
+      "8080f0ffff706370",
+      "0040f6ffd796f0d0",
+      "ffff4e4b41434300",
+      "0090f2f3f270733f",
+      "f9e0c0c0e8fae3f0",
+      "bfb080841111fdff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 44.07139403899998,
+      "avg_fetch_time": 7.345232339833331,
+      "success_count": 6
+    }
+  },
+  "http://112.46.85.60:8009/hls/507/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://182.150.23.74:808/hls/14/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 53.140023257000166,
+      "avg_fetch_time": 8.856670542833362,
+      "success_count": 6
+    }
+  },
+  "http://39.152.103.17:8089/tsfile/live/1044_1.m3u8": {
+    "phash": [
+      "86b079694bcf381b",
+      "9280854d977657fc",
+      "c9c0347038db67cf",
+      "c9c8257038db66cf",
+      "990626b189f676cd",
+      "990626b189f676cd"
+    ],
+    "ahash": [
+      "4307273736063630",
+      "7f7f67260400813e",
+      "f8f8f8f8c0c00000",
+      "f8f8f8f8c0c00000",
+      "0000005fffcfff13",
+      "0000005fffcfff13"
+    ],
+    "dhash": [
+      "96cc6c6c6c646662",
+      "ccd9adadac313b6c",
+      "8080e0d0a0989b70",
+      "80c0e0d0909c9870",
+      "dcdcb192d3989aa6",
+      "dcdcb192d3989aa6"
+    ],
+    "whash": [
+      "432737373626363a",
+      "7f7f7f070400813e",
+      "f8f8f8fcf8c0e008",
+      "f8f8fcfcf8c0e000",
+      "0000007fffcfff07",
+      "0000007fffcfff07"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 45.48882819000005,
+      "avg_fetch_time": 7.5814713650000085,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTNfNDAzMDAxOTlfOTI4OTY2ODAzNjlfMF8z_b_Bdee65c77f9e7b2120a185c919dad81d2.mp4": {
+    "phash": [
+      "9cec2193994ece6c",
+      "8cec313333cb8e6c",
+      "f4fdf0e4c90b0e0a",
+      "908a6f719798e84f",
+      "d5bf4e21da8c4178",
+      "c1f148b79499565b"
+    ],
+    "ahash": [
+      "8283183c3c3c0000",
+      "c393393c3c3c0000",
+      "f3e7870702000000",
+      "fffc7f7f7e400000",
+      "fefefefeea600000",
+      "c8e0e0efe6363110"
+    ],
+    "dhash": [
+      "be2625b1b079e5b7",
+      "1ea6a5e1e070e5b9",
+      "0e0e1c3aa6c4c898",
+      "9958f1f8d094b668",
+      "925212b2d2caa2c4",
+      "9a8a88ce4c6ee3e1"
+    ],
+    "whash": [
+      "c7d7bf7e3c3c0000",
+      "c7d77b7f3c3c0000",
+      "ffe7c70f5f260000",
+      "7f3cff7f7c400000",
+      "febefefe68600000",
+      "c8e0e4efe6f63110"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.370428819000153,
+      "avg_fetch_time": 2.0617381365000256,
+      "success_count": 6
+    }
+  },
+  "http://222.169.85.8:9901/tsfile/live/0123_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x564c167b5000] Connection to tcp://222.169.85.8:9901 failed: Connection timed out\n[in#0 @ 0x564c167b1dc0] Error opening input: Connection timed out\nError opening input file http://222.169.85.8:9901/tsfile/live/0123_1.m3u8.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/93fc12dbf14241c18c23da104fbade23/4000.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 35.6391749620002,
+      "avg_fetch_time": 11.879724987333399,
+      "success_count": 3
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ0MjlfMF8z_b_B8818807a00eed329a69fb494f405bd43.mp4": {
+    "phash": [
+      "f99435e89b376106",
+      "8cf10dd111a7b26f",
+      "f1903d64e6d25a4b",
+      "a59dc8e89e70571a",
+      "857669a512f43a76",
+      "906594dbb0d41dbe"
+    ],
+    "ahash": [
+      "cbfcdabe7cf08000",
+      "fef8a064dfff3313",
+      "020fecfcf270c181",
+      "7b13020e3e43413c",
+      "0000003e3e7f7f7f",
+      "0000005cef1cffff"
+    ],
+    "dhash": [
+      "12c53238f1830d1b",
+      "d0b267cd94ac6666",
+      "9e9ad9ccc2a20b1b",
+      "b6221e7e6c8e9fc9",
+      "96f0f0f4f8f0f2f0",
+      "9c8eb6d08bf9fcb4"
+    ],
+    "whash": [
+      "cbfcd0fe7cf08080",
+      "fef8a060477f1312",
+      "020eedfcfa72e181",
+      "7b13038e3f63417c",
+      "0000003e7e7f7f7f",
+      "0200005cef5cffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.46469408300004,
+      "avg_fetch_time": 1.7441156805000066,
+      "success_count": 6
+    }
+  },
+  "https://gcalic.v.myalicdn.com/gc/wgw02_1/index.m3u8?contentid=2820180516001": {
+    "phash": [
+      "c936cd13ec910ebc",
+      "c936cd13ec910ebc",
+      "c936c913ec910ebd",
+      "c936c913ec910ebd",
+      "c936cd13ec910ebc",
+      "c936cd13ec910ebc"
+    ],
+    "ahash": [
+      "000000000028fbfb",
+      "000000000028fbfb",
+      "000000000028fbfb",
+      "000000000028fbfb",
+      "000000000028fbfb",
+      "000000000028fbfb"
+    ],
+    "dhash": [
+      "0010200824d8d2b3",
+      "0010200824d8d2b3",
+      "0000200824d8d2b3",
+      "0000200824d8d2b3",
+      "0010200824d8d2b3",
+      "0010200824d8d2b3"
+    ],
+    "whash": [
+      "c0c00000fcfcffff",
+      "c0c00000fcfcffff",
+      "c0c00000fcfcffff",
+      "c0c00000fcfcffff",
+      "c0c00000fcfcffff",
+      "c0c00000fcfcffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.693505573999914,
+      "avg_fetch_time": 5.282250928999986,
+      "success_count": 6
+    }
+  },
+  "https://0472.org/hls/cgtne.m3u8": {
+    "phash": [
+      "c87373cc66cc2593",
+      "c87373cc66cc2593",
+      "c87373cc66cc2593",
+      "d96372cc66998d0e",
+      "d96372cc66998d0e",
+      "c87362cc668b398f"
+    ],
+    "ahash": [
+      "4000181818183c3c",
+      "4000181818183c3c",
+      "4000181818183c3c",
+      "400018181818181c",
+      "400018181818181c",
+      "4000081818183c3c"
+    ],
+    "dhash": [
+      "808830b03030f070",
+      "808830b03030f070",
+      "808830b03030f070",
+      "88903292b2b2b2f0",
+      "88903292b2b2b2f0",
+      "8080303030b2f070"
+    ],
+    "whash": [
+      "e0ec3c383c3c3c3c",
+      "e0ec3c383c3c3c3c",
+      "e0ec3c383c3c3c3c",
+      "fc3c1c3c1c183c7e",
+      "fc3c1c3c1c183c7e",
+      "e0e018183c3c3c3c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.727587192999977,
+      "avg_fetch_time": 1.954597865499996,
+      "success_count": 6
+    }
+  },
+  "http://111.61.236.247:9081/hls/32/index.m3u8": {
+    "phash": [
+      "80393fb17c83629f",
+      "df1ed02db4293c31",
+      "df1ed02db4293c31",
+      "e8d03c569758566e",
+      "96dadd65e31e0911",
+      "c4e273857a339c71"
+    ],
+    "ahash": [
+      "0f0f3f7f7f7f3f07",
+      "bebc9890901078fe",
+      "bebc9890901078fe",
+      "c0d8f8f8f0e0c081",
+      "fcfc1d2527030687",
+      "f0f0f070513b2340"
+    ],
+    "dhash": [
+      "98b9e9d5ecd9f87f",
+      "746071733373dbd8",
+      "746071733373dbd8",
+      "b49293938200236f",
+      "c0f8e9edcc6e6c4c",
+      "c7a3a6a1a6e6d291"
+    ],
+    "whash": [
+      "0f0d1d1d2f4f3f01",
+      "bebc98909880f8fe",
+      "bebc98909880f8fe",
+      "c8d8f8f8f8f0f081",
+      "fefc1d1527030687",
+      "f0f0f0f07b3b3340"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 50.13483173899988,
+      "avg_fetch_time": 6.266853967374985,
+      "success_count": 8
+    }
+  },
+  "http://112.123.206.32:808/hls/1/index.m3u8": {
+    "phash": [
+      "c8aef2d8f6231d44",
+      "c8aef2d8f6231d44",
+      "c8aef2d8f6231d44",
+      "c8aef2d8f6231d44",
+      "c8aef2d8f6231d44",
+      "c8aef2d8f6231d44"
+    ],
+    "ahash": [
+      "fff111315a185844",
+      "fff111315a185844",
+      "fff111315a185844",
+      "fff111315a185844",
+      "fff111315a185844",
+      "fff111315a185844"
+    ],
+    "dhash": [
+      "a5a567e3b6f391d8",
+      "a5a567e3b6f391d8",
+      "a5a567e3b6f391d8",
+      "a5a567e3b6f391d8",
+      "a5a567e3b6f391d8",
+      "a5a567e3b6f391d8"
+    ],
+    "whash": [
+      "fdfd33315a18580c",
+      "fdfd33315a18580c",
+      "fdfd33315a18580c",
+      "fdfd33315a18580c",
+      "fdfd33315a18580c",
+      "fdfd33315a18580c"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 43.548036716999945,
+      "avg_fetch_time": 6.221148102428564,
+      "success_count": 7
+    }
+  },
+  "http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]": {
+    "phash": [
+      "b2d1692b69754555",
+      "9c9ce4e77642426b",
+      "9c9ce4e77642426b",
+      "92d16d2b7974545c",
+      "92d16d2b7974545c",
+      "92d16d2b7974545c"
+    ],
+    "ahash": [
+      "6e7f7e6f0f070701",
+      "df9f9f8c88c8c000",
+      "df9f9f8c88c8c000",
+      "4f7f7e4f0f0d0101",
+      "4f7f7e4f0f0d0101",
+      "4f7f7e4f0f0d0101"
+    ],
+    "dhash": [
+      "98c9ccccddeddd8f",
+      "363630303a121313",
+      "363630303a121313",
+      "98d9ac9cd9d99daf",
+      "98d9ac9cd9d99daf",
+      "98d9ac9cd9d99daf"
+    ],
+    "whash": [
+      "4e7f7e4f0f070301",
+      "df9f9f9c8ad8c000",
+      "df9f9f9c8ad8c000",
+      "6eef6f4f0f0d0101",
+      "6eef6f4f0f0d0101",
+      "6eef6f4f0f0d0101"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.968685650999987,
+      "avg_fetch_time": 3.661447608499998,
+      "success_count": 6
+    }
+  },
+  "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8": {
+    "phash": [
+      "afb3945669e003ce",
+      "c502526516db35ef",
+      "e7ead4dc881d08ec",
+      "b4bbe3006b790a37",
+      "b4bbe3006b790a37",
+      "e7d6706d069019dd"
+    ],
+    "ahash": [
+      "8f0faf812030f231",
+      "64262a3c32f2fafe",
+      "fde7e701e164e626",
+      "c7efaed89656c6e0",
+      "c7efaed89656c6e0",
+      "e0e0f0f3f3e1e3e1"
+    ],
+    "dhash": [
+      "19394b5b61656466",
+      "cccc5654669612bc",
+      "e1cdcd6bcbcc8aec",
+      "8d4c6c38b4b49484",
+      "8d4c6c38b4b49484",
+      "2c0e6a6e62530a0b"
+    ],
+    "whash": [
+      "8f0faf81a0f0f239",
+      "442428bcb2f2fade",
+      "fde7e501e124a626",
+      "87ef8ed81656c2e0",
+      "87ef8ed81656c2e0",
+      "e0e0e8b2f3e1e1e1"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.108596841999997,
+      "avg_fetch_time": 3.8514328069999997,
+      "success_count": 6
+    }
+  },
+  "http://222.169.85.8:9901/tsfile/live/0015_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 20.360978143999887,
+      "avg_fetch_time": 6.786992714666629,
+      "success_count": 3
+    }
+  },
+  "http://124.116.183.146:9901/tsfile/live/0123_1.m3u8": {
+    "phash": [
+      "c1c9257038db6ece",
+      "c1c9257038db6ece",
+      "d0f86cb126614f1f",
+      "9c626294b96b13b7",
+      "94696996698d729d",
+      "c3636c1c93c96937"
+    ],
+    "ahash": [
+      "f8f8fcfcc0c00000",
+      "f8f8fcfcc0c00000",
+      "c0f8f8f87c7c7830",
+      "003030fbff3e1000",
+      "400000137f363e06",
+      "4000287c3c3c1000"
+    ],
+    "dhash": [
+      "80c0e0d0909cca72",
+      "80c0e0d0909cca72",
+      "9010108098e0c0e0",
+      "b4a4e0323af8a2e0",
+      "928a7237f4ec74f4",
+      "908448c9e964e2f2"
+    ],
+    "whash": [
+      "f8f8fcfcf8c0e000",
+      "f8f8fcfcf8c0e000",
+      "c0d8f8f87c7c7830",
+      "5a3434ffff3e1000",
+      "c000001fff7e3f3e",
+      "40406c7c7e7e7e38"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 46.859195300999886,
+      "avg_fetch_time": 7.809865883499981,
+      "success_count": 6
+    }
+  },
+  "http://file.lasatv.cn/cms/videos/nmip-media/channellive/channel1/playlist.m3u8": {
+    "phash": [
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b"
+    ],
+    "ahash": [
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700"
+    ],
+    "dhash": [
+      "a6b8989c18478e92",
+      "a6b8989c18478e92",
+      "a6b8989c18478e92",
+      "a6b8989c18478e92",
+      "a6b8989c18478e92",
+      "a6b8989c18478e92"
+    ],
+    "whash": [
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 43.15884534299994,
+      "avg_fetch_time": 7.19314089049999,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/22/BMjAyMzAxMTMyMjEwMDNfNDAzMDAxOTlfOTM1MTIzMzYxMjNfMF8z_b_B3dde97f36273f04403d4dc5eec611a35.mp4": {
+    "phash": [
+      "80f53cc9699e66ac",
+      "85b65ca27ef20dc4",
+      "89b38cd13366d99a",
+      "c1f02c6a5a956b6b",
+      "953bb05b87a43c71",
+      "84f9081f63b8ff03"
+    ],
+    "ahash": [
+      "7842627eff7f1f00",
+      "3f3f3e27373f3e18",
+      "7f7e3c041c181818",
+      "5a7e7e7e68203a10",
+      "0f49c37e0818f256",
+      "7e7e7e7e3e3e1e1e"
+    ],
+    "dhash": [
+      "9296e49a8a88fcbe",
+      "e0f2eecec6cac0e2",
+      "eaf2a8e8e8f2a2b2",
+      "94948a9cc8cae2e3",
+      "5a9b96c4d82286a6",
+      "a0a0a0c0d0e2e2e2"
+    ],
+    "whash": [
+      "7842227e7b7f1f00",
+      "3e3e3e26232f3e10",
+      "7f7f1c043c3c3838",
+      "5a76fe7ee8203a10",
+      "0f5c477e2c1c7256",
+      "147c7e7e3e1e1e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.295282516999919,
+      "avg_fetch_time": 2.0492137528333196,
+      "success_count": 6
+    }
+  },
+  "http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8": {
+    "phash": [
+      "b57a4bb5144be10e",
+      "e1c33c870e3c3e1e",
+      "8989d0d6f6e2616d",
+      "95856a7a3c3c478b",
+      "969e796966961929",
+      "8a576b88d563ba94"
+    ],
+    "ahash": [
+      "0000000607e73330",
+      "6060e0e8e460c0c0",
+      "ff7f3f0100000000",
+      "ff7f3f1f0e000000",
+      "981c3e3e3e282000",
+      "2000073f3f1f0101"
+    ],
+    "dhash": [
+      "0004042c0cce6e61",
+      "cac8c8c8c8cc9683",
+      "e0f2d3ef76790000",
+      "b0f0f8f4f8f8f036",
+      "3168f8ecc4d0e2c2",
+      "4b6accccf5b5d553"
+    ],
+    "whash": [
+      "80c0060787f7ff79",
+      "e0e8e8fcece2e2c0",
+      "ffff7f3f07000000",
+      "ffff7f3f0e000000",
+      "983c3e7f3e3e3800",
+      "a180277f3f5f3501"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 38.21301048100008,
+      "avg_fetch_time": 6.36883508016668,
+      "success_count": 6
+    }
+  },
+  "http://124.116.183.146:9901/tsfile/live/0125_1.m3u8": {
+    "phash": [
+      "96b7694868696b4b",
+      "96b6694a78686c73",
+      "d0f023490f3f7e8c",
+      "94d66ab1596817b5",
+      "967069ec66874f70",
+      "ca9b39646474770b"
+    ],
+    "ahash": [
+      "000e0f0f2e3e3800",
+      "000e0f4f2e3e3000",
+      "00ecfcbc7cdc8000",
+      "00b6361a1eefc300",
+      "000e3e3e3e3f1f00",
+      "003cbcfc70f00000"
+    ],
+    "dhash": [
+      "2c6c4cccdcece222",
+      "2c4cccdccce4e22a",
+      "8c9cac64b490182e",
+      "24a426b656aaa726",
+      "28b8f8ecece0f880",
+      "39f979ace1a122a6"
+    ],
+    "whash": [
+      "000f2f6f3f3f3e00",
+      "002f2f7f3f3f3800",
+      "00fcfcfcfcdc8c00",
+      "003e3e1e7eefd300",
+      "001e3e3f3e3f3f00",
+      "007cfcfe7cf8f000"
+    ],
+    "error": {
+      "fail_count": 2,
+      "timeout_count": 2,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 111.759834383,
+      "avg_fetch_time": 8.596910337153846,
+      "success_count": 13
+    }
+  },
+  "http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 48.64966064800001,
+      "avg_fetch_time": 4.422696422545456,
+      "success_count": 11
+    }
+  },
+  "http://tvdrs.wsrtv.com.cn:8100/channellive/mlptv.flv": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 1,
+      "network_error_count": 2,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 40.460528013000044,
+      "avg_fetch_time": 6.743421335500007,
+      "success_count": 6
+    }
+  },
+  "http://pili-live-rtmp.148.i2863.com/i2863-148/live_148_811389.m3u8": {
+    "phash": [
+      "e56b9a2d145a4ab5",
+      "a2333ee49ce363c8",
+      "e07b944ab83d46b5",
+      "9b6d42956de2328d",
+      "926c1ed5680e3e8f",
+      "a2220befcc9163f6"
+    ],
+    "ahash": [
+      "4060606273f3fffe",
+      "0303237f7363f171",
+      "406060617170ffff",
+      "00848c8c8e9effbf",
+      "00040c6ceefe7e2f",
+      "23236767f3e1f331"
+    ],
+    "dhash": [
+      "86cecec4c6c3cccc",
+      "cfcfcfcfa6cfcbab",
+      "87cbcac3c3c5a6c6",
+      "1039591938383939",
+      "b0dc59d99898c8e9",
+      "cfcfcd87674febe7"
+    ],
+    "whash": [
+      "402060627373fffe",
+      "0303217f7763f171",
+      "406060e17170ffff",
+      "00848c8c9e9eff9f",
+      "00040c64fefe7e3f",
+      "23216767f3e17131"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.18032199700008,
+      "avg_fetch_time": 4.363386999500013,
+      "success_count": 6
+    }
+  },
+  "http://111.61.236.247:9081/hls/45/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://live1.gatv.com.cn:85/live/XWZH.m3u8": {
+    "phash": [
+      "ff3f92e030d98612",
+      "ff3f92e030d98612",
+      "ff3f92e030d98612",
+      "db52298a2b92cf3a",
+      "ece03dd3c939309c",
+      "ece03dd3c939309c"
+    ],
+    "ahash": [
+      "000080c0e0f8fcfe",
+      "000080c0e0f8fcfe",
+      "000080c0e0f8fcfe",
+      "88888c8cbdbd9f8b",
+      "c0e0f0f8fcb08282",
+      "c0e0f0f8fcb08282"
+    ],
+    "dhash": [
+      "5f2f6f170bc331a8",
+      "5f2f6f170bc331a8",
+      "5f2f6f170bc331a8",
+      "697978696961717b",
+      "960ea6c2e0657632",
+      "960ea6c2e0657632"
+    ],
+    "whash": [
+      "808081e1f1f9fcfe",
+      "808081e1f1f9fcfe",
+      "808081e1f1f9fcfe",
+      "88888c9cbdbd9d8b",
+      "c0f0f0f8fcf49a82",
+      "c0f0f0f8fcf49a82"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 29.44028884799991,
+      "avg_fetch_time": 4.906714807999985,
+      "success_count": 6
+    }
+  },
+  "https://0472.org/hls/cgtnd.m3u8": {
+    "phash": [
+      "8eead9b1162e944e",
+      "e5f081e49077c2d7",
+      "beabd873f8f09080",
+      "8eead9b1162e944e",
+      "8eead9b1162e944e",
+      "8eead9b1162e944e"
+    ],
+    "ahash": [
+      "f1f93103070f0f1f",
+      "e3e3a28082323237",
+      "8f0307878780c0d0",
+      "f1f93103070f0f1f",
+      "f1f93103070f0f1f",
+      "f1f93103070f0f1f"
+    ],
+    "dhash": [
+      "a38365657e7e7b7a",
+      "86064606266666e6",
+      "197f2f2e0f0c0430",
+      "a38365657e7e7b7a",
+      "a38365657e7e7b7a",
+      "a38365657e7e7b7a"
+    ],
+    "whash": [
+      "f1f93103070f0f1f",
+      "e7e3e28082b2b23f",
+      "cf071787c782e0f8",
+      "f1f93103070f0f1f",
+      "f1f93103070f0f1f",
+      "f1f93103070f0f1f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.434604642000181,
+      "avg_fetch_time": 1.2391007736666968,
+      "success_count": 6
+    }
+  },
+  "https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8": {
+    "phash": [
+      "86d63c297bc3843e",
+      "86d63c297bc3843e",
+      "b24d5b956a996e84",
+      "ad9ece96d3096283",
+      "8ad22ccb11e933ee",
+      "813e57542ba57f44"
+    ],
+    "ahash": [
+      "00007e7effff0000",
+      "00007e7effff0000",
+      "000303070707ff07",
+      "3f1f030307071371",
+      "09353d3c3d39bb01",
+      "041c183f3d7e7e7c"
+    ],
+    "dhash": [
+      "4a25e4ccc8c6d208",
+      "4a25e4ccc8c6d208",
+      "0f0f0f0f1f0f9f0f",
+      "f067ebf7fefee3c3",
+      "bba1e5f9697363b7",
+      "dcfcf2f3e1e0c8c8"
+    ],
+    "whash": [
+      "0000ffffffff0000",
+      "0000ffffffff0000",
+      "01070707cf87ff87",
+      "3f1f03030f071bf3",
+      "09753d3d3d39b901",
+      "0404183f3d7e7e7c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.064420820999999,
+      "avg_fetch_time": 2.0107368035,
+      "success_count": 6
+    }
+  },
+  "http://222.169.85.8:9901/tsfile/live/0125_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 6.760342272999992,
+      "avg_fetch_time": 6.760342272999992,
+      "success_count": 1
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQyNzlfMF8z_b_Bbc3703fc331dc994c50859c19aad28ff.mp4": {
+    "phash": [
+      "8ca7333c4bc5f4b0",
+      "c93c37db14261787",
+      "947e37d11ab6609a",
+      "912e5473937c1cb9",
+      "d14e7b7380e27e09",
+      "9935358b1d971e98"
+    ],
+    "ahash": [
+      "00007e7e3c181800",
+      "000000187efcff7e",
+      "040010187c7c3e06",
+      "0030103e2c6ccf7e",
+      "0818187e3e88ebfe",
+      "00003c3c3c7e7f00"
+    ],
+    "dhash": [
+      "faf2e4e2f0f0b0e9",
+      "9233a2b2f0f0c1f0",
+      "3c72b4b1f0c2f03c",
+      "cc627268d9d99ad8",
+      "f87070e0f05293d0",
+      "f8dae870f1f0d4b0"
+    ],
+    "whash": [
+      "003e7e7f7f3e1800",
+      "020018187efeff7e",
+      "0c1a503c7e7e7f06",
+      "0030103e6d6dff7e",
+      "0818187e3e38ebfe",
+      "0c007e3c3cffff00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.312141733999965,
+      "avg_fetch_time": 1.885356955666661,
+      "success_count": 6
+    }
+  },
+  "http://124.116.183.146:9901/tsfile/live/0107_1.m3u8": {
+    "phash": [
+      "8ec455aab198cecd",
+      "8ec455aab198cecd",
+      "cce0473fc8cf0e8c",
+      "98d86566dc8d666c",
+      "c49ec768c38b18dd",
+      "b6c16939368e338d"
+    ],
+    "ahash": [
+      "b031331b3b391908",
+      "b031331b3b391908",
+      "f060787858931f18",
+      "dccc5c5c1c001100",
+      "f8fe1e3cc0c0f078",
+      "c6e6763606061716"
+    ],
+    "dhash": [
+      "666a63636363f37b",
+      "666a63636363f37b",
+      "c1d1d195b5666262",
+      "3098b1b13169f3f2",
+      "c06434680a84c2c0",
+      "8c8ce4ac2c3c24a4"
+    ],
+    "whash": [
+      "b233333b3f3d1908",
+      "b233333b3f3d1908",
+      "f06078795d9b9f10",
+      "fcccdcfd9c111b00",
+      "f8fe1e3cc0c0f078",
+      "8676767707071707"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 36.077257816999804,
+      "avg_fetch_time": 6.012876302833301,
+      "success_count": 6
+    }
+  },
+  "http://39.152.103.17:8089/tsfile/live/1015_1.m3u8": {
+    "phash": [
+      "f35bcc64729b6380",
+      "ffecdce2c0316043",
+      "fde2ecc121d17303",
+      "e4a009cfb6bab385",
+      "f5830a7a51555a9b",
+      "c6c5cc3fb921864e"
+    ],
+    "ahash": [
+      "fcffefc7c3c3ffff",
+      "fbb8800024a4acbc",
+      "e2f080000888ba80",
+      "fbf1e3c7f0f00000",
+      "fffffefec0c00000",
+      "faf87060808480fc"
+    ],
+    "dhash": [
+      "49514a8c8e0e0dcc",
+      "163248194a48682a",
+      "06261a1a5a5a3256",
+      "97b7870d44416306",
+      "69e9d4d49409162e",
+      "72e0c4ca2c6c2600"
+    ],
+    "whash": [
+      "b0f0e3c2c381c3ef",
+      "fff8800028a4affe",
+      "fff8808a2aa8fec0",
+      "fff1f3c7f0f00000",
+      "fffffeeec0800000",
+      "fff870e08484c0fe"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 57.213586524000334,
+      "avg_fetch_time": 7.151698315500042,
+      "success_count": 8
+    }
+  },
+  "http://tvfile.mcrm.org.cn/nmip-media/channellive/channel103064/playlist.m3u8": {
+    "phash": [
+      "a0cf10643f927e5b",
+      "919224cccd39e3cf",
+      "908dc77c921bb959",
+      "81d48a25d6d1ee6b",
+      "81d48a25d6d1ee6b",
+      "92870d19c77379c6"
+    ],
+    "ahash": [
+      "6fffffff83834303",
+      "7f0f0f0efcf80000",
+      "3ff63f0fc0800064",
+      "f7d7f81e03030b1d",
+      "f7d7f81e03030b1d",
+      "3c3c3c7e7e183c3c"
+    ],
+    "dhash": [
+      "8fc763c60ba79e97",
+      "f6ec7978f090b0e0",
+      "74c4fabd9c324ddd",
+      "e6b651b8c663dbf9",
+      "e6b651b8c663dbf9",
+      "f0e8e8e8e891f0f0"
+    ],
+    "whash": [
+      "47fffff701030300",
+      "ff1f0f0efcf81000",
+      "3ff67f0fc482006c",
+      "f756fc1e03030b1d",
+      "f756fc1e03030b1d",
+      "3c3c3c7e7c083c3c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.716072398999927,
+      "avg_fetch_time": 4.119345399833321,
+      "success_count": 6
+    }
+  },
+  "http://live.schstv.com:90/live/xwzh.m3u8": {
+    "phash": [
+      "edd902785f24dac1",
+      "b4824b1b6b162adf",
+      "d1f45cdc6c4492ea",
+      "e081cb76ca356dd1",
+      "e82a074d05c76d9f",
+      "e82a074d05c76d9f"
+    ],
+    "ahash": [
+      "4078ff8399d9473c",
+      "047ef7838bc3e6c1",
+      "daeeefe0e8ccc000",
+      "ffff43474580c6f8",
+      "00c0c1d0d8f8fcff",
+      "00c0c1d0d8f8fcff"
+    ],
+    "dhash": [
+      "b0e0f21633338e6d",
+      "fddaac261b0ecc1b",
+      "b458d8989b181033",
+      "c5d39694850e1cc3",
+      "ab2f1313b3931298",
+      "ab2f1313b3931298"
+    ],
+    "whash": [
+      "5078ff83d9c1433c",
+      "043effc3878366c1",
+      "daeeefe0e8ecc000",
+      "ff7f4347458080f8",
+      "00c0c1d0d8f8feff",
+      "00c0c1d0d8f8feff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.70343921000017,
+      "avg_fetch_time": 4.450573201666695,
+      "success_count": 6
+    }
+  },
+  "http://drive.mxmy.net:8888/udp/239.3.1.164:8001": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[http @ 0x565545aba4c0] Stream ends prematurely at 475944, should be 18446744073709551615\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[h264 @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545ac33c0] decode_slice_header error\n[h264 @ 0x565545ac33c0] no frame!\n[mpegts @ 0x565545ab9ec0] Could not find codec parameters for stream 0 (Video: h264 ([27][0][0][0] / 0x001B), none): unspecified size\nConsider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options\n[in#0/mpegts @ 0x565545ab9dc0] could not seek to position 1031.272\nInput #0, mpegts, from 'http://drive.mxmy.net:8888/udp/239.3.1.164:8001':\n  Duration: N/A, start: 1029.272000, bitrate: N/A\n  Program 1 \n  Stream #0:0[0x121]: Video: h264 ([27][0][0][0] / 0x001B), none, 25 fps, 25 tbr, 90k tbn\n  Stream #0:1[0x122]: Audio: mp2 ([3][0][0][0] / 0x0003), 32000 Hz, stereo, fltp, 96 kb/s\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[NULL @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 3 times\n[h264 @ 0x565545b1bf80] non-existing PPS 0 referenced\n[h264 @ 0x565545b1bf80] decode_slice_header error\n[h264 @ 0x565545b1bf80] no frame!\n[NULL @ 0x565545ac33c0] non-existing PPS 0 referenced\n[h264 @ 0x565545afd140] non-existing PPS 0 referenced\n[h264 @ 0x565545afd140] decode_slice_header error\n[h264 @ 0x565545afd140] no frame!\n[h264 @ 0x565545ad5740] non-existing PPS 0 referenced\n[h264 @ 0x565545ad5740] decode_slice_header error\n[h264 @ 0x565545ad5740] no frame!\n[NULL @ 0x565545ac33c0] non-existing PPS 0 referenced\n    Last message repeated 1 times\n[h264 @ 0x565545b13600] non-existing PPS 0 referenced\n[h264 @ 0x565545b13600] decode_slice_header error\n[h264 @ 0x565545b13600] no frame!\n[vist#0:0/h264 @ 0x565545adbfc0] Error submitting packet to decoder: Invalid data found when processing input\n[http @ 0x565545aba4c0] Stream ends prematurely at 475944, should be 18446744073709551615\n[NULL @ 0x565545ac33c0] non-existing PPS 0 referenced\n[h264 @ 0x565545edf840] non-existing PPS 0 referenced\n[h264 @ 0x565545edf840] decode_slice_header error\n[h264 @ 0x565545edf840] no frame!\n[vist#0:0/h264 @ 0x565545adbfc0] Error submitting packet to decoder: Invalid data found when processing input\n[NULL @ 0x565545ac33c0] non-existing PPS 0 referenced\n[h264 @ 0x565545b1bf80] non-existing PPS 0 referenced\n[h264 @ 0x565545b1bf80] decode_slice_header error\n[h264 @ 0x565545b1bf80] no frame!\n[vist#0:0/h264 @ 0x565545adbfc0] Error submitting packet to decoder: Invalid data found when processing input\n[in#0/mpegts @ 0x565545ab9dc0] Error during demuxing: Input/output error\n[h264 @ 0x565545afd140] non-existing PPS 0 referenced\n[h264 @ 0x565545afd140] decode_slice_header error\n[h264 @ 0x565545afd140] no frame!\n[vist#0:0/h264 @ 0x565545adbfc0] Error submitting packet to decoder: Invalid data found when processing input\n[h264 @ 0x565545ad5740] non-existing PPS 0 referenced\n[h264 @ 0x565545ad5740] decode_slice_header error\n[h264 @ 0x565545ad5740] no frame!\n[vist#0:0/h264 @ 0x565545adbfc0] Error submitting packet to decoder: Invalid data found when processing input\n[h264 @ 0x565545b13600] non-existing PPS 0 referenced\n[h264 @ 0x565545b13600] decode_slice_header error\n[h264 @ 0x565545b13600] no frame!\n[in#0/mpegts @ 0x565545ab9dc0] Error retrieving a packet from demuxer: Input/output error\n[vist#0:0/h264 @ 0x565545adbfc0] Decoding error: Invalid data found when processing input\n    Last message repeated 3 times\nCannot determine format of input stream 0:0 after EOF\nError marking filters as finished\nError while filtering: Invalid data found when processing input\n[vist#0:0/h264 @ 0x565545adbfc0] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x565545b0fac0] Nothing was written into output file, because at least one of its streams received no packets.\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://ggpagerl.live.sxmty.com/live/hls/b350dc1ac5da45c2b2233f6eb122ddf4/49d3766c7f204685a2a8f027b234c33d.m3u8": {
+    "phash": [
+      "e56b0ab41d183f1d",
+      "e56b1ab41d183f0d",
+      "a83c57cb58635e15",
+      "a83c57cb58635e15",
+      "a93c57cb58635e05",
+      "a83c57cb58635e45"
+    ],
+    "ahash": [
+      "00e0e0e0e2ff7600",
+      "00e0e0e0e2fff600",
+      "0003835bfbffe300",
+      "0003835bfbffe300",
+      "0003835bfbffe300",
+      "0003835bfbffe300"
+    ],
+    "dhash": [
+      "a74f4252460ed5b4",
+      "844c4252460ed5b4",
+      "b3a63797b34bcbc2",
+      "b7b63797b34bcbc2",
+      "9b8e3797b34bcbc2",
+      "a42e3797b34bcbc2"
+    ],
+    "whash": [
+      "00e0e0e2faffff00",
+      "00e0e0e2faffff00",
+      "0003875bffffe300",
+      "0003875bffffe300",
+      "0003875bffffe300",
+      "0003875bffffe300"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 42.82078419399977,
+      "avg_fetch_time": 7.136797365666628,
+      "success_count": 6
+    }
+  },
+  "https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQwNzVfMF8z_b_B811c0dec6b9a3d3074a18522c185010a.mp4": {
+    "phash": [
+      "8d1672db4fc17c42",
+      "993ca3563367124f",
+      "c09f7b47146a813f",
+      "92b0286f7350edb9",
+      "d00d76034cf6b7b1",
+      "89d67a99722d3638"
+    ],
+    "ahash": [
+      "0e07121abbdb69e9",
+      "46db1902189cf96f",
+      "707e7a7e72724062",
+      "076fffeeefa00000",
+      "20081f5edcccc4cc",
+      "e0fe56221f1f1b01"
+    ],
+    "dhash": [
+      "6c2c36767213939b",
+      "9eb23396b43073db",
+      "d6869286a686828e",
+      "9cad1cdc4b6bec58",
+      "42b2bab4b18c1c3c",
+      "8a82aec2f376d393"
+    ],
+    "whash": [
+      "0e17161a3b9b69e9",
+      "42db190618bcf96f",
+      "507e5a7e72766062",
+      "072fffecffe00000",
+      "20085fdeddccc4dc",
+      "e0fe5e301f1f1b01"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.538801111999987,
+      "avg_fetch_time": 2.0898001853333312,
+      "success_count": 6
+    }
+  },
+  "http://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd.m3u8": {
+    "phash": [
+      "90f86f80e27f9d60",
+      "90f86f80e27f9d60",
+      "90f86f80e27f9d60",
+      "90f86f80e27f9d60",
+      "90f86f80e27f9d60",
+      "90f86f80e27f9d60"
+    ],
+    "ahash": [
+      "ffffdfdf5f1f0000",
+      "ffffdfdf5f1f0000",
+      "ffffdfdf5f1f0000",
+      "ffffdfdf5f1f0000",
+      "ffffdfdf5f1f0000",
+      "ffffdfdf5f1f0000"
+    ],
+    "dhash": [
+      "fc94949693fcf8eb",
+      "fc94949693fcf8eb",
+      "fc94949693fcf8eb",
+      "fc94949693fcf8eb",
+      "fc94949693fcf8eb",
+      "fc94949693fcf8eb"
+    ],
+    "whash": [
+      "3f5f5f5f1f0e0000",
+      "3f5f5f5f1f0e0000",
+      "3f5f5f5f1f0e0000",
+      "3f5f5f5f1f0e0000",
+      "3f5f5f5f1f0e0000",
+      "3f5f5f5f1f0e0000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 5.608858398999928,
+      "avg_fetch_time": 0.9348097331666546,
+      "success_count": 6
+    }
+  },
+  "http://183.215.134.239:19901/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      "e882c65df1bf4116",
+      "aae6f5f47148c318",
+      "aaf554f2780aab19",
+      "e0d474f0f0d0fccc",
+      "c3e0bc310f1ce3b9",
+      "a8a357408ddd7b31"
+    ],
+    "ahash": [
+      "ff77fdd9c88080c0",
+      "ffff392111311108",
+      "f7f73b0301010101",
+      "e0607a7d6f614040",
+      "f3f0f07060600000",
+      "474383dfcf818080"
+    ],
+    "dhash": [
+      "c6c5e19396123292",
+      "0765d1d5556535f1",
+      "87cfeb6b6b676531",
+      "86c2f4c9db8b9296",
+      "8e87c7c5c0cc9aea",
+      "8f8f173797351416"
+    ],
+    "whash": [
+      "fb77fdcb888080e0",
+      "ffff3d2111311908",
+      "ffff3f3301212101",
+      "f0707f7f6f614040",
+      "fff7fb7060600830",
+      "c747c7dfd7c18080"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 54.29945394599986,
+      "avg_fetch_time": 9.049908990999976,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXyuhang2/720p.m3u8": {
+    "phash": [
+      "c9e076198db21b67",
+      "c9e076198db21b67",
+      "c9e076198db21b67",
+      "c9e076198db21b67",
+      "c9e076198db21b67",
+      "c9e076198db21b67"
+    ],
+    "ahash": [
+      "c0c1ffffff080000",
+      "c0c1ffffff080000",
+      "c0c1ffffff080000",
+      "c0c1ffffff080000",
+      "c0c1ffffff080000",
+      "c0c1ffffff080000"
+    ],
+    "dhash": [
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03"
+    ],
+    "whash": [
+      "c0f1ffffff080000",
+      "c0f1ffffff080000",
+      "c0f1ffffff080000",
+      "c0f1ffffff080000",
+      "c0f1ffffff080000",
+      "c0f1ffffff080000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.48035955900002,
+      "avg_fetch_time": 3.2467265931666702,
+      "success_count": 6
+    }
+  },
+  "http://112.46.85.60:8009/hls/509/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 58.752623576999895,
+      "avg_fetch_time": 11.75052471539998,
+      "success_count": 5
+    }
+  },
+  "http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel18/playlist.m3u8": {
+    "phash": [
+      "f4b818cee6e76190",
+      "f7778420a3ed2c45",
+      "deffa53893cc2084",
+      "905c957bc9569a9a",
+      "905c957bc9569a9a",
+      "905c957bc9569a9a"
+    ],
+    "ahash": [
+      "dfdec2f2f2f07622",
+      "62e0a0e46242faff",
+      "ef80dc9c8c083c7e",
+      "ce52161051004e7f",
+      "ce52161051004e7f",
+      "ce52161051004e7f"
+    ],
+    "dhash": [
+      "3ebe96c6e6e4e6ee",
+      "cc4c4c4cccb656fc",
+      "1a5e31393931f0cc",
+      "1ab6a4a4a19d9ce4",
+      "1ab6a4a4a19d9ce4",
+      "1ab6a4a4a19d9ce4"
+    ],
+    "whash": [
+      "dfcec2f2f0f07002",
+      "62e0e0e06243faff",
+      "ef80dc9c9c083c7e",
+      "fe52575051404e7f",
+      "fe52575051404e7f",
+      "fe52575051404e7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 35.274022489000004,
+      "avg_fetch_time": 5.879003748166667,
+      "success_count": 6
+    }
+  },
+  "https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8": {
+    "phash": [
+      "f3aad399d17230c4",
+      "cd723463334fd30c",
+      "f2aec59a98530b63",
+      "8fff40807073923f",
+      "ceadd151f9588427",
+      "caa4d979d9e83a44"
+    ],
+    "ahash": [
+      "edefc1c1c90decec",
+      "0018383c3c381800",
+      "fff36189cd0ce0f0",
+      "ffff80819f3f0000",
+      "ff3e3b9981308cfc",
+      "fb7e773b3000703c"
+    ],
+    "dhash": [
+      "9909070b9b999948",
+      "03b2606161603016",
+      "1964cb1939890802",
+      "9067694977f076e3",
+      "d274773323613868",
+      "b3e4e5e761c9e179"
+    ],
+    "whash": [
+      "edefe181410dc8ec",
+      "c1183c3c3c3c38ff",
+      "fff26181cd0ce0f0",
+      "ffff80859f3f0000",
+      "ff183b9981308cfc",
+      "fd3e773b3000703c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 43.40733397800034,
+      "avg_fetch_time": 7.234555663000056,
+      "success_count": 6
+    }
+  },
+  "http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]": {
+    "phash": [
+      "bc6f10b750c8aaae",
+      "dc7cebf4e0429285",
+      "8db5502abbb38aaa",
+      "df905025adb28d1f",
+      "df905025adb28d1f",
+      "df905025adb28d1f"
+    ],
+    "ahash": [
+      "8080b180c68ede5e",
+      "d0901c16de9ee0ec",
+      "fffeffff31310000",
+      "fffeffff11000000",
+      "fffeffff11000000",
+      "fffeffff11000000"
+    ],
+    "dhash": [
+      "262623322e3c3494",
+      "143620a4be3c4dc9",
+      "92567652e3e3e3d3",
+      "fc54547762666d21",
+      "fc54547762666d21",
+      "fc54547762666d21"
+    ],
+    "whash": [
+      "8000b18af68fff5e",
+      "f4901c145e9ee0fd",
+      "fffaffbf11010000",
+      "fffeffbf12000000",
+      "fffeffbf12000000",
+      "fffeffbf12000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.864567020000095,
+      "avg_fetch_time": 5.310761170000016,
+      "success_count": 6
+    }
+  },
+  "http://gmxw.7766.org:808/hls/15/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://zmjp3jin.live.sxmty.com/live/hls/268fe96f955d496db37fb10bb887cda9/fc196029d289449ea524a94a95379a0d.m3u8": {
+    "phash": [
+      "f2a60c25cf4d891f",
+      "f1f3190e0e0d4f8b",
+      "a3a60e0d5959593f",
+      "a3a60c1d5959599f",
+      "f1d178470e0f4f0d",
+      "b213cd4d86179979"
+    ],
+    "ahash": [
+      "40e6ccecef6f40c8",
+      "40ceeee6e6c402d0",
+      "0067e7edef4b00c0",
+      "0067e7e5e74200c0",
+      "40ceee6666e642c0",
+      "ffcf04040000c0ff"
+    ],
+    "dhash": [
+      "a48c8999889b9899",
+      "9898184c0c0c1622",
+      "a6cccd998adadb99",
+      "a6cccd998cda5b91",
+      "989898c4cc4c9626",
+      "da9c1d2d2db30624"
+    ],
+    "whash": [
+      "00e4ccecefefc0c8",
+      "40ceeee6e7e602d0",
+      "0067e7e5ef6b41c0",
+      "0067e7e7ef4b01c8",
+      "40ceee67e7e642c0",
+      "ffcfcd848000c0ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 44.35290613200016,
+      "avg_fetch_time": 7.392151022000026,
+      "success_count": 6
+    }
+  },
+  "http://182.150.23.74:808/hls/23/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 63.916105974000175,
+      "avg_fetch_time": 10.65268432900003,
+      "success_count": 6
+    }
+  },
+  "http://112.27.235.94:8000/hls/18/index.m3u8": {
+    "phash": [
+      "b1a17a56c5cf82cc",
+      "a0e274af974dce14",
+      "a79794a4cc0f59c9",
+      "a79794a4cc0f59c9",
+      "c28dec3d92d512c7",
+      "e599130d92e9974b"
+    ],
+    "ahash": [
+      "efcfefef26048000",
+      "e7c7616f6f630302",
+      "3f77282161232300",
+      "3f77282161232300",
+      "7f13303c0400f0f0",
+      "0feef8f37202602c"
+    ],
+    "dhash": [
+      "8b9bdbdee42c3c3c",
+      "8e9d95cdcdeb3636",
+      "64cd5b4b8f4f4e46",
+      "64cd5b4b8f4f4e46",
+      "f7e7e5d4cd0901c1",
+      "da1cd686c646c3c8"
+    ],
+    "whash": [
+      "efcfefef26048000",
+      "e7c761676f2b0302",
+      "3f77693165e32380",
+      "3f77693165e32380",
+      "7f333d3c2400f8f8",
+      "0feefaf3f2026024"
+    ],
+    "error": {
+      "fail_count": 2,
+      "timeout_count": 2,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 71.17351167699996,
+      "avg_fetch_time": 7.908167964111107,
+      "success_count": 9
+    }
+  },
+  "http://218.13.170.98:9901/tsfile/live/0115_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 55.52406546599991,
+      "avg_fetch_time": 9.254010910999986,
+      "success_count": 6
+    }
+  }
+}
