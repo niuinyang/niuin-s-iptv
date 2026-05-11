@@ -1,0 +1,6534 @@
+{
+  "https://t.freetv.fun/live/dian-ying-4.flv": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x5605b57594c0] Stream ends prematurely at 396829, should be 18446744073709551615\n    Last message repeated 1 times\n[in#0/flv @ 0x5605b5758dc0] could not seek to position 2024574.648\nInput #0, flv, from 'https://t.freetv.fun/live/dian-ying-4.flv':\n  Metadata:\n    link_info       : n.cn-twxzd4.yjtt_1065486,n.cn-56uylx.v3aw_3119801,n.cn-56uylx.d51s_1986340,n.cn-9zhln9.jnl7_1966848,n.cn-9zhln9.4yy9_2962040\n    h_id            : 0\n    fp_amode        : 0\n    s_id            : 8\n    fp_nb           : 0\n    stream_id       : hs.direct.huya.com:huyalive:1423782047-1423782047-6115097328496934912-2847687550-10057-A-0-1_264-6000\n    encoder         : Lavf58.45.100\n    fp_vmode        : 1\n    fp_coderate     : 6000000\n    e_id            : 0\n    p_id            : 11\n    old_link_info   : (hs.direct.huya.com:huyalive:1423782047-1423782047-6115097328496934912-2847687550-10057-A-0-1)n.cn-8n8bq4.qvf3_3522827,n.cn-twxzd4.yjtt_1065486\n    publish_time_stamp: 1777447552\n    ab              : 0\n    fp_dispatch_expr_tag: \n    server          : TLSS/2.0.0(qcloud)\n    server_version  : 2.0.0\n  Duration: N/A, start: 2024569.648000, bitrate: 3004 kb/s\n  Stream #0:0: Subtitle: text\n  Stream #0:1: Audio: aac (LC), 44100 Hz, stereo, fltp, 133 kb/s\n  Stream #0:2: Video: h264 (High), yuv420p(progressive), 1920x1080, 2871 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:2 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x5605b57594c0] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x5605b5758dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x5605b5758dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x5605b5947d80] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    link_info       : n.cn-twxzd4.yjtt_1065486,n.cn-56uylx.v3aw_3119801,n.cn-56uylx.d51s_1986340,n.cn-9zhln9.jnl7_1966848,n.cn-9zhln9.4yy9_2962040\n    h_id            : 0\n    fp_amode        : 0\n    s_id            : 8\n    fp_nb           : 0\n    stream_id       : hs.direct.huya.com:huyalive:1423782047-1423782047-6115097328496934912-2847687550-10057-A-0-1_264-6000\n    server_version  : 2.0.0\n    fp_vmode        : 1\n    fp_coderate     : 6000000\n    e_id            : 0\n    p_id            : 11\n    old_link_info   : (hs.direct.huya.com:huyalive:1423782047-1423782047-6115097328496934912-2847687550-10057-A-0-1)n.cn-8n8bq4.qvf3_3522827,n.cn-twxzd4.yjtt_1065486\n    publish_time_stamp: 1777447552\n    ab              : 0\n    fp_dispatch_expr_tag: \n    server          : TLSS/2.0.0(qcloud)\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x5605b5b0ce00] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x5605b5b0ce00] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 1.7240771559999075,
+      "avg_fetch_time": 1.7240771559999075,
+      "success_count": 1
+    }
+  },
+  "http://live.xysrmt.cn/xwzh/sd/live.m3u8": {
+    "phash": [
+      "8080808080820a82",
+      "8080808080820a82",
+      "8080808080820a82",
+      "8080808080820a82",
+      "8080808080820a82",
+      "8080808080820a82"
+    ],
+    "ahash": [
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000"
+    ],
+    "dhash": [
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000"
+    ],
+    "whash": [
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.423854722999863,
+      "avg_fetch_time": 1.9039757871666438,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/wq/sd/live.m3u8": {
+    "phash": [
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52"
+    ],
+    "ahash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "dhash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "whash": [
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.069879478000189,
+      "avg_fetch_time": 2.011646579666698,
+      "success_count": 6
+    }
+  },
+  "http://stream11.jlntv.cn/shuangyang/sd/live.m3u8": {
+    "phash": [
+      "fe03030303f8fcfc",
+      "fe03030303f8fcfc",
+      "fe03030303f8fcfc",
+      "fe03030303f8fcfc",
+      "fe03030303f8fcfc",
+      "fe03030303f8fcfc"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.825546896999754,
+      "avg_fetch_time": 2.137591149499959,
+      "success_count": 6
+    }
+  },
+  "http://zbbf2.ahbztv.com/live/416.m3u8": {
+    "phash": [
+      "89f7f4dd67081922",
+      "cf9a84e19265b84f",
+      "c8939b99b2333399",
+      "c8939b99b2333399",
+      "c8939b99b2333399",
+      "c8939b99b2333399"
+    ],
+    "ahash": [
+      "ffff0f19001c0000",
+      "ffff992024c3223c",
+      "fcfcf8f0f0d0d0d0",
+      "fcfcf8f0f0d0d0d0",
+      "fcfcf8f0f0d0d0d0",
+      "fcfcf8f0f0d0d0d0"
+    ],
+    "dhash": [
+      "5008dbf3cff2f1b7",
+      "d469314dcc8ec6e0",
+      "e8f0c08090909210",
+      "e8f0c08090909210",
+      "e8f0c08090909210",
+      "e8f0c08090909210"
+    ],
+    "whash": [
+      "ffff7f19011f0000",
+      "ffff990024c3423c",
+      "fcfcf8f0f0f0d000",
+      "fcfcf8f0f0f0d000",
+      "fcfcf8f0f0f0d000",
+      "fcfcf8f0f0f0d000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.171354155999893,
+      "avg_fetch_time": 2.1952256926666487,
+      "success_count": 6
+    }
+  },
+  "http://stream8.jlntv.cn/sytv2/sd/live.m3u8": {
+    "phash": [
+      "e2573de96234bc12",
+      "e2573de96234bc12",
+      "c23fbcf083941b39",
+      "c23fbcf083941b39",
+      "c6467be9f1381f10",
+      "c6467be9f1381f10"
+    ],
+    "ahash": [
+      "81300470757bffef",
+      "81300470757bffef",
+      "870000726071ffff",
+      "870000726071ffff",
+      "80303676fefffffb",
+      "80303676fefffffb"
+    ],
+    "dhash": [
+      "474365c4cde32f4f",
+      "474365c4cde32f4f",
+      "0c254bc4cbc7a684",
+      "0c254bc4cbc7a684",
+      "6a6c6cecec636333",
+      "6a6c6cecec636333"
+    ],
+    "whash": [
+      "813004707573ffaf",
+      "813004707573ffaf",
+      "870020706173ffff",
+      "870020706173ffff",
+      "002036347effff81",
+      "002036347effff81"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.871712690999857,
+      "avg_fetch_time": 2.645285448499976,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-4.m3u8": {
+    "phash": [
+      "94736c7c3b2c1b07",
+      "da2409f70d317597",
+      "996666b35a9d130e",
+      "916e3c116a326b9f",
+      "916e3c116a326b9f",
+      "897666b97a8d0f06"
+    ],
+    "ahash": [
+      "007e7e7e3efe1e00",
+      "00fdfcfdfcfcfc00",
+      "00ebffffffffff00",
+      "00fe7e7e7e6e3e00",
+      "00fe7e7e7e6e3e00",
+      "00efffffffff1f00"
+    ],
+    "dhash": [
+      "1898d850f8b0b4b2",
+      "20292929290919b0",
+      "0682f252dbda7271",
+      "06a4c4ccd8d8dcb8",
+      "06a4c4ccd8d8dcb8",
+      "0ca873737b7af215"
+    ],
+    "whash": [
+      "007e7e3e3efe1600",
+      "00fdf0dcf4ecfc00",
+      "00607afbf97f1f00",
+      "00fe7c767e6e1e00",
+      "00fe7c767e6e1e00",
+      "00073fbf3f1f1f00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.23055438699987,
+      "avg_fetch_time": 2.7050923978333117,
+      "success_count": 6
+    }
+  },
+  "http://139.203.180.9:90/live/zhxw.m3u8": {
+    "phash": [
+      "d14cc4d1d581ebba",
+      "e412c50d7e63c58f",
+      "e412d10d7ae3878f",
+      "e412d10c7d6bc68f",
+      "e412d10c7d6bc68f",
+      "e412d10c7d6bc68f"
+    ],
+    "ahash": [
+      "fc00004eccc8ffff",
+      "081e7bc11172f0f3",
+      "001e7fe11172f1f3",
+      "401e7bc11373f3f2",
+      "401e7bc11373f3f2",
+      "401e7bc11373f3f2"
+    ],
+    "dhash": [
+      "d0b0999a9c909080",
+      "92b2e28b26b68286",
+      "92b2e28b26e68686",
+      "92b2ca8626e6c686",
+      "92b2ca8626e6c686",
+      "92b2ca8626e6c686"
+    ],
+    "whash": [
+      "fc0000064cecffff",
+      "081e7fe01172f1f3",
+      "081e77e01372f1f3",
+      "401e7fe01372f1f2",
+      "401e7fe01372f1f2",
+      "401e7fe01372f1f2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.808962729999962,
+      "avg_fetch_time": 2.6348271216666603,
+      "success_count": 6
+    }
+  },
+  "http://59.175.226.142:280/gb28181/xwzh.m3u8": {
+    "phash": [
+      "dcf22059364d5b27",
+      "dcf22059364d5b27",
+      "dcf22059364d5b27",
+      "dcf22059364d5b27",
+      "dcf22059364d5b27",
+      "dcf22059364d5b27"
+    ],
+    "ahash": [
+      "00ffffffffffff00",
+      "00ffffffffffff00",
+      "00ffffffffffff00",
+      "00ffffffffffff00",
+      "00ffffffffffff00",
+      "00ffffffffffff00"
+    ],
+    "dhash": [
+      "a090b0207070f206",
+      "a090b0207070f206",
+      "a090b0207070f206",
+      "a090b0207070f206",
+      "a090b0207070f206",
+      "a090b0207070f206"
+    ],
+    "whash": [
+      "00ffff9c1e3c3a00",
+      "00ffff9c1e3c3a00",
+      "00ffff9c1e3c3a00",
+      "00ffff9c1e3c3a00",
+      "00ffff9c1e3c3a00",
+      "00ffff9c1e3c3a00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.77133989299989,
+      "avg_fetch_time": 3.2952233154999817,
+      "success_count": 6
+    }
+  },
+  "http://tvfile.mcrm.org.cn/nmip-media/channellive/channel103064/playlist.m3u8": {
+    "phash": [
+      "ed12d0047f63878f",
+      "ec12c10d7b63878f",
+      "ec12c10d7b63878f",
+      "ec12c10d7b63878f",
+      "836ac29715b5663e",
+      "836ac29715b5663e"
+    ],
+    "ahash": [
+      "401ffbc11373f1f3",
+      "081f7fc19173f1f3",
+      "001f7fc19172f1f3",
+      "001f7fc11173f1f3",
+      "2400810f1fffff7f",
+      "2400810f1fffff7f"
+    ],
+    "dhash": [
+      "92b2cb0366e6c306",
+      "92b2e30b27e6c306",
+      "92b2e30b27e6c306",
+      "92b6e70b27e6c306",
+      "cca327d67aa9c4f8",
+      "cca327d67aa9c4f8"
+    ],
+    "whash": [
+      "001ffbc11372f1f2",
+      "081f73c19172f1f3",
+      "001ff3c19172f1f3",
+      "001ff7c11172f1f3",
+      "240081030fffff7e",
+      "240081030fffff7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.04785195299985,
+      "avg_fetch_time": 3.507975325499975,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-ying-hua-1.php": {
+    "phash": [
+      "a1897c7125665bec",
+      "e69b19654d361b58",
+      "c4f9390e32e42d3e",
+      "a6f95925188679f2",
+      "b5d54a2a5b246c3b",
+      "8bef742049107f1f"
+    ],
+    "ahash": [
+      "007f7f676f66f700",
+      "00fffff7e3e7c700",
+      "00fefff61474f400",
+      "00ffff3727637700",
+      "00ffffe7c7070700",
+      "00ffff7f3d050400"
+    ],
+    "dhash": [
+      "3efed4d6d4dc852e",
+      "120c0d06868f8534",
+      "0ad096846de5e52d",
+      "122aafefefceccad",
+      "2a9296969e0f9f0d",
+      "224241d9c9ed9d99"
+    ],
+    "whash": [
+      "007f7f276764f500",
+      "00e7ffe3e3c3c300",
+      "00fcfff63474f400",
+      "00ffff2723237700",
+      "00ffffe7c3070700",
+      "00ffff7f3d010d00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.593192031999934,
+      "avg_fetch_time": 3.765532005333322,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/fei-fan-xin-wen-3.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.398313164000115,
+      "avg_fetch_time": 2.233052194000019,
+      "success_count": 6
+    }
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/cdsxwzhtv/1500k/tzwj_video.m3u8": {
+    "phash": [
+      "d9de90346e997622",
+      "d9de90346e997622",
+      "d9de90346e997622",
+      "d9de90346e997622",
+      "d9de90346e997622",
+      "d9de90346e997622"
+    ],
+    "ahash": [
+      "ffffffff00000f00",
+      "ffffffff00000f00",
+      "ffffffff00000f00",
+      "ffffffff00000f00",
+      "ffffffff00000f00",
+      "ffffffff00000f00"
+    ],
+    "dhash": [
+      "189151338fbed8c5",
+      "189151338fbed8c5",
+      "189151338fbed8c5",
+      "189151338fbed8c5",
+      "189151338fbed8c5",
+      "189151338fbed8c5"
+    ],
+    "whash": [
+      "fffffcfd00000e00",
+      "fffffcfd00000e00",
+      "fffffcfd00000e00",
+      "fffffcfd00000e00",
+      "fffffcfd00000e00",
+      "fffffcfd00000e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.299590621999982,
+      "avg_fetch_time": 4.04993177033333,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/qg/sd/live.m3u8": {
+    "phash": [
+      "ccf8f8f8f0070707",
+      "ccf8f8f8f0070707",
+      "ccf8f8f8f0070707",
+      "ccf8f8f8f0070707",
+      "ccf8f8f8f0070707",
+      "ccf8f8f8f0070707"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.18335053099986,
+      "avg_fetch_time": 2.1972250884999767,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-du-shi.m3u8": {
+    "phash": [
+      "d86e619a609f270f",
+      "e691aaf105ca1fa5",
+      "d07bd4b83783c31c",
+      "b2db841e0be4e19b",
+      "ca33f966c1c4931e",
+      "c1a5344d6473b6da"
+    ],
+    "ahash": [
+      "0040383c7c3e1c40",
+      "2e0e3e2062e0f131",
+      "c0c0000007fffefe",
+      "ffdfe9e50d064663",
+      "e3c32d78100071f9",
+      "f3fb7f6978380810"
+    ],
+    "dhash": [
+      "b0b0f0f0f0f8f8d0",
+      "ccdcf4c4c644a5e7",
+      "0a9889cf3eb0b094",
+      "3391194959cc84c6",
+      "8d9bc9e26565a33b",
+      "a6a2cacbc3f3d194"
+    ],
+    "whash": [
+      "00783c7e7e7e7c40",
+      "2e7e3e3462e0f131",
+      "c0c000008ffffffe",
+      "bfdfe8e10c044663",
+      "e3c32d78318071fd",
+      "727b7f6878382854"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 28.470636675000037,
+      "avg_fetch_time": 4.7451061125000065,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-2.m3u8": {
+    "phash": [
+      "de736164c47059ce",
+      "de736164c47059ce",
+      "de736164c47059ce",
+      "de736164c47059ce",
+      "de736164c47059ce",
+      "9c4cfcebb2366640"
+    ],
+    "ahash": [
+      "40000c9e3e3e3e7c",
+      "40000c9e3e3e3e7c",
+      "40000c9e3e3e3e7c",
+      "40000c9e3e3e3e7c",
+      "40000c9e3e3e3e7c",
+      "901810067dbf9ebe"
+    ],
+    "dhash": [
+      "885819246464a4f1",
+      "885819246464a4f1",
+      "885819246464a4f1",
+      "885819246464a4f1",
+      "885819246464a4f1",
+      "3031b46cf9383c28"
+    ],
+    "whash": [
+      "c0008c9e3e3e7e7d",
+      "c0008c9e3e3e7e7d",
+      "c0008c9e3e3e7e7d",
+      "c0008c9e3e3e7e7d",
+      "c0008c9e3e3e7e7d",
+      "9018100e7f9f9ebe"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.41256807000002,
+      "avg_fetch_time": 1.23542801166667,
+      "success_count": 6
+    }
+  },
+  "http://file.yizu.tv/nmip-media/channellive/channel107323/playlist.m3u8": {
+    "phash": [
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a"
+    ],
+    "ahash": [
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7"
+    ],
+    "dhash": [
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d"
+    ],
+    "whash": [
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.18062278500031,
+      "avg_fetch_time": 2.863437130833385,
+      "success_count": 6
+    }
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/cdsggshtv/1500k/tzwj_video.m3u8": {
+    "phash": [
+      "c0cf3f3a3e315464",
+      "c0cf3f3a3e315464",
+      "c0cf3f3a3e315464",
+      "c0cf3f3a3e315464",
+      "c0cf3f3a3e315464",
+      "c0cf3f3a3e315464"
+    ],
+    "ahash": [
+      "807c78787c7c4000",
+      "807c78787c7c4000",
+      "807c78787c7c4000",
+      "807c78787c7c4000",
+      "807c78787c7c4000",
+      "807c78787c7c4000"
+    ],
+    "dhash": [
+      "37c1c080a4888a86",
+      "37c1c080a4888a86",
+      "37c1c080a4888a86",
+      "37c1c080a4888a86",
+      "37c1c080a4888a86",
+      "37c1c080a4888a86"
+    ],
+    "whash": [
+      "807c7c78fe7e6240",
+      "807c7c78fe7e6240",
+      "807c7c78fe7e6240",
+      "807c7c78fe7e6240",
+      "807c7c78fe7e6240",
+      "807c7c78fe7e6240"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.37432939000007,
+      "avg_fetch_time": 3.729054898333345,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/df/sd/live.m3u8": {
+    "phash": [
+      "986b58352d9a563d",
+      "986b58352d9a563d",
+      "986b58352d9a563d",
+      "986b58352d9a563d",
+      "986b58352d9a563d",
+      "986b58352d9a563d"
+    ],
+    "ahash": [
+      "0080003f071f1f3e",
+      "0080003f071f1f3e",
+      "0080003f071f1f3e",
+      "0080003f071f1f3e",
+      "0080003f071f1f3e",
+      "0080003f071f1f3e"
+    ],
+    "dhash": [
+      "1b1da9cbd6bcb8f0",
+      "1b1da9cbd6bcb8f0",
+      "1b1da9cbd6bcb8f0",
+      "1b1da9cbd6bcb8f0",
+      "1b1da9cbd6bcb8f0",
+      "1b1da9cbd6bcb8f0"
+    ],
+    "whash": [
+      "0080787f1f1f1f3e",
+      "0080787f1f1f1f3e",
+      "0080787f1f1f1f3e",
+      "0080787f1f1f1f3e",
+      "0080787f1f1f1f3e",
+      "0080787f1f1f1f3e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.059674904999838,
+      "avg_fetch_time": 3.009945817499973,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/thx/sd/live.m3u8": {
+    "phash": [
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52"
+    ],
+    "ahash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "dhash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "whash": [
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.148444564000329,
+      "avg_fetch_time": 1.8580740940000549,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/tonghua1/sd/live.m3u8": {
+    "phash": [
+      "de69969661c1a1cd",
+      "de69969661c1a1cd",
+      "de69969661c1a1cd",
+      "de69969661c1a1cd",
+      "de69969661c1a1cd",
+      "de69969661c1a1cd"
+    ],
+    "ahash": [
+      "febc7901000e3c7e",
+      "febc7901000e3c7e",
+      "febc7901000e3c7e",
+      "febc7901000e3c7e",
+      "febc7901000e3c7e",
+      "febc7901000e3c7e"
+    ],
+    "dhash": [
+      "8c69c303461c68ea",
+      "8c69c303461c68ea",
+      "8c69c303461c68ea",
+      "8c69c303461c68ea",
+      "8c69c303461c68ea",
+      "8c69c303461c68ea"
+    ],
+    "whash": [
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.59233801500011,
+      "avg_fetch_time": 2.265389669166685,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/feng-huang-wei-shi-zhong-wen-1.m3u8": {
+    "phash": [
+      "86225dd5719c6375",
+      "a047956a8b9376bc",
+      "a047956a8b9376bc",
+      "a047956a8b9376bc",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "ahash": [
+      "002327377fff9e00",
+      "7064466651d1df5f",
+      "7064466651d1df5f",
+      "7064466651d1df5f",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "dhash": [
+      "946fcde5ce663630",
+      "818494d595959595",
+      "818494d595959595",
+      "818494d595959595",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "0021273f7fff9e00",
+      "5064466551d1df5f",
+      "5064466551d1df5f",
+      "5064466551d1df5f",
+      "800004030f0f0f0f",
+      "800004030f0f0f0f"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 0,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.260962479000113,
+      "avg_fetch_time": 3.3768270798333524,
+      "success_count": 6
+    }
+  },
+  "http://live.jinnews.com.cn/ggpd/sd/live.m3u8": {
+    "phash": [
+      "e0c27b83118bfe69",
+      "e0c27b83118bfec9",
+      "e0c27b83118bfe69",
+      "e0c27b83118bfe69",
+      "e0c27b8b018bfe69",
+      "e0c27b8b018bfe69"
+    ],
+    "ahash": [
+      "69e5d76746e769c2",
+      "69e5c74346f769c2",
+      "69e5d74647f769c2",
+      "69e5d76666f769c2",
+      "69e5d76242f769c2",
+      "69e5d76242f769c2"
+    ],
+    "dhash": [
+      "cb89959d8d05db16",
+      "cb89959d9505db16",
+      "cb89b59d9d05db16",
+      "cb89959d8d05db16",
+      "cb8995858505db16",
+      "cb8995858505db16"
+    ],
+    "whash": [
+      "79e5e16361e169c2",
+      "79e5e14361e369c2",
+      "79e5e16361e169c2",
+      "79e5e16361e368c2",
+      "79e5e16361e368c2",
+      "79e5e16361e368c2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.084737167999947,
+      "avg_fetch_time": 3.8474561946666577,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/liaoyuan1/sd/live.m3u8": {
+    "phash": [
+      "e2e735d81c790e38",
+      "ded8072f382b3925",
+      "ded8072f382b3925",
+      "d4926be91d45463b",
+      "d4926be91d45463b",
+      "d4926be91d45463b"
+    ],
+    "ahash": [
+      "00ffffffffffff00",
+      "00fcdcdc90a0f300",
+      "00fcdcdc90a0f300",
+      "00fd7f1e9ef8f000",
+      "00fd7f1e9ef8f000",
+      "00fd7f1e9ef8f000"
+    ],
+    "dhash": [
+      "c6ca8bc3c1819892",
+      "20c49930346c674e",
+      "20c49930346c674e",
+      "d199bcf414800218",
+      "d199bcf414800218",
+      "d199bcf414800218"
+    ],
+    "whash": [
+      "00fbf0f1fdf8e800",
+      "00fefcdc9cb4f300",
+      "00fefcdc9cb4f300",
+      "00fd7f1e9cf8f800",
+      "00fd7f1e9cf8f800",
+      "00fd7f1e9cf8f800"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.88430851900023,
+      "avg_fetch_time": 3.3140514198333713,
+      "success_count": 6
+    }
+  },
+  "http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8": {
+    "phash": [
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a"
+    ],
+    "ahash": [
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e"
+    ],
+    "dhash": [
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8"
+    ],
+    "whash": [
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.861699274000102,
+      "avg_fetch_time": 2.976949879000017,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-1.m3u8": {
+    "phash": [
+      "9c4cfcebb2366640",
+      "cfd77628c5899630",
+      "cfd77628c5899630",
+      "92532fac3533b54c",
+      "92532fac3533b54c",
+      "92532fac3533b54c"
+    ],
+    "ahash": [
+      "901810067dbf9ebe",
+      "bdbdbfbf10011818",
+      "bdbdbfbf10011818",
+      "03102c2c7f7f0f03",
+      "03102c2c7f7f0f03",
+      "03102c2c7f7f0f03"
+    ],
+    "dhash": [
+      "3031b46cf9383c28",
+      "51555862f33531f1",
+      "51555862f33531f1",
+      "4ee1c8c8a6aefdb7",
+      "4ee1c8c8a6aefdb7",
+      "4ee1c8c8a6aefdb7"
+    ],
+    "whash": [
+      "9018100e7f9f9ebe",
+      "bcbdbfbf10011138",
+      "bcbdbfbf10011138",
+      "03102c7e7e7f0f07",
+      "03102c7e7e7f0f07",
+      "03102c7e7e7f0f07"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.504910169000027,
+      "avg_fetch_time": 1.0841516948333378,
+      "success_count": 6
+    }
+  },
+  "http://222.179.42.129:8181/hls1.m3u8": {
+    "phash": [
+      "a72389092376d779",
+      "a72389092376d779",
+      "a72389092376d779",
+      "a72389092376d779",
+      "a72389092376d779",
+      "a72389092376d779"
+    ],
+    "ahash": [
+      "21ffe7e7c3e7ffff",
+      "21ffe7e7c3e7ffff",
+      "21ffe7e7c3e7ffff",
+      "21ffe7e7c3e7ffff",
+      "21ffe7e7c3e7ffff",
+      "21ffe7e7c3e7ffff"
+    ],
+    "dhash": [
+      "cb930d0e0e4c1008",
+      "cb930d0e0e4c1008",
+      "cb930d0e0e4c1008",
+      "cb930d0e0e4c1008",
+      "cb930d0e0e4c1008",
+      "cb930d0e0e4c1008"
+    ],
+    "whash": [
+      "0001c3c381e3ffff",
+      "0001c3c381e3ffff",
+      "0001c3c381e3ffff",
+      "0001c3c381e3ffff",
+      "0001c3c381e3ffff",
+      "0001c3c381e3ffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.589350967999962,
+      "avg_fetch_time": 3.764891827999994,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-dian-ying-1.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.534861449000118,
+      "avg_fetch_time": 2.089143574833353,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-yang-pian.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.763158048999912,
+      "avg_fetch_time": 1.9605263414999854,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel102221/playlist.m3u8": {
+    "phash": [
+      "cc96696996969669",
+      "cc96696996969669",
+      "cc96696996969669",
+      "cccc4d4dcc96cc4d",
+      "cccc4d4dcc96cc4d",
+      "cccc4d4dcc96cc4d"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.574328936000029,
+      "avg_fetch_time": 1.5957214893333382,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/dian-ying-9.flv": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55f2165214c0] HTTP error 403 Forbidden\n[in#0 @ 0x55f216520dc0] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file https://t.freetv.fun/live/dian-ying-9.flv.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 4.574138742000059,
+      "avg_fetch_time": 2.2870693710000296,
+      "success_count": 2
+    }
+  },
+  "http://stream.jmtv.com.cn/ngpd/sd/live.m3u8": {
+    "phash": [
+      "8282202020202082",
+      "8282202020202082",
+      "8282202020202082",
+      "8282202020202082",
+      "8282202020202082",
+      "8282202020202082"
+    ],
+    "ahash": [
+      "003c3c3c3c000000",
+      "003c3c3c3c000000",
+      "003c3c3c3c000000",
+      "003c3c3c3c000000",
+      "003c3c3c3c000000",
+      "003c3c3c3c000000"
+    ],
+    "dhash": [
+      "0060404040000000",
+      "0060404040000000",
+      "0060404040000000",
+      "0060404040000000",
+      "0060404040000000",
+      "0060404040000000"
+    ],
+    "whash": [
+      "fcfcfcfc3c3c0000",
+      "fcfcfcfc3c3c0000",
+      "fcfcfcfc3c3c0000",
+      "fcfcfcfc3c3c0000",
+      "fcfcfcfc3c3c0000",
+      "fcfcfcfc3c3c0000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.841990078999856,
+      "avg_fetch_time": 1.9736650131666427,
+      "success_count": 6
+    }
+  },
+  "http://live.jinnews.com.cn/xwzh/sd/live.m3u8": {
+    "phash": [
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9"
+    ],
+    "ahash": [
+      "69e5d74647e769c2",
+      "69e5d74647f769c2",
+      "69e5c74242f769c2",
+      "69e5cf4242f769c2",
+      "69e5cf4242f769c2",
+      "69e5d74646f769c2"
+    ],
+    "dhash": [
+      "cb8d35958d0ddb16",
+      "cb8d35858d05db16",
+      "cb8d35949505db16",
+      "cb8d35848505db16",
+      "cb8d35848505db16",
+      "cb8d358d8d05db16"
+    ],
+    "whash": [
+      "79e5e34343e368c2",
+      "79e5e34343e368c2",
+      "79e5e34343e368c2",
+      "79e5e34343e368c2",
+      "79e5e34343e368c2",
+      "79e5e34343e368c2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.12663169999996,
+      "avg_fetch_time": 4.187771949999994,
+      "success_count": 6
+    }
+  },
+  "http://live1.gatv.com.cn:85/live/XWZH.m3u8": {
+    "phash": [
+      "976fc29315b1262e",
+      "976fc29315b1262e",
+      "976fc29315b1262e",
+      "e83a338447ddb30b",
+      "e83a338447ddb30b",
+      "e83a338447ddb30b"
+    ],
+    "ahash": [
+      "2400810e1effff7f",
+      "2400810e1effff7f",
+      "2400810e1effff7f",
+      "43830df879fffae7",
+      "43830df879fffae7",
+      "43830df879fffae7"
+    ],
+    "dhash": [
+      "cc6327d478a9c4f0",
+      "cc6327d478a9c4f0",
+      "cc6327d478a9c4f0",
+      "8e171933b3b236ce",
+      "8e171933b3b236ce",
+      "8e171933b3b236ce"
+    ],
+    "whash": [
+      "2400800e0effff7f",
+      "2400800e0effff7f",
+      "2400800e0effff7f",
+      "030301f8797fdae6",
+      "030301f8797fdae6",
+      "030301f8797fdae6"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.139079930999742,
+      "avg_fetch_time": 3.189846655166624,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/feng-huang-wei-shi-zhong-wen.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi.m3u8": {
+    "phash": [
+      "8946fb6092ef1ae4",
+      "bd22d26699a599e4",
+      "ab31de0e9463cc39",
+      "ab31de0e9463cc39",
+      "bd16d28d446e51ad",
+      "f1b5d2868cd95c91"
+    ],
+    "ahash": [
+      "6060103f1c01fb3f",
+      "000003030303d3ff",
+      "0f0f0303333323ff",
+      "0f0f0303333323ff",
+      "0f0f06031b1b9999",
+      "ff67ca9b0300e0e4"
+    ],
+    "dhash": [
+      "c9d6f2e8b59313f9",
+      "25063636b6323618",
+      "fb5b93d767e36b67",
+      "fb5b93d767e36b67",
+      "3c3c4e2f32337333",
+      "cccc9633b636ddc8"
+    ],
+    "whash": [
+      "6060103f5f41fb3f",
+      "80c083131b8bf7ff",
+      "0f0f0b033b1323ff",
+      "0f0f0b033b1323ff",
+      "0f0f07071b1f99d9",
+      "ff67ca9b0300e4e4"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.7809958470001,
+      "avg_fetch_time": 4.2968326411666835,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-13.m3u8": {
+    "phash": [
+      "c51e38e11af53d52",
+      "c51e38e11af53d52",
+      "c51e38e11af53d52",
+      "cd7232a57a8d364a",
+      "cd7232a57a8d364a",
+      "cd7232a57a8d364a"
+    ],
+    "ahash": [
+      "007c7e7c78fbfa00",
+      "007c7e7c78fbfa00",
+      "007c7e7c78fbfa00",
+      "00f0f8f8f8fb7b00",
+      "00f0f8f8f8fb7b00",
+      "00f0f8f8f8fb7b00"
+    ],
+    "dhash": [
+      "10f0f0e0e0c2c2f0",
+      "10f0f0e0e0c2c2f0",
+      "10f0f0e0e0c2c2f0",
+      "1084b0f2d0d2d2d0",
+      "1084b0f2d0d2d2d0",
+      "1084b0f2d0d2d2d0"
+    ],
+    "whash": [
+      "007e7e7c78faf200",
+      "007e7e7c78faf200",
+      "007e7e7c78faf200",
+      "00f8f8f8f8fafa00",
+      "00f8f8f8f8fafa00",
+      "00f8f8f8f8fafa00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.287484430000063,
+      "avg_fetch_time": 2.047914071666677,
+      "success_count": 6
+    }
+  },
+  "http://139.203.180.9:90/live/jcxc.m3u8": {
+    "phash": [
+      "cd631a9c329c3bd2",
+      "cd631a9c329c3bd2",
+      "cd631a9c329c3bd2",
+      "cd631a9c329c3bd2",
+      "cd631a9c329c3bd2",
+      "cd631a9c329c3bd2"
+    ],
+    "ahash": [
+      "0070f0f2f27a3a10",
+      "0070f0f2f27a3a10",
+      "0070f0f2f27a3a10",
+      "0070f0f2f27a3a10",
+      "0070f0f2f27a3a10",
+      "0070f0f2f27a3a00"
+    ],
+    "dhash": [
+      "e6e2e2e6e6f6f2e2",
+      "e6e2e2e6e6f6f2e2",
+      "e6e2e2e6e6f6f2e2",
+      "e6e2e2e6e6f6f2e2",
+      "e6e2e2e6e6f6f2e2",
+      "c6e2e2e6e6f6f6e2"
+    ],
+    "whash": [
+      "2070f2fafafa3a10",
+      "2070f2fafafa3a10",
+      "2070f2fafafa3a10",
+      "2070f2fafafa3a10",
+      "2070f2fafafa3a10",
+      "2070f2f2fafa7a10"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.058064534000096,
+      "avg_fetch_time": 2.676344089000016,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/jilin1/sd/live.m3u8": {
+    "phash": [
+      "e188fc8113c73f65",
+      "e188fc8113c73f65",
+      "e188fc8113c73f65",
+      "e188fc8113c73f65",
+      "e188fc8113c73f65",
+      "e188fc8113c73f65"
+    ],
+    "ahash": [
+      "7fdfe72363eff3c2",
+      "7fdfe72363eff3c2",
+      "7fdfe72363eff3c2",
+      "7fdfe72363eff3c2",
+      "7fdfe72363eff3c2",
+      "7fdfe72363eff382"
+    ],
+    "dhash": [
+      "d1b216d7d64ec614",
+      "d1b216d7d64ec614",
+      "d1b206d7d64ec614",
+      "d1b206d7d64ec614",
+      "d1b206d7d64ec614",
+      "d1b216d7d64ec614"
+    ],
+    "whash": [
+      "7dfcc34143e3f280",
+      "7dfcc34143e3f280",
+      "7dfcc34143e3f280",
+      "7dfcc34143e3f280",
+      "7dfcc34143e3f280",
+      "7dfdc34143c3f280"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.03305678699985,
+      "avg_fetch_time": 2.172176131166642,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-6.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 31.32200788099999,
+      "avg_fetch_time": 7.830501970249998,
+      "success_count": 4
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-dian-ying.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.862135718999752,
+      "avg_fetch_time": 1.977022619833292,
+      "success_count": 6
+    }
+  },
+  "http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8": {
+    "phash": [
+      "e1c23f831183fce9",
+      "e0c23f83118bfce9",
+      "e0c23f83118bfce9",
+      "e0c23f83118bfce9",
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9"
+    ],
+    "ahash": [
+      "61e4c74343f769c2",
+      "61e4d74343f769c2",
+      "61e4d74343f769c2",
+      "61e4d74343f769c2",
+      "61e4c74343f769c2",
+      "61e4c74343f769c2"
+    ],
+    "dhash": [
+      "cb89958d9405d316",
+      "cb89959d9d05d316",
+      "cb89959d9d05d316",
+      "cb89959d9d05d316",
+      "cb8995858505d316",
+      "cb8995858505d316"
+    ],
+    "whash": [
+      "69e4e36363e368c2",
+      "69e4e36343e369c2",
+      "69e4e36343e369c2",
+      "69e4e36343e369c2",
+      "69e4e36363e368c2",
+      "69e4e36363e368c2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.412503304999973,
+      "avg_fetch_time": 2.9020838841666623,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/ja/sd/live.m3u8": {
+    "phash": [
+      "c3dc633ad4233ac5",
+      "c3dc633ad4233ac5",
+      "c3dc633ad4233ac5",
+      "c3dc633ad4233ac5",
+      "c3dc633ad4233ac5",
+      "c3dc633ad4233ac5"
+    ],
+    "ahash": [
+      "f8f8f8f8f8216060",
+      "f8f8f8f8f8216060",
+      "f8f8f8f8f8216060",
+      "f8f8f8f8f8216060",
+      "f8f8f8f8f8216060",
+      "f8f8f8f8f8216060"
+    ],
+    "dhash": [
+      "000000000069cbc2",
+      "000000000069cbc2",
+      "000000000069cbc2",
+      "000000000069cbc2",
+      "000000000069cbc2",
+      "000000000069cbc2"
+    ],
+    "whash": [
+      "f8f8f8f8f8256060",
+      "f8f8f8f8f8256060",
+      "f8f8f8f8f8256060",
+      "f8f8f8f8f8256060",
+      "f8f8f8f8f8256060",
+      "f8f8f8f8f8256060"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.716158812000117,
+      "avg_fetch_time": 1.9526931353333528,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-gao-qing-1.m3u8": {
+    "phash": [
+      "d267ab598ac82e36",
+      "c1603e916e2b96af",
+      "9dd5a5b4632d9b08",
+      "9dd5a5b4632d9b08",
+      "e1409db8f0e1376b",
+      "f9dc87310da552a9"
+    ],
+    "ahash": [
+      "6066267c0c68fc7f",
+      "604060607c7e3900",
+      "fffe7c0000060301",
+      "fffe7c0000060301",
+      "cf3c206040871d6e",
+      "e2f8f0f0c0c0e1e1"
+    ],
+    "dhash": [
+      "c9cc6cd4d8d898ed",
+      "c695d5d3f0dcd3a4",
+      "fefcd1f2a83c33eb",
+      "fefcd1f2a83c33eb",
+      "92b2c98da31ed3dc",
+      "0a280902131d0f03"
+    ],
+    "whash": [
+      "6062367c0c78fc7d",
+      "636060787c7e3df0",
+      "fffe7c1800871319",
+      "fffe7c1800871319",
+      "ff3a206040875def",
+      "eaf8f8f0c8c0e1e1"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.711284723000063,
+      "avg_fetch_time": 3.2852141205000103,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-7.m3u8": {
+    "phash": [
+      "8c727ba17a8d3e42",
+      "8c727ba17a8d3e42",
+      "8c727ba17a8d3e42",
+      "8c727ba17a8d3e42",
+      "8c727ba17a8d3e42",
+      "8c727ba17a8d3e42"
+    ],
+    "ahash": [
+      "006e3e3e3e3f7f00",
+      "006e3e3e3e3f7f00",
+      "006e3e3e3e3f7f00",
+      "006e3e3e3e3f7f00",
+      "006e3e3e3e3f7f00",
+      "006e3e3e3e3f7f00"
+    ],
+    "dhash": [
+      "1488a4a4b4f2f2f0",
+      "1488a4a4b4f2f2f0",
+      "1488a4a4b4f2f2f0",
+      "1488a4a4b4f2f2f0",
+      "1488a4a4b4f2f2f0",
+      "1488a4a4b4f2f2f0"
+    ],
+    "whash": [
+      "006e3e3e3e3f7e00",
+      "006e3e3e3e3f7e00",
+      "006e3e3e3e3f7e00",
+      "006e3e3e3e3f7e00",
+      "006e3e3e3e3f7e00",
+      "006e3e3e3e3f7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.480312876000085,
+      "avg_fetch_time": 1.4133854793333473,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-8.m3u8": {
+    "phash": [
+      "fb0cd54c93e80b9c",
+      "fb0cd54c93e80b9c",
+      "fb0cd54c93e80b9c",
+      "d09f1626f3c266f0",
+      "d09f1626f3c266f0",
+      "ebd1c10fc438c13f"
+    ],
+    "ahash": [
+      "000101010181efff",
+      "000101010181efff",
+      "000101010181efff",
+      "2418f8fce8e06040",
+      "2418f8fce8e06040",
+      "e0e0c1c1808181f3"
+    ],
+    "dhash": [
+      "9693931bdb0b1b58",
+      "9693931bdb0b1b58",
+      "9693931bdb0b1b58",
+      "68f091d19a878998",
+      "68f091d19a878998",
+      "838b0f0f2f6f3f03"
+    ],
+    "whash": [
+      "c0c10b0901e5ffff",
+      "c0c10b0901e5ffff",
+      "c0c10b0901e5ffff",
+      "247cfcfcfae07040",
+      "247cfcfcfae07040",
+      "f1e0e1c1838187ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.716432548000057,
+      "avg_fetch_time": 3.9527387580000095,
+      "success_count": 6
+    }
+  },
+  "http://live.cms.anhuinews.com/video/s10003-lbtv/index.m3u8": {
+    "phash": [
+      "d5b1c90ff621c307",
+      "d5b1c90ff621c307",
+      "d5b1c90ff621c307",
+      "d5b1c90ff621c307",
+      "d5b1c90ff621c307",
+      "d5b1c90ff621c307"
+    ],
+    "ahash": [
+      "ee6eeecea62000fe",
+      "ee6eeecea62000fe",
+      "ee6eeecea62000fe",
+      "ee6eeecea62000fe",
+      "ee6eeecea62000fe",
+      "ee6eeecea62000fe"
+    ],
+    "dhash": [
+      "d898882c2ee4e6f4",
+      "d898882c2ee4e6f4",
+      "d898882c2ee4e6f4",
+      "d898882c2ee4e6f4",
+      "d898882c2ee4e6f4",
+      "d898882c2ee4e6f4"
+    ],
+    "whash": [
+      "ee6eeece920000fe",
+      "ee6eeece920000fe",
+      "ee6eeece920000fe",
+      "ee6eeece920000fe",
+      "ee6eeece920000fe",
+      "ee6eeece920000fe"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.468855412000153,
+      "avg_fetch_time": 2.9114759020000256,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-12.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 3,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x56386d13eec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x56386d13eec0] Opening 'https://live.264788.xyz/channel/yunnanweishi?streamid=0fb596dd22d0e6fbf7e347d81374ac88&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk' for reading\n[tls @ 0x56386d4e8b80] Error in the pull function.\n[tls @ 0x56386d4e8b80] IO error: Connection reset by peer\n[hls @ 0x56386d13eec0] parse_playlist error Invalid data found when processing input [https://live.264788.xyz/channel/yunnanweishi?streamid=0fb596dd22d0e6fbf7e347d81374ac88&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk]\n[in#0 @ 0x56386d13edc0] Error opening input: Invalid data found when processing input\nError opening input file https://t.freetv.fun/live/yun-nan-wei-shi-12.m3u8.\nError opening input files: Invalid data found when processing input"
+    },
+    "stats": {
+      "total_fetch_time": 28.512634961000003,
+      "avg_fetch_time": 4.0732335658571435,
+      "success_count": 7
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-zong-he.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.7756898519998,
+      "avg_fetch_time": 2.1292816419999667,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-9.m3u8": {
+    "phash": [
+      "fb0cd54c93e90a9c",
+      "b936d489656a53a9",
+      "b936d489656a53a9",
+      "b936d489656a53a9",
+      "ebc1c10fc438c33f",
+      "ebc1c10fc438c33f"
+    ],
+    "ahash": [
+      "000101010181efff",
+      "0f0707030b0f9999",
+      "0f0707030b0f9999",
+      "0f0707030b0f9999",
+      "e0e0c1c1808181f3",
+      "e0e0c1c1808181f3"
+    ],
+    "dhash": [
+      "9697939bdb0b1958",
+      "3e3c0e0f3b3b3333",
+      "3e3c0e0f3b3b3333",
+      "3e3c0e0f3b3b3333",
+      "83890f172e2f3f03",
+      "83890f172e2f3f03"
+    ],
+    "whash": [
+      "c0c10b0901e5ffff",
+      "0f0f07071b9f9999",
+      "0f0f07071b9f9999",
+      "0f0f07071b9f9999",
+      "f1e0e1c3838383f7",
+      "f1e0e1c3838383f7"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.298255499999982,
+      "avg_fetch_time": 2.7163759166666637,
+      "success_count": 6
+    }
+  },
+  "http://jrlive.jrntv.com/live/_definst_/yingshis/playlist.m3u8": {
+    "phash": [
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a",
+      "cadf514a505f447a"
+    ],
+    "ahash": [
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e",
+      "bc3d3c3c3d39794e"
+    ],
+    "dhash": [
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8",
+      "68716968e9e1d9b8"
+    ],
+    "whash": [
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e",
+      "fc183c243d3d615e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.151493047999907,
+      "avg_fetch_time": 2.6919155079999846,
+      "success_count": 6
+    }
+  },
+  "http://stream.hrbtv.net/yspd/sd/live.m3u8": {
+    "phash": [
+      "d93201ff4bce8742",
+      "8f0ef0e2238f8e53",
+      "8f0ef0e2238f8e53",
+      "b9b100fba35a87c6",
+      "b9b100fba35a87c6",
+      "9ddd571b501c4666"
+    ],
+    "ahash": [
+      "4cccfcf8f8f8f878",
+      "3018383929f9f8f9",
+      "3018383929f9f8f9",
+      "4f4f8fcbdbf85838",
+      "4f4f8fcbdbf85838",
+      "9e9e9e9f8f8f8d80"
+    ],
+    "dhash": [
+      "989898191130b0d0",
+      "64647063496133b3",
+      "64647063496133b3",
+      "9b9a3a1a1230b1d1",
+      "9b9a3a1a1230b1d1",
+      "38383232151d5d1f"
+    ],
+    "whash": [
+      "4c4cdcf8f8f87818",
+      "b018383929b9f8fb",
+      "b018383929b9f8fb",
+      "4f0b0bcbdbf85818",
+      "4f0b0bcbdbf85818",
+      "9e9e9a8e8f8d8780"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.853723792000096,
+      "avg_fetch_time": 5.308953965333349,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/gao-qing-dian-ying-1.m3u8": {
+    "phash": [
+      "d2546cbd13bb5921",
+      "cc2873f30dc316cd",
+      "cc2873f30da316cd",
+      "b53458e96a99670d",
+      "f0ff1ed701444917",
+      "b94c4cb366cb320f"
+    ],
+    "ahash": [
+      "00f07c0c0cfffb00",
+      "00d010191bffff00",
+      "00d0101b1bffff00",
+      "0006170f27ef0f00",
+      "00c1c0efefe0c600",
+      "00181869e7efef00"
+    ],
+    "dhash": [
+      "26a6a9e9a96b4313",
+      "b0b7b7b73335cc82",
+      "b1b7b7b732244c92",
+      "8cac6ede4e0a1a90",
+      "912b0b9e998b0c94",
+      "b3b2b3d38e9cdb20"
+    ],
+    "whash": [
+      "00f27c1c1cffff00",
+      "00d1191b9bffff00",
+      "00d1191b9bffff00",
+      "00863f2f2fef9f00",
+      "00f9c1ffefe1c600",
+      "001818edefefff00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 36.816180960999986,
+      "avg_fetch_time": 6.136030160166665,
+      "success_count": 6
+    }
+  },
+  "http://stream8.jlntv.cn/ljtv/sd/live.m3u8": {
+    "phash": [
+      "ccd3335cc18e7187",
+      "d6e9a114938f6ce1",
+      "ccd3b15ca1cc71a3",
+      "ccd3b15ca1cc71a3",
+      "876fc2931594e62e",
+      "876fc2931594e62e"
+    ],
+    "ahash": [
+      "e8f0f1f9f09090f9",
+      "fff8f0b0c410feff",
+      "fcf8f0f8f090b0fb",
+      "fcf8f0f8f090b0fb",
+      "2400810f0fffff7f",
+      "2400810f0fffff7f"
+    ],
+    "dhash": [
+      "98a9212323262212",
+      "f8e323251424e459",
+      "98a9216323262613",
+      "98a9216323262613",
+      "cc4307d67ba9d4f0",
+      "cc4307d67ba9d4f0"
+    ],
+    "whash": [
+      "e8f8f1f8f09090e9",
+      "fff0f0b0800074ff",
+      "fcf8f0f0f09090e3",
+      "fcf8f0f0f09090e3",
+      "240081030dffff7f",
+      "240081030dffff7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.247768532999885,
+      "avg_fetch_time": 2.7079614221666475,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-5.m3u8": {
+    "phash": [
+      "c97226a77e8d344a",
+      "c97226a77e8d344a",
+      "c97226a77e8d344a",
+      "c97226a77e8d344a",
+      "c7f62909183d71cb",
+      "c7f62909183d71cb"
+    ],
+    "ahash": [
+      "00d85cf87c7b7a10",
+      "00d85cf87c7b7a10",
+      "00d85cf87c7b7a10",
+      "00d85cf87c7b7a10",
+      "00f0f0f43c7b3900",
+      "00f0f0f43c7b3900"
+    ],
+    "dhash": [
+      "08b8b0b0d0d2d2f0",
+      "08b8b0b0d0d2d2f0",
+      "08b8b0b0d0d2d2f0",
+      "08b8b0b0d0d2d2f0",
+      "23c10a28e8cae3d1",
+      "23c10a28e8cae3d1"
+    ],
+    "whash": [
+      "00fc5cfc7c7e7a00",
+      "00fc5cfc7c7e7a00",
+      "00fc5cfc7c7e7a00",
+      "00fc5cfc7c7e7a00",
+      "00f8f8fe7c7a3b00",
+      "00f8f8fe7c7a3b00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.122021436000068,
+      "avg_fetch_time": 1.3536702393333446,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-17.m3u8": {
+    "phash": [
+      "d55a2ac16ab52772",
+      "997666b95a8d1b06",
+      "c9da36357aa5350a",
+      "c95a37355ab5350a",
+      "960669f94b74076e",
+      "9d7a22314a656f5a"
+    ],
+    "ahash": [
+      "007cfffefefffe00",
+      "00dfffffffff5f00",
+      "00fc7cf87c7b7b00",
+      "00fc7cf8787b7b00",
+      "003c3634fcffc700",
+      "00debcbc1c3f3f04"
+    ],
+    "dhash": [
+      "b0f0f0f0f0f2f2cc",
+      "0594f0b3bbbab295",
+      "18a1f1d1d1d2d2c5",
+      "18a1f1d1d1d2d2e1",
+      "38ec6c6c692aa6b5",
+      "3e2c606038ea7e68"
+    ],
+    "whash": [
+      "007c3e7e3c7e7e00",
+      "00413fff5d5f1f00",
+      "00fc7cfc787b7a00",
+      "00787cfc787f7e00",
+      "003e343cfeefe700",
+      "00ffbcbc1e3f1e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 33.72308284400003,
+      "avg_fetch_time": 5.620513807333339,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/ps/sd/live.m3u8": {
+    "phash": [
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f"
+    ],
+    "ahash": [
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000"
+    ],
+    "dhash": [
+      "8080400000000000",
+      "8080400000000000",
+      "8080400000000000",
+      "8080400000000000",
+      "8080400000000000",
+      "8080400000000000"
+    ],
+    "whash": [
+      "f0f0303000000000",
+      "f0f0303000000000",
+      "f0f0303000000000",
+      "f0f03030f0f0f070",
+      "f0f03030f0f0f070",
+      "f0f0303000000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.95912008200014,
+      "avg_fetch_time": 2.32652001366669,
+      "success_count": 6
+    }
+  },
+  "http://live.jinchuanrmt.com:90/live/jcxc.m3u8": {
+    "phash": [
+      "cd631a9c329c3bd2",
+      "98463f2e61b4e71a",
+      "98463f2e61b4e71a",
+      "98463f2e61b4e71a",
+      "98463f2e61b4e71a",
+      "98463f2e61b4e71a"
+    ],
+    "ahash": [
+      "0070f0f2f27a3a00",
+      "38187e7e7cbc1c0c",
+      "38187e7e7cbc1c0c",
+      "38187e7e7cbc1c0c",
+      "38187e7e7cbc1c0c",
+      "38187e7e7cbc1c0c"
+    ],
+    "dhash": [
+      "c6e2e2e6e6f6f6e2",
+      "e871d4d4f16038d8",
+      "e871d4d4f16038d8",
+      "e871d4d4f16038d8",
+      "e871d4d4f16038d8",
+      "e871d4d4f16038d8"
+    ],
+    "whash": [
+      "2070f2f2fafa7a10",
+      "3c187e7e7c3c1c0c",
+      "3c187e7e7c3c1c0c",
+      "3c187e7e7c3c1c0c",
+      "3c187e7e7c3c1c0c",
+      "3c187e7e7c3c1c0c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.832425687000182,
+      "avg_fetch_time": 2.472070947833364,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/feng-huang-wei-shi-zi-xun-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 3,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x563f7d11bec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x563f7d11bec0] Opening 'https://live.264788.xyz/channel/fenghuangweishizixun?streamid=7fb13f400476e75ce6c34d1f40c28473&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk' for reading\n[tls @ 0x563f7d679180] Error in the pull function.\n[tls @ 0x563f7d679180] IO error: Connection reset by peer\n[hls @ 0x563f7d11bec0] parse_playlist error Invalid data found when processing input [https://live.264788.xyz/channel/fenghuangweishizixun?streamid=7fb13f400476e75ce6c34d1f40c28473&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk]\n[in#0 @ 0x563f7d11bdc0] Error opening input: Invalid data found when processing input\nError opening input file https://t.freetv.fun/live/feng-huang-wei-shi-zi-xun-1.m3u8.\nError opening input files: Invalid data found when processing input"
+    },
+    "stats": {
+      "total_fetch_time": 19.445793141999957,
+      "avg_fetch_time": 6.481931047333319,
+      "success_count": 3
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel103074/playlist.m3u8": {
+    "phash": [
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c"
+    ],
+    "ahash": [
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff"
+    ],
+    "dhash": [
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863"
+    ],
+    "whash": [
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.306455581000023,
+      "avg_fetch_time": 2.2177425968333373,
+      "success_count": 6
+    }
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/pqys/1500k/tzwj_video.m3u8": {
+    "phash": [
+      "ff00000000ffffff",
+      "ff00000000ffffff",
+      "ff00000000ffffff",
+      "ff00000000ffffff",
+      "ff00000000ffffff",
+      "ff00000000ffffff"
+    ],
+    "ahash": [
+      "e0e0e0e0e0e0e0e0",
+      "e0e0e0e0e0e0e0e0",
+      "e0e0e0e0e0e0e0e0",
+      "e0e0e0e0e0e0e0e0",
+      "e0e0e0e0e0e0e0e0",
+      "e0e0e0e0e0e0e0e0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "e8e8e8e8e8e8e8e8",
+      "e8e8e8e8e8e8e8e8",
+      "e8e8e8e8e8e8e8e8",
+      "e8e8e8e8e8e8e8e8",
+      "e8e8e8e8e8e8e8e8",
+      "e8e8e8e8e8e8e8e8"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.496476406999818,
+      "avg_fetch_time": 2.916079401166636,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/sytv/sd/live.m3u8": {
+    "phash": [
+      "ea86b5c9d9827683",
+      "ea86b5c9d9827683",
+      "fb81959e6ca37620",
+      "fb81959e6ca37620",
+      "fb81959e6ca37620",
+      "e486f6cd5983198d"
+    ],
+    "ahash": [
+      "ffffe5f1f0f0e080",
+      "ffffe5f1f0f0e080",
+      "ffffe9c1c181c1c0",
+      "ffffe9c1c181c1c0",
+      "ffffe9c1c181c1c0",
+      "fff7f7e0d0c0e080"
+    ],
+    "dhash": [
+      "9527eda123a3c90b",
+      "9527eda123a3c90b",
+      "4bdb1b8b13290b0c",
+      "4bdb1b8b13290b0c",
+      "4bdb1b8b13290b0c",
+      "c5cccdcda683c706"
+    ],
+    "whash": [
+      "fffbe5f13050a080",
+      "fffbe5f13050a080",
+      "ffffe9c1c18081c0",
+      "ffffe9c1c18081c0",
+      "ffffe9c1c18081c0",
+      "ffe7f7e0d0c06080"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.229031599999871,
+      "avg_fetch_time": 2.371505266666645,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-3.m3u8": {
+    "phash": [
+      "a939de0e9533ca2c",
+      "a939de0e9533ca2c",
+      "a939de0e9533ca2c",
+      "ae9ed161a17cc48d",
+      "89d6e1b6742d89a3",
+      "89d6e1b6742d89a3"
+    ],
+    "ahash": [
+      "0b034303133337ff",
+      "0b034303133337ff",
+      "0b034303133337ff",
+      "ffbfbf91010000ff",
+      "fffe3c1084030100",
+      "fffe3c1084030100"
+    ],
+    "dhash": [
+      "f393d3db67e36767",
+      "f393d3db67e36767",
+      "f393d3db67e36767",
+      "3361652727a53322",
+      "fcf8f1b22c378f97",
+      "fcf8f1b22c378f97"
+    ],
+    "whash": [
+      "0b034b0b133337ff",
+      "0b034b0b133337ff",
+      "0b034b0b133337ff",
+      "ffbf9f91010000f7",
+      "fffe7c1887030341",
+      "fffe7c1887030341"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.000758686000154,
+      "avg_fetch_time": 1.5001264476666922,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-6.m3u8": {
+    "phash": [
+      "996666b95a8d1b46",
+      "996666b95a8d1b46",
+      "996666b95a8d1b46",
+      "c87a36257aad315a",
+      "c87a36257aad315a",
+      "c87a36257aad315a"
+    ],
+    "ahash": [
+      "00ffffffffff5f00",
+      "00ffffffffff5f00",
+      "00ffffffffff5f00",
+      "00787cf8787b7b18",
+      "00787cf8787b7b18",
+      "00787cf8787b7b18"
+    ],
+    "dhash": [
+      "0496f032bbbab2d1",
+      "0496f032bbbab2d1",
+      "0496f032bbbab2d1",
+      "1aa1f1d1d1f2e2e0",
+      "1aa1f1d1d1f2e2e0",
+      "1aa1f1d1d1f2e2e0"
+    ],
+    "whash": [
+      "00407ffd7d5f1f00",
+      "00407ffd7d5f1f00",
+      "00407ffd7d5f1f00",
+      "00787cfc7c7a7a18",
+      "00787cfc7c7a7a18",
+      "00787cfc7c7a7a18"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.132487160999858,
+      "avg_fetch_time": 2.3554145268333095,
+      "success_count": 6
+    }
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/fengningzonghe/1500k/tzwj_video.m3u8": {
+    "phash": [
+      "9064785e3aa9c5b7",
+      "9064785e3aa9c5b7",
+      "9064785e3aa9c5b7",
+      "9064785e3aa9c5b7",
+      "9064785e3aa9c5b7",
+      "9064785e3aa9c5b7"
+    ],
+    "ahash": [
+      "00007f4f0f1e0f0f",
+      "00007f4f0f1e0f0f",
+      "00007f4f0f1e0f0f",
+      "00007f4f0f1e0f0f",
+      "00007f4f0f1e0f0f",
+      "00007f4f0f1e0f0f"
+    ],
+    "dhash": [
+      "abaece9fbcfc1ab8",
+      "abaece9fbcfc1ab8",
+      "abaece9fbcfc1ab8",
+      "abaece9fbcfc1ab8",
+      "abaece9fbcfc1ab8",
+      "abaece9fbcfc1ab8"
+    ],
+    "whash": [
+      "00007f5f0f3f0f1f",
+      "00007f5f0f3f0f1f",
+      "00007f5f0f3f0f1f",
+      "00007f5f0f3f0f1f",
+      "00007f5f0f3f0f1f",
+      "00007f5f0f3f0f1f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.06221518199993,
+      "avg_fetch_time": 4.343702530333322,
+      "success_count": 6
+    }
+  },
+  "http://live-echotv.cdnvideo.ru/echotv/echotv.sdp/playlist.m3u8": {
+    "phash": [
+      "9898e9e92636371e",
+      "d08dcfa417f2061f",
+      "99376e899298c3dc",
+      "99376e899298c3dc",
+      "dd81f9a5bf2442c1",
+      "8425a98fad64d0fe"
+    ],
+    "ahash": [
+      "dfff1e060c0c0800",
+      "ffff184a0270c080",
+      "03030e1e3e3c1818",
+      "03030e1e3e3c1818",
+      "fb7878149e8e82c4",
+      "03070602bf7cfcfc"
+    ],
+    "dhash": [
+      "b3b07c6c38981031",
+      "f6b2b19494840530",
+      "efeed8d8f8f0f0a0",
+      "efeed8d8f8f0f0a0",
+      "d290c06438382e1c",
+      "eeee8ca660f021a1"
+    ],
+    "whash": [
+      "ffff1e060e0e1c10",
+      "ffff1c4a0c72d080",
+      "1f031e3e3e3e1c38",
+      "1f031e3e3e3e1c38",
+      "fb787814be8e82c4",
+      "07020602bf7cfdfc"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.733258172999854,
+      "avg_fetch_time": 3.788876362166642,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-5.m3u8": {
+    "phash": [
+      "89d6e1b6742d89a3",
+      "89d6e1b6742d89a3",
+      "89d6e1b6742d89a3",
+      "89d6e1b6742d89a3",
+      "e14095bcf0e1f363",
+      "e14095bcf0e1f363"
+    ],
+    "ahash": [
+      "fffe3c1084030100",
+      "fffe3c1084030100",
+      "fffe3c1084030100",
+      "fffe3c1084030100",
+      "df386040c18f7d6e",
+      "df386040c18f7d6e"
+    ],
+    "dhash": [
+      "fcf8f1b22c378f97",
+      "fcf8f1b22c378f97",
+      "fcf8f1b22c378f97",
+      "fcf8f1b22c378f97",
+      "90e2cd85af1cd3dc",
+      "90e2cd85af1cd3dc"
+    ],
+    "whash": [
+      "fffe7c1887030341",
+      "fffe7c1887030341",
+      "fffe7c1887030341",
+      "fffe7c1887030341",
+      "ff386040018f7dee",
+      "ff386040018f7dee"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.186280371999828,
+      "avg_fetch_time": 1.531046728666638,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-10.m3u8": {
+    "phash": [
+      "8996acd4c392d6f1",
+      "9e4399f621393e1c",
+      "9e4399f621393e1c",
+      "9e4399f621393e1c",
+      "9e4399f621393e1c",
+      "d8a59cb1e3a4e2b4"
+    ],
+    "ahash": [
+      "ff09080c08080b0b",
+      "ef7c1c0006161f1f",
+      "ef7c1c0006161f1f",
+      "ef7c1c0006161f1f",
+      "ef7c1c0006161f1f",
+      "ff1a13f1cc0c1ed0"
+    ],
+    "dhash": [
+      "f7fb9bd9dbd8139b",
+      "18e1f1dc6c353cb8",
+      "18e1f1dc6c353cb8",
+      "18e1f1dc6c353cb8",
+      "18e1f1dc6c353cb8",
+      "ba9226c3199db4b4"
+    ],
+    "whash": [
+      "ff0b092c681c8f6b",
+      "ef7c1c0006171f5f",
+      "ef7c1c0006171f5f",
+      "ef7c1c0006171f5f",
+      "ef7c1c0006171f5f",
+      "ff1a9171cc0c1fd0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.508622639999999,
+      "avg_fetch_time": 2.08477044,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-4.m3u8": {
+    "phash": [
+      "8bd6fc85d682c4b1",
+      "8bd6fc85d682c4b1",
+      "f9c4bd481d98a70e",
+      "f9c4bd481d98a70e",
+      "bfa9d81c982e7922",
+      "bfa9d81c982e7922"
+    ],
+    "ahash": [
+      "ff01002428280d89",
+      "ff01002428280d89",
+      "fefcf7ccc0c0c082",
+      "fefcf7ccc0c0c082",
+      "9b838307169697fe",
+      "9b838307169697fe"
+    ],
+    "dhash": [
+      "697b49e96bdbdb1b",
+      "697b49e96bdbdb1b",
+      "92082a388181191e",
+      "92082a388181191e",
+      "2b261e767474641c",
+      "2b261e767474641c"
+    ],
+    "whash": [
+      "ff810c3c38392fc9",
+      "ff810c3c38392fc9",
+      "fefcebecc0c0c082",
+      "fefcebecc0c0c082",
+      "8b8b8307069697fe",
+      "8b8b8307069697fe"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.575130622000074,
+      "avg_fetch_time": 2.2625217703333456,
+      "success_count": 6
+    }
+  },
+  "http://stream.hrbtv.net/shpd/sd/live.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 1,
+      "network_error_count": 2,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x55ddc92a0540] Connection to tcp://stream.hrbtv.net:80 failed: Connection timed out\n[in#0 @ 0x55ddc92dedc0] Error opening input: Connection timed out\nError opening input file http://stream.hrbtv.net/shpd/sd/live.m3u8.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 8.328755331000025,
+      "avg_fetch_time": 4.164377665500012,
+      "success_count": 2
+    }
+  },
+  "http://jrlive.jrntv.com/live/_definst_/jrxwzhs/playlist.m3u8": {
+    "phash": [
+      "e0c27f831183fce9",
+      "e0c27f831183fce9",
+      "e0c27f831183fce9",
+      "e0c27f831183fce9",
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9"
+    ],
+    "ahash": [
+      "61e4c74243e769c2",
+      "61e4c76747f769c2",
+      "61e4c76747f769c2",
+      "61e4c76747f769c2",
+      "61e4c74242f769c2",
+      "61e4c74242f769c2"
+    ],
+    "dhash": [
+      "cb8995959c05d316",
+      "cb89958d8d05d316",
+      "cb89958d8d05d316",
+      "cb89958d8d05d316",
+      "cb8995858505d316",
+      "cb8995858505d316"
+    ],
+    "whash": [
+      "79e4e34343c769c2",
+      "61e4e36363e369c2",
+      "61e4e36363e369c2",
+      "61e4e36363e369c2",
+      "61e4e36363e369c2",
+      "61e4e36363e369c2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.42894737800009,
+      "avg_fetch_time": 3.4048245630000147,
+      "success_count": 6
+    }
+  },
+  "http://stream10.jlntv.cn/jiangyuantv/sd/live.m3u8": {
+    "phash": [
+      "8d8977661e1d7870",
+      "8d8977661e1d7870",
+      "8d8977661e1d7870",
+      "8d8977661e1d7870",
+      "8d8977661e1d7870",
+      "8d8977661e1d7870"
+    ],
+    "ahash": [
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600"
+    ],
+    "dhash": [
+      "e7d2927268820e5c",
+      "e7d2927268820e5c",
+      "e7d2927268820e5c",
+      "e7d2927268820e5c",
+      "e7d2927268820e5c",
+      "e7d2927268820e5c"
+    ],
+    "whash": [
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.826584090999745,
+      "avg_fetch_time": 3.137764015166624,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-13.m3u8": {
+    "phash": [
+      "9dd5a5b4632d9b08",
+      "8996a896cb91d2ed",
+      "8bdbfe84ce82c4a4",
+      "8bd6adc1ce96c0a5",
+      "8bd6adc1ce96c0a5",
+      "8bd6adc1ce96c0a5"
+    ],
+    "ahash": [
+      "fffe7c0000060301",
+      "ff010808280c0b09",
+      "ff09082838202f81",
+      "ff01043c18280f89",
+      "ff01043c18280f89",
+      "ff01043c18280f89"
+    ],
+    "dhash": [
+      "fefcd1f2a83c33eb",
+      "f1fbdbfbebf89393",
+      "655b5beb63c3cb73",
+      "715b69e9e9d95b1b",
+      "715b69e9e9d95b1b",
+      "715b69e9e9d95b1b"
+    ],
+    "whash": [
+      "fffe7c1800871319",
+      "ff0b0838383c1f79",
+      "ff89083c38282ff9",
+      "ff89043c38696f89",
+      "ff89043c38696f89",
+      "ff89043c38696f89"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.859946210000203,
+      "avg_fetch_time": 2.4766577016667006,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-jing-dian.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.759524838999937,
+      "avg_fetch_time": 2.1265874731666563,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-biao-qing-1.m3u8": {
+    "phash": [
+      "9d726e2962e36744",
+      "9d726e2962e36744",
+      "b1ca4e3548b70f1b",
+      "cdda30277a31274e",
+      "b94246256eb703de",
+      "b94246256eb703de"
+    ],
+    "ahash": [
+      "009effff3fbb3a00",
+      "009effff3fbb3a00",
+      "005b3fff5f4f4700",
+      "007878f8383b3a00",
+      "00483fefcb4fcf00",
+      "00483fefcb4fcf00"
+    ],
+    "dhash": [
+      "383474585a72f2e0",
+      "383474585a72f2e0",
+      "aeb2599a9a9a9e71",
+      "20f2e2f26262f2f0",
+      "ae92d89a129a1a31",
+      "ae92d89a129a1a31"
+    ],
+    "whash": [
+      "00debebf2f3b1a00",
+      "00debebf2f3b1a00",
+      "005b7fef4f4f0700",
+      "007c78fe7a3b3e10",
+      "004b7fefcb4f8e00",
+      "004b7fefcb4f8e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.378149203999897,
+      "avg_fetch_time": 3.2296915339999828,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-qia-tong.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.870109157000115,
+      "avg_fetch_time": 2.1450181928333527,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-12.m3u8": {
+    "phash": [
+      "d8a59cb1e3a4e2b4",
+      "d8a59cb1e3a4e2b4",
+      "f0fee1bd84889782",
+      "ac75697d2d181a39",
+      "fb82b1e9d0a52a56",
+      "fccc799a858ac685"
+    ],
+    "ahash": [
+      "ff1a13f1cc0c1fd0",
+      "ff1a13f1cc0c1fd0",
+      "ffc08414140041e0",
+      "00f3ffd797d70311",
+      "ff692122d0c187cc",
+      "e0c0f0f2f2ccc0c0"
+    ],
+    "dhash": [
+      "ba9226c3199db4b4",
+      "ba9226c3199db4b4",
+      "9a1d3db5b46a8b8a",
+      "1306ada52435a7e3",
+      "53cb6d6e31131e18",
+      "2322262626281a06"
+    ],
+    "whash": [
+      "ff1a9171cc0c1fd0",
+      "ff1a9171cc0c1fd0",
+      "ffe5c41c160649f8",
+      "00f3f7f797950121",
+      "ffeb2122d0c187cc",
+      "f0c0f0f2f2fcc1e0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.449363697999843,
+      "avg_fetch_time": 4.074893949666641,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-15.m3u8": {
+    "phash": [
+      "9f7c32314a274d5a",
+      "9f7c32314a274d5a",
+      "9f7c32314a274d5a",
+      "9f7c32314a274d5a",
+      "9dd24e3d6263274c",
+      "9dd24e3d6263274c"
+    ],
+    "ahash": [
+      "00debcbcdc2f2f04",
+      "00debcbcdc2f2f04",
+      "00debcbcdc2f2f04",
+      "00debcbcdc2f2f04",
+      "001e7f7f3f3f1f00",
+      "001e7f7f3f3f1f00"
+    ],
+    "dhash": [
+      "3e24606038dece69",
+      "3e24606038dece69",
+      "3e24606038dece69",
+      "3e24606038dece69",
+      "31b0f4d8d05252e0",
+      "31b0f4d8d05252e0"
+    ],
+    "whash": [
+      "00dffcfcdc2f0700",
+      "00dffcfcdc2f0700",
+      "00dffcfcdc2f0700",
+      "00dffcfcdc2f0700",
+      "005e7f7f1f0f0f00",
+      "005e7f7f1f0f0f00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.768869627999948,
+      "avg_fetch_time": 2.6281449379999913,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/feng-huang-zhong-wen-1.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 74.84132065699976,
+      "avg_fetch_time": 6.803756423363614,
+      "success_count": 11
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-16.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.flv": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 46.5475938420002,
+      "avg_fetch_time": 5.171954871333355,
+      "success_count": 9
+    }
+  },
+  "http://stream2.jlntv.cn/baicheng1/sd/live.m3u8": {
+    "phash": [
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc"
+    ],
+    "ahash": [
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff"
+    ],
+    "dhash": [
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c"
+    ],
+    "whash": [
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.256415553999886,
+      "avg_fetch_time": 2.0427359256666477,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-xi-ju-1.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.527185313000132,
+      "avg_fetch_time": 2.087864218833355,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/naxw/sd/live.m3u8": {
+    "phash": [
+      "ebcd92926d67882c",
+      "ebcd92926d67882c",
+      "ebcd92926d67882c",
+      "ebcd92926d67882c",
+      "ebcd92926d67882c",
+      "ebcd92926d67882c"
+    ],
+    "ahash": [
+      "ffdbf3e181cfe7ff",
+      "ffdbf3e181cfe7ff",
+      "ffdbf3e181cde7ff",
+      "ffdbf3e181cde5ff",
+      "ffdbf3e181cde5ff",
+      "ffdbf3e181cfe7ff"
+    ],
+    "dhash": [
+      "e93b86062b194d6a",
+      "e93b86062b194d6a",
+      "e93b86062b194d6a",
+      "e93b86062b194d6a",
+      "e93b86062b194d6a",
+      "e92b86062b194d6a"
+    ],
+    "whash": [
+      "7ed941c1818da57e",
+      "7ed941c1818da57e",
+      "7ed941c1818da57e",
+      "7ed941c1818da57e",
+      "7ed941c1818da57e",
+      "7ed941c1818da57e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.806762904000038,
+      "avg_fetch_time": 2.4677938173333396,
+      "success_count": 6
+    }
+  },
+  "http://stream8.jlntv.cn/dhtv/playlist.m3u8": {
+    "phash": [
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52"
+    ],
+    "ahash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "dhash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "whash": [
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.755396901999916,
+      "avg_fetch_time": 2.459232816999986,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-yu-le.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.945716434000019,
+      "avg_fetch_time": 1.9909527390000032,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-19.m3u8": {
+    "phash": [
+      "d7982b257a636c46",
+      "b1da6ea55aa50f0a",
+      "9962462d6eb109df",
+      "994a74a642dd2677",
+      "995265a656dd064f",
+      "8da854573aa7255b"
+    ],
+    "ahash": [
+      "00ff7cfcfe2b2a00",
+      "80db2fff4f0b0300",
+      "00483fefcb1b8f18",
+      "00df08181c1fff00",
+      "0088181c1c1fff00",
+      "005c7b8f0c3f3e00"
+    ],
+    "dhash": [
+      "31b0e868ec4242e8",
+      "0c96599b9a9a8a44",
+      "0190fa1a1bba3a60",
+      "393b5372796a1a12",
+      "299b5278e97a5272",
+      "32b0d31b19ea62b0"
+    ],
+    "whash": [
+      "007f7cfefe2a2a00",
+      "00df2fef4f4f0700",
+      "004a3fefcb1f8e18",
+      "00ff089f1e1fff00",
+      "00cd1e1f1e3fff00",
+      "007e7f8f1e3e3e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.87122445800003,
+      "avg_fetch_time": 4.4785374096666715,
+      "success_count": 6
+    }
+  },
+  "http://hbzqdb.chinashadt.com:1937/live/zqzh.stream_360p/playlist.m3u8": {
+    "phash": [
+      "e24996b6696398cd",
+      "e24996b6696398cd",
+      "e24996b6696398cd",
+      "e24996b6696398cd",
+      "e24996b6696398cd",
+      "e24996b6696398cd"
+    ],
+    "ahash": [
+      "e7bff1c1818fe7ff",
+      "e7bff1c1818fe7ff",
+      "e7bff1c1818fe7ff",
+      "e7bff1c1818fe7ff",
+      "e7bff1c1818fe7ff",
+      "e7bff1c1818fe7ff"
+    ],
+    "dhash": [
+      "cc2a830b2b1c4cea",
+      "cc2a830b2b1c4cea",
+      "cc2a830b2b1c4cea",
+      "cc2a830b2b1c4cea",
+      "cc2a830b2b1c4cea",
+      "cc2a830b2b1c4cea"
+    ],
+    "whash": [
+      "e6dac181818f667e",
+      "e6dac181818f667e",
+      "e6dac181818f667e",
+      "e6dac181818f667e",
+      "e6dac181818f667e",
+      "e6dac181818f667e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.001369419999833,
+      "avg_fetch_time": 4.000228236666639,
+      "success_count": 6
+    }
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/qxzhpd/1500k/tzwj_video.m3u8": {
+    "phash": [
+      "ff030303017cfcfc",
+      "ff030303017cfcfc",
+      "ff030303017cfcfc",
+      "ff030303017cfcfc",
+      "ff030303017cfcfc",
+      "ff030303017cfcfc"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.555516880999903,
+      "avg_fetch_time": 3.0925861468333173,
+      "success_count": 6
+    }
+  },
+  "http://l2yx82zv.live2.danghongyun.com/live/hls/8be0890a1b0c4d7aaf80b51ea8646682/5a8988f5ecc64986a19aa9b6b3a052a6-1.m3u8": {
+    "phash": [
+      "de01000170fefefe",
+      "de01000170fefefe",
+      "de01000170fefefe",
+      "de01000170fefefe",
+      "de01000170fefefe",
+      "de01000170fefefe"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.98363606800001,
+      "avg_fetch_time": 2.4972726780000016,
+      "success_count": 6
+    }
+  },
+  "http://live.schstv.com:90/live/xwzh.m3u8": {
+    "phash": [
+      "b339cc86cc3339d2",
+      "b297898c9d68add8",
+      "876fc29311b4a63e",
+      "ce69839594aa6cea",
+      "ce69839594aa6cea",
+      "ce69839594aa6cea"
+    ],
+    "ahash": [
+      "7f0f4e4e6e2767ff",
+      "ffe7e7e7e7e3c7e7",
+      "2400810f0fffff7f",
+      "fff990d09010ffff",
+      "fff990d09010ffff",
+      "fff990d09010ffff"
+    ],
+    "dhash": [
+      "f3d8d8d8c8cdcdc8",
+      "eb4c4ccccc8e8f8c",
+      "cc6327d67aa9d4f0",
+      "fb6123252434e54d",
+      "fb6123252434e54d",
+      "fb6123252434e54d"
+    ],
+    "whash": [
+      "3f0f0c042e27657f",
+      "7f2726266643c3c3",
+      "240081070dffff7e",
+      "ff90909090107fff",
+      "ff90909090107fff",
+      "ff90909090107fff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.879777501000035,
+      "avg_fetch_time": 2.479962916833339,
+      "success_count": 6
+    }
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/lsdst/1500k/tzwj_video.m3u8": {
+    "phash": [
+      "b300000000000000",
+      "b300000000000000",
+      "b300000000000000",
+      "b300000000000000",
+      "b300000000000000",
+      "b300000000000000"
+    ],
+    "ahash": [
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f"
+    ],
+    "dhash": [
+      "1818181818181818",
+      "1818181818181818",
+      "1818181818181818",
+      "1818181818181818",
+      "1818181818181818",
+      "1818181818181818"
+    ],
+    "whash": [
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f",
+      "0f0f0f0f0f0f0f0f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.429369909000002,
+      "avg_fetch_time": 2.9048949848333336,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/hn/sd/live.m3u8": {
+    "phash": [
+      "d6c03b3f8692ec86",
+      "d6c03b3f8692ec86",
+      "c2923beced17c292",
+      "c2923beced17c292",
+      "c8e070e09c1f3f1f",
+      "c8e070e09c1f3f1f"
+    ],
+    "ahash": [
+      "0400f4fcfcf00400",
+      "0400f4fcfcf00400",
+      "0400f4f0f0f00000",
+      "0400f4f0f0f00000",
+      "c0c0181818000000",
+      "c0c0181818000000"
+    ],
+    "dhash": [
+      "8d98a5a424250d60",
+      "8d98a5a424250d60",
+      "8c8dade4a4e40020",
+      "8c8dade4a4e40020",
+      "809010b030000000",
+      "809010b030000000"
+    ],
+    "whash": [
+      "444cfcfefef40c00",
+      "444cfcfefef40c00",
+      "eeecfcfef0f00000",
+      "eeecfcfef0f00000",
+      "e2e03cbc3cac0000",
+      "e2e03cbc3cac0000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.166695324000102,
+      "avg_fetch_time": 2.86111588733335,
+      "success_count": 6
+    }
+  },
+  "http://stream8.jlntv.cn/jytv/sd/live.m3u8": {
+    "phash": [
+      "ffc339c334c33442",
+      "ffe007e007f017f0",
+      "ffe007e007f017f0",
+      "ffe005e005f017de",
+      "ffe805e805e817d2",
+      "ffe805e805e817d2"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0e0",
+      "f0f0f0f0f0f0f0e0",
+      "f0f0f0f0f0f0f0e0",
+      "f0f0f0f0f0f0f0e0",
+      "f0f0f0f0f0f0f0e0",
+      "f0f0f0f0f0f0f0e0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.37354169799994,
+      "avg_fetch_time": 2.7289236163333235,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/lh/sd/live.m3u8": {
+    "phash": [
+      "dc03030307fcfcfc",
+      "dc03030307fcfcfc",
+      "dc03030307fcfcfc",
+      "dc03030307fcfcfc",
+      "dc03030307fcfcfc",
+      "dc03030307fcfcfc"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.558262337000087,
+      "avg_fetch_time": 1.9263770561666813,
+      "success_count": 6
+    }
+  },
+  "http://stream10.jlntv.cn/yongji/sd/live.m3u8": {
+    "phash": [
+      "c12c9f9794ac6d62",
+      "c12c9f9794ac6d62",
+      "c52c378447dcb32b",
+      "c52c378447dcb32b",
+      "e96d3886d86d49f0",
+      "e96d3886d86d49f0"
+    ],
+    "ahash": [
+      "ff7800606060ffff",
+      "ff7800606060ffff",
+      "63035d78787ffa66",
+      "63035d78787ffa66",
+      "f1f1f1f9fd71e1c1",
+      "f1f1f1f9fd71e1c1"
+    ],
+    "dhash": [
+      "f2e18384c4c2ccf8",
+      "f2e18384c4c2ccf8",
+      "8e96b9b3f3b2b6ce",
+      "8e96b9b3f3b2b6ce",
+      "e3e38383a1c58799",
+      "e3e38383a1c58799"
+    ],
+    "whash": [
+      "ff3800406060ffff",
+      "ff3800406060ffff",
+      "63031578787e7a66",
+      "63031578787e7a66",
+      "f1f0f0f0f07161c5",
+      "f1f0f0f0f07161c5"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.984574695999868,
+      "avg_fetch_time": 2.497429115999978,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel106011/playlist.m3u8": {
+    "phash": [
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c"
+    ],
+    "ahash": [
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff"
+    ],
+    "dhash": [
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863"
+    ],
+    "whash": [
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.503389456000036,
+      "avg_fetch_time": 2.0838982426666726,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-yang-xi-ju-1.php": {
+    "phash": [
+      "88993396949a9efa",
+      "99cc35dc38b870cb",
+      "8c993396949a9eda",
+      "8c993396949a9e9b",
+      "8c993396949a9e9b",
+      "8c993396949a9e9b"
+    ],
+    "ahash": [
+      "5f5fdb7b31100000",
+      "1f1f1f1f1f1d1d0d",
+      "7f7bfb7b31100000",
+      "7f7b7b7b31100000",
+      "7f7b7b7b31100000",
+      "7f7b7b7b31100000"
+    ],
+    "dhash": [
+      "b9b3b3a3a7e562e6",
+      "3373717171317159",
+      "b9b3b3a3a7e566f2",
+      "b9b3b3a3a7e5e666",
+      "b9b3b3a3a7e5e666",
+      "b9b3b3a3a7e5e666"
+    ],
+    "whash": [
+      "7f7ffb7b71100000",
+      "1f1d1d1d1d1d1d0d",
+      "7f7ffb7b31100002",
+      "7f7ffb7b31100002",
+      "7f7ffb7b31100002",
+      "7f7ffb7b31100002"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.402823523000052,
+      "avg_fetch_time": 3.067137253833342,
+      "success_count": 6
+    }
+  },
+  "http://www.guzhenm.com:7001/hls/hd-live.m3u8": {
+    "phash": [
+      "ce689117b4aa6de2",
+      "e82c378d47dcb20b",
+      "9e0fe28e1cc0e13f",
+      "9e1de18b1ce0e13e",
+      "8f0fb29a1ce0e03f",
+      "8f0fb29a1ce0e03f"
+    ],
+    "ahash": [
+      "3ff8f0b0b0b07dff",
+      "03830df8797ffae7",
+      "3f2f2018187f6fff",
+      "3f3f3e1c1e7f65ff",
+      "3f2f2018197f7fff",
+      "3f2f2018197f7fff"
+    ],
+    "dhash": [
+      "f9e127252466e559",
+      "ce1731b1f3f3b2ce",
+      "f168ca3232dddd95",
+      "f178d83030dddd95",
+      "f16aca3333dddd95",
+      "f16aca3333dddd95"
+    ],
+    "whash": [
+      "3f70f090b0307cbf",
+      "038305d8793ffae2",
+      "3f0e0018187f65ff",
+      "1f1e0c1c1c2765f7",
+      "3f2e2018183f65f7",
+      "3f2e2018183f65f7"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.384526459000085,
+      "avg_fetch_time": 4.397421076500014,
+      "success_count": 6
+    }
+  },
+  "http://stream.hrbtv.net/ylpd/sd/live.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 3,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x555d64bd0540] Connection to tcp://stream.hrbtv.net:80 failed: Connection timed out\n[in#0 @ 0x555d64c0edc0] Error opening input: Connection timed out\nError opening input file http://stream.hrbtv.net/ylpd/sd/live.m3u8.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 9.77354291100005,
+      "avg_fetch_time": 1.9547085822000099,
+      "success_count": 5
+    }
+  },
+  "http://stream8.jlntv.cn/hctv/sd/live.m3u8": {
+    "phash": [
+      "e82c378c47dcb30b",
+      "e82c378c47dcb30b",
+      "ea6d2886d86d49f8",
+      "ea6d2886d86d49f8",
+      "ea6d2886d86d49f8",
+      "8f0fb2921ce0e13f"
+    ],
+    "ahash": [
+      "c3c30df8797ffb63",
+      "c3c30df8797ffb63",
+      "f1f1f1f9fdf1e1c1",
+      "f1f1f1f9fdf1e1c1",
+      "f1f1f1f9fdf1e1c1",
+      "3f2f2018197f7fff"
+    ],
+    "dhash": [
+      "8e17b9b1f3b3b6ce",
+      "8e17b9b1f3b3b6ce",
+      "e3e3030321c58599",
+      "e3e3030321c58599",
+      "e3e3030321c58599",
+      "f16aca3333dddd95"
+    ],
+    "whash": [
+      "430105f8797ffa62",
+      "430105f8797ffa62",
+      "f1f1f1f0f071c1c0",
+      "f1f1f1f0f071c1c0",
+      "f1f1f1f0f071c1c0",
+      "3f0e2018187f7577"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.681759410999803,
+      "avg_fetch_time": 2.613626568499967,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-8.m3u8": {
+    "phash": [
+      "cdda30277a31274e",
+      "cdda30277a31274e",
+      "cdda30277a31274e",
+      "cdda30277a31274e",
+      "cdda30277a31274e",
+      "cdda30277a31274e"
+    ],
+    "ahash": [
+      "007878f8383b3a00",
+      "007878f8383b3a00",
+      "007878f8383b3a00",
+      "007878f8383b3a00",
+      "007878f8383b3a00",
+      "007878f8383b3a00"
+    ],
+    "dhash": [
+      "20f2f2726062f2f1",
+      "20f2f2726062f2f1",
+      "20f2f2726062f2f1",
+      "20f2f2726062f2f1",
+      "20f2f2726062f2f1",
+      "20f2f2726062f2f1"
+    ],
+    "whash": [
+      "007c78fc7c3b3f10",
+      "007c78fc7c3b3f10",
+      "007c78fc7c3b3f10",
+      "007c78fc7c3b3f10",
+      "007c78fc7c3b3f10",
+      "007c78fc7c3b3f10"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.788484487999995,
+      "avg_fetch_time": 1.2980807479999992,
+      "success_count": 6
+    }
+  },
+  "http://pili-live-rtmp.148.i2863.com/i2863-148/live_148_811389.m3u8": {
+    "phash": [
+      "c0e50db34db60bf4",
+      "c0e50db34db60bf4",
+      "c0e50db34db60bf4",
+      "c0e50db34db60bf4",
+      "c0e50db34db60bf4",
+      "c0e50db34db60bf4"
+    ],
+    "ahash": [
+      "f8f8f8f8f805c438",
+      "f8f8f8f8f805c438",
+      "f8f8f8f8f805c438",
+      "f8f8f8f8f805c438",
+      "f8f8f8f8f805c438",
+      "f8f8f8f8f805c438"
+    ],
+    "dhash": [
+      "c0c0808080690cf2",
+      "c0c0808080690cf2",
+      "c0c0808080690cf2",
+      "c0c0808080690cf2",
+      "c0c0808080690cf2",
+      "c0c0808080690cf2"
+    ],
+    "whash": [
+      "f8f8f8f8f801c438",
+      "f8f8f8f8f801c438",
+      "f8f8f8f8f801c438",
+      "f8f8f8f8f801c438",
+      "f8f8f8f8f801c438",
+      "f8f8f8f8f801c438"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.964229100000125,
+      "avg_fetch_time": 2.160704850000021,
+      "success_count": 6
+    }
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/slxw/1500k/tzwj_video.m3u8": {
+    "phash": [
+      "f96d969265a3b10c",
+      "f96d969265a3b10c",
+      "f96d969265a3b10c",
+      "f96d969265a3b10c",
+      "f96d969265a3b10c",
+      "f96d969265a3b10c"
+    ],
+    "ahash": [
+      "ff18c3c1c1cf3c7c",
+      "ff18c3c1c1cf3c7c",
+      "ff18c3c1c1cf3c7c",
+      "ff18c3c1c1cf3c7c",
+      "ff18c3c1c1cf3c7c",
+      "ff18c3c1c1cf3c7c"
+    ],
+    "dhash": [
+      "29b2130bab99e9e8",
+      "29b2130bab99e9e8",
+      "29b2130bab99e9e8",
+      "29b2130bab99e9e8",
+      "29b2130bab99e9e8",
+      "29b2130bab99e9e8"
+    ],
+    "whash": [
+      "ff18c3c3c1cf2c14",
+      "ff18c3c3c1cf2c14",
+      "ff18c3c3c1cf2c14",
+      "ff18c3c3c1cf2c14",
+      "ff18c3c3c1cf2c14",
+      "ff18c3c3c1cf2c14"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 30.940990103000104,
+      "avg_fetch_time": 5.15683168383335,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/dian-ying-6.flv": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x559e303f34c0] HTTP error 403 Forbidden\n[in#0 @ 0x559e303f2dc0] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file https://t.freetv.fun/live/dian-ying-6.flv.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://stream.jmtv.com.cn/ggsh/sd/live.m3u8": {
+    "phash": [
+      "d0d0d0d595952f97",
+      "d0d0d0d595952f97",
+      "d0d0d0d595952f97",
+      "d0d0d0d595952f97",
+      "d0d0d0d595952f97",
+      "d0d0d0d595952f97"
+    ],
+    "ahash": [
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000"
+    ],
+    "dhash": [
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000"
+    ],
+    "whash": [
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.806613584999809,
+      "avg_fetch_time": 1.9677689308333015,
+      "success_count": 6
+    }
+  },
+  "http://stream11.jlntv.cn/dehuitv/sd/live.m3u8": {
+    "phash": [
+      "ebcd92326d67a80c",
+      "ebcd92326d67a80c",
+      "ebcd92326d67a80c",
+      "ebcd92326d67a80c",
+      "ebcd92326d67a80c",
+      "ebcd92326d67a80c"
+    ],
+    "ahash": [
+      "ff5af3e181cf24ff",
+      "ff5ef3e381cf24ff",
+      "ff5af3e181cf24ff",
+      "ff5af3e181cf24ff",
+      "ff5af3e181cf24ff",
+      "ff5af3e181cf24ff"
+    ],
+    "dhash": [
+      "e9b246c62a39cc62",
+      "e8b246c62a39cc62",
+      "e8b246c62a39cc62",
+      "e8b246c62a39cc62",
+      "e8b246c62a39cc62",
+      "e8b246c62a39cc62"
+    ],
+    "whash": [
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.682394135999857,
+      "avg_fetch_time": 2.280399022666643,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/feng-huang-wei-shi-zhong-wen-2.m3u8": {
+    "phash": [
+      "ac8c33d00e2fcb9e",
+      "ac8c33d00e2fcb9e",
+      "c38a2b4ecc0fe22f",
+      "d4d4216b9f6a6526",
+      "c38a2b4ecc0fe22f",
+      "d4d4216b9f6a6526"
+    ],
+    "ahash": [
+      "ffffff91d0700000",
+      "ffffff91d0700000",
+      "3900e73cfe6c007f",
+      "f0fefefebe000000",
+      "3900e73cfe6c007f",
+      "f0fefefebe000000"
+    ],
+    "dhash": [
+      "fe9e2323a0880e57",
+      "fe9e2323a0880e57",
+      "e17bcbe8e8c86ac8",
+      "c2a424306c4621e6",
+      "e17bcbe8e8c86ac8",
+      "c2a424306c4621e6"
+    ],
+    "whash": [
+      "ffffff11d0700000",
+      "ffffff11d0700000",
+      "3900e73e7a6e00fe",
+      "e0fefefebea00000",
+      "3900e73e7a6e00fe",
+      "e0fefefebea00000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.824257300999989,
+      "avg_fetch_time": 2.304042883499998,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/dl/sd/live.m3u8": {
+    "phash": [
+      "ea6d3886d86d49f0",
+      "8f0fb29a1cc0e13f",
+      "8f0fb29a1cc0e13f",
+      "8f0fb29a1cc0e13f",
+      "8f0fb29a1cc0e13f",
+      "e35a4c94ed554d92"
+    ],
+    "ahash": [
+      "f1f1f1f9fdf1e1c1",
+      "3f2f2018197f6fff",
+      "3f2f2018197f6fff",
+      "3f2f2018197f7fff",
+      "3f2f2018197f7fff",
+      "f0f0e0e0e0e0f0f0"
+    ],
+    "dhash": [
+      "63e3030321c58599",
+      "f16aca3333dddd95",
+      "f16aca3333dddd95",
+      "f16aca3333dddd95",
+      "f16aca3333dddd95",
+      "a389c9484ccccaa3"
+    ],
+    "whash": [
+      "f1f1f1f0f07141c1",
+      "3f0e2018183f65ff",
+      "3f0e2018183f65ff",
+      "3f2e2018183f65f7",
+      "3f2e2018183f65f7",
+      "f0f0e0e0e4f4f2f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.89554660200008,
+      "avg_fetch_time": 2.81592443366668,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-11.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 14.06137558499995,
+      "avg_fetch_time": 4.687125194999983,
+      "success_count": 3
+    }
+  },
+  "http://uzoiczhh.live.sxmty.com/live/hls/0d41f1480c4042d49927858f01fde707/53130407737b417b9a6259b57246bae3.m3u8": {
+    "phash": [
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a"
+    ],
+    "ahash": [
+      "0202000000000000",
+      "0202000000000000",
+      "0202000000000000",
+      "0202000000000000",
+      "0202000000000000",
+      "0202000000000000"
+    ],
+    "dhash": [
+      "0206000000000000",
+      "0206000000000000",
+      "0206000000000000",
+      "0206000000000000",
+      "0206000000000000",
+      "0206000000000000"
+    ],
+    "whash": [
+      "0f0f0f0f00000000",
+      "0f0f0f0f00000000",
+      "0f0f0f0f00000000",
+      "0f0f0f0f00000000",
+      "0f0f0f0f00000000",
+      "0f0f0f0f00000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 35.44532273900006,
+      "avg_fetch_time": 5.907553789833344,
+      "success_count": 6
+    }
+  },
+  "http://stream8.jlntv.cn/cbstv/sd/live.m3u8": {
+    "phash": [
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52"
+    ],
+    "ahash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "dhash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "whash": [
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.664921544999856,
+      "avg_fetch_time": 1.9441535908333094,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hei-long-jiang-wei-shi-7.m3u8": {
+    "phash": [
+      "fcc4c49fa1c953a8",
+      "9bc08be5e9f5a4a0",
+      "9bc08be5e9f5a4a0",
+      "9bc08be5e9f5a4a0",
+      "8598e7ebb4b25225",
+      "8598e7ebb4b25225"
+    ],
+    "ahash": [
+      "fbd3c1c183800100",
+      "ff3c1f9c00000101",
+      "ff3c1f9c00000101",
+      "ff3c1f9c00000101",
+      "f7190c0e0ba83332",
+      "f7190c0e0ba83332"
+    ],
+    "dhash": [
+      "96a6a31b3f6d1317",
+      "d3f9a838b574726b",
+      "d3f9a838b574726b",
+      "d3f9a838b574726b",
+      "eef33514365a6ae6",
+      "eef33514365a6ae6"
+    ],
+    "whash": [
+      "fbf3d1c787838900",
+      "ff3c3f9e07040331",
+      "ff3c3f9e07040331",
+      "ff3c3f9e07040331",
+      "f71d0c8f03aa3372",
+      "f71d0c8f03aa3372"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.140543013000183,
+      "avg_fetch_time": 2.8567571688333637,
+      "success_count": 6
+    }
+  },
+  "http://183.230.184.51:65500/tntv1.m3u8": {
+    "phash": [
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f",
+      "f0f0f0f0f00f0f0f"
+    ],
+    "ahash": [
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000"
+    ],
+    "dhash": [
+      "a0a0408000000000",
+      "a0a0408000000000",
+      "a0a0408000000000",
+      "a0a0408000000000",
+      "a0a0408000000000",
+      "a0a0408000000000"
+    ],
+    "whash": [
+      "f0f0f0f000000000",
+      "f0f0f0f000000000",
+      "f0f0f0f000000000",
+      "c0c0000000000000",
+      "c0c0000000000000",
+      "c0c0000000000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.814277432000154,
+      "avg_fetch_time": 2.3023795720000257,
+      "success_count": 6
+    }
+  },
+  "http://file.yizu.tv/nmip-media/channellive/channel106606/playlist.m3u8": {
+    "phash": [
+      "a59837324fa65b8c",
+      "a59837324fa65b8c",
+      "a59837324fa65b8c",
+      "a59837324fa65b8c",
+      "e59833325ba65b8c",
+      "a59837324fa65b8c"
+    ],
+    "ahash": [
+      "465e7e7bc3c3e3a3",
+      "465e7e7bc3c3e3a3",
+      "465e7e7bc3c3e3a3",
+      "465e7e7bc3c3e3a3",
+      "465e3e7ac2c3e3a3",
+      "465e7e7bc3c3e3a3"
+    ],
+    "dhash": [
+      "8c94f0d656178746",
+      "8c94f0d656178746",
+      "8c94f0d656178746",
+      "8c94f0d656178746",
+      "8c94f4f616178746",
+      "8c94f0d656178746"
+    ],
+    "whash": [
+      "420e7e78c3c3e3a3",
+      "420e7e78c3c3e3a3",
+      "420e7e78c3c3e3a3",
+      "420e7e78c3c3e3a3",
+      "461e3e78c2c3e3a3",
+      "420e7e78c3c3e3a3"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.64587592800001,
+      "avg_fetch_time": 3.440979321333335,
+      "success_count": 6
+    }
+  },
+  "http://live.jinchuanrmt.com:90/live/zhxw.m3u8": {
+    "phash": [
+      "c42c37cd43dcb30b",
+      "852ff29a1cc0e13f",
+      "852ff2921ce0e13f",
+      "941fe38d1cc0e13f",
+      "941fe38d1cc0e13f",
+      "e37a4c94ed154d92"
+    ],
+    "ahash": [
+      "43031d78797f7e67",
+      "7f2e6018187f7e7f",
+      "7f2e6018187f7e7e",
+      "3f2e26181e7f7e7e",
+      "3f2e26181e7f7e7e",
+      "f0f0e0e0e4e0f0f0"
+    ],
+    "dhash": [
+      "8e96b9b1f3f0b2ce",
+      "f06acab232dcdc94",
+      "f06acab232ccdc94",
+      "f068cab232dcdc94",
+      "f068cab232dcdc94",
+      "a289c8c8cccccaa3"
+    ],
+    "whash": [
+      "23031578787e7e66",
+      "3f2e2018187e767e",
+      "3f2e2018187e767e",
+      "3e2e28181c7e747e",
+      "3e2e28181c7e747e",
+      "f0f0e0e0e4f4f2f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.850138579000031,
+      "avg_fetch_time": 2.641689763166672,
+      "success_count": 6
+    }
+  },
+  "http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8": {
+    "phash": [
+      "e18c32e5cc48877f",
+      "eaa87698b1569995",
+      "eaa87698b1569995",
+      "eaa87698b1569995",
+      "c8bb0dd492a7c5d8",
+      "c8bb0dd492a7c5d8"
+    ],
+    "ahash": [
+      "faf2f8f8f0e0c080",
+      "f1f1f1f9f9f9f0e0",
+      "f1f1f1f9f9f9f0e0",
+      "f1f1f1f9f9f9f0e0",
+      "d999c9f9f8f0f0f0",
+      "d999c9f9f8f0f0f0"
+    ],
+    "dhash": [
+      "8284aba342468529",
+      "a36763737373646b",
+      "a36763737373646b",
+      "a36763737373646b",
+      "b33b1bc9b182c3c0",
+      "b33b1bc9b182c3c0"
+    ],
+    "whash": [
+      "faf6f8f0f0e0c0c0",
+      "71b1b1b1b9b9b0e0",
+      "71b1b1b1b9b9b0e0",
+      "71b1b1b1b9b9b0e0",
+      "d98989d9d8f0f0f0",
+      "d98989d9d8f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.726661712999885,
+      "avg_fetch_time": 2.121110285499981,
+      "success_count": 6
+    }
+  },
+  "http://60.220.198.84:81/0.m3u8": {
+    "phash": [
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a",
+      "b5b5b57a4a4a4a4a"
+    ],
+    "ahash": [
+      "0202000000000000",
+      "0202000000000000",
+      "0202000000000000",
+      "0202000000000000",
+      "0202000000000000",
+      "0202000000000000"
+    ],
+    "dhash": [
+      "0206000000000000",
+      "0206000000000000",
+      "0206000000000000",
+      "0206000000000000",
+      "0206000000000000",
+      "0206000000000000"
+    ],
+    "whash": [
+      "0f0f0c0c00000000",
+      "0f0f0c0c00000000",
+      "0f0f0c0c00000000",
+      "0f0f0c0c00000000",
+      "0f0f0c0c00000000",
+      "0f0f0c0c00000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.91204102000006,
+      "avg_fetch_time": 2.152006836666677,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/fei-fan-shang-ye.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.928969191000192,
+      "avg_fetch_time": 1.9881615318333654,
+      "success_count": 6
+    }
+  },
+  "http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8": {
+    "phash": [
+      "fe800080207f7fff",
+      "fe800080807fff7f",
+      "fe80000080feffff",
+      "fe00002080feffff",
+      "fe00800001dfffff",
+      "fe00800020feffff"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0e0",
+      "f0f0f0f0f0f0e0e0",
+      "f0f0f0f0f0e0f0f0",
+      "f0f0f0f0f0e0f0f0",
+      "f0f0f0f0e0f0f0f0",
+      "f0f0f0f0e0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 35.130905235,
+      "avg_fetch_time": 5.8551508725,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/yun-nan-wei-shi-14.m3u8": {
+    "phash": [
+      "fd7e06a3001d0ff2",
+      "fd7e06a3001d0ff2",
+      "c9fa72a54e1c195a",
+      "c9fa72a54e1c195a",
+      "89ea72b54e1d1b4a",
+      "89ea72b54e1d1b4a"
+    ],
+    "ahash": [
+      "00c8d8d8e8eee800",
+      "00c8d8d8e8eee800",
+      "00eefc18387f4f00",
+      "00eefc18387f4f00",
+      "00ed7d19387f0f00",
+      "00ed7d19387f0f00"
+    ],
+    "dhash": [
+      "22283030985a5a10",
+      "22283030985a5a10",
+      "3298d07372da9eb4",
+      "3298d07372da9eb4",
+      "3289d173f2da9ea4",
+      "3289d173f2da9ea4"
+    ],
+    "whash": [
+      "00fcf8f8f8eeea00",
+      "00fcf8f8f8eeea00",
+      "00fffc18387f7e00",
+      "00fffc18387f7e00",
+      "00ff7d19387e7e00",
+      "00ff7d19387e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.814123203000122,
+      "avg_fetch_time": 3.9690205338333535,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/dian-ying.flv": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x5640b810adc0] could not seek to position 79976.992\nInput #0, flv, from 'https://t.freetv.fun/live/dian-ying.flv':\n  Metadata:\n    displayWidth    : 960\n    displayHeight   : 528\n    fps             : 25\n    profile         : \n    level           : \n    videocodecreal  : 0\n    cdn_ip          : 163.181.66.162\n    Server          : Tengine\n    encoder         : Lavf58.20.100\n    publish_time_stamp: 1778418719\n    fp_dispatch_expr_tag: \n    stream_id       : tx.flv.huya.com:huyalive:1099531752779-1099531752779-86436229716901888-2199063629014-10057-A-0-1_264-6000\n    link_info       : n.cn-twxzd4.dqol_4184929,n.cn-twxzd4.1syk_3279984,n.cn-7ihqqt.0lrk_1470984,n.cn-7ihqqt.oft3_3663352,n.cn-lm0t9h.ickh_1562481,n.cn-lm0t9h.mqf0_1319750\n  Duration: 00:00:00.00, start: 79974.992000, bitrate: N/A\n  Stream #0:0: Subtitle: text\n  Stream #0:1: Audio: aac (LC), 44100 Hz, stereo, fltp, 130 kb/s\n  Stream #0:2: Video: h264 (Main), yuv420p(progressive), 1920x1080, 907 kb/s, 25 fps, 47.95 tbr, 1k tbn\nStream mapping:\n  Stream #0:2 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x5640b80cc540] Stream ends prematurely at 2535853, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x5640b810aec0] Packet corrupt (stream = 2, dts = 79978956).\n[NULL @ 0x5640b810e400] Invalid NAL unit size (4079 > 338).\n[NULL @ 0x5640b810e400] missing picture in access unit with size 342\n[in#0/flv @ 0x5640b810adc0] corrupt input packet in stream 2\n[https @ 0x5640b80cc540] Stream ends prematurely at 2535853, should be 18446744073709551615\n[in#0/flv @ 0x5640b810adc0] Error during demuxing: Input/output error\n[h264 @ 0x5640b83f0800] Invalid NAL unit size (4079 > 338).\n[h264 @ 0x5640b83f0800] Error splitting the input into NAL units.\n[in#0/flv @ 0x5640b810adc0] Error retrieving a packet from demuxer: Input/output error\n[vist#0:2/h264 @ 0x5640b84bc840] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x5640b82574c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    displayWidth    : 960\n    displayHeight   : 528\n    fps             : 25\n    profile         : \n    level           : \n    videocodecreal  : 0\n    cdn_ip          : 163.181.66.162\n    Server          : Tengine\n    link_info       : n.cn-twxzd4.dqol_4184929,n.cn-twxzd4.1syk_3279984,n.cn-7ihqqt.0lrk_1470984,n.cn-7ihqqt.oft3_3663352,n.cn-lm0t9h.ickh_1562481,n.cn-lm0t9h.mqf0_1319750\n    publish_time_stamp: 1778418719\n    fp_dispatch_expr_tag: \n    stream_id       : tx.flv.huya.com:huyalive:1099531752779-1099531752779-86436229716901888-2199063629014-10057-A-0-1_264-6000\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080, q=2-31, 200 kb/s, 47.95 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:2/h264 @ 0x5640b84bc840] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x5640b8115700] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x5640b8115700] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://stream2.jlntv.cn/sptv/sd/live.m3u8": {
+    "phash": [
+      "c6c668f5c0968ec7",
+      "aab4f81e8b4b2d61",
+      "aab4f81e8b4b2d61",
+      "c11f78c86f729827",
+      "87afa1bb07c7c01c",
+      "83e98c363c6e1e2e"
+    ],
+    "ahash": [
+      "fe00343e7e1e04c0",
+      "9fc7473d213080e1",
+      "9fc7473d213080e1",
+      "f8cc1e30707ce0c0",
+      "2f2f36300478b832",
+      "3878796d04043e3e"
+    ],
+    "dhash": [
+      "e40765ecececb895",
+      "2fac95694b69214b",
+      "2fac95694b69214b",
+      "b19c7ce0e3b08c08",
+      "4b5b646429f174e6",
+      "f2d2d3d989c9e4f4"
+    ],
+    "whash": [
+      "fe003c3e7e3e0cc1",
+      "efc74b3da53080e1",
+      "efc74b3da53080e1",
+      "f8fc3e30707ee0c0",
+      "3f3f3e300478b872",
+      "387d7d7d04043e1e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.797579884999777,
+      "avg_fetch_time": 2.9662633141666297,
+      "success_count": 6
+    }
+  },
+  "http://live.xysrmt.cn/shpd/sd/live.m3u8": {
+    "phash": [
+      "8080808080820a82",
+      "8080808080820a82",
+      "8080808080820a82",
+      "8080808080820a82",
+      "8080808080820a82",
+      "8080808080820a82"
+    ],
+    "ahash": [
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000",
+      "7e7e7e7e7e7e0000"
+    ],
+    "dhash": [
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000",
+      "c0c0808080800000"
+    ],
+    "whash": [
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000",
+      "7e7e7e7e7e000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.265611874000001,
+      "avg_fetch_time": 1.7109353123333335,
+      "success_count": 6
+    }
+  },
+  "http://fjnhdb.chinashadt.com:2036/live/stream:nh1.stream/playlist.m3u8": {
+    "phash": [
+      "c3cd92926d67a8cc",
+      "c3cd92926d67a8cc",
+      "c3cd92926d67a8cc",
+      "c3cd92926d67a8cc",
+      "c3cd92926d67a8cc",
+      "c3cd92926d67a8cc"
+    ],
+    "ahash": [
+      "7e3cf3e381cf247e",
+      "7e3cf3e381cd247e",
+      "7e3cf3e381cd247e",
+      "7e3cf3e381cd247e",
+      "7e3cf3e381cd247e",
+      "7e3cf3e381cd247e"
+    ],
+    "dhash": [
+      "e8f046462b19cce0",
+      "e8f046462b99cce0",
+      "e8f046462b99cce0",
+      "e8f046462b99cce0",
+      "e8f046462b19cce0",
+      "e8f046462b19cce0"
+    ],
+    "whash": [
+      "7e1862c3c3cf247c",
+      "7e1862c3c3cf247c",
+      "7e1862c3c3cf247c",
+      "7e1862c3c3cf247c",
+      "7e1862c3c3cf247c",
+      "7e1862c3c3cf247c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.914238302999934,
+      "avg_fetch_time": 3.652373050499989,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/sl/sd/live.m3u8": {
+    "phash": [
+      "b4e08f4b6953d968",
+      "b4e08f4b7953d948",
+      "b4e08f4b7953d948",
+      "b4e08f4b6953d968",
+      "b4e08f4b6953d968",
+      "b4e08f4b6953d968"
+    ],
+    "ahash": [
+      "4be74e42433fa71f",
+      "4be74e42433fa71f",
+      "4be74e42433fa71f",
+      "4be74e42433fa71f",
+      "4be74e42433fa71f",
+      "4be74e42433fa71f"
+    ],
+    "dhash": [
+      "934e9c9e96e86c36",
+      "934e9c9e96e86c36",
+      "934e9c9e96e86c36",
+      "934e9c9e96e86c36",
+      "934e9c9e96e86c36",
+      "934e9c9e96e86c36"
+    ],
+    "whash": [
+      "43e74e42033fa70f",
+      "43e74e42033fa70f",
+      "43e74e42033fa70f",
+      "43e74e42033fa70f",
+      "43e74e42033fa70f",
+      "43e74e42033fa70f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.605833291000067,
+      "avg_fetch_time": 2.600972215166678,
+      "success_count": 6
+    }
+  },
+  "http://www.guzhenm.com:7004/hls/hd-live.m3u8": {
+    "phash": [
+      "8000000000000000",
+      "8000000000000000",
+      "8000000000000000",
+      "8000000000000000",
+      "8000000000000000",
+      "8000000000000000"
+    ],
+    "ahash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.53459138200003,
+      "avg_fetch_time": 2.422431897000005,
+      "success_count": 6
+    }
+  },
+  "http://stream4.jlntv.cn/mhk/sd/live.m3u8": {
+    "phash": [
+      "a03c36c177d8b339",
+      "876fc2931194363f",
+      "876ec29315b4362f",
+      "876ec29315b4362f",
+      "e01c36c15fd8bb31",
+      "a20c365d7336b969"
+    ],
+    "ahash": [
+      "03030bf960ff6767",
+      "2400810f0fffff7f",
+      "2400810f0fffff7f",
+      "2400810f0fffff7f",
+      "00031b79f8ffe767",
+      "80131be5787f6767"
+    ],
+    "dhash": [
+      "8ed737b1d3cbcece",
+      "cc4327d6eaa9d4f0",
+      "cc6327d66aa9d4f0",
+      "cc6327d66aa9d4f0",
+      "0ed737b1838b8ecc",
+      "0fb7338993e3ccce"
+    ],
+    "whash": [
+      "030303fd607f6767",
+      "040081070dffff7f",
+      "040081070dffff7f",
+      "040081070dffff7f",
+      "00030379f0ffe767",
+      "80131be5783f2767"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.25266585299994,
+      "avg_fetch_time": 2.8754443088333232,
+      "success_count": 6
+    }
+  },
+  "http://183.64.174.171:40123/ch1.m3u8": {
+    "phash": [
+      "8cb2344cf30d5fa3",
+      "8cb2344cf30d5fa3",
+      "8cb2344cf30d5fa3",
+      "8cb2344cf30d5fa3",
+      "8cb2344cf30d5fa3",
+      "8cb2344cf30d5fa3"
+    ],
+    "ahash": [
+      "fffffdb939181800",
+      "fffffdb939181800",
+      "fffffdb939181800",
+      "fffffdb939181800",
+      "fffffdb939181800",
+      "fffffdb939181800"
+    ],
+    "dhash": [
+      "a42533737171f661",
+      "a42533737171f660",
+      "a42533737171f660",
+      "a42533737171f660",
+      "a42533737171f661",
+      "a42533737171f661"
+    ],
+    "whash": [
+      "dfdfddb939181000",
+      "dfdfddb939181000",
+      "dfdfddb939181000",
+      "dfdfddb939181000",
+      "dfdfddb939181000",
+      "dfdfddb939181000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.405590361999998,
+      "avg_fetch_time": 3.9009317269999997,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-zi-xun.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.660237608999978,
+      "avg_fetch_time": 1.9433729348333297,
+      "success_count": 6
+    }
+  },
+  "http://stream8.jlntv.cn/shulan/sd/live.m3u8": {
+    "phash": [
+      "c0636d1c9e871c3f",
+      "847b714dce962c39",
+      "847b714dce962c39",
+      "c063693c9f873c3c",
+      "c063693c9f873c3c",
+      "916e7ab107972c3c"
+    ],
+    "ahash": [
+      "60606c7e1e1c7c78",
+      "00400c3e3e3e7e7e",
+      "00400c3e3e3e7e7e",
+      "2060747e1e1e7c7c",
+      "2060747e1e1e7c7c",
+      "0040307e7e7e6e7e"
+    ],
+    "dhash": [
+      "d0c8c8dcfcb0e0e0",
+      "8898f8e0e0f6a6d6",
+      "8898f8e0e0f6a6d6",
+      "c0c0ccccbcb4f8e0",
+      "c0c0ccccbcb4f8e0",
+      "9490e0c4dcdcd8d8"
+    ],
+    "whash": [
+      "40606c7e5e1e7e78",
+      "00400c7e3e7e7e7e",
+      "00400c7e3e7e7e7e",
+      "0060747e4e5e7e7c",
+      "0060747e4e5e7e7c",
+      "0040207e7e7e7e7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.511512532999973,
+      "avg_fetch_time": 2.7519187554999953,
+      "success_count": 6
+    }
+  },
+  "http://stream.hrbtv.net/xwzh/sd/live.m3u8": {
+    "phash": [
+      "c39a81389ba33f1d",
+      "c39a81389ba33f1d",
+      "c39a81389ba33f1d",
+      "c39a81389ba33f1d",
+      "91c04ef6b087979d",
+      "91c04ef6b087979d"
+    ],
+    "ahash": [
+      "7ffe3839e0606060",
+      "7ffe3839e0606060",
+      "7ffe3835e0e06060",
+      "7ffe3835e0e06060",
+      "fe782d4fef262200",
+      "fe782d4fef262200"
+    ],
+    "dhash": [
+      "d9c8694b82c6c2c2",
+      "d9c8694b82c6c2c2",
+      "d9c8694b8ac6c2c2",
+      "d9c8694b8ac6c2c2",
+      "dcd1dbdb9a4e6666",
+      "dcd1dbdb9a4e6666"
+    ],
+    "whash": [
+      "7fff383ae0e06060",
+      "7fff383ae0e06060",
+      "7fff383ae0e06060",
+      "7fff383ae0e06060",
+      "fe782d4fef262200",
+      "fe782d4fef262200"
+    ],
+    "error": {
+      "fail_count": 2,
+      "timeout_count": 0,
+      "network_error_count": 2,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 64.08140477899997,
+      "avg_fetch_time": 4.005087798687498,
+      "success_count": 16
+    }
+  },
+  "https://t.freetv.fun/live/feng-huang-wei-shi-zi-xun-1-1.m3u8": {
+    "phash": [
+      "bfd5c52ac77a8060",
+      "80feffce3ca18301",
+      "bfd5c52ac77a8060",
+      "95187ae761259e59",
+      "95187ae761259e59",
+      "bfd5c52ac77a8060"
+    ],
+    "ahash": [
+      "fe8e8f87830181ff",
+      "fffc7e42427e7466",
+      "fe8e8f87830181ff",
+      "00183c7e7e3e3a04",
+      "00183c7e7e3e3a04",
+      "fe8e8f87830181ff"
+    ],
+    "dhash": [
+      "703c3e3f1f3b3bf4",
+      "20dcdc9494ccccd4",
+      "703c3e3f1f3b3bf4",
+      "f1f0f0f0f064f2a8",
+      "f1f0f0f0f064f2a8",
+      "703c3e3f1f3b3bf4"
+    ],
+    "whash": [
+      "fe868f87810181ff",
+      "fffc7c40407c7422",
+      "fe868f87810181ff",
+      "00183c7e7e7e7e14",
+      "00183c7e7e7e7e14",
+      "fe868f87810181ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.24066049199996,
+      "avg_fetch_time": 2.2067767486666603,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-ying-hua-1-1.m3u8": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.342965948999904,
+      "avg_fetch_time": 2.057160991499984,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-yang-xi-ju-1-1.m3u8": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.653967512999884,
+      "avg_fetch_time": 2.6089945854999805,
+      "success_count": 6
+    }
+  },
+  "http://stream10.jlntv.cn/huadian/sd/live.m3u8": {
+    "phash": [
+      "c1ed923a6de7850c",
+      "c1ed923a6de7850c",
+      "c1ed923a6de7850c",
+      "c1ed923a6de7850c",
+      "c1ed923a6de7850c",
+      "c1ed923a6de7850c"
+    ],
+    "ahash": [
+      "7e7e7a62005e7e7e",
+      "7e7e7a62005e7e7e",
+      "7e7e7a62005e7e7e",
+      "7e7e7a62005e7e7e",
+      "7e7e7a62005e7e7e",
+      "7e7e7a62005e7e7e"
+    ],
+    "dhash": [
+      "e8b0c2c2aa98cce8",
+      "e8b0c2c2aa98cce8",
+      "e8b0c2c2aa98cce8",
+      "e8b0c2c2aa98cce8",
+      "e8b0c2c2aa98cce8",
+      "e8b0c2c2aa98cce8"
+    ],
+    "whash": [
+      "7e5a7262004e6e7e",
+      "7e5a7262004e6e7e",
+      "7e5a7262004e6e7e",
+      "7e5a7262004e6e7e",
+      "7e5a7262004e6e7e",
+      "7e5a7262004e6e7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.402863471000046,
+      "avg_fetch_time": 2.567143911833341,
+      "success_count": 6
+    }
+  },
+  "http://fjnhdb.chinashadt.com:2036/live/stream:nh2.stream/playlist.m3u8": {
+    "phash": [
+      "c94b3eb6d1494696",
+      "c94b3eb6d1494696",
+      "c94b3eb6d1494696",
+      "c94b3eb6d1494696",
+      "c94b3eb6d1494696",
+      "c94b3eb6d1494696"
+    ],
+    "ahash": [
+      "00083c7c7e3e1800",
+      "00083c7c7e3e1800",
+      "00083c7c7e3e1800",
+      "00083c7c7e3e1800",
+      "00083c7c7e3e1800",
+      "00083c7c7e3e1800"
+    ],
+    "dhash": [
+      "f0f0f0f0f0f4f0f0",
+      "f0f0f0f0f0f4f0f0",
+      "f0f0f0f0f0f4f0f0",
+      "f0f0f0f0f0f4f0f0",
+      "f0f0f0f0f0f4f0f0",
+      "f0f0f0f0f0f4f0f0"
+    ],
+    "whash": [
+      "08387cfefe7e1c00",
+      "08387cfefe7e1c00",
+      "08387cfefe7e1c00",
+      "08387cfefe7e1c00",
+      "08387cfefe7e1c00",
+      "08387cfefe7e1c00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.39510288300005,
+      "avg_fetch_time": 3.3991838138333414,
+      "success_count": 6
+    }
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/qxtvlive1/1500k/tzwj_video.m3u8": {
+    "phash": [
+      "fe0101010afcfefe",
+      "fe0101010afcfefe",
+      "fe0101010afcfefe",
+      "fe0101010afcfefe",
+      "fe0101010afcfefe",
+      "fe0101010afcfefe"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.97106336999991,
+      "avg_fetch_time": 3.4951772283333185,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/gao-qing-dian-ying-2.m3u8": {
+    "phash": [
+      "f80634fd07d8079b",
+      "c18e7861279863ef",
+      "dfe7309903661969",
+      "dfe7309903661969",
+      "9c5b6a3c37d0032f",
+      "e8c4123f273a03bf"
+    ],
+    "ahash": [
+      "80d818d0f9f9d800",
+      "00f8783a7b68d800",
+      "00ccbeb8b89cc400",
+      "00ccbeb8b89cc400",
+      "00183c7e1f1fda00",
+      "00f8f9fbfb898800"
+    ],
+    "dhash": [
+      "a02179b313133320",
+      "a4a5e1e6c2d391a5",
+      "a819686173382802",
+      "a819686173382802",
+      "b2b070f436a2b634",
+      "9091d39357133312"
+    ],
+    "whash": [
+      "00f9bcd8f9f9f800",
+      "00fc7e3a7b79dc00",
+      "00efffb8bc9cc600",
+      "00efffb8bc9cc600",
+      "00183e7f3fbfda00",
+      "00fcf9fbfb898900"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 37.564806637000174,
+      "avg_fetch_time": 4.695600829625022,
+      "success_count": 8
+    }
+  },
+  "https://t.freetv.fun/live/feng-huang-xiang-gang.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 51.57753551400003,
+      "avg_fetch_time": 5.730837279333337,
+      "success_count": 9
+    }
+  },
+  "https://t.freetv.fun/live/feng-huang-zhong-wen.m3u8": {
+    "phash": [
+      "ebb0ec3f4140dc1d",
+      "ef5001cf3944e73a",
+      "c0db8ce031a76ea7",
+      "ed8cb20bf04ba71c",
+      "81ad7c6e5b131746",
+      "81b97c4e5e133707"
+    ],
+    "ahash": [
+      "cbc77d690e84a0b0",
+      "001c908181fbfb23",
+      "f97c304140f0ff00",
+      "ff571bf0d83800c7",
+      "037b2f6f71244404",
+      "03db2f6f71640404"
+    ],
+    "dhash": [
+      "129feb8b587d6d63",
+      "9231292b2b636347",
+      "b3b142da9c96e2ab",
+      "aeb6779232527396",
+      "be92dadbd5c5858d",
+      "b69adadad5c5854d"
+    ],
+    "whash": [
+      "cbc77f790a85a0b0",
+      "00bc80a1a9fbffa3",
+      "f97c704340f3ff00",
+      "7f539bf0d83800c7",
+      "037f6f6f7d244404",
+      "03ef2f7f7d640404"
+    ],
+    "error": {
+      "fail_count": 2,
+      "timeout_count": 2,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 105.71713360299987,
+      "avg_fetch_time": 11.746348178111097,
+      "success_count": 9
+    }
+  }
+}
