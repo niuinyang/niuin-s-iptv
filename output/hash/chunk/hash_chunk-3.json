@@ -1,0 +1,4188 @@
+{
+  "https://t.freetv.fun/live/jing-tian-zi-xun-1-1.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x56303db9bec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x56303db9bec0] Opening 'https://ia600408.us.archive.org/3/items/index_20260509/seg_000.ts' for reading\n[in#0/hls @ 0x56303db9bdc0] could not seek to position 3.460\nInput #0, hls, from 'https://t.freetv.fun/live/jing-tian-zi-xun-1-1.php':\n  Duration: 00:00:01.29, start: 1.460111, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 0\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, smpte170m/bt470bg/smpte170m), 712x1280 [SAR 357:356 DAR 357:640], 24 fps, 24 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n  Stream #0:1(und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp\n    Metadata:\n      variant_bitrate : 0\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x56303e511b40] co located POCs unavailable\n[h264 @ 0x56303dfa0600] mmco: unref short failure\n[vost#0:0/png @ 0x56303e350ec0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 712x1280 [SAR 357:356 DAR 357:640], q=2-31, 200 kb/s, 24 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x56303e400240] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x56303e400240] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/hua-shi-jiao-yu-ti-yu-wen-hua.m3u8": {
+    "phash": [
+      "acd8c1a53b8473ae",
+      "8cd8e0a67986739e",
+      "aed8e8b079865987",
+      "ec719b9b66196464",
+      "ec719b9b66196464",
+      "ff8096b400ff007f"
+    ],
+    "ahash": [
+      "dfdf971303171701",
+      "dfdf9f1307173701",
+      "dfdf370707173721",
+      "fffff3f3f7ffffff",
+      "fffff3f3f7ffffff",
+      "0600000000008000"
+    ],
+    "dhash": [
+      "b5b5353676a5a743",
+      "b5b5357676656727",
+      "b5b565647e2d6d47",
+      "0808040404080820",
+      "0808040404080820",
+      "0400000040004000"
+    ],
+    "whash": [
+      "dfdf970303171701",
+      "dfdf9f0303171301",
+      "dfdf170307073701",
+      "ccc8e010022b87ff",
+      "ccc8e010022b87ff",
+      "fe7640cc92b1b334"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.187126779999915,
+      "avg_fetch_time": 1.8645211299999858,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/tai-shi-zong-he.m3u8": {
+    "phash": [
+      "c05fb9c5c61e8399",
+      "876a79858bb3584d",
+      "876a5da78b937844",
+      "e822892e8babeaf8",
+      "cc31cc318e3f178e",
+      "cc31cc318e3f178e"
+    ],
+    "ahash": [
+      "002020707373737f",
+      "fc3000343f3e3e3c",
+      "fc30003c3f3e3e38",
+      "0000000000000000",
+      "0000000000001010",
+      "0000000000001010"
+    ],
+    "dhash": [
+      "c2c2cdc5c6c7a7c7",
+      "c9e1e9e9eaceea6a",
+      "c9e0e0e9e8cacada",
+      "0000000000000000",
+      "0000000000002020",
+      "0000000000002020"
+    ],
+    "whash": [
+      "2020207077777f7f",
+      "fc3010343f3e3e3c",
+      "fc30003c3f3e3e3c",
+      "c1724465894f7fe8",
+      "64f40e1c4c475e7e",
+      "64f40e1c4c475e7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.766896841999994,
+      "avg_fetch_time": 2.127816140333332,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV4&line=6": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.05347341700002,
+      "avg_fetch_time": 2.5089122361666703,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/tai-shi-xin-wen-1-2.m3u8": {
+    "phash": [
+      "c460f16c32d70e9f",
+      "cccb1f8e60a361e5",
+      "85879a884bd332f7",
+      "85879ac84bd332f3",
+      "a7e060c659cd4fd8",
+      "a7e060c659cd4fd8"
+    ],
+    "ahash": [
+      "c34000001010ffff",
+      "fdfffff7f3fa0000",
+      "7f76263232323a00",
+      "7f76263232323a00",
+      "e0e7239f9fb7bf00",
+      "e0e7239f9fb7bf00"
+    ],
+    "dhash": [
+      "92936cace4222ab6",
+      "6161cb8585b262b6",
+      "f0e64e46e6e66ab2",
+      "f4e64ec6e6e26a92",
+      "83ce54762a6c6eb2",
+      "83ce54762a6c6eb2"
+    ],
+    "whash": [
+      "c3c1040610baffff",
+      "bdfdf9f4f0d80000",
+      "7f7ee63232323e00",
+      "7ffe663232323e00",
+      "e0e7231f9f273e00",
+      "e0e7231f9f273e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.680814641999973,
+      "avg_fetch_time": 2.6134691069999954,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-dian-ying-11.m3u8": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.46378006399999,
+      "avg_fetch_time": 2.7439633439999986,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV2&line=3": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.940922673000046,
+      "avg_fetch_time": 2.6568204455000077,
+      "success_count": 6
+    }
+  },
+  "http://107.150.60.122/live/cctv4hd.m3u8": {
+    "phash": [
+      "bf2ee590bac1c0b4",
+      "fae3859c858fc485",
+      "9963c7429f99624d",
+      "9963c7429f99624d",
+      "bf2ee590bac1c0b4",
+      "bf2ee590bac1c0b4"
+    ],
+    "ahash": [
+      "fb8181810f7e7eff",
+      "ff81f9c98d8d9d3f",
+      "2800001f1cec9fbf",
+      "2800001f1cec9fbf",
+      "fb8181810f7e7eff",
+      "fb8181810f7e7eff"
+    ],
+    "dhash": [
+      "3767777dfdfcde32",
+      "49094b19193139ca",
+      "c999143870597072",
+      "c999143870597072",
+      "3767777dfdfcde32",
+      "3767777dfdfcde32"
+    ],
+    "whash": [
+      "fb8181010f3e3efc",
+      "ff81e989888d8d3c",
+      "2804001f1cfd9fff",
+      "2804001f1cfd9fff",
+      "fb8181010f3e3efc",
+      "fb8181010f3e3efc"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.762648633999902,
+      "avg_fetch_time": 2.793774772333317,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-3-2.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.87905869399998,
+      "avg_fetch_time": 2.8131764489999966,
+      "success_count": 6
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqbv/cctv2hd.m3u8?auth=test20251009": {
+    "phash": [
+      "a49a9801f1bff0b5",
+      "a49a9801f1bff0b5",
+      "a49a9801f1bff0b5",
+      "a49a9801f1bff0b5",
+      "a49a9801f1bff0b5",
+      "a530c236db23dd2b"
+    ],
+    "ahash": [
+      "1f1f9f23636383c3",
+      "1f1f9f23636383c3",
+      "1f1f9f23636383c3",
+      "1f1f9f23636383c3",
+      "1f1f9f23636383c3",
+      "430303cba30323f9"
+    ],
+    "dhash": [
+      "3c662e6786860f16",
+      "3c662e6786860f16",
+      "3c662e6786860f16",
+      "3c662e6786860f16",
+      "3c662e6786860f16",
+      "9686961747666f15"
+    ],
+    "whash": [
+      "1f1f9f23434383c3",
+      "1f1f9f23434383c3",
+      "1f1f9f23434383c3",
+      "1f1f9f23434383c3",
+      "1f1f9f23434383c3",
+      "0343438ba38727ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.451811040999928,
+      "avg_fetch_time": 2.908635173499988,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jin-guang-bu-dai-xi-1-1.m3u8": {
+    "phash": [
+      "8f6c8d73708d6664",
+      "8f6c8d73708d6664",
+      "8f6c8d73708d6664",
+      "8f6c8d73708d6664",
+      "8f6c8d73708d6664",
+      "8f6c8d73708d6664"
+    ],
+    "ahash": [
+      "3a3f3f1f042c3f3f",
+      "3a3f3f1f042c3f3f",
+      "3a3f3f1f042c3f3f",
+      "3a3f3f1f042c3f3f",
+      "3a3f3f1f042c3f3f",
+      "3a3f3f1f042c3f3f"
+    ],
+    "dhash": [
+      "6261667cd9c9e8e9",
+      "6261667cd9c9e8e9",
+      "6261667cd9c9e8e9",
+      "6261667cd9c9e8e9",
+      "6261667cd9c9e8e9",
+      "6261667cd9c9e8e9"
+    ],
+    "whash": [
+      "383b3b0e042c3f3f",
+      "383b3b0e042c3f3f",
+      "383b3b0e042c3f3f",
+      "383b3b0e042c3f3f",
+      "383b3b0e042c3f3f",
+      "383b3b0e042c3f3f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.983070092000162,
+      "avg_fetch_time": 2.9971783486666936,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-zong-yi-1-1.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x56507fda7ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x56507fda7ec0] Opening 'https://ia600408.us.archive.org/3/items/index_20260509/seg_000.ts' for reading\n[in#0/hls @ 0x56507fda7dc0] could not seek to position 3.460\nInput #0, hls, from 'https://t.freetv.fun/live/min-shi-zong-yi-1-1.php':\n  Duration: 00:00:01.29, start: 1.460111, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 0\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, smpte170m/bt470bg/smpte170m), 712x1280 [SAR 357:356 DAR 357:640], 24 fps, 24 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n  Stream #0:1(und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp\n    Metadata:\n      variant_bitrate : 0\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x56508065ad00] co located POCs unavailable\n[h264 @ 0x5650801ac500] mmco: unref short failure\n[vost#0:0/png @ 0x56508055d0c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 712x1280 [SAR 357:356 DAR 357:640], q=2-31, 200 kb/s, 24 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x56508060c800] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x56508060c800] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-di-yi.m3u8": {
+    "phash": [
+      "b197da6067982cb5",
+      "cfde90690ca97196",
+      "f3f88c6b54242b9c",
+      "e43333a3238c36dd",
+      "e43333a3238c36dd",
+      "e43333a3238c36dd"
+    ],
+    "ahash": [
+      "ffef8f0743414da1",
+      "fffefcf0b0e00100",
+      "ebcdcfc0c0e16f1e",
+      "eff7ffffffffffff",
+      "eff7ffffffffffff",
+      "eff7ffffffffffff"
+    ],
+    "dhash": [
+      "2d5c5e5e46a79d4b",
+      "796c6863464bcbb8",
+      "1b99998c99cbcbb4",
+      "0808040000001000",
+      "0808040000001000",
+      "0808040000001000"
+    ],
+    "whash": [
+      "afff8f8783014d01",
+      "fffefcf0f0a00100",
+      "ebcdcfc0c0e1611e",
+      "02c10090fb37bffb",
+      "02c10090fb37bffb",
+      "02c10090fb37bffb"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.00416255999994,
+      "avg_fetch_time": 2.00069375999999,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/mei-ya-dian-ying-3.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x5623c6bf1ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x5623c6bf1ec0] Opening 'http://free.cnlive.club/channel/5824ef5e.m3u8' for reading\n[hls @ 0x5623c6bf1ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x5623c6bf1ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/mei-ya-dian-ying-3.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x5623c6bf1ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7fd1d0001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x5623c739a8c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x5623c739a8c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x5623c7c650c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x5623c777e580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x5623c777e580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 20.895185602999902,
+      "avg_fetch_time": 3.482530933833317,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV3&line=5": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.933336543999985,
+      "avg_fetch_time": 2.4888894239999977,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-xin-wen.m3u8": {
+    "phash": [
+      "bb8dcc6490827f8e",
+      "cfde90694ca87986",
+      "a2f28f287c85748f",
+      "c6f3f0c0e4d3c0f1",
+      "c6f3f0c0e4d3c0f1",
+      "c6f3f0c0e4d3c0f1"
+    ],
+    "ahash": [
+      "3b1b0f0f0707071e",
+      "fffefcf0f0e00100",
+      "7de7e7c601407f0f",
+      "e000000010300000",
+      "e000000010300000",
+      "e000000010300000"
+    ],
+    "dhash": [
+      "f7777f5e4e0f8fa4",
+      "796c6863464bcba4",
+      "c9cd8c9c0f8fcbea",
+      "8000404020400000",
+      "8000404020400000",
+      "8000404020400000"
+    ],
+    "whash": [
+      "3f1d0f0f0707271e",
+      "fffefcf0f0a00100",
+      "7de7e7e601403f02",
+      "f4012eb7367c3c2c",
+      "f4012eb7367c3c2c",
+      "f4012eb7367c3c2c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.783035028999961,
+      "avg_fetch_time": 2.1305058381666604,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-dian-ying-gang-pian-qiang-zhan.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x5636a10e5ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x5636a10e5ec0] Opening 'https://live.ottiptv.cc/yy/1355076627' for reading\n[https @ 0x5636a1498a80] HTTP error 404 Not Found\n[hls @ 0x5636a10e5ec0] parse_playlist error Server returned 404 Not Found [https://live.ottiptv.cc/yy/1355076627]\n[in#0 @ 0x5636a10e5dc0] Error opening input: Server returned 404 Not Found\nError opening input file https://t.freetv.fun/live/jing-dian-dian-ying-gang-pian-qiang-zhan.m3u8.\nError opening input files: Server returned 404 Not Found"
+    },
+    "stats": {
+      "total_fetch_time": 2.791893512999991,
+      "avg_fetch_time": 2.791893512999991,
+      "success_count": 1
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV1&line=14": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.681482332999963,
+      "avg_fetch_time": 2.613580388833327,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV3&line=3": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.050362956999948,
+      "avg_fetch_time": 2.6750604928333246,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-xin-wen-1.m3u8": {
+    "phash": [
+      "91c4ee19a37c9963",
+      "c8cc8659b16e8f71",
+      "c4d9a96689799758",
+      "c4d989748b798f49",
+      "c4d989748b798f49",
+      "c4d989748b798f49"
+    ],
+    "ahash": [
+      "7f7e7e4e4e1e007f",
+      "787878584818307f",
+      "7878787870f2407f",
+      "7878f8fcf0f2407f",
+      "7878f8fcf0f2407f",
+      "7878f8fcf0f2407f"
+    ],
+    "dhash": [
+      "b2a8b292d090b0c4",
+      "b2b0e09292f2a0e4",
+      "f2b2b0b2a6a4a4d6",
+      "f2b0a0a0a4a484d6",
+      "f2b0a0a0a4a484d6",
+      "f2b0a0a0a4a484d6"
+    ],
+    "whash": [
+      "5e5e5a5a0e1e007f",
+      "787878f84838707f",
+      "787878787072c07f",
+      "78787878f0f0407f",
+      "78787878f0f0407f",
+      "78787878f0f0407f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.112257032999821,
+      "avg_fetch_time": 1.5187095054999702,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-yang-xi-ju.m3u8": {
+    "phash": [
+      "b999c262c7c3cb86",
+      "c9853d323cf133c6",
+      "e4363c3d36b11dc1",
+      "cc843b6639711fc3",
+      "cc843b6639711fc3",
+      "cc843b6639711fc3"
+    ],
+    "ahash": [
+      "fd9d9d89898181ff",
+      "7a78787870607000",
+      "0260727672727270",
+      "7278787971706000",
+      "7278787971706000",
+      "7278787971706000"
+    ],
+    "dhash": [
+      "d9393b3b3b1b193d",
+      "d6e2e2d3e38b9323",
+      "04c5c6ccc6e6c4a5",
+      "d6e4e2d3e3e38333",
+      "d6e4e2d3e3e38333",
+      "d6e4e2d3e3e38333"
+    ],
+    "whash": [
+      "fd9d8d898981819f",
+      "7a7a787971e1f100",
+      "06607677737a7074",
+      "7e78787971f1e100",
+      "7e78787971f1e100",
+      "7e78787971f1e100"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.73071998300003,
+      "avg_fetch_time": 3.2884533305000048,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-qia-tong-5.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/hua-shi-17.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-dian-ying-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x55de54044ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55de54044ec0] Opening 'http://free.cnlive.club/channel/66c77727.m3u8' for reading\n[hls @ 0x55de54044ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55de54044ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/long-hua-dian-ying-1.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x55de54044ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7f48e8001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x55de547ed8c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x55de547ed8c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x55de550b80c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55de54bd1580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55de54bd1580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 19.649401256999965,
+      "avg_fetch_time": 3.2749002094999944,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV1&line=6": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.284351476000097,
+      "avg_fetch_time": 2.047391912666683,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-xi-ju-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x56235bd15ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x56235bd15ec0] Opening 'http://free.cnlive.club/channel/66c51883.m3u8' for reading\n[hls @ 0x56235bd15ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x56235bd15ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/long-hua-xi-ju-1.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x56235bd15ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7fdaac001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x56235c4be8c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x56235c4be8c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x56235cd890c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x56235c8a2580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x56235c8a2580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 17.97494547399998,
+      "avg_fetch_time": 2.9958242456666633,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-xuan-dong-man-8.m3u8": {
+    "phash": [
+      "d13f2335d8072c73",
+      "d13f2335d8072c73",
+      "d13f2335d8072c73",
+      "d13f2335d8072c73",
+      "d13f2335d8072c73",
+      "d13f2335d8072c73"
+    ],
+    "ahash": [
+      "00f8fcdcdc40646c",
+      "00f8fcdcdc40646c",
+      "00f8fcdcdc40646c",
+      "00f8fcdcdc40646c",
+      "00f8fcdcdc40646c",
+      "00f8fcdcdc40646c"
+    ],
+    "dhash": [
+      "e24868309092d8d9",
+      "e24868309092d8d9",
+      "e24868309092d8d9",
+      "e24868309092d8d9",
+      "e24868309092d8d9",
+      "e24868309092d8d9"
+    ],
+    "whash": [
+      "00fcfcdcde40647c",
+      "00fcfcdcde40647c",
+      "00fcfcdcde40647c",
+      "00fcfcdcde40647c",
+      "00fcfcdcde40647c",
+      "00fcfcdcde40647c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.181770448000009,
+      "avg_fetch_time": 2.1969617413333347,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV3&line=4": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.105286430000035,
+      "avg_fetch_time": 2.184214405000006,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/wei-lai-yu-le-4-1.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.216524826999944,
+      "avg_fetch_time": 2.5360874711666574,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/wei-lai-zong-he-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x55b0e44b4ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55b0e44b4ec0] Opening 'http://free.cnlive.club/channel/581c693b.m3u8?q=111.170.171.148' for reading\n[hls @ 0x55b0e44b4ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55b0e44b4ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/wei-lai-zong-he-1.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x55b0e44b4ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7fce34001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x55b0e4c5d900] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x55b0e4c5d900] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x55b0e5020cc0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55b0e5467940] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55b0e5467940] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 14.891567464000047,
+      "avg_fetch_time": 2.4819279106666747,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/wei-lai-jing-cai-1-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x55ba7337cec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55ba7337cec0] Opening 'http://free.cnlive.club/channel/581c2f1a.m3u8' for reading\n[hls @ 0x55ba7337cec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55ba7337cec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/wei-lai-jing-cai-1-1.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x55ba7337cec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7f84bc001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x55ba73b258c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x55ba73b258c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x55ba743f00c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55ba73f09580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55ba73f09580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 14.67967441299993,
+      "avg_fetch_time": 2.446612402166655,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-xin-wen-3.m3u8": {
+    "phash": [
+      "e57891634ec97893",
+      "b1f8ce7178cc7086",
+      "845546ef93836d4b",
+      "b9db433a96867c82",
+      "845d46ee9b83654b",
+      "845d46ee9b83654b"
+    ],
+    "ahash": [
+      "f0c7c2f0e0e07f3f",
+      "f143c7cfcf407f3f",
+      "3310000efff3771f",
+      "f8c8c9cf8f813f00",
+      "7710001efbf37f1e",
+      "7710001efbf37f1e"
+    ],
+    "dhash": [
+      "c39e9423c003c3ea",
+      "87df9e96989ae7e6",
+      "66b4d2fa92a7c5ba",
+      "51993b1a1f39d7f3",
+      "e6b4d2f8b2a7cdb2",
+      "e6b4d2f8b2a7cdb2"
+    ],
+    "whash": [
+      "f0c7c090e0e07f3f",
+      "e043c7cfcf413f10",
+      "7210000efbf3771f",
+      "f8c8c9cf8f853f00",
+      "7310000efbf3771e",
+      "7310000efbf3771e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.948892000999933,
+      "avg_fetch_time": 1.8248153334999888,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi.m3u8": {
+    "phash": [
+      "82c6ae1fa9c6e962",
+      "b2c6ae1ba1f5a84a",
+      "a2e68e1ba3f5a84a",
+      "a556254b365d5595",
+      "a556254b365d5595",
+      "bab385c89c4cf233"
+    ],
+    "ahash": [
+      "f7f4f0e6090f0f0b",
+      "f7f4f0e6090d0f0b",
+      "f7f4f0e6090d0e03",
+      "0000000000000000",
+      "0000000000000000",
+      "ffe5858585c100ff"
+    ],
+    "dhash": [
+      "ada5a58c99195dd3",
+      "ad2d05ced9195c5f",
+      "ad2525ced9193877",
+      "0000000000000000",
+      "0000000000000000",
+      "37094d2d1d098597"
+    ],
+    "whash": [
+      "f7f4f064090f0f0b",
+      "f7f4f0e6090d070b",
+      "f7f4f0e6090d0f03",
+      "2eb41a08ebf1e1f1",
+      "2eb41a08ebf1e1f1",
+      "ffc5858585c100ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.965181552999923,
+      "avg_fetch_time": 1.9941969254999872,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV1&line=16": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.265879369999936,
+      "avg_fetch_time": 2.377646561666656,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-xin-wen-2-1.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x55f17b39eec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55f17b39eec0] Opening 'https://ia600408.us.archive.org/3/items/index_20260509/seg_000.ts' for reading\n[in#0/hls @ 0x55f17b39edc0] could not seek to position 3.460\nInput #0, hls, from 'https://t.freetv.fun/live/min-shi-xin-wen-2-1.php':\n  Duration: 00:00:01.29, start: 1.460111, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 0\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, smpte170m/bt470bg/smpte170m), 712x1280 [SAR 357:356 DAR 357:640], 24 fps, 24 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n  Stream #0:1(und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp\n    Metadata:\n      variant_bitrate : 0\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x55f17bd14b40] co located POCs unavailable\n[h264 @ 0x55f17b7a3600] mmco: unref short failure\n[vost#0:0/png @ 0x55f17bb53ec0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 712x1280 [SAR 357:356 DAR 357:640], q=2-31, 200 kb/s, 24 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55f17bc03240] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55f17bc03240] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-4-1.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.724340812000037,
+      "avg_fetch_time": 2.620723468666673,
+      "success_count": 6
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqpub/cctv1hd.m3u8?auth=testpub": {
+    "phash": [
+      "f1ca5e33de8c00b3",
+      "f1ca5e33de8c00b3",
+      "f1ca5e33de8c00b3",
+      "f1ca5e33de8c00b3",
+      "f1ca5e33de8c00b3",
+      "ea2a4b56741f542d"
+    ],
+    "ahash": [
+      "e1e5e7f7e763c383",
+      "e1e5e7f7e763c383",
+      "e1e5e7f7e763c383",
+      "e1e5e7f7e763c383",
+      "e1e5e7f7e763c383",
+      "40f1f9f9f1f4f8f8"
+    ],
+    "dhash": [
+      "0b0d97869ede1e16",
+      "0b0d97869ede1e16",
+      "0b0d97869ede1e16",
+      "0b0d97869ede1e16",
+      "0b0d97869ede1e16",
+      "81838303256c6303"
+    ],
+    "whash": [
+      "e1e1efe367638300",
+      "e1e1efe367638300",
+      "e1e1efe367638300",
+      "e1e1efe367638300",
+      "e1e1efe367638300",
+      "4061f1f1f1f4f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.440856062000023,
+      "avg_fetch_time": 1.5734760103333372,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV4&line=3": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.905635521000022,
+      "avg_fetch_time": 2.484272586833337,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hua-shi-1.m3u8": {
+    "phash": [
+      "c43b2bed959096d2",
+      "c43b2bed0db09696",
+      "8e7861b7d21b0967",
+      "84374a6b94b5787a",
+      "84374a6b94b5787a",
+      "84374a6b94b5787a"
+    ],
+    "ahash": [
+      "0060747efef67060",
+      "006076f6f2f27060",
+      "9010181c3e3e3e7e",
+      "0000000202000000",
+      "0000000202000000",
+      "0000000202000000"
+    ],
+    "dhash": [
+      "e3c3cca4a4a4a4c4",
+      "e3c1cca4a68486c6",
+      "3135327964646ccc",
+      "0020040404000010",
+      "0020040404000010",
+      "0020040404000010"
+    ],
+    "whash": [
+      "00607cfefef67060",
+      "286076f6f6f67060",
+      "9890183c3e3e3e7e",
+      "3e3f3e37ae0220f0",
+      "3e3f3e37ae0220f0",
+      "3e3f3e37ae0220f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.139423811999961,
+      "avg_fetch_time": 1.6899039686666602,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV2&line=8": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.416841405999946,
+      "avg_fetch_time": 2.5694735676666576,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV2&line=5": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.982666386000062,
+      "avg_fetch_time": 2.497111064333344,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV2&line=4": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.515206645000092,
+      "avg_fetch_time": 2.4192011075000153,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-xuan-dong-man-5.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/mei-shi-xing-qiu.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x5637fe475ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x5637fe475ec0] Opening 'http://free.cnlive.club/channel/5939fd4b.m3u8' for reading\n[hls @ 0x5637fe475ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x5637fe475ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/mei-shi-xing-qiu.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x5637fe475ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7fa59c001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x5637fec1e8c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x5637fec1e8c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x5637ff4e90c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x5637ff002580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x5637ff002580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 16.528086308000013,
+      "avg_fetch_time": 2.7546810513333355,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-tai-wan.m3u8": {
+    "phash": [
+      "e0253bd8c3e32d99",
+      "c1253bd8c3e11d97",
+      "c13d39d6c2642f17",
+      "f14f86329ad3872c",
+      "f14f86329ad3872c",
+      "f14f86329ad3872c"
+    ],
+    "ahash": [
+      "c08023f0fcf0f869",
+      "c00063f0fcf8f068",
+      "c00000f4fcfce868",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "dhash": [
+      "8a26c6c4b814c1d1",
+      "8a26c6c4c8b0c1d9",
+      "8a32c2c5c8c891d1",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "c08063f1fcf0f969",
+      "c08063f0fcfcf169",
+      "c08001fcfcfcf969",
+      "1b13f0ea0d8ecfa2",
+      "1b13f0ea0d8ecfa2",
+      "1b13f0ea0d8ecfa2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.79841806600001,
+      "avg_fetch_time": 1.6330696776666684,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/tai-shi-xin-wen-2-1.m3u8": {
+    "phash": [
+      "b6de58e0e0851f1e",
+      "a372dcc973672485",
+      "860d7946ed5bd8b0",
+      "a372de9873672485",
+      "a372de9873672485",
+      "860d7946ed5b5cb0"
+    ],
+    "ahash": [
+      "fc9d17e7e7676700",
+      "fcfce3e343437f7f",
+      "303f3f27666426ef",
+      "fcfce3e1495b3f7f",
+      "fcfce3e1495b3f7f",
+      "30373f27666466ef"
+    ],
+    "dhash": [
+      "8169644e8fcecc4c",
+      "c9714e4dcf97d3d3",
+      "e3e7fceb8cccccce",
+      "c9714e4dd7b7d3d3",
+      "c9714e4dd7b7d3d3",
+      "c3e7fceb8cccccce"
+    ],
+    "whash": [
+      "fc8506a7e7676700",
+      "fcb8e3e101013b3f",
+      "30373f276620666f",
+      "fc3ce2e101033b3f",
+      "fc3ce2e101033b3f",
+      "30373f276660266f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.096144280000033,
+      "avg_fetch_time": 1.3493573800000054,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hua-shi-xin-wen-zi-xun.m3u8": {
+    "phash": [
+      "ec7c934b24876e94",
+      "ed7d834ba4866c94",
+      "8587eb13c7b81cc6",
+      "e11e817e39817ee1",
+      "e11e817e39817ee1",
+      "e11e817e39817ee1"
+    ],
+    "ahash": [
+      "8181919191b97fff",
+      "a18191919198ffff",
+      "3f0f1f1f3e0e1f7b",
+      "0000000000006040",
+      "0000000000006040",
+      "0000000000006040"
+    ],
+    "dhash": [
+      "2b2b3733332bea92",
+      "6b0b3733336b6ad6",
+      "eeeef6feecb4b7c3",
+      "0000000000004040",
+      "0000000000004040",
+      "0000000000004040"
+    ],
+    "whash": [
+      "8180919191b97fff",
+      "a181919190b8bfff",
+      "3f0f1f0f1e0e0f03",
+      "5756c8ccb8817763",
+      "5756c8ccb8817763",
+      "5756c8ccb8817763"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.798182929999882,
+      "avg_fetch_time": 1.466363821666647,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-dian-ying.smil": {
+    "phash": [
+      "d364646e6a6a4e4e",
+      "d066666666666765",
+      "afc4c4c5c5c5d551",
+      "8976766666666626",
+      "d349484c4ceea6b7",
+      "c390989a9a9e9e9e"
+    ],
+    "ahash": [
+      "406e2e2c2c2c2e2e",
+      "c06c6c6c6c6c6c6c",
+      "3131313131313131",
+      "201b1b1b1b1b1b1b",
+      "306c666666666666",
+      "7c64646464646464"
+    ],
+    "dhash": [
+      "88d8585858585858",
+      "0cd4d4d4d4d4d4d4",
+      "e3e3e3e3e3e3e3e3",
+      "4af2f3f3f3f3f3f3",
+      "e3d8cccccccccccc",
+      "c9c8c8c8c8c8c8c8"
+    ],
+    "whash": [
+      "402e2e2e2e3e3e3e",
+      "c06c6c6c6c6cecec",
+      "7371317171717171",
+      "231b1b1b1b1b1b1f",
+      "706c6666666666e6",
+      "7c64646c6c6c6cec"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 28.08479615899995,
+      "avg_fetch_time": 4.680799359833325,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/hua-shi-21.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/tai-wan-xi-ju-1-2.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x556381fa4ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x556381fa4ec0] Opening 'https://ia600408.us.archive.org/3/items/index_20260509/seg_000.ts' for reading\n[in#0/hls @ 0x556381fa4dc0] could not seek to position 3.460\nInput #0, hls, from 'https://t.freetv.fun/live/tai-wan-xi-ju-1-2.php':\n  Duration: 00:00:01.29, start: 1.460111, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 0\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, smpte170m/bt470bg/smpte170m), 712x1280 [SAR 357:356 DAR 357:640], 24 fps, 24 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n  Stream #0:1(und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp\n    Metadata:\n      variant_bitrate : 0\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x556382857d00] co located POCs unavailable\n[h264 @ 0x5563823a9500] mmco: unref short failure\n[vost#0:0/png @ 0x55638275a0c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 712x1280 [SAR 357:356 DAR 357:640], q=2-31, 200 kb/s, 24 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x556382809800] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x556382809800] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-ou-xiang-1-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x555bba293ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x555bba293ec0] Opening 'http://free.cnlive.club/channel/66c2f564.m3u8' for reading\n[hls @ 0x555bba293ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x555bba293ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/long-hua-ou-xiang-1-1.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x555bba293ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7f4c38001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x555bbaa3c8c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x555bbaa3c8c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x555bbb3070c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x555bbae20580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x555bbae20580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 15.531870009999977,
+      "avg_fetch_time": 2.588645001666663,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jin-guang-bu-dai-xi.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 48.340572270999985,
+      "avg_fetch_time": 5.371174696777776,
+      "success_count": 9
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-ou-xiang-3.php": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.201482384000087,
+      "avg_fetch_time": 2.5335803973333477,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-dian-ying-9.m3u8": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.12050342300006,
+      "avg_fetch_time": 2.18675057050001,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-dian-ying-10.m3u8": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.529530619999946,
+      "avg_fetch_time": 2.254921769999991,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/wei-lai-yu-le-3-2.php": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.100574813999856,
+      "avg_fetch_time": 2.350095802333309,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jin-guang-bu-dai-xi-8.m3u8": {
+    "phash": [
+      "9de298268dd3a565",
+      "9de298268dd3a565",
+      "9de298268dd3a565",
+      "9de298268dd3a565",
+      "9de298268dd3a565",
+      "9de298268dd3a565"
+    ],
+    "ahash": [
+      "27170f0b031b1e1e",
+      "27170f0b031b1e1e",
+      "27170f0b031b1e1e",
+      "27170f0b031b1e1e",
+      "27170f0b031b1e1e",
+      "27170f0b031b1e1e"
+    ],
+    "dhash": [
+      "edaf6a7a72727830",
+      "edaf6a7a72727830",
+      "edaf6a7a72727830",
+      "edaf6a7a72727830",
+      "edaf6a7a72727830",
+      "edaf6a7a72727830"
+    ],
+    "whash": [
+      "27172f0f031b1e1f",
+      "27172f0f031b1e1f",
+      "27172f0f031b1e1f",
+      "27172f0f031b1e1f",
+      "27172f0f031b1e1f",
+      "27172f0f031b1e1f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.15677950700001,
+      "avg_fetch_time": 2.6927965845000017,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV3&line=7": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.133942764999972,
+      "avg_fetch_time": 2.188990460833329,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/long-xiang-dian-ying-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x55a780ee5ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55a780ee5ec0] Opening 'http://free.cnlive.club/channel/67548a4f.m3u8' for reading\n[hls @ 0x55a780ee5ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55a780ee5ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/long-xiang-dian-ying-1.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x55a780ee5ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7f0954001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x55a78168e8c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x55a78168e8c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x55a781f590c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55a781a72580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55a781a72580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 13.177825237000036,
+      "avg_fetch_time": 2.1963042061666727,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/mei-ya-dian-ying-7.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x55e91c356ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55e91c356ec0] Opening 'https://ia600408.us.archive.org/3/items/index_20260509/seg_000.ts' for reading\n[in#0/hls @ 0x55e91c356dc0] could not seek to position 3.460\nInput #0, hls, from 'https://t.freetv.fun/live/mei-ya-dian-ying-7.php':\n  Duration: 00:00:01.29, start: 1.460111, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 0\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, smpte170m/bt470bg/smpte170m), 712x1280 [SAR 357:356 DAR 357:640], 24 fps, 24 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n  Stream #0:1(und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp\n    Metadata:\n      variant_bitrate : 0\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x55e91ccccb40] co located POCs unavailable\n[h264 @ 0x55e91c75b600] mmco: unref short failure\n[vost#0:0/png @ 0x55e91cb0bec0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 712x1280 [SAR 357:356 DAR 357:640], q=2-31, 200 kb/s, 24 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55e91cbbb240] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55e91cbbb240] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/wei-lai-dian-ying-2.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x5609a70d1b80] Connection to tcp://iptv.4666888.xyz:80 failed: Connection timed out\n[in#0 @ 0x5609a6d1edc0] Error opening input: Connection timed out\nError opening input file https://t.freetv.fun/live/wei-lai-dian-ying-2.php.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 46.38145562900007,
+      "avg_fetch_time": 5.153495069888897,
+      "success_count": 9
+    }
+  },
+  "https://t.freetv.fun/live/wei-lai-ri-ben-2-1.php": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.16538893400002,
+      "avg_fetch_time": 2.027564822333337,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-dian-ying-5.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-xi-ju.m3u8": {
+    "phash": [
+      "dba5a66366c831d8",
+      "cfa5a46247c933d8",
+      "d3a5cc6263e913d8",
+      "dba5a66366c831d8",
+      "dba5a66366c831d8",
+      "dba5a66366c831d8"
+    ],
+    "ahash": [
+      "f2b29cf83828fc38",
+      "f2b6bef8b020f838",
+      "f2b69ee82424fc3c",
+      "f2b29cf83828fc38",
+      "f2b29cf83828fc38",
+      "f2b29cf83828fc38"
+    ],
+    "dhash": [
+      "c66610525058b169",
+      "c66650524049b161",
+      "c664304b4949b169",
+      "c66610525058b169",
+      "c66610525058b169",
+      "c66610525058b169"
+    ],
+    "whash": [
+      "f2a29ef8b828f838",
+      "f2a2befab020f838",
+      "f222eee8a42cf83c",
+      "f2a29ef8b828f838",
+      "f2a29ef8b828f838",
+      "f2a29ef8b828f838"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.125085049999825,
+      "avg_fetch_time": 2.020847508333304,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-yang-pian-1-2.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 1,
+      "network_error_count": 2,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x561a02530b80] Connection to tcp://iptv.4666888.xyz:80 failed: Connection timed out\n[in#0 @ 0x561a0217ddc0] Error opening input: Connection timed out\nError opening input file https://t.freetv.fun/live/long-hua-yang-pian-1-2.php.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 34.480461246000004,
+      "avg_fetch_time": 5.746743541000001,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/tai-wan-xi-ju-2.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x55cdee0ddb80] Connection to tcp://iptv.4666888.xyz:80 failed: Connection timed out\n[in#0 @ 0x55cdedd2adc0] Error opening input: Connection timed out\nError opening input file https://t.freetv.fun/live/tai-wan-xi-ju-2.php.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 75.31024374499998,
+      "avg_fetch_time": 8.367804860555554,
+      "success_count": 9
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-ying-hua.m3u8": {
+    "phash": [
+      "839998d0a5a727de",
+      "a3939cd1a1cd4f4c",
+      "b3919f9060eb45ad",
+      "839998d0a5a727de",
+      "fb142fe814af5292",
+      "fb142fe814af5292"
+    ],
+    "ahash": [
+      "7f7d2f6360600001",
+      "7f6f276b61200003",
+      "7f3e2f6142448181",
+      "7f7d2f6360600001",
+      "00000446c6e1e9a9",
+      "00000446c6e1e9a9"
+    ],
+    "dhash": [
+      "d8d9cbc7d5cd4959",
+      "dccccccad7d55777",
+      "dcd8cac594dc4d07",
+      "d8d9cbc7d5cd4959",
+      "b2335cd495594b4b",
+      "b2335cd495594b4b"
+    ],
+    "whash": [
+      "7f7f3f6361602401",
+      "7f6f3f6b61600013",
+      "7f3f6f6343448181",
+      "7f7f3f6361602401",
+      "030086cfedede9a9",
+      "030086cfedede9a9"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.373813235000057,
+      "avg_fetch_time": 2.5623022058333427,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/dong-sen-dian-ying-5.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 2,
+      "other_error_count": 1,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x562520158b80] Connection to tcp://iptv.4666888.xyz:80 failed: Connection timed out\n[in#0 @ 0x56251fda5dc0] Error opening input: Connection timed out\nError opening input file https://t.freetv.fun/live/dong-sen-dian-ying-5.php.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/wei-lai-dian-ying-1-1.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x55843eb8cb80] Connection to tcp://iptv.4666888.xyz:80 failed: Connection timed out\n[in#0 @ 0x55843e7d9dc0] Error opening input: Connection timed out\nError opening input file https://t.freetv.fun/live/wei-lai-dian-ying-1-1.php.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 71.12057289099994,
+      "avg_fetch_time": 6.46550662645454,
+      "success_count": 11
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV1&line=4": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.93175477099976,
+      "avg_fetch_time": 1.4886257951666266,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-dian-ying-1-2.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 1,
+      "network_error_count": 2,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x55bf56108b80] Connection to tcp://iptv.4666888.xyz:80 failed: Connection timed out\n[in#0 @ 0x55bf55d55dc0] Error opening input: Connection timed out\nError opening input file https://t.freetv.fun/live/jing-tian-dian-ying-1-2.php.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 51.05781797200001,
+      "avg_fetch_time": 7.293973996000001,
+      "success_count": 7
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-dian-ying-5-1.m3u8": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.217425305000006,
+      "avg_fetch_time": 1.8695708841666676,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/xin-wen.m3u8": {
+    "phash": [
+      "857eb2e13f6b8448",
+      "857eb2e13f6b8448",
+      "857eb2e13f6b8448",
+      "857eb2e13f6b8448",
+      "857eb2e13f6b8448",
+      "857eb2e13f6b8448"
+    ],
+    "ahash": [
+      "03001010787a7f3f",
+      "03001010787a7f3f",
+      "03001010787a7f3f",
+      "03001010787a7f3f",
+      "03001010787a7f3f",
+      "03001010787a7f3f"
+    ],
+    "dhash": [
+      "3b3666e2d2d2d2f4",
+      "3b3666e2d2d2d2f4",
+      "3b3666e2d2d2d2f4",
+      "3b3666e2d2d2d2f4",
+      "3b3666e2d2d2d2f4",
+      "3b3666e2d2d2d2f4"
+    ],
+    "whash": [
+      "079010307a7e7f3f",
+      "079010307a7e7f3f",
+      "079010307a7e7f3f",
+      "079010307a7e7f3f",
+      "079010307a7e7f3f",
+      "079010307a7e7f3f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.77204615999983,
+      "avg_fetch_time": 4.128674359999972,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-zong-yi-6.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 3,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x55ef894fab80] Connection to tcp://iptv.4666888.xyz:80 failed: Connection timed out\n[in#0 @ 0x55ef89147dc0] Error opening input: Connection timed out\nError opening input file https://t.freetv.fun/live/min-shi-zong-yi-6.php.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 19.532327801999998,
+      "avg_fetch_time": 6.510775933999999,
+      "success_count": 3
+    }
+  },
+  "https://t.freetv.fun/live/hua-shi-4-2.m3u8": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.847384922999936,
+      "avg_fetch_time": 1.9745641538333227,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/dong-sen-dian-ying-6.php": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 3,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[tcp @ 0x555f48f57b80] Connection to tcp://iptv.4666888.xyz:80 failed: Connection timed out\n[in#0 @ 0x555f48ba4dc0] Error opening input: Connection timed out\nError opening input file https://t.freetv.fun/live/dong-sen-dian-ying-6.php.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 36.23249782900001,
+      "avg_fetch_time": 9.058124457250003,
+      "success_count": 4
+    }
+  },
+  "https://t.freetv.fun/live/jing-dian-dian-ying-4-1.m3u8": {
+    "phash": [
+      "9d66394c33e66919",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9c66394c33e66d19",
+      "9d26394c33e66d19",
+      "9d26394c33e66d19"
+    ],
+    "ahash": [
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818",
+      "00183c3c18181818"
+    ],
+    "dhash": [
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2",
+      "ccf0f0c8f0b2b2b2"
+    ],
+    "whash": [
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818",
+      "007eff7e7e181818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.092813311999748,
+      "avg_fetch_time": 2.348802218666625,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/sheng-ming-dian-shi.m3u8": {
+    "phash": [
+      "ee90b9c699e133e0",
+      "ee90b9c699e113e4",
+      "ee90b9c699e123e4",
+      "ee92b9c699e311c4",
+      "ee92b9c699e311c4",
+      "eb94b2c6b9e091cc"
+    ],
+    "ahash": [
+      "ff7f00003030e1c1",
+      "ff7d00003030e1c1",
+      "ff7f00003020e3c3",
+      "ff7f00003030e1cb",
+      "ff7f00003030e1cb",
+      "ffff09013131f1c9"
+    ],
+    "dhash": [
+      "d1b58aaa676e071b",
+      "d5b58eaa676e031b",
+      "cdb58eca676e071b",
+      "cdb58aac6766031b",
+      "cdb58aac6766031b",
+      "cdadbbcb636b231b"
+    ],
+    "whash": [
+      "ff7f0010f330e1c9",
+      "ff7f0000f330e3c9",
+      "ff7f0008f120e3cb",
+      "ff7f0000f320e3cb",
+      "ff7f0000f320e3cb",
+      "ff7f0000f131f1c9"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.103604642999926,
+      "avg_fetch_time": 4.350600773833321,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-xin-wen.m3u8": {
+    "phash": [
+      "c7c9e97a985da620",
+      "801fa560ce7f9333",
+      "c01fa660ad75db43",
+      "c01fa660ad75db43",
+      "c01fa660ad75db43",
+      "801fa560ce7edb43"
+    ],
+    "ahash": [
+      "f8f870fc1400003f",
+      "030f0d5d7d69607f",
+      "070c4cf87878617f",
+      "070c4cf8787c617f",
+      "070c4cf8787c617f",
+      "070f0cfc7868617f"
+    ],
+    "dhash": [
+      "f3caeaf0f5e9eade",
+      "bebb99b991918bd7",
+      "beb999b291918fd7",
+      "beb999ba91918fd7",
+      "beb999ba91918fd7",
+      "b6ba99b991918fd7"
+    ],
+    "whash": [
+      "fcf878fc1414007f",
+      "030f0d6d5d70617f",
+      "071c08f87878677f",
+      "071c08f87878677f",
+      "071c08f87878677f",
+      "030f0c7c7878637f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.811963569999875,
+      "avg_fetch_time": 2.8019939283333124,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-ying-ju.m3u8": {
+    "phash": [
+      "b592522ff486c4ad",
+      "b592522ddc84c9bd",
+      "b492522df683c1af",
+      "b592522ff486c4ad",
+      "b592522ff486c4ad",
+      "b592522ff486c4ad"
+    ],
+    "ahash": [
+      "e7cfcf9783030380",
+      "efc7cf9783030380",
+      "4fdfff9783030380",
+      "e7cfcf9783030380",
+      "e7cfcf9783030380",
+      "e7cfcf9783030380"
+    ],
+    "dhash": [
+      "4d9d9c2e36567a36",
+      "4d0ddc2e36527636",
+      "9dbdac2c26566234",
+      "4d9d9c2e36567a36",
+      "4d9d9c2e36567a36",
+      "4d9d9c2e36567a36"
+    ],
+    "whash": [
+      "e7cfcf9f83030380",
+      "efc7cf9f83030380",
+      "8fdfdf87830303c0",
+      "e7cfcf9f83030380",
+      "e7cfcf9f83030380",
+      "e7cfcf9f83030380"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.79285622299983,
+      "avg_fetch_time": 2.132142703833305,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/cai-chang-ying-ju.m3u8": {
+    "phash": [
+      "f29d0d720d27585e",
+      "d4f52d0a715d2617",
+      "b12d58f167c41957",
+      "f1ce2d330e394f50",
+      "f1ce2d330e394f50",
+      "f1ce2d330e394f50"
+    ],
+    "ahash": [
+      "00ffffffe7e7e700",
+      "00ffffffffff3f00",
+      "00ffffffffffff00",
+      "00ffffffffefcf00",
+      "00ffffffffefcf00",
+      "00ffffffffefcf00"
+    ],
+    "dhash": [
+      "2a159c8d8d8d8d35",
+      "2222c098e8e9f070",
+      "1a3bf3eece9eac08",
+      "0a08180c889a1a1a",
+      "0a08180c889a1a1a",
+      "0a08180c889a1a1a"
+    ],
+    "whash": [
+      "00ffffe7c4c4c500",
+      "00fffefcfc1c1800",
+      "001f1f3f074fff00",
+      "00eefef6c4cece00",
+      "00eefef6c4cece00",
+      "00eefef6c4cece00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.821819642000037,
+      "avg_fetch_time": 2.3036366070000063,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/long-hua-jing-dian-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x55bd22156ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55bd22156ec0] Opening 'http://free.cnlive.club/channel/66c892d4.m3u8' for reading\n[hls @ 0x55bd22156ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55bd22156ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/long-hua-jing-dian-1.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x55bd22156ec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7f5c94001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x55bd228ff8c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x55bd228ff8c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x55bd231ca0c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55bd22ce3580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55bd22ce3580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 12.491283070000122,
+      "avg_fetch_time": 2.081880511666687,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/tai-shi-cai-jing.m3u8": {
+    "phash": [
+      "bead4e65394c13c1",
+      "fab26658386d0bcc",
+      "c6bf360661d24da6",
+      "dd268876dd26a8d4",
+      "dd268876dd26a8d4",
+      "8d3cf2c3c53c19c3"
+    ],
+    "ahash": [
+      "e0f73f9fcf049000",
+      "c0e7ffffdf080000",
+      "bfbffffc70302420",
+      "0000000080000018",
+      "0000000080000018",
+      "ffffff9bffffffff"
+    ],
+    "dhash": [
+      "0726fd3b986c25a9",
+      "034cea9b9579a3aa",
+      "686361d9c5c4cccc",
+      "0000004020000010",
+      "0000004020000010",
+      "0000004440000000"
+    ],
+    "whash": [
+      "e0ff5f9fef041000",
+      "80ffffdfdf080000",
+      "bfbffffc30200400",
+      "c724ce92bce3031b",
+      "c724ce92bce3031b",
+      "fe811392781de1f1"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.024562457000002,
+      "avg_fetch_time": 1.5040937428333336,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/tai-shi-xin-wen-3.m3u8": {
+    "phash": [
+      "c3029cd124749bff",
+      "dcd918d0a2267edc",
+      "dd39a54c34c323f2",
+      "993a895c616762f6",
+      "993a895c616762f6",
+      "993a895c616762f6"
+    ],
+    "ahash": [
+      "7c3d2c202878d8db",
+      "dc1899e77e941000",
+      "18187e181c383c3e",
+      "181c0e0c5c187e7f",
+      "181c0e0c5c187e7f",
+      "181c0e0c5c187e7f"
+    ],
+    "dhash": [
+      "cde969ccc8d0b2b2",
+      "b0f2734dcc2c24a1",
+      "b23298b0b0627144",
+      "b239ccd8b4b352d2",
+      "b239ccd8b4b352d2",
+      "b239ccd8b4b352d2"
+    ],
+    "whash": [
+      "7d3d2d202878d8db",
+      "fc3899efffd40000",
+      "18187e1c5c38fcbe",
+      "181cde085c18fe7f",
+      "181cde085c18fe7f",
+      "181cde085c18fe7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.116044050000141,
+      "avg_fetch_time": 2.18600734166669,
+      "success_count": 6
+    }
+  },
+  "https://iptv.catvod.com/live.php?id=CCTV3&line=6": {
+    "phash": [
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30",
+      "98cf6f941a736c30"
+    ],
+    "ahash": [
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08",
+      "3c3c081c5e5e4c08"
+    ],
+    "dhash": [
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b0",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2",
+      "7161f9b9b4b098b2"
+    ],
+    "whash": [
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08",
+      "3c3c3c1c5e7e6e08"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.89942236100012,
+      "avg_fetch_time": 1.81657039350002,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jing-tian-dian-ying.m3u8": {
+    "phash": [
+      "d5cb0b957f285832",
+      "859e3a7325ef144a",
+      "f1f0673313c44d2e",
+      "81983e3727cb1c5b",
+      "81983e3727cb1c5b",
+      "81983e3727cb1c5b"
+    ],
+    "ahash": [
+      "283c207cfefe0e00",
+      "071f3f3f3e6e6800",
+      "c0c5df5e4f0e2720",
+      "070f7f3f3e6e6800",
+      "070f7f3f3e6e6800",
+      "070f7f3f3e6e6800"
+    ],
+    "dhash": [
+      "da48d0e0dcb4b438",
+      "7e76f0e2eadccad2",
+      "8e9d95949998edcb",
+      "be9ed0d2cadc4ad2",
+      "be9ed0d2cadc4ad2",
+      "be9ed0d2cadc4ad2"
+    ],
+    "whash": [
+      "283c387efefe0e00",
+      "071f3f3e3e6e6800",
+      "c2c5df5e4f4e2700",
+      "070f5f7f3e6e2800",
+      "070f5f7f3e6e2800",
+      "070f5f7f3e6e2800"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.65001957800007,
+      "avg_fetch_time": 2.2750032630000114,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/wei-lai-dian-ying-3-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x56344e34dec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x56344e34dec0] Opening 'http://free.cnlive.club/channel/581b458b.m3u8' for reading\n[hls @ 0x56344e34dec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x56344e34dec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\nInput #0, hls, from 'https://t.freetv.fun/live/wei-lai-dian-ying-3-1.m3u8':\n  Duration: 00:00:24.13, start: 1.466667, bitrate: 0 kb/s\n  Program 0 \n    Metadata:\n      variant_bitrate : 800000\n  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[hls @ 0x56344e34dec0] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n    Last message repeated 1 times\n[https @ 0x7f77c4001200] Opening 'https://live2.sailei.dpdns.org/static/sailei0.ts' for reading\n[mpegts @ 0x56344eaf68c0] Packet corrupt (stream = 0, dts = 666000).\n[mpegts @ 0x56344eaf68c0] Packet corrupt (stream = 0, dts = 666000).\n[vost#0:0/png @ 0x56344f3c10c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 90k tbn\n    Metadata:\n      variant_bitrate : 800000\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x56344eeda580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x56344eeda580] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 13.1749744399998,
+      "avg_fetch_time": 2.1958290733333,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-1.ts": {
+    "phash": [
+      "ff88aef5a5aa0085",
+      "df52e0f0e0ac6c0f",
+      "da53bda5e454d130",
+      "f6124b6d01ff9690",
+      "90077ff0209b6f93",
+      "f2b1c44ea47998e9"
+    ],
+    "ahash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000040400000",
+      "0000000000000000"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000040000000000",
+      "0000400080800004",
+      "0000001000000000"
+    ],
+    "whash": [
+      "9f9e56c8bec8ac80",
+      "e40c3c9c99b191fb",
+      "46085cd4e2fbd2cb",
+      "c9017e575a81fcb8",
+      "1e9a283f5bca8e34",
+      "dfa14e47a588c0f5"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 36.626251507999996,
+      "avg_fetch_time": 6.104375251333333,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/jin-guang-bu-dai-xi-5.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://t.freetv.fun/live/hua-shi-2.ts": {
+    "phash": [
+      "c3983cc7c7398cc6",
+      "a699cd269964369b",
+      "95d5b026e0e41ff1",
+      "ca719432ceb36996",
+      "b3ccec718c32f0cc",
+      "99649b6699cccc93"
+    ],
+    "ahash": [
+      "0000100830000000",
+      "fffffff7fff7f7ff",
+      "0000000000000000",
+      "000000000000063c",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "dhash": [
+      "0000105068540000",
+      "0000000408040400",
+      "0000000000000000",
+      "0000020101010820",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "372f362e2c24141c",
+      "d0f9e5a48f3704ac",
+      "2e1e9a73c0b2f07a",
+      "7c090850d515ffbe",
+      "fe36c68f358280cb",
+      "efed71580841772c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 36.17820649300006,
+      "avg_fetch_time": 6.029701082166677,
+      "success_count": 6
+    }
+  },
+  "https://t.freetv.fun/live/min-shi-xin-wen-1.ts": {
+    "phash": [
+      "e698993366369999",
+      "e01fd1690ff01fe0",
+      "b29292d2b626f16d",
+      "cabe92cd263b4946",
+      "e466939b99c96926",
+      "ff00f08760da0f9b"
+    ],
+    "ahash": [
+      "fffffff7f7ffffff",
+      "0000000000004000",
+      "0400000000000000",
+      "ffff000030f93d00",
+      "ffe3f3b397ffffff",
+      "0000000000008480"
+    ],
+    "dhash": [
+      "0010100404000000",
+      "0000000000008000",
+      "0800000000000000",
+      "313c29ebe6d3e9b9",
+      "082d462624100000",
+      "8000000000400800"
+    ],
+    "whash": [
+      "4f7e3f27f47c0001",
+      "a169ccf72121cf27",
+      "a4ded6a3e0791893",
+      "ffff000030f97d18",
+      "94a3b3b18bffa480",
+      "6c6310d0f3a3aeae"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 36.93753118300003,
+      "avg_fetch_time": 6.156255197166672,
+      "success_count": 6
+    }
+  }
+}
