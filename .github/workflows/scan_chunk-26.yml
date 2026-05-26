@@ -1,0 +1,130 @@
+name: Scan_chunk-26
+
+on:
+  workflow_run:
+    workflows: ["1-预处理-下载-转txt-合并-分割-生成"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+# >>> MODIFIED: 需要写权限以提交代码
+
+jobs:
+  scan_chunk-26:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # >>> MODIFIED: 拉取完整历史，确保 reset 工作正常
+
+      - name: 同步最新代码（pull --rebase 替代 reset）
+        env:
+          PUSH_TOKEN1: ${{ secrets.PUSH_TOKEN1 }}  # >>> MODIFIED: 添加 git token
+          REPO: ${{ github.repository }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN1}@github.com/${REPO}.git
+          git stash
+          git fetch origin main
+          git pull --rebase origin main  # <<< FIX: 避免 hard reset 覆盖其他 chunk 提交
+          git stash pop || true
+
+      - name: Check chunk files
+        run: ls -lh output/middle/chunk
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run fast scan for chunk-26
+        run: |
+          mkdir -p output/middle/fast/ok output/middle/fast/not
+          python scripts/6.1_fast_scan.py \
+            --input output/middle/chunk/chunk-26.csv \
+            --output output/middle/fast/ok/fast_chunk-26.csv \
+            --invalid output/middle/fast/not/fast_chunk-26-invalid.csv
+
+      - name: Run deep scan for chunk-26
+        run: |
+          mkdir -p output/middle/deep/ok output/middle/deep/not
+          python scripts/6.2_deep_scan.py \
+            --input output/middle/fast/ok/fast_chunk-26.csv \
+            --output output/middle/deep/ok/deep_chunk-26.csv \
+            --invalid output/middle/deep/not/deep_chunk-26-invalid.csv
+
+      - name: Run hash scan for chunk-26
+        run: |
+          mkdir -p output/hash/chunk
+          python scripts/6.3_hash_scan.py \
+            --input output/middle/deep/ok/deep_chunk-26.csv \
+            --output output/hash/chunk/hash_chunk-26.json \
+            --concurrency 15 \
+            --timeout 15 \
+            --retry 2
+
+      - name: Commit and push scan results with retry
+        env:
+          PUSH_TOKEN1: ${{ secrets.PUSH_TOKEN1 }}
+          REPO: ${{ github.repository }}
+          BRANCH: main
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${PUSH_TOKEN1}@github.com/${REPO}.git
+
+          MAX_RETRIES=5
+          RETRY_DELAY=10
+          RETRY_COUNT=0
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "尝试拉取最新代码并合并，尝试次数: $((RETRY_COUNT + 1))"
+            git stash
+            git fetch origin ${BRANCH}
+            git pull --rebase origin ${BRANCH}  # <<< FIX: 避免 hard reset 覆盖其他 chunk 提交
+            git stash pop || true
+
+            # 复制当前 workflow 产生的结果文件到 repo，添加到 git 暂存区
+            git add output/middle/fast/ok/fast_chunk-26.csv output/middle/fast/not/fast_chunk-26-invalid.csv output/middle/deep/ok/deep_chunk-26.csv output/middle/deep/not/deep_chunk-26-invalid.csv output/hash/chunk/hash_chunk-26.json
+
+            # 检查是否有变更
+            if git diff --cached --quiet; then
+              echo "没有新变更，退出提交"
+              exit 0
+            fi
+
+            git commit -m "自动提交 Scan_chunk-26 扫描结果 [ci skip]" || echo "无新提交内容"
+
+            # 尝试推送
+            if git push origin ${BRANCH}; then
+              echo "推送成功"
+              exit 0
+            else
+              echo "推送失败，等待 $RETRY_DELAY 秒后重试"
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              sleep $RETRY_DELAY
+            fi
+          done
+
+          echo "超过最大重试次数，推送失败"
+          exit 1
