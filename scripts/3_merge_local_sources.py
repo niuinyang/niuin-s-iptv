@@ -59,7 +59,7 @@ def read_m3u_file(file_path: str):
                 # 仅针对 1sddxzb.m3u 文件的特殊地址替换
                 if os.path.basename(file_path) == "1sddxzb.m3u":
                     old_prefix = "http://192.168.50.1:20231"
-                    new_prefix = "http://192.168.31.2:4022"
+                    new_prefix = "http://10.1.1.1:4022"
                     if url_line.startswith(old_prefix):
                         url_line = new_prefix + url_line[len(old_prefix):]
 
