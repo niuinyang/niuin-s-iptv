@@ -1,0 +1,1290 @@
+{
+  "http://218.84.12.186:8001/hls/main/playlist.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[hls @ 0x55a1c21c2ec0] Skip ('#EXT-X-VERSION:3')\n[hls @ 0x55a1c21c2ec0] Skip ('#EXT-X-ALLOW-CACHE:YES')\n[hls @ 0x55a1c21c2ec0] Opening 'http://218.84.12.186:8001/hls/main/SEG-20260811115126.ts' for reading\n[hls @ 0x55a1c21c2ec0] Opening 'http://218.84.12.186:8001/hls/main/SEG-20260811115133.ts' for reading\n[hls @ 0x55a1c21c2ec0] Could not find codec parameters for stream 0 (Video: h264 ([27][0][0][0] / 0x001B), none): unspecified size\nConsider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options\n[in#0/hls @ 0x55a1c21c2dc0] could not seek to position 32860.556\nInput #0, hls, from 'http://218.84.12.186:8001/hls/main/playlist.m3u8':\n  Duration: N/A, start: 32858.556289, bitrate: N/A\n  Program 0 \n    Metadata:\n      variant_bitrate : 0\n  Stream #0:0: Video: h264 ([27][0][0][0] / 0x001B), none, 90k tbr, 90k tbn\n    Metadata:\n      variant_bitrate : 0\n  Stream #0:1: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp\n    Metadata:\n      variant_bitrate : 0\nOutput #0, image2pipe, to 'pipe:':\n[out#0/image2pipe @ 0x55a1c2200400] Output file does not contain any stream\nError opening output file -.\nError opening output files: Invalid argument"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://play.jinnantv.top/live/JNTV1.m3u8": {
+    "phash": [
+      "d5691e659fc28c0b",
+      "c5291e62df425e87",
+      "c6691ef4df622503",
+      "c5691ef5db824e03",
+      "c5691ef5db824e03",
+      "c5691ef5db824e03"
+    ],
+    "ahash": [
+      "e0d038fceae26494",
+      "e0913afaeae06496",
+      "f0d860f0faf2f4b4",
+      "e0d038fefae26694",
+      "e0d038fefae26694",
+      "e0d038fefae26694"
+    ],
+    "dhash": [
+      "4233f1c04a06c464",
+      "4332f2c24a04cc64",
+      "4430c2c60a06c464",
+      "4223e1ca4a06c464",
+      "4223e1ca4a06c464",
+      "4223e1ca4a06c464"
+    ],
+    "whash": [
+      "a0d038feeaf2649c",
+      "a0d03afeeaf06496",
+      "e0d860f0faf2e4b4",
+      "a0d038feeaf26694",
+      "a0d038feeaf26694",
+      "a0d038feeaf26694"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.699642201000017,
+      "avg_fetch_time": 1.9499403668333362,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel106011/playlist.m3u8": {
+    "phash": [
+      "cb501647439b5b9e",
+      "f94946fb16350867",
+      "8338751df1b0c6e5",
+      "df0ad156f124166d",
+      "8c52c6bd13767d24",
+      "8c52c6bd13767d24"
+    ],
+    "ahash": [
+      "3c78d8f8f0e0bff8",
+      "f8f8c0cec3cbc2d4",
+      "8a14317f7f3c1e26",
+      "1c181b1a9cbcf2fe",
+      "103c10001b9bd3fb",
+      "103c10001b9bd3fb"
+    ],
+    "dhash": [
+      "e8b2919bcb4b6979",
+      "5913973a2a3a1e2c",
+      "3a29e199cb69a8ce",
+      "f87172367a64629a",
+      "e0f0a43a32363736",
+      "e0f0a43a32363736"
+    ],
+    "whash": [
+      "3c70d8f8f0e0bda8",
+      "f8f8c1cac3cbc2c4",
+      "8214355f3b3c5e66",
+      "1c18131a9cbcf2fe",
+      "383c100a1bdbd3fb",
+      "383c100a1bdbd3fb"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.599075953000124,
+      "avg_fetch_time": 2.4331793255000207,
+      "success_count": 6
+    }
+  },
+  "http://live.schstv.com:90/live/xwzh.m3u8": {
+    "phash": [
+      "978aa160ee54dea5",
+      "9a4e4ddad9d17209",
+      "b45b2f5860e0277b",
+      "9d98a163ee119e27",
+      "f542889b1ce77ba0",
+      "f542889b1ce77ba0"
+    ],
+    "ahash": [
+      "ff3f3f1c000002e7",
+      "bc1505e50dc51f07",
+      "c0beb6c70e071707",
+      "ffdf1f9e800000e3",
+      "fcf4e4e0c2c0e7c2",
+      "fcf4e4e0c2c0e7c2"
+    ],
+    "dhash": [
+      "f77c68644554d646",
+      "616d4d4d998de96f",
+      "90622e8cbcaeb676",
+      "f3ba3c3424464606",
+      "68e8cc4c9e0a8ea6",
+      "68e8cc4c9e0a8ea6"
+    ],
+    "whash": [
+      "ff3f3f3c000002f7",
+      "bc1505e50fe51f07",
+      "c0be96c70e1f1707",
+      "ff7f1f9e800000eb",
+      "fcf4e4e4c2c0c7c2",
+      "fcf4e4e4c2c0c7c2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.602548011000124,
+      "avg_fetch_time": 2.433758001833354,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel103074/playlist.m3u8": {
+    "phash": [
+      "895676a91c9d568b",
+      "9cdea7414d46d24d",
+      "805e7b3c57a26b94",
+      "84587b247e8b29dd",
+      "84587b247e8b29dd",
+      "84587b247e8b29dd"
+    ],
+    "ahash": [
+      "00e0783f3b3b3b00",
+      "7f9f9c98d84c0707",
+      "00087c7effc37f3c",
+      "00587e7e7e673c00",
+      "00587e7e7e673c00",
+      "00587e7e7e673c00"
+    ],
+    "dhash": [
+      "380ce0e2f3f3d3da",
+      "a0262121b298ee6d",
+      "a0b0f0e4a6878ed0",
+      "a0b2f0e4a686f960",
+      "a0b2f0e4a686f960",
+      "a0b2f0e4a686f960"
+    ],
+    "whash": [
+      "00e0f87f7b3b3b02",
+      "7f3fbc9858480707",
+      "00003c7effc36f3c",
+      "00787e7e7e773c00",
+      "00787e7e7e773c00",
+      "00787e7e7e773c00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.258380263999982,
+      "avg_fetch_time": 2.5430633773333304,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8": {
+    "phash": [
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c",
+      "f11541f1ffcd060c"
+    ],
+    "ahash": [
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9",
+      "0e460787c7c7f9f9"
+    ],
+    "dhash": [
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383",
+      "9a9aae2e2e8e9383"
+    ],
+    "whash": [
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1",
+      "0e060687c7c7f9f1"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.084831006,
+      "avg_fetch_time": 2.8474718343333336,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXwencheng2/720p.m3u8": {
+    "phash": [
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454",
+      "f7f50c0aebad0454"
+    ],
+    "ahash": [
+      "000000ffff000000",
+      "000000ffff000000",
+      "000000ffff000000",
+      "000000ffff000000",
+      "000000ffff000000",
+      "000000ffff000000"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "00ffffffff000000",
+      "00ffffffff000000",
+      "00ffffffff000000",
+      "00ffffffff000000",
+      "00ffffffff000000",
+      "00ffffffff000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.364011401000027,
+      "avg_fetch_time": 3.3940019001666712,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8": {
+    "phash": [
+      "e0c27b83018bfee9",
+      "e0c23b8b018bfee9",
+      "e0ca7b83018bfce9",
+      "e0ca3b83018bfee9",
+      "e0c23f83018bfee9",
+      "e0c23f83018bfee9"
+    ],
+    "ahash": [
+      "69e7c34347ef69c2",
+      "69e5d36656f761c2",
+      "69e5df6646f761c2",
+      "69e5df7276ff61c2",
+      "69e5df474ff769c2",
+      "69e5df474ff769c2"
+    ],
+    "dhash": [
+      "cb8d9794960cdb16",
+      "cb8985848404d316",
+      "cb89b58c8c05d316",
+      "cb89b584940cd316",
+      "cb89a59c9d05d316",
+      "cb89a59c9d05d316"
+    ],
+    "whash": [
+      "79e5c14743c769c2",
+      "79e4e16266e569c2",
+      "79e4fd6660e168c2",
+      "79e4f56060ed69c2",
+      "79e4e56361e569c0",
+      "79e4e56361e569c0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.03395453799999,
+      "avg_fetch_time": 3.6723257563333314,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8": {
+    "phash": [
+      "8db65dee13a142a5",
+      "8db65dee13a142a5",
+      "8db65dee03a152a5",
+      "8db65dee03a152a5",
+      "8db65dee03a152a5",
+      "8db65dee03a152a5"
+    ],
+    "ahash": [
+      "3f9fcf6763311818",
+      "3f9fcf6763311818",
+      "3f9fcf6763311818",
+      "3f9fcf6763311818",
+      "3f9fcf6763311818",
+      "3f9fcf6763311818"
+    ],
+    "dhash": [
+      "683198dccee7f2f2",
+      "683198dccee7f2f2",
+      "683198dccee7f2f2",
+      "683198dccee7f2f2",
+      "683198dccee7f2f2",
+      "683198dccee7f2f2"
+    ],
+    "whash": [
+      "3f9f4f6763311018",
+      "3f9f4f6763311018",
+      "3f9f4f6763311018",
+      "3f9f4f6763311018",
+      "3f9f4f6763311018",
+      "3f9f4f6763311018"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.372200173000067,
+      "avg_fetch_time": 3.7287000288333445,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8": {
+    "phash": [
+      "e18afc8913cb3761",
+      "e18afc8913cb3761",
+      "e18afc8913cb3761",
+      "e18afc8913cb3761",
+      "e18afc8913cb3761",
+      "e18afc8913cb3761"
+    ],
+    "ahash": [
+      "7fffe723637fe3c2",
+      "7fffe723637fe3c2",
+      "7fffe723637fe3c2",
+      "7fffe723637fe3c2",
+      "7fffe723637fe3c2",
+      "7fffe723637fe3c2"
+    ],
+    "dhash": [
+      "d1b14dd5d745d21c",
+      "d1b14dd5d645d21c",
+      "d1b14dd5d645d21c",
+      "d1b14dd5d745d21c",
+      "d1b14dd5d745d21c",
+      "d1b14dd5d745d21c"
+    ],
+    "whash": [
+      "7dfce30040e3ebc2",
+      "7dfce30140e3ebc0",
+      "7dfce30140e3ebc0",
+      "7dfce30140e3ebc0",
+      "7dfce30140e3ebc0",
+      "7dfce30140e3ebc0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.37167406800006,
+      "avg_fetch_time": 3.728612344666677,
+      "success_count": 6
+    }
+  },
+  "http://tvfile.mcrm.org.cn/nmip-media/channellive/channel103064/playlist.m3u8": {
+    "phash": [
+      "fe84cf08c2b2a6bc",
+      "d0b25c3ec3ec12b9",
+      "d1b266552d1a9f25",
+      "c40433cdc9774af3",
+      "c40433cdc9774af3",
+      "edb273dca5048966"
+    ],
+    "ahash": [
+      "fffbf7e580008080",
+      "fefee7f06a009038",
+      "f0fcffffdedc8000",
+      "72321030f8f0e0e0",
+      "72321030f8f0e0e0",
+      "e2e0d0f8f8f8f0e0"
+    ],
+    "dhash": [
+      "c4022d0d238f1909",
+      "9c9c8cc2da2922e0",
+      "8080181832180082",
+      "c6a4a5e372e7068a",
+      "c6a4a5e372e7068a",
+      "820123323232140a"
+    ],
+    "whash": [
+      "fffbf7e78000c080",
+      "fefee6f0ee008018",
+      "e0f0fedfdedc0000",
+      "72737078f8f0e2e0",
+      "72737078f8f0e2e0",
+      "e2e0d0f8f8f8f0e0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.763457433999974,
+      "avg_fetch_time": 3.793909572333329,
+      "success_count": 6
+    }
+  },
+  "http://live1.gatv.com.cn:85/live/XWZH.m3u8": {
+    "phash": [
+      "f16183974745467e",
+      "f16183974745467e",
+      "f16183974745467e",
+      "a8f8aaa77fa390c0",
+      "a8f8aaa77fa390c0",
+      "d2aaab0d57574989"
+    ],
+    "ahash": [
+      "66e2c2c2c2c282e2",
+      "66e2c2c2c2c282e2",
+      "66e2c2c2c2c282e2",
+      "1f175b00101f0707",
+      "1f175b00101f0707",
+      "3cfffc7c1c3c3cfc"
+    ],
+    "dhash": [
+      "ca9a8a8a2a2e0a5a",
+      "ca9a8a8a2a2e0a5a",
+      "ca9a8a8a2a2e0a5a",
+      "ffa7b3bbf6ffeff7",
+      "ffa7b3bbf6ffeff7",
+      "791999fcf4f0f0f8"
+    ],
+    "whash": [
+      "66e6c2c2c2e2e2ee",
+      "66e6c2c2c2e2e2ee",
+      "66e6c2c2c2e2e2ee",
+      "1f5f5b00181f0f1f",
+      "1f5f5b00181f0f1f",
+      "1cffdc1c1c183c3c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.02187098600001,
+      "avg_fetch_time": 3.8369784976666685,
+      "success_count": 6
+    }
+  },
+  "http://file.yizu.tv/nmip-media/channellive/channel107323/playlist.m3u8": {
+    "phash": [
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a",
+      "f10db647e3888d9a"
+    ],
+    "ahash": [
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7",
+      "20004ac2e0c2c7e7"
+    ],
+    "dhash": [
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d",
+      "c88a929a8e569d0d"
+    ],
+    "whash": [
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7",
+      "3c424ae2e2e2c7e7"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.755242288000034,
+      "avg_fetch_time": 2.9592070480000054,
+      "success_count": 6
+    }
+  },
+  "http://218.31.201.189:9000/api/material/local/mnt/shiping1/prog_index.m3u8": {
+    "phash": [
+      "db7a60306b9139d3",
+      "db7a60306b9139d3",
+      "93816fbc6472bdc0",
+      "93816fbc6472bdc0",
+      "a89f54a8d1ae74aa",
+      "bacd6439f066c28b"
+    ],
+    "ahash": [
+      "c0b0b8bc9c9efe78",
+      "c0b0b8bc9c9efe78",
+      "7d3d2f6e7e9dc460",
+      "7d3d2f6e7e9dc460",
+      "c181c1c1c3c3c1c1",
+      "c1899d858f8581c1"
+    ],
+    "dhash": [
+      "1b2b2a683838d4d1",
+      "1b2b2a683838d4d1",
+      "c9f9d8ccb83909c3",
+      "c9f9d8ccb83909c3",
+      "2313031b9b8b8b8b",
+      "2333293d39392f9d"
+    ],
+    "whash": [
+      "c090b8bc8c9efe78",
+      "c090b8bc8c9efe78",
+      "7d3c2e6c7c9d8460",
+      "7d3c2e6c7c9d8460",
+      "f189e1c3c3c3c3c3",
+      "c189ddc58f8d85c5"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 27.10793136199993,
+      "avg_fetch_time": 4.517988560333322,
+      "success_count": 6
+    }
+  },
+  "http://125.65.94.91:12351/live": {
+    "phash": [
+      "edc8047a78f74385",
+      "a4caad6aa5b6d2a2",
+      "83aaf518e934d9b4",
+      "8c78b170f9945ba5",
+      "a16977927086ae6e",
+      "abcad4c5a9d4b234"
+    ],
+    "ahash": [
+      "f0f0f8f0e0c0c2c2",
+      "ebc1c70703410313",
+      "7f3f1f03090802ea",
+      "0f1f1f1f1f1f3f3f",
+      "01091323473f3fe7",
+      "fff949fd0b010000"
+    ],
+    "dhash": [
+      "3571431313011406",
+      "1b939d2e86959626",
+      "fbeffdfff9d9d6d2",
+      "3939337167e5666e",
+      "9bbb63d78f7f6e4e",
+      "f3739bfbfbdb967a"
+    ],
+    "whash": [
+      "f0f9f8f8f0c0c4c2",
+      "ebfbe70743410313",
+      "7f3f1f0f090806ea",
+      "0d0f1f1f1f1e0707",
+      "01031333473f3fe7",
+      "fff9edfd0f010000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.53671141799998,
+      "avg_fetch_time": 5.256118569666664,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel102221/playlist.m3u8": {
+    "phash": [
+      "cc96696996969669",
+      "cc96696996969669",
+      "cc96696996969669",
+      "cccc4d4dcc96cc4d",
+      "cccc4d4dcc96cc4d",
+      "cccc4d4dcc96cc4d"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.126927545000058,
+      "avg_fetch_time": 1.521154590833343,
+      "success_count": 6
+    }
+  },
+  "http://file.lasatv.cn/cms/videos/nmip-media/channellive/channel1/playlist.m3u8": {
+    "phash": [
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b",
+      "f0384c4e73b60f1b"
+    ],
+    "ahash": [
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700",
+      "00c8cfcfeeffc700"
+    ],
+    "dhash": [
+      "a6b8989c18478e92",
+      "a6b8989c18478e92",
+      "a6b8989c18478e92",
+      "a6b8989c18478e92",
+      "a6b8989c18478e92",
+      "a6b8989c18478e92"
+    ],
+    "whash": [
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700",
+      "00c8cfcfcefbc700"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 33.47504380999999,
+      "avg_fetch_time": 5.579173968333332,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8": {
+    "phash": [
+      "f99312ce4cec4c71",
+      "96e96cb0621f694b",
+      "a575caba52922ad6",
+      "f9bb13f306440c67",
+      "f9bb13f306440c67",
+      "f9bb13f306440c67"
+    ],
+    "ahash": [
+      "00efc3c1c3c3df00",
+      "00bf3b3fcfdf0e00",
+      "020303030307ff13",
+      "04cfdbdbc3d9e300",
+      "04cfdbdbc3d9e300",
+      "04cfdbdbc3d9e300"
+    ],
+    "dhash": [
+      "fd19171713131796",
+      "9c7c725c8cbc2c3c",
+      "020222021afbeeef",
+      "991b33370b329686",
+      "991b33370b329686",
+      "991b33370b329686"
+    ],
+    "whash": [
+      "00efcbc383f3df00",
+      "003f3f3fcf4f0e00",
+      "828383c3030fff3f",
+      "00cfdb9bc3dbe300",
+      "00cfdb9bc3dbe300",
+      "00cfdb9bc3dbe300"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.369296802000008,
+      "avg_fetch_time": 2.8948828003333347,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXyuhang2/720p.m3u8": {
+    "phash": [
+      "c9e076198db21b67",
+      "c9e076198db21b67",
+      "c9e076198db21b67",
+      "c9e076198db21b67",
+      "c9e076198db21b67",
+      "c9e076198db21b67"
+    ],
+    "ahash": [
+      "c0c1ffffff080000",
+      "c0c1ffffff080000",
+      "c0c1ffffff080000",
+      "c0c1ffffff080000",
+      "c0c1ffffff080000",
+      "c0c1ffffff080000"
+    ],
+    "dhash": [
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03",
+      "a3a343f1725b0f03"
+    ],
+    "whash": [
+      "c0f1ffffff080000",
+      "c0f1ffffff080000",
+      "c0f1ffffff080000",
+      "c0f1ffffff080000",
+      "c0f1ffffff080000",
+      "c0f1ffffff080000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.17655611300006,
+      "avg_fetch_time": 2.8627593521666768,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXqujiang1/720p.m3u8": {
+    "phash": [
+      "ba5deab4a9a25542",
+      "ec47acf1e3c0e113",
+      "c2476c69ad496f92",
+      "f32f8818c89e2b9d",
+      "f32f8818c89e2b9d",
+      "ab3176d6ad097252"
+    ],
+    "ahash": [
+      "8100000f0f0fdfff",
+      "f190b0f0f9d9d1d1",
+      "f0f0f4fcecf0fcf0",
+      "fde0a0e0c0c4fcfc",
+      "fde0a0e0c0c4fcfc",
+      "8303091b3f3d1919"
+    ],
+    "dhash": [
+      "3735785f77bc9999",
+      "27676343cb93a323",
+      "63e5a8a88889a9a5",
+      "31494a0888889800",
+      "31494a0888889800",
+      "0f3b1373ebe97131"
+    ],
+    "whash": [
+      "8100040f1f1fdfff",
+      "f190b0f0f9d1d1d1",
+      "b070f478f8f0f0f0",
+      "fda0a0e0c0e4fcfc",
+      "fda0a0e0c0e4fcfc",
+      "870b093b3f3d1d19"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.28462414400002,
+      "avg_fetch_time": 3.88077069066667,
+      "success_count": 6
+    }
+  },
+  "http://live.jinnews.com.cn/ggpd/sd/live.m3u8": {
+    "phash": [
+      "9122a39c57433fad",
+      "9522a1ac374b3ead",
+      "c4077cd1670b9b2d",
+      "8c687973a5165ab5",
+      "e4077c91660b9b6d",
+      "e4077c91660b9b6d"
+    ],
+    "ahash": [
+      "03430700161f7e7e",
+      "03470700161f7e7e",
+      "60f2202476fec2d2",
+      "00113f3f7f2c0e1f",
+      "60f2202476fec2d2",
+      "60f2202476fec2d2"
+    ],
+    "dhash": [
+      "ce9796dc3470f2da",
+      "ce9f96d83474f2d0",
+      "86c66eecc6988626",
+      "a7a3a7e6e6e97cf6",
+      "a6c64eccc6988626",
+      "a6c64eccc6988626"
+    ],
+    "whash": [
+      "07474704161f7e7e",
+      "07474704163f7e3e",
+      "62f2202476fee2f2",
+      "00513f3f7f0c0e1f",
+      "62f2202476fee2f2",
+      "62f2202476fee2f2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.671264716999985,
+      "avg_fetch_time": 3.111877452833331,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8": {
+    "phash": [
+      "b48b2d70dea12f52",
+      "a5cdeba2baf2b080",
+      "a2d6edaac8c1919b",
+      "a6d4edaa88c1939b",
+      "a6d4edaa88c1939b",
+      "a6d4edaa88c1939b"
+    ],
+    "ahash": [
+      "ffffffffc0c2c383",
+      "ff7b7a4606434080",
+      "ffb7b66605050100",
+      "ffb7b66605050100",
+      "ffb7b66605050100",
+      "ffb7b66605050100"
+    ],
+    "dhash": [
+      "5d5e8f9f8c869616",
+      "5752f6beac8e8b2b",
+      "c7666ccccddddb9b",
+      "c7666ccccddddb8b",
+      "c7666ccccddddb8b",
+      "c7666ccccddddb8b"
+    ],
+    "whash": [
+      "ffbfefc7c0004180",
+      "fffb7a5e06434080",
+      "ffb7b67e0d050101",
+      "ffb7b67e0d050101",
+      "ffb7b67e0d050101",
+      "ffb7b67e0d050101"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.95257686499997,
+      "avg_fetch_time": 3.325429477499995,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8": {
+    "phash": [
+      "c1701e359e1ef10f",
+      "e1354e249e3ae90f",
+      "a7584b269a296bcd",
+      "a55a4b2496297ecb",
+      "a55a4b2496297ecb",
+      "a55a4b2496297ecb"
+    ],
+    "ahash": [
+      "80606068606060bc",
+      "0040686f676121fd",
+      "0000081f1707037f",
+      "0000181f17030379",
+      "0000181f17030379",
+      "0000181f17030379"
+    ],
+    "dhash": [
+      "0080d498da86c060",
+      "259a9b949697c161",
+      "ad58517c6e4e4ee3",
+      "ad70507466464beb",
+      "ad70507466464beb",
+      "ad70507466464beb"
+    ],
+    "whash": [
+      "8060e0fee2e078ff",
+      "0140687f7f6161fd",
+      "010c2c3f3f0707ff",
+      "112c3a3f372303fd",
+      "112c3a3f372303fd",
+      "112c3a3f372303fd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.493399651000118,
+      "avg_fetch_time": 3.248899941833353,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8": {
+    "phash": [
+      "a188fc8913cf3f61",
+      "a188fc8913cf3f61",
+      "a188fc8913cf3f61",
+      "a188fc8913cf3f61",
+      "a188fc8913cf3f61",
+      "a188fc8913cf3f61"
+    ],
+    "ahash": [
+      "7fffe72763ffe3c2",
+      "7fffff2767ffe3c2",
+      "7fffff2767ffe3c2",
+      "7fffff2767ffe3c2",
+      "7fffff2767ffe3c2",
+      "7fffff2767ffe3c2"
+    ],
+    "dhash": [
+      "d2b047d6d645c21c",
+      "d2b547d6d645c21c",
+      "d2b547d6d645c21c",
+      "d2b547d6d645c21c",
+      "d2b547d6d645c21c",
+      "d2b547d6d645c21c"
+    ],
+    "whash": [
+      "7f7ce34040e3fb80",
+      "7f7ce34040e3fb80",
+      "7f7ce34040e3fb80",
+      "7f7ce34040e3fb80",
+      "7f7ce34040e3fb80",
+      "7f7ce34040e3fb80"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 28.01508339899999,
+      "avg_fetch_time": 4.669180566499999,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8": {
+    "phash": [
+      "b0cc4d3173377a1c",
+      "c2653dbc6613198f",
+      "8e9c75616b525655",
+      "f7bc0a61756d6302",
+      "f7bc0a61756d6302",
+      "f7bc0a61756d6302"
+    ],
+    "ahash": [
+      "00ffffef470f0f00",
+      "00c03c74f7cf1f00",
+      "003f3f3d31070700",
+      "00bf1fc2e0f0f800",
+      "00bf1fc2e0f0f800",
+      "00bf1fc2e0f0f800"
+    ],
+    "dhash": [
+      "1777634b9abc7e28",
+      "0f83c0ccac9b79ba",
+      "1bfef8e1e3cfd799",
+      "333d6d1606434128",
+      "333d6d1606434128",
+      "333d6d1606434128"
+    ],
+    "whash": [
+      "00ffbfaf47070f00",
+      "00f07c74ffcf1f00",
+      "003f3f3d31775f00",
+      "00ff1fc3f2f0fc00",
+      "00ff1fc3f2f0fc00",
+      "00ff1fc3f2f0fc00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.12258494399987,
+      "avg_fetch_time": 3.1870974906666447,
+      "success_count": 6
+    }
+  },
+  "http://live.jinnews.com.cn/xwzh/sd/live.m3u8": {
+    "phash": [
+      "92f06d6d5396070f",
+      "92f06969539e270f",
+      "c4f078cc478f3b07",
+      "c47079cc678f2b07",
+      "f2f069f912070f0f",
+      "f2f069f912070f0f"
+    ],
+    "ahash": [
+      "c0c73f3f3c050000",
+      "c0c73f3f3c051800",
+      "c0c2603072793800",
+      "c0c2703272793800",
+      "c0d41edecec58000",
+      "c0d41edecec58000"
+    ],
+    "dhash": [
+      "80a46dede96d2c08",
+      "88a46dfded2d3000",
+      "869689e2e6e1e260",
+      "8696a1e6e6a3e260",
+      "88a4ec2c0c294400",
+      "88a4ec2c0c294400"
+    ],
+    "whash": [
+      "c0d73f3f3f078c00",
+      "c0d73f3f3f059c00",
+      "40c3713b7b7f7c00",
+      "40c3713bf37f7c00",
+      "c0de1fbefed58000",
+      "c0de1fbefed58000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.94552990899996,
+      "avg_fetch_time": 3.8242549848333263,
+      "success_count": 6
+    }
+  },
+  "https://liveout.btzx.com.cn/3pyc0h/dbfvwu.m3u8": {
+    "phash": [
+      "b7e34c1e605c4973",
+      "e5ec1a920b794b1d",
+      "e5c61838529b1baf",
+      "e4e41a921d696d2f",
+      "bfe04cd7435c50a5",
+      "b3a04c5f645e4937"
+    ],
+    "ahash": [
+      "00efe7e7ef9f8e00",
+      "00f7f3f3ffffc600",
+      "00f3f7f7f7e7c300",
+      "00f7f3fbffffc400",
+      "009fdfcfef8f9f00",
+      "00efcfc7e7cf8600"
+    ],
+    "dhash": [
+      "b24d5e5e4f3d3438",
+      "a4a6c6c2cece9e3c",
+      "942666660e0e3b06",
+      "b8acc6c6cecc99b9",
+      "a13e1e195c1c3672",
+      "a21d1c1e1f187c2c"
+    ],
+    "whash": [
+      "00efe7e7e78d0e00",
+      "00f7f3f3e3e74400",
+      "00f3f3f3e7c3c300",
+      "00f6e3f3efe74400",
+      "008f8f8fef8f8f00",
+      "00efcfc7c7cf8600"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 37.51135638799991,
+      "avg_fetch_time": 6.251892731333318,
+      "success_count": 6
+    }
+  },
+  "http://l2yx82zv.live2.danghongyun.com/live/hls/8be0890a1b0c4d7aaf80b51ea8646682/5a8988f5ecc64986a19aa9b6b3a052a6-1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  }
+}
