@@ -500,27 +500,15 @@ http://webtv.zapad.tv:8080/memfs/1ad23803-84c3-41c7-aa91-fce4c7eac52e.m3u8
 #EXTINF:-1 tvg-name="Al Jazeera Balkans" tvg-logo="https://i.imgur.com/Z1FB6wl.png" tvg-id="AlJazeeraBalkans.ba" tvg-chno="99" tvg-country="HR" group-title="Croatia",Al Jazeera Balkans
 https://live-hls-web-ajb.getaj.net/AJB/index.m3u8
 #EXTINF:-1 tvg-name="RIK 1 Ⓢ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Logo_RIK_1_2017.svg/640px-Logo_RIK_1_2017.svg.png" tvg-id="RIK1.cy" tvg-chno="1" tvg-country="CY" group-title="Cyprus",RIK 1 Ⓢ
-http://l6.cloudskep.com/tvb6/rik1-1/mpeg.2ts
+http://213.7.216.229:8888/udp/239.23.0.1:1234
 #EXTINF:-1 tvg-name="RIK 2 Ⓢ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_RIK_2_2017.svg/640px-Logo_RIK_2_2017.svg.png" tvg-id="RIK2.cy" tvg-chno="2" tvg-country="CY" group-title="Cyprus",RIK 2 Ⓢ
-http://l6.cloudskep.com/tvb6/rik2-1/mpeg.2ts
+http://213.7.216.229:8888/udp/239.23.0.2:1234
 #EXTINF:-1 tvg-name="RIK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/el/7/7d/RIKHD2.png" tvg-id="RIKHD.cy" tvg-chno="3" tvg-country="CY" group-title="Cyprus",RIK HD
-http://l6.cloudskep.com/tvb6/rikhd1/mpeg.2ts
+http://213.7.216.229:8888/udp/239.23.0.5:1234
 #EXTINF:-1 tvg-name="RIK Sat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_RIK_Sat_2017.svg/640px-Logo_RIK_Sat_2017.svg.png" tvg-id="RIKSat.cy" tvg-chno="4" tvg-country="CY" group-title="Cyprus",RIK Sat
 https://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
-#EXTINF:-1 tvg-name="BRT 1" tvg-logo="https://i.imgur.com/gOPAi2c.png" tvg-id="BRT1.cy" tvg-chno="1" tvg-country="CY" group-title="Cyprus",BRT 1
-https://sc-kuzeykibrissmarttv.ercdn.net/brt1hd/bant1/playlist.m3u8
-#EXTINF:-1 tvg-name="BRT 2" tvg-logo="https://i.imgur.com/t5kbIuj.png" tvg-id="BRT2.cy" tvg-chno="2" tvg-country="CY" group-title="Cyprus",BRT 2
-https://sc-kuzeykibrissmarttv.ercdn.net/brt2hd/bant1/playlist.m3u8
-#EXTINF:-1 tvg-name="Ada TV Ⓢ" tvg-logo="https://i.imgur.com/LPQfdz2.png" tvg-id="AdaTV.cy" tvg-chno="3" tvg-country="CY" group-title="Cyprus",Ada TV Ⓢ
-https://sc-kuzeykibrissmarttv.ercdn.net/adatv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-name="Kıbrıs Genç TV Ⓢ" tvg-logo="https://i.imgur.com/eBdQn9h.png" tvg-id="KibrisGencTV.cy" tvg-chno="4" tvg-country="CY" group-title="Cyprus",Kıbrıs Genç TV Ⓢ
-https://sc-kuzeykibrissmarttv.ercdn.net/kibrisgenctv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-name="Kanal T Ⓢ" tvg-logo="https://i.imgur.com/4bA4pXT.png" tvg-id="KibrisKanalT.cy" tvg-chno="5" tvg-country="CY" group-title="Cyprus",Kanal T Ⓢ
-https://sc-kuzeykibrissmarttv.ercdn.net/kanalt/bantp1/playlist.m3u8
-#EXTINF:-1 tvg-name="Kıbrıs TV Ⓢ" tvg-logo="https://i.imgur.com/5MJZPTo.png" tvg-id="KibrisTV.cy" tvg-chno="6" tvg-country="CY" group-title="Cyprus",Kıbrıs TV Ⓢ
-https://sc-kuzeykibrissmarttv.ercdn.net/kibristv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-name="TV 2020 Ⓢ" tvg-logo="https://i.imgur.com/rtfsNdd.png" tvg-id="TV2020.cy" tvg-chno="7" tvg-country="CY" group-title="Cyprus",TV 2020 Ⓢ
-https://sc-kuzeykibrissmarttv.ercdn.net/tv2020/bantp1/playlist.m3u8
+#EXTINF:-1 tvg-name="Ada TV" tvg-logo="https://i.imgur.com/LPQfdz2.png" tvg-id="AdaTV.cy" tvg-chno="3" tvg-country="CY" group-title="Cyprus",Ada TV
+https://yayin1.canlitv.fun/live/kibrisadatv.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="ČT1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/czech-republic/ct1-cz.png" tvg-id="CT1.cz" tvg-chno="1" tvg-country="CZ" group-title="Czech Republic",ČT1
 https://sktv.mxnticek.eu/new/stream.php?ch=CT1
 #EXTINF:-1 tvg-name="ČT2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/czech-republic/ct2-cz.png" tvg-id="CT2.cz" tvg-chno="2" tvg-country="CZ" group-title="Czech Republic",ČT2
@@ -1011,7 +999,7 @@ http://88.212.15.19/live/test_tv_2_hungary_1200_atk/playlist.m3u8
 https://www.youtube.com/@ATVmagyarorszag/live
 #EXTINF:-1 tvg-name="Hír TV" tvg-logo="https://onlinestream.live/logos/4740.png" tvg-id="HirTV.hu" tvg-chno="4" tvg-country="HU" group-title="Hungary",Hír TV
 https://onlinestream.live/play.m3u?id=4740&ext=.m3u
-#EXTINF:-1 tvg-name="Spektrum Home" tvg-logo="https://i.imgur.com/G9Ib5K3.png" tvg-id="SpektrumHome.hu" tvg-chno="5" tvg-country="HU" group-title="Hungary",Spektrum Home
+#EXTINF:-1 tvg-name="Spektrum Home" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2d/Spektrum-home.png" tvg-id="SpektrumHome.hu" tvg-chno="5" tvg-country="HU" group-title="Hungary",Spektrum Home
 http://88.212.15.19/live/spektrum_home_hun/index.m3u8
 #EXTINF:-1 tvg-name="Fix TV Ⓨ" tvg-logo="https://onlinestream.live/logos/1833.png" tvg-chno="6" tvg-country="HU" group-title="Hungary",Fix TV Ⓨ
 https://www.youtube.com/@fixhdtv/live
@@ -1027,11 +1015,11 @@ https://oxygenmusic.hu:2443/hls/oxygenmusic.m3u8
 https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
 #EXTINF:-1 tvg-name="Radio 1 Ⓨ" tvg-logo="" tvg-id="" tvg-chno="3" tvg-country="HU" group-title="Hungary",Radio 1 Ⓨ
 https://www.youtube.com/@radio1hungary/live
-#EXTINF:-1 tvg-name="DikhTv Ⓨ" tvg-logo="https://i.imgur.com/eKXPBFb.png" tvg-id="DikhTV.hu" tvg-chno="4" tvg-country="HU" group-title="Hungary",DikhTv Ⓨ
+#EXTINF:-1 tvg-name="DikhTv Ⓨ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/34/Dikhtv.png" tvg-id="DikhTV.hu" tvg-chno="4" tvg-country="HU" group-title="Hungary",DikhTv Ⓨ
 https://www.youtube.com/c/DikhTvGipsyTv/live
 #EXTINF:-1 tvg-name="Izaura TV" tvg-logo="https://onlinestream.live/logos/6141.png" tvg-id="IzauraTV.hu" tvg-chno="1" tvg-country="HU" group-title="Hungary",Izaura TV
 http://88.212.15.19/live/izaura/index.m3u8
-#EXTINF:-1 tvg-name="Euronews Hungarian Ⓨ" tvg-logo="https://i.imgur.com/GUVW073.png" tvg-id="EuronewsHungarian.fr" tvg-chno="1" tvg-country="HU" group-title="Hungary",Euronews Hungarian Ⓨ
+#EXTINF:-1 tvg-name="Euronews Hungarian Ⓨ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7e/Euronews._2016_logo.png" tvg-id="EuronewsHungarian.fr" tvg-chno="1" tvg-country="HU" group-title="Hungary",Euronews Hungarian Ⓨ
 https://www.youtube.com/channel/UC4Ct8gIf9f0n4mdyGsFiZRA/live
 #EXTINF:-1 tvg-name="Parlamenti közvetítés" tvg-logo="" tvg-chno="2" tvg-country="HU" group-title="Hungary",Parlamenti közvetítés
 https://plenaris.parlament.hu:446/edgelive/smil:mkogyplen.smil/playlist.m3u8
@@ -1047,11 +1035,11 @@ http://stream.nmih.hu:7980/live.m3u8
 https://stream.y5.hu/stream/stream_bekescsaba/stream.m3u8
 #EXTINF:-1 tvg-name="16TV" tvg-logo="https://i.imgur.com/7ZPYJJ0.jpg" tvg-chno="5" tvg-country="HU" group-title="Hungary",16TV
 https://cloudfront44.lexanetwork.com:1344/freerelay/16tv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="CityTV (Belváros Lipótváros)" tvg-logo="https://i.imgur.com/ip8L5Vt.jpg" tvg-chno="6" tvg-country="HU" group-title="Hungary",CityTV (Belváros Lipótváros)
+#EXTINF:-1 tvg-name="CityTV (Belváros Lipótváros)" tvg-logo="https://citytv.hu/wp-content/uploads/2023/12/cropped-citytv.png" tvg-chno="6" tvg-country="HU" group-title="Hungary",CityTV (Belváros Lipótváros)
 https://citytv.hu/playlist.m3u8
 #EXTINF:-1 tvg-name="FehérvárTV" tvg-logo="https://www.fehervartv.hu/css/img/icon-1-2.png" tvg-chno="7" tvg-country="HU" group-title="Hungary",FehérvárTV
 https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2
-#EXTINF:-1 tvg-name="AlföldTV" tvg-logo="https://i.imgur.com/MDYb5yz.png" tvg-chno="8" tvg-country="HU" group-title="Hungary",AlföldTV
+#EXTINF:-1 tvg-name="AlföldTV" tvg-logo="http://www.dealood.com/content/uploads/images/March2019/5c9721a07ea87-images-large.png" tvg-chno="8" tvg-country="HU" group-title="Hungary",AlföldTV
 https://cloudfront41.lexanetwork.com:1344/relay01/livestream006.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="Gyöngyös TV" tvg-logo="https://i.imgur.com/RHgaPCk.png" tvg-id="GyongyosiTV.hu" tvg-chno="9" tvg-country="HU" group-title="Hungary",Gyöngyös TV
 https://cloudfront41.lexanetwork.com:1344/relay02/livestream005.sdp/playlist.m3u8?key=hkNHP
@@ -1065,7 +1053,7 @@ https://eurobioinvest.hu:444/live/ktv.m3u8
 https://cloudfront41.lexanetwork.com:1344/xrelay/loverseny2.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="Zalaegerszeg TV" tvg-logo="https://zegtv.hu/wp-content/themes/assembly/images/zegtv-logo.png" tvg-id="ZalaegerszegiTV.hu" tvg-chno="14" tvg-country="HU" group-title="Hungary",Zalaegerszeg TV
 https://cloudfront44.lexanetwork.com:1344/freerelay/zegtv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="Zugló TV" tvg-logo="https://i.imgur.com/iD5tCjX.png" tvg-chno="15" tvg-country="HU" group-title="Hungary",Zugló TV
+#EXTINF:-1 tvg-name="Zugló TV" tvg-logo="http://zuglotv.hu/wp-content/themes/ztv/uploads/ztv_logo1.jpg" tvg-chno="15" tvg-country="HU" group-title="Hungary",Zugló TV
 https://cloudfront44.lexanetwork.com:1344/freerelay/zuglotv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="DTV" tvg-logo="https://i.imgur.com/YSpqmSO.png" tvg-id="DTV.hu" tvg-chno="16" tvg-country="HU" group-title="Hungary",DTV
 http://cloudfront44.lexanetwork.com:1732/hlsrelay003/hls/livestream.sdp.m3u8
@@ -1091,7 +1079,7 @@ https://cloudfront44.lexanetwork.com:1344/freerelay/kanizsavtv.sdp/playlist.m3u8
 http://193.225.32.62:8890/live.m3u8
 #EXTINF:-1 tvg-name="Pannon RTV" tvg-logo="https://i.imgur.com/iD5tCjX.png" tvg-chno="27" tvg-country="HU" group-title="Hungary",Pannon RTV
 https://stream2.nmih.hu:4102/live.m3u8
-#EXTINF:-1 tvg-name="Tisza TV" tvg-logo="https://i.imgur.com/RHgaPCk.png" tvg-chno="28" tvg-country="HU" group-title="Hungary",Tisza TV
+#EXTINF:-1 tvg-name="Tisza TV" tvg-logo="https://www.tiszatv.hu/style/tiszatv_logo.png" tvg-chno="28" tvg-country="HU" group-title="Hungary",Tisza TV
 https://live.tiszatv.hu:443/tmp_hls/stream/index.m3u8
 #EXTINF:-1 tvg-name="Hegyvidék TV (Buda TV)" tvg-logo="https://hegyvidektv.hu/wp-content/uploads/2025/05/BUDATV_logo_picon.png" tvg-chno="29" tvg-country="HU" group-title="Hungary",Hegyvidék TV (Buda TV)
 http://budatv.streaming.aiproduction.hu/playlist.m3u
@@ -2187,18 +2175,6 @@ https://live-edge.rtl.lu/channel1/smil:channel1/playlist.m3u8
 https://live-edge.rtl.lu/channel2/smil:channel2/playlist.m3u8
 #EXTINF:-1 tvg-name="Chamber TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_of_the_Chamber_of_Deputies_of_Luxembourg.svg/2560px-Logo_of_the_Chamber_of_Deputies_of_Luxembourg.svg.png" tvg-id="ChamberTV.lu" tvg-chno="3" tvg-country="LU" group-title="Luxembourg",Chamber TV
 https://media02.webtvlive.eu/chd-edge/_definst_/smil:chamber_tv_hd.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="TDM Ou Mun" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/9/9b/TDM_Ou_Mun.png" tvg-id="TDMOuMun.mo" tvg-chno="91" tvg-country="MO" group-title="Macau",TDM Ou Mun
-https://live4.tdm.com.mo/ch1/ch1.live/playlist.m3u8
-#EXTINF:-1 tvg-name="Canal Macau" tvg-logo="https://i.imgur.com/oFPUZ97.png" tvg-id="CanalMacau.mo" tvg-chno="92" tvg-country="MO" group-title="Macau",Canal Macau
-https://live4.tdm.com.mo/ch2/ch2.live/playlist.m3u8
-#EXTINF:-1 tvg-name="TDM Sport" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/9/9b/TDM_Ou_Mun.png" tvg-id="TDMSports.mo" tvg-chno="93" tvg-country="MO" group-title="Macau",TDM Sport
-https://live4.tdm.com.mo/ch4/sport_ch4.live/playlist.m3u8
-#EXTINF:-1 tvg-name="TDM Information" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/9/9b/TDM_Ou_Mun.png" tvg-id="TDMInformation.mo" tvg-chno="94" tvg-country="MO" group-title="Macau",TDM Information
-https://live4.tdm.com.mo/ch5/info_ch5.live/playlist.m3u8
-#EXTINF:-1 tvg-name="TDM Entertainment" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/TDM_Entertainment.png" tvg-id="TDMEntertainment.mo" tvg-chno="95" tvg-country="MO" group-title="Macau",TDM Entertainment
-https://live4.tdm.com.mo/ch6/hd_ch6.live/playlist.m3u8
-#EXTINF:-1 tvg-name="TDM Ou Mun-Macau" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/8/87/TDM_Ou_Mun_Macau_logo.png" tvg-id="TDMMacauSatellite.mo" tvg-chno="96" tvg-country="MO" group-title="Macau",TDM Ou Mun-Macau
-https://live4.tdm.com.mo/ch3/ch3.live/playlist.m3u8
 #EXTINF:-1 tvg-name="One" tvg-logo="https://i.imgur.com/UPlfzFx.png" tvg-id="One.mt" tvg-chno="4" tvg-country="MT" group-title="Malta",One
 https://2-fss-1.streamhoster.com/pl_148/201830-1293592-1/playlist.m3u8
 #EXTINF:-1 tvg-name="Smash TV" tvg-logo="https://i.imgur.com/ZKF0fG3.png" tvg-id="SmashTV.mt" tvg-chno="5" tvg-country="MT" group-title="Malta",Smash TV
@@ -2218,25 +2194,13 @@ https://59e88b197fb16.streamlock.net:4443/live/canal4/playlist.m3u8
 #EXTINF:-1 tvg-name="Las Estrellas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/41/Las_Estrellas.svg" tvg-id="Lasestrellas.tv" tvg-chno="7" tvg-country="MX" group-title="Mexico",Las Estrellas
 https://linear-416.frequency.stream/416/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-name="Moldova 1" tvg-logo="https://i.imgur.com/ZbQY56v.png" tvg-id="Moldova1.md" tvg-chno="1" tvg-country="MD" group-title="Moldova",Moldova 1
-https://www.tvkaista.net/stream-forwarder/get.php?x=Moldova1
+https://v0.trm.md/static/streaming-playlists/hls/9b79338b-1870-4cd7-91d4-0f6ce5cac7ca/master.m3u8
 #EXTINF:-1 tvg-name="Moldova 2" tvg-logo="https://i.imgur.com/Hv6Nk8A.png" tvg-id="Moldova2.md" tvg-chno="2" tvg-country="MD" group-title="Moldova",Moldova 2
-https://www.tvkaista.net/stream-forwarder/get.php?x=Moldova2
-#EXTINF:-1 tvg-name="Publika TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Publika_logo_%282017%29.png" tvg-id="PublikaTV.md" tvg-chno="3" tvg-country="MD" group-title="Moldova",Publika TV
-https://livebeta.publika.md/LIVE/P/6810.m3u8
-#EXTINF:-1 tvg-name="Vocea Basarabiei" tvg-logo="https://i.imgur.com/irP8QLs.png" tvg-id="VoceaBasarabieiTV.md" tvg-chno="4" tvg-country="MD" group-title="Moldova",Vocea Basarabiei
-https://storage.voceabasarabiei.md/hls/vocea_basarabiei.m3u8
-#EXTINF:-1 tvg-name="Canal 2 Ⓖ" tvg-logo="https://upload.wikimedia.org/wikipedia/ro/7/7f/Logo_Canal_2.png" tvg-id="Canal2.md" tvg-chno="4" tvg-country="MD" group-title="Moldova",Canal 2 Ⓖ
-https://livebeta.publika.md/LIVE/2/index.m3u8
-#EXTINF:-1 tvg-name="Canal 3 Ⓖ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Canal_3.svg/640px-Canal_3.svg.png" tvg-id="Canal3.md" tvg-chno="5" tvg-country="MD" group-title="Moldova",Canal 3 Ⓖ
-https://livebeta.publika.md/LIVE/3/index.m3u8
-#EXTINF:-1 tvg-name="Prime Ⓖ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/70/Prime.png" tvg-id="Prime.md" tvg-chno="6" tvg-country="MD" group-title="Moldova",Prime Ⓖ
-https://livebeta.publika.md/LIVE/1/600.m3u8
+https://v0.trm.md/static/streaming-playlists/hls/d5fafab0-9c37-4746-9e7a-b2d6c0427015/master.m3u8
 #EXTINF:-1 tvg-name="TVR Moldova Ⓖ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/TVR_Moldova_Logo_2022.svg/640px-TVR_Moldova_Logo_2022.svg.png" tvg-id="TVRMoldova.md" tvg-chno="7" tvg-country="MD" group-title="Moldova",TVR Moldova Ⓖ
-https://mn-nl.mncdn.com/tvrmoldova_new/smil:tvrmoldova_new.smil/chunklist_b6096000.m3u8
+https://tvr-moldova.lg.mncdn.com/tvrmoldova/smil:tvrmoldova.smil/chunklist.m3u8
 #EXTINF:-1 tvg-name="Sor TV" tvg-logo="https://i.imgur.com/BcfZgD8.png" tvg-id="SorTV.md" tvg-chno="1" tvg-country="MD" group-title="Moldova",Sor TV
 http://188.237.212.16:8888/live/cameraFeed.m3u8
-#EXTINF:-1 tvg-name="Bălți TV" tvg-logo="https://i.imgur.com/S1vEqZp.png" tvg-id="BaltiTV.md" tvg-chno="2" tvg-country="MD" group-title="Moldova",Bălți TV
-https://hls.btv.md/hls/live2.m3u8
 #EXTINF:-1 tvg-name="TV Monaco" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/TVMonaco_2023.svg/320px-TVMonaco_2023.svg.png" tvg-id="TVMonaco.mc" tvg-chno="1" tvg-country="MC" group-title="Monaco",TV Monaco
 https://production-fast-mcrtv.content.okast.tv/channels/2116dc08-1959-465d-857f-3619daefb66b/b702b2b9-aebd-436c-be69-2118f56f3d86/master.m3u8
 #EXTINF:-1 tvg-name="MonacoInfo" tvg-logo="https://www.lyngsat.com/logo/tv/mm/monaco_info.png" tvg-id="MonacoInfo.mc" tvg-chno="2" tvg-country="MC" group-title="Monaco",MonacoInfo
@@ -2476,13 +2440,11 @@ https://www.youtube.com/@unicanalpy/live
 #EXTINF:-1 tvg-name="ABC TV Ⓨ" tvg-logo="https://i.imgur.com/tBdgllD.png" tvg-id="ABCTV.py" tvg-chno="2" tvg-country="PY" group-title="Paraguay",ABC TV Ⓨ
 https://www.youtube.com/user/canalabctv/live
 #EXTINF:-1 tvg-name="Panamericana TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/26/Panamericana_tv_2009.png" tvg-id="PanamericanaTV.pe" tvg-chno="5" tvg-country="PE" group-title="Peru",Panamericana TV
-https://cdnhd.iblups.com/hls/ptv2.m3u8
+http://45.171.108.253:8888/PANAMERICANA/index.m3u8
 #EXTINF:-1 tvg-name="ATV+ Noticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f4/Atv_noticias_logo.png" tvg-id="ATVPlus.pe" tvg-chno="15" tvg-country="PE" group-title="Peru",ATV+ Noticias
-https://dysmuyxh5vstv.cloudfront.net/hls/atv2.m3u8
+http://45.171.108.253:8888/ATV/index.m3u8
 #EXTINF:-1 tvg-name="Karibeña TV" tvg-logo="https://i.pinimg.com/280x280_RS/11/85/b6/1185b667fe3f80d7072359d7ce7ce52d.jpg" tvg-id="Karibena.pe" tvg-chno="62" tvg-country="PE" group-title="Peru",Karibeña TV
-https://cu.onliv3.com/livevd/user1.m3u8
-#EXTINF:-1 tvg-name="Top Latino TV" tvg-logo="https://static.mytuner.mobi/media/tvos_radios/fTmfsKeREm.png" tvg-id="TopLatinoTV.pe" tvg-chno="63" tvg-country="PE" group-title="Peru",Top Latino TV
-https://5cefcbf58ba2e.streamlock.net:543/tltvweb/latintv.stream/playlist.m3u8
+http://187.102.210.46/KARIBENA/index.m3u8
 #EXTINF:-1 tvg-name="TVP1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TVP1_logo.svg/640px-TVP1_logo.svg.png" tvg-id="TVP1.pl" tvg-chno="1" tvg-country="PL" group-title="Poland",TVP1
 https://www.tvkaista.net/stream-forwarder/get.php?x=TVP1
 #EXTINF:-1 tvg-name="TVP2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TVP2_logo.svg/640px-TVP2_logo.svg.png" tvg-id="TVP2.pl" tvg-chno="2" tvg-country="PL" group-title="Poland",TVP2
@@ -2791,8 +2753,8 @@ https://www.youtube.com/@Nova24TVSlovenija/live
 https://cdne.folxplay.tv/folx-trz/streams/ch-5/master.m3u8
 #EXTINF:-1 tvg-name="Dacwa TV Ⓢ" tvg-logo="https://i.imgur.com/rMqrLzV.png" tvg-id="DacwaTV.so" tvg-country="SO" group-title="Somalia",Dacwa TV Ⓢ
 https://ap02.iqplay.tv:8082/iqb8002/d13w1/playlist.m3u8
-#EXTINF:-1 tvg-name="MM Somali TV Ⓢ" tvg-logo="https://www.lyngsat.com/logo/tv/mm/mm-somali-tv-so.png" tvg-id="MMSomaliTV.uk" tvg-country="SO" group-title="Somalia",MM Somali TV Ⓢ
-https://cdn.mediavisionuk.com:9000/MMTV/index.m3u8
+#EXTINF:-1 tvg-name="MM Somali TV Ⓨ" tvg-logo="https://www.lyngsat.com/logo/tv/mm/mm-somali-tv-so.png" tvg-id="MMSomaliTV.uk" tvg-country="SO" group-title="Somalia",MM Somali TV Ⓨ
+https://www.youtube.com/@mmsomalitv/live
 #EXTINF:-1 tvg-name="Puntland TV Ⓢ" tvg-logo="https://i.imgur.com/C8EvQUo.png" tvg-id="PuntlandTV.so" tvg-country="SO" group-title="Somalia",Puntland TV Ⓢ
 http://cdn.mediavisionuae.com:1935/live/putlandtv2.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Saab TV Ⓢ" tvg-logo="https://i.imgur.com/JEC1J89.png" tvg-id="SaabTV.so" tvg-country="SO" group-title="Somalia",Saab TV Ⓢ
