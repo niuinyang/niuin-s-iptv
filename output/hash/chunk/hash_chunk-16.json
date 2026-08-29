@@ -1,0 +1,3268 @@
+{
+  "https://live.ottiptv.cc/douyu/1174353": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55fa582ae540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55fa582ecec0] Packet corrupt (stream = 1, dts = 392322199).\n[h264 @ 0x55fa5835b2c0] Invalid NAL unit size (21176 > 3984).\n[h264 @ 0x55fa5835b2c0] missing picture in access unit with size 4038\n[in#0/flv @ 0x55fa582ecdc0] could not seek to position 392322.609\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/1174353':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.659b\n  Duration: 00:00:00.00, start: 392320.609000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1280x720 [SAR 1:1 DAR 16:9], 1843 kb/s, 25 fps, 25 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55fa582ae540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55fa582ecdc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55fa582ecdc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x55fa5833fd80] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55fa5834e800] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55fa5834e800] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/4246519": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55aa3a131540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55aa3a16fec0] Packet corrupt (stream = 1, dts = 179179609).\n[h264 @ 0x55aa3a1de2c0] Invalid NAL unit size (21201 > 1873).\n[h264 @ 0x55aa3a1de2c0] missing picture in access unit with size 1927\n[https @ 0x55aa3a131540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x55aa3a16fdc0] could not seek to position 179181.076\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/4246519':\n  Metadata:\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    audiochannels   : 2\n    dyPRI           : 1787845541778\n    encoder         : obs-output module (libobs version 27.2.1)\n    fileSize        : 0\n    server_path     : 492022,385536,519032,386038,2098015,537011,385532,519036,386036,493006\n    stream_id       : 4246519rPm3vDUvp_1024\n  Duration: N/A, start: 179179.076000, bitrate: 5406 kb/s\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 5242 kb/s, 30.30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55aa3a131540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55aa3a16fdc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55aa3a16fdc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x55aa3a27a040] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    audiochannels   : 2\n    dyPRI           : 1787845541778\n    stream_id       : 4246519rPm3vDUvp_1024\n    fileSize        : 0\n    server_path     : 492022,385536,519032,386038,2098015,537011,385532,519036,386036,493006\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55aa3a4a8800] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55aa3a4a8800] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/3928": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x55dd8d95ddc0] could not seek to position 7056.570\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/3928':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.655b\n  Duration: 00:00:00.00, start: 7054.570000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1920x1080, 2048 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55dd8d91f540] Stream ends prematurely at 14413, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55dd8d95dec0] Packet corrupt (stream = 1, dts = 7056000).\n[in#0/flv @ 0x55dd8d95ddc0] corrupt input packet in stream 1\n[https @ 0x55dd8d91f540] Stream ends prematurely at 14413, should be 18446744073709551615\n[in#0/flv @ 0x55dd8d95ddc0] Error during demuxing: Input/output error\n[h264 @ 0x55dd8d9cc680] co located POCs unavailable\n[in#0/flv @ 0x55dd8d95ddc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x55dd8dbb0e80] Invalid NAL unit size (7553 > 3613).\n[h264 @ 0x55dd8dbb0e80] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x55dd8dab8080] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x55dd8dc96cc0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x55dd8dab8080] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x55dd8dbe0d80] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55dd8dbe0d80] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/999": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55e6d590d540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55e6d594bec0] Packet corrupt (stream = 1, dts = 122633143).\n[h264 @ 0x55e6d59ba2c0] Invalid NAL unit size (23968 > 13232).\n[h264 @ 0x55e6d59ba2c0] missing picture in access unit with size 13286\n[https @ 0x55e6d590d540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x55e6d594bdc0] could not seek to position 122635.014\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/999':\n  Metadata:\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    audiochannels   : 2\n    dyPRI           : 1787902532970\n    encoder         : DyEncoder58.40.100\n    fileSize        : 0\n    publish_protocol: rtmp\n    server_path     : 492004,385506,519505,386044,2098017,537108,385550,519533,386054,493023\n    stream_id       : 999rx47n2pp8pKD_1024\n  Duration: N/A, start: 122633.014000, bitrate: 16056 kb/s\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 327 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 15728 kb/s, 62.50 fps, 59.94 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55e6d590d540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55e6d594bdc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55e6d594bdc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x55e6d594fec0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    audiochannels   : 2\n    dyPRI           : 1787902532970\n    stream_id       : 999rx47n2pp8pKD_1024\n    fileSize        : 0\n    publish_protocol: rtmp\n    server_path     : 492004,385506,519505,386044,2098017,537108,385550,519533,386054,493023\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 59.94 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55e6d5bced80] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55e6d5bced80] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/260322": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x5609317f8dc0] could not seek to position 72075.303\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/260322':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.659b\n  Duration: 00:00:00.00, start: 72070.303000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 98 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1280x720, 4096 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x560931b12500] co located POCs unavailable\n[h264 @ 0x56093197ed40] co located POCs unavailable\n[h264 @ 0x5609318e9600] mmco: unref short failure\n[https @ 0x5609317ba540] Stream ends prematurely at 222797, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x5609317f8ec0] Packet corrupt (stream = 1, dts = 72073132).\n[NULL @ 0x5609318672c0] Invalid NAL unit size (10872 > 3723).\n[NULL @ 0x5609318672c0] missing picture in access unit with size 3765\n[in#0/flv @ 0x5609317f8dc0] corrupt input packet in stream 1\n[https @ 0x5609317ba540] Stream ends prematurely at 222797, should be 18446744073709551615\n[in#0/flv @ 0x5609317f8dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x5609317f8dc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x5609318e9600] Invalid NAL unit size (10872 > 3723).\n[h264 @ 0x5609318e9600] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x5609318fa1c0] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x56093182f080] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x5609318ff5c0] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x5609318ff5c0] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 1.7141167470000482,
+      "avg_fetch_time": 1.7141167470000482,
+      "success_count": 1
+    }
+  },
+  "https://live.ottiptv.cc/douyu/288016": {
+    "phash": [
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363"
+    ],
+    "ahash": [
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00"
+    ],
+    "dhash": [
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3"
+    ],
+    "whash": [
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.138853091999863,
+      "avg_fetch_time": 1.8564755153333106,
+      "success_count": 6
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv2hd": {
+    "phash": [
+      "f1bc5ce6c9115a25",
+      "f1bc5ce6c9115a25",
+      "f1bc5ce6c9115a25",
+      "e4d5f4e04a39ca96",
+      "e4d5f4e04a39ca96",
+      "e4d5f4e04a39ca96"
+    ],
+    "ahash": [
+      "ded7cbebe3e44440",
+      "ded7cbebe3e44440",
+      "ded7cbebe3e44440",
+      "fffebc0131f10300",
+      "fffebc0131f10300",
+      "fffebc0131f10300"
+    ],
+    "dhash": [
+      "2e34179acbcddc90",
+      "2e34179acbcddc90",
+      "2e34179acbcddc90",
+      "82c6785b61c3aa23",
+      "82c6785b61c3aa23",
+      "82c6785b61c3aa23"
+    ],
+    "whash": [
+      "d6d7cbeb63e40440",
+      "d6d7cbeb63e40440",
+      "d6d7cbeb63e40440",
+      "fffebe0131f10300",
+      "fffebe0131f10300",
+      "fffebe0131f10300"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.784987663000038,
+      "avg_fetch_time": 1.9641646105000063,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/3870925": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x557edff9a540] HTTP error 403 Forbidden\n[in#0 @ 0x557edffd8dc0] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file https://live.ottiptv.cc/douyu/3870925.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://198.204.228.26/live/cctv7hd.m3u8": {
+    "phash": [
+      "97f848fa40ae7e28",
+      "92936dcc32839f69",
+      "92936dcc32839f69",
+      "92936dcc32839f69",
+      "b3887cc312cf3761",
+      "b3887cc312cf3761"
+    ],
+    "ahash": [
+      "004f1f7f7fbf1e00",
+      "62c02c2c763c6080",
+      "62c02c2c763c6080",
+      "62c02c2c763c6080",
+      "7effaf2e6e67e3c2",
+      "7effaf2e6e67e3c2"
+    ],
+    "dhash": [
+      "b59c7aeebc787dd4",
+      "d2b649cdd569c21c",
+      "d2b649cdd569c21c",
+      "d2b649cdd569c21c",
+      "d0b048d8dc4cc21c",
+      "d0b048d8dc4cc21c"
+    ],
+    "whash": [
+      "004e0f7f7fbf1c00",
+      "7f78fc2c747c2880",
+      "7f78fc2c747c2880",
+      "7f78fc2c747c2880",
+      "7c78ef2c44647ac2",
+      "7c78ef2c44647ac2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.67688935000001,
+      "avg_fetch_time": 2.279481558333335,
+      "success_count": 6
+    }
+  },
+  "http://120.76.248.139/live/bfgd/4200000130.m3u8": {
+    "phash": [
+      "d0d0c183830f6f7f",
+      "e188db8b134b3e69",
+      "e188db8b134b3e69",
+      "a0ccdb93264d366d",
+      "a0ccdb93264d366d",
+      "e18af4c913cb3e61"
+    ],
+    "ahash": [
+      "ffff000000000000",
+      "7fffc34343c3ebc6",
+      "7fffc34343c3ebc6",
+      "7fffc34343cfebc7",
+      "7fffc34343cfebc7",
+      "7fffff2767ffe3c2"
+    ],
+    "dhash": [
+      "d294084808480000",
+      "d0b006969686d21c",
+      "d0b006969686d21c",
+      "d0969686869dd21c",
+      "d0969686869dd21c",
+      "d0b404d4d644d21c"
+    ],
+    "whash": [
+      "fffffc3c2c2c0000",
+      "7e7ec34242c3eac2",
+      "7e7ec34242c3eac2",
+      "7e7ec3424247eac2",
+      "7e7ec3424247eac2",
+      "7e7cc7404267eac2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.388054329000056,
+      "avg_fetch_time": 2.898009054833343,
+      "success_count": 6
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv12hd": {
+    "phash": [
+      "d97ef28685a2d2a8",
+      "dcc60331792f132f",
+      "dcc60331792f132f",
+      "b1f84c435f1c5297",
+      "b1f84c435f1c5297",
+      "b1f84c435f1c5297"
+    ],
+    "ahash": [
+      "fc88d8181b1c5b7c",
+      "00fcffded81e1f00",
+      "00fcffded81e1f00",
+      "00c3dfdf7f6f0300",
+      "00c3dfdf7f6f0300",
+      "00c3dfdf7f6f0300"
+    ],
+    "dhash": [
+      "143210b272f0b3d0",
+      "a4a46535b0bcb2e9",
+      "a4a46535b0bcb2e9",
+      "8997bebbdaddb660",
+      "8997bebbdaddb660",
+      "8997bebbdaddb660"
+    ],
+    "whash": [
+      "fc88d8181b185f7e",
+      "00fcffddd81e1b00",
+      "00fcffddd81e1b00",
+      "00c3cfdf7f6f0300",
+      "00c3cfdf7f6f0300",
+      "00c3cfdf7f6f0300"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.597708285999943,
+      "avg_fetch_time": 1.599618047666657,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/11851549": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x561a9034f540] Stream ends prematurely at 505, should be 18446744073709551615\n    Last message repeated 2 times\n[flv @ 0x561a9038dec0] Could not find codec parameters for stream 1 (Video: h264, none, 4096 kb/s): unspecified size\nConsider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options\n[https @ 0x561a9034f540] Stream ends prematurely at 505, should be 18446744073709551615\n    Last message repeated 1 times\n[in#0/flv @ 0x561a9038ddc0] could not seek to position 2.000\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/11851549':\n  Metadata:\n    7.1             : false\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    encoder         : obs-output module (libobs version 21.1.0)\n  Duration: 00:00:00.00, start: 0.000000, bitrate: N/A\n  Stream #0:0: Audio: aac, 44100 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264, none, 4096 kb/s, 30 fps, 1k tbr, 1k tbn\nOutput #0, image2pipe, to 'pipe:':\n[out#0/image2pipe @ 0x561a9068c580] Output file does not contain any stream\nError opening output file -.\nError opening output files: Invalid argument"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/1863767": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x56477b508540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x56477b546ec0] Packet corrupt (stream = 1, dts = 807326543).\n[h264 @ 0x56477b5b52c0] Invalid NAL unit size (24568 > 7075).\n[h264 @ 0x56477b5b52c0] missing picture in access unit with size 7584\n[https @ 0x56477b508540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x56477b546dc0] could not seek to position 807328.079\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/1863767':\n  Metadata:\n    displayHeight   : 0\n    displayWidth    : 0\n    dyPRI           : 1787909460991\n    dyencoder       : dy264_pro\n    fps             : 0\n    level           : \n    mask            : 1\n    profile         : \n    server_path     : 492003,385511,519533,386058,2076001,537007,385506,519538,386048,2077001,537115,385512,519519,386006,2073032,537115,385555,519038,386059,493010\n    stream_id       : 1863767rkpl2_1024\n    version         : 1.2.41\n  Duration: N/A, start: 807326.079000, bitrate: 41943 kb/s\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp\n  Stream #0:1: Video: h264 (High), yuv420p(progressive), 1920x1080, 41943 kb/s, 63 fps, 60 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x56477b508540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x56477b546dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x56477b546dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x56477b6cbf00] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    displayHeight   : 0\n    displayWidth    : 0\n    dyPRI           : 1787909460991\n    dyencoder       : dy264_pro\n    fps             : 0\n    level           : \n    mask            : 1\n    profile         : \n    server_path     : 492003,385511,519533,386058,2076001,537007,385506,519538,386048,2077001,537115,385512,519519,386006,2073032,537115,385555,519038,386059,493010\n    stream_id       : 1863767rkpl2_1024\n    version         : 1.2.41\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080, q=2-31, 200 kb/s, 60 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x56477b57ee80] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x56477b57ee80] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/6911044": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x565321558dc0] could not seek to position 1605909.286\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/6911044':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.659b\n    DouyuTVBroadcasterVersion: 6.4.1.3\n    dy_pusher_version: 1.4.1\n  Duration: 00:00:00.00, start: 1605907.286000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1280x720, 1024 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x56532158efc0] co located POCs unavailable\n[https @ 0x56532151a540] Stream ends prematurely at 88421, should be 18446744073709551615\n    Last message repeated 1 times\n[in#0/flv @ 0x565321558dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x565321558dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x5653216d6240] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    dy_pusher_version: 1.4.1\n    DouyuTVBroadcasterVersion: 6.4.1.3\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x565321819680] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x565321819680] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://69.30.245.50/live/cctv4.m3u8": {
+    "phash": [
+      "980cf68de826be69",
+      "980cf68de826be69",
+      "980cf68de826be69",
+      "980cf68de826be69",
+      "980cf68de826be69",
+      "99aada44f19b03dc"
+    ],
+    "ahash": [
+      "3f1c0505191f26c7",
+      "3f1c0505191f26c7",
+      "3f1c0505191f26c7",
+      "3f1c0505191f26c7",
+      "3f1c0505191f26c7",
+      "ff5f0f0f42008880"
+    ],
+    "dhash": [
+      "a7b99d99b371d48d",
+      "a7b99d99b371d48d",
+      "a7b99d99b371d48d",
+      "a7b99d99b371d48d",
+      "a7b99d99b371d48d",
+      "99d5d81ab2d8382a"
+    ],
+    "whash": [
+      "3f1c0d05181f6fc7",
+      "3f1c0d05181f6fc7",
+      "3f1c0d05181f6fc7",
+      "3f1c0d05181f6fc7",
+      "3f1c0d05181f6fc7",
+      "ffff2f0f4a008888"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.741774624999948,
+      "avg_fetch_time": 1.9569624374999914,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/5388537": {
+    "phash": [
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363"
+    ],
+    "ahash": [
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00"
+    ],
+    "dhash": [
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3"
+    ],
+    "whash": [
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.574466948000008,
+      "avg_fetch_time": 1.5957444913333347,
+      "success_count": 6
+    }
+  },
+  "http://120.76.248.139/live/bfgd/4200000061.m3u8": {
+    "phash": [
+      "ee7fd0c8904b96a4",
+      "8bce9e9a5689498d",
+      "8bce9e9a5689498d",
+      "8bce9e9a5689498d",
+      "d96226d26627599d",
+      "d96226d26627599d"
+    ],
+    "ahash": [
+      "fc81810001b1f9ff",
+      "3cbc686804c9cb80",
+      "3cbc686804c9cb80",
+      "3cbc686804c9cb80",
+      "c0c0d8d8fcf8fef8",
+      "c0c0d8d8fcf8fef8"
+    ],
+    "dhash": [
+      "01274d4b4765e3ae",
+      "e929d39ded9b9a2c",
+      "e929d39ded9b9a2c",
+      "e929d39ded9b9a2c",
+      "8513123231307230",
+      "8513123231307230"
+    ],
+    "whash": [
+      "fd91a10001b1f9ff",
+      "3c9ce96d04e9cbe0",
+      "3c9ce96d04e9cbe0",
+      "3c9ce96d04e9cbe0",
+      "8080c8f8fcf8faf8",
+      "8080c8f8fcf8faf8"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.775040641000032,
+      "avg_fetch_time": 2.7958401068333387,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/11878141": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55d44774e540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55d44778cec0] Packet corrupt (stream = 1, dts = 208517721).\n[h264 @ 0x55d4477fb2c0] Invalid NAL unit size (19873 > 14658).\n[h264 @ 0x55d4477fb2c0] missing picture in access unit with size 14700\n[https @ 0x55d44774e540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x55d44778cdc0] could not seek to position 208519.188\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/11878141':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    d_cate          : 3\n    d_client        : 3\n    dy_app_name     : DouyuTVBroadcaster\n    dy_app_version  : 6.5.9.3\n    dy_cpu_model    : 12th Gen Intel(R) Core(TM) i7-12700\n    dy_encoder_type : DY264\n    dy_exe_start_time: 2026/8/27 15:36:06\n    dy_gpu_model    : Intel(R) UHD Graphics 770\n    dy_mac          : D0-F4-05-40-B4-20\n    dy_os_version   : Windows_11\n    encoder         : DyLiveEncoder(DY264)\n    hasWatermark    : 1\n    z_canvas_code   : 我的场景: 窗口 1, 文本 1\n  Duration: 00:00:00.00, start: 208517.188000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 5242 kb/s, 60 fps, 60 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55d44774e540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55d44778cdc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55d44778cdc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x55d4478e79c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    d_cate          : 3\n    d_client        : 3\n    dy_app_name     : DouyuTVBroadcaster\n    dy_app_version  : 6.5.9.3\n    dy_cpu_model    : 12th Gen Intel(R) Core(TM) i7-12700\n    dy_encoder_type : DY264\n    dy_exe_start_time: 2026/8/27 15:36:06\n    dy_gpu_model    : Intel(R) UHD Graphics 770\n    dy_mac          : D0-F4-05-40-B4-20\n    dy_os_version   : Windows_11\n    z_canvas_code   : 我的场景: 窗口 1, 文本 1\n    hasWatermark    : 1\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 60 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55d447aacb40] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55d447aacb40] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://69.30.245.50/live/cctv2.m3u8": {
+    "phash": [
+      "d96236c666a55a99",
+      "d96236c666a55a99",
+      "d96236c666a55a99",
+      "d96236c666a55a99",
+      "d96236c666a55a99",
+      "d96236c666a55a99"
+    ],
+    "ahash": [
+      "c0c0d8e8f8fcffdf",
+      "c0c0d8e8f8fcffdf",
+      "c0c0d8e8f8fcffdf",
+      "c0c0d8e8f8fcffdf",
+      "c0c0d8e8f8fcffdf",
+      "c0c0d8e8f8fcffdf"
+    ],
+    "dhash": [
+      "0d095313317112ba",
+      "0d095313317112ba",
+      "0d095313317112ba",
+      "0d095313317112ba",
+      "0d095313317112ba",
+      "0d095313317112ba"
+    ],
+    "whash": [
+      "808088e8f8fcfadf",
+      "808088e8f8fcfadf",
+      "808088e8f8fcfadf",
+      "808088e8f8fcfadf",
+      "808088e8f8fcfadf",
+      "808088e8f8fcfadf"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.060437707999995,
+      "avg_fetch_time": 1.5100729513333324,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/747764": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55b0ad741540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55b0ad77fec0] Packet corrupt (stream = 1, dts = 50714700).\n[h264 @ 0x55b0ad7ee2c0] Invalid NAL unit size (15475 > 4214).\n[h264 @ 0x55b0ad7ee2c0] missing picture in access unit with size 4256\n[https @ 0x55b0ad741540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x55b0ad77fdc0] could not seek to position 50716.169\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/747764':\n  Metadata:\n    audiochannels   : 2\n    dyPRI           : 1787974014790\n    dyencoder       : dy264_pro\n    encoder         : Open Broadcaster Software v0.657b\n    fileSize        : 0\n    server_path     : 492007,385548,519019,386005,2073548,537103,385550,519505,386054,493103\n    stream_id       : 747764rSDeB7Ts70_1024\n  Duration: N/A, start: 50714.169000, bitrate: 6422 kb/s\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1920x1080, 6291 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55b0ad741540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55b0ad77fdc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55b0ad77fdc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x55b0ad9f8a80] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    audiochannels   : 2\n    dyPRI           : 1787974014790\n    dyencoder       : dy264_pro\n    stream_id       : 747764rSDeB7Ts70_1024\n    fileSize        : 0\n    server_path     : 492007,385548,519019,386005,2073548,537103,385550,519505,386054,493103\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55b0ad8cf740] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55b0ad8cf740] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv10hd": {
+    "phash": [
+      "c0c13113b5af5737",
+      "c0c13113b5af5737",
+      "e8663db2e8cd1781",
+      "e8663db2e8cd1781",
+      "e8663db2e8cd1781",
+      "e8663db2e8cd1781"
+    ],
+    "ahash": [
+      "fcf8f8fbfc200000",
+      "fcf8f8fbfc200000",
+      "c30019f9e1071919",
+      "c30019f9e1071919",
+      "c30019f9e1071919",
+      "c30019f9e1071919"
+    ],
+    "dhash": [
+      "c0c0c0c3e0e1e1e0",
+      "c0c0c0c3e0e1e1e0",
+      "9ba773b38b14b2b2",
+      "9ba773b38b14b2b2",
+      "9ba773b38b14b2b2",
+      "9ba773b38b14b2b2"
+    ],
+    "whash": [
+      "fcfcf8f9fc700000",
+      "fcfcf8f9fc700000",
+      "c300b9f9ed871b19",
+      "c300b9f9ed871b19",
+      "c300b9f9ed871b19",
+      "c300b9f9ed871b19"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.416488512,
+      "avg_fetch_time": 1.7360814186666669,
+      "success_count": 6
+    }
+  },
+  "http://epg.112114.xyz/douyu/2793084": {
+    "phash": [
+      "957ef688b6b2a881",
+      "9379e524ef34e620",
+      "c1e38f84fa8ba5a4",
+      "c11efa80ba939f85",
+      "959979887ae836b4",
+      "c0e33338e8eea3cc"
+    ],
+    "ahash": [
+      "be1e02021a3a3e3e",
+      "aa2c2c2c2c2c3e3e",
+      "7e6e6e6c646e6a6a",
+      "3c7e2e6e7e7e7e6e",
+      "1e1e1e3c3e7e7820",
+      "60707a7a5a424a7a"
+    ],
+    "dhash": [
+      "6c765646d2f25a4e",
+      "525a5858d8c8dc5c",
+      "cadade989496d2da",
+      "e8ccdcd4d4cacac8",
+      "b8f8fcf8e8e0c0c4",
+      "c8c4c484b4989cc0"
+    ],
+    "whash": [
+      "ae2e02823a3e3ebe",
+      "aa2c2c2c2c3c3efe",
+      "6e6e6664646a6a6a",
+      "2c622e6e726a6e6c",
+      "1e1e0e3e3e7e7a00",
+      "62727a7a5a4a4a7a"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 29.79326297199998,
+      "avg_fetch_time": 4.9655438286666636,
+      "success_count": 6
+    }
+  },
+  "https://stream2.jlntv.cn/liaoyuan1/sd/live.m3u8": {
+    "phash": [
+      "fac994b66b61980e",
+      "fac994b66b61980e",
+      "fac994b66b61980e",
+      "fac994b66b61980e",
+      "fac994b66b61980e",
+      "fac994b66b61980e"
+    ],
+    "ahash": [
+      "e79df9e1818f66fd",
+      "e79df9e1818f66fd",
+      "e79df9e1818f66fd",
+      "e79df9e1818f66fd",
+      "e79df9e1818f66fd",
+      "e79df9e1818f66fd"
+    ],
+    "dhash": [
+      "cdaa93cb293d4c69",
+      "ccaa93cb293d4c69",
+      "ccaa93cb293d4c69",
+      "ccaa93cb293d4c69",
+      "ccaa93cb293d4c69",
+      "ccaa93cb293d4c69"
+    ],
+    "whash": [
+      "ffdf6060040c27bd",
+      "ffde6060040c27bf",
+      "ffde6060040c27bf",
+      "ffde6060040c27bf",
+      "ffde6060040c27bf",
+      "ffdf6060040c27bd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 30.987401201999887,
+      "avg_fetch_time": 5.164566866999981,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/6091425": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55f4db983540] Stream ends prematurely at 237554, should be 18446744073709551615\n    Last message repeated 1 times\n[in#0/flv @ 0x55f4db9c1dc0] could not seek to position 119858.802\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/6091425':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.655b\n  Duration: 00:00:00.00, start: 119856.802000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 98 kb/s\n  Stream #0:1: Video: h264 (High), yuvj420p(pc, bt709/bt709/iec61966-2-1, progressive), 1280x720, 3072 kb/s, 25 fps, 25 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55f4db983540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55f4db9c1dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55f4db9c1dc0] Error retrieving a packet from demuxer: Input/output error\n[swscaler @ 0x55f4dbae0040] deprecated pixel format used, make sure you did set range correctly\n[vost#0:0/png @ 0x55f4dba88380] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55f4dba22200] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55f4dba22200] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8": {
+    "phash": [
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc"
+    ],
+    "ahash": [
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff"
+    ],
+    "dhash": [
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c"
+    ],
+    "whash": [
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 33.145409369999925,
+      "avg_fetch_time": 5.524234894999988,
+      "success_count": 6
+    }
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8": {
+    "phash": [
+      "d0bc2e7a0405dfa7",
+      "d4fb7b043cd2250e",
+      "9c7a6b94702d0f4b",
+      "d0bc2e7a0405dfa7",
+      "d0bc2e7a0405dfa7",
+      "d0bc2e7a0405dfa7"
+    ],
+    "ahash": [
+      "00c3fffefcfc0000",
+      "00ffffff1e7e7c00",
+      "00803c7e7e3e1200",
+      "00c1fffefcfe0000",
+      "00c1fffefcfe0000",
+      "00c1fffefcfe0000"
+    ],
+    "dhash": [
+      "002f60908008c0c8",
+      "2aa0c0b0b4a6b061",
+      "2b3870b4b064e609",
+      "002f60908008c0c8",
+      "002f60908008c0c8",
+      "002f60908008c0c8"
+    ],
+    "whash": [
+      "00c1fffefcfc6000",
+      "00ffffff103e1800",
+      "00bc3e7e7e3e3e00",
+      "00c7fffef8fc4000",
+      "00c7fffef8fc4000",
+      "00c7fffef8fc4000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 34.37716006500011,
+      "avg_fetch_time": 5.729526677500019,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/12560807": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x555c850a8540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x555c850e6ec0] Packet corrupt (stream = 1, dts = 12208966).\n[h264 @ 0x555c851552c0] Invalid NAL unit size (34861 > 20617).\n[h264 @ 0x555c851552c0] missing picture in access unit with size 20671\n[https @ 0x555c850a8540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x555c850e6dc0] could not seek to position 12210.342\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/12560807':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : obs-output module (libobs version 21.1.0)\n  Duration: 00:00:00.00, start: 12208.342000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264 (Main), yuv420p(tv, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], 4096 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x555c850a8540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x555c850e6dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x555c850e6dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x555c85241500] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x555c85221e00] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x555c85221e00] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://204.12.221.218:8181/3m1080p/cctv6.m3u8": {
+    "phash": [
+      "80d27cac5a71572f",
+      "80d27cac5a71572f",
+      "c1c07c7f1f391c64",
+      "c1c07c7f1f391c64",
+      "c1c07c7f1f391c64",
+      "c1c07c7f1f391c64"
+    ],
+    "ahash": [
+      "005e7e7e3f170300",
+      "005e7e7e3f170300",
+      "00ff7f7f78394100",
+      "00ff7f7f78394100",
+      "00ff7f7f78394100",
+      "00ff7f7f78394100"
+    ],
+    "dhash": [
+      "b8b0d0d877f6b717",
+      "b8b0d0d877f6b717",
+      "8b8c85d2c0d39383",
+      "8b8c85d2c0d39383",
+      "8b8c85d2c0d39383",
+      "8b8c85d2c0d39383"
+    ],
+    "whash": [
+      "007e7e7f3f1f0300",
+      "007e7e7f3f1f0300",
+      "007f7f7f78396100",
+      "007f7f7f78396100",
+      "007f7f7f78396100",
+      "007f7f7f78396100"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.795687466999993,
+      "avg_fetch_time": 1.6326145778333323,
+      "success_count": 6
+    }
+  },
+  "http://69.30.245.50/live/cctv9.m3u8": {
+    "phash": [
+      "e1613ecec7336886",
+      "e1613ecec7336886",
+      "e1613ecec7336886",
+      "e1613ecec7336886",
+      "e1613ecec7336886",
+      "8ef7717c8c274906"
+    ],
+    "ahash": [
+      "e1e1e1e1f8f0fc38",
+      "e1e1e1e1f8f0fc38",
+      "e1e1e1e1f8f0fc38",
+      "e1e1e1e1f8f0fc38",
+      "e1e1e1e1f8f0fc38",
+      "c1ff3e3f3e180010"
+    ],
+    "dhash": [
+      "838393d3c393c960",
+      "838393d3c393c960",
+      "838393d3c393c960",
+      "838393d3c393c960",
+      "838393d3c393c960",
+      "8e5871647472c5d7"
+    ],
+    "whash": [
+      "e0e1e1e0f8f0fc38",
+      "e0e1e1e0f8f0fc38",
+      "e0e1e1e0f8f0fc38",
+      "e0e1e1e0f8f0fc38",
+      "e0e1e1e0f8f0fc38",
+      "c1ff3f3f3f180010"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.688539477000063,
+      "avg_fetch_time": 1.4480899128333438,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/10084875": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x5625f3906540] HTTP error 403 Forbidden\n[in#0 @ 0x5625f3944dc0] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file https://live.ottiptv.cc/douyu/10084875.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://120.76.248.139/live/bfgd/4200000062.m3u8": {
+    "phash": [
+      "ea9c5462153f436b",
+      "ea9c5462153f436b",
+      "cc9b1a6635e47133",
+      "cc9b1a6635e47133",
+      "ecd65d2b10742bd4",
+      "c82f72d02fd6291e"
+    ],
+    "ahash": [
+      "00fffd99fdf1e100",
+      "00fffd99fdf1e100",
+      "003f7ff000f8ff00",
+      "003f7ff000f8ff00",
+      "00ffffffff81db00",
+      "00f8183819fefe00"
+    ],
+    "dhash": [
+      "a2235b3b09c95703",
+      "a2235b3b09c95703",
+      "a4f9f3e255e3e555",
+      "a4f9f3e255e3e555",
+      "8a0ac496870bb6b0",
+      "a00272f2b390b0f1"
+    ],
+    "whash": [
+      "00fffd99d1f1e100",
+      "00fffd99d1f1e100",
+      "003f7ffa00f8ff00",
+      "003f7ffa00f8ff00",
+      "00ffffff4301d200",
+      "00feba3251fefe00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.194517707000045,
+      "avg_fetch_time": 2.8657529511666744,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/1218414": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x555af9bb8dc0] could not seek to position 387244.063\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/1218414':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.659b\n  Duration: 00:00:00.00, start: 387242.063000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1280x720 [SAR 1:1 DAR 16:9], 1536 kb/s, 25 fps, 25 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x555af9c849c0] co located POCs unavailable\n[h264 @ 0x555af9c0c380] co located POCs unavailable\n[https @ 0x555af9b7a540] Stream ends prematurely at 60493, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x555af9bb8ec0] Packet corrupt (stream = 1, dts = 387244141).\n[NULL @ 0x555af9c272c0] Invalid NAL unit size (16127 > 12966).\n[NULL @ 0x555af9c272c0] missing picture in access unit with size 13020\n[in#0/flv @ 0x555af9bb8dc0] corrupt input packet in stream 1\n[https @ 0x555af9b7a540] Stream ends prematurely at 60493, should be 18446744073709551615\n[in#0/flv @ 0x555af9bb8dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x555af9bb8dc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x555af9c0c380] Invalid NAL unit size (16127 > 12966).\n[h264 @ 0x555af9c0c380] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x555af9cbf640] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x555af9c84500] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x555af9cbf640] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x555af9e3bd80] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x555af9e3bd80] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/426517": {
+    "phash": [
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363"
+    ],
+    "ahash": [
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00"
+    ],
+    "dhash": [
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3"
+    ],
+    "whash": [
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.339594731000034,
+      "avg_fetch_time": 1.7232657885000056,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/7356023": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x55e89b63bdc0] could not seek to position 199573.346\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/7356023':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : obs-output module (libobs version 27.0.0)\n  Duration: 00:00:00.00, start: 199571.346000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1843 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55e89b5fd540] Stream ends prematurely at 54733, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55e89b63bec0] Packet corrupt (stream = 1, dts = 199572903).\n[NULL @ 0x55e89b6aa2c0] Invalid NAL unit size (19982 > 6714).\n[NULL @ 0x55e89b6aa2c0] missing picture in access unit with size 6756\n[in#0/flv @ 0x55e89b63bdc0] corrupt input packet in stream 1\n[https @ 0x55e89b5fd540] Stream ends prematurely at 54733, should be 18446744073709551615\n[in#0/flv @ 0x55e89b63bdc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55e89b63bdc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x55e89b888600] Invalid NAL unit size (19982 > 6714).\n[h264 @ 0x55e89b888600] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x55e89b64ea00] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x55e89b69c080] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x55e89b64ea00] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x55e89b673e80] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55e89b673e80] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/508118": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x560a248c3540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x560a24901ec0] Packet corrupt (stream = 1, dts = 893112422).\n[h264 @ 0x560a249702c0] Invalid NAL unit size (17557 > 6732).\n[h264 @ 0x560a249702c0] missing picture in access unit with size 6786\n[https @ 0x560a248c3540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x560a24901dc0] could not seek to position 893113.593\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/508118':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : obs-output module (libobs version 31.0.1)\n    DouyuTVBroadcasterVersion: 6.2.7.1\n    dy_pusher_version: 1.4.1\n  Duration: 00:00:00.00, start: 893111.593000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 2560 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x560a248c3540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x560a24901dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x560a24901dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x560a24b56900] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    dy_pusher_version: 1.4.1\n    DouyuTVBroadcasterVersion: 6.2.7.1\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x560a24c3b140] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x560a24c3b140] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/299854": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x557cc44b4dc0] could not seek to position 238515.785\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/299854':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    d_cate          : 3\n    d_client        : 3\n    dy_app_name     : DouyuTVBroadcaster\n    dy_app_version  : 6.6.0.3\n    dy_cpu_model    : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz\n    dy_encoder_type : DY264\n    dy_exe_start_time: 2026/8/27 07:16:38\n    dy_gpu_model    : Intel(R) HD Graphics\n    dy_mac          : 54-04-A6-56-42-B5\n    dy_os_version   : Windows_10\n    encoder         : DyLiveEncoder(DY264)\n    hasWatermark    : 1\n    z_canvas_code   : 我的场景: 全屏, 窗口(PotPlayerMini64.exe)\n  Duration: 00:00:00.00, start: 238513.785000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264 (Main), yuv420p(tv, bt709, progressive), 1440x900 [SAR 1:1 DAR 8:5], 983 kb/s, 25 fps, 25 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x557cc4476540] Stream ends prematurely at 175693, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x557cc44b4ec0] Packet corrupt (stream = 1, dts = 238516785).\n[NULL @ 0x557cc45232c0] Invalid NAL unit size (62404 > 31245).\n[NULL @ 0x557cc45232c0] missing picture in access unit with size 31360\n[in#0/flv @ 0x557cc44b4dc0] corrupt input packet in stream 1\n[https @ 0x557cc4476540] Stream ends prematurely at 175693, should be 18446744073709551615\n[in#0/flv @ 0x557cc44b4dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x557cc44b4dc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x557cc45843c0] Invalid NAL unit size (62404 > 31245).\n[h264 @ 0x557cc45843c0] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x557cc47b2840] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x557cc47edcc0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    d_cate          : 3\n    d_client        : 3\n    dy_app_name     : DouyuTVBroadcaster\n    dy_app_version  : 6.6.0.3\n    dy_cpu_model    : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz\n    dy_encoder_type : DY264\n    dy_exe_start_time: 2026/8/27 07:16:38\n    dy_gpu_model    : Intel(R) HD Graphics\n    dy_mac          : 54-04-A6-56-42-B5\n    dy_os_version   : Windows_10\n    z_canvas_code   : 我的场景: 全屏, 窗口(PotPlayerMini64.exe)\n    hasWatermark    : 1\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1440x900 [SAR 1:1 DAR 8:5], q=2-31, 200 kb/s, 25 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x557cc47b2840] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x557cc4679000] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x557cc4679000] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/7642724": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x5611fcfb4dc0] could not seek to position 44825.000\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/7642724':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    d_cate          : 3\n    d_client        : 3\n    dy_app_name     : DouyuTVBroadcaster\n    dy_app_version  : 6.6.0.3\n    dy_cpu_model    : Intel(R) Celeron(R) CPU N3450 @ 1.10GHz\n    dy_encoder_type : DY264\n    dy_exe_start_time: 2026/8/29 13:03:53\n    dy_gpu_model    : Intel(R) HD Graphics 500\n    dy_mac          : 84-39-BE-66-CD-9E\n    dy_os_version   : Windows_10\n    encoder         : DyLiveEncoder(DY264)\n    hasWatermark    : 1\n    z_canvas_code   : 我的场景: 视频集 1, 文本 1\n  Duration: 00:00:00.00, start: 44823.000000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 983 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x5611fcf76540] Stream ends prematurely at 175693, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x5611fcfb4ec0] Packet corrupt (stream = 1, dts = 44825666).\n[NULL @ 0x5611fd0232c0] Invalid NAL unit size (6316 > 3059).\n[NULL @ 0x5611fd0232c0] missing picture in access unit with size 3101\n[in#0/flv @ 0x5611fcfb4dc0] corrupt input packet in stream 1\n[https @ 0x5611fcf76540] Stream ends prematurely at 175693, should be 18446744073709551615\n[in#0/flv @ 0x5611fcfb4dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x5611fcfb4dc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x5611fd0a53c0] Invalid NAL unit size (6316 > 3059).\n[h264 @ 0x5611fd0a53c0] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x5611fd275240] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x5611fd2022c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    d_cate          : 3\n    d_client        : 3\n    dy_app_name     : DouyuTVBroadcaster\n    dy_app_version  : 6.6.0.3\n    dy_cpu_model    : Intel(R) Celeron(R) CPU N3450 @ 1.10GHz\n    dy_encoder_type : DY264\n    dy_exe_start_time: 2026/8/29 13:03:53\n    dy_gpu_model    : Intel(R) HD Graphics 500\n    dy_mac          : 84-39-BE-66-CD-9E\n    dy_os_version   : Windows_10\n    z_canvas_code   : 我的场景: 视频集 1, 文本 1\n    hasWatermark    : 1\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x5611fd275240] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x5611fd1b4400] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x5611fd1b4400] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://stream2.jlntv.cn/baishan1/sd/live.m3u8": {
+    "phash": [
+      "c8918d69711e736b",
+      "c8918d69711e736b",
+      "c8918d69711e736b",
+      "c8918d69711e736b",
+      "c8918d69711e736b",
+      "c8918d69711e736b"
+    ],
+    "ahash": [
+      "587f1e8660701838",
+      "587f1e8660701838",
+      "587f1e8660701838",
+      "587f1e8660701838",
+      "587f1e8660701838",
+      "587f1e8660701838"
+    ],
+    "dhash": [
+      "b2f27c3cc3c361f0",
+      "b2f27c3cc3c361f0",
+      "b2f27c3cc3c361f0",
+      "b2f27c3cc3c361f0",
+      "b2f27c3cc3c361f0",
+      "b2f27c3cc3c361f0"
+    ],
+    "whash": [
+      "7e7e3c8e6070383c",
+      "7e7e3c8e6070383c",
+      "7e7e3c8e6070383c",
+      "7e7e3c8e6070383c",
+      "7e7e3c8e6070383c",
+      "7e7e3c8e6070383c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.202554245999863,
+      "avg_fetch_time": 4.200425707666644,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/2793084": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x564150991540] Stream ends prematurely at 448, should be 18446744073709551615\n    Last message repeated 2 times\n[flv @ 0x5641509cfec0] Could not find codec parameters for stream 1 (Video: h264, none, 1843 kb/s): unspecified size\nConsider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options\n[https @ 0x564150991540] Stream ends prematurely at 448, should be 18446744073709551615\n    Last message repeated 1 times\n[in#0/flv @ 0x5641509cfdc0] could not seek to position 2.000\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/2793084':\n  Metadata:\n    audiochannels   : 2\n    fileSize        : 0\n    encoder         : Open Broadcaster Software v0.659b\n  Duration: 00:00:00.00, start: 0.000000, bitrate: N/A\n  Stream #0:0: Audio: aac, 44100 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264, none, 1843 kb/s, 25 fps, 1k tbr, 1k tbn\nOutput #0, image2pipe, to 'pipe:':\n[out#0/image2pipe @ 0x564150d078c0] Output file does not contain any stream\nError opening output file -.\nError opening output files: Invalid argument"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqpub/cctv8k.m3u8?auth=testpub": {
+    "phash": [
+      "d64a35c916ff0217",
+      "d64935d007ff1217",
+      "d64834d817ef1237",
+      "d64b34d816ef0237",
+      "d64b34d816ef0237",
+      "d64b34d816ef0237"
+    ],
+    "ahash": [
+      "14d8bcdd3cfcfe06",
+      "14c88cfd3cecfe06",
+      "000020fc3cfcf606",
+      "00003cbc3c7cf606",
+      "00003cbc3c7cf606",
+      "00003cbc3c7cf606"
+    ],
+    "dhash": [
+      "f4b17915e898067c",
+      "f4b13961f898047c",
+      "f4b16161f8f8046c",
+      "f4916169f8f8047c",
+      "f4916169f8f8047c",
+      "f4916169f8f8047c"
+    ],
+    "whash": [
+      "1480bccd3cfcfe06",
+      "0480bcfd3cecfe06",
+      "0400bcfd3cfcfe06",
+      "0480bcfc3cfcfe06",
+      "0480bcfc3cfcfe06",
+      "0480bcfc3cfcfe06"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.237144104000208,
+      "avg_fetch_time": 1.8728573506667014,
+      "success_count": 6
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8hd": {
+    "phash": [
+      "8759ec5039ed6686",
+      "8759ec5039ed6686",
+      "8759ec5039ed6686",
+      "d2683bcc2cd6b193",
+      "d2683bcc2cd6b193",
+      "d2683bcc2cd6b193"
+    ],
+    "ahash": [
+      "0000302c0e6e7f33",
+      "0000302c0e6e7f33",
+      "0000302c0e6e7f33",
+      "00006c347e7e3c2c",
+      "00006c347e7e3c2c",
+      "00006c347e7e3c2c"
+    ],
+    "dhash": [
+      "83e8684af8acef67",
+      "83e8684af8acef67",
+      "83e8684af8acef67",
+      "a7d3c8e4d4d4ecd9",
+      "a7d3c8e4d4d4ecd9",
+      "a7d3c8e4d4d4ecd9"
+    ],
+    "whash": [
+      "4020302e2e7eff77",
+      "4020302e2e7eff77",
+      "4020302e2e7eff77",
+      "00007c347e7e7e3f",
+      "00007c347e7e7e3f",
+      "00007c347e7e7e3f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.534295061000194,
+      "avg_fetch_time": 2.0890491768333654,
+      "success_count": 6
+    }
+  },
+  "http://223.112.114.228:50080/newlive/live/hls/180/live.m3u8": {
+    "phash": [
+      "de4ca4f0b4a8de98",
+      "d22db03c871f6f42",
+      "b530ce4eb1094f37",
+      "b8c947d6963c2ac3",
+      "b8c947d6963c2ac3",
+      "f5182da5709a742f"
+    ],
+    "ahash": [
+      "d210109094e4efff",
+      "0340183c7cdcfcff",
+      "03c7870303332b2f",
+      "fffbd9dbdfcb8002",
+      "fffbd9dbdfcb8002",
+      "000000fce0ffffe6"
+    ],
+    "dhash": [
+      "b6a27175754d4d0c",
+      "8e8ce070e534b98c",
+      "a68c1e9e5e634a4e",
+      "29c3b3b2b337168c",
+      "29c3b3b2b337168c",
+      "36ac6888028e4e4c"
+    ],
+    "whash": [
+      "d21090909ce4efff",
+      "0300183c7cbcfcff",
+      "c707c70703333b2f",
+      "fffbd9db5b800000",
+      "fffbd9db5b800000",
+      "000008fcf0ffffe6"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 39.314738594999994,
+      "avg_fetch_time": 4.914342324374999,
+      "success_count": 8
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv11hd": {
+    "phash": [
+      "e18874cb13cf3e61",
+      "e18874cb13cf3e61",
+      "e18874cb13cf3e61",
+      "b40cdbc314693e6d",
+      "b40cdbc314693e6d",
+      "b40cdbc314693e6d"
+    ],
+    "ahash": [
+      "7ffff73f677fe3c2",
+      "7ffff73f677fe3c2",
+      "7ffff73f677fe3c2",
+      "7fffc30343e7fbc6",
+      "7fffc30343e7fbc6",
+      "7fffc30343e7fbc6"
+    ],
+    "dhash": [
+      "d0b046d8cc4cd21c",
+      "d0b046d8cc4cd21c",
+      "d0b046d8cc4cd21c",
+      "d0969696844dc21c",
+      "d0969696844dc21c",
+      "d0969696844dc21c"
+    ],
+    "whash": [
+      "7e78e30c64477ac2",
+      "7e78e30c64477ac2",
+      "7e78e30c64477ac2",
+      "7e78c3424267fac2",
+      "7e78c3424267fac2",
+      "7e78c3424267fac2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.476507251999806,
+      "avg_fetch_time": 1.9127512086666343,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/4105989": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55d11bba5540] HTTP error 403 Forbidden\n[in#0 @ 0x55d11bbe3dc0] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file https://live.ottiptv.cc/douyu/4105989.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/8721095": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x556eedaca540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x556eedb08ec0] Packet corrupt (stream = 1, dts = 17252480).\n[h264 @ 0x556eedb772c0] Invalid NAL unit size (24161 > 13197).\n[h264 @ 0x556eedb772c0] missing picture in access unit with size 13239\n[https @ 0x556eedaca540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x556eedb08dc0] could not seek to position 17256.924\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/8721095':\n  Metadata:\n    Tool-Encoder    : kplayer\n    Tool-Website    : https://kplayer.net\n    Library-Version : v1.5.5\n    Libkplayer-Etag : 6D05AADF1D994891276DF1641EA4125D\n    encoder         : libkplayer\n  Duration: 00:00:00.00, start: 17251.924000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 128 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(progressive), 1280x720, 25 fps, 25 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x556eedaca540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x556eedb08dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x556eedb08dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x556eedd5d8c0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    Tool-Encoder    : kplayer\n    Tool-Website    : https://kplayer.net\n    Library-Version : v1.5.5\n    Libkplayer-Etag : 6D05AADF1D994891276DF1641EA4125D\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x556eedb77100] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x556eedb77100] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 4.244758191000074,
+      "avg_fetch_time": 4.244758191000074,
+      "success_count": 1
+    }
+  },
+  "https://live.ottiptv.cc/douyu/74374": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55fa24481540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55fa244bfec0] Packet corrupt (stream = 1, dts = 2471067).\n[h264 @ 0x55fa2452e2c0] Invalid NAL unit size (30084 > 10555).\n[h264 @ 0x55fa2452e2c0] missing picture in access unit with size 10597\n[https @ 0x55fa24481540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x55fa244bfdc0] could not seek to position 2472.102\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/74374':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.659b\n  Duration: 00:00:00.00, start: 2470.102000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1920x1080, 3072 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55fa24481540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55fa244bfdc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55fa244bfdc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x55fa2477e200] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55fa2458e240] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55fa2458e240] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://120.76.248.139/live/bfgd/4200000489.m3u8": {
+    "phash": [
+      "bd96daf049a2855c",
+      "9a99b9654594276b",
+      "9a99b9654594276b",
+      "9a99b1454d96276b",
+      "9a99b1454d96276b",
+      "cea4317b0efc7086"
+    ],
+    "ahash": [
+      "9f8f970300038101",
+      "5f5f1f1c10001000",
+      "5f5f1f1c10001000",
+      "5f5f1f1c10040410",
+      "5f5f1f1c10040410",
+      "fefffef030f8f800"
+    ],
+    "dhash": [
+      "3c3c2e6b161f1d33",
+      "b0b9bdb56565a535",
+      "b0b9bdb56565a535",
+      "b0b9bdf575656d35",
+      "b0b9bdf575656d35",
+      "4c92a465612131f3"
+    ],
+    "whash": [
+      "ffdf9f0303c38101",
+      "ffdf1f1f14241410",
+      "ffdf1f1f14241410",
+      "ff5f1f1d14340511",
+      "ff5f1f1d14340511",
+      "f4fff6f030d0b800"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.219255955999984,
+      "avg_fetch_time": 3.869875992666664,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/6906628": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x556315dd6540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x556315e14ec0] Packet corrupt (stream = 1, dts = 12333933).\n[h264 @ 0x556315e832c0] Invalid NAL unit size (11806 > 10950).\n[h264 @ 0x556315e832c0] missing picture in access unit with size 11004\n[https @ 0x556315dd6540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x556315e14dc0] could not seek to position 12335.335\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/6906628':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : obs-output module (libobs version 21.1.0)\n  Duration: 00:00:00.00, start: 12333.335000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264 (Main), yuv420p(tv, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], 4096 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x556315dd6540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x556315e14dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x556315e14dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x556315e82e40] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55631614d800] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55631614d800] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://stream2.jlntv.cn/tonghua1/sd/live.m3u8": {
+    "phash": [
+      "de69969661c1a1cd",
+      "de69969661c1a1cd",
+      "de69969661c1a1cd",
+      "de69969661c1a1cd",
+      "de69969661c1a1cd",
+      "de69969661c1a1cd"
+    ],
+    "ahash": [
+      "febc7901000e3c7e",
+      "febc7901000e3c7e",
+      "febc7901000e3c7e",
+      "febc7901000e3c7e",
+      "febc7901000e3c7e",
+      "febc7901000e3c7e"
+    ],
+    "dhash": [
+      "8c69c303461c68ea",
+      "8c69c303461c68ea",
+      "8c69c303461c68ea",
+      "8c69c303461c68ea",
+      "8c69c3034e1c68ea",
+      "8c69c3034e1c68ea"
+    ],
+    "whash": [
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e",
+      "ff3ce0c1000e3e7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 29.322419537999963,
+      "avg_fetch_time": 4.887069922999994,
+      "success_count": 6
+    }
+  },
+  "http://183.94.146.79:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      "adadd2d2b19212e3",
+      "adad52d2b59212e3",
+      "adad52d2b59212e3",
+      "adadd2d2b19212e3",
+      "adadd2d2b19212e3",
+      "f221bc422e1f39d6"
+    ],
+    "ahash": [
+      "1f1b1b1b33002000",
+      "1f1b1b1b33002000",
+      "1f1b1b1b33002000",
+      "1f1b1b1b33003000",
+      "1f1b1b1b33003000",
+      "8040400064ecfeff"
+    ],
+    "dhash": [
+      "b3333373f369ebcb",
+      "b3333373f369ebcb",
+      "b3333373f369ebcb",
+      "b3333373f369ebcb",
+      "b3333373f369ebcb",
+      "069c9c4fcc985434"
+    ],
+    "whash": [
+      "ff3b1b1b73117100",
+      "ff1b1b1b7b117100",
+      "ff1b1b1b7b117100",
+      "ff1b1b1b7b117100",
+      "ff1b1b1b7b117100",
+      "c0c0c000f4ecffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.15575903599995,
+      "avg_fetch_time": 3.025959839333325,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/6027991": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x5595e6b11dc0] could not seek to position 11731.769\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/6027991':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.655b\n  Duration: 00:00:00.00, start: 11729.769000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 98 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1280x720, 1536 kb/s, 25 fps, 25 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x5595e6c18640] co located POCs unavailable\n[h264 @ 0x5595e6c4b540] mmco: unref short failure\n[https @ 0x5595e6ad3540] Stream ends prematurely at 161293, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x5595e6b11ec0] Packet corrupt (stream = 1, dts = 11732640).\n[NULL @ 0x5595e6b802c0] Invalid NAL unit size (17258 > 249).\n[NULL @ 0x5595e6b802c0] missing picture in access unit with size 291\n[in#0/flv @ 0x5595e6b11dc0] corrupt input packet in stream 1\n[https @ 0x5595e6ad3540] Stream ends prematurely at 161293, should be 18446744073709551615\n[in#0/flv @ 0x5595e6b11dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x5595e6b11dc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x5595e6c99680] Invalid NAL unit size (17258 > 249).\n[h264 @ 0x5595e6c99680] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x5595e6d94cc0] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x5595e6c1c080] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x5595e6d94cc0] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x5595e6bfe040] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x5595e6bfe040] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/douyu/5875025": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x5559e7c00dc0] could not seek to position 142685.605\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/5875025':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.655b\n  Duration: 00:00:00.00, start: 142683.605000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1280x720, 2048 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x5559e7bc2540] Stream ends prematurely at 152653, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x5559e7c00ec0] Packet corrupt (stream = 1, dts = 142685894).\n[NULL @ 0x5559e7c6f2c0] Invalid NAL unit size (2289 > 99).\n[NULL @ 0x5559e7c6f2c0] missing picture in access unit with size 141\n[in#0/flv @ 0x5559e7c00dc0] corrupt input packet in stream 1\n[https @ 0x5559e7bc2540] Stream ends prematurely at 152653, should be 18446744073709551615\n[in#0/flv @ 0x5559e7c00dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x5559e7c00dc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x5559e7cf0d00] Invalid NAL unit size (2289 > 99).\n[h264 @ 0x5559e7cf0d00] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x5559e7dc2a00] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x5559e7d83940] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x5559e7dc2a00] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x5559e7d87f40] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x5559e7d87f40] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://120.76.248.139/live/bfgd/4200000063.m3u8": {
+    "phash": [
+      "9c4ed0c67b15b583",
+      "a9ad72d6b19212e3",
+      "a9ad72d6b19212e3",
+      "a9ad72d6b19212e3",
+      "8273721db41ead4d",
+      "9c4ed8c67b15b491"
+    ],
+    "ahash": [
+      "1c1c1f0b31370fcf",
+      "1f1b1b1b3b003000",
+      "1f1b1b1b3b003000",
+      "1f1b1b1b3b003000",
+      "046465073b1b1d76",
+      "3c1c1f0b3b370fcf"
+    ],
+    "dhash": [
+      "b1b5b67267e6fc98",
+      "b3333373f369ebcb",
+      "b3333373f369ebcb",
+      "b3333373f369ebcb",
+      "cdd9cbeee3f3e984",
+      "b1b5b67267e6fc98"
+    ],
+    "whash": [
+      "1c1d1b0b31370fcf",
+      "ff1b1b1b7b117100",
+      "ff1b1b1b7b117100",
+      "ff1b1b1b7b117100",
+      "046463273b3b1d77",
+      "1c1d1b0b31370fcf"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 17.921086263000234,
+      "avg_fetch_time": 2.986847710500039,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/6672862": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x55adf3f51dc0] could not seek to position 2556558.736\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/6672862':\n  Metadata:\n    encoder         : Lavf59.16.100\n  Duration: 00:00:00.00, start: 2556556.736000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 62.50 fps, 60 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x55adf401fe80] mmco: unref short failure\n[https @ 0x55adf3f13540] Stream ends prematurely at 207373, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55adf3f51ec0] Packet corrupt (stream = 1, dts = 2556558714).\n[NULL @ 0x55adf3fc02c0] Invalid NAL unit size (125728 > 86827).\n[NULL @ 0x55adf3fc02c0] missing picture in access unit with size 86952\n[in#0/flv @ 0x55adf3f51dc0] corrupt input packet in stream 1\n[https @ 0x55adf3f13540] Stream ends prematurely at 207373, should be 18446744073709551615\n[in#0/flv @ 0x55adf3f51dc0] Error during demuxing: Input/output error\n[h264 @ 0x55adf4042180] Invalid NAL unit size (125728 > 86827).\n[h264 @ 0x55adf4042180] Error splitting the input into NAL units.\n[in#0/flv @ 0x55adf3f51dc0] Error retrieving a packet from demuxer: Input/output error\n[vist#0:1/h264 @ 0x55adf4112dc0] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x55adf3f60ac0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 60 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x55adf4112dc0] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x55adf4040f40] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55adf4040f40] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 2.335889722999923,
+      "avg_fetch_time": 2.335889722999923,
+      "success_count": 1
+    }
+  },
+  "https://live.ottiptv.cc/douyu/5668371": {
+    "phash": [
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363"
+    ],
+    "ahash": [
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00"
+    ],
+    "dhash": [
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3"
+    ],
+    "whash": [
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.570431017999908,
+      "avg_fetch_time": 1.7617385029999848,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/2758565": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55858ad3b540] Stream ends prematurely at 63621, should be 18446744073709551615\n    Last message repeated 1 times\n[in#0/flv @ 0x55858ad79dc0] could not seek to position 2152850.791\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/2758565':\n  Metadata:\n    encoder         : Lavf59.16.100\n  Duration: 00:00:00.00, start: 2152848.791000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 44100 Hz, stereo, fltp\n  Stream #0:1: Video: h264 (High), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 47.95 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55858ad3b540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55858ad79dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55858ad79dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x55858ae40480] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 47.95 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55858adb1e80] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55858adb1e80] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://198.204.228.26/live/cctv10hd.m3u8": {
+    "phash": [
+      "ecc690383ec66fc1",
+      "ecc690383ec66fc1",
+      "eb189447de986b94",
+      "eb189447de986b94",
+      "eb189447de986b94",
+      "eb189447de986b94"
+    ],
+    "ahash": [
+      "7e7e71318181ffff",
+      "7e7e71318181ffff",
+      "fefe01012121ffff",
+      "fefe01012121ffff",
+      "fefe01012121ffff",
+      "fefe01012121ffff"
+    ],
+    "dhash": [
+      "fcc0e363332bc8a8",
+      "fcc0e363332bc8a8",
+      "c4f01b4b4b4bc8bc",
+      "c4f01b4b4b4bc8bc",
+      "c4f01b4b4b4bc8bc",
+      "c4f01b4b4b4bc8bc"
+    ],
+    "whash": [
+      "7e7e703100007eff",
+      "7e7e703100007eff",
+      "7e7e012120207fff",
+      "7e7e012120207fff",
+      "7e7e012120207fff",
+      "7e7e012120207fff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 13.012629572000264,
+      "avg_fetch_time": 2.1687715953333773,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/7812810": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[https @ 0x55e1cf245540] Stream ends prematurely at 388813, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x55e1cf283ec0] Packet corrupt (stream = 1, dts = 24950866).\n[h264 @ 0x55e1cf2f22c0] Invalid NAL unit size (6696 > 623).\n[h264 @ 0x55e1cf2f22c0] missing picture in access unit with size 677\n[https @ 0x55e1cf245540] Stream ends prematurely at 388813, should be 18446744073709551615\n[in#0/flv @ 0x55e1cf283dc0] could not seek to position 24952.018\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/7812810':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : obs-output module (libobs version 29.1.3)\n  Duration: 00:00:00.00, start: 24950.018000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 163 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 2560 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x55e1cf245540] Stream ends prematurely at 13, should be 18446744073709551615\n[in#0/flv @ 0x55e1cf283dc0] Error during demuxing: Input/output error\n[in#0/flv @ 0x55e1cf283dc0] Error retrieving a packet from demuxer: Input/output error\n[vost#0:0/png @ 0x55e1cf39b100] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    2.1             : false\n    3.1             : false\n    4.0             : false\n    4.1             : false\n    5.1             : false\n    7.1             : false\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[out#0/image2pipe @ 0x55e1cf5bc800] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x55e1cf5bc800] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://epg.112114.xyz/douyu/20415": {
+    "phash": [
+      "916f6c914b9c6137",
+      "916f6c914b9c6137",
+      "916f6c914b9c6137",
+      "957a6ea55e9619a0",
+      "fdbf3dbd22882280",
+      "99763f9d26992c22"
+    ],
+    "ahash": [
+      "0000003c7e7e5e00",
+      "0000003c7e7e5e00",
+      "0000003c7e7e5e00",
+      "00001c3e7e7e7e00",
+      "83837fffefff1a00",
+      "83800000181c3c00"
+    ],
+    "dhash": [
+      "0746f0f0d8d4bc0c",
+      "0746f0f0d8d4bc0c",
+      "0746f0f0d8d4bc0c",
+      "0770f0f8d4ccccd4",
+      "0702800000203291",
+      "1703800830b270d8"
+    ],
+    "whash": [
+      "81001c7e7e7fff00",
+      "81001c7e7e7fff00",
+      "81001c7e7e7fff00",
+      "80003c7e7e7fff00",
+      "83b07e7e7e7e1800",
+      "838000023c7e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.79513494899993,
+      "avg_fetch_time": 4.132522491499988,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/douyu/1226741": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\n  libavutil      58. 29.100 / 58. 29.100\n  libavcodec     60. 31.102 / 60. 31.102\n  libavformat    60. 16.100 / 60. 16.100\n  libavdevice    60.  3.100 / 60.  3.100\n  libavfilter     9. 12.100 /  9. 12.100\n  libswscale      7.  5.100 /  7.  5.100\n  libswresample   4. 12.100 /  4. 12.100\n  libpostproc    57.  3.100 / 57.  3.100\n[in#0/flv @ 0x5566208c7dc0] could not seek to position 77093.499\nInput #0, flv, from 'https://live.ottiptv.cc/douyu/1226741':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Open Broadcaster Software v0.659b\n  Duration: 00:00:00.00, start: 77091.499000, bitrate: N/A\n  Stream #0:0: Audio: aac (LC), 48000 Hz, stereo, fltp, 131 kb/s\n  Stream #0:1: Video: h264 (High), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1280x720 [SAR 1:1 DAR 16:9], 2048 kb/s, 30 fps, 30 tbr, 1k tbn\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x556620889540] Stream ends prematurely at 5773, should be 18446744073709551615\n    Last message repeated 1 times\n[flv @ 0x5566208c7ec0] Packet corrupt (stream = 1, dts = 77092930).\n[NULL @ 0x5566209362c0] Invalid NAL unit size (13613 > 4026).\n[NULL @ 0x5566209362c0] missing picture in access unit with size 4080\n[in#0/flv @ 0x5566208c7dc0] corrupt input packet in stream 1\n[https @ 0x556620889540] Stream ends prematurely at 5773, should be 18446744073709551615\n[in#0/flv @ 0x5566208c7dc0] Error during demuxing: Input/output error\n[h264 @ 0x556620a4a540] co located POCs unavailable\n[h264 @ 0x556620bece00] co located POCs unavailable\n[in#0/flv @ 0x5566208c7dc0] Error retrieving a packet from demuxer: Input/output error\n[h264 @ 0x5566209268c0] Invalid NAL unit size (13613 > 4026).\n[h264 @ 0x5566209268c0] Error splitting the input into NAL units.\n[vist#0:1/h264 @ 0x55662091a080] Decoding error: Invalid data found when processing input\n[vost#0:0/png @ 0x55662091ad00] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    fileSize        : 0\n    audiochannels   : 2\n    encoder         : Lavf60.16.100\n  Stream #0:0: Video: png, rgb24(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc60.31.102 png\nframe=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    \r[vist#0:1/h264 @ 0x55662091a080] Decode error rate 1 exceeds maximum 0.666667\n[out#0/image2pipe @ 0x556620b4ad80] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\n[out#0/image2pipe @ 0x556620b4ad80] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    \nConversion failed!"
+    },
+    "stats": {
+      "total_fetch_time": 1.6382648950000203,
+      "avg_fetch_time": 1.6382648950000203,
+      "success_count": 1
+    }
+  },
+  "http://183.129.255.66:8480/hls/6/index.m3u8": {
+    "phash": [
+      "f7082865ce9e65a5",
+      "805d63f033d92d67",
+      "805d63f033d92d67",
+      "a6457c3894cd317d",
+      "d50ab474cd876687",
+      "f03d870318cf3cc7"
+    ],
+    "ahash": [
+      "000000fce0e2ffff",
+      "0000101f077fff27",
+      "0000101f077fff27",
+      "0000003f0f4fffff",
+      "000000f8f8e0ffff",
+      "02c0c2c0cce0f4fc"
+    ],
+    "dhash": [
+      "2699e268888e0e8e",
+      "96a662f4dd8e88ce",
+      "96a662f4dd8e88ce",
+      "96c6e6e5bd9d2324",
+      "a69bc0f0000c1c1e",
+      "960e3614999dc98d"
+    ],
+    "whash": [
+      "000020fcf0e6ffff",
+      "00001a1f0f7fff2f",
+      "00001a1f0f7fff2f",
+      "0000203f0f4fffff",
+      "000060f8f8e2ffff",
+      "03c2c2c0ececf4fd"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 40.77746998799989,
+      "avg_fetch_time": 4.07774699879999,
+      "success_count": 10
+    }
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8": {
+    "phash": [
+      "d2c90e256dfab229",
+      "dae9a6246d79d803",
+      "c486393f92d21bd9",
+      "d2c98e246dfa8a2b",
+      "d2c98e246dfa8a2b",
+      "d2c98e246dfa8a2b"
+    ],
+    "ahash": [
+      "f8fcfcdc00060414",
+      "fdfdfcd840040414",
+      "76f2727670606040",
+      "fcfcfcdc00060404",
+      "fcfcfcdc00060404",
+      "fcfcfcdc00060404"
+    ],
+    "dhash": [
+      "a5ac981892ac3c3c",
+      "a5a9991091bd2c2c",
+      "e4c6c4c4c4ced393",
+      "a5ac9818b6ac2c2c",
+      "a5ac9818b6ac2c2c",
+      "a5ac9818b6ac2c2c"
+    ],
+    "whash": [
+      "fcfcfcfc42460414",
+      "fdfdfcf84804041c",
+      "fef2fc7e70606040",
+      "fdfcfcfc40060614",
+      "fdfcfcfc40060614",
+      "fdfcfcfc40060614"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 43.869923825,
+      "avg_fetch_time": 7.3116539708333335,
+      "success_count": 6
+    }
+  },
+  "https://stream2.jlntv.cn/sytv/sd/live.m3u8": {
+    "phash": [
+      "e6c97c61cc19cb89",
+      "e6c97c61cc19cb89",
+      "c0ea3f2f389402bf",
+      "c0ea3f2f389402bf",
+      "c7688477d81b7389",
+      "c7688477d81b7389"
+    ],
+    "ahash": [
+      "f8f0f8f8f0e080e0",
+      "f8f0f8f8f0e080e0",
+      "00fc7c7c7060fcfc",
+      "00fc7c7c7060fcfc",
+      "f0f0f0f8f0e07cfe",
+      "f0f0f0f8f0e07cfe"
+    ],
+    "dhash": [
+      "01054909094c0c2c",
+      "01054909094c0c2c",
+      "93c0c48080c080a0",
+      "93c0c48080c080a0",
+      "01054909890cc4c4",
+      "01054909890cc4c4"
+    ],
+    "whash": [
+      "f8f0f8f8f8e0c0e0",
+      "f8f0f8f8f8e0c0e0",
+      "00fc7c7c70607cfc",
+      "00fc7c7c70607cfc",
+      "f0f0f0f0f0e060fe",
+      "f0f0f0f0f0e060fe"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.354528795999954,
+      "avg_fetch_time": 4.225754799333326,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/huya/11342421": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 52.75898695199999,
+      "avg_fetch_time": 4.396582245999999,
+      "success_count": 12
+    }
+  },
+  "https://stream2.jlntv.cn/ja/sd/live.m3u8": {
+    "phash": [
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52",
+      "ad52ad52ad52ad52"
+    ],
+    "ahash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "dhash": [
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003",
+      "0000000000000003"
+    ],
+    "whash": [
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103",
+      "0000000000000103"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.402439020999964,
+      "avg_fetch_time": 4.400406503499994,
+      "success_count": 6
+    }
+  },
+  "http://183.11.239.36:808/hls/28/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 51.852956199000005,
+      "avg_fetch_time": 10.370591239800001,
+      "success_count": 5
+    }
+  },
+  "http://221.226.51.220:50081/newlive/live/hls/7/live.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 31.464074905000075,
+      "avg_fetch_time": 7.866018726250019,
+      "success_count": 4
+    }
+  },
+  "https://stream2.jlntv.cn/jlcc/sd/live.m3u8": {
+    "phash": [
+      "f2450ffc4183d70b",
+      "86c52cc2f1f578f0",
+      "c38f1730c872dc3e",
+      "a8290fa22757f8e9",
+      "f7ac2c0d8d8bc943",
+      "83ac7e6b2984c36e"
+    ],
+    "ahash": [
+      "7c8020e0ccdfa525",
+      "3333373e3e353717",
+      "3e3f3c7978486478",
+      "0351d92443c5ec05",
+      "b3c7e4e4e4e4e4c6",
+      "ffffff7f01000000"
+    ],
+    "dhash": [
+      "d424c68818294d4d",
+      "e6e6e6e4c5e5e5e6",
+      "6a6a70c3a1989dd1",
+      "7fb393cd8f9d8979",
+      "27244848484c4d54",
+      "331ae4f253c84a49"
+    ],
+    "whash": [
+      "fc8060e0e8ffa725",
+      "3333373634351717",
+      "3e3f3c7978406478",
+      "0353c96543c7ed0f",
+      "b3c7e4a4a4a4e4c7",
+      "ffffff7f01000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 34.18052196900021,
+      "avg_fetch_time": 5.696753661500035,
+      "success_count": 6
+    }
+  },
+  "http://183.11.239.36:808/hls/27/index.m3u8": {
+    "phash": [
+      "8c00f078fd3f0bc7",
+      "95323712131f3b37",
+      "95243d342d2d2f2f",
+      "95243d342d2d2f2f",
+      "e67e99c1a715186a",
+      "e67e99c1a715186a"
+    ],
+    "ahash": [
+      "ffff1f0300003fff",
+      "007e3e7e7e7e3e3c",
+      "007e3e7e7e7e3e3c",
+      "007e3e7e7e7e3e3c",
+      "fef70022e7ffffff",
+      "fef70022e7ffffff"
+    ],
+    "dhash": [
+      "beaaff7fffff2e02",
+      "b8e0f0f0f0f0f0f0",
+      "bee0f0f0f0f0f0f0",
+      "bee0f0f0f0f0f0f0",
+      "f0af35cccce0f0f0",
+      "f0af35cccce0f0f0"
+    ],
+    "whash": [
+      "ff7f0f03000007ff",
+      "003c3c7e7e7e3c18",
+      "003c3c7e7e3e3e18",
+      "003c3c7e7e3e3e18",
+      "18760022e7ff7e1c",
+      "18760022e7ff7e1c"
+    ],
+    "error": {
+      "fail_count": 2,
+      "timeout_count": 2,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 72.71099753999988,
+      "avg_fetch_time": 6.05924979499999,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/huya/30611864": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 55.548221100999854,
+      "avg_fetch_time": 4.629018425083321,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/huya/11342412": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 50.53027848100021,
+      "avg_fetch_time": 4.210856540083351,
+      "success_count": 12
+    }
+  }
+}
