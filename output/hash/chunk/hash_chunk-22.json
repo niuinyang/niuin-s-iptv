@@ -1,0 +1,1244 @@
+{
+  "https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\nmime type is not rfc8216 compliant\n[hls @ 0x649beeacdf00] Opening 'http://192.151.150.154/live/gdty.m3u8' for reading\n[http @ 0x649beeb1a800] HTTP error 404 Not Found\n[hls @ 0x649beeacdf00] parse_playlist error Server returned 404 Not Found [http://192.151.150.154/live/gdty.m3u8]\n[in#0 @ 0x649beeacdc40] Error opening input: Server returned 404 Not Found\nError opening input file https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8.\nError opening input files: Server returned 404 Not Found"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://173.208.234.146/live/vlshz.m3u8": {
+    "phash": [
+      "b4c9926951b2d6c7",
+      "b4c9926951b2d6c7",
+      "96cbb7a3c0a8d685",
+      "b4c9926951b2d6c7",
+      "b4c9926951b2d6c7",
+      "b4c9926951b2d6c7"
+    ],
+    "ahash": [
+      "f8f0762602030706",
+      "f8f0762602030706",
+      "fe98901030070707",
+      "f8f0762602030706",
+      "f8f0762602030706",
+      "f8f0762602030706"
+    ],
+    "dhash": [
+      "91a2e444464e2cfc",
+      "91a2e444464e2cfc",
+      "602020a1646c276c",
+      "91a2e444464e2cfc",
+      "91a2e444464e2cfc",
+      "91a2e444464e2cfc"
+    ],
+    "whash": [
+      "fcf2f6f202070716",
+      "fcf2f6f202070716",
+      "ffbeb85032070707",
+      "fcf2f6f202070716",
+      "fcf2f6f202070716",
+      "fcf2f6f202070716"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.19267867200017,
+      "avg_fetch_time": 1.5321131120000284,
+      "success_count": 6
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqpub/tjtv5.m3u8?auth=testpub": {
+    "phash": [
+      "d5e5e79c12181be1",
+      "d5e5e79c12181be1",
+      "ed4714adcceb2603",
+      "f5dc8a67f50087a8",
+      "cd8d2c453e2ecc3c",
+      "f5dc8a67f50087a8"
+    ],
+    "ahash": [
+      "fee2ea1c1c1c3c3c",
+      "fee2ea1c1c1c3c3c",
+      "301000f9fbf3c980",
+      "ffdefed2c2200072",
+      "927bfbf9f87c8080",
+      "ffdefed2c2200072"
+    ],
+    "dhash": [
+      "06465a78bc787868",
+      "06465a78bc787868",
+      "47b2691343261aa5",
+      "b230b0160e4a938a",
+      "66e2234bcaaa293c",
+      "b230b0160e4a938a"
+    ],
+    "whash": [
+      "fef2e81c1c1c3c2c",
+      "fef2e81c1c1c3c2c",
+      "306090f8fff3eb80",
+      "ffdefed2c2200070",
+      "807afbfbf87c00c0",
+      "ffdefed2c2200070"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.339031545000068,
+      "avg_fetch_time": 2.5565052575000116,
+      "success_count": 6
+    }
+  },
+  "https://goodiptv.club/douyu/6091425": {
+    "phash": [
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363"
+    ],
+    "ahash": [
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00"
+    ],
+    "dhash": [
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3"
+    ],
+    "whash": [
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.84904388900003,
+      "avg_fetch_time": 2.6415073148333383,
+      "success_count": 6
+    }
+  },
+  "http://173.208.234.146/live/vlxyj.m3u8": {
+    "phash": [
+      "f1f1e0f0d8f0d8b0",
+      "f1f1e0f0d8f0d8b0",
+      "dce2f0f0f0f0d8b0",
+      "f1f1e0f0d8f0d8b0",
+      "f1f1e0f0d8f0d8b0",
+      "f1f1e0f0d8f0d8b0"
+    ],
+    "ahash": [
+      "fee128080000031f",
+      "fee128080000031f",
+      "fef138000000031f",
+      "fee128080000031f",
+      "fee128080000031f",
+      "fee128080000031f"
+    ],
+    "dhash": [
+      "104b4b1129686ef6",
+      "104b4b1129686ef6",
+      "00ab2b39292026b2",
+      "104b4b1129686ef6",
+      "104b4b1129686ef6",
+      "104b4b1129686ef6"
+    ],
+    "whash": [
+      "fffbfd080000073f",
+      "fffbfd080000073f",
+      "fffff9080010071f",
+      "fffbfd080000073f",
+      "fffbfd080000073f",
+      "fffbfd080000073f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.667024010999967,
+      "avg_fetch_time": 1.1111706684999945,
+      "success_count": 6
+    }
+  },
+  "http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=1919463": {
+    "phash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "ahash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 29.984094770000013,
+      "avg_fetch_time": 4.997349128333336,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/huya/20985816": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 50.61671602000007,
+      "avg_fetch_time": 4.218059668333339,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/huya/11342413": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 49.868312935000006,
+      "avg_fetch_time": 4.155692744583334,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/huya/11601966": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 50.20193789399991,
+      "avg_fetch_time": 4.183494824499992,
+      "success_count": 12
+    }
+  },
+  "https://live.metshop.top/huya/26355790": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 50.537251583999875,
+      "avg_fetch_time": 4.211437631999989,
+      "success_count": 12
+    }
+  },
+  "https://live.metshop.top/huya/11602081": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 53.897208537999916,
+      "avg_fetch_time": 4.491434044833326,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/huya/11602081": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 53.94752375199994,
+      "avg_fetch_time": 4.495626979333328,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/yy/1354490667": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 58.11039235700008,
+      "avg_fetch_time": 4.842532696416673,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/yy/1353873252": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 58.9150398389998,
+      "avg_fetch_time": 4.909586653249984,
+      "success_count": 12
+    }
+  },
+  "http://live.ottiptv.cc/huya/20985836": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 59.68144245999997,
+      "avg_fetch_time": 4.973453538333331,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/huya/26355861": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 47.07589079599995,
+      "avg_fetch_time": 3.922990899666663,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/huya/11352879": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 64.25943737399996,
+      "avg_fetch_time": 5.354953114499996,
+      "success_count": 12
+    }
+  },
+  "http://live.ottiptv.cc/huya/26355860": {
+    "phash": [
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363"
+    ],
+    "ahash": [
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00"
+    ],
+    "dhash": [
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3"
+    ],
+    "whash": [
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.842788847999941,
+      "avg_fetch_time": 2.14046480799999,
+      "success_count": 6
+    }
+  },
+  "http://173.208.234.146/live/lbchuangguandong.m3u8": {
+    "phash": [
+      "cfe533863c8344b3",
+      "c595e1a12aeb932b",
+      "95d8949789a18eeb",
+      "c595e1a12aeb932b",
+      "c595e1a12aeb932b",
+      "e897bc634a994a6c"
+    ],
+    "ahash": [
+      "3339793b39382808",
+      "ff7e3c1000f8e000",
+      "fffe080000060707",
+      "ff7e3c1000f8e000",
+      "ff7e3c1000f8e000",
+      "ffe6fae8e0c1c1c9"
+    ],
+    "dhash": [
+      "e6c3c3e7e7e6c999",
+      "e6f6707072c00301",
+      "fc7cd1d8e06ceeee",
+      "e6f6707072c00301",
+      "e6f6707072c00301",
+      "8b8c16d1819b1333"
+    ],
+    "whash": [
+      "33797b3b7b382808",
+      "ffff3c1800fcf000",
+      "fffe7c2000061f0f",
+      "ffff3c1800fcf000",
+      "ffff3c1800fcf000",
+      "fde6f8e8e0c0c1c1"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.80992658200023,
+      "avg_fetch_time": 2.134987763666705,
+      "success_count": 6
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjtv5": {
+    "phash": [
+      "8c433e1e3b3d8971",
+      "f58550bc097bee11",
+      "d5a8f87afa868407",
+      "d5e5e59c020a1bf3",
+      "cc4d5b31a633758a",
+      "cc4d5b31a633758a"
+    ],
+    "ahash": [
+      "00707a7a3e1f1f93",
+      "10feffff7f970000",
+      "ffdb3600000000ff",
+      "f6f2ec0c0c1e3e2c",
+      "00581852d7c3fdbd",
+      "00581852d7c3fdbd"
+    ],
+    "dhash": [
+      "a6e4d2f6f4753537",
+      "b6b41652f2269eb0",
+      "2b2be46489845422",
+      "0646487cbc78fcc8",
+      "b2b2b4b495963961",
+      "b2b2b4b495963961"
+    ],
+    "whash": [
+      "0070787b3e1f1f93",
+      "00feefff7f830000",
+      "fffb3e000000acff",
+      "f6f2e81c0c1e3e2c",
+      "00585056d7c3fdbd",
+      "00585056d7c3fdbd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.47339777500008,
+      "avg_fetch_time": 2.4122329625000134,
+      "success_count": 6
+    }
+  },
+  "http://t.061899.xyz/tl/tl.php?id=jbty": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 3,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[tcp @ 0x5a9eb4c4c140] Connection to tcp://111.8.242.127:9999 failed: Connection timed out\n[in#0 @ 0x5a9eb4b67c40] Error opening input: Connection timed out\nError opening input file http://t.061899.xyz/tl/tl.php?id=jbty.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://live.ottiptv.cc/yy/1382749903": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 55.41872744600005,
+      "avg_fetch_time": 4.618227287166671,
+      "success_count": 12
+    }
+  },
+  "https://www.goodiptv.club/douyu/5907076": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 80.1575142439998,
+      "avg_fetch_time": 8.01575142439998,
+      "success_count": 10
+    }
+  },
+  "https://live.ottiptv.cc/yy/1351814644": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 73.66515708899999,
+      "avg_fetch_time": 6.696832462636363,
+      "success_count": 11
+    }
+  },
+  "https://live.ottiptv.cc/huya/29465849": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 61.80052242099987,
+      "avg_fetch_time": 5.150043535083323,
+      "success_count": 12
+    }
+  },
+  "https://live.metshop.top/huya/20985816": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 48.04675104899991,
+      "avg_fetch_time": 4.003895920749993,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/huya/23824164": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 51.637077632,
+      "avg_fetch_time": 4.303089802666666,
+      "success_count": 12
+    }
+  }
+}
