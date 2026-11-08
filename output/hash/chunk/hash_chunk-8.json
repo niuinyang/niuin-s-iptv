@@ -1,0 +1,6258 @@
+{
+  "http://198.204.228.26/live/ymkt.m3u8": {
+    "phash": [
+      "c41e4e611b3d663e",
+      "e45a1b651b256676",
+      "f04e4739134e787c",
+      "e5cf1e30933348ce",
+      "e5cf1e30933348ce",
+      "e5cf1e30933348ce"
+    ],
+    "ahash": [
+      "007cf7e7e7e37e3c",
+      "087cf3e3e3f3723c",
+      "187ed3c3c3cb7a3c",
+      "3c72f3e3e3c3c37e",
+      "3c72f3e3e3c3c37e",
+      "3c72f3e3e3c3c37e"
+    ],
+    "dhash": [
+      "f0e4e4d696d6c4f8",
+      "f0e4e49696c6c4f8",
+      "e8d4b6969696d6e8",
+      "f8f6d6ce969696e8",
+      "f8f6d6ce969696e8",
+      "f8f6d6ce969696e8"
+    ],
+    "whash": [
+      "003c76e7c7e37618",
+      "0078f6e3e3e37238",
+      "007ed2c3c3cb7a3c",
+      "1872f1e3e3c3c23c",
+      "1872f1e3e3c3c23c",
+      "1872f1e3e3c3c23c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.695592370000099,
+      "avg_fetch_time": 1.28259872833335,
+      "success_count": 6
+    }
+  },
+  "http://38.64.72.148:80/hls/modn/list/2015/chunklist0.m3u8": {
+    "phash": [
+      "9550f407bf4b6a68",
+      "88f83c09f9b703f1",
+      "80d83f00fbbf0be1",
+      "80d83c09fbbf0bb1",
+      "80d83c09fbbf0bb1",
+      "80d83c09fbbf0bb1"
+    ],
+    "ahash": [
+      "187f703c1f1e3eff",
+      "1f517fff79380703",
+      "1cdcfdff78380303",
+      "5cd87fff78380703",
+      "5cd87fff78380703",
+      "5cd87fff78380703"
+    ],
+    "dhash": [
+      "f0be90787e7c6a56",
+      "b6b7d5e1d3f16677",
+      "b8b085e193f1e696",
+      "b8b4d561d3f1e6b6",
+      "b8b4d561d3f1e6b6",
+      "b8b4d561d3f1e6b6"
+    ],
+    "whash": [
+      "003e603c3e0e3eff",
+      "1f507dff79300303",
+      "1cdc7dfd78380303",
+      "5cd07cff79380303",
+      "5cd07cff79380303",
+      "5cd07cff79380303"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.725197794999985,
+      "avg_fetch_time": 1.6208662991666642,
+      "success_count": 6
+    }
+  },
+  "https://lbds.us.ci/15894162": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[in#0/flv @ 0x5f44454e5c40] could not seek to position 443351.932\nInput #0, flv, from 'https://lbds.us.ci/15894162':\n  Metadata:\n    displayWidth    : 1920\n    displayHeight   : 1080\n    fps             : 30\n    profile         : \n    level           : \n    videocodecreal  : 0\n    cdn_ip          : 163.181.60.151\n    Server          : Tengine\n    old_link_info   : (hs.direct.huya.com:huyalive:94525224-2700236716-11597428386678439936-2112795098-10057-A-0-1)n.cn-8n8bq4.jk59_831444,n.cn-56uylx.6de5_168445\n    stream_id       : hs.direct.huya.com:huyalive:94525224-2700236716-11597428386678439936-2112795098-10057-A-0-1_264\n    publish_time_ms : 1793304500370\n    link_info       : n.cn-56uylx.6de5_168445,n.cn-56uylx.24kr_2930338,n.cn-q6se50.ly3k_1285510,n.cn-q6se50.c688_2815910\n    fp_dispatch_expr_tag: \n    encoder         : Lavf58.45.100\n    publish_time_stamp: 1793304500\n    server_version  : 2.0.0\n  Duration: 00:00:00.00, start: 443342.932000, bitrate: N/A\n  Stream #0:0: Subtitle: text, start 443342.932000\n  Stream #0:1: Audio: aac (LC), 44100 Hz, stereo, fltp, 128 kb/s, start 443342.933000\n  Stream #0:2: Video: h264 (Main), yuv420p(progressive), 1920x1080, 1403 kb/s, 30 fps, 30 tbr, 1k tbn, start 443342.999000\nStream mapping:\n  Stream #0:2 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x5f44454e9940] co located POCs unavailable\n[h264 @ 0x5f44454f68c0] mmco: unref short failure\n[https @ 0x5f44454e64c0] Stream ends prematurely at 1211072, should be 18446744073709551615\n    Last message repeated 1 times\n[in#0/flv @ 0x5f44454e5c40] Error during demuxing: Input/output error\n[vf#0:0 @ 0x5f44454fc380] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    displayWidth    : 1920\n    displayHeight   : 1080\n    fps             : 30\n    profile         : \n    level           : \n    videocodecreal  : 0\n    cdn_ip          : 163.181.60.151\n    Server          : Tengine\n    old_link_info   : (hs.direct.huya.com:huyalive:94525224-2700236716-11597428386678439936-2112795098-10057-A-0-1)n.cn-8n8bq4.jk59_831444,n.cn-56uylx.6de5_168445\n    stream_id       : hs.direct.huya.com:huyalive:94525224-2700236716-11597428386678439936-2112795098-10057-A-0-1_264\n    publish_time_ms : 1793304500370\n    link_info       : n.cn-56uylx.6de5_168445,n.cn-56uylx.24kr_2930338,n.cn-q6se50.ly3k_1285510,n.cn-q6se50.c688_2815910\n    fp_dispatch_expr_tag: \n    server_version  : 2.0.0\n    publish_time_stamp: 1793304500\n    encoder         : Lavf62.3.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc62.11.100 png\n[out#0/image2pipe @ 0x5f44457fd600] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\n[out#0/image2pipe @ 0x5f44457fd600] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.67"
+    },
+    "stats": {
+      "total_fetch_time": 8.440484347000051,
+      "avg_fetch_time": 2.110121086750013,
+      "success_count": 4
+    }
+  },
+  "http://ott.watch/stream/E9LDH2ZCN7/146.m3u8": {
+    "phash": [
+      "8c99782b83a7f662",
+      "8c99782b83a7f662",
+      "8c99782b83a7f662",
+      "8c99782b83a7f662",
+      "8c99782b83a7f662",
+      "8c99782b83a7f662"
+    ],
+    "ahash": [
+      "1818ffff000000fe",
+      "1818ffff000000fe",
+      "1818ffff000000fe",
+      "1818ffff000000fe",
+      "1818ffff000000fe",
+      "1818ffff000000fe"
+    ],
+    "dhash": [
+      "30108cf02032f0cc",
+      "30108cf02032f0cc",
+      "30108cf02032f0cc",
+      "30108cf02032f0cc",
+      "30108cf02032f0cc",
+      "30108cf02032f0cc"
+    ],
+    "whash": [
+      "0818ffff381800ff",
+      "0818ffff381800ff",
+      "0818ffff381800ff",
+      "0818ffff381800ff",
+      "0818ffff381800ff",
+      "0818ffff381800ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.329839754000034,
+      "avg_fetch_time": 2.7216399590000058,
+      "success_count": 6
+    }
+  },
+  "http://ali-xwl.cztv.com/live/channel081080Plxw.m3u8": {
+    "phash": [
+      "d9e93cb381461795",
+      "d9e930b781467695",
+      "b56a9d23930c369b",
+      "c09cd93b37d0cacc",
+      "c09cd93b37d0cacc",
+      "f8a5857c8ecc835c"
+    ],
+    "ahash": [
+      "dfd9f8f8ee8c8098",
+      "ffd9f8f8ff860408",
+      "c2c0c0c0e6231f1f",
+      "7f7f7e6621606060",
+      "7f7f7e6621606060",
+      "ffeeeee0c0c08000"
+    ],
+    "dhash": [
+      "bab333f35a283434",
+      "9ab3b3d36a2c38b8",
+      "929204048caee2fc",
+      "9aa6e4ccce8989c8",
+      "9aa6e4ccce8989c8",
+      "829a988929293529"
+    ],
+    "whash": [
+      "dfd9f8f88e8c8090",
+      "ffd8d8f8fe860008",
+      "cac0e0e0e6671f1f",
+      "7f7f7f6620606060",
+      "7f7f7f6620606060",
+      "ffeeeef1c0c08404"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.758886398000072,
+      "avg_fetch_time": 3.293147733000012,
+      "success_count": 6
+    }
+  },
+  "https://epg.pw/stream/4ac6d730dcafe4489bb717443135c990423085e6ebdc8253d61fa8dab568bc32.m3u8": {
+    "phash": [
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61"
+    ],
+    "ahash": [
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c"
+    ],
+    "dhash": [
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0"
+    ],
+    "whash": [
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.627616617999934,
+      "avg_fetch_time": 3.6046027696666556,
+      "success_count": 6
+    }
+  },
+  "http://news1.live14.com/stream/news1_hi.m3u8": {
+    "phash": [
+      "cd99336664337166",
+      "8dd9336664733166",
+      "b505eaaaaac95555",
+      "b8c6c73838c76738",
+      "bbbd0703f14444f5",
+      "bbbd0703f14444f5"
+    ],
+    "ahash": [
+      "0018181818183c00",
+      "0018181818183c00",
+      "0306060787c3ebe9",
+      "ffffe3c3c3c3ffff",
+      "ffffffffff000000",
+      "ffffffffff000000"
+    ],
+    "dhash": [
+      "30b2b2b2b2f06912",
+      "32b2b2b2b2f06812",
+      "870e0e0e1f17130b",
+      "017106b2b20e6004",
+      "0e1f17130b096000",
+      "0e1f17130b096000"
+    ],
+    "whash": [
+      "261f9919183c3d3a",
+      "033d3b381d3f3d03",
+      "0307060787cfebeb",
+      "dbd991818181dbdb",
+      "878fdfffff000000",
+      "878fdfffff000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.380125290999956,
+      "avg_fetch_time": 3.5633542151666595,
+      "success_count": 6
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqpub/ymkt.m3u8?auth=testpub": {
+    "phash": [
+      "c55b122d193c747b",
+      "e5269acb639a6c61",
+      "e5269ac9639e6c61",
+      "c55b122d193c747b",
+      "c55b122d193c747b",
+      "e5269acb639a6c61"
+    ],
+    "ahash": [
+      "007cf3f3c3d37e3c",
+      "3c66c3c3c3f7ff7c",
+      "3c66c3c3c3e7ff7e",
+      "007cf3f3c3d37e3c",
+      "007cf3f3c3d37e3c",
+      "3c66c3c3c3f7ff7c"
+    ],
+    "dhash": [
+      "f0e096969696f6e8",
+      "f0c4868e8686f8f0",
+      "f0c4868e8686f8f0",
+      "f0e096969696f6e8",
+      "f0e096969696f6e8",
+      "f0c4868e8686f8f0"
+    ],
+    "whash": [
+      "007c72f3e3c37a38",
+      "0062c3c3c3f77e3c",
+      "0066c3c3c3e77e3c",
+      "007c72f3e3c37a38",
+      "007c72f3e3c37a38",
+      "0062c3c3c3f77e3c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 5.371487262999949,
+      "avg_fetch_time": 0.8952478771666582,
+      "success_count": 6
+    }
+  },
+  "https://lbds.us.ci/15152155": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[in#0/flv @ 0x62b1fa87bc40] could not seek to position 1952350.774\nInput #0, flv, from 'https://lbds.us.ci/15152155':\n  Metadata:\n    displayWidth    : 1920\n    displayHeight   : 1080\n    fps             : 30\n    profile         : \n    level           : \n    videocodecreal  : 0\n    cdn_ip          : 163.181.60.172\n    Server          : Tengine\n    encoder         : Lavf58.45.100\n    publish_time_ms : 1793343258251\n    stream_id       : hs.direct.huya.com:huyalive:94525224-2682536056-11521404630860824576-3512313440-10057-A-0-1_264\n    publish_time_stamp: 1793343258\n    old_link_info   : (hs.direct.huya.com:huyalive:94525224-2682536056-11521404630860824576-3512313440-10057-A-0-1)n.cn-isoohl.2izq_5177,n.cn-twxzd4.mpqr_2964073\n    link_info       : n.cn-twxzd4.mpqr_2964073,n.cn-56uylx.wyxq_2126434,n.cn-56uylx.57pc_2180550,n.cn-9zhln9.p59b_1489402,n.cn-9zhln9.te9a_1293567\n    fp_dispatch_expr_tag: \n    server_version  : 2.0.0\n  Duration: 00:00:00.00, start: 1952341.774000, bitrate: N/A\n  Stream #0:0: Subtitle: text, start 1952341.774000\n  Stream #0:1: Audio: aac (LC), 44100 Hz, stereo, fltp, 128 kb/s, start 1952341.793000\n  Stream #0:2: Video: h264 (Main), yuv420p(progressive), 1920x1080, 2835 kb/s, 30 fps, 30 tbr, 1k tbn, start 1952341.841000\nStream mapping:\n  Stream #0:2 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[https @ 0x62b1fa87c4c0] Stream ends prematurely at 1644493, should be 18446744073709551615\n[flv @ 0x62b1fa87bf00] Packet corrupt (stream = 2, dts = 1952347774).\n[flv @ 0x62b1fa87bf00] Track size mismatch: 62870!\n[https @ 0x62b1fa87c4c0] Stream ends prematurely at 1644493, should be 18446744073709551615\n[flv @ 0x62b1fa87bf00] Attempted to read next track in single-track mode.\n[https @ 0x62b1fa87c4c0] Stream ends prematurely at 1644493, should be 18446744073709551615\n[h264 @ 0x62b1faa01e40] Invalid NAL unit size (83408 > 20538).\n[h264 @ 0x62b1faa01e40] missing picture in access unit with size 20958\n[in#0/flv @ 0x62b1fa87bc40] corrupt input packet in stream 2\n[https @ 0x62b1fa87c4c0] Stream ends prematurely at 1644493, should be 18446744073709551615\n[in#0/flv @ 0x62b1fa87bc40] Error during demuxing: Input/output error\n[h264 @ 0x62b1faa38c40] Invalid NAL unit size (83408 > 20538).\n[h264 @ 0x62b1faa38c40] Error splitting the input into NAL units.\n[vist#0:2/h264 @ 0x62b1fa9d0300] [dec:h264 @ 0x62b1faa01600] Decoding error: Invalid data found when processing input\n[vf#0:0 @ 0x62b1fa892180] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    displayWidth    : 1920\n    displayHeight   : 1080\n    fps             : 30\n    profile         : \n    level           : \n    videocodecreal  : 0\n    cdn_ip          : 163.181.60.172\n    Server          : Tengine\n    server_version  : 2.0.0\n    publish_time_ms : 1793343258251\n    stream_id       : hs.direct.huya.com:huyalive:94525224-2682536056-11521404630860824576-3512313440-10057-A-0-1_264\n    publish_time_stamp: 1793343258\n    old_link_info   : (hs.direct.huya.com:huyalive:94525224-2682536056-11521404630860824576-3512313440-10057-A-0-1)n.cn-isoohl.2izq_5177,n.cn-twxzd4.mpqr_2964073\n    link_info       : n.cn-twxzd4.mpqr_2964073,n.cn-56uylx.wyxq_2126434,n.cn-56uylx.57pc_2180550,n.cn-9zhln9.p59b_1489402,n.cn-9zhln9.te9a_1293567\n    fp_dispatch_expr_tag: \n    encoder         : Lavf62.3.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080, q=2-31, 200 kb/s, 30 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc62.11.100 png\n[out#0/image2pipe @ 0x62b1fab93600] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\n[out#0/image2pipe @ 0x62b1fab93600] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.43"
+    },
+    "stats": {
+      "total_fetch_time": 6.471858273000066,
+      "avg_fetch_time": 1.6179645682500166,
+      "success_count": 4
+    }
+  },
+  "http://113.15.109.216:59901/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      "cc75beb699e1201c",
+      "9c74fc74fc250703",
+      "f1f8996d76a50a81",
+      "bd72bce5caa5020b",
+      "bd72bce5caa5020b",
+      "ec7e75a44c457283"
+    ],
+    "ahash": [
+      "f3f0707838707019",
+      "c2c018183c3c3c38",
+      "c8c8ece0e0606160",
+      "c3c00010f8c29f1e",
+      "c3c00010f8c29f1e",
+      "d090c190ffff0b18"
+    ],
+    "dhash": [
+      "2666e7d373e5e131",
+      "262870706071f0f0",
+      "3aba9a888acacacb",
+      "263e94b6e4963a70",
+      "263e94b6e4963a70",
+      "26261335b54a3231"
+    ],
+    "whash": [
+      "b3f1707838717139",
+      "83c43e3e3c3c3c3c",
+      "caeaefe0e0e0e168",
+      "83c0407af8dade3e",
+      "83c0407af8dade3e",
+      "b0d0c190ffff8318"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.93803860700001,
+      "avg_fetch_time": 4.489673101166669,
+      "success_count": 6
+    }
+  },
+  "https://tvsen6.aynaott.com/cnn/index.m3u8": {
+    "phash": [
+      "dc28abd36af61289",
+      "d60899c76cf41e96",
+      "bd96c9684b65523c",
+      "c692b9467c29722f",
+      "c692b9467c29722f",
+      "c692b9467c29722f"
+    ],
+    "ahash": [
+      "7f1b00c0f8fcfee3",
+      "3f0f00d0f0f4eef6",
+      "3fff0f060000f300",
+      "08ff263030607f00",
+      "08ff263030607f00",
+      "08ff263030607f00"
+    ],
+    "dhash": [
+      "dbb3b225a068a003",
+      "d1d3b9a561688c0e",
+      "ee3c7c7c3c0c2333",
+      "f9ecccc5c4c5e3e3",
+      "f9ecccc5c4c5e3e3",
+      "f9ecccc5c4c5e3e3"
+    ],
+    "whash": [
+      "7d1b00c0f8fcfe81",
+      "3d1b00d0f0f4eef2",
+      "3fff0f0786c0f300",
+      "04ff3f3434747f00",
+      "04ff3f3434747f00",
+      "04ff3f3434747f00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 29.374040766999997,
+      "avg_fetch_time": 4.895673461166666,
+      "success_count": 6
+    }
+  },
+  "http://116.128.243.121:85/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      "befce51494851b07",
+      "acf4f4fcf4850503",
+      "bd729ce5cab5020b",
+      "bdbfbba0aa252288",
+      "d92c6432f027f29d",
+      "d51a7185bdc11e35"
+    ],
+    "ahash": [
+      "c381859e1c0c087e",
+      "c3c0232323030303",
+      "c3c00010f0c29f1e",
+      "878787a242020218",
+      "00181c68dc0c3cfe",
+      "82001cf3877cf2c0"
+    ],
+    "dhash": [
+      "3e2f3d342c29c8d0",
+      "2626c74743371707",
+      "263e94b6e4963a70",
+      "3f3f6e6e86a6b2b0",
+      "3632729bba596a12",
+      "2200f80336e0c20a"
+    ],
+    "whash": [
+      "83818f9f1e1c287f",
+      "83c0b3fbbf0f0303",
+      "83c040faf8c2df3e",
+      "878fb7e77e120218",
+      "00183ef8fc183efe",
+      "8a001efb9f7cf2c0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.57150522400002,
+      "avg_fetch_time": 5.2619175373333364,
+      "success_count": 6
+    }
+  },
+  "http://31.43.191.125:8080/restream/restream/34577": {
+    "phash": [
+      "d07989fa258f58a3",
+      "973041867ced46af",
+      "8752dc9928cd738d",
+      "bd3f4bc068d2322d",
+      "bd3f4bc068d2322d",
+      "f0d22f8b07245eae"
+    ],
+    "ahash": [
+      "8848183267dc3f7f",
+      "040e0c8e1e3e3f38",
+      "1c3c242527273f1b",
+      "81818387fffefefc",
+      "81818387fffefefc",
+      "80ccd4567edf0301"
+    ],
+    "dhash": [
+      "3999b076ccbd73f4",
+      "9cdc18387c7c6363",
+      "316d4c4d4d4b6a36",
+      "3b371f3ea684c0e0",
+      "3b371f3ea684c0e0",
+      "0b98b494ccbb87ab"
+    ],
+    "whash": [
+      "8848103a67dc3f7f",
+      "060e0e8e9e3e3f3c",
+      "1c3c2425272f3f1f",
+      "81018183defefcf8",
+      "81018183defefcf8",
+      "80ccf4767edf4301"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 32.44701018500001,
+      "avg_fetch_time": 5.407835030833335,
+      "success_count": 6
+    }
+  },
+  "http://120.76.248.139/live/bfgd/4200000611.m3u8": {
+    "phash": [
+      "f5b9bd49484e4646",
+      "e1b8a1b9c1b3075e",
+      "b125ec9cdc331752",
+      "ecb317354848b7a3",
+      "ecb317354848b7a3",
+      "e1fde9f590425642"
+    ],
+    "ahash": [
+      "dacf1ec0e0a0a0a0",
+      "ffdf347850000020",
+      "c3c321001809cbc6",
+      "3fafef50d0921210",
+      "3fafef50d0921210",
+      "fbfb346c4c200001"
+    ],
+    "dhash": [
+      "121a7e8248444444",
+      "9ab36dc8b0e20443",
+      "128bcb8bb09b9aa8",
+      "666e48b5363626a3",
+      "666e48b5363626a3",
+      "02aae0d4d4c4c193"
+    ],
+    "whash": [
+      "facfbef0e8a0a0a0",
+      "fffffdfc50000020",
+      "c3e343005c2fcfc7",
+      "3fafefd0f0921210",
+      "3fafefd0f0921210",
+      "ffff7c7c4c000043"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 35.62806198999999,
+      "avg_fetch_time": 5.938010331666665,
+      "success_count": 6
+    }
+  },
+  "http://173.208.234.146/live/vlaqgy.m3u8": {
+    "phash": [
+      "c67868659d9626d6",
+      "c67868659d9626d6",
+      "c4701f3dd4eb4c23",
+      "85523f6cc27b41f2",
+      "85523f6cc27b41f2",
+      "b27aca27c299525d"
+    ],
+    "ahash": [
+      "f0e0c48eae2070f8",
+      "f0e0c48eae2070f8",
+      "3020797a7212033e",
+      "383a6a7a7e43837f",
+      "383a6a7a7e43837f",
+      "a5e5ccc6260333fc"
+    ],
+    "dhash": [
+      "07832c285cc6c4d2",
+      "07832c285cc6c4d2",
+      "44d49586e6765be0",
+      "e0e2dac2c69273d2",
+      "e0e2dac2c69273d2",
+      "692d189c6c4f47ed"
+    ],
+    "whash": [
+      "f0e0c4aeaeb0f0f8",
+      "f0e0c4aeaeb0f0f8",
+      "387a7b7a7212033e",
+      "182a6a7a7643837f",
+      "182a6a7a7643837f",
+      "a5e5ccc4260333fd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.342069622999986,
+      "avg_fetch_time": 1.8903449371666643,
+      "success_count": 6
+    }
+  },
+  "http://198.204.228.26/live/gdjjkt.m3u8": {
+    "phash": [
+      "cb733c633036e61c",
+      "c0bf0b343c9ed869",
+      "f2528ca4719b9e2e",
+      "a8a93ad473e64e0e",
+      "a8a93ad473e64e0e",
+      "a8a93ad473e64e0e"
+    ],
+    "ahash": [
+      "0c3c3c3c3c3c3c1a",
+      "00687cfcf4747078",
+      "00000cccc07fffff",
+      "011b7ffffffe0000",
+      "011b7ffffffe0000",
+      "011b7ffffffe0000"
+    ],
+    "dhash": [
+      "c96969d9f16969f2",
+      "04cad9b8a4a4c0d9",
+      "9aa439999db4ab0e",
+      "ebf3e3cbdaf0c40d",
+      "ebf3e3cbdaf0c40d",
+      "ebf3e3cbdaf0c40d"
+    ],
+    "whash": [
+      "2c3c3c3c3c3c3c3e",
+      "00687cfcf47c707c",
+      "00000ccce07fffff",
+      "010b3fffff7e0000",
+      "010b3fffff7e0000",
+      "010b3fffff7e0000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 5.860001687000079,
+      "avg_fetch_time": 0.9766669478333464,
+      "success_count": 6
+    }
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f9817cb7f3b79a/4000.m3u8": {
+    "phash": [
+      "b831cdcc5e393307",
+      "b4b98b7c840f4747",
+      "f982372cd117f80d",
+      "d56a95a0ddf206a9",
+      "a6e49ddab6600d59",
+      "a5939e653bcc6611"
+    ],
+    "ahash": [
+      "0003078fffffff9f",
+      "ffffff1f00000000",
+      "fffffffed8800080",
+      "ff4000403977debe",
+      "ff7743c3c7df8000",
+      "ffff5fc3c3c3db9f"
+    ],
+    "dhash": [
+      "bbae1c18ec243236",
+      "9e9c1cbc969464e4",
+      "bca058c093131e13",
+      "b092e18072c49a64",
+      "a6e6c68f0db40569",
+      "331a9e8697873773"
+    ],
+    "whash": [
+      "00030604f4ffff9f",
+      "ffffff7f02000000",
+      "ff7ffffec0000000",
+      "ff0000403977febe",
+      "ff7743c3c75e8000",
+      "9f8f4343c343d30b"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.276051917000018,
+      "avg_fetch_time": 3.5460086528333363,
+      "success_count": 6
+    }
+  },
+  "http://198.204.228.26/live/btvkk.m3u8": {
+    "phash": [
+      "9a2431f6f2e3490f",
+      "e44ca8e93499db66",
+      "9db67190ec335a49",
+      "b8a1b4e9d66b4b0c",
+      "b8a1b4e9d66b4b0c",
+      "b1b418e15b2f871e"
+    ],
+    "ahash": [
+      "470f0b0d9cfdcf4d",
+      "f0f0f0d0f2e9fff7",
+      "cf070d3f9f1f0e00",
+      "4f4f098199c99316",
+      "4f4f098199c99316",
+      "4f4f07276f6f070c"
+    ],
+    "dhash": [
+      "9fbaf3b928a919db",
+      "9786e034a45b1544",
+      "9e2c5954b5b8fab2",
+      "9f9a1b39232b3474",
+      "9f9a1b39232b3474",
+      "9c9ccecacbcbddf9"
+    ],
+    "whash": [
+      "470f0b0ddedd0d0d",
+      "f060f09070e8e7f7",
+      "cf0f0d37df1e0e00",
+      "cf0f090d91cb9b36",
+      "cf0f090d91cb9b36",
+      "4f4f07076f6f050c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.266378592000137,
+      "avg_fetch_time": 1.044396432000023,
+      "success_count": 6
+    }
+  },
+  "http://dassby.qqff.top:99/live/梨园/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "https://epg.pw/stream/94ed0232b61ce8d89883160a4cdfbfc8f3225cae70ef8e17d93eec249a3c8ad6.m3u8": {
+    "phash": [
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61"
+    ],
+    "ahash": [
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c"
+    ],
+    "dhash": [
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0"
+    ],
+    "whash": [
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.53786533500005,
+      "avg_fetch_time": 3.256310889166675,
+      "success_count": 6
+    }
+  },
+  "http://bbstv.clouducs.com:1935/bbstv-live/livestream/chunklist_w1403706733.m3u8": {
+    "phash": [
+      "963c89de9104cf5b",
+      "c5193bc63919c73c",
+      "d4c41acd3bd5cd0c",
+      "c5c21b9eca95a791",
+      "c1cb4a4963bbdba0",
+      "c1cb4a4963bbdba0"
+    ],
+    "ahash": [
+      "1f00000606b67e7e",
+      "18383c7c7e7e3800",
+      "183c7efefefe3c00",
+      "7c387e7a7e1e5e08",
+      "3830fe7f7f3c1c00",
+      "3830fe7f7f3c1c00"
+    ],
+    "dhash": [
+      "baaaf5b45464e8d8",
+      "f0f0e0e0e0e0e078",
+      "f0f0e0cce0e0f0d0",
+      "f0e0e6c2f07692d2",
+      "e1e0b4d6d4f0f0f0",
+      "e1e0b4d6d4f0f0f0"
+    ],
+    "whash": [
+      "5f00011616be7e7f",
+      "383c7c7c7e7e3800",
+      "183c7c7efefe1000",
+      "7e007e787e1e5e08",
+      "3830fe7e7e3c3c00",
+      "3830fe7e7e3c3c00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 32.83088471500008,
+      "avg_fetch_time": 5.47181411916668,
+      "success_count": 6
+    }
+  },
+  "https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=c9a6ad95ddcc54c248b9eef2327bf55d&wsTime=1794027879": {
+    "phash": [
+      "b6166ef24ef01b30",
+      "b61e6cb24cb05bb1",
+      "b0d866f1cc46c747",
+      "b6166eb04ef45a31",
+      "b6166eb04eb04bbc",
+      "b6166cb24ee44f31"
+    ],
+    "ahash": [
+      "878787c7c7c7c781",
+      "878787c7c7c7e783",
+      "d8cf8fcfcfcf8780",
+      "878787c7c7c7c391",
+      "878787c7c7c7c791",
+      "878787c7c7c7c381"
+    ],
+    "dhash": [
+      "2c2d2dac8c8d8627",
+      "2c2d2dac8c8d8e27",
+      "b0ba18909a0c2c2c",
+      "242d2dac8c8d0627",
+      "2c2d2d8c8c8d8627",
+      "242d2d8c8c8d8627"
+    ],
+    "whash": [
+      "848787c7c7c7c781",
+      "848787c7c7c7c781",
+      "d8488fcfcfc78700",
+      "868787c7c7c7c381",
+      "848787c7c7c7c781",
+      "868787c7c7c7c381"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 33.48142311600003,
+      "avg_fetch_time": 5.580237186000005,
+      "success_count": 6
+    }
+  },
+  "http://119.77.96.184:1935/chn05/chn05/chunklist_w644291506.m3u8": {
+    "phash": [
+      "cec63939313c40fe",
+      "cec63939313c40fe",
+      "95b6c78d52c309d3",
+      "aaafa5b515d416d0",
+      "c613f98d03fa13d2",
+      "c613f98d03fa13d2"
+    ],
+    "ahash": [
+      "0070707030381090",
+      "0070707030381090",
+      "ff9710040812ff60",
+      "373b79949cf8fc00",
+      "3f0404043033fff4",
+      "3f0404043033fff4"
+    ],
+    "dhash": [
+      "9bc7e5e161e12372",
+      "9bc7e5e161e12372",
+      "6864d73cb8b2d2c9",
+      "6663a1243020a0c0",
+      "686cade9e2e6a4b4",
+      "686cade9e2e6a4b4"
+    ],
+    "whash": [
+      "01faf17934799998",
+      "01faf17934799998",
+      "ffb65b040812ff60",
+      "273bf9d0d8f8f800",
+      "7f1404143033fffc",
+      "7f1404143033fffc"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 33.63575919200002,
+      "avg_fetch_time": 5.605959865333337,
+      "success_count": 6
+    }
+  },
+  "http://192.151.150.154/live/gdty.m3u8": {
+    "phash": [
+      "81253e3f6b853e85",
+      "85a13e7e69973087",
+      "85a13e7e69973087",
+      "85a13e7e69973087",
+      "85a13e7e69973087",
+      "85a13e7e69973087"
+    ],
+    "ahash": [
+      "023e7f7840007e30",
+      "023e7f7a41003e18",
+      "023e7f7a41003e18",
+      "023e7f7a41003e18",
+      "023e7f7a41003e18",
+      "023e7f7a41003e18"
+    ],
+    "dhash": [
+      "8ef6ccd2d37cdc60",
+      "8ef6ded2d3b06869",
+      "8ef6ded2d3b06869",
+      "8ef6ded2d3b06869",
+      "8ef6ded2d3b06869",
+      "8ef6ded2d3b06869"
+    ],
+    "whash": [
+      "023e7f78500cfe3c",
+      "023e7f7e71003e3c",
+      "023e7f7e71003e3c",
+      "023e7f7e71003e3c",
+      "023e7f7e71003e3c",
+      "023e7f7e71003e3c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.490386096000066,
+      "avg_fetch_time": 1.2483976826666776,
+      "success_count": 6
+    }
+  },
+  "https://ali-xwl.cztv.com/live/channel08720Pnew.m3u8": {
+    "phash": [
+      "a3d3d9ec0e84ca8e",
+      "e8ca8d9131f83373",
+      "ceb82186e29a3e9e",
+      "a3d3d9ec0e84ca8e",
+      "a3d3d9ec0e84ca8e",
+      "a3d3d9ec0e84ca8e"
+    ],
+    "ahash": [
+      "ffef6f0703410303",
+      "79f9d1f1c080f800",
+      "c7d39cfc38303440",
+      "ffef6f0703410303",
+      "ffef6f0703410303",
+      "ffef6f0703410303"
+    ],
+    "dhash": [
+      "d899d9cdcf8b9b8b",
+      "b363a5878918b0a2",
+      "afb33120606868d9",
+      "d899d9cdcf8b9b8b",
+      "d899d9cdcf8b9b8b",
+      "d899d9cdcf8b9b8b"
+    ],
+    "whash": [
+      "ffef6f0703410303",
+      "7df9f1f1c084f808",
+      "d7fb9cfc38303440",
+      "ffef6f0703410303",
+      "ffef6f0703410303",
+      "ffef6f0703410303"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.086796181999944,
+      "avg_fetch_time": 1.514466030333324,
+      "success_count": 6
+    }
+  },
+  "https://epg.pw/stream/7c08c183610740794e0f39e158a44d85e6b400eea9eac7e2aaf09706f05bbf40.m3u8": {
+    "phash": [
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61"
+    ],
+    "ahash": [
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c"
+    ],
+    "dhash": [
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0"
+    ],
+    "whash": [
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.45406469799991,
+      "avg_fetch_time": 3.2423441163333186,
+      "success_count": 6
+    }
+  },
+  "http://primep2.tv:826/live/SourPatchKid/nlnE4DVQUs/112852.ts": {
+    "phash": [
+      "dc499cdccc5cc558",
+      "d82cf603a77aa174",
+      "d838b623877ab1d4",
+      "dc459cdccc5cc558",
+      "d82cf603a77aa174",
+      "d82cf603a77aa174"
+    ],
+    "ahash": [
+      "10000030ffffdfff",
+      "0010d8587cfce4ff",
+      "000050587c60fcff",
+      "10000030ffffdfff",
+      "0010d8587cfce4ff",
+      "0010d8587cfce4ff"
+    ],
+    "dhash": [
+      "b16bd0e0103e3539",
+      "95149490f0881514",
+      "85149490f09844a6",
+      "b16bd0e0103e3539",
+      "95149490f0881514",
+      "95149490f0881514"
+    ],
+    "whash": [
+      "10000000ffffdfff",
+      "0090d8587c7cf4ff",
+      "0080d8587c7cfcff",
+      "10000000ffffdfff",
+      "0090d8587c7cf4ff",
+      "0090d8587c7cf4ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.981101378999938,
+      "avg_fetch_time": 3.496850229833323,
+      "success_count": 6
+    }
+  },
+  "https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=7547b5797cc30fc47ab5305d839c91ed&wsTime=1794107066": {
+    "phash": [
+      "becc27f8c463c341",
+      "b6166cb24ee45e31",
+      "f41e6cb748a53a31",
+      "f4944cb14ea55ea9",
+      "b61e6eb04ea45aa9",
+      "b61f6eb04ba4cb30"
+    ],
+    "ahash": [
+      "989f9fdfdfcf8704",
+      "878787c7c7c7e391",
+      "9387c7c7c7e7e3c1",
+      "9387c7c7c7e7e391",
+      "878787c7c7c7c3e1",
+      "878787c7cfc7c7e1"
+    ],
+    "dhash": [
+      "20303434b41a5c4c",
+      "242d2dac8c8d8627",
+      "24242d8c8c0d8633",
+      "242d2d8c8c0c8727",
+      "2c2d2d2c8c8c8f2b",
+      "6c6c2d0c988c8d07"
+    ],
+    "whash": [
+      "d0888f9fdf8f8700",
+      "868787c7c7c7c381",
+      "808387c7c7e7e3c1",
+      "8287c7c7c7e7c380",
+      "868787c7c7c7c381",
+      "86878787c7c7c7c0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 30.82632069799996,
+      "avg_fetch_time": 5.137720116333327,
+      "success_count": 6
+    }
+  },
+  "http://gcw.bdcdn.shoujiduoduo.com/v/190507/bc0fcf2785f707597273caf592c9a78f.mp4": {
+    "phash": [
+      "81943f2d7a4f6872",
+      "951870b74bcc6e6a",
+      "843f3be15e067869",
+      "989867e56f486c6a",
+      "9825659e7a4d5a5a",
+      "85f0328f5a857a5e"
+    ],
+    "ahash": [
+      "007f7fffff7f3e00",
+      "008f1b3c3ebfff00",
+      "00ff1636767f7f00",
+      "001f1d1c1effff00",
+      "000f0e1c1c3f7f00",
+      "00ffff6010ff7f00"
+    ],
+    "dhash": [
+      "37de8ef8f88eca00",
+      "193eb2e0687ca600",
+      "d70ea4ecac8dee10",
+      "18fab1b0f8ba9800",
+      "67de9ab8b9b9f000",
+      "cf8ea2c6e3e3e600"
+    ],
+    "whash": [
+      "001e7e7e7f7f3000",
+      "008f1b3c2ebfff00",
+      "00ff0616767f7f00",
+      "001f1d1c1effff00",
+      "006f1e1e1c7fff00",
+      "00fffb6010fb7f00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 35.33955759899982,
+      "avg_fetch_time": 5.88992626649997,
+      "success_count": 6
+    }
+  },
+  "https://epg.pw/stream/f7556eccd4ae06b0c2991fdc7a4f8388496559f728cc82459a8e50346040e226.m3u8": {
+    "phash": [
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61"
+    ],
+    "ahash": [
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c"
+    ],
+    "dhash": [
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0"
+    ],
+    "whash": [
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.340878025000052,
+      "avg_fetch_time": 3.3901463375000085,
+      "success_count": 6
+    }
+  },
+  "https://ali-xwl.cztv.com/live/channel081080Pnew.m3u8": {
+    "phash": [
+      "a2d7f9591c88ca8e",
+      "cad9138607c327e7",
+      "d89cf8e31e1d4782",
+      "a2d7f9591c88ca8e",
+      "a2d7f9591c88ca8e",
+      "a2d7f9591c88ca8e"
+    ],
+    "ahash": [
+      "ffe7670707414303",
+      "3cdce8f8f0f0fc00",
+      "dcfedc186ce0c0c0",
+      "ffe7670707414303",
+      "ffe7670707414303",
+      "ffe7670707414303"
+    ],
+    "dhash": [
+      "c8cccdcd6f8f8f8b",
+      "d83002022627c1d5",
+      "30b0b0b0cc449391",
+      "c8cccdcd6f8f8f8b",
+      "c8cccdcd6f8f8f8b",
+      "c8cccdcd6f8f8f8b"
+    ],
+    "whash": [
+      "ffe7670707430303",
+      "7cf8e8f8f0f0f800",
+      "dcfe7c1c7ce0c0c0",
+      "ffe7670707430303",
+      "ffe7670707430303",
+      "ffe7670707430303"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.438759489999825,
+      "avg_fetch_time": 1.5731265816666375,
+      "success_count": 6
+    }
+  },
+  "http://live-hls-web-aja.getaj.net/AJA/02.m3u8?zshijd": {
+    "phash": [
+      "d5810e5b6d2f4876",
+      "d5010e5b6d2d68f6",
+      "d5010e5b6d2d68f6",
+      "d5810e5b6d2f4876",
+      "d5810e5b6d2f4876",
+      "d5810e5b6d2f4876"
+    ],
+    "ahash": [
+      "187e7ef8f8fcf4f0",
+      "007c7efaf8fcfcf0",
+      "007c7efaf8fcfcf0",
+      "187e7ef8f8fcf4f0",
+      "187e7ef8f8fcf4f0",
+      "187e7ef8f8fcf4f0"
+    ],
+    "dhash": [
+      "f0f0e09220904c64",
+      "f0e0e09280904c24",
+      "f0e0e09280904c24",
+      "f0f0e09220904c64",
+      "f0f0e09220904c64",
+      "f0f0e09220904c64"
+    ],
+    "whash": [
+      "007c7e58f8f8b4f0",
+      "007c7e58f8f8b4f0",
+      "007c7e58f8f8b4f0",
+      "007c7e58f8f8b4f0",
+      "007c7e58f8f8b4f0",
+      "007c7e58f8f8b4f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 4.360749329999862,
+      "avg_fetch_time": 0.726791554999977,
+      "success_count": 6
+    }
+  },
+  "http://dassby.qqff.top:99/live/动漫秀场/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://222.186.39.21:35466/huya/11336726": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x5f7cf98ea4c0] HTTP error 403 Forbidden\n[in#0 @ 0x5f7cf98e9c40] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file http://222.186.39.21:35466/huya/11336726.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqpub/btvkk.m3u8?auth=testpub": {
+    "phash": [
+      "997d9ce0fae30207",
+      "8a7069e2586d578f",
+      "d0942d69d2d66f0d",
+      "c8556ce017ea171f",
+      "c8556ce017ea171f",
+      "c8556ce017ea171f"
+    ],
+    "ahash": [
+      "480808c8fc7fffff",
+      "c04414163f373918",
+      "fffffffe3c000000",
+      "d8580838feffd900",
+      "d8580838feffd900",
+      "d8580838feffd900"
+    ],
+    "dhash": [
+      "92327119998acbe9",
+      "90a96824ededd3b3",
+      "b2b0e4ecd0d250a0",
+      "b0b252d2b0919333",
+      "b0b252d2b0919333",
+      "b0b252d2b0919333"
+    ],
+    "whash": [
+      "40080888d87fffff",
+      "c0141e1e3f7f3919",
+      "dafffffe3c000000",
+      "d818083cfeffd908",
+      "d818083cfeffd908",
+      "d818083cfeffd908"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.984329577999915,
+      "avg_fetch_time": 1.1640549296666525,
+      "success_count": 6
+    }
+  },
+  "http://1tv41.icu:8080/darriusthomas115@gmail.com/darriusthomas115@2025/1817": {
+    "phash": [
+      "c44ec0756ba83fc9",
+      "c44ec8752ba83dd9",
+      "c44ec8752ba83dd9",
+      "c44ec87d2ba83cd9",
+      "c44ec87d2ba83cd9",
+      "c44ec87d2ba83cd9"
+    ],
+    "ahash": [
+      "307070311006ff7f",
+      "307070311006ff7f",
+      "307474310006ff7f",
+      "307070311006ff7f",
+      "307070311006ff7f",
+      "307070311006ff7f"
+    ],
+    "dhash": [
+      "a4e4e465545496b6",
+      "e5e4e465445496b6",
+      "e5e4e46554549696",
+      "e5e4e465445496b6",
+      "e5e4e465445496b6",
+      "e5e4e465445496b6"
+    ],
+    "whash": [
+      "307470359006ff7f",
+      "307474319006ff7f",
+      "307474159006ff7f",
+      "307470359006ff7f",
+      "307470359006ff7f",
+      "307470359006ff7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 10.650351543999932,
+      "avg_fetch_time": 1.7750585906666554,
+      "success_count": 6
+    }
+  },
+  "https://stream.alabbassia.com/live/alabbassia/index.m3u8": {
+    "phash": [
+      "940cccfad96a9179",
+      "d41cccbadd4a9871",
+      "e30ac8bad96a91f1",
+      "e36ac892d96a99d1",
+      "e36ac89ad96a91d1",
+      "e36ac892d96a99d1"
+    ],
+    "ahash": [
+      "f8100004cfefe0f0",
+      "f8100000cfefe0f0",
+      "f8000000cfefe0f0",
+      "f8000001cfefe0f0",
+      "f8000101cfefe0f0",
+      "f8000101cfefe0f2"
+    ],
+    "dhash": [
+      "21e4dc5c1a9dc5c2",
+      "21e4dc7c1a9dc5c6",
+      "2964d76f1a9dc5c6",
+      "2965d76f1a9dc5c6",
+      "2367c72b1a9dc4c2",
+      "2367c32b1a9dc4c6"
+    ],
+    "whash": [
+      "f9100400efeff2f2",
+      "f9100400efeff2f2",
+      "f9300001efeff2f0",
+      "f9300101efefe2f0",
+      "f9200101efefe2f2",
+      "f9200101efefe2f2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 32.03663061999998,
+      "avg_fetch_time": 5.339438436666664,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/yy/1354210357": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 52.41090044800001,
+      "avg_fetch_time": 4.367575037333334,
+      "success_count": 12
+    }
+  },
+  "https://www.goodiptv.club/huya/23903183": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 48.855566431,
+      "avg_fetch_time": 4.071297202583334,
+      "success_count": 12
+    }
+  },
+  "http://www.kaniptv.cn/uadl.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&mode=1&hls=aHR0cDovLzQ1LjE5Mi45Ny4xNzA6ODg4MC9wbGF5LzQ2Ny5tM3U4": {
+    "phash": [
+      "9ed631a448bd166b",
+      "9ce421e9483f6e5a",
+      "cde04af9e00d765a",
+      "ca4372f3c00a3d77",
+      "8ef37200e9289f57",
+      "8ef37200e9289f57"
+    ],
+    "ahash": [
+      "c4ecbc9db99f1b01",
+      "02e69c9edc9d0f18",
+      "e0e030faf8f818b8",
+      "e070187cfcd1d1c0",
+      "44bcbebb3b191111",
+      "44bcbebb3b191111"
+    ],
+    "dhash": [
+      "b448283123347331",
+      "b6542830b1317971",
+      "9282e2e692127261",
+      "89c5f1f181153515",
+      "ac28607373733563",
+      "ac28607373733563"
+    ],
+    "whash": [
+      "04bcbe9cb99f1b01",
+      "02be9c9edc9f0f08",
+      "e0f070faf8d898b8",
+      "6874107dfcf1d1c1",
+      "04bcbebbbf191111",
+      "04bcbebbbf191111"
+    ],
+    "error": {
+      "fail_count": 2,
+      "timeout_count": 2,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.123587630999964,
+      "avg_fetch_time": 5.187264605166661,
+      "success_count": 6
+    }
+  },
+  "http://112.27.5.218:9901/tsfile/live/faacts/1035_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      "f359382030d6cf9b",
+      "e8e25599a27175ca",
+      "c9e6c2c91ab19a5e",
+      "ae519530f937c04f",
+      "ae519530f937c04f",
+      "d2826ccb07ab13f9"
+    ],
+    "ahash": [
+      "0000fcfeefe7e704",
+      "c170e0e1f1d8d850",
+      "fcf2c30018f95000",
+      "42003885411717ff",
+      "42003885411717ff",
+      "fcfc7c7c3c0cc000"
+    ],
+    "dhash": [
+      "929250a888ca0c2c",
+      "97a3c78f835130a6",
+      "e1c60e9a32b2aab2",
+      "9ed3e10d89b566a4",
+      "9ed3e10d89b566a4",
+      "c1f4f8e8c8d91103"
+    ],
+    "whash": [
+      "0000fcfeefe7e700",
+      "c470f0e1f9d8f8d0",
+      "fdf3e30b18fa5800",
+      "461038857d1717ff",
+      "461038857d1717ff",
+      "fdfc7c7e3c0cc000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.919189781999876,
+      "avg_fetch_time": 2.4865316303333125,
+      "success_count": 6
+    }
+  },
+  "https://jmp2.uk/stvp-CHBD800001D0": {
+    "phash": [
+      "c44ec07d6ba83dd1",
+      "c44cc9756ba83cd9",
+      "c44ec87d6ba83cd1",
+      "c44ec9756ba83cd1",
+      "c44cd95d6aa83cd9",
+      "c44ec07d6ba83cd5"
+    ],
+    "ahash": [
+      "307070311006ff7f",
+      "307070311002ffff",
+      "307030311002ffff",
+      "307070311002ffff",
+      "307232311002ffff",
+      "307070311006ff7f"
+    ],
+    "dhash": [
+      "a5e4e4655454968c",
+      "a4e4e4654454d66c",
+      "a5e4e4654454565c",
+      "a5e4e4654454d65c",
+      "a5e4e4654454d65c",
+      "a5e4e4655454968c"
+    ],
+    "whash": [
+      "307470b19006ff7f",
+      "307070b19086ffbf",
+      "307070b19082ffff",
+      "307070919086ffff",
+      "307272919082ffef",
+      "307470b19006ff7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 28.017494205000048,
+      "avg_fetch_time": 4.669582367500008,
+      "success_count": 6
+    }
+  },
+  "http://120.238.94.82:9901/tsfile/live/1086_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 48.62372754000006,
+      "avg_fetch_time": 12.155931885000015,
+      "success_count": 4
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqpub/gdjjkt.m3u8?auth=testpub": {
+    "phash": [
+      "b24d4c4b9ab695a5",
+      "e21cbd578d6092e5",
+      "ca7959ce31c816d3",
+      "c3bc3cc224639ed9",
+      "c3bc3cc224639ed9",
+      "c3bc3cc224639ed9"
+    ],
+    "ahash": [
+      "0002070f0f0f0707",
+      "004040e0e0e4e0ef",
+      "f8f8fcfe34307808",
+      "40c060607c7c6800",
+      "40c060607c7c6800",
+      "40c060607c7c6800"
+    ],
+    "dhash": [
+      "89866ead99cdacfd",
+      "2092948989894d8b",
+      "899948a46ce5e159",
+      "80a049cac9c9d1dd",
+      "80a049cac9c9d1dd",
+      "80a049cac9c9d1dd"
+    ],
+    "whash": [
+      "c0c70f0f0f0f0f0f",
+      "c0e0e0e0f0e4e0ff",
+      "f8f8fcfc3030f808",
+      "ffcf60707c7c6400",
+      "ffcf60707c7c6400",
+      "ffcf60707c7c6400"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.529718790000061,
+      "avg_fetch_time": 1.0882864650000101,
+      "success_count": 6
+    }
+  },
+  "http://192.151.150.154/live/btvkk.m3u8": {
+    "phash": [
+      "95b0282157fe60df",
+      "90e4f8da6c2fa3c8",
+      "d6f1c97a2a5a1a0e",
+      "95b0382143fe70df",
+      "f3592c20266657db",
+      "f3592c20266657db"
+    ],
+    "ahash": [
+      "4f0fdebe3e281818",
+      "ffdf4f323c0c0c00",
+      "fdff3e040000303c",
+      "4f5fdebc2e281818",
+      "0008fcfeefe7e700",
+      "0008fcfeefe7e700"
+    ],
+    "dhash": [
+      "9a9e346c685a7968",
+      "979c9ee6a8d9f8b8",
+      "89e668acb51c60e0",
+      "9e9e3c6c58d27068",
+      "829250a88ac88c6c",
+      "829250a88ac88c6c"
+    ],
+    "whash": [
+      "4f0fffbe3e281800",
+      "ffdf4f333c0c0c00",
+      "fdff3e160000387e",
+      "4f1fdebe2e281818",
+      "0008fcfeefe7e600",
+      "0008fcfeefe7e600"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.044752782999922,
+      "avg_fetch_time": 1.340792130499987,
+      "success_count": 6
+    }
+  },
+  "https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 5.278571499999998,
+      "avg_fetch_time": 0.8797619166666664,
+      "success_count": 6
+    }
+  },
+  "http://183.11.239.36:808/hls/69/index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://primep2.tv:826/live/SourPatchKid/nlnE4DVQUs/102155.ts": {
+    "phash": [
+      "c44ec07d2ba83dd9",
+      "c44ec07d6ba83cd9",
+      "c44ec07d2ba83dd9",
+      "c64ec8752ba83cd9",
+      "c44ec07d2ba83dd9",
+      "c44ec07d2ba83dd9"
+    ],
+    "ahash": [
+      "307072310002ff7f",
+      "307072311002ff7f",
+      "307070311002ff7f",
+      "307474310002ffff",
+      "307070311002ff7f",
+      "307070311002ff7f"
+    ],
+    "dhash": [
+      "e4e4e465545496dc",
+      "e4e4e4655454969c",
+      "e5e4e46554549ecc",
+      "e5e4e4655454d65c",
+      "e5e4e465545496dc",
+      "e5e4e465545496dc"
+    ],
+    "whash": [
+      "307072339082ff7f",
+      "307270319086ff7f",
+      "307470319086ff7f",
+      "307474319086ffaf",
+      "307474319086ff6f",
+      "307474319086ff6f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.115464985000131,
+      "avg_fetch_time": 1.185910830833355,
+      "success_count": 6
+    }
+  },
+  "http://live.ottiptv.cc/yy/1352811698": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 73.706279844,
+      "avg_fetch_time": 6.700570894909091,
+      "success_count": 11
+    }
+  },
+  "https://live.metshop.top/huya/11342396": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 50.97969036400019,
+      "avg_fetch_time": 4.248307530333349,
+      "success_count": 12
+    }
+  },
+  "http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8": {
+    "phash": [
+      "f44fcf0cb8638744",
+      "c1713e4ab704cb4f",
+      "c1613e36b54ecb43",
+      "c1713e4ab704cb4f",
+      "c1713e4ab704cb4f",
+      "c1713e4ab704cb4f"
+    ],
+    "ahash": [
+      "11faf0c0d21780ff",
+      "0040787e787830ff",
+      "4060787e7e7000ff",
+      "0040787e787830ff",
+      "0040787e787830ff",
+      "0040787e787830ff"
+    ],
+    "dhash": [
+      "6370401cb6e60f14",
+      "8692cacacac9e474",
+      "9692c2c2cac8e464",
+      "8692cacacac9e474",
+      "8692cacacac9e474",
+      "8692cacacac9e474"
+    ],
+    "whash": [
+      "20fee8c2520fc0ff",
+      "4060787e787834ff",
+      "4068787a7e3830ff",
+      "4060787e787834ff",
+      "4060787e787834ff",
+      "4060787e787834ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 4.7743904519999205,
+      "avg_fetch_time": 0.7957317419999868,
+      "success_count": 6
+    }
+  },
+  "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8": {
+    "phash": [
+      "c46e8f0caa636fc4",
+      "fc46cf0cb863874c",
+      "c1713e4ab704cb4f",
+      "c1713e3ab704eb49",
+      "c1713e3ab704eb49",
+      "c1713e4ab704cb4f"
+    ],
+    "ahash": [
+      "0018a0801002ffff",
+      "31fef0c0d21780ff",
+      "0040787e787830ff",
+      "0040787e787830ff",
+      "0040787e787830ff",
+      "0040787e787830ff"
+    ],
+    "dhash": [
+      "6330400ca6668ef0",
+      "6370401cb6e62732",
+      "8692cacacac9e474",
+      "8682cacacac1e4f4",
+      "8682cacacac1e4f4",
+      "8692cacacac9e474"
+    ],
+    "whash": [
+      "00fea0e01203ffff",
+      "20fee8c2d20f80ff",
+      "4060787e787834ff",
+      "4060787e787834ff",
+      "4060787e787834ff",
+      "4060787e787834ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.5459691640001,
+      "avg_fetch_time": 3.2576615273333496,
+      "success_count": 6
+    }
+  },
+  "https://jmp2.uk/stvp-GBBD8000016N": {
+    "phash": [
+      "c44ec9756ba83cd1",
+      "c44ec9756ba83cd1",
+      "c44ec07f6aa83dd1",
+      "c44ec07d6aa83fd1",
+      "c44ec07d6aa83fd1",
+      "c44ec0756ba83dd9"
+    ],
+    "ahash": [
+      "307070311002ffff",
+      "307070311002ffff",
+      "307232311002ff7f",
+      "307032311002ff7f",
+      "307032311002ff7f",
+      "307474311006ff7f"
+    ],
+    "dhash": [
+      "a5e4e4654454d65c",
+      "a5e4e4654454565c",
+      "e4e4e465545496dc",
+      "e5e4e465445496dc",
+      "e5e4e465445496dc",
+      "a5e4e565545496b4"
+    ],
+    "whash": [
+      "307070919086ffff",
+      "307070919086ffff",
+      "307272919082ff7f",
+      "307070b19086ff7f",
+      "307070b19086ff7f",
+      "307474159006ff7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.69380042900002,
+      "avg_fetch_time": 4.2823000715000035,
+      "success_count": 6
+    }
+  },
+  "https://epg.pw/stream/c7df950876e6a1ceb8be74ee86f9f702cebbbae29f1d15124ef8f86fd43161cf.m3u8": {
+    "phash": [
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61"
+    ],
+    "ahash": [
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c"
+    ],
+    "dhash": [
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0"
+    ],
+    "whash": [
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.823421447000214,
+      "avg_fetch_time": 3.4705702411667025,
+      "success_count": 6
+    }
+  },
+  "https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8": {
+    "phash": [
+      "c03d3d353f857ac0",
+      "c03d3d353f857ac0",
+      "c03d3d353f857ac0",
+      "c03d3d353f857ac0",
+      "c03d3d353f857ac0",
+      "9528373f2ad522c7"
+    ],
+    "ahash": [
+      "021a7c7c7c7c7e00",
+      "021a7c7c7c7c7e00",
+      "021a7c7c7c7c7e00",
+      "021a7c7c7c7c7e00",
+      "021a7c7c7c7c7e00",
+      "023eff3800007e38"
+    ],
+    "dhash": [
+      "8ef0d0f0d8d8d8e8",
+      "8ef0d0f0d8d8d8e8",
+      "8ef0d0f0d8d8d8e8",
+      "8ef0d0f0d8d8d8e8",
+      "8ef0d0f0d8d8d8e8",
+      "8ef6ccb233f4dce0"
+    ],
+    "whash": [
+      "021e7e7c7c7c7e00",
+      "021e7e7c7c7c7e00",
+      "021e7e7c7c7c7e00",
+      "021e7e7c7c7c7e00",
+      "021e7e7c7c7c7e00",
+      "023eff38101cfe3c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.930954690999897,
+      "avg_fetch_time": 1.6551591151666496,
+      "success_count": 6
+    }
+  },
+  "http://primep2.tv:826/live/SourPatchKid/nlnE4DVQUs/105877.ts": {
+    "phash": [
+      "c44ec07d6ba83cd9",
+      "c44ec95d2ba83cd9",
+      "c64ec9552ba83cd9",
+      "c44ec9752ba83cd9",
+      "c44ec9752ba83cd9",
+      "c44ec9752ba83cd9"
+    ],
+    "ahash": [
+      "307072311006ff7f",
+      "307070311002ffff",
+      "307474311002ffff",
+      "307074311006ffff",
+      "307074311006ffff",
+      "307074311006ffff"
+    ],
+    "dhash": [
+      "e5e4e465545496dc",
+      "e5e4e4654454d65c",
+      "a5e4e4654454d65c",
+      "e5e4e4654454d65c",
+      "e5e4e4654454d65c",
+      "e5e4e4654454d65c"
+    ],
+    "whash": [
+      "307070339086ff7f",
+      "307070319086ffff",
+      "307474319086ffcf",
+      "307474319086ffaf",
+      "307474319086ffaf",
+      "307474319086ffaf"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.628209015000152,
+      "avg_fetch_time": 1.4380348358333588,
+      "success_count": 6
+    }
+  },
+  "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8": {
+    "phash": [
+      "c1613e36b54ecb43",
+      "c1713e36b54ec943",
+      "c1713e769964d943",
+      "c1517e3cb84af943",
+      "c1517e3cb84af943",
+      "c1713e34f84ef941"
+    ],
+    "ahash": [
+      "4060787e7e3000ff",
+      "4060787e7e3000ff",
+      "4060787c7c7020ff",
+      "40607c7e7e3020ff",
+      "40607c7e7e3020ff",
+      "40607c7e7e7820ff"
+    ],
+    "dhash": [
+      "9692c2c2cac8e464",
+      "9692c2c2cacaec64",
+      "968acacac8c8c460",
+      "96d2c8c8caeae160",
+      "96d2c8c8caeae160",
+      "96d2c8c8caeae164"
+    ],
+    "whash": [
+      "4068787a7e3830ff",
+      "4068787a7e3830ff",
+      "4060787c7c7870ff",
+      "4060787e7e3230ff",
+      "4060787e7e3230ff",
+      "4060787e7e7820ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 5.746338304000005,
+      "avg_fetch_time": 0.9577230506666675,
+      "success_count": 6
+    }
+  },
+  "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8": {
+    "phash": [
+      "c1713e34b84ef943",
+      "c1713e769964d943",
+      "c1713e769b64c943",
+      "c1713e34b84ef943",
+      "c1713e769964d943",
+      "c1713e769964d943"
+    ],
+    "ahash": [
+      "40607c7e7e7820ff",
+      "4060787c7c7020ff",
+      "4060787c7c7020ff",
+      "40607c7e7e7820ff",
+      "4060787c7c7020ff",
+      "4060787c7c7020ff"
+    ],
+    "dhash": [
+      "96d2c8c8caeae164",
+      "968acacac8c8c460",
+      "968acacac8c0c460",
+      "96d2c8c8caeae164",
+      "968acacac8c8c460",
+      "968acacac8c8c460"
+    ],
+    "whash": [
+      "4060787e7e7820ff",
+      "4060787c7c7870ff",
+      "6060787c7c7830ff",
+      "4060787e7e7820ff",
+      "4060787c7c7870ff",
+      "4060787c7c7870ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 4.433808784999883,
+      "avg_fetch_time": 0.7389681308333138,
+      "success_count": 6
+    }
+  },
+  "https://epg.pw/stream/0e38a2ff528e933b9a9dc37acf08f88b9ac4c118cdbba4adac0517303612645e.m3u8": {
+    "phash": [
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61"
+    ],
+    "ahash": [
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c"
+    ],
+    "dhash": [
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0"
+    ],
+    "whash": [
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.156095335000032,
+      "avg_fetch_time": 3.3593492225000054,
+      "success_count": 6
+    }
+  },
+  "http://107.150.60.122/live/gdty.m3u8": {
+    "phash": [
+      "9528373f2ad522c7",
+      "9528373f2ad522c7",
+      "9528373f2ad522c7",
+      "9528373f2ad522c7",
+      "9528373f2ad522c7",
+      "9528373f2ad522c7"
+    ],
+    "ahash": [
+      "023eff3800007e38",
+      "023eff3800007e38",
+      "023eff3800007e38",
+      "023eff3800007e38",
+      "023eff3800007e38",
+      "023eff3800007e38"
+    ],
+    "dhash": [
+      "8ef6ccb233f4dce0",
+      "8ef6ccb233f4dce0",
+      "8ef6ccb233f4dce0",
+      "8ef6ccb233f4dce0",
+      "8ef6ccb233f4dce0",
+      "8ef6ccb233f4dce0"
+    ],
+    "whash": [
+      "023eff38101cfe3c",
+      "023eff38101cfe3c",
+      "023eff38101cfe3c",
+      "023eff38101cfe3c",
+      "023eff38101cfe3c",
+      "023eff38101cfe3c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.440672509000137,
+      "avg_fetch_time": 1.2401120848333562,
+      "success_count": 6
+    }
+  },
+  "http://192.151.150.154/live/ymkt.m3u8": {
+    "phash": [
+      "8af535307316b723",
+      "dd1a6d06f9239607",
+      "e815df1dd16e0549",
+      "af125ae944cb87b2",
+      "af125ae944cb87b2",
+      "af125ae944cb87b2"
+    ],
+    "ahash": [
+      "06183c3c3c1c1c18",
+      "00800c1c1e3e23fb",
+      "000000e07b93f9ff",
+      "20040636f3f39190",
+      "20040636f3f39190",
+      "20040636f3f39190"
+    ],
+    "dhash": [
+      "9cb0f9f1f9f1f1f1",
+      "3034f83970ec4f12",
+      "4832d7c5d23761c9",
+      "423c6c6446433337",
+      "423c6c6446433337",
+      "423c6c6446433337"
+    ],
+    "whash": [
+      "463a3c3c3c3c1d3d",
+      "00800edc3e7ee3fb",
+      "000000e57bf3fdff",
+      "20060eb6f3f3f991",
+      "20060eb6f3f3f991",
+      "20060eb6f3f3f991"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.759516524999867,
+      "avg_fetch_time": 1.1265860874999778,
+      "success_count": 6
+    }
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8": {
+    "phash": [
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72",
+      "ecb5336e131a165a",
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72"
+    ],
+    "ahash": [
+      "007f6f67efffff00",
+      "007f6f67efffff00",
+      "00fbfffbf1d1d100",
+      "007f6f67efffff00",
+      "007f6f67efffff00",
+      "007f6f67efffff00"
+    ],
+    "dhash": [
+      "82cccdcd8df9b8b0",
+      "82cccdcd8de9b8b0",
+      "9692b2b3232137a5",
+      "82cccdcd8df9b8b0",
+      "82cccdcd8df9b8b0",
+      "82cccdcd8df9b8b0"
+    ],
+    "whash": [
+      "007c6565677ffe00",
+      "007c6565677ffe00",
+      "00fbfbfbd191d100",
+      "007c6565677ffe00",
+      "007c6565677ffe00",
+      "007c6565677ffe00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.82698803599999,
+      "avg_fetch_time": 2.804498005999998,
+      "success_count": 6
+    }
+  },
+  "https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298": {
+    "phash": [
+      "a54cdede542536b0",
+      "8f854c65d9a67a89",
+      "820b5dd5ea297267",
+      "dc310dd8dc4733b2",
+      "9798180778fca66e",
+      "9798180778fca66e"
+    ],
+    "ahash": [
+      "18180000ffffffff",
+      "ff3f3f3f3e801000",
+      "18182567e7660618",
+      "181804f8fcf8f898",
+      "7ffffffe20200000",
+      "7ffffffe20200000"
+    ],
+    "dhash": [
+      "f4f0c6c6cc8e8ecc",
+      "7272f8787a48e4f0",
+      "f0e0cdcdccccfcb0",
+      "b3b36c2031307030",
+      "bcfc741ec8cc64f1",
+      "bcfc741ec8cc64f1"
+    ],
+    "whash": [
+      "10000000fffffff7",
+      "bf3f3f3f3e801000",
+      "183067e7f76e061c",
+      "18180cf8fcfcf8b8",
+      "7ffffffe20200000",
+      "7ffffffe20200000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.644681601000002,
+      "avg_fetch_time": 4.274113600166667,
+      "success_count": 6
+    }
+  },
+  "http://www.kaniptv.cn/uadl.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&mode=1&hls=aHR0cDovLzQ1LjE5Mi45Ny4xNzA6ODg4MC9wbGF5LzQ2NC5tM3U4": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 20.9765518559999,
+      "avg_fetch_time": 4.19531037119998,
+      "success_count": 5
+    }
+  },
+  "http://173.208.234.146/live/lbwlwz.m3u8": {
+    "phash": [
+      "f848c3891db7b6b0",
+      "f848c3891db7b6b0",
+      "81ea3dcd1c7096b6",
+      "f848c3891db7b6b0",
+      "f848c3891db7b6b0",
+      "847aa36e79338c99"
+    ],
+    "ahash": [
+      "fcf0c0808affffff",
+      "fcf0c0808affffff",
+      "7be125083e3e0707",
+      "fcf0c0808affffff",
+      "fcf0c0808affffff",
+      "05141e921212273f"
+    ],
+    "dhash": [
+      "d18115361a164154",
+      "d18115361a164154",
+      "f3cbcd99f0ccde9e",
+      "d18115361a164154",
+      "d18115361a164154",
+      "ade52626266666e2"
+    ],
+    "whash": [
+      "fcd0800088ffffac",
+      "fcd0800088ffffac",
+      "fbe1250c3e3e070e",
+      "fcd0800088ffffac",
+      "fcd0800088ffffac",
+      "05371e921a13377f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.27702801800001,
+      "avg_fetch_time": 1.2128380030000017,
+      "success_count": 6
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqpub/wxtyhd.m3u8?auth=testpub": {
+    "phash": [
+      "d5e41a1e65a5651b",
+      "9cb15a5a2b956533",
+      "9cb55a5b2db56540",
+      "94f6185a2f976558",
+      "94f6185a2f976558",
+      "94f6185a2f976558"
+    ],
+    "ahash": [
+      "1cfcffff3c001c18",
+      "1cfcffff3c181c10",
+      "1cfcffff3c183c18",
+      "1cfcffff38101c18",
+      "1cfcffff38101c18",
+      "1cfcffff38101c18"
+    ],
+    "dhash": [
+      "703186c67070f0f0",
+      "7071a6b27070f0f0",
+      "7071a6b27070f0f0",
+      "7031a64e7070f0f0",
+      "7031a64e7070f0f0",
+      "7031a64e7070f0f0"
+    ],
+    "whash": [
+      "0cbcfeff38103c18",
+      "0cbcffff18183c10",
+      "0cbcffff18183c10",
+      "0cbcfeff38103c18",
+      "0cbcfeff38103c18",
+      "0cbcfeff38103c18"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.664935175999858,
+      "avg_fetch_time": 1.1108225293333096,
+      "success_count": 6
+    }
+  },
+  "http://61.143.43.2:9901/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 27.891641343000174,
+      "avg_fetch_time": 6.9729103357500435,
+      "success_count": 4
+    }
+  },
+  "http://kytv.xyz:80/live/brendan1/brendan1/1846753.ts": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 2,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x5b7190c574c0] HTTP error 404 Not Found\n[in#0 @ 0x5b7190c56c40] Error opening input: Server returned 404 Not Found\nError opening input file http://kytv.xyz:80/live/brendan1/brendan1/1846753.ts.\nError opening input files: Server returned 404 Not Found"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://74.91.26.218:82/live/vlaqgy.m3u8": {
+    "phash": [
+      "94c31dea68b48bba",
+      "94c31dea68b48bba",
+      "97018dfa60969afc",
+      "94c31dea68b48bba",
+      "94c31dea68b48bba",
+      "94c31dea68b48bba"
+    ],
+    "ahash": [
+      "2f3a3e46c53d961c",
+      "2f3a3e46c53d961c",
+      "6f3a3e66c13d143f",
+      "2f3a3e46c53d961c",
+      "2f3a3e46c53d961c",
+      "2f3a3e46c53d961c"
+    ],
+    "dhash": [
+      "caea6cc41d653430",
+      "caea6cc41d653430",
+      "cacacccc9d696c64",
+      "caea6cc41d653430",
+      "caea6cc41d653430",
+      "caea6cc41d653430"
+    ],
+    "whash": [
+      "273a3e46d5b4961c",
+      "273a3e46d5b4961c",
+      "273a3e66c33d141e",
+      "273a3e46d5b4961c",
+      "273a3e46d5b4961c",
+      "273a3e46d5b4961c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.78906742200013,
+      "avg_fetch_time": 1.6315112370000218,
+      "success_count": 6
+    }
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8": {
+    "phash": [
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72",
+      "ecb5336e131a165a",
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72"
+    ],
+    "ahash": [
+      "007f6f67efffff00",
+      "007f6f67efffff00",
+      "00fbfffbf1d1d100",
+      "007f6f67efffff00",
+      "007f6f67efffff00",
+      "007f6f67efffff00"
+    ],
+    "dhash": [
+      "82cccdcd8df9b8b0",
+      "82cccdcd8de9b8b0",
+      "9692b2b3232137a5",
+      "82cccdcd8df9b8b0",
+      "82cccdcd8df9b8b0",
+      "82cccdcd8df9b8b0"
+    ],
+    "whash": [
+      "007c6565677ffe00",
+      "007c6565677ffe00",
+      "00fbfbfbd191d100",
+      "007c6565677ffe00",
+      "007c6565677ffe00",
+      "007c6565677ffe00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.076806110000007,
+      "avg_fetch_time": 4.0128010183333345,
+      "success_count": 6
+    }
+  },
+  "https://www.goodiptv.club/huya/23829543": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 50.75737243299977,
+      "avg_fetch_time": 4.229781036083314,
+      "success_count": 12
+    }
+  },
+  "http://107.150.60.122/live/btvkk.m3u8": {
+    "phash": [
+      "b7c04d2d1c8af51e",
+      "9cbdc13c0fe370c8",
+      "91b0c8f15c4b2edd",
+      "ade5890a3681f39e",
+      "ade5890a3681f39e",
+      "f47cff1f83878040"
+    ],
+    "ahash": [
+      "e0e0efe783830302",
+      "bf9fdea69ad67639",
+      "5f0f0f0e1e7cf838",
+      "fffbfbc301010000",
+      "fffbfbc301010000",
+      "a0c0e07700de3e7f"
+    ],
+    "dhash": [
+      "8aca8c0e5e4f5f6a",
+      "22a8b46822b4a46b",
+      "b2be7eecf8c8d0b0",
+      "92b212873551636b",
+      "92b212873551636b",
+      "061286c4303c62d0"
+    ],
+    "whash": [
+      "e0e8ffef87830302",
+      "9bdedca898d05638",
+      "df0f0f060e7c7838",
+      "fffffbe381010001",
+      "fffffbe381010001",
+      "c0c0c0f600febe7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.864956437999922,
+      "avg_fetch_time": 1.310826072999987,
+      "success_count": 6
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wxtyhd": {
+    "phash": [
+      "9cb55a5b2db56540",
+      "9cf55a5b2d956540",
+      "9cb55a5b2db56540",
+      "9cf55a5b2d956540",
+      "9cb15a5a29956573",
+      "9cb15a5a29956573"
+    ],
+    "ahash": [
+      "1cfcffff3c183c18",
+      "1cfcffff3c183c18",
+      "1cfcffff3c183c18",
+      "1cfcffff3c183c18",
+      "1cfcffff3c183c10",
+      "1cfcffff3c183c10"
+    ],
+    "dhash": [
+      "7071a6b27070f0f0",
+      "7071a6b27070f0f0",
+      "7071a6b27070f0f0",
+      "7071a6b27070f0f0",
+      "7071a6b27060f0f0",
+      "7071a6b27060f0f0"
+    ],
+    "whash": [
+      "0cbcffff18183c10",
+      "0cbcffff18183c10",
+      "0cbcffff18183c10",
+      "0cbcffff18183c10",
+      "0cbcffff18183c10",
+      "0cbcffff18183c10"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.156255268999985,
+      "avg_fetch_time": 1.359375878166664,
+      "success_count": 6
+    }
+  },
+  "https://yg.ygbox.de5.net/huya.php?id=11602032": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 1,
+      "network_error_count": 0,
+      "other_error_count": 2,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[https @ 0x6257bdf1d4c0] HTTP error 403 Forbidden\n[in#0 @ 0x6257bdf1cc40] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file https://yg.ygbox.de5.net/huya.php?id=11602032.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 33.02831939400005,
+      "avg_fetch_time": 4.128539924250006,
+      "success_count": 8
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=btvkk": {
+    "phash": [
+      "b7c04d2d1c8af51e",
+      "d1e6249d0cb7670e",
+      "95a55834d9564d1f",
+      "f47cff1f83878040",
+      "f47cff1f83878040",
+      "f47cff1f83878040"
+    ],
+    "ahash": [
+      "e0e0efe783830302",
+      "e7e6ecccdcc80800",
+      "4f0f1f1e1e1e1c1c",
+      "a0c0e07700de3e7f",
+      "a0c0e07700de3e7f",
+      "a0c0e07700de3e7f"
+    ],
+    "dhash": [
+      "8aca8c0e5e4f5f6a",
+      "8e8cc89811919aba",
+      "bebafefafaf4f5b0",
+      "061286c4303c62d0",
+      "061286c4303c62d0",
+      "061286c4303c62d0"
+    ],
+    "whash": [
+      "e0e8ffef87830302",
+      "e7e6eeccdccc0840",
+      "4e1f1f1e1e1e1c1c",
+      "c0c0c0f600febe7f",
+      "c0c0c0f600febe7f",
+      "c0c0c0f600febe7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.34135586299999,
+      "avg_fetch_time": 1.390225977166665,
+      "success_count": 6
+    }
+  },
+  "http://38.64.72.148/hls/modn/list/2015/playlist.m3u8": {
+    "phash": [
+      "c3a56448dbd65a4b",
+      "913f921419eb847f",
+      "913c9c8d8dc79d83",
+      "d0a674b8e71d3d24",
+      "913c8c8d8dc7bd83",
+      "913c8c8d8dc7bd83"
+    ],
+    "ahash": [
+      "f263247e6c74747c",
+      "06040008087fffff",
+      "1f060400080affff",
+      "e6e544ecff584858",
+      "1f060400080affff",
+      "1f060400080affff"
+    ],
+    "dhash": [
+      "c6c6caecd9c5c9c9",
+      "3c181a123aaacb98",
+      "363c189b9a9ac898",
+      "8e8d8ac88d919890",
+      "363c189b9b9ac898",
+      "363c189b9b9ac898"
+    ],
+    "whash": [
+      "7262227e6c74747c",
+      "0e060288087fffff",
+      "bf0e0408080effff",
+      "e66546ec7f584858",
+      "bf0e0408080effff",
+      "bf0e0408080effff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 12.80708023600016,
+      "avg_fetch_time": 2.1345133726666936,
+      "success_count": 6
+    }
+  },
+  "https://www.goodiptv.club/huya/23903130": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 56.220766528999775,
+      "avg_fetch_time": 4.685063877416648,
+      "success_count": 12
+    }
+  },
+  "http://38.75.136.137:98/gslb/dsdqpub/xdkthd.m3u8?auth=testpub": {
+    "phash": [
+      "dc8c2373f8b1e384",
+      "b36a9cf5c41ab622",
+      "baf4741c0daac3cc",
+      "c785866c2b37c68d",
+      "c785866c2b37c68d",
+      "c785866c2b37c68d"
+    ],
+    "ahash": [
+      "0010fffffce00000",
+      "03030421638f1f3f",
+      "17c7ff1f1f1f1f11",
+      "fffffee6e0c00000",
+      "fffffee6e0c00000",
+      "fffffee6e0c00000"
+    ],
+    "dhash": [
+      "0360f03030828061",
+      "1e1a29cbce1e3aec",
+      "b5b58dab33353535",
+      "cececc8a020120e1",
+      "cececc8a020120e1",
+      "cececc8a020120e1"
+    ],
+    "whash": [
+      "0010fffffef84018",
+      "07030721e38f1f7f",
+      "07877f0f1f0f1701",
+      "fffefee6e0c00000",
+      "fffefee6e0c00000",
+      "fffefee6e0c00000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 9.16632735600001,
+      "avg_fetch_time": 1.5277212260000017,
+      "success_count": 6
+    }
+  },
+  "http://112.99.195.122:65000/tsfile/live/1033_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 15.80122215699987,
+      "avg_fetch_time": 5.26707405233329,
+      "success_count": 3
+    }
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/71d7dce230b74c1b9e35b41e837ffc5f/1200.m3u8": {
+    "phash": [
+      "986865b50c96ab5f",
+      "913179e4e4b6b2f0",
+      "c5d3283cbd985c5a",
+      "c1c16c7890976f6b",
+      "aad5aad52658554b",
+      "aad5aa5569b25652"
+    ],
+    "ahash": [
+      "00c0311f1f6ffe10",
+      "42080d676f7dbfff",
+      "fefcfcfe3e000000",
+      "ffc37e7e0c000000",
+      "ffff780000000101",
+      "dfdf0c0800030703"
+    ],
+    "dhash": [
+      "b28ad5d575ca2a73",
+      "9ad9d9cecae93928",
+      "30c8c0e07064e0e2",
+      "a2a2c0d0d9270a11",
+      "8aeaf0e2ec90e3e7",
+      "b2bae9dbe2a6dfbb"
+    ],
+    "whash": [
+      "0040293d1ffffe98",
+      "4008052f6e3d9dff",
+      "fefcfcfebe000000",
+      "fffffe7e2c000000",
+      "fffffc0010647121",
+      "ffff7d0800070707"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.997899394,
+      "avg_fetch_time": 3.166316565666667,
+      "success_count": 6
+    }
+  },
+  "https://lbds.us.ci/11352879": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[in#0/flv @ 0x623181210c40] could not seek to position 88714.020\nInput #0, flv, from 'https://lbds.us.ci/11352879':\n  Metadata:\n    displayWidth    : 640\n    displayHeight   : 464\n    fps             : 24\n    profile         : \n    level           : \n    videocodecreal  : 0\n    cdn_ip          : 155.102.130.150\n    Server          : Tengine\n    canSeekToEnd    : true\n    audiosize       : 53388201\n    lastkeyframelocation: 347414260\n    lastkeyframetimestamp: 3232\n    metadatacreator : Yet Another Metadata Injector for FLV - Version 1.9\n    videosize       : 293116198\n  Duration: 00:00:00.00, start: 88705.020000, bitrate: N/A\n  Stream #0:0: Subtitle: text, start 88705.020000\n  Stream #0:1: Audio: aac (LC), 44100 Hz, stereo, fltp, start 88705.038000\n  Stream #0:2: Video: h264 (High), yuv420p(progressive), 640x464 [SAR 1:1 DAR 40:29], 24 fps, 25 tbr, 1k tbn, start 88705.060000\nStream mapping:\n  Stream #0:2 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[h264 @ 0x623181258880] co located POCs unavailable\n[https @ 0x6231812114c0] Stream ends prematurely at 570467, should be 18446744073709551615\n    Last message repeated 1 times\n[in#0/flv @ 0x623181210c40] Error during demuxing: Input/output error\n[vf#0:0 @ 0x623181226f80] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    displayWidth    : 640\n    displayHeight   : 464\n    fps             : 24\n    profile         : \n    level           : \n    videocodecreal  : 0\n    cdn_ip          : 155.102.130.150\n    Server          : Tengine\n    canSeekToEnd    : true\n    audiosize       : 53388201\n    lastkeyframelocation: 347414260\n    lastkeyframetimestamp: 3232\n    metadatacreator : Yet Another Metadata Injector for FLV - Version 1.9\n    videosize       : 293116198\n    encoder         : Lavf62.3.100\n  Stream #0:0: Video: png, rgb24(progressive), 640x464 [SAR 1:1 DAR 40:29], q=2-31, 200 kb/s, 25 fps, 1k tbn\n    Metadata:\n      encoder         : Lavc62.11.100 png\n[out#0/image2pipe @ 0x623181454280] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\n[out#0/image2pipe @ 0x623181454280] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.35"
+    },
+    "stats": {
+      "total_fetch_time": 8.310093487000131,
+      "avg_fetch_time": 1.3850155811666884,
+      "success_count": 6
+    }
+  },
+  "https://epg.pw/stream/0b732899375b36eab58d7a77b4943066b480d947237f75d07721b3a87fbd4065.m3u8": {
+    "phash": [
+      "d096596ce999d269",
+      "c1c1c3c3c4cbe6ae",
+      "97949f602f3a700f",
+      "e7d24b8d225770a6",
+      "e7d24b8d225770a6",
+      "e7d24b8d225770a6"
+    ],
+    "ahash": [
+      "9c646c7c70981858",
+      "7c78783800000800",
+      "1e3e3e0f02c00400",
+      "78fce4e6e7e38381",
+      "78fce4e6e7e38381",
+      "78fce4e6e7e38381"
+    ],
+    "dhash": [
+      "39ccd9d8a2b0b29b",
+      "c0d0d0d0d4d8db8c",
+      "fcfcfcfcdc9c4c4e",
+      "40684c4cc6464747",
+      "40684c4cc6464747",
+      "40684c4cc6464747"
+    ],
+    "whash": [
+      "9c6c7c7e70d8185c",
+      "fe7c7c7c6c080946",
+      "3e3e3e2f26c026a3",
+      "38f4e4e4e7e3a181",
+      "38f4e4e4e7e3a181",
+      "38f4e4e4e7e3a181"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.081813035000096,
+      "avg_fetch_time": 1.180302172500016,
+      "success_count": 6
+    }
+  },
+  "https://live.ottiptv.cc/yy/1354931498": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 67.85503923600015,
+      "avg_fetch_time": 7.539448804000017,
+      "success_count": 9
+    }
+  },
+  "http://222.186.39.21:35466/huya/11342384": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x616d9e70a4c0] HTTP error 403 Forbidden\n[in#0 @ 0x616d9e709c40] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file http://222.186.39.21:35466/huya/11342384.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 2.555834310000023,
+      "avg_fetch_time": 2.555834310000023,
+      "success_count": 1
+    }
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?": {
+    "phash": [
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72",
+      "ecb5336e131a165a",
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72",
+      "82235d9c2dbc6e72"
+    ],
+    "ahash": [
+      "007f6f67efffff00",
+      "007f6f67efffff00",
+      "00fbfffbf1d1d100",
+      "007f6f67efffff00",
+      "007f6f67efffff00",
+      "007f6f67efffff00"
+    ],
+    "dhash": [
+      "82cccdcd8df9b8b0",
+      "82cccdcd8de9b8b0",
+      "9692b2b3232137a5",
+      "82cccdcd8df9b8b0",
+      "82cccdcd8df9b8b0",
+      "82cccdcd8df9b8b0"
+    ],
+    "whash": [
+      "007c6565677ffe00",
+      "007c6565677ffe00",
+      "00fbfbfbd191d100",
+      "007c6565677ffe00",
+      "007c6565677ffe00",
+      "007c6565677ffe00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 21.63906872199982,
+      "avg_fetch_time": 3.6065114536666365,
+      "success_count": 6
+    }
+  },
+  "http://39.165.39.49:85/tsfile/live/1157_1.m3u8?key=txiptv&playlive=0&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 32.15221384999995,
+      "avg_fetch_time": 8.038053462499988,
+      "success_count": 4
+    }
+  },
+  "http://61.221.215.25:8800/hls/57/index.m3u8": {
+    "phash": [
+      "859cdc6036d9e176",
+      "808ddb6531cb7e31",
+      "a9c8f43e63cc1b32",
+      "8fb8d9626083667e",
+      "8fb8d9626083667e",
+      "8fb8d9626083667e"
+    ],
+    "ahash": [
+      "ff3f3f1f03001000",
+      "ff7f7f3f03800000",
+      "fffffff901010000",
+      "ffbf1f1f03000800",
+      "ffbf1f1f03000800",
+      "ffbf1f1f03000800"
+    ],
+    "dhash": [
+      "e6fa7a77efd2f0ac",
+      "caf6e5ec9607c098",
+      "a386d1c3cf37a692",
+      "f27279fb6747d032",
+      "f27279fb6747d032",
+      "f27279fb6747d032"
+    ],
+    "whash": [
+      "ff7f3f3f03281000",
+      "ff7f7f7f03800000",
+      "fffffff901010000",
+      "ffbf3f1f07011800",
+      "ffbf3f1f07011800",
+      "ffbf3f1f07011800"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 16.145185265999885,
+      "avg_fetch_time": 2.690864210999981,
+      "success_count": 6
+    }
+  },
+  "http://107.150.60.122/live/gdjjkt.m3u8": {
+    "phash": [
+      "c01a2bcc31bed9e5",
+      "c9262ac9033e96fb",
+      "d2c9a1569e5ea952",
+      "c01a2bcc31bed9e5",
+      "c01a2bcc31bed9e5",
+      "c01a2bcc31bed9e5"
+    ],
+    "ahash": [
+      "7070f87470f0f26a",
+      "7070f07878f8f868",
+      "ffff780404040407",
+      "7070f87470f0f26a",
+      "7070f87470f0f26a",
+      "7070f87470f0f26a"
+    ],
+    "dhash": [
+      "c1a12094d2e3e6d2",
+      "c1a120d2d39093d3",
+      "d09092ececcceccc",
+      "c1a12094d2e3e6d2",
+      "c1a12094d2e3e6d2",
+      "c1a12094d2e3e6d2"
+    ],
+    "whash": [
+      "7070f47c70f0f07a",
+      "7070f07878fcf868",
+      "fffffc3404040607",
+      "7070f47c70f0f07a",
+      "7070f47c70f0f07a",
+      "7070f47c70f0f07a"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.224457486999881,
+      "avg_fetch_time": 1.0374095811666468,
+      "success_count": 6
+    }
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8": {
+    "phash": [
+      "ffb811d38a6c4455",
+      "f1d9d1f240771ad0",
+      "93c8aed15e2bd04d",
+      "ba1f4ab8d577410c",
+      "95d295d087a1b83f",
+      "d58de3f8de874018"
+    ],
+    "ahash": [
+      "dd8f9b99a8808080",
+      "ecfd89716060e240",
+      "ffffff0c0c040000",
+      "8c150507cfc76575",
+      "fffe002000000002",
+      "ff6f2e3696c6cc44"
+    ],
+    "dhash": [
+      "313b363159543231",
+      "99191bc387c444c4",
+      "a08090f818185f6f",
+      "39396d8eb98d8d85",
+      "e8e8514264b5ca4e",
+      "189ecc642c9cd8a8"
+    ],
+    "whash": [
+      "df8fdbbfb8808080",
+      "ecfdfb716060e240",
+      "ffffff0e0e040100",
+      "841515474fc7657d",
+      "fffffe3012500302",
+      "fe6e263696c64c44"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.320398022000177,
+      "avg_fetch_time": 3.053399670333363,
+      "success_count": 6
+    }
+  },
+  "https://www.goodiptv.club/huya/23734256": {
+    "phash": [
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363",
+      "c1c1c19d7e666363"
+    ],
+    "ahash": [
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00",
+      "787a6070607c3c00"
+    ],
+    "dhash": [
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3",
+      "d6d2c3c3c1c8d8c3"
+    ],
+    "whash": [
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00",
+      "7a7f6070647e7e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.24693943800014,
+      "avg_fetch_time": 1.3744899063333567,
+      "success_count": 6
+    }
+  },
+  "http://107.150.60.122/live/ymkt.m3u8": {
+    "phash": [
+      "a63755c86b4c4b5a",
+      "d69e18598e873939",
+      "b513ce6cd39b2582",
+      "a63755c86b4c4b5a",
+      "a63755c86b4c4b5a",
+      "a63755c86b4c4b5a"
+    ],
+    "ahash": [
+      "000707f7ff771000",
+      "1cbeb6b6b2c0c000",
+      "0000008cf2d3ffff",
+      "000707f7ff771000",
+      "000707f7ff771000",
+      "000707f7ff771000"
+    ],
+    "dhash": [
+      "ce8eacaea9e6a463",
+      "316464642c1a94a4",
+      "694cca1806a6a2d8",
+      "ce8eacaea9e6a463",
+      "ce8eacaea9e6a463",
+      "ce8eacaea9e6a463"
+    ],
+    "whash": [
+      "000707ffff7fd000",
+      "1cbef7b6f6c0c040",
+      "000002ced2f3ffff",
+      "000707ffff7fd000",
+      "000707ffff7fd000",
+      "000707ffff7fd000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.445353130000058,
+      "avg_fetch_time": 1.0742255216666763,
+      "success_count": 6
+    }
+  },
+  "https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=b2b3d9f7c3dfd1ca01c890ef348f0766&wsTime=1794035014": {
+    "phash": [
+      "e9a53c5252d99b89",
+      "919a6d60e4971f63",
+      "919a6f60e59d1f41",
+      "93926f68c1993f61",
+      "91b27b68e59c1f09",
+      "f9858c067276f784"
+    ],
+    "ahash": [
+      "ebe3ebe8e0c8c080",
+      "0f0f0f6f66022081",
+      "0f0f0f7f660200b0",
+      "0f070f7f670200b2",
+      "0f0f0f7f63001810",
+      "dadbcec8c0c0c0c0"
+    ],
+    "dhash": [
+      "8a86420b891a1232",
+      "ba987accccceca62",
+      "ba987accccceea42",
+      "baac68ccc6eeda42",
+      "ba9878cec6ceb272",
+      "96921a9999081030"
+    ],
+    "whash": [
+      "ebe3ebe8e8e8c080",
+      "0f0f0f7f670660a3",
+      "0f0f1f7f670200bb",
+      "0f0f0f7f670200fb",
+      "4f0f1f7f63031813",
+      "fefafec8c0c8c0c0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 33.56268051599989,
+      "avg_fetch_time": 5.593780085999981,
+      "success_count": 6
+    }
+  },
+  "http://198.204.228.26/live/gdty.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x55ea68b224c0] HTTP error 404 Not Found\n[in#0 @ 0x55ea68b21c40] Error opening input: Server returned 404 Not Found\nError opening input file http://198.204.228.26/live/gdty.m3u8.\nError opening input files: Server returned 404 Not Found"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://192.151.150.154/live/gdjjkt.m3u8": {
+    "phash": [
+      "c01a2bcc31bed9e5",
+      "c9262ac9033e96fb",
+      "d2c9a1569e5ea952",
+      "c01a2bcc31bed9e5",
+      "c01a2bcc31bed9e5",
+      "c01a2bcc31bed9e5"
+    ],
+    "ahash": [
+      "7070f87470f0f26a",
+      "7070f07878f8f868",
+      "ffff780404040407",
+      "7070f87470f0f26a",
+      "7070f87470f0f26a",
+      "7070f87470f0f26a"
+    ],
+    "dhash": [
+      "c1a12094d2e3e6d2",
+      "c1a120d2d39093d3",
+      "d09092ececcceccc",
+      "c1a12094d2e3e6d2",
+      "c1a12094d2e3e6d2",
+      "c1a12094d2e3e6d2"
+    ],
+    "whash": [
+      "7070f47c70f0f07a",
+      "7070f07878fcf868",
+      "fffffc3404040607",
+      "7070f47c70f0f07a",
+      "7070f47c70f0f07a",
+      "7070f47c70f0f07a"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.222532124000054,
+      "avg_fetch_time": 1.0370886873333423,
+      "success_count": 6
+    }
+  },
+  "http://8.155.43.98:35455/huya/11342384": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x5ff8246d74c0] HTTP error 403 Forbidden\n[in#0 @ 0x5ff8246d6c40] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file http://8.155.43.98:35455/huya/11342384.\nError opening input files: Server returned 403 Forbidden (access denied)"
+    },
+    "stats": {
+      "total_fetch_time": 1.6072871430000077,
+      "avg_fetch_time": 1.6072871430000077,
+      "success_count": 1
+    }
+  },
+  "https://jmp2.uk/stvp-ATBD800001VA": {
+    "phash": [
+      "c44ec07d6ba83cd5",
+      "c44ec07d6b883fd1",
+      "c44ec8756ba83cd9",
+      "c44ec8756ba83cd9",
+      "c44ec8756ba83cd9",
+      "c44ec8756ba83dd1"
+    ],
+    "ahash": [
+      "307070311002ff7f",
+      "303070311002ff7f",
+      "307032311006ffff",
+      "307070311006ffff",
+      "307070311006ffff",
+      "307070311002ffff"
+    ],
+    "dhash": [
+      "a5e4e4654454ccdc",
+      "a5e4e465545484ac",
+      "a5e4e46544548656",
+      "a5e4e4654454c656",
+      "a5e4e4654454c656",
+      "a5e4e4654454c656"
+    ],
+    "whash": [
+      "307070b19086ff7f",
+      "307074b19006ff7f",
+      "307070919086ffff",
+      "307070319086ffff",
+      "307070319086ffff",
+      "307070919086ffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 27.439701110999863,
+      "avg_fetch_time": 4.573283518499977,
+      "success_count": 6
+    }
+  },
+  "http://218.77.84.102:85/tsfile/live/153/2009_1.m3u8?key=txiptv": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 17.317264101999967,
+      "avg_fetch_time": 8.658632050999984,
+      "success_count": 2
+    }
+  },
+  "http://31.43.191.125:8080/restream/restream/34580": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[in#0/mpegts @ 0x563c80cbac40] could not seek to position 59.001\nInput #0, mpegts, from 'http://31.43.191.125:8080/restream/restream/34580':\n  Duration: N/A, start: 50.001333, bitrate: N/A\n  Program 1 \n    Metadata:\n      service_name    : Service01\n      service_provider: FFmpeg\n  Stream #0:0[0x100]: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 50.040000\n  Stream #0:1[0x101]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 95 kb/s, start 50.001333\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> png (native))\nPress [q] to stop, [?] for help\n[http @ 0x563c80cbb4c0] Stream ends prematurely at 3666349, should be 18446744073709551615\n[in#0/mpegts @ 0x563c80cbac40] Error during demuxing: Input/output error\n[h264 @ 0x563c80f7d540] error while decoding MB 29 64, bytestream -18\n[h264 @ 0x563c80f7d540] concealing 500 DC, 500 AC, 500 MV errors in P frame\n[vf#0:0 @ 0x563c80cc4cc0] No filtered frames for output stream, trying to initialize anyway.\nOutput #0, image2pipe, to 'pipe:':\n  Metadata:\n    encoder         : Lavf62.3.100\n  Stream #0:0: Video: png, rgb24(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 90k tbn\n    Metadata:\n      encoder         : Lavc62.11.100 png\n[out#0/image2pipe @ 0x563c80fb2000] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\n[out#0/image2pipe @ 0x563c80fb2000] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50"
+    },
+    "stats": {
+      "total_fetch_time": 26.58174217399994,
+      "avg_fetch_time": 4.430290362333324,
+      "success_count": 6
+    }
+  },
+  "http://167.88.62.43:64017/0.ts": {
+    "phash": [
+      "ccf32634d3cd864a",
+      "d8f28b3d6c868953",
+      "bcd216fd48193c5c",
+      "9cf6192d64da194b",
+      "9cf6192d64da194b",
+      "dcf3063c72863713"
+    ],
+    "ahash": [
+      "e6cc78f8981b1818",
+      "fcfc7c5418181c18",
+      "deffdfdbd8830000",
+      "fcfe1c3c181c1c18",
+      "fcfe1c3c181c1c18",
+      "8498bc98981b1818"
+    ],
+    "dhash": [
+      "9495b193b332b3f1",
+      "b0b8f8a4b072f1b1",
+      "b4cc2c12323e3232",
+      "34bc38a42072f0f0",
+      "34bc38a42072f0f0",
+      "2d313931333232b0"
+    ],
+    "whash": [
+      "e7cd78f8d81b1818",
+      "fcfc7cd4181e1c18",
+      "deffdfda98830000",
+      "fcfebc34181e1c18",
+      "fcfebc34181e1c18",
+      "8dfdfc9c981b1818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.683018008999966,
+      "avg_fetch_time": 1.1138363348333276,
+      "success_count": 6
+    }
+  },
+  "http://live-hls-web-aja.getaj.net/AJA/02.m3u8": {
+    "phash": [
+      "9a7c6d8d669239c4",
+      "929c4973966ccb99",
+      "b5470ecec30ef831",
+      "9a7c6d8d669239c4",
+      "97979787c66470b0",
+      "97979787c66470b0"
+    ],
+    "ahash": [
+      "00101c1f171d7f40",
+      "301e1f3f6f240000",
+      "1707070707070787",
+      "00101c1f171d7f40",
+      "3f3e0c0000000000",
+      "3f3e0c0000000000"
+    ],
+    "dhash": [
+      "aeb1f9fdd579f0c4",
+      "e4b4fdedccc94be9",
+      "e6eed6ce8e363636",
+      "aeb1f9fdd579f0c4",
+      "e8e8d8c0c0e0b1b0",
+      "e8e8d8c0c0e0b1b0"
+    ],
+    "whash": [
+      "00111f3f373f7f40",
+      "381e3fff6f6c0100",
+      "17070707e7d70787",
+      "00111f3f373f7f40",
+      "7f3e3e7030181d1e",
+      "7f3e3e7030181d1e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 6.277850661000002,
+      "avg_fetch_time": 1.0463084435000003,
+      "success_count": 6
+    }
+  },
+  "https://ali-xwl.cztv.com/live/channel081080Plxw.m3u8": {
+    "phash": [
+      "943695b395349d96",
+      "c0b96de2c12a1f5b",
+      "9e9131cc269d33ce",
+      "943695b395349d96",
+      "943695b395349d96",
+      "943695b395349d96"
+    ],
+    "ahash": [
+      "0f0616100e991e1e",
+      "f3d89cfcfcf4f070",
+      "1f3f1f3f3f1e1a00",
+      "0f0616100e991e1e",
+      "0f0616100e991e1e",
+      "0f0616100e991e1e"
+    ],
+    "dhash": [
+      "9cfc64646c3a3432",
+      "a3b230b0a0aca5e6",
+      "baf878606470746d",
+      "9cfc64646c3a3432",
+      "9cfc64646c3a3432",
+      "9cfc64646c3a3432"
+    ],
+    "whash": [
+      "0f061e1e9e9b1e1e",
+      "f1949c7c70f4f070",
+      "1f3f1f3f3e1c1800",
+      "0f061e1e9e9b1e1e",
+      "0f061e1e9e9b1e1e",
+      "0f061e1e9e9b1e1e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.905567227000233,
+      "avg_fetch_time": 1.984261204500039,
+      "success_count": 6
+    }
+  },
+  "https://jmp2.uk/stvp-DEBD800001S4": {
+    "phash": [
+      "c44ec8756ba83cd9",
+      "c44ec8756ba83dc9",
+      "c44ec85d6ba83cd5",
+      "c44ec8756ba83cd9",
+      "c44ec07d6ba83cd9",
+      "c44ec07d6ba83cd9"
+    ],
+    "ahash": [
+      "307070311006ffff",
+      "307070311006ffff",
+      "307072311006ffff",
+      "307032311006ffff",
+      "307070311006ff7f",
+      "307070311006ff7f"
+    ],
+    "dhash": [
+      "a5e4e4654454c656",
+      "a5e4e4654454d65e",
+      "a5e4e4654454c6d4",
+      "a4e4e4654454d656",
+      "a5e4e465445486d4",
+      "a5e4e465445486d4"
+    ],
+    "whash": [
+      "307070319086ffff",
+      "307070919086ffff",
+      "307070919086ffff",
+      "307070919086ffff",
+      "307070b19086ff7f",
+      "307070b19086ff7f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.440585078999902,
+      "avg_fetch_time": 4.073430846499984,
+      "success_count": 6
+    }
+  },
+  "https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8": {
+    "phash": [
+      "cc9d50712dc61fc6",
+      "9e94d0d8487f23c7",
+      "dd24b62914cd367a",
+      "d521362b1c936d76",
+      "d521362b1c936d76",
+      "c428c6fedc0e3cf0"
+    ],
+    "ahash": [
+      "7c7e3f1b11006040",
+      "feff270138008040",
+      "000804389870f9fe",
+      "0004007c187bbcbe",
+      "0004007c187bbcbe",
+      "f0604018d890f0f0"
+    ],
+    "dhash": [
+      "b0b22223732ba880",
+      "30b45d737133288c",
+      "f2dacc7073d67b2c",
+      "dac8d8f0f4d26d24",
+      "dac8d8f0f4d26d24",
+      "24ce9133b32148a8"
+    ],
+    "whash": [
+      "7e7eff9b91007040",
+      "ffff3f19380080e0",
+      "000814fcf879f9fe",
+      "000c407c7a7bbfbe",
+      "000c407c7a7bbfbe",
+      "f0724098d89cfcfc"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.44080542900008,
+      "avg_fetch_time": 3.74013423816668,
+      "success_count": 6
+    }
+  },
+  "http://live.ottiptv.cc/huya/11336726": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 50.57427170099993,
+      "avg_fetch_time": 4.214522641749994,
+      "success_count": 12
+    }
+  },
+  "http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B7:2C:3B&stream=855337&extension=ts": {
+    "phash": [
+      "c44ec07d6ba83dc9",
+      "c44ec85d6ba83cd9",
+      "c44ec8752ba83dd9",
+      "c64ec8752ba835d9",
+      "c64ec8752ba835d9",
+      "c44ec8752ba83dd9"
+    ],
+    "ahash": [
+      "307070311006ff7f",
+      "307070311006ff7f",
+      "307070311002ffff",
+      "307074311006ffff",
+      "307074311006ffff",
+      "307070311006ffff"
+    ],
+    "dhash": [
+      "a5e4e465445486be",
+      "e5e4e4654454969e",
+      "a5e4e4654454c676",
+      "a5e4e5654454865e",
+      "a5e4e5654454865e",
+      "a5e4e4654454c65e"
+    ],
+    "whash": [
+      "307070b19086ff7f",
+      "307070b19082ffff",
+      "307070919086ffff",
+      "307470119086ffff",
+      "307470119086ffff",
+      "307070919086ffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.85867832500014,
+      "avg_fetch_time": 3.1431130541666903,
+      "success_count": 6
+    }
+  },
+  "https://www.goodiptv.club/huya/23860039": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 51.89959663100012,
+      "avg_fetch_time": 4.324966385916677,
+      "success_count": 12
+    }
+  },
+  "https://www.goodiptv.club/huya/23903123": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 49.105386784000075,
+      "avg_fetch_time": 4.09211556533334,
+      "success_count": 12
+    }
+  },
+  "http://112.27.5.218:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      "e96196c647c6cc99",
+      "86f186a34c7759e4",
+      "b3e1c07cc98ce36c",
+      "b2e5c0784b26e27d",
+      "c4d49e3f3b13084f",
+      "c4d49e3f3b13084f"
+    ],
+    "ahash": [
+      "f361496169fa3e3e",
+      "ffffe884310d2710",
+      "fbe2e70f81c7837c",
+      "f3e2e7078dc7836c",
+      "3efe784c00303008",
+      "3efe784c00303008"
+    ],
+    "dhash": [
+      "c793d3d3d2c260a4",
+      "c0c0982c63596d65",
+      "cacece5f192d2fd9",
+      "86cece4d190d2fc9",
+      "74e4d29833e3c131",
+      "74e4d29833e3c131"
+    ],
+    "whash": [
+      "f161616068fa3e3e",
+      "feffe884302d2710",
+      "f3e2e30f81878378",
+      "f3e2e70781c78368",
+      "3eff7e6c00387818",
+      "3eff7e6c00387818"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 24.911572207999825,
+      "avg_fetch_time": 4.151928701333304,
+      "success_count": 6
+    }
+  },
+  "http://ott.watch/stream/E9LDH2ZCN7/177.m3u8": {
+    "phash": [
+      "8c99782b83a7f662",
+      "8c99782b83a7f662",
+      "8c99782b83a7f662",
+      "8c99782b83a7f662",
+      "8c99782b83a7f662",
+      "8c99782b83a7f662"
+    ],
+    "ahash": [
+      "1818ffff000000fe",
+      "1818ffff000000fe",
+      "1818ffff000000fe",
+      "1818ffff000000fe",
+      "1818ffff000000fe",
+      "1818ffff000000fe"
+    ],
+    "dhash": [
+      "30108cf02032f0cc",
+      "30108cf02032f0cc",
+      "30108cf02032f0cc",
+      "30108cf02032f0cc",
+      "30108cf02032f0cc",
+      "30108cf02032f0cc"
+    ],
+    "whash": [
+      "0818ffff381800ff",
+      "0818ffff381800ff",
+      "0818ffff381800ff",
+      "0818ffff381800ff",
+      "0818ffff381800ff",
+      "0818ffff381800ff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.256781792000083,
+      "avg_fetch_time": 2.3761302986666806,
+      "success_count": 6
+    }
+  },
+  "http://8.155.43.98:35455/yy/1352811698": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 69.97651609599995,
+      "avg_fetch_time": 6.361501463272723,
+      "success_count": 11
+    }
+  },
+  "http://218.13.170.98:9901/tsfile/live/1021_1.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 32.87575884499984,
+      "avg_fetch_time": 8.21893971124996,
+      "success_count": 4
+    }
+  },
+  "http://120.76.248.139/live/bfgd/4200000113.m3u8": {
+    "phash": [
+      "95b49a29e595651b",
+      "97b48a29e595651b",
+      "92b6cb29e5956646",
+      "92b1cb2bad959296",
+      "92b1cb2bad959296",
+      "92b1cb2bad959296"
+    ],
+    "ahash": [
+      "4f0f266622002c18",
+      "4f0f262622000c18",
+      "cf0f0e0e06001828",
+      "4f0e0e0e06000818",
+      "4f0e0e0e06000818",
+      "4f0e0e0e06000818"
+    ],
+    "dhash": [
+      "9e8ddccecedcd9e1",
+      "9ead4c4e4edcd9f1",
+      "b8b8cc3c3431f8c0",
+      "9a98bc3c342df8f1",
+      "9a98bc3c342df8f1",
+      "9a98bc3c342df8f1"
+    ],
+    "whash": [
+      "cf2f666e66202c3c",
+      "df4f2e2e26202c7c",
+      "df0f7e8e8e001c78",
+      "ff0f1e0e8e003c7c",
+      "ff0f1e0e8e003c7c",
+      "ff0f1e0e8e003c7c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.255549882999958,
+      "avg_fetch_time": 3.0425916471666596,
+      "success_count": 6
+    }
+  },
+  "https://jmp2.uk/stvp-ESBD190000137": {
+    "phash": [
+      "dbf124ce25319b64",
+      "e03f9d606a8f3b90",
+      "e13f9e60708f6b88",
+      "e13f9e40708f6ba8",
+      "e13f9e40708f6ba8",
+      "d27aed2b38c53a90"
+    ],
+    "ahash": [
+      "e0f0fcfcfc3c0000",
+      "000387e14040ffff",
+      "000b8be04040ffff",
+      "000b81e04040ffff",
+      "000b81e04040ffff",
+      "000004440404ffff"
+    ],
+    "dhash": [
+      "0020793960616006",
+      "0b054fcb8f8e8e96",
+      "0d1a5b4b9e878696",
+      "0d3a4b4b8e8e869e",
+      "0d3a4b4b8e8e869e",
+      "a084adadadcd869c"
+    ],
+    "whash": [
+      "f0f8fcfcfcbc0000",
+      "0087e7e14040ffff",
+      "00cfabe04040ffff",
+      "00cfabe04040ffff",
+      "00cfabe04040ffff",
+      "0040fcf44424ffff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 25.230586047000088,
+      "avg_fetch_time": 4.205097674500014,
+      "success_count": 6
+    }
+  },
+  "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xdkthd": {
+    "phash": [
+      "a3e06c7f9899cc68",
+      "c13f7e303b300e97",
+      "c17f5e313a18391b",
+      "c12f7f33581c3b11",
+      "c12f7f33581c3b11",
+      "c12f7f33581c3b11"
+    ],
+    "ahash": [
+      "4363636f67230303",
+      "80f07060707070f8",
+      "80f0f8f86070fcfc",
+      "a0f07078786070f8",
+      "a0f07078786070f8",
+      "a0f07078786070f8"
+    ],
+    "dhash": [
+      "97cfc7ddcb4fcf9f",
+      "41c7c3c3c3c3c4c0",
+      "1840d0d0d0c080a1",
+      "41c7c3e393cfc0c1",
+      "41c7c3e393cfc0c1",
+      "41c7c3e393cfc0c1"
+    ],
+    "whash": [
+      "43e3636f67234343",
+      "80f0f8f87878f0f8",
+      "80f0f8f8e0707cfc",
+      "b0f0787878e0f8f8",
+      "b0f0787878e0f8f8",
+      "b0f0787878e0f8f8"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 7.986629438000136,
+      "avg_fetch_time": 1.331104906333356,
+      "success_count": 6
+    }
+  },
+  "https://www.goodiptv.club/huya/23865142": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 51.37635802699958,
+      "avg_fetch_time": 4.281363168916632,
+      "success_count": 12
+    }
+  },
+  "https://epg.pw/stream/1df3601f344fa4b1c79295aefec312f528d418c2ed0b391b3fe630ed1ddf70fc.m3u8": {
+    "phash": [
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61"
+    ],
+    "ahash": [
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c"
+    ],
+    "dhash": [
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0"
+    ],
+    "whash": [
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.059456306000016,
+      "avg_fetch_time": 3.3432427176666693,
+      "success_count": 6
+    }
+  },
+  "http://124.90.45.52:9901/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 22.214651720999996,
+      "avg_fetch_time": 7.4048839069999985,
+      "success_count": 3
+    }
+  },
+  "http://tv.pull.hebtv.com/jishi/shaoerkejiao.m3u8?t=1893427200&k=d4a455b288ebbc0f53903f4750372b0f": {
+    "phash": [
+      "948f6a38bb90bd8a",
+      "9b67649e43a62d1c",
+      "eb54c95652cb1a2b",
+      "eb54c95652cb1a2b",
+      "eb54c95652cb1a2b",
+      "fdac230b6ad8c8a3"
+    ],
+    "ahash": [
+      "1f323e7f4f0e0c00",
+      "0000202c3cffff7e",
+      "3cc28100002cfbff",
+      "3cc281000024fbff",
+      "3cc281000024fbff",
+      "c1c3c3cac2caeae2"
+    ],
+    "dhash": [
+      "7766f2ee99bc9899",
+      "6a4a4b4979392994",
+      "608e17555555534b",
+      "708e17555555534b",
+      "708e17555555534b",
+      "0b16969612125a4a"
+    ],
+    "whash": [
+      "1f3a3e7f5f0e0c00",
+      "000028283cffffff",
+      "3cc2810100bdffff",
+      "3cc2810100bdffff",
+      "3cc2810100bdffff",
+      "c1c3c3cac2dacaea"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 29.598505791999855,
+      "avg_fetch_time": 4.9330842986666426,
+      "success_count": 6
+    }
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/8edf3fb6a69148ea9a7dc0b5a9d99fdb/4000.m3u8": {
+    "phash": [
+      "a2c00df8ecf73313",
+      "d8ece8386c1b171b",
+      "f9823668d197e80f",
+      "d15105363ef6daa2",
+      "ec846c729b6c1d6c",
+      "bfe2e0e43b420b8b"
+    ],
+    "ahash": [
+      "ff3c27ffef000000",
+      "fffffc8400040000",
+      "fffffffff8c00000",
+      "0008fcfefdfc7fb1",
+      "f3f3f3ffc0c0c0b1",
+      "f797070f0f3f1f0f"
+    ],
+    "dhash": [
+      "a6e2c88f9d1c1767",
+      "2282002838383828",
+      "bce0d1c893131e13",
+      "b8fae8b03184cc63",
+      "b6b676768a870767",
+      "ae26777a5a567637"
+    ],
+    "whash": [
+      "ff3d27ffef000000",
+      "fffffede000e0000",
+      "ff7ffffec0000000",
+      "0008f8fcfcfc7790",
+      "f3f3f3fb00c0c0b0",
+      "f70707070f0f3707"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.81063187399991,
+      "avg_fetch_time": 3.4684386456666516,
+      "success_count": 6
+    }
+  },
+  "http://173.208.234.146/live/lbkangxiwc.m3u8": {
+    "phash": [
+      "e4aa8594526bdd99",
+      "e4aa8594526bdd99",
+      "e69accb9998dd888",
+      "e4aa8594526bdd99",
+      "e69adca9998cd8b0",
+      "e69adca9998cd8b0"
+    ],
+    "ahash": [
+      "f3e3e1e1e7f3f3e2",
+      "f3e3e1e1e7f3f3e2",
+      "ffe7e7e7e7e3e3e2",
+      "f3e3e1e1e7f3f3e2",
+      "ffe7e7e7e3e3e3e2",
+      "ffe7e7e7e3e3e3e2"
+    ],
+    "dhash": [
+      "8646878d9586c686",
+      "8646878d9586c686",
+      "ac8cad4c4e4e4684",
+      "8646878d9586c686",
+      "a8ccad4e4e4e460c",
+      "a8ccad4e4e4e460c"
+    ],
+    "whash": [
+      "e3e3e1c0c1e3e3e0",
+      "e3e3e1c0c1e3e3e0",
+      "776367634343c000",
+      "e3e3e1c0c1e3e3e0",
+      "7763676343434000",
+      "7763676343434000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 8.756724989999952,
+      "avg_fetch_time": 1.4594541649999921,
+      "success_count": 6
+    }
+  },
+  "https://epg.pw/stream/866a097a0907c9832440f8df38272dd555abf05200dfbafcc137e214c9b30ca7.m3u8": {
+    "phash": [
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61",
+      "8e87b3f801fd2c61"
+    ],
+    "ahash": [
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c",
+      "3f3c3b3b0098f83c"
+    ],
+    "dhash": [
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0",
+      "e7546563a92222f0"
+    ],
+    "whash": [
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c",
+      "3b3e3b3f0098f03c"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 19.874115917999916,
+      "avg_fetch_time": 3.312352652999986,
+      "success_count": 6
+    }
+  },
+  "http://mtayeh.ottb.xyz/live/774710333494/659822672281/13442.ts": {
+    "phash": [
+      "c44ec07d6ba83cd5",
+      "c44ec07d6ba83cd9",
+      "c44ec8752ba83dd9",
+      "c44ec8556ba83ed9",
+      "c44ec8556ba83ed9",
+      "c44ec8752ba83dd9"
+    ],
+    "ahash": [
+      "307070311002ff7f",
+      "307070311006ff7f",
+      "307070311002ffff",
+      "307030311006ffff",
+      "307030311006ffff",
+      "307474311006ffff"
+    ],
+    "dhash": [
+      "a5e4e4654454ccdc",
+      "a5e4e465445486a6",
+      "a5e4e465445486d6",
+      "e4e4e465445486fe",
+      "e4e4e465445486fe",
+      "a5e4e4654454c676"
+    ],
+    "whash": [
+      "307070b19086ff7f",
+      "307070b19086ff7f",
+      "307070919086ffff",
+      "307070919086ffff",
+      "307070919086ffff",
+      "307474119086fffe"
+    ],
+    "error": {
+      "fail_count": 1,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 1,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.64345635399991,
+      "avg_fetch_time": 3.773909392333318,
+      "success_count": 6
+    }
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/18a8a559464448dbaf60d33913e09aea/1200.m3u8": {
+    "phash": [
+      "c0c5390d62597efa",
+      "d5d42eb09aeac8d8",
+      "ecc5831b0fec4e26",
+      "f4d98ca3a8b838f4",
+      "c0a8b92424d35ffe",
+      "e8836c6d5a84f2d6"
+    ],
+    "ahash": [
+      "fefffefcf0000000",
+      "fffefcfc38000000",
+      "fffff0f000808103",
+      "fffcc0cce600e010",
+      "7f79787870383c3c",
+      "f171ffffc8c1c3c0"
+    ],
+    "dhash": [
+      "c0c0c0c0c460d088",
+      "0866607050406667",
+      "fac847032c011f7f",
+      "e3e03418dc8e6e25",
+      "cbb3e1e0e4e07070",
+      "c3c39d9991979795"
+    ],
+    "whash": [
+      "fefffefcf0000000",
+      "fffefefc38200000",
+      "fffff1f000c08303",
+      "fffccacce640e010",
+      "7f78787870383c1c",
+      "f071ffedc0c1c1c0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 18.566624347000243,
+      "avg_fetch_time": 3.094437391166707,
+      "success_count": 6
+    }
+  },
+  "https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=1d513e37da4a47abfbc44e43d9a054fc&wsTime=1793927030": {
+    "phash": [
+      "adb456c10e969697",
+      "adb652c024969e9f",
+      "adb456c382969697",
+      "adb452c086969e9f",
+      "acb457821a97b696",
+      "f8ca8b37b68019bc"
+    ],
+    "ahash": [
+      "e7e3f31303030000",
+      "e7e7d75313030000",
+      "e7e3f35303030000",
+      "e7e7f75313030000",
+      "e7e3e34341010000",
+      "fdf8f8f9c0808080"
+    ],
+    "dhash": [
+      "8e8e06f7d3d37373",
+      "8e8e26b6f7f75373",
+      "8e8636b7d7d35373",
+      "8e8626a7e7d75363",
+      "8d87068787a76767",
+      "e9b1b11515153030"
+    ],
+    "whash": [
+      "f7e7f77373030000",
+      "f7e7f77353130000",
+      "f7e3ff7363030100",
+      "f7e7f77353030100",
+      "f7f3f76361531000",
+      "fdf9f9fdd0808080"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.337896952999813,
+      "avg_fetch_time": 5.222982825499969,
+      "success_count": 6
+    }
+  },
+  "http://222.186.39.21:35466/yy/1352811698": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 38.16220399599979,
+      "avg_fetch_time": 4.240244888444421,
+      "success_count": 9
+    }
+  },
+  "http://183.237.95.108:9901/tsfile/live/1074_1.m3u8?key=txiptv&playlive=0&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[hls @ 0x5b60ab295f00] Opening 'http://183.237.95.108:9901/tsfile/live/live_1074_1_11176906.ts?key=txiptv&key2=11176906' for reading\n[tcp @ 0x5b60ab29f900] Connection to tcp://183.237.95.108:9901 failed: Connection timed out\n[hls @ 0x5b60ab295f00] Failed to open segment 11176910 of playlist 0\n[hls @ 0x5b60ab295f00] Segment 11176910 of playlist 0 failed too many times, skipping\n[tcp @ 0x5b60ab29f900] Connection to tcp://183.237.95.108:9901 failed: Connection timed out\n[hls @ 0x5b60ab295f00] Failed to reload playlist 0\n[hls @ 0x5b60ab295f00] Error when loading first segment 'http://183.237.95.108:9901/tsfile/live/live_1074_1_11176904.ts?key=txiptv&key2=11176904'\n[in#0 @ 0x5b60ab295c40] Error opening input: Connection timed out\nError opening input file http://183.237.95.108:9901/tsfile/live/1074_1.m3u8?key=txiptv&playlive=0&authid=0.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 16.42794608600002,
+      "avg_fetch_time": 8.21397304300001,
+      "success_count": 2
+    }
+  },
+  "http://120.198.86.186:9901/tsfile/live/1054_1.m3u8?key=txiptv&playlive=1&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 13.513356969000029,
+      "avg_fetch_time": 13.513356969000029,
+      "success_count": 1
+    }
+  },
+  "http://39.165.39.49:85/tsfile/live/1092_1.m3u8?key=txiptv&playlive=0&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 17.149334518000046,
+      "avg_fetch_time": 8.574667259000023,
+      "success_count": 2
+    }
+  },
+  "https://www.goodiptv.club/huya/23903196": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 52.885768364999876,
+      "avg_fetch_time": 4.407147363749989,
+      "success_count": 12
+    }
+  },
+  "http://120.198.95.220:9901/tsfile/live/1033_1.m3u8?key=txiptv": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://183.237.95.108:9901/tsfile/live/1104_1.m3u8?key=txiptv&playlive=0&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 1,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 13.73518478699998,
+      "avg_fetch_time": 13.73518478699998,
+      "success_count": 1
+    }
+  },
+  "http://nn.7x9d.cn/地方台8563/海南.php?id=sepd": {
+    "phash": [
+      "e3618c66b68c32f3",
+      "e1658e53a16634e7",
+      "e161ec66f60631e6",
+      "fc7cc5a9a84a1aa6",
+      "fc7cc5a9a84a1aa6",
+      "9570a44d7a37ea45"
+    ],
+    "ahash": [
+      "e3e1e3e3e360fbff",
+      "e3e3e3e3e3c0e7ff",
+      "e3636363636077ff",
+      "93828480878ff7f7",
+      "93828480878ff7f7",
+      "001e0c0c183e3eff"
+    ],
+    "dhash": [
+      "c7c3cbcececed2cd",
+      "cfcec6c6cacecd87",
+      "cfc3cececececd8e",
+      "37262c343e1fc5cf",
+      "37262c343e1fc5cf",
+      "b4f4dc18307062f8"
+    ],
+    "whash": [
+      "e1e1e1e3e240707f",
+      "e3e3e3e3e20060f3",
+      "e3616363634061ff",
+      "93828480878ff7f7",
+      "93828480878ff7f7",
+      "001e5e0c183e3fff"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 37.00484901200025,
+      "avg_fetch_time": 6.167474835333375,
+      "success_count": 6
+    }
+  },
+  "http://live.ottiptv.cc/huya/11342384": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 48.40602348399966,
+      "avg_fetch_time": 4.033835290333305,
+      "success_count": 12
+    }
+  },
+  "http://39.165.39.49:85/tsfile/live/1156_1.m3u8?key=txiptv&playlive=0&authid=0": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 14.524698446000002,
+      "avg_fetch_time": 14.524698446000002,
+      "success_count": 1
+    }
+  },
+  "https://www.goodiptv.club/huya/23734183": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 55.76951338000015,
+      "avg_fetch_time": 4.647459448333346,
+      "success_count": 12
+    }
+  },
+  "https://live.ottiptv.cc/yy/1382745169": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 66.55518235199997,
+      "avg_fetch_time": 6.655518235199997,
+      "success_count": 10
+    }
+  }
+}
