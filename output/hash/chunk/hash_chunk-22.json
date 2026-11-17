@@ -1,0 +1,1750 @@
+{
+  "http://m.061899.xyz/mg/cctv10": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x5b42873484c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x5b4287347c40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv10.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 2.062347296999974,
+      "avg_fetch_time": 2.062347296999974,
+      "success_count": 1
+    }
+  },
+  "http://m.061899.xyz/mg/cctv4": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x649c9dcc74c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x649c9dcc6c40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv4.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 1.2117169069999818,
+      "avg_fetch_time": 1.2117169069999818,
+      "success_count": 1
+    }
+  },
+  "http://m.061899.xyz/mg/cctv9": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x5efc4b55b4c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x5efc4b55ac40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv9.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 2.54766844400001,
+      "avg_fetch_time": 2.54766844400001,
+      "success_count": 1
+    }
+  },
+  "http://m.061899.xyz/mg/cctv12": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x6435f14074c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x6435f1406c40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv12.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 4.032447568999942,
+      "avg_fetch_time": 2.016223784499971,
+      "success_count": 2
+    }
+  },
+  "http://m.061899.xyz/mg/cctv13": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x64391beef4c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x64391beeec40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv13.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://m.061899.xyz/mg/cctv8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x5eee2118a4c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x5eee21189c40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv8.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 8.82887245500001,
+      "avg_fetch_time": 8.82887245500001,
+      "success_count": 1
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel102221/playlist.m3u8": {
+    "phash": [
+      "cc96696996969669",
+      "cc96696996969669",
+      "cc96696996969669",
+      "cccc4d4dcc96cc4d",
+      "cccc4d4dcc96cc4d",
+      "cccc4d4dcc96cc4d"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 11.883593771000164,
+      "avg_fetch_time": 1.9805989618333608,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel103074/playlist.m3u8": {
+    "phash": [
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c"
+    ],
+    "ahash": [
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff"
+    ],
+    "dhash": [
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863"
+    ],
+    "whash": [
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.57646077700008,
+      "avg_fetch_time": 2.4294101295000132,
+      "success_count": 6
+    }
+  },
+  "http://m3u8.channel.luzhoubs.com/nmip-media/channellive/channel106011/playlist.m3u8": {
+    "phash": [
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c",
+      "ede4923a6dc7a80c"
+    ],
+    "ahash": [
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff",
+      "ff5ef3e3818f2cff"
+    ],
+    "dhash": [
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863",
+      "29b0c6c62a394863"
+    ],
+    "whash": [
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd",
+      "ff5ae362008d24bd"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 14.742577305000054,
+      "avg_fetch_time": 2.457096217500009,
+      "success_count": 6
+    }
+  },
+  "http://live.jinnews.com.cn/ggpd/sd/live.m3u8": {
+    "phash": [
+      "e0c27b83118bfe69",
+      "e0c27b83118bfe69",
+      "e0c27b83118bfec9",
+      "e0c27b83118bfec9",
+      "e0c27b83118bfe69",
+      "e0c27b83118bfe69"
+    ],
+    "ahash": [
+      "69e5d76667e769c2",
+      "69e5d76667e769c2",
+      "69e5c74246f769c2",
+      "69e5c74746f769c2",
+      "69e5d74746f769c2",
+      "69e5d74746f769c2"
+    ],
+    "dhash": [
+      "cb8995858d05db16",
+      "cb8995958d0dd316",
+      "cb8995959505db16",
+      "cb89959d9d05db16",
+      "cb89b59d9d05db16",
+      "cb89b59d9d05db16"
+    ],
+    "whash": [
+      "79e5e16361e169c2",
+      "79e5e16361e169c2",
+      "79e5e14361e369c2",
+      "79e5e16361e169c2",
+      "79e5e14361e369c2",
+      "79e5e14361e369c2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.272439108999947,
+      "avg_fetch_time": 3.3787398514999913,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/qg/sd/live.m3u8": {
+    "phash": [
+      "ccf8f0f0ec0f0707",
+      "ccf8f0f0ec0f0707",
+      "ccf8f0f0ec0f0707",
+      "ccf8f0f0ec0f0707",
+      "ccf8f0f0ec0f0707",
+      "ccf8f0f0ce0f0707"
+    ],
+    "ahash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "dhash": [
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000",
+      "0000000000000000"
+    ],
+    "whash": [
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0",
+      "f0f0f0f0f0f0f0f0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.058356136000043,
+      "avg_fetch_time": 3.6763926893333405,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/sytv/sd/live.m3u8": {
+    "phash": [
+      "8c6d34db9692d992",
+      "c63b789591663d68",
+      "e635c84d31e217e9",
+      "bcc1c33e63c11c73",
+      "bcc1c33e63c11c73",
+      "bce1c31e638d1c63"
+    ],
+    "ahash": [
+      "0080183c3c38ffff",
+      "0000207e7e7ef1f9",
+      "000000000020ffff",
+      "ffdf9f8f8f9fdfff",
+      "ffdf9f8f8f9fdfff",
+      "ffdf9b89899ddfff"
+    ],
+    "dhash": [
+      "3727b2aa682bc525",
+      "0a9165ecd2ee6593",
+      "08904c0e966ce3cb",
+      "c0a034383a343040",
+      "c0a034383a343040",
+      "42ac333339313641"
+    ],
+    "whash": [
+      "8000183c3cbcffff",
+      "0000207e7e7ef1ff",
+      "8c5c040000e3ffff",
+      "f0588888878f9bfb",
+      "f0588888878f9bfb",
+      "bf5f818180889ffc"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 22.140289992999897,
+      "avg_fetch_time": 3.6900483321666493,
+      "success_count": 6
+    }
+  },
+  "http://stream8.jlntv.cn/sytv2/sd/live.m3u8": {
+    "phash": [
+      "cc1a491ee29d5b0f",
+      "d11e4d0ef08d5b0f",
+      "c41e490ef49d5b0f",
+      "c41e490ef49d5b0f",
+      "d91a6b0e649c5b0f",
+      "d51a692e728c5b0f"
+    ],
+    "ahash": [
+      "1818185a36125afa",
+      "185058de64405afa",
+      "185838de34405afa",
+      "185838de34405afa",
+      "185818da50585afa",
+      "184a18de465a5afa"
+    ],
+    "dhash": [
+      "33b0f096aab2b292",
+      "3396d096aaaab292",
+      "3394f0b6a8aab292",
+      "33b4f0b6a8aab292",
+      "3392d0b6a4aab2d2",
+      "3392d0b6aab2b692"
+    ],
+    "whash": [
+      "1878387e1a5a5afa",
+      "181a78fe185a5afa",
+      "187a3cde105a5afa",
+      "187a3cde105a5afa",
+      "184a38de187e5afa",
+      "18da38de185a5afa"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 28.19811897299985,
+      "avg_fetch_time": 4.699686495499975,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/ja/sd/live.m3u8": {
+    "phash": [
+      "d8e0dad8748e0d8f",
+      "c4a53178db5a7a0e",
+      "8cdc6326f8332733",
+      "d07865f434b6b878",
+      "d07865f434b6b878",
+      "9735803e6cdb3643"
+    ],
+    "ahash": [
+      "7c7c7e4242183c1c",
+      "4267373e7ec0c000",
+      "171f1f1f1f170303",
+      "c0f0dc7c7cfc7c3c",
+      "c0f0dc7c7cfc7c3c",
+      "7f3f2e0200877d7e"
+    ],
+    "dhash": [
+      "f0f0c4c496b0e8f8",
+      "96c646c4e4b6a4a0",
+      "a4b272f2b4a6ae8e",
+      "0680b9e8b8b8c8c8",
+      "0680b9e8b8b8c8c8",
+      "d456cc662e6dc9d2"
+    ],
+    "whash": [
+      "7c7e7e42423c3c1c",
+      "e6673f3f7ec0c000",
+      "171f1f1f1f170303",
+      "c0f0d87c7cdc7c30",
+      "c0f0d87c7cdc7c30",
+      "3f2b6a8200877d7e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 23.436336614999846,
+      "avg_fetch_time": 3.9060561024999743,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/baicheng1/sd/live.m3u8": {
+    "phash": [
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc",
+      "b38c8c330c9973fc"
+    ],
+    "ahash": [
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff",
+      "7f7fe7c7c7e7e7ff"
+    ],
+    "dhash": [
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c",
+      "c8e04c5dcd4d889c"
+    ],
+    "whash": [
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0",
+      "7f7fe7c4c4c0c0c0"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.056782525000017,
+      "avg_fetch_time": 3.342797087500003,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/liaoyuan1/sd/live.m3u8": {
+    "phash": [
+      "9dee420b3b15345e",
+      "b993437d544a6669",
+      "91c46e3a3b2e3d13",
+      "d4f723883e2f3903",
+      "d8f12fd864063f0b",
+      "d8f12fd864063f0b"
+    ],
+    "ahash": [
+      "00fdf6df9f1f3e00",
+      "001f1fcfc3838300",
+      "007e7e7f7f1e0000",
+      "00f0feffff7c1000",
+      "80f8fefefefc1800",
+      "80f8fefefefc1800"
+    ],
+    "dhash": [
+      "43c9263637eafaf1",
+      "38fa5d1e96331393",
+      "30f0f8f8f8f8f870",
+      "20044c20e0b0f060",
+      "1010e8a4b0b0e060",
+      "1010e8a4b0b0e060"
+    ],
+    "whash": [
+      "00fdd29f8f1f3e00",
+      "003f9fdfcbc38b00",
+      "007e7f7f7f1e0800",
+      "00e0feffff7c1000",
+      "00f8fefefc7c1800",
+      "00f8fefefc7c1800"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 33.23976836400004,
+      "avg_fetch_time": 5.539961394000007,
+      "success_count": 6
+    }
+  },
+  "http://stream10.jlntv.cn/jiangyuantv/sd/live.m3u8": {
+    "phash": [
+      "8d8977761e1d6870",
+      "8d8977761e1d6870",
+      "8d8977761e1d6870",
+      "8d8977761e1d6870",
+      "8d8977761e1d6870",
+      "8d8977761e1d6870"
+    ],
+    "ahash": [
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600",
+      "00ffff3f3c00c600"
+    ],
+    "dhash": [
+      "e6d2927268822edc",
+      "e5d2927268820edc",
+      "e6d2927268820edc",
+      "e5d2927268820edc",
+      "e5d2927268820edc",
+      "e6d2927268820edc"
+    ],
+    "whash": [
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600",
+      "00ffff3f3c00f600"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.54330116100016,
+      "avg_fetch_time": 4.42388352683336,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/sptv/sd/live.m3u8": {
+    "phash": [
+      "9a98cf4f383219c7",
+      "9a98cf4f383219c7",
+      "9a98cf4f383219c7",
+      "9a98cf4f383219c7",
+      "9a98cf4f383219c7",
+      "9a98cf4f383219c7"
+    ],
+    "ahash": [
+      "9e7e0e878020377f",
+      "9e7e0e878020377f",
+      "9e7e0e878020377f",
+      "9e7e0e878020377f",
+      "9e7e0e878020377f",
+      "9e7e0e878020377f"
+    ],
+    "dhash": [
+      "b1e81c9c2745eab2",
+      "b1e81c9c2745eab2",
+      "b1e81c9c2745eab2",
+      "b1e81c9c2745eab2",
+      "b1e81c9c2745eab2",
+      "b1e81c9c2745eab2"
+    ],
+    "whash": [
+      "de7e06878100377f",
+      "de7e06878100377f",
+      "de7e06878100377f",
+      "de7e06878100377f",
+      "de7e06878100377f",
+      "de7e06878100377f"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.797146147000035,
+      "avg_fetch_time": 3.466191024500006,
+      "success_count": 6
+    }
+  },
+  "http://m.061899.xyz/mg/cctv7": {
+    "phash": [
+      "e18adac9274b3e61",
+      "e186dac9248f3763",
+      "e18af0c912cf3f61",
+      "e18af0c913cf3e61",
+      "b18ad64913c73ccb",
+      "b18ad64913c73ccb"
+    ],
+    "ahash": [
+      "7fffc34343c3ebc7",
+      "7fffc34343ebfbc7",
+      "7fffef27677fe3c2",
+      "7effef27677fe3c2",
+      "7fffc34343c3fbc7",
+      "7fffc34343c3fbc7"
+    ],
+    "dhash": [
+      "d2941ec68616d21c",
+      "d2940e86869ad21c",
+      "d09044d4d644d21c",
+      "d09054d4d644d21c",
+      "d09286969a96d21c",
+      "d09286969a96d21c"
+    ],
+    "whash": [
+      "7efec3424243eac2",
+      "7efec3424243eac2",
+      "7ef8e7404263eac2",
+      "7ef8e7404263eac2",
+      "7efec3424243eac2",
+      "7efec3424243eac2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 20.190102914999784,
+      "avg_fetch_time": 3.365017152499964,
+      "success_count": 6
+    }
+  },
+  "http://tvfile.mcrm.org.cn/nmip-media/channellive/channel103064/playlist.m3u8": {
+    "phash": [
+      "d8e0dad937060d8f",
+      "c4a535785b4a7e0e",
+      "8e5c29bdd49f0607",
+      "d0e437929d3c1c9b",
+      "d0e437929d3c1c9b",
+      "9aa867966b725169"
+    ],
+    "ahash": [
+      "7c7c3e400a183c1c",
+      "4267373e7ec0c000",
+      "1131303031313371",
+      "3cf0f0f87c3c0000",
+      "3cf0f0f87c3c0000",
+      "07ff09051f3e1c00"
+    ],
+    "dhash": [
+      "b0b0d4cc96b0e8f0",
+      "868646c4e4b6b460",
+      "67e3e165e5e3e3e7",
+      "74c4a4a0f0f8e479",
+      "74c4a4a0f0f8e479",
+      "2db7938db3fcecca"
+    ],
+    "whash": [
+      "3c7e7e424a3c3c1c",
+      "66673f7f7ec0c000",
+      "3131313d7d333371",
+      "3ef0f0fc7c3c3c00",
+      "3ef0f0fc7c3c3c00",
+      "07ff0d2f1f3e1c00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 30.976890888999947,
+      "avg_fetch_time": 5.162815148166658,
+      "success_count": 6
+    }
+  },
+  "http://stream2.jlntv.cn/naxw/sd/live.m3u8": {
+    "phash": [
+      "ebcd92926d67882c",
+      "ebcd92926d67882c",
+      "ebcd92926d67882c",
+      "ebcd92926d67882c",
+      "ebcd92926d67882c",
+      "ebcd92926d67882c"
+    ],
+    "ahash": [
+      "ffdbf3e181cfe7ff",
+      "ffdbf3e181cfe7ff",
+      "ffdbf3e181cfe7ff",
+      "ffdbf3e181cde5ff",
+      "ffdbf3e181cfe7ff",
+      "ffdbf3e181cfe7ff"
+    ],
+    "dhash": [
+      "e93b86062b194d6a",
+      "e93b86062b194d6a",
+      "e93b86062b194d6a",
+      "e93b86062b194d6a",
+      "e93b86062b194d6a",
+      "e93b86062b194d6a"
+    ],
+    "whash": [
+      "7ed941c1818da57e",
+      "7ed941c1818da57e",
+      "7ed941c1818da57e",
+      "7ed941c1818da57e",
+      "7ed941c1818da57e",
+      "7ed941c1818da57e"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.361712055999988,
+      "avg_fetch_time": 4.393618675999998,
+      "success_count": 6
+    }
+  },
+  "http://live.schstv.com:90/live/xwzh.m3u8": {
+    "phash": [
+      "84a535785b5a7a4e",
+      "95b4687aeda6110f",
+      "cef43131cc8ec4ce",
+      "d8e0dad976260d8d",
+      "8e5c29bdd4bd0607",
+      "8e5c29bdd4bd0607"
+    ],
+    "ahash": [
+      "4227373f7ec0c000",
+      "0c0e3e3e3f0e2c08",
+      "fef0f0f0f0802080",
+      "3c7c3e404a183c1c",
+      "1131313131333371",
+      "1131313131333371"
+    ],
+    "dhash": [
+      "96c6c6c4a4b6b4e8",
+      "b8bcfcec7ad8d4d0",
+      "342c646520504062",
+      "f0f0d4c496f0e8f0",
+      "6763e165e5e3e3e7",
+      "6763e165e5e3e3e7"
+    ],
+    "whash": [
+      "66673f7f7ec0c000",
+      "0e1e3f3e3f0e3c08",
+      "fef4f0f0f8f03080",
+      "7c7e7e424a1c3c1c",
+      "3131313d7d333371",
+      "3131313d7d333371"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 15.569451655999842,
+      "avg_fetch_time": 2.594908609333307,
+      "success_count": 6
+    }
+  },
+  "http://m.061899.xyz/mg/cctv17": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x59fbe03374c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x59fbe0336c40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv17.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://m.061899.xyz/mg/cctv6": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x5b9cf6fca4c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x5b9cf6fc9c40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv6.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 37.11558390500011,
+      "avg_fetch_time": 6.185930650833352,
+      "success_count": 6
+    }
+  },
+  "http://m.061899.xyz/mg/cctv15": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x59c61cef54c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x59c61cef4c40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv15.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://m.061899.xyz/mg/cctv14": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x560b3b8404c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x560b3b83fc40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv14.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 0.0,
+      "avg_fetch_time": null,
+      "success_count": 0
+    }
+  },
+  "http://m.061899.xyz/mg/cctv2": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 3,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[http @ 0x599b0f2c64c0] HTTP error 429 Too Many Requests\n[in#0 @ 0x599b0f2c5c40] Error opening input: Server returned 429 Too Many Requests\nError opening input file http://m.061899.xyz/mg/cctv2.\nError opening input files: Server returned 429 Too Many Requests"
+    },
+    "stats": {
+      "total_fetch_time": 4.855313386000034,
+      "avg_fetch_time": 2.427656693000017,
+      "success_count": 2
+    }
+  },
+  "http://live.jinnews.com.cn/xwzh/sd/live.m3u8": {
+    "phash": [
+      "e0c27b83018bfee9",
+      "e0c27b8b008bfee9",
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9",
+      "e0c27b83018bfee9",
+      "e0c27b8b0183fee9"
+    ],
+    "ahash": [
+      "69e5d74646f769c2",
+      "69e5c74242f769c2",
+      "69e5d74642f769c2",
+      "69e5d74647f769c2",
+      "69e5d74647f769c2",
+      "69e5c74646f769c2"
+    ],
+    "dhash": [
+      "cb8d358c9d05db16",
+      "cb8d35858505db16",
+      "cb8d35948505db16",
+      "cb8d35848505db16",
+      "cb8d35848505db16",
+      "cb8d1d8c9505db16"
+    ],
+    "whash": [
+      "79e5e34343e368c2",
+      "79e5e34343e368c2",
+      "79e5e34343e368c2",
+      "79e5e34343e368c2",
+      "79e5e34343e368c2",
+      "79e5e34343e368c2"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 26.091081343999804,
+      "avg_fetch_time": 4.348513557333301,
+      "success_count": 6
+    }
+  },
+  "http://stream5.jlntv.cn/dl/sd/live.m3u8": {
+    "phash": [
+      "8e5c29bdd4bd0607",
+      "c0e0351f1f879be4",
+      "9eb2f3dda1c99140",
+      "8e9d74e2a9851c57",
+      "b8f474f2f2e11584",
+      "95905af235373627"
+    ],
+    "ahash": [
+      "1131303031313371",
+      "02f1f9797d3c3001",
+      "ff050400000080ff",
+      "3f3f1f3b31313020",
+      "c60e0edf9f191911",
+      "cfff3f3303000000"
+    ],
+    "dhash": [
+      "6763e165e5e363e7",
+      "a687a3c1e169c555",
+      "7d6d25b3a522220a",
+      "6e6a626365e5c565",
+      "94b4b63f2bb33337",
+      "38b9e6f6d7cc5626"
+    ],
+    "whash": [
+      "3131313d7d393371",
+      "02f1f9797d3d3101",
+      "ff0505d31110f0ff",
+      "3f3f1f3f35313000",
+      "c74e0adbdb1b1911",
+      "ffff3f3f0f000000"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.421107825000036,
+      "avg_fetch_time": 5.236851304166673,
+      "success_count": 6
+    }
+  },
+  "http://stream10.jlntv.cn/yongji/sd/live.m3u8": {
+    "phash": [
+      "94a9679669725369",
+      "c1bc765e1e071e1a",
+      "dbcc6672bcc21cc1",
+      "9590dafa34363627",
+      "91f0656c9a996766",
+      "c46231b5ad0d372f"
+    ],
+    "ahash": [
+      "073f09471f3e0400",
+      "b2e36b3b3b387030",
+      "fefc7cddc884e080",
+      "dfff3f3303000000",
+      "c2c06c5c1c020022",
+      "42e07071fffe1c00"
+    ],
+    "dhash": [
+      "2fb7938db7e4ecda",
+      "2e82c3d3d2d2cac8",
+      "4c89e1b11928c906",
+      "b8bae6f6d6dcd626",
+      "868ac8b93924764a",
+      "8685c7e7c5cc70a2"
+    ],
+    "whash": [
+      "077f4f6f1f3e0400",
+      "b2e3233b39387878",
+      "fefc7cddc884e000",
+      "ffff3f3f0f000000",
+      "c6ea6e5cdc8616a2",
+      "40707079fffe1e02"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 30.122930170999894,
+      "avg_fetch_time": 5.020488361833316,
+      "success_count": 6
+    }
+  },
+  "http://live1.gatv.com.cn:85/live/XWZH.m3u8": {
+    "phash": [
+      "d998b0d09d98eea3",
+      "e6809509ad2f9f2e",
+      "d984f0b296477e31",
+      "9735803e6cdb3643",
+      "9735803e6cdb3643",
+      "d4c831f209b73ec5"
+    ],
+    "ahash": [
+      "ffff381878700000",
+      "32fe34e161a080e7",
+      "ffffba1008000000",
+      "3f3f2e0200877d7e",
+      "3f3f2e0200877d7e",
+      "80d0b8383c162606"
+    ],
+    "dhash": [
+      "b0f171f0f0a090c8",
+      "e6946dcdcd4d0d2e",
+      "e4d052e0d815931b",
+      "7456cc662e6dc9d2",
+      "7456cc662e6dc9d2",
+      "3ca2a262e02ccc5e"
+    ],
+    "whash": [
+      "fffeb81cf8784000",
+      "36fe24e161a081ff",
+      "ffffff3e0c004000",
+      "3f2b6a8200877d7e",
+      "3f2b6a8200877d7e",
+      "c4d0fa3a7c3e6e02"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 31.81694486699996,
+      "avg_fetch_time": 5.3028241444999935,
+      "success_count": 6
+    }
+  },
+  "http://218.31.201.189:9000/api/material/local/mnt/shiping1/prog_index.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 0,
+      "network_error_count": 3,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers\n  built with gcc 15 (Ubuntu 15.2.0-13ubuntu3)\n  configuration: --prefix=/usr --extra-version=3ubuntu2 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-librsvg --enable-shared\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\n[tcp @ 0x5b1ecf273040] Connection to tcp://218.31.201.189:9000 failed: Connection timed out\n[in#0 @ 0x5b1ecf26fc40] Error opening input: Connection timed out\nError opening input file http://218.31.201.189:9000/api/material/local/mnt/shiping1/prog_index.m3u8.\nError opening input files: Connection timed out"
+    },
+    "stats": {
+      "total_fetch_time": 12.965243708999878,
+      "avg_fetch_time": 6.482621854499939,
+      "success_count": 2
+    }
+  },
+  "http://stream11.jlntv.cn/shuangyang/sd/live.m3u8": {
+    "phash": [
+      "cc1a337c33e522d5",
+      "993b6ce43a1bc338",
+      "9bdb6464721b1b91",
+      "99db6464729b1b91",
+      "dee3213f2f18602d",
+      "dee3213f2f18602d"
+    ],
+    "ahash": [
+      "00bc793bf8f8fa00",
+      "000d1c1d4d7e1e00",
+      "00cd1d1d4f5f1f00",
+      "00cd1d1d4f5e1f00",
+      "00fc7efebebe1c00",
+      "00fc7efebebe1c00"
+    ],
+    "dhash": [
+      "3535a36222a36252",
+      "25bbd9d998dab429",
+      "25bbd9d998b8d431",
+      "25bbd9d998b89421",
+      "48e8c8e164743032",
+      "48e8c8e164743032"
+    ],
+    "whash": [
+      "00bd793bf8f8fa00",
+      "00df1c1d5f7e5f00",
+      "00df1c5d5f1e7f00",
+      "00df1d5d5f1e5f00",
+      "00fc7cfcbe9e1e00",
+      "00fc7cfcbe9e1e00"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 30.431265071999974,
+      "avg_fetch_time": 5.071877511999996,
+      "success_count": 6
+    }
+  },
+  "https://liveout.btzx.com.cn/3pyc0h/dbfvwu.m3u8": {
+    "phash": [
+      "9634f1468d365b93",
+      "ab6b54bcacea5484",
+      "bb6a5c9cacc2d285",
+      "9e3ec161cf39910d",
+      "bda45413569a8797",
+      "993fc461f7618907"
+    ],
+    "ahash": [
+      "06060f1f3e3457ff",
+      "c1a1a5a5870f0f07",
+      "d181a5a58f0f0f03",
+      "c1858f85b3042cfc",
+      "0683f393830f8dd8",
+      "c1998f8d891818fc"
+    ],
+    "dhash": [
+      "9c9c3c686064a6e2",
+      "294949496b6b6f7f",
+      "2b0949496b797f37",
+      "b33d7d2d65d9d8e8",
+      "b4360633775b5933",
+      "9331711b5bd3d0e8"
+    ],
+    "whash": [
+      "06060f1e3e3c17fb",
+      "f5a1a5a58787070f",
+      "dd81a5a5878f0f07",
+      "01858f97b12d6cfc",
+      "0783f7d3850d8dd8",
+      "019d8f8f891978fc"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 74.51931679100005,
+      "avg_fetch_time": 12.419886131833342,
+      "success_count": 6
+    }
+  },
+  "http://125.65.94.91:12351/live": {
+    "phash": [
+      "9acd38926dc39c2e",
+      "9acd38926dc39c2e",
+      "9acd38926dc39c2e",
+      "9acd38926dc39c2e",
+      "9acd38926dc39c2e",
+      "9acd38926dc39c2e"
+    ],
+    "ahash": [
+      "3c1c3c303c3c2c18",
+      "3c1c3c303c3c2c18",
+      "3c1c3c303c3c2c18",
+      "3c1c3c303c3c2c18",
+      "3c1c3c303c3c2c18",
+      "3c1c3c303c3c2c18"
+    ],
+    "dhash": [
+      "296961c169794d71",
+      "296961c169794d71",
+      "296961c169794d71",
+      "296961c169794d71",
+      "296961c169794d71",
+      "296961c169794d71"
+    ],
+    "whash": [
+      "bc1c3cf93c3c2c19",
+      "bc1c3cf93c3c2c19",
+      "bc1c3cf93c3c2c19",
+      "bc1c3cf93c3c2c19",
+      "bc1c3cf93c3c2c19",
+      "bc1c3cf93c3c2c19"
+    ],
+    "error": {
+      "fail_count": 0,
+      "timeout_count": 0,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": null
+    },
+    "stats": {
+      "total_fetch_time": 36.379127573000005,
+      "avg_fetch_time": 6.063187928833334,
+      "success_count": 6
+    }
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXyuhang2/720p.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 9.077381269000057,
+      "avg_fetch_time": 4.538690634500028,
+      "success_count": 2
+    }
+  },
+  "https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 3,
+      "network_error_count": 0,
+      "other_error_count": 0,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 8.354413780000073,
+      "avg_fetch_time": 8.354413780000073,
+      "success_count": 1
+    }
+  },
+  "http://m.061899.xyz/mg/cctv3": {
+    "phash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "ahash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "dhash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "whash": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "error": {
+      "fail_count": 3,
+      "timeout_count": 2,
+      "network_error_count": 0,
+      "other_error_count": 1,
+      "final_error": "ffmpeg error: Timeout after 15s"
+    },
+    "stats": {
+      "total_fetch_time": 50.484411993000094,
+      "avg_fetch_time": 7.21205885614287,
+      "success_count": 7
+    }
+  }
+}
